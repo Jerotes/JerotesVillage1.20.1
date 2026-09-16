@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:rods/bulge"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "jerotesvillage:bulge_powder"
+  }
+}

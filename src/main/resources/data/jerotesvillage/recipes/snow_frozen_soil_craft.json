@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:snow_frozen_soil"
+    }
+  ],
+  "result": {
+    "item": "minecraft:snowball",
+    "count": 3
+  }
+}

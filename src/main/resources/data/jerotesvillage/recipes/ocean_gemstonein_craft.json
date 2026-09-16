@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:ocean_gemstone_fragments"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:ocean_gemstone",
+    "count": 1
+  }
+}

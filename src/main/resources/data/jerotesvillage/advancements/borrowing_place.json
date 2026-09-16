@@ -1,0 +1,42 @@
+{
+  "parent": "jerotesvillage:jerotes_adventure",
+  "display": {
+    "icon": {
+      "item": "jerotes:golden_javelin"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.borrowing_place.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.borrowing_place.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "borrowing_place": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "jerotesvillage:piglin_base"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:piglin_golden_fire_craft"
+    ]
+  }
+}

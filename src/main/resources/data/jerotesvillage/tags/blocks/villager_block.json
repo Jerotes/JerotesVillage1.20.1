@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:villager_block",
+    "jerotesvillage:villager_block_witch",
+    "jerotesvillage:villager_block_observer",
+    "jerotesvillage:villager_block_shopkeeper",
+    "jerotesvillage:villager_block_villagehead",
+    "jerotesvillage:villager_block_forger",
+    "jerotesvillage:villager_block_chef",
+    "jerotesvillage:villager_block_hunter",
+    "jerotesvillage:villager_block_physician",
+    "jerotesvillage:villager_block_conscription",
+    "jerotesvillage:villager_block_bartender",
+    "jerotesvillage:villager_block_lamplighter",
+    "jerotesvillage:villager_block_horseman",
+    "jerotesvillage:villager_block_coachman",
+    "jerotesvillage:villager_block_builder",
+    "jerotesvillage:villager_block_breeder",
+    "jerotesvillage:villager_block_hawker",
+    "jerotesvillage:villager_block_jailer",
+    "jerotesvillage:villager_block_piscator",
+    "jerotesvillage:villager_block_magician",
+    "jerotesvillage:villager_block_captain",
+    "jerotesvillage:villager_block_messenger",
+    "jerotesvillage:villager_block_dye_merchant",
+    "jerotesvillage:villager_block_illager",
+    "jerotesvillage:villager_block_piglin",
+    "jerotesvillage:villager_block_beekeeper"
+  ]
+}

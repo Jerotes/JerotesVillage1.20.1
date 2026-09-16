@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:serpon",
+    "jerotesvillage:serpon_colonial_soldier",
+    "jerotesvillage:serpon_pioneer",
+    "jerotesvillage:serpon_rioter",
+    "jerotesvillage:serpon_intruder",
+    "jerotesvillage:serpon_flame_wizard",
+    "jerotesvillage:serpon_fire_apostle",
+    "jerotesvillage:serpon_combat_executer"
+  ]
+}

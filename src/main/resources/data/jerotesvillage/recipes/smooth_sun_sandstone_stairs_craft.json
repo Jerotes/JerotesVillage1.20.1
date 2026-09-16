@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:smooth_sun_sandstone"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "jerotesvillage:smooth_sun_sandstone_stairs"
+  }
+}

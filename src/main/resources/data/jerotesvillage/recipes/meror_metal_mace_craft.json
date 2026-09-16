@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/meror_metal"
+    },
+    "b": {
+      "item": "jerotes:simple_hammer"
+    },
+    "c": {
+      "tag": "forge:rods/meror_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:meror_metal_mace",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/fibre_dust_flower",
+    "particle": "jerotesvillage:block/fibre_dust_flower"
+  },
+  "render_type": "cutout"
+}

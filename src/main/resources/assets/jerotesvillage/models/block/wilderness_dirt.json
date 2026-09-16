@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "jerotesvillage:block/wilderness_dirt_bottom",
+    "side": "jerotesvillage:block/wilderness_dirt",
+    "top": "jerotesvillage:block/wilderness_dirt_top",
+    "particle": "jerotesvillage:block/wilderness_dirt"
+  },
+  "render_type": "solid"
+}

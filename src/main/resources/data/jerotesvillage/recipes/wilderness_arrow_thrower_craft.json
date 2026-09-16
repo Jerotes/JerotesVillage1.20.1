@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " bb",
+    " a ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:rambler_leather_strip"
+    },
+    "b": {
+      "item": "jerotesvillage:wilderness_wood_core"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:wilderness_arrow_thrower",
+    "count": 1
+  }
+}

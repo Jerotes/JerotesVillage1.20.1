@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_torch",
+  "textures": {
+    "torch": "jerotesvillage:block/serpon_torch"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/ominous_bow",
+  "textures": {
+    "layer0": "jerotesvillage:item/ominous_bow_pulling_0"
+  }
+}

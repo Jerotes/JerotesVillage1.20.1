@@ -1,0 +1,56 @@
+{
+  "parent": "jerotesvillage:jerotes_adventure",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:rambler_skin"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.rambler_skin.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.rambler_skin.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rambler_skin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:rambler_skin"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:rambler_leather_craft",
+      "jerotesvillage:rambler_leather_strip_craft",
+      "jerotesvillage:rambler_skin_leather_craft",
+      "jerotesvillage:cooked_rambler_meat",
+      "jerotesvillage:cooked_rambler_meat_from_campfire_cooking",
+      "jerotesvillage:cooked_rambler_meat_from_smoking",
+      "jerotesvillage:rambler_leather_helmet_craft",
+      "jerotesvillage:rambler_leather_chestplate_craft",
+      "jerotesvillage:rambler_leather_leggings_craft",
+      "jerotesvillage:rambler_leather_boots_craft",
+      "jerotesvillage:rambler_leather_stick_craft",
+      "jerotesvillage:rambler_leather_shield_craft",
+      "jerotesvillage:rambler_leather_glove_craft",
+      "jerotesvillage:rambler_leather_planks_craft",
+      "jerotesvillage:rambler_leather_block_craft",
+      "jerotesvillage:rambler_leather_war_beast_armor_craft",
+      "jerotesvillage:rambler_leather_giant_beast_armor_craft",
+      "jerotesvillage:saddle_by_rambler_leather_craft",
+      "jerotesvillage:prosperous_perfume_craft"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Captain",
+  "icon": "jerotesvillage:villager_block_captain",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_captain",
+      "title": "Villager Block Captain",
+      "text": "$(l:villager_profession/captain)Captain$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_captain_craft"
+    }
+  ]
+}

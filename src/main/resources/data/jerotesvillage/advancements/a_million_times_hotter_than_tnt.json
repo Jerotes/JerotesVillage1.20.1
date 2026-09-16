@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:serpon",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:serpon_classical_bomb"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.a_million_times_hotter_than_tnt.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.a_million_times_hotter_than_tnt.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "a_million_times_hotter_than_tnt": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

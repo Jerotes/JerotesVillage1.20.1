@@ -1,0 +1,18 @@
+{
+  "type": "jerotesvillage:tablet_pressing",
+  "category": "tablet",
+  "base": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    }
+  ],
+  "addition": [
+    {
+      "tag": "jerotes:anesthetic_craft_use"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:anesthetic_tablet",
+    "count": 1
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 800,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:meror_metal_sword"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_greatsword"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_axe"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_pickaxe"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_shovel"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_hoe"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_dagger"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_crossbow"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_helmet"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_chestplate"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_leggings"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_boots"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_javelin"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_spear"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_mace"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_arrow"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_bow"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_shield"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_war_beast_armor"
+    },
+    {
+      "item": "jerotesvillage:meror_metal_giant_beast_armor"
+    }
+  ],
+  "result": "jerotesvillage:meror_metal_nugget"
+}

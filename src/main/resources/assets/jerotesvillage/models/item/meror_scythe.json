@@ -1,0 +1,36 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_scythe"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 0, -90, 55 ],
+      "translation": [ -0.5, 4.0, 1.5 ],
+      "scale": [ 1.5, 1.5, 1.5 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 0, 90, -55 ],
+      "translation": [ -0.5, 4.0, 1.5 ],
+      "scale": [ 1.5, 1.5, 1.5 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 0, -90, 25 ],
+      "translation": [ 0, 1.6, 0.8 ],
+      "scale": [ 1.5, 1.5, 1.5 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, 90, -25 ],
+      "translation": [ 0, 1.6, 0.8 ],
+      "scale": [ 1.5, 1.5, 1.5 ]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pull": 0.1
+      },
+      "model": "jerotesvillage:item/meror_scythe_use"
+    }
+  ]
+}

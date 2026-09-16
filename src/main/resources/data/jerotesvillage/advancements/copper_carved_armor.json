@@ -1,0 +1,68 @@
+{
+  "parent": "jerotesvillage:villager_craftsmanship",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:villager_metal_helmet"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.copper_carved_armor.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.copper_carved_armor.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "copper_carved_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:villager_metal_helmet"
+            ]
+          },
+          {
+            "items": [
+              "jerotesvillage:villager_metal_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "jerotesvillage:villager_metal_leggings"
+            ]
+          },
+          {
+            "items": [
+              "jerotesvillage:villager_metal_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:villager_metal_javelin_craft",
+      "jerotesvillage:carved_leader_upgrade_smithing_template_craft",
+      "jerotesvillage:carved_leader_helmet_smith",
+      "jerotesvillage:carved_leader_chestplate_smith",
+      "jerotesvillage:carved_leader_leggings_smith",
+      "jerotesvillage:carved_leader_boots_smith",
+
+      "jerotesvillage:carved_leader_helmet_by_netherite_smith",
+      "jerotesvillage:carved_leader_chestplate_by_netherite_smith",
+      "jerotesvillage:carved_leader_leggings_by_netherite_smith",
+      "jerotesvillage:carved_leader_boots_by_netherite_smith",
+
+      "jerotesvillage:netherite_helmet_by_carved_leader_smith",
+      "jerotesvillage:netherite_chestplate_by_carved_leader_smith",
+      "jerotesvillage:netherite_leggings_by_carved_leader_smith",
+      "jerotesvillage:netherite_boots_by_carved_leader_smith"
+    ]
+  }
+}

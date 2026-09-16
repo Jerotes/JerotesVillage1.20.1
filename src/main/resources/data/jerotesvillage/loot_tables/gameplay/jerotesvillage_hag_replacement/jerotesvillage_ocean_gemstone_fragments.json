@@ -1,0 +1,168 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:bright_grass_carp",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:chromasnap_bass",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:lake_loach",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:flowminnow",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:bitter_cod",
+          "weight": 1
+        },
+        {
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:4}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:5}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:6}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:7}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.24
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:8}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.24
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:9}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.144
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:10}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.144
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:11}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.0432
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:12}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.0432
+                }
+              ]
+            }
+          ],
+          "type": "minecraft:item",
+          "name": "jerotesvillage:greyscale",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:jewelroamer",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:starbrite",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "weight": 1
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "jerotesvillage:gameplay/jerotesvillage_hag_replacement/jerotesvillage_ocean_gemstone_fragments"
+}

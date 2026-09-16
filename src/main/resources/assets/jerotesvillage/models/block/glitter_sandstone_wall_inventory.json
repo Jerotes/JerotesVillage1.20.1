@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "jerotesvillage:block/glitter_sandstone"
+  }
+}

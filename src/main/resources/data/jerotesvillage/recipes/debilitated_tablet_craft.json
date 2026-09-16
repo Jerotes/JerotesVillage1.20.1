@@ -1,0 +1,18 @@
+{
+  "type": "jerotesvillage:tablet_pressing",
+  "category": "tablet",
+  "base": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    }
+  ],
+  "addition": [
+    {
+      "item": "minecraft:fermented_spider_eye"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:debilitated_tablet",
+    "count": 1
+  }
+}

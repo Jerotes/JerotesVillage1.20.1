@@ -1,0 +1,28 @@
+{
+  "name": "Beekeeper",
+  "icon": "minecraft:honey_bottle",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_beekeeper\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:honey_bottle",
+      "title": "Beekeeper"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_beekeeper\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_beekeeper",
+      "title": "Villager Block Beekeeper",
+      "text": "$(l:villager_block/beekeeper)Villager Block Beekeeper$()"
+    }
+  ]
+}

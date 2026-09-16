@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:ancient_second_rounder_noble_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "jerotesvillage:ancient_second_rounder_heavy_leggings"
+  },
+  "addition": {
+    "tag": "forge:gems/lapis"
+  },
+  "result": {
+    "item": "jerotesvillage:ancient_second_rounder_noble_leggings"
+  }
+}

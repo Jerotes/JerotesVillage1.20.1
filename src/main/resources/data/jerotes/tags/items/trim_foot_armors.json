@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:meror_metal_boots",
+    "jerotesvillage:meror_standard_boots",
+    "jerotesvillage:ancient_second_rounder_noble_boots",
+    "jerotesvillage:mountain_realm_boots",
+    "jerotesvillage:magicka_scale_boots",
+
+    "jerotesvillage:villager_metal_boots",
+    "jerotesvillage:carved_leader_boots",
+    "jerotesvillage:rambler_leather_boots",
+    "jerotesvillage:giant_monster_boots",
+    "jerotesvillage:adventurer_boots",
+    "jerotesvillage:explorer_boots",
+    "jerotesvillage:explorer_iron_boots",
+    "jerotesvillage:scaly_bear_boots",
+    "jerotesvillage:serpon_boots",
+    "jerotesvillage:serpon_powerhouse_boots",
+    "jerotesvillage:serpon_wizard_boots",
+    "jerotesvillage:fire_apostle_boots",
+    "jerotesvillage:spirve_boots",
+    "jerotesvillage:wilderness_giant_boots",
+    "jerotesvillage:wilderness_hunter_boots",
+    "jerotesvillage:animated_iron_boots",
+    "jerotesvillage:meror_bounty_hunter_boots",
+    "jerotesvillage:qoaiku_boots",
+    "jerotesvillage:ancient_second_rounder_boots",
+    "jerotesvillage:ancient_second_rounder_heavy_boots",
+    "jerotesvillage:slavery_supervisor_boots"
+  ]
+}

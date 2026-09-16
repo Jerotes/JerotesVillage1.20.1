@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:carved_villager",
+    "jerotesvillage:carved_hound",
+    "jerotesvillage:carved_iron_golem",
+    "jerotesvillage:carved_allay",
+    "jerotesvillage:carved_llama"
+  ]
+}

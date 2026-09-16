@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:gems/ocean_gemstone"
+    },
+    "b": {
+      "item": "jerotesvillage:meror_energy_regime"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:greyscale_prize_machine",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "merorsenergeticgun.ammo.meror_energy_bottles.name",
+  "display": "merorsenergeticgun:meror_energy_bottles_display",
+  "stack_size": 60,
+  "tooltip": "merorsenergeticgun.ammo.meror_energy_bottles.desc"
+}

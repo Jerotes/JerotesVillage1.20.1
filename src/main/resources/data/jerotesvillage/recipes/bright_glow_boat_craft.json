@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "pattern": [
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:bright_glow_planks"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:bright_glow_boat"
+  }
+}

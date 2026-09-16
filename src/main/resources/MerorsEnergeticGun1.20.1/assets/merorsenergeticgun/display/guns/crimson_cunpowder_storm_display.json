@@ -1,0 +1,119 @@
+{
+  "model": "merorsenergeticgun:gun/crimson_cunpowder_storm_geo",
+  "texture": "merorsenergeticgun:gun/uv/crimson_cunpowder_storm",
+  "uv": [
+    "merorsenergeticgun:gun/uv/crimson_cunpowder_storm",
+    "merorsenergeticgun:gun/uv/crimson_cunpowder_storm_n",
+    "merorsenergeticgun:gun/uv/crimson_cunpowder_storm_s"
+  ],
+  "iron_zoom": 2,
+  "zoom_model_fov": 55,
+  "ammo_count_style": "normal",
+  "damage_style": "per_projectile",
+  "show_crosshair": true,
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    }
+  },
+  "sounds": {
+    "shoot": "tacz:minigun/minigun_shoot",
+    "shoot_3p": "tacz:minigun/minigun_shoot_3p",
+    "silence": "tacz:minigun/minigun_silence",
+    "silence_3p": "tacz:minigun/minigun_silence_3p",
+    "put_away": "tacz:minigun/minigun_put_away",
+    "dry_fire": "tacz:dry_fire",
+    "fire_select": "tacz:fire_select",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
+    "melee_bayonet": "tacz:melee_bayonet/melee_bayonet_01",
+    "melee_push": "tacz:melee_stock/melee_stock_01",
+    "melee_stock": "tacz:melee_stock/melee_stock_02"
+  },
+  "animation": "merorsenergeticgun:crimson_cunpowder_storm",
+  "state_machine": "merorsenergeticgun:crimson_cunpowder_storm_state_machine",
+  "use_default_animation": "rifle",
+  "third_person_animation": "minigun",
+  "player_animator_3rd": "merorsenergeticgun:crimson_cunpowder_storm.player_animation",
+  "hud": "merorsenergeticgun:gun/hud/crimson_cunpowder_storm",
+  "slot": "merorsenergeticgun:gun/slot/crimson_cunpowder_storm",
+  "muzzle_flash": {
+    "texture": "merorsenergeticgun:flash/meror_guardian_pistol_iv_flash",
+    "scale": 1.5
+  },
+  "ammo": {
+    "tracer_color": "#FFBBDF",
+    "particle": {
+      "name": "jerotesvillage:meror_fire",
+      "delta": [
+        0,
+        0,
+        0
+      ],
+      "speed": 0.02,
+      "life_time": 20,
+      "count": 15
+    }
+  },
+  "text_show": {
+    "ammo_count_text_show_pos": {
+      "scale": 1,
+      "align": "center",
+      "shadow": false,
+      "color": "#FFFFFF",
+      "light": 15,
+      "text": "text_show.tacz.ak47.ammo_count"
+    }
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [
+        -4,
+        24,
+        4
+      ],
+      "rotate": [
+        -90,
+        -5,
+        -90
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  },
+  "controllable": {
+    "semi": {
+      "low_frequency": 0.25,
+      "high_frequency": 0.5,
+      "time": 100
+    },
+    "auto": {
+      "low_frequency": 0.15,
+      "high_frequency": 0.25,
+      "time": 80
+    },
+    "burst": {
+      "low_frequency": 0.25,
+      "high_frequency": 0.5,
+      "time": 100
+    }
+  }
+}

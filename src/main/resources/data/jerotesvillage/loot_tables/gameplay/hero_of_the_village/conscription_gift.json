@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:carved_villager_item"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "jerotesvillage:gameplay/hero_of_the_village/conscription_gift"
+}

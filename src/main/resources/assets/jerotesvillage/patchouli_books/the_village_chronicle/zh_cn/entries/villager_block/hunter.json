@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 猎人",
+  "icon": "jerotesvillage:villager_block_hunter",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_hunter",
+      "title": "村民工作台 猎人",
+      "text": "$(l:villager_profession/hunter)猎人$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_hunter_craft"
+    }
+  ]
+}

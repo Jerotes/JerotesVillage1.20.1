@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": [
+      {
+        "item": "jerotesvillage:purple_sandstone"
+      },
+      {
+        "item": "jerotesvillage:chiseled_purple_sandstone"
+      }
+    ]
+  },
+  "result": {
+    "count": 6,
+    "item": "jerotesvillage:purple_sandstone_slab"
+  }
+}

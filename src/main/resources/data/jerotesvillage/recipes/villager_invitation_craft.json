@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "cbc",
+    "cac",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:carved_contacter"
+    },
+    "b": {
+      "item": "minecraft:ender_pearl"
+    },
+    "c": {
+      "tag": "forge:gems/emerald"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_invitation",
+    "count": 1
+  }
+}

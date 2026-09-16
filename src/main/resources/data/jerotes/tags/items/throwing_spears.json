@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:wilderness_throwing_spear_of_javelin",
+    "jerotesvillage:wilderness_throwing_spear_of_spear",
+
+    "jerotesvillage:mountain_realm_flag_spear_of_javelin",
+    "jerotesvillage:mountain_realm_flag_spear_of_spear"
+  ]
+}

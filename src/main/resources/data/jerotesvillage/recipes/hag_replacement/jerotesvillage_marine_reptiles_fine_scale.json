@@ -1,0 +1,33 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:marine_reptiles_fine_scale"
+    }
+  ],
+  "result": [
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:sea_monster_worship\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:sea_monster_worship\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:sea_monster_worship\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:sea_monster_worship\"}"
+    },
+    {
+      "item": "jerotesvillage:sea_monster_potion"
+    }
+  ]
+}

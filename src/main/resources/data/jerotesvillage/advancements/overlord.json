@@ -1,0 +1,45 @@
+{
+  "parent": "jerotesvillage:defeat_resurrecter",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:sediment_lord_robe_pieces"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.overlord.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.overlord.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "overlord": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:sediment_lord"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:ancient_second_rounder_noble_upgrade_smithing_template_craft",
+      "jerotesvillage:ancient_second_rounder_noble_helmet_smith",
+      "jerotesvillage:ancient_second_rounder_noble_helmet_smith",
+      "jerotesvillage:ancient_second_rounder_noble_chestplate_smith",
+      "jerotesvillage:ancient_second_rounder_noble_leggings_smith",
+      "jerotesvillage:ancient_second_rounder_noble_boots_smith"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "jerotesvillage:block/attached_flavorless_melon_stem",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "jerotesvillage:block/attached_flavorless_melon_stem",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jerotesvillage:block/attached_flavorless_melon_stem",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "jerotesvillage:block/attached_flavorless_melon_stem"
+    }
+  }
+}

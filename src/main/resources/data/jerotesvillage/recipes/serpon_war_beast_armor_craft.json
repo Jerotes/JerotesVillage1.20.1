@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    "cbc",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/serpon_alloy"
+    },
+    "b": {
+      "item": "jerotes:war_beast_armor_base"
+    },
+    "c": {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_war_beast_armor",
+    "count": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:ocean_gemstone_fragments"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:bright_grass_carp"
+    },
+    {
+      "item": "jerotesvillage:chromasnap_bass"
+    },
+    {
+      "item": "jerotesvillage:lake_loach"
+    },
+    {
+      "item": "jerotesvillage:flowminnow"
+    },
+    {
+      "item": "jerotesvillage:bitter_cod"
+    },
+    {
+      "item": "jerotesvillage:greyscale"
+    },
+    {
+      "item": "jerotesvillage:jewelroamer"
+    },
+    {
+      "item": "jerotesvillage:starbrite"
+    },
+    {
+      "item": "minecraft:cod"
+    },
+    {
+      "item": "minecraft:salmon"
+    },
+    {
+      "item": "minecraft:tropical_fish"
+    },
+    {
+      "item": "minecraft:pufferfish"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "dbd",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:giant_monster_hair"
+    },
+    "b": {
+      "item": "jerotesvillage:giant_monster_horn"
+    },
+    "c": {
+      "item": "minecraft:bell"
+    },
+    "d": {
+      "item": "jerotesvillage:ice_rock"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:bitter_cold_bell",
+    "count": 1
+  }
+}

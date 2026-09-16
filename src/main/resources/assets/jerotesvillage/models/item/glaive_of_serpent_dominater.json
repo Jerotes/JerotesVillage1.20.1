@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/glaive_of_serpent_dominater",
+    "particle": "jerotesvillage:item/glaive_of_serpent_dominater"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/glaive_of_serpent_dominater_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/glaive_of_serpent_dominater_model",
+      "particle": "jerotesvillage:item/glaive_of_serpent_dominater"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/glaive_of_serpent_dominater_blocking"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/glaive_of_serpent_dominater"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/glaive_of_serpent_dominater"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/glaive_of_serpent_dominater"
+      },
+      "gui_light": "front"
+    }
+  }
+}

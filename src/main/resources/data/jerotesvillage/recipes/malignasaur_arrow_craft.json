@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:malignasaur_teeth"
+    },
+    "b": {
+      "tag": "forge:rods/bulge"
+    },
+    "c": {
+      "tag": "forge:gems/ocean_gemstone"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:malignasaur_arrow",
+    "count": 16
+  }
+}

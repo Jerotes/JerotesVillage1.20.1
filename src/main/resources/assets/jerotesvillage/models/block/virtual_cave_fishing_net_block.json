@@ -1,0 +1,9 @@
+{
+  "parent": "jerotesvillage:block/base_virtual_cave_fishing_net_block",
+  "textures": {
+    "all": "jerotesvillage:block/virtual_cave_fishing_net_block",
+    "particle": "jerotesvillage:item/virtual_cave_fishing_net",
+    "0": "jerotesvillage:block/virtual_cave_fishing_net_block"
+  },
+  "render_type": "cutout"
+}

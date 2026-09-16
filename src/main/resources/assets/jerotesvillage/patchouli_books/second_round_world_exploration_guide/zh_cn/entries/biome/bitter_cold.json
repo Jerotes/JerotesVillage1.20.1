@@ -1,0 +1,49 @@
+{
+  "name": "苦寒之地",
+  "icon": "jerotesvillage:snow_frozen_soil",
+  "category": "jerotesvillage:biome",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "作为二轮世界最寒冷的群系，苦寒之地是被旋风与冰雪裹挟的痛苦之地。正如对于主世界寒冷地带一般，你必须准备好一套足以保暖的衣物，最廉价的抵御方式便是一套皮革护甲。但仅仅是一套皮革护甲很难确保你的安全，因为不仅是隐蔽的细雪，刺骨的寒风会显著降低你的行动速度，因此最理想的盔甲亦要兼具厚重性。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "jerotesvillage:rambler",
+      "text": "二轮世界中分布着名为漫兽的温和野兽，由其皮革制成的盔甲可以兼具保暖与厚重。",
+      "scale": 0.5
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:bitter_cold_igloo_map_craft",
+      "text": "不过，漫兽并不分布于苦寒之地中。此时你只有两种选择，一，立刻离开苦寒之地；二，寻找荒野巨人猎手们遗留下来的雪屋，找到可以御寒的装备。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "如果必须要在保暖与厚重中任选其一，我其实还是更推荐能够保暖的服饰。如果说平时苦寒之地还能忍耐，那么降雪之时苦寒之地会进入更可怕的冰霜间期，未做好防寒的生物会如同陷入细雪一般缓慢冻伤。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "jerotesvillage:bitter_cold_wind",
+      "scale": 0.5
+    },
+    {
+      "type": "patchouli:text",
+      "text": "另一方面，被寒风阻碍行动也不仅仅是表面上的迟缓那么简单，一种名为苦寒风的魔法生物会主动狩猎过于明显的闯入者，甚至任何在苦寒之地死去的生物都可能因死亡而催生这些怪物。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "jerotesvillage:frost_yeti"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "对于我们这些主世界居民来说，苦寒之地绝对称不上一个安全的区域。但如果横向对比二轮世界大多数群系的话，被类人生物侵扰最少的苦寒之地未必不算一个平和的地带，前提自然是做足保暖准备，以及小心徘徊着的“雪怪”。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:bitter_cold_bell_craft",
+      "text": "顺便一提，关于这些难缠的寒霜雪怪，我们发现荒野巨人们会制作名为“苦寒摇铃”的物品来进行驱逐。"
+    }
+  ],
+  "sortnum": 1
+}

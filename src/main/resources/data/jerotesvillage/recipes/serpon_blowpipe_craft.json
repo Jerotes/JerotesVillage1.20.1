@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ab",
+    " ba",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/serpon_alloy"
+    },
+    "b": {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_blowpipe",
+    "count": 1
+  }
+}

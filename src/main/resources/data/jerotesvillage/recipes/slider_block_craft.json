@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:slider_mucus"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:slider_block",
+    "count": 1
+  }
+}

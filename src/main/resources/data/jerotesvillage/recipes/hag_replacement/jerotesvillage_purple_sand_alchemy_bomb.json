@@ -1,0 +1,16 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:purple_sand_alchemy_bomb"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:purple_sand_explosive_alchemy_bomb"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ]
+}

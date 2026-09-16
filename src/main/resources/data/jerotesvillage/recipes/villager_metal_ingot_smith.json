@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:book"
+  },
+  "base": {
+    "item": "jerotesvillage:villager_metal_base"
+  },
+  "addition": {
+    "tag": "forge:gems/emerald"
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_ingot"
+  }
+}

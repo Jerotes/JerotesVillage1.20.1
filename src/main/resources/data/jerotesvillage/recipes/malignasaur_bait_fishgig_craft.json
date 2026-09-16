@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:malignasaur_fishgig"
+    },
+    {
+      "item": "jerotesvillage:abyssaler"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:malignasaur_bait_fishgig",
+    "count": 1
+  }
+}

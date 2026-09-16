@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/torch_of_firm_ice"
+  }
+}

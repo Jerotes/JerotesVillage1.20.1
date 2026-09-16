@@ -1,0 +1,48 @@
+{
+  "__comment": "判定为发光的生物类型 如 发光鱿鱼 烈焰人 悦灵 岩浆怪 恼鬼 凋灵",
+  "replace": false,
+  "values": [
+    "#jerotes:meror_machine",
+
+    "jerotesvillage:war_python",
+    "jerotesvillage:royal_war_python",
+    "jerotesvillage:blue_shimmer_squid",
+    "jerotesvillage:bright_land_beast",
+    "jerotesvillage:celestial_coilvine_flower",
+    "jerotesvillage:botanize",
+    "jerotesvillage:coilvine_botanize",
+    "jerotesvillage:drought_blaze",
+    "jerotesvillage:fury_drought_blaze",
+    "jerotesvillage:drought_wildfire",
+    "jerotesvillage:fury_drought_wildfire",
+    "jerotesvillage:duneshockler",
+    "jerotesvillage:fire_secretor",
+    "jerotesvillage:firepower_pourer",
+    "jerotesvillage:flamoar",
+    "jerotesvillage:flying_fireball",
+    "jerotesvillage:fury_flying_fireball",
+    "jerotesvillage:glow_sparrow",
+    "jerotesvillage:lamp_wizard",
+    "jerotesvillage:lightning_worm",
+    "jerotesvillage:cleaning_robot",
+    "jerotesvillage:meror_locator",
+    "jerotesvillage:serpon_chariot",
+    "jerotesvillage:serpon_combat_executer",
+    "jerotesvillage:serpon_combat_platform",
+    "jerotesvillage:serpon_crossbow_turret",
+    "jerotesvillage:slider",
+
+
+    "jerotesvillage:boss_show_entity_corrosiver",
+    "jerotesvillage:boss_show_entity_purple_sand_hag",
+    "jerotesvillage:boss_show_entity_gemstone_malignasaur",
+    "jerotesvillage:boss_show_entity_bright_land_beast",
+    "jerotesvillage:boss_show_entity_serpon_combat_executer",
+    "jerotesvillage:boss_show_entity_celestial_coilvine",
+    "jerotesvillage:boss_show_entity_second_rounder_golem",
+    "jerotesvillage:boss_show_entity_sediment_lord",
+    "jerotesvillage:boss_show_entity_prosperous_envoy",
+    "jerotesvillage:boss_show_entity_ominous_banner_projection",
+    "jerotesvillage:boss_show_entity_tyrant_of_the_mountain_realm"
+  ]
+}

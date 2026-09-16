@@ -1,0 +1,28 @@
+{
+  "name": "养马人",
+  "icon": "minecraft:lead",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_horseman\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:lead",
+      "title": "养马人"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_horseman\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_horseman",
+      "title": "村民工作台 养马人",
+      "text": "$(l:villager_block/horseman)村民工作台 养马人$()"
+    }
+  ]
+}

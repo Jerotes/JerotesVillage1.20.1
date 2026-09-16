@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:sun_sandstone_slab"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:chiseled_sun_sandstone"
+  }
+}

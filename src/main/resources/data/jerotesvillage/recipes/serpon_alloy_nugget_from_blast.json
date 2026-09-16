@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:serpon_helmet"
+    },
+    {
+      "item": "jerotesvillage:serpon_chestplate"
+    },
+    {
+      "item": "jerotesvillage:serpon_leggings"
+    },
+    {
+      "item": "jerotesvillage:serpon_boots"
+    },
+    {
+      "item": "jerotesvillage:serpon_powerhouse_helmet"
+    },
+    {
+      "item": "jerotesvillage:serpon_powerhouse_chestplate"
+    },
+    {
+      "item": "jerotesvillage:serpon_powerhouse_leggings"
+    },
+    {
+      "item": "jerotesvillage:serpon_powerhouse_boots"
+    },
+    {
+      "item": "jerotesvillage:serpon_wizard_helmet"
+    },
+    {
+      "item": "jerotesvillage:serpon_wizard_chestplate"
+    },
+    {
+      "item": "jerotesvillage:serpon_wizard_leggings"
+    },
+    {
+      "item": "jerotesvillage:serpon_wizard_boots"
+    },
+    {
+      "item": "jerotesvillage:fire_apostle_helmet"
+    },
+    {
+      "item": "jerotesvillage:fire_apostle_chestplate"
+    },
+    {
+      "item": "jerotesvillage:fire_apostle_leggings"
+    },
+    {
+      "item": "jerotesvillage:fire_apostle_boots"
+    },
+    {
+      "item": "jerotesvillage:fire_apostle_sword"
+    },
+    {
+      "item": "jerotesvillage:serpon_sword"
+    },
+    {
+      "item": "jerotesvillage:serpon_axe"
+    },
+    {
+      "item": "jerotesvillage:serpon_pickaxe"
+    },
+    {
+      "item": "jerotesvillage:serpon_shovel"
+    },
+    {
+      "item": "jerotesvillage:serpon_hoe"
+    },
+    {
+      "item": "jerotesvillage:serpon_dagger"
+    },
+    {
+      "item": "jerotesvillage:serpon_blowpipe"
+    },
+    {
+      "item": "jerotesvillage:serpon_javelin"
+    },
+    {
+      "item": "jerotesvillage:serpon_glaive"
+    },
+    {
+      "item": "jerotesvillage:serpon_spear"
+    },
+    {
+      "item": "jerotesvillage:serpon_mace"
+    },
+    {
+      "item": "jerotesvillage:serpon_spiked_shield"
+    },
+    {
+      "item": "jerotesvillage:serpon_war_beast_armor"
+    },
+    {
+      "item": "jerotesvillage:serpon_giant_beast_armor"
+    },
+    {
+      "item": "jerotesvillage:glaive_of_serpent_dominater"
+    }
+  ],
+  "result": "jerotesvillage:serpon_alloy_nugget"
+}

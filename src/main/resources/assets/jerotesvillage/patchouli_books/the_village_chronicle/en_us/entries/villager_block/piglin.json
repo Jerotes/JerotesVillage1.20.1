@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Piglin",
+  "icon": "jerotesvillage:villager_block_piglin",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_piglin",
+      "title": "Villager Block Piglin",
+      "text": "$(l:villager_profession/piglin)Piglin$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_piglin_craft"
+    }
+  ]
+}

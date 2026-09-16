@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jerotesvillage:block/serpon_connection_point_top",
+    "side": "jerotesvillage:block/serpon_connection_point"
+  }
+}

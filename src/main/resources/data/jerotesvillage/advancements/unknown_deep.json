@@ -1,0 +1,45 @@
+{
+  "parent": "jerotesvillage:second_round_world_come",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:deep_dust_block"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.unknown_deep.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.unknown_deep.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "unknown_deep": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "jerotesvillage:unknown_deep"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "recipes": [
+      "jerotesvillage:deep_dust_craft",
+      "jerotesvillage:deep_dust_block_craft",
+      "jerotesvillage:blamer_robe_craft",
+      "jerotesvillage:deep_dust_torch_craft"
+    ]
+  }
+}

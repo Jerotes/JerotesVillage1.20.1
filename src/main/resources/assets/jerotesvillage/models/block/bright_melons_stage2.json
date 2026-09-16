@@ -1,0 +1,7 @@
+{
+  "parent": "jerotesvillage:block/stem_cross",
+  "textures": {
+    "cross": "jerotesvillage:block/bright_melons_stage2"
+  },
+  "render_type": "cutout"
+}

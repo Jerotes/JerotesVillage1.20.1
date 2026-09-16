@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "tag": "forge:ingots/copper"
+  },
+  "base": {
+    "tag": "forge:ingots/iron"
+  },
+  "addition": {
+    "tag": "forge:ingots/copper"
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_base"
+  }
+}

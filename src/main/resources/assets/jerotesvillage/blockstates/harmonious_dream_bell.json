@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jerotesvillage:block/harmonious_dream_bell_bottom"
+    },
+    "half=upper": {
+      "model": "jerotesvillage:block/harmonious_dream_bell_top"
+    }
+  }
+}

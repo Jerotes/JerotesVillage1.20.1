@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_fence",
+  "key": {
+    "a": {
+      "tag": "forge:rods/wooden"
+    },
+    "b": {
+      "item": "jerotesvillage:wonderland_planks"
+    }
+  },
+  "pattern": [
+    "bab",
+    "bab"
+  ],
+  "result": {
+    "count": 3,
+    "item": "jerotesvillage:wonderland_fence"
+  }
+}

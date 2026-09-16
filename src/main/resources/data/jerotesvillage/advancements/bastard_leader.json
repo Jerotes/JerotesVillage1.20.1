@@ -1,0 +1,81 @@
+{
+  "parent": "jerotesvillage:how_did_they_get_here",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:adventurer_helmet"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.bastard_leader.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.bastard_leader.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adventurer_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:adventurer_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "adventurer_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:adventurer_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "adventurer_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:adventurer_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "adventurer_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:adventurer_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "adventurer_boots",
+      "adventurer_chestplate",
+      "adventurer_helmet",
+      "adventurer_leggings"
+    ]
+  ],
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

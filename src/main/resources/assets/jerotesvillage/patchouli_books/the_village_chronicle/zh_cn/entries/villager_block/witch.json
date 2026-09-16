@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 女巫",
+  "icon": "jerotesvillage:villager_block_witch",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_witch",
+      "title": "村民工作台 女巫",
+      "text": "$(l:villager_profession/witch)女巫$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_witch_craft"
+    }
+  ]
+}

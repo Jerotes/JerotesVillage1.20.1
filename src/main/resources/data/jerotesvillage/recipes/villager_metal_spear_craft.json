@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    " b ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/iron"
+    },
+    "b": {
+      "tag": "forge:ingots/villager_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_spear",
+    "count": 1
+  }
+}

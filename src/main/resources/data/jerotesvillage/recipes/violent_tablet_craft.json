@@ -1,0 +1,18 @@
+{
+  "type": "jerotesvillage:tablet_pressing",
+  "category": "tablet",
+  "base": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    }
+  ],
+  "addition": [
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:violent_tablet",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "bab",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:rambler_leather_strip"
+    },
+    "b": {
+      "item": "jerotes:high_strength_string"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:wilderness_giant_chestplate",
+    "count": 1
+  }
+}

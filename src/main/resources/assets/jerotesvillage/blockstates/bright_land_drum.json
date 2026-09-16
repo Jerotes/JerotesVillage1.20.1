@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "face=floor,facing=north": {
+      "model": "jerotesvillage:block/bright_land_drum"
+    },
+    "face=floor,facing=east": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "y": 270
+    },
+    "face=wall,facing=north": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "jerotesvillage:block/bright_land_drum",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 1600,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:meror_rapier"
+    },
+    {
+      "item": "jerotesvillage:meror_chainsaw"
+    },
+    {
+      "item": "jerotesvillage:meror_drill"
+    },
+    {
+      "item": "jerotesvillage:meror_roller"
+    },
+    {
+      "item": "jerotesvillage:meror_scythe"
+    },
+    {
+      "item": "jerotesvillage:meror_charging_bow"
+    },
+    {
+      "item": "jerotesvillage:meror_shotgun"
+    },
+    {
+      "item": "jerotesvillage:meror_riot_shield"
+    },
+    {
+      "item": "jerotesvillage:meror_fire_spear"
+    },
+    {
+      "item": "jerotesvillage:meror_pilum"
+    },
+    {
+      "item": "jerotesvillage:meror_long_knife"
+    },
+    {
+      "item": "jerotesvillage:meror_oathguard_mech_sword"
+    },
+    {
+      "item": "jerotesvillage:meror_dagger"
+    },
+    {
+      "item": "jerotesvillage:meror_impact_pistol"
+    },
+    {
+      "item": "jerotesvillage:meror_standard_helmet"
+    },
+    {
+      "item": "jerotesvillage:meror_standard_chestplate"
+    },
+    {
+      "item": "jerotesvillage:meror_standard_leggings"
+    },
+    {
+      "item": "jerotesvillage:meror_standard_boots"
+    }
+  ],
+  "result": "jerotesvillage:meror_metal_ingot"
+}

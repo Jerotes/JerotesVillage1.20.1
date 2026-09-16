@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 培育者",
+  "icon": "jerotesvillage:villager_block_breeder",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_breeder",
+      "title": "村民工作台 培育者",
+      "text": "$(l:villager_profession/breeder)培育者$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_breeder_craft"
+    }
+  ]
+}

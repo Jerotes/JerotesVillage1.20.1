@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:meganose_snow_lizard_meat"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:bitter_cold_fat"
+    }
+  ]
+}

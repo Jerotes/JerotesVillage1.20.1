@@ -1,0 +1,8 @@
+{
+  "parent": "jerotesvillage:block/template_villager_metal_anvil",
+  "textures": {
+    "top": "jerotesvillage:block/villager_metal_anvil_top",
+    "medium": "jerotesvillage:block/villager_metal_anvil_medium",
+    "medium_down": "jerotesvillage:block/villager_metal_anvil_medium_down"
+  }
+}

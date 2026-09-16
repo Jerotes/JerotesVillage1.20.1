@@ -1,0 +1,98 @@
+{
+  "parent": "jerotesvillage:magic_world",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:purple_sand_hag_hair"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.want_to_escape.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.want_to_escape.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "want_to_escape": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:purple_sand_hag"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:hag_replacement/jerotesvillage_bright_melon",
+      "jerotesvillage:hag_replacement/jerotesvillage_celestial_coilvine_carpet",
+      "jerotesvillage:hag_replacement/jerotesvillage_cooked_meganose_snow_lizard_meat",
+      "jerotesvillage:hag_replacement/jerotesvillage_drought_fire_mud",
+      "jerotesvillage:hag_replacement/jerotesvillage_glitter_sand",
+      "jerotesvillage:hag_replacement/jerotesvillage_hag_eye",
+      "jerotesvillage:hag_replacement/jerotesvillage_meror_stimulin",
+      "jerotesvillage:hag_replacement/jerotesvillage_marine_reptiles_fine_scale",
+      "jerotesvillage:hag_replacement/jerotesvillage_meganose_snow_lizard_meat",
+      "jerotesvillage:hag_replacement/jerotesvillage_meror_metal_ingot",
+      "jerotesvillage:hag_replacement/jerotesvillage_ocean_gemstone",
+      "jerotesvillage:hag_replacement/jerotesvillage_ocean_gemstone_fragments",
+      "jerotesvillage:hag_replacement/jerotesvillage_pink_cactus",
+      "jerotesvillage:hag_replacement/jerotesvillage_pink_slime_ball",
+      "jerotesvillage:hag_replacement/jerotesvillage_purple_sand",
+      "jerotesvillage:hag_replacement/jerotesvillage_purple_sand_alchemy_bomb",
+      "jerotesvillage:hag_replacement/jerotesvillage_qoaiku_metal_block",
+      "jerotesvillage:hag_replacement/jerotesvillage_qoaiku_metal_ingot",
+      "jerotesvillage:hag_replacement/jerotesvillage_ruin_stone_brick_slab",
+      "jerotesvillage:hag_replacement/jerotesvillage_ruin_stone_brick_stairs",
+      "jerotesvillage:hag_replacement/jerotesvillage_ruin_stone_brick_wall",
+      "jerotesvillage:hag_replacement/jerotesvillage_ruin_stone_bricks",
+      "jerotesvillage:hag_replacement/jerotesvillage_second_round_nigrum",
+      "jerotesvillage:hag_replacement/jerotesvillage_serpon_alloy_block",
+      "jerotesvillage:hag_replacement/jerotesvillage_serpon_alloy_ingot",
+      "jerotesvillage:hag_replacement/jerotesvillage_sun_sand",
+      "jerotesvillage:hag_replacement/minecraft_bone",
+      "jerotesvillage:hag_replacement/minecraft_chest",
+      "jerotesvillage:hag_replacement/minecraft_cobblestone",
+      "jerotesvillage:hag_replacement/minecraft_diamond",
+      "jerotesvillage:hag_replacement/minecraft_dirt",
+      "jerotesvillage:hag_replacement/minecraft_fermented_spider_eye",
+      "jerotesvillage:hag_replacement/minecraft_golden_apple",
+      "jerotesvillage:hag_replacement/minecraft_gravel",
+      "jerotesvillage:hag_replacement/minecraft_ice",
+      "jerotesvillage:hag_replacement/minecraft_iron_ingot",
+      "jerotesvillage:hag_replacement/minecraft_lapis_block",
+      "jerotesvillage:hag_replacement/minecraft_lingering_potion",
+      "jerotesvillage:hag_replacement/minecraft_milk_bucket",
+      "jerotesvillage:hag_replacement/minecraft_mud",
+      "jerotesvillage:hag_replacement/minecraft_mud_bricks",
+      "jerotesvillage:hag_replacement/minecraft_phantom_membrane",
+      "jerotesvillage:hag_replacement/minecraft_potion",
+      "jerotesvillage:hag_replacement/minecraft_rabbit_foot",
+      "jerotesvillage:hag_replacement/minecraft_red_sand",
+      "jerotesvillage:hag_replacement/minecraft_rotten_flesh",
+      "jerotesvillage:hag_replacement/minecraft_sand",
+      "jerotesvillage:hag_replacement/minecraft_scute",
+      "jerotesvillage:hag_replacement/minecraft_splash_potion",
+      "jerotesvillage:hag_replacement/minecraft_tnt",
+      "jerotesvillage:hag_replacement/minecraft_wither_rose",
+      "jerotesvillage:hag_replacement/jerotesvillage_purple_sand_gecko_tail",
+      "jerotesvillage:hag_replacement/jerotesvillage_wonderlin_fake_ears",
+      "jerotesvillage:hag_replacement/minecraft_obsidian",
+      "jerotesvillage:hag_replacement/minecraft_crying_obsidian",
+      "jerotesvillage:hag_replacement/minecraft_soul_soil",
+      "jerotesvillage:hag_replacement/minecraft_soul_sand",
+      "jerotesvillage:hag_replacement/jerotesvillage_ominous_troch",
+      "jerotesvillage:hag_replacement/minecraft_bone_block"
+    ]
+  }
+}

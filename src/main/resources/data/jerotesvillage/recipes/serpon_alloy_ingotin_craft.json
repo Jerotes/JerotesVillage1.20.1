@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/serpon_alloy"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_alloy_ingot",
+    "count": 1
+  }
+}

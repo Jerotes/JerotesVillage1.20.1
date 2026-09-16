@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aca",
+    "dbd",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "jerotesvillage:villager_metal_block"
+    },
+    "c": {
+      "item": "minecraft:comparator"
+    },
+    "d": {
+      "tag": "forge:gems/lapis"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:carved_iron_golem_core",
+    "count": 1
+  }
+}

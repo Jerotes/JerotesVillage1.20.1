@@ -1,0 +1,8 @@
+{
+  "asset_id": "jerotesvillage:serpent_dominater",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.jerotesvillage.serpent_dominater"
+  },
+  "template_item": "jerotesvillage:serpent_dominater_armor_trim_smithing_template"
+}

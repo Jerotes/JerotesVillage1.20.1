@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 13648021,
+    "separation": 64,
+    "spacing": 192
+  },
+  "structures": [
+    {
+      "structure": "jerotesvillage:witch_residence",
+      "weight": 1
+    }
+  ]
+}

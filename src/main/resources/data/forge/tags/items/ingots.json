@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:ingots/villager_metal",
+    "#forge:ingots/qoaiku_metal",
+    "#forge:ingots/serpon_alloy",
+    "#forge:ingots/meror_metal",
+    "#forge:ingots/refine_meror_metal"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "jerotesvillage:block/base_carved_villager_concertina_wire",
+  "textures": {
+    "all": "jerotesvillage:block/carved_villager_concertina_wire",
+    "particle": "jerotesvillage:block/carved_villager_concertina_wire",
+    "0": "jerotesvillage:block/carved_villager_concertina_wire"
+  },
+  "render_type": "cutout"
+}

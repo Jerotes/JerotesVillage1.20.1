@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotes:high_strength_string"
+    },
+    "b": {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:virtual_cave_fishing_net",
+    "count": 1
+  }
+}

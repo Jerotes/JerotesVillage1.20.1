@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_impact_pistol",
+    "particle": "jerotesvillage:item/meror_impact_pistol"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/meror_impact_pistol_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/meror_impact_pistol_model",
+      "particle": "jerotesvillage:item/meror_impact_pistol"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_meror_impact_pistol_fine": 1
+      },
+      "model": "jerotesvillage:item/meror_impact_pistol_fine"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_impact_pistol"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_impact_pistol"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_impact_pistol"
+      },
+      "gui_light": "front"
+    }
+  }
+}

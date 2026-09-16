@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    },
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    },
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    },
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    },
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    },
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    },
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    },
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    },
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:flavorless_melon"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:pink_slime_ball"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:pink_slime_block",
+    "count": 1
+  }
+}

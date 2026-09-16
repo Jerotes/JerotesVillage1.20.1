@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Chef",
+  "icon": "jerotesvillage:villager_block_chef",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_chef",
+      "title": "Villager Block Chef",
+      "text": "$(l:villager_profession/chef)Chef$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_chef_craft"
+    }
+  ]
+}

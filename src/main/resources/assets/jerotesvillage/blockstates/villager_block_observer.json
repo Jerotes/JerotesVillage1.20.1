@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "jerotesvillage:block/villager_block_observer"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:villager_metal_block",
+    "jerotesvillage:second_round_world_block",
+    "jerotesvillage:ocean_gemstone_block",
+    "jerotesvillage:enchanted_stone",
+    "jerotesvillage:carved_villager_concertina_wire",
+    "jerotesvillage:carved_lodestone",
+    "jerotesvillage:serpon_alloy_block",
+    "jerotesvillage:serpon_classical_bomb",
+    "jerotesvillage:qoaiku_metal_block",
+    "jerotesvillage:resurrecter_coffin",
+    "jerotesvillage:resurrecter_empty_coffin",
+    "jerotesvillage:sediment_coffin",
+    "jerotesvillage:carved_bricks",
+    "jerotesvillage:carved_brick_stairs",
+    "jerotesvillage:carved_brick_slab",
+    "jerotesvillage:carved_brick_wall"
+  ]
+}

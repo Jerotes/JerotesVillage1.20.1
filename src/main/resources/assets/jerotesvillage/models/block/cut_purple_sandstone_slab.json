@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "jerotesvillage:block/purple_sandstone_top",
+    "side": "jerotesvillage:block/cut_purple_sandstone",
+    "top": "jerotesvillage:block/purple_sandstone_top"
+  }
+}

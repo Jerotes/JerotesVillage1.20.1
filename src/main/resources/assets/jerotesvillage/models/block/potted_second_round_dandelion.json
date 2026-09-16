@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "jerotesvillage:block/second_round_dandelion"
+  },
+  "render_type": "cutout"
+}

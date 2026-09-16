@@ -1,0 +1,37 @@
+{
+  "parent": "jerotesvillage:how_did_they_get_here",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:second_round_world_teleport_stone"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.round_trip_freely.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.round_trip_freely.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crisp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:second_round_world_teleport_stone"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "压片机",
+  "icon": "jerotesvillage:villager_block_physician",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_physician",
+      "title": "压片机",
+      "text": "$(l:villager_profession/physician)医师$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_physician_craft"
+    }
+  ]
+}

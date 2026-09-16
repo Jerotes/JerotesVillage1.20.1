@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/meror_dagger",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_dagger_use"
+  }
+}

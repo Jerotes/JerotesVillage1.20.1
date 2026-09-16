@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "jerotesvillage:block/suspicious_sun_sand_0"
+  }
+}

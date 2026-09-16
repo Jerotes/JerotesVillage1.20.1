@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    },
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    },
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    },
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    },
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    },
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    },
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    },
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    },
+    {
+      "item": "jerotesvillage:second_round_aloe_leaf"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:second_round_aloe_bundle"
+  }
+}

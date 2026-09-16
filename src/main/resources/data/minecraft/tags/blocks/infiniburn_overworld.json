@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:drought_fire_stone",
+    "jerotesvillage:drought_fire_mud",
+    "jerotesvillage:drought_fire_bricks",
+    "jerotesvillage:drought_fire_brick_stairs",
+    "jerotesvillage:drought_fire_brick_slab",
+    "jerotesvillage:drought_fire_brick_wall"
+  ]
+}

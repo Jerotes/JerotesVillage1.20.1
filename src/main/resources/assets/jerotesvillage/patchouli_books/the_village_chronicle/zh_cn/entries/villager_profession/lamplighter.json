@@ -1,0 +1,28 @@
+{
+  "name": "点灯人",
+  "icon": "minecraft:lantern",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_lamplighter\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:lantern",
+      "title": "点灯人"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_lamplighter\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_lamplighter",
+      "title": "村民工作台 点灯人",
+      "text": "$(l:villager_block/lamplighter)村民工作台 点灯人$()"
+    }
+  ]
+}

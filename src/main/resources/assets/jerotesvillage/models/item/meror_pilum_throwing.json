@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_pilum_use",
+    "particle": "jerotesvillage:item/meror_pilum_use"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/meror_pilum_throwing_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/meror_pilum_use_model",
+      "particle": "jerotesvillage:item/meror_pilum_use"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_pilum_use"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_pilum_use"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_pilum_use"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Dye Merchant",
+  "icon": "minecraft:red_dye",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_dye_merchant\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:red_dye",
+      "title": "Dye Merchant"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_dye_merchant\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_dye_merchant",
+      "title": "Villager Block Dye Merchant",
+      "text": "$(l:villager_block/dye_merchant)Villager Block Dye Merchant$()"
+    }
+  ]
+}

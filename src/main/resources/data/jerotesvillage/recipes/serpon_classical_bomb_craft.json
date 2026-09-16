@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aea",
+    "cfc",
+    "dbd"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    },
+    "b": {
+      "tag": "forge:storage_blocks/gold"
+    },
+    "c": {
+      "item": "minecraft:tnt"
+    },
+    "d": {
+      "item": "jerotesvillage:drought_fire_stone"
+    },
+    "e": {
+      "item": "jerotesvillage:firelight_stone"
+    },
+    "f": {
+      "tag": "forge:storage_blocks/diamond"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_classical_bomb",
+    "count": 1
+  }
+}

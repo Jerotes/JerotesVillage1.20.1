@@ -1,0 +1,18 @@
+{
+  "__comment": "二轮世界群系",
+  "replace": false,
+  "values": [
+    "jerotesvillage:bitter_cold",
+    "jerotesvillage:purple_desert",
+    "jerotesvillage:endless_ocean",
+    "jerotesvillage:bright_grassland",
+    "jerotesvillage:drought_fire",
+    "jerotesvillage:harmonious_wonderland",
+    "jerotesvillage:sand_beach",
+    "jerotesvillage:damaged_ruins",
+    "jerotesvillage:unknown_deep",
+    "jerotesvillage:virtual_cave",
+    "jerotesvillage:wilderness_woodland",
+    "jerotesvillage:plague_zone"
+  ]
+}

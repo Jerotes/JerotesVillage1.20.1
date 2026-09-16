@@ -1,0 +1,39 @@
+{
+  "parent": "jerotesvillage:be_careful_of_vibrations",
+  "display": {
+    "icon": {
+      "item": "jerotes:anesthetic_javelin"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.survival_evolved.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.survival_evolved.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "survival_evolved": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate":{
+              "type": "jerotesvillage:archnosed_hornbeast"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

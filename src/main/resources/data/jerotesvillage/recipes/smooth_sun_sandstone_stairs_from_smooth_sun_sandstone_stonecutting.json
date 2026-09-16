@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jerotesvillage:smooth_sun_sandstone"
+  },
+  "result": "jerotesvillage:smooth_sun_sandstone_stairs"
+}

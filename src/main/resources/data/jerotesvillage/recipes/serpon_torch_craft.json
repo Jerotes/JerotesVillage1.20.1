@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": [
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "minecraft:charcoal"
+      },
+      {
+        "item": "jerotesvillage:firelight_stone"
+      }
+    ],
+    "b": {
+      "tag": "forge:ingots/serpon_alloy"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "jerotesvillage:serpon_torch"
+  }
+}

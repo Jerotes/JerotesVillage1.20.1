@@ -1,0 +1,28 @@
+{
+  "name": "厨师",
+  "icon": "minecraft:apple",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_chef\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:apple",
+      "title": "厨师"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_chef\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_chef",
+      "title": "村民工作台 厨师",
+      "text": "$(l:villager_block/chef)村民工作台 厨师$()"
+    }
+  ]
+}

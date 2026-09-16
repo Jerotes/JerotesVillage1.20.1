@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/ancient_second_rounder_bow",
+  "textures": {
+    "layer0": "jerotesvillage:item/ancient_second_rounder_bow_pulling_1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:purple_sand_gecko_tail"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:cohort_hag_spawn_egg"
+    }
+  ]
+}

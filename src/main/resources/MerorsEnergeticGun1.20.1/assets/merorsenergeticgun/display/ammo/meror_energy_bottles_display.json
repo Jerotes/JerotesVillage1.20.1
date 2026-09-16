@@ -1,0 +1,25 @@
+{
+  "slot": "merorsenergeticgun:ammo/slot/meror_energy_bottles",
+  "model": "merorsenergeticgun:ammo/meror_energy_bottles",
+  "texture": "merorsenergeticgun:ammo/uv/meror_energy_bottles",
+  "tracer_color": "#ff8190",
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "ground": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "fixed": [
+        1.5,
+        1.5,
+        1.5
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jerotesvillage:item/gemstone_throwing_knives_0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_gemstone_throwing_knives": 1
+      },
+      "model": "jerotesvillage:item/gemstone_throwing_knives_1"
+    },
+    {
+      "predicate": {
+       "jerotesvillage_gemstone_throwing_knives": 2
+      },
+    "model": "jerotesvillage:item/gemstone_throwing_knives_2"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_gemstone_throwing_knives": 3
+      },
+      "model": "jerotesvillage:item/gemstone_throwing_knives_3"
+    }
+  ]
+}

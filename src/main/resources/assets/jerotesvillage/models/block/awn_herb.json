@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/awn_herb",
+    "particle": "jerotesvillage:block/awn_herb"
+  },
+  "render_type": "cutout"
+}

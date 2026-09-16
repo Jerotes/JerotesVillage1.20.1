@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Horseman",
+  "icon": "jerotesvillage:villager_block_horseman",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_horseman",
+      "title": "Villager Block Horseman",
+      "text": "$(l:villager_profession/horseman)Horseman$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_horseman_craft"
+    }
+  ]
+}

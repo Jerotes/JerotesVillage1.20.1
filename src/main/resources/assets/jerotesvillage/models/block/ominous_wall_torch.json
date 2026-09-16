@@ -1,0 +1,8 @@
+{
+  "parent": "jerotesvillage:block/base_ominous_wall_torch",
+  "textures": {
+    "0": "jerotesvillage:block/ominous_torch",
+    "particle": "jerotesvillage:block/ominous_torch_particle"
+  },
+  "render_type": "cutout"
+}

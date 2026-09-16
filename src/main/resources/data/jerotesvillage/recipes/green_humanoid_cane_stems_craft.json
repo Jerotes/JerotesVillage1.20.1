@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:green_humanoid_cane"
+    },
+    {
+      "item": "jerotesvillage:green_humanoid_cane"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:green_humanoid_cane_stems",
+    "count": 2
+  }
+}

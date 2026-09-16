@@ -1,0 +1,59 @@
+{
+  "parent": "jerotesvillage:meror_metal",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:refine_meror_metal_ingot"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.monument.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.monument.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "monument": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:refine_meror_metal_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:refine_meror_metal_ingot_craft",
+      "jerotesvillage:refine_meror_metal_block_craft",
+      "jerotesvillage:meror_metal_stick_refine_craft",
+      "jerotesvillage:meror_rapier_craft",
+      "jerotesvillage:meror_chainsaw_craft",
+      "jerotesvillage:mmeror_drill_craft",
+      "jerotesvillage:meror_roller_craft",
+      "jerotesvillage:meror_scythe_craft",
+      "jerotesvillage:meror_charging_bow_craft",
+      "jerotesvillage:meror_shotgun_craft",
+      "jerotesvillage:meror_bullet_craft",
+      "jerotesvillage:meror_riot_shield_craft",
+      "jerotesvillage:meror_fire_spear_craft",
+      "jerotesvillage:meror_long_knife_craft",
+      "jerotesvillage:meror_dagger_craft",
+      "jerotesvillage:meror_impact_pistol_craft",
+      "jerotesvillage:meror_metal_ingot_from_meror_blast",
+      "jerotesvillage:meror_standard_upgrade_smithing_template_craft",
+      "jerotesvillage:meror_standard_helmet_smith",
+      "jerotesvillage:meror_standard_chestplate_smith",
+      "jerotesvillage:meror_standard_leggings_smith",
+      "jerotesvillage:meror_standard_boots_smith"
+    ]
+  }
+}

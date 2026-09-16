@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "tag": "forge:storage_blocks/villager_metal"
+  },
+  "result": "jerotesvillage:carved_bricks"
+}

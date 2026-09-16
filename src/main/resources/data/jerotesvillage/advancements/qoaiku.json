@@ -1,0 +1,62 @@
+{
+  "parent": "jerotesvillage:endless_ocean",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:qoaiku_metal_nugget"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.qoaiku.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.qoaiku.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "meror_metal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:qoaiku_metal_nugget"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:qoaiku_metal_ingotin_craft",
+      "jerotesvillage:qoaiku_metal_nugget_craft",
+      "jerotesvillage:qoaiku_metal_ingot_craft",
+      "jerotesvillage:qoaiku_metal_block_craft",
+      "jerotesvillage:qoaiku_dagger_craft",
+      "jerotesvillage:qoaiku_gavel_craft",
+      "jerotesvillage:qoaiku_trident_craft",
+      "jerotesvillage:qoaiku_knife_craft",
+      "jerotesvillage:qoaiku_axe_craft",
+      "jerotesvillage:qoaiku_pickaxe_craft",
+      "jerotesvillage:qoaiku_shovel_craft",
+      "jerotesvillage:qoaiku_hoe_craft",
+      "jerotesvillage:qoaiku_spear_craft",
+      "jerotesvillage:qoaiku_pike_craft",
+      "jerotesvillage:qoaiku_round_shield_craft",
+      "jerotesvillage:qoaiku_spike_craft",
+      "jerotesvillage:qoaiku_war_beast_armor_craft",
+      "jerotesvillage:qoaiku_giant_beast_armor_craft",
+      "jerotesvillage:qoaiku_helmet_craft",
+      "jerotesvillage:qoaiku_chestplate_craft",
+      "jerotesvillage:qoaiku_leggings_craft",
+      "jerotesvillage:qoaiku_boots_craft",
+      "jerotesvillage:qoaiku_fishing_rod_craft",
+      "jerotesvillage:qoaiku_metal_nugget_from_smelt",
+      "jerotesvillage:qoaiku_metal_nugget_from_blast"
+    ]
+  }
+}

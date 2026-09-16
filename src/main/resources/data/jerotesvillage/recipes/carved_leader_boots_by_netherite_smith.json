@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "tag": "forge:ingots/villager_metal"
+  },
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "tag": "forge:ingots/villager_metal"
+  },
+  "result": {
+    "item": "jerotesvillage:carved_leader_boots"
+  }
+}

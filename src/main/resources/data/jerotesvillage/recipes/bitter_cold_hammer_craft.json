@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    " c ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:bitter_cold_firm_ice"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "jerotesvillage:ice_rock"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:bitter_cold_hammer",
+    "count": 1
+  }
+}

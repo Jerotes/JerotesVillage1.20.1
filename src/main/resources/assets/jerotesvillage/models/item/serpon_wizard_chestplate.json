@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/serpon_wizard_chestplate",
+    "layer1": "jerotesvillage:item/serpon_wizard_chestplate_overlay"
+  }
+}

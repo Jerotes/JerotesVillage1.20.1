@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jerotesvillage:block/meror_projection_table"
+    },
+    "facing=east": {
+      "model": "jerotesvillage:block/meror_projection_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jerotesvillage:block/meror_projection_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jerotesvillage:block/meror_projection_table",
+      "y": 270
+    }
+  }
+}

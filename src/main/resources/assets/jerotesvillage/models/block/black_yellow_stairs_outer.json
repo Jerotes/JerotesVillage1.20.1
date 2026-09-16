@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "jerotesvillage:block/black_yellow_planks",
+    "side": "jerotesvillage:block/black_yellow_planks",
+    "top": "jerotesvillage:block/black_yellow_planks"
+  }
+}

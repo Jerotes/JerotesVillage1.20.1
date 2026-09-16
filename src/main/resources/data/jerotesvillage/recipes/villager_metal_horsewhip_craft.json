@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    " c ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotes:high_strength_string"
+    },
+    "b": {
+      "tag": "forge:ingots/villager_metal"
+    },
+    "c": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_horsewhip",
+    "count": 1
+  }
+}

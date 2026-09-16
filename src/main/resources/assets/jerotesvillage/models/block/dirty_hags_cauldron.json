@@ -1,0 +1,8 @@
+{
+  "parent": "jerotesvillage:block/base_hags_cauldron",
+  "textures": {
+    "particle": "jerotesvillage:block/dirty_hags_cauldron_particle",
+    "0": "jerotesvillage:block/dirty_hags_cauldron"
+  },
+  "render_type": "cutout"
+}

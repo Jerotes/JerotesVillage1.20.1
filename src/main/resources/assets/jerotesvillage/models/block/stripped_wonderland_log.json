@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jerotesvillage:block/stripped_wonderland_log_top",
+    "side": "jerotesvillage:block/stripped_wonderland_log"
+  }
+}

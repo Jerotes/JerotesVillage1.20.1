@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 42442142,
+    "separation": 16,
+    "spacing": 64
+  },
+  "structures": [
+    {
+      "structure": "jerotesvillage:wilderness_giant_hunter_camp",
+      "weight": 1
+    }
+  ]
+}

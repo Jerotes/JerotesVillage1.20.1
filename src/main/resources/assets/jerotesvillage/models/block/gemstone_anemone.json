@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/gemstone_anemone",
+    "particle": "jerotesvillage:block/gemstone_anemone"
+  },
+  "render_type": "cutout"
+}

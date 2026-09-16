@@ -1,0 +1,28 @@
+{
+  "name": "Villagehead",
+  "icon": "minecraft:bell",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_villagehead\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:bell",
+      "title": "Villagehead"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_villagehead\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_villagehead",
+      "title": "Villager Block Villagehead$",
+      "text": "$(l:villager_block/villagehead)Villager Block Villagehead$$()"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:snow_frozen_soil"
+    },
+    {
+      "item": "jerotesvillage:second_rounder_map"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:bitter_cold_igloo_map",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:storage_blocks/villager_metal",
+    "#forge:storage_blocks/qoaiku_metal",
+    "#forge:storage_blocks/serpon_alloy",
+    "#forge:storage_blocks/meror_metal",
+    "#forge:storage_blocks/refine_meror_metal"
+  ]
+}

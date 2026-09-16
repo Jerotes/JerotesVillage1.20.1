@@ -1,0 +1,15 @@
+{
+  "name": "info.jerotesvillage.the_village_chronicle.title",
+  "landing_text": "info.jerotesvillage.the_village_chronicle.landing",
+  "book_texture": "jerotesvillage:textures/gui/the_village_chronicle.png",
+  "version": 1,
+  "model": "jerotesvillage:the_village_chronicle",
+  "show_toasts": true,
+  "creative_tab": "jerotesvillage:jerotesvillage_tab",
+  "text_overflow_mode": "overflow",
+  "use_resource_pack": true,
+  "i18n": true,
+  "nameplate_color": "fdaf2c",
+  "dont_generate_book": true,
+  "custom_book_item": "jerotesvillage:the_village_chronicle"
+}

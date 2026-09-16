@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "jerotesvillage:block/black_yellow_door_bottom",
+    "top": "jerotesvillage:block/black_yellow_door_top"
+  },
+  "elements": [
+    {
+      "from": [0, 4, 0],
+      "to": [3, 16, 16],
+      "rotation": {"angle": 0, "axis": "y", "origin": [0, 1, 16]},
+      "faces": {
+        "north": {"uv": [3, 0, 0, 12], "texture": "#bottom"},
+        "east": {"uv": [16, 0, 0, 12], "texture": "#bottom"},
+        "south": {"uv": [3, 0, 0, 12], "texture": "#bottom"},
+        "west": {"uv": [0, 0, 16, 12], "texture": "#bottom"},
+        "up": {"uv": [16, 9, 0, 12], "rotation": 270, "texture": "#bottom"},
+        "down": {"uv": [16, 9, 0, 12], "rotation": 90, "texture": "#bottom"}
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "jerotesvillage:ocean_gemstone",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:gemstone_malignasaur_scale"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.lepidosauria.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.lepidosauria.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lepidosauria": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:gemstone_malignasaur"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

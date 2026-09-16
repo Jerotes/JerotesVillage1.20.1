@@ -1,0 +1,35 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:gemstone_throwing_knives_shoot",
+    "jerotesvillage:meror_fire",
+    "jerotesvillage:meror_shock_wave",
+    "jerotesvillage:purple_sand_alchemy_bomb",
+    "jerotesvillage:ominous_bomb",
+    "jerotesvillage:purple_sand_explosive_alchemy_bomb",
+
+    "jerotesvillage:throwing_stubborn_stone",
+    "jerotesvillage:villager_metal_throwing_ball",
+    "jerotesvillage:anesthetic_throwing_ball",
+    "jerotesvillage:rotten_bright_melon",
+    "jerotesvillage:vine_throwing_ball",
+    "jerotesvillage:glass_throwing_ball",
+    "jerotesvillage:potion_throwing_ball",
+    "jerotesvillage:ice_rock_throwing_ball",
+    "jerotesvillage:virtual_cave_crystal_throwing_ball",
+
+    "jerotesvillage:virtual_cave_fishing_net",
+    "jerotesvillage:meror_rete",
+    "jerotesvillage:bright_bola",
+    "jerotesvillage:meror_rapier_shoot",
+    "jerotesvillage:meror_scythe_shoot",
+    "jerotesvillage:serpon_dart",
+    "jerotesvillage:serpon_fire_charge",
+    "jerotesvillage:meror_bullet",
+    "jerotesvillage:intense_bombing",
+    "jerotesvillage:meror_bomb",
+    "jerotesvillage:carved_allay_amethyst",
+    "jerotesvillage:zsiein_sonic",
+    "jerotesvillage:serpon_signal_bullet"
+  ]
+}

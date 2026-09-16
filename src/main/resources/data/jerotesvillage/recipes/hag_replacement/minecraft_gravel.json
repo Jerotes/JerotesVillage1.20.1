@@ -1,0 +1,22 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:gravel"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "jerotesvillage:gemstone_gravel"
+    }
+  ]
+}

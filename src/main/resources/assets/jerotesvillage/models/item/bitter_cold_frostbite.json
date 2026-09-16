@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/bitter_cold_frostbite"
+  }
+}

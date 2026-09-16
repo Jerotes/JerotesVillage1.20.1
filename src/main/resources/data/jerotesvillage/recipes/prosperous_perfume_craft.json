@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bbb",
+    "cac",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:mysterest_perfume"
+    },
+    "b": {
+      "item": "jerotesvillage:red_lush"
+    },
+    "c": {
+      "item": "jerotesvillage:harmonious_dream_bell"
+    },
+    "d": {
+      "item": "jerotesvillage:wonderland_flower"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:prosperous_perfume",
+    "count": 1
+  }
+}

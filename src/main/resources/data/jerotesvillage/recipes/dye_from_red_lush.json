@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "red_dye",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:red_lush"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_dye"
+  }
+}

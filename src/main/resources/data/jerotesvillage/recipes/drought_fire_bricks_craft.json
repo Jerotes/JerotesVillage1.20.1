@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:drought_fire_stone"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "jerotesvillage:drought_fire_bricks"
+  }
+}

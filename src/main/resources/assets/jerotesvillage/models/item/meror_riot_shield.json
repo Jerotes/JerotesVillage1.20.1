@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_riot_shield",
+    "particle": "jerotesvillage:item/meror_riot_shield"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/meror_riot_shield_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/meror_riot_shield_model",
+      "particle": "jerotesvillage:item/meror_riot_shield"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/meror_riot_shield_blocking"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_riot_shield"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_riot_shield"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_riot_shield"
+      },
+      "gui_light": "front"
+    }
+  }
+}

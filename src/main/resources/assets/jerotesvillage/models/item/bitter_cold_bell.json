@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/bitter_cold_bell",
+    "particle": "jerotesvillage:item/bitter_cold_bell"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/bitter_cold_bell_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/bitter_cold_bell_model",
+      "particle": "jerotesvillage:item/bitter_cold_bell"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/bitter_cold_bell_use"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bitter_cold_bell"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bitter_cold_bell"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bitter_cold_bell"
+      },
+      "gui_light": "front"
+    }
+  }
+}

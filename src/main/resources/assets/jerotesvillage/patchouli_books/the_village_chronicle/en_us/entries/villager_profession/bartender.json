@@ -1,0 +1,28 @@
+{
+  "name": "Bartender",
+  "icon": "minecraft:sweet_berries",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_bartender\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:sweet_berries",
+      "title": "Bartender"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_bartender\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_bartender",
+      "title": "Villager Block Bartender",
+      "text": "$(l:villager_block/bartender)Villager Block Bartender$()"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_threshold_provider",
+            "default_state": {
+              "Name": "jerotesvillage:wonderland_flower"
+            },
+            "high_chance": 0.33333334,
+            "high_states": [
+              {
+                "Name": "jerotesvillage:magenta_mums"
+              },
+              {
+                "Name": "jerotesvillage:red_lush"
+              },
+              {
+                "Name": "jerotesvillage:wonderland_flower"
+              },
+              {
+                "Name": "jerotesvillage:hearsay_grass"
+              },
+              {
+                "Name": "jerotesvillage:awn_herb"
+              },
+              {
+                "Name": "jerotesvillage:harmonious_dream_bell"
+              }
+            ],
+            "low_states": [
+              {
+                "Name": "jerotesvillage:magenta_mums"
+              },
+              {
+                "Name": "jerotesvillage:red_lush"
+              },
+              {
+                "Name": "jerotesvillage:wonderland_flower"
+              },
+              {
+                "Name": "jerotesvillage:hearsay_grass"
+              },
+              {
+                "Name": "jerotesvillage:awn_herb"
+              },
+              {
+                "Name": "jerotesvillage:harmonious_dream_bell"
+              }
+            ],
+            "noise": {
+              "amplitudes": [
+                1.0
+              ],
+              "firstOctave": 0
+            },
+            "scale": 0.005,
+            "seed": 2345,
+            "threshold": -0.8
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 64,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

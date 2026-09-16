@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "jerotesvillage:block/black_yellow_planks"
+  }
+}

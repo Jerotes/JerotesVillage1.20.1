@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "jerotesvillage:bitter_cod"
+  },
+  "result": "jerotesvillage:cooked_bitter_cod"
+}

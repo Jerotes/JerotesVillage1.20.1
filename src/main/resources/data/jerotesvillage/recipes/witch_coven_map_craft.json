@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:purple_sand"
+    },
+    {
+      "item": "jerotesvillage:second_rounder_map"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:witch_coven_map",
+    "count": 1
+  }
+}

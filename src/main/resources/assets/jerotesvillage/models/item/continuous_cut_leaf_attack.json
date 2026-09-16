@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:item/continuous_cut_leaf",
+  "textures": {
+    "layer0": "jerotesvillage:item/continuous_cut_leaf"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [-34, -163, 66],
+      "translation": [3.75, 7, -5],
+      "scale": [1.65, 1.65, 1.65]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [-34, 27, -66],
+      "translation": [3.75, 7, -5],
+      "scale": [1.65, 1.65, 1.65]
+    },
+    "firstperson_righthand": {
+      "rotation": [92, 9, -103],
+      "translation": [7 , 4, -9.25],
+      "scale": [ 1.65, 1.65, 1.65 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [92, -171, 103],
+      "translation": [7, 4, -9.25],
+      "scale": [ 1.65, 1.65, 1.65 ]
+    }
+  }
+}

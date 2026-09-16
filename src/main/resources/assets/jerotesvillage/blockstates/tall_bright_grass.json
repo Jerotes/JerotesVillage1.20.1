@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "jerotesvillage:block/tall_bright_grass_bottom"
+    },
+    "half=upper": {
+      "model": "jerotesvillage:block/tall_bright_grass_top"
+    }
+  }
+}

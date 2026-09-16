@@ -1,0 +1,42 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/lucky_club",
+    "particle": "jerotesvillage:item/lucky_club"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/lucky_club_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/lucky_club_model",
+      "particle": "jerotesvillage:item/lucky_club"
+    }
+  },
+  "overrides": [],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/lucky_club",
+        "particle": "jerotesvillage:item/lucky_club"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/lucky_club",
+        "particle": "jerotesvillage:item/lucky_club"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/lucky_club",
+        "particle": "jerotesvillage:item/lucky_club"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/iron"
+    },
+    "b": {
+      "item": "jerotesvillage:explorer_tracking_record"
+    },
+    "c": {
+      "item": "jerotesvillage:illager_signal_light"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:ominous_banner_raid_tag_deployer",
+    "count": 1
+  }
+}

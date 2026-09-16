@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "hanging_sign",
+  "pattern": [
+    "b b",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:stripped_bitter_cold_log"
+    },
+    "b": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "count": 6,
+    "item": "jerotesvillage:bitter_cold_hanging_sign"
+  }
+}

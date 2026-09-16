@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/malignasaur_bait_fishgig",
+    "particle": "jerotesvillage:item/malignasaur_bait_fishgig"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/malignasaur_fishgig_throwing_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/malignasaur_bait_fishgig_model",
+      "particle": "jerotesvillage:item/malignasaur_bait_fishgig"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/malignasaur_bait_fishgig"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/malignasaur_bait_fishgig"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/malignasaur_bait_fishgig"
+      },
+      "gui_light": "front"
+    }
+  }
+}

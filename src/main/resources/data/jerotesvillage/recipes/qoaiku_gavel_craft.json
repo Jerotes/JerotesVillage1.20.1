@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/qoaiku_metal"
+    },
+    "b": {
+      "item": "jerotes:simple_hammer"
+    },
+    "c": {
+      "tag": "forge:ingots/copper"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:qoaiku_gavel",
+    "count": 1
+  }
+}

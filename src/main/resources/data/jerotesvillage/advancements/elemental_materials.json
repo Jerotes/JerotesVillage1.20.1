@@ -1,0 +1,69 @@
+{
+  "parent": "jerotesvillage:jerotes_adventure",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:lightning_worm_chitin"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.elemental_materials.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.elemental_materials.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "elemental_materials_frost": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:frost_yeti_hair"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "elemental_materials_lightning": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:lightning_worm_chitin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "elemental_materials_fire": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:fire_secretor_adhesive"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "elemental_materials_frost",
+      "elemental_materials_lightning",
+      "elemental_materials_fire"
+    ]
+  ],
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:magicka_scale_upgrade_smithing_template_craft"
+    ]
+  }
+}

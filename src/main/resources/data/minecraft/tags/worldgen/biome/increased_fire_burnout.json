@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:bitter_cold",
+    "jerotesvillage:damaged_ruins",
+    "jerotesvillage:wilderness_woodland",
+    "jerotesvillage:plague_zone"
+  ]
+}

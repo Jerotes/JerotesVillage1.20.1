@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "eae",
+    "dbd",
+    "dcd"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:villager_block"
+    },
+    "b": {
+      "item": "minecraft:feather"
+    },
+    "c": {
+      "tag": "minecraft:planks"
+    },
+    "d": {
+      "tag": "forge:ingots/iron"
+    },
+    "e": {
+      "tag": "forge:gems/emerald"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_block_messenger",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:giant_monster_horn"
+  },
+  "base": {
+    "item": "jerotesvillage:giant_monster_helmet"
+  },
+  "addition": {
+    "item": "jerotesvillage:giant_monster_horn"
+  },
+  "result": {
+    "item": "jerotesvillage:giant_monster_horned_helmet"
+  }
+}

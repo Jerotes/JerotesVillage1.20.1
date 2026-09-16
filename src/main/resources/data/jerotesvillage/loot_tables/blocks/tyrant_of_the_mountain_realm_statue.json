@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:tyrant_of_the_mountain_realm_statue",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "jerotesvillage:tyrant_of_the_mountain_realm_statue",
+              "properties": {
+                "part": "0"
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "jerotesvillage:blocks/tyrant_of_the_mountain_realm_statue"
+}

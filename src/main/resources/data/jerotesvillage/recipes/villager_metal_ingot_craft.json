@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/villager_metal"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:villager_metal_ingot",
+    "count": 9
+  }
+}

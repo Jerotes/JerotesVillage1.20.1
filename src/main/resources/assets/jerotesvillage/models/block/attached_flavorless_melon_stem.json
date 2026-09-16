@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stem_fruit",
+  "textures": {
+    "stem": "jerotesvillage:block/flavorless_melon_stem",
+    "upperstem": "jerotesvillage:block/attached_flavorless_melon_stem"
+  },
+  "render_type": "cutout"
+}

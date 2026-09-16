@@ -1,0 +1,28 @@
+{
+  "name": "Observer",
+  "icon": "minecraft:book",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_observer\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:book",
+      "title": "Observer"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_observer\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_observer",
+      "title": "Villager Block Observer",
+      "text": "$(l:villager_block/observer)Villager Block Observer$()"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:serpon_powerhouse_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "jerotesvillage:serpon_helmet"
+  },
+  "addition": {
+    "tag": "forge:ingots/serpon_alloy"
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_powerhouse_helmet"
+  }
+}

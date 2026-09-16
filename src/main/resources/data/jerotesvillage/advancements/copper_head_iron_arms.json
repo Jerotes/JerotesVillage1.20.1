@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:golden_armor_tyrant",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:mountain_realm_nine_ringed_dao"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.copper_head_iron_arms.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.copper_head_iron_arms.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "copper_head_iron_arms": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

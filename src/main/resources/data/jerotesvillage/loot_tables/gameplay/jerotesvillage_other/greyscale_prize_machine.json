@@ -1,0 +1,323 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:arc_fang",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:bulge_rod",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:bulge_powder",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:rambler_leather",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:rambler_skin",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ocean_gemstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ocean_gemstone_fragments",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:gemstone_throwing_knives",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:malignasaur_teeth",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:malignasaur_arrow",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:meror_token_m",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:meror_token_e",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:second_rounder_map",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:second_rounder_gem",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:horned_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:giant_monster_hair",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:giant_monster_horn",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotes:resilient_bandage",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:myopia_glasses",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:presbyopic_glasses",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:sunglasses",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:bright_grass",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:wilderness_wood_core",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:green_humanoid_cane_stems",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:slider_mucus",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotes:high_strength_string",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:red_lush",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotes:simple_javelin",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotes:beast_armor_base",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotes:war_beast_armor_base",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotes:giant_beast_armor_base",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_ingot",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:quartz",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coal",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:4}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:5}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:6}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:7}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.24
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:8}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.24
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:9}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.144
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:10}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.144
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:11}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.0432
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:12}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.0432
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:greyscale",
+          "weight": 6
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "jerotesvillage:gameplay/jerotesvillage_other/greyscale_prize_machine"
+}

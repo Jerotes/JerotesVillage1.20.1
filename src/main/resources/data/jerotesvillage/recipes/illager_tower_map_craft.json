@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:stone_bricks"
+    },
+    {
+      "item": "jerotesvillage:second_rounder_map"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:illager_tower_map",
+    "count": 1
+  }
+}

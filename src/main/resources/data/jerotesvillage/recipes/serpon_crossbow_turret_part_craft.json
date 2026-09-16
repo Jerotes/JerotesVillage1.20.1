@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aca",
+    "cbc",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/serpon_alloy"
+    },
+    "b": {
+      "item": "jerotesvillage:serpon_crossbow_turret_part"
+    },
+    "c": {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_crossbow_turret_part",
+    "count": 2
+  }
+}

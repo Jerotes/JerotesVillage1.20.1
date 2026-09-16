@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/executioners_hammer",
+    "particle": "jerotesvillage:item/executioners_hammer"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/executioners_hammer_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/executioners_hammer_model",
+      "particle": "jerotesvillage:item/executioners_hammer"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/executioners_hammer_blocking"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/executioners_hammer"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/executioners_hammer"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/executioners_hammer"
+      },
+      "gui_light": "front"
+    }
+  }
+}

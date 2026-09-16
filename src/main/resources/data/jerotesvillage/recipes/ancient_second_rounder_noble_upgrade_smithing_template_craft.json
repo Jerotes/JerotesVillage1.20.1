@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "bdb",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:gems/diamond"
+    },
+    "b": {
+      "tag": "forge:gems/lapis"
+    },
+    "c": {
+      "tag": "forge:ingots/iron"
+    },
+    "d": {
+      "item": "jerotesvillage:funerary_sheet"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:ancient_second_rounder_noble_upgrade_smithing_template",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "染料商",
+  "icon": "minecraft:red_dye",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_dye_merchant\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:red_dye",
+      "title": "染料商"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_dye_merchant\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_dye_merchant",
+      "title": "村民工作台 染料商",
+      "text": "$(l:villager_block/dye_merchant)村民工作台 染料商$()"
+    }
+  ]
+}

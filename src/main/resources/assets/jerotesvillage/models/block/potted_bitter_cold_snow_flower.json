@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "jerotesvillage:block/bitter_cold_snow_flower"
+  },
+  "render_type": "cutout"
+}

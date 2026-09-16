@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:glitter_sandstone"
+    }
+  },
+  "result": {
+    "count": 6,
+    "item": "jerotesvillage:glitter_sandstone_wall"
+  }
+}

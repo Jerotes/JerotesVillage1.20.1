@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "b b",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/qoaiku_metal"
+    },
+    "b": {
+      "tag": "forge:ingots/copper"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:qoaiku_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "jerotesvillage:brown_venomous_slug"
+  },
+  "result": "jerotesvillage:cooked_brown_venomous_slug"
+}

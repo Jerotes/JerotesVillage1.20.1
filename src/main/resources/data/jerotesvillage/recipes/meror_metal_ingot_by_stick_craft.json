@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sticks",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:rods/meror_metal"
+    }
+  },
+  "result": {
+    "count": 2,
+    "item": "jerotesvillage:meror_metal_ingot"
+  }
+}

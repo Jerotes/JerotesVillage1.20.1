@@ -1,0 +1,28 @@
+{
+  "name": "Captain",
+  "icon": "minecraft:oak_boat",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_captain\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:oak_boat",
+      "title": "Captain"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_captain\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_captain",
+      "title": "Villager Block Captain",
+      "text": "$(l:villager_block/captain)Villager Block Captain$()"
+    }
+  ]
+}

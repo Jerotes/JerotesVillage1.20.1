@@ -1,0 +1,9 @@
+{
+  "asset_name": "ocean_gemstone",
+  "description": {
+    "color": "#00B3FF",
+    "translate": "trim_material.jerotesvillage.ocean_gemstone"
+  },
+  "ingredient": "jerotesvillage:ocean_gemstone",
+  "item_model_index": 0.9
+}

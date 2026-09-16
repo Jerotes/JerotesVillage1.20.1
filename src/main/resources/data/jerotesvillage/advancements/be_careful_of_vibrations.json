@@ -1,0 +1,38 @@
+{
+  "parent": "jerotesvillage:bright_grassland",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:bright_land_drum"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.be_careful_of_vibrations.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.be_careful_of_vibrations.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "be_careful_of_vibrations": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:bright_land_drum"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:bright_land_drumstick_craft"
+    ]
+  }
+}

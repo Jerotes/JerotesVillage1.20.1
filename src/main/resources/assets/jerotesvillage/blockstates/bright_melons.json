@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "jerotesvillage:block/bright_melons_stage0"
+    },
+    "age=1": {
+      "model": "jerotesvillage:block/bright_melons_stage1"
+    },
+    "age=2": {
+      "model": "jerotesvillage:block/bright_melons_stage1"
+    },
+    "age=3": {
+      "model": "jerotesvillage:block/bright_melons_stage1"
+    },
+    "age=4": {
+      "model": "jerotesvillage:block/bright_melons_stage2"
+    },
+    "age=5": {
+      "model": "jerotesvillage:block/bright_melons_stage2"
+    },
+    "age=6": {
+      "model": "jerotesvillage:block/bright_melons_stage2"
+    },
+    "age=7": {
+      "model": "jerotesvillage:block/bright_melons_stage3"
+    }
+  }
+}

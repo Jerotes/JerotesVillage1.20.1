@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "jerotesvillage:block/wilderness_dirt"
+      },
+      {
+        "model": "jerotesvillage:block/wilderness_dirt",
+        "y": 90
+      },
+      {
+        "model": "jerotesvillage:block/wilderness_dirt",
+        "y": 180
+      },
+      {
+        "model": "jerotesvillage:block/wilderness_dirt",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jerotesvillage:item/corrosiver_claw"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 0, 90, 55 ],
+      "translation": [ 0, 4.0, 0.5 ],
+      "scale": [ 0.75, 0.75, 0.75 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 0, -90, -55 ],
+      "translation": [ 0, 4.0, 0.5 ],
+      "scale": [ 0.75, 0.75, 0.75 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 0, 90, 25 ],
+      "translation": [ 1.13, 3.2, 1.13 ],
+      "scale": [ 0.68, 0.68, 0.68 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, -90, -25 ],
+      "translation": [ 1.13, 3.2, 1.13 ],
+      "scale": [ 0.68, 0.68, 0.68 ]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_shift": 1
+      },
+      "model": "jerotesvillage:item/corrosiver_claw_shift"
+    },
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "jerotesvillage:item/corrosiver_claw_pulling_0"
+    },
+    {
+      "predicate": {
+        "pull": 0.65,
+        "pulling": 1
+      },
+      "model": "jerotesvillage:item/corrosiver_claw_pulling_1"
+    },
+    {
+      "predicate": {
+        "pull": 0.9,
+        "pulling": 1
+      },
+      "model": "jerotesvillage:item/corrosiver_claw_pulling_2"
+    }
+  ]
+}

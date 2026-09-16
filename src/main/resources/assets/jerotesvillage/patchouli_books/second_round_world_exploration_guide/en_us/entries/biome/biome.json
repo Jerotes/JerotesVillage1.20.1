@@ -1,0 +1,82 @@
+{
+  "name": "Determine Biome",
+  "icon": "minecraft:compass",
+  "category": "jerotesvillage:biome",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Take a deep breath, allowing yourself time to adapt to dimensional shifts—but remain vigilant. The most critical first step begins now: determine your location. According to our intelligence, the Second Round World contains 13 distinct biomes. Use the descriptions below to immediately identify your biome."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:snow_frozen_soil",
+      "title": "Bitter Cold",
+      "text": "$(l:biome/bitter_cold)Bitter Cold$() is the Second Round World's only permanently snow-covered biome, covered in powdered snow and Snow-Frozen Soil. The bedrock layer consists of special Ice Rock. Large flora includes only blue Bitter Cold Trees."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:purple_sand",
+      "title": "Purple Desert",
+      "text": "Purple Desert is a desert covered by unique Purple Sand and Purple Sandstone, where unique Pink Cacti grow. Large bodies of water are rarely found in Purple Desert."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:gemstone_gravel",
+      "title": "Endless Ocean",
+      "text": "Endless Ocean is the most widespread biome in the Second Round World and the sole biome for major oceanic areas. Its land portions consist of pale blue Glitter Sand."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:bright_cobblestone",
+      "title": "Bright Grassland",
+      "text": "Bright Grassland resembles the Overworld ecologically but grows shimmering Bright Grass. Permanently glowing Bright Cobblestone ensures constant light."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:drought_fire_stone",
+      "title": "Drought Fire",
+      "text": "Drought Fire is the biome most visibly affected by Nether invaders and another scorching dimension. Extensive magma permeates the surface, and tree-like structures of Drought Fire Stone proliferate."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:pink_slime_block",
+      "title": "Harmonious Wonderland",
+      "text": "Harmonious Wonderland, a mountainous biome, is the safest region in the Second Round World. Due to mysterious forces, almost no hostile creatures appear here."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:sun_sand",
+      "title": "Sand Beach",
+      "text": "Sand Beach resembles warm coastal biomes of the Overworld but features unique Sun Sand—warm golden sand that sustains plant growth."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:ruin_stone_bricks",
+      "title": "Damaged Ruins",
+      "text": "Damaged Ruins originate from industrial zones of the ancient Meror civilization. While other Meror traces were deliberately erased, time has failed to erode these ruins, thanks to remarkably resistant Ruin Stone Bricks."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:deep_dust_block",
+      "title": "Unknown Deep",
+      "text": "Unknown Deep is one of the two subterranean biomes in the Second Round World. This cave-system biome contains Deep Dust that risks suffocation but serves as efficient fuel."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:virtual_cave_evil_block",
+      "title": "Virtual Cave",
+      "text": "Virtual Cave is the other subterranean biome. Its ecology resembles the Overworld's lush caves but hosts wilder, more dangerous, and aggressive lifeforms."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:wilderness_dirt",
+      "title": "Wilderness Woodland",
+      "text": "Wilderness Woodland is a forest biome dominated by tall Black-Yellow Trees. Wilderness Giants—remnant natives—consider it their ideal habitat."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "If you have determined your location, you may wonder what to do next. My advice is one sentence: begin your exploration."
+    }
+  ],
+  "sortnum": 0
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:throwing_stubborn_stone",
+    "count": 4
+  }
+}

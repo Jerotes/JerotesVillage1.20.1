@@ -1,0 +1,50 @@
+{
+  "parent": "minecraft:block/coral_fan",
+  "textures": {
+    "thorns": "jerotesvillage:block/wilderness_thorns",
+    "particle": "jerotesvillage:block/wilderness_thorns"
+  },
+  "elements": [
+    {
+      "from": [ 0, 4, 0 ],
+      "to": [ 16, 4, 16 ],
+      "rotation": { "origin": [ 8, 0, 0 ], "axis": "z", "angle": 22.5, "rescale": false },
+      "shade": false,
+      "faces": {
+        "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#thorns", "rotation": 90 },
+        "down": { "uv": [ 0, 16, 16, 0 ], "texture": "#thorns", "rotation": 270 }
+      }
+    },
+    {
+      "from": [ 8, 4, 0 ],
+      "to": [ 16, 4, 16 ],
+      "rotation": { "origin": [ 8, 0, 0 ], "axis": "z", "angle": -22.5, "rescale": false },
+      "shade": false,
+      "faces": {
+        "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#thorns", "rotation": 270 },
+        "down": { "uv": [ 0, 16, 16, 0 ], "texture": "#thorns", "rotation": 90 }
+      }
+    },
+    {
+      "from": [ 0, 4, 0 ],
+      "to": [ 16, 4, 16 ],
+      "rotation": { "origin": [ 0, 0, 8 ], "axis": "x", "angle": -22.5, "rescale": false },
+      "shade": false,
+      "faces": {
+        "up": { "uv": [ 16, 16, 0, 0 ], "texture": "#thorns" },
+        "down": { "uv": [ 16, 0, 0, 16 ], "texture": "#thorns" }
+      }
+    },
+    {
+      "from": [ 0, 4, 0 ],
+      "to": [ 16, 4, 16 ],
+      "rotation": { "origin": [ 0, 0, 8 ], "axis": "x", "angle": 22.5, "rescale": false },
+      "shade": false,
+      "faces": {
+        "up": { "uv": [ 0, 0, 16, 16 ], "texture": "#thorns" },
+        "down": { "uv": [ 0, 16, 16, 0 ], "texture": "#thorns" }
+      }
+    }
+  ],
+  "render_type": "cutout"
+}

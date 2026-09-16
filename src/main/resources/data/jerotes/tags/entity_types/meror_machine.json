@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:meror_golem",
+    "jerotesvillage:meror_champion",
+    "jerotesvillage:meror_monstrosity",
+    "jerotesvillage:meror_ministrosity",
+    "jerotesvillage:meror_cube",
+    "jerotesvillage:meror_oathguard_mech",
+    "jerotesvillage:second_rounder_golem"
+  ]
+}

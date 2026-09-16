@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "jerotesvillage:sun_sandstone"
+  },
+  "result": "jerotesvillage:smooth_sun_sandstone"
+}

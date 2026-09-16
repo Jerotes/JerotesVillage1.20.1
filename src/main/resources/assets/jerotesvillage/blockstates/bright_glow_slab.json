@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jerotesvillage:block/bright_glow_slab"
+    },
+    "type=double": {
+      "model": "jerotesvillage:block/bright_glow_planks"
+    },
+    "type=top": {
+      "model": "jerotesvillage:block/bright_glow_slab_top"
+    }
+  }
+}

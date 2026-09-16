@@ -1,0 +1,28 @@
+{
+  "name": "Witch",
+  "icon": "minecraft:glowstone_dust",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_witch\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:glowstone_dust",
+      "title": "Witch"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_witch\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_witch",
+      "title": "Villager Block Witch$",
+      "text": "$(l:villager_block/witch)Villager Block Witch$$()"
+    }
+  ]
+}

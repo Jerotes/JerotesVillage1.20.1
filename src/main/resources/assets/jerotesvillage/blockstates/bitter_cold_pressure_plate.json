@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "jerotesvillage:block/bitter_cold_pressure_plate"
+    },
+    "powered=true": {
+      "model": "jerotesvillage:block/bitter_cold_pressure_plate_down"
+    }
+  }
+}

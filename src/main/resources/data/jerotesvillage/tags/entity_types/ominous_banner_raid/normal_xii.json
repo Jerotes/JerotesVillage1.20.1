@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:bitter_cold_sorcerer",
+    "jerotesvillage:fire_spitter",
+    "jerotesvillage:lamp_wizard",
+    "jerotesvillage:submariner",
+    "jerotesvillage:wild_finder",
+    "jerotesvillage:purple_sand_witch",
+
+    "jerotesvillage:executioner",
+    "jerotesvillage:cycloner",
+    "jerotesvillage:zombie_keeper",
+    "jerotesvillage:blaster"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "parent": "jerotesvillage:additional_professions",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:carved_villager_item"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.villager_warrior.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.villager_warrior.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "villager_warrior": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:carved_villager_item"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:carved_flag_craft",
+      "jerotesvillage:carved_iron_golem_core_craft",
+      "jerotesvillage:carved_horn_craft",
+      "jerotesvillage:carved_horse_slab_craft",
+      "jerotesvillage:carved_villager_spectral_arrow_craft",
+      "jerotesvillage:carved_villager_concertina_wire_craft",
+      "jerotesvillage:carved_lodestone_craft",
+      "jerotesvillage:carved_contacter_craft",
+      "jerotesvillage:villager_invitation_craft"
+    ]
+  }
+}

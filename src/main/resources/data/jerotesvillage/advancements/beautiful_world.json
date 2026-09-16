@@ -1,0 +1,29 @@
+{
+  "parent": "jerotesvillage:harmonious_wonderland",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:botanize_rod"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.beautiful_world.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.beautiful_world.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beautiful_world": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:lucky_club_craft"
+    ]
+  }
+}

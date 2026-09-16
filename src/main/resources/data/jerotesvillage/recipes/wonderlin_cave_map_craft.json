@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "jerotesvillage:wonderland_logs"
+    },
+    {
+      "item": "jerotesvillage:second_rounder_map"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:wonderlin_cave_map",
+    "count": 1
+  }
+}

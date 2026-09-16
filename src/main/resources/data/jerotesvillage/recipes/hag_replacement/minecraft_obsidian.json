@@ -1,0 +1,19 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:obsidian"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:crying_obsidian"
+    },
+    {
+      "item": "jerotesvillage:firelight_stone"
+    },
+    {
+      "item": "jerotesvillage:drought_fire_stone"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "序言",
+  "icon": "minecraft:writable_book",
+  "category": "jerotesvillage:preface",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "我是铜刻佣兵团负责村庄运作维护的一位成员，由于相对了解相关事务，本书由我编写。你可以使用我自愿使用的Maid称呼，这不是一个正式名。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "不知你是否已经听说，我们为村庄提供了许多新职业，这并不只归功于铜刻佣兵团的正式成员，而在于所有荣誉成员、村民们的集思广益与统合，让很多并不被视为大类的职业被真正重视起来。新的发明也同理，这不是一项突发创造，而是一场整合化，将一些早已有的物品重新布置，被更多人熟知。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:weaponsmith,level:5}}",
+      "border": true,
+      "text": "比如他"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "就像在此之前，我们的村庄从不缺少锻造者，但专业的金属锭锻造师并不被视为一项职业。这不是一项凭空冒出来的需求，更不是铜刻佣兵团做到的补充合理需求——在此之前，难道没有村民去做建筑者、管理者吗？这怎么可能是发明出来的。但代表铜刻佣兵团，值得自豪的一点在于，我们的确协助了这一进程，并留下了自己的痕迹。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "jerotesvillage:carved_villager{SpecialSkin:2}",
+      "text": "话已至此，那就开始正式的介绍吧。"
+    }
+  ]
+}

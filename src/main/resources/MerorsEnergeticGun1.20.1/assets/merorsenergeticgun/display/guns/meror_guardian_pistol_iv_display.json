@@ -1,0 +1,48 @@
+{
+  "model": "merorsenergeticgun:gun/meror_guardian_pistol_iv_geo",
+  "texture": "merorsenergeticgun:gun/uv/meror_guardian_pistol_iv",
+  "iron_zoom": 1.5,
+  "zoom_model_fov": 45,
+  "ammo_count_style": "normal",
+  "damage_style": "per_projectile",
+  "show_crosshair": true,
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    }
+  },
+  "sounds": {
+    "draw": "tacz:deagle/deagle_draw",
+    "put_away": "tacz:deagle/deagle_put_away",
+    "shoot": "tacz:m320/m320_shoot",
+    "shoot_3p": "tacz:m320/m320_shoot",
+    "silence": "tacz:deagle/deagle_silence",
+    "silence_3p": "tacz:deagle/deagle_silence_3p"
+  },
+  "animation": "merorsenergeticgun:meror_guardian_pistol_iv",
+  "use_default_animation": "pistol",
+  "third_person_animation": "default",
+  "hud": "merorsenergeticgun:gun/hud/meror_guardian_pistol_iv",
+  "slot": "merorsenergeticgun:gun/slot/meror_guardian_pistol_iv",
+  "muzzle_flash": {
+    "texture": "merorsenergeticgun:flash/meror_guardian_pistol_iv_flash",
+    "scale": 1.25
+  },
+  "ammo": {
+    "tracer_color": "#FFBBDF"
+  }
+}

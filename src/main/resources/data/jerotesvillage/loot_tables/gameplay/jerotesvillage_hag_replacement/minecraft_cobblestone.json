@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:bright_cobblestone",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:throwing_stubborn_stone",
+          "weight": 9
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "jerotesvillage:troll_tongue"
+            }
+          ],
+          "name": "minecraft:potion",
+          "weight": 1
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "jerotesvillage:gameplay/jerotesvillage_hag_replacement/minecraft_cobblestone"
+}

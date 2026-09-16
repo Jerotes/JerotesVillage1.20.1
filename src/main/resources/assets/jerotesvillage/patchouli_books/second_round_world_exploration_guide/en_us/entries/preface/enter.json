@@ -1,0 +1,64 @@
+{
+  "name": "Enter The Second Round World",
+  "icon": "jerotesvillage:second_round_world_key",
+  "category": "jerotesvillage:preface",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "For ordinary members, the Second Round World may prove excessively perilous. Although access methods are no longer classified as top-secret, we strongly advise against solitary expeditions. In fact, this very consideration led the Copper Carved Company to designate it the \"Second Round World\" – a challenge reserved for seasoned adventurers. While stringent entry requirements may have been lifted, our commitment to member safety remains absolute."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:second_round_world_key",
+      "title": "Second Round World Key",
+      "text": "1.Acquire a Second Round World Key. Members with sufficient crafting proficiency may forge this key using Nether Quartz or Diorite, an Eye of Ender or Ender Pearl, and Villager Metal Ingots. The convergent energies of intersecting dimensions will serve as your conduit."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:second_round_world_key_craft"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_metal_base",
+      "title": "Villager Metal Ingot",
+      "text": "2.If you still do not know how to obtain Villager Metal Ingots, perhaps you should seek out villager craftsmen. Simply entrust them with the Villager Metal Base composite of copper and iron. If you truly cannot find a master capable of forging it, you may resort to forging through a clumsier method."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_metal_base_craft",
+      "recipe2": "jerotesvillage:key_second_round_world_block_craft"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:second_round_world_block",
+      "title": "Second Round World Block",
+      "text": "3.Apply the Second Round World Key to a Villager Metal Block to transform it into a Second Round World Block. Arrange these blocks into a square frame, then activate the interior with the Key to generate a Second Round World Portal. This portal resembles a Nether portal in form, differing only in its more flexible frame dimension requirements."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [ "BBBBB" ],
+          [ "BPPPB" ],
+          [ "BPQPB" ],
+          [ "BPPPB" ],
+          [ "BB0BB" ]
+        ],
+        "mapping": {
+          "B": "jerotesvillage:second_round_world_block",
+          "0": "jerotesvillage:second_round_world_block",
+          "P": "jerotesvillage:second_round_world_portal_block[axis=z,hatch=1]",
+          "Q": "jerotesvillage:second_round_world_portal_block[axis=z,hatch=0]"
+        },
+        "symmetrical": false
+      }
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:totem_of_undying",
+      "title": "Are you really ready?",
+      "text": "4.When fully equipped – with preparations that would seem extravagant for Overworld survival – you and your team may enter the portal. Remember: never attempt this journey if your Overworld existence remains precarious. The Second Round World is no utopia."
+    }
+  ],
+  "sortnum": 1
+}

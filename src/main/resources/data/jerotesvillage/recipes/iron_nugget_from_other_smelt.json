@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:crazy_axe"
+    },
+    {
+      "item": "jerotesvillage:ominous_javelin"
+    },
+    {
+      "item": "jerotesvillage:ominous_dagger"
+    },
+    {
+      "item": "jerotesvillage:ominous_mace"
+    },
+    {
+      "item": "jerotesvillage:ominous_bow"
+    },
+    {
+      "item": "jerotesvillage:ominous_cutlass"
+    },
+    {
+      "item": "jerotesvillage:firepower_pourer_chainsaw"
+    },
+    {
+      "item": "jerotesvillage:firepower_pourer_crossbow"
+    },
+    {
+      "item": "jerotesvillage:ominous_war_beast_armor"
+    },
+    {
+      "item": "jerotesvillage:ominous_giant_beast_armor"
+    },
+    {
+      "item": "jerotesvillage:executioners_halberd"
+    },
+    {
+      "item": "jerotesvillage:executioners_axe"
+    },
+    {
+      "item": "jerotesvillage:executioners_hammer"
+    },
+    {
+      "item": "jerotesvillage:horned_helmet"
+    },
+    {
+      "item": "jerotesvillage:spirve_chopper"
+    },
+    {
+      "item": "jerotesvillage:spirve_dustpan"
+    },
+    {
+      "item": "jerotesvillage:spirve_fork"
+    },
+    {
+      "item": "jerotesvillage:spirve_frame_saw"
+    },
+    {
+      "item": "jerotesvillage:spirve_gourd_ladle"
+    },
+    {
+      "item": "jerotesvillage:spirve_hammer"
+    },
+    {
+      "item": "jerotesvillage:spirve_flail"
+    },
+    {
+      "item": "jerotesvillage:spirve_hook"
+    },
+    {
+      "item": "jerotesvillage:spirve_kitchen_knife"
+    },
+    {
+      "item": "jerotesvillage:spirve_ladle"
+    },
+    {
+      "item": "jerotesvillage:spirve_morning_star"
+    },
+    {
+      "item": "jerotesvillage:spirve_pan"
+    },
+    {
+      "item": "jerotesvillage:spirve_pincer"
+    },
+    {
+      "item": "jerotesvillage:spirve_razor"
+    },
+    {
+      "item": "jerotesvillage:spirve_saw"
+    },
+    {
+      "item": "jerotesvillage:spirve_scissors"
+    },
+    {
+      "item": "jerotesvillage:spirve_sickle"
+    },
+    {
+      "item": "jerotesvillage:spirve_spatula"
+    },
+    {
+      "item": "jerotesvillage:spirve_wrench"
+    }
+  ],
+  "result": "minecraft:iron_nugget"
+}

@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/rambler_leather_glove",
+    "particle": "jerotesvillage:item/rambler_leather_glove"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/base_throwing_ball_glove",
+    "textures": {
+      "0": "jerotesvillage:item/rambler_leather_glove_model",
+      "particle": "jerotesvillage:item/rambler_leather_glove"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/rambler_leather_glove"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/rambler_leather_glove"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/rambler_leather_glove"
+      },
+      "gui_light": "front"
+    }
+  }
+}

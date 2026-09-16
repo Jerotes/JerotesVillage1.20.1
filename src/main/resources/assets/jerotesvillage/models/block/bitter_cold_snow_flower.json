@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/bitter_cold_snow_flower",
+    "particle": "jerotesvillage:block/bitter_cold_snow_flower"
+  },
+  "render_type": "cutout"
+}

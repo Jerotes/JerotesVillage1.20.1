@@ -1,0 +1,45 @@
+{
+  "parent": "jerotesvillage:how_did_they_get_here",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:ominous_banner_projection_emerald_fragment"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.chivalrous.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.chivalrous.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chivalrous": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:ominous_banner_projection"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:slavery_supervisor_upgrade_smithing_template_craft",
+      "jerotesvillage:slavery_supervisor_helmet_smith",
+      "jerotesvillage:slavery_supervisor_chestplate_smith",
+      "jerotesvillage:slavery_supervisor_leggings_smith",
+      "jerotesvillage:slavery_supervisor_boots_smith",
+      "jerotesvillage:ominous_probe_self_craft"
+    ]
+  }
+}

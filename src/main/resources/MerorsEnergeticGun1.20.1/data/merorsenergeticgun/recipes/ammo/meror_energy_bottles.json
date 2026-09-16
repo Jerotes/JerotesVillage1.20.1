@@ -1,0 +1,22 @@
+{
+  "type": "tacz:gun_smith_table_crafting",
+  "materials": [
+    {
+      "item": {
+        "item": "jerotesvillage:meror_energy_regime"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/refine_meror_metal"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "merorsenergeticgun:meror_energy_bottles",
+    "count": 60
+  }
+}

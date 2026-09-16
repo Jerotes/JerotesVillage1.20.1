@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jerotesvillage:block/golden_bright_melon_crate_bottom",
+    "up": "jerotesvillage:block/golden_bright_melon_crate_top",
+    "north": "jerotesvillage:block/golden_bright_melon_crate_side",
+    "east": "jerotesvillage:block/golden_bright_melon_crate_side",
+    "south": "jerotesvillage:block/golden_bright_melon_crate_side",
+    "west": "jerotesvillage:block/golden_bright_melon_crate_side",
+    "particle": "jerotesvillage:block/golden_bright_melon_crate_side"
+  },
+  "render_type": "solid"
+}

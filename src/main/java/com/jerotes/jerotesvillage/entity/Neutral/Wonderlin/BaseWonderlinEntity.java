@@ -1,0 +1,1202 @@
+package com.jerotes.jerotesvillage.entity.Neutral.Wonderlin;
+
+import com.jerotes.jerotes.config.MainConfig;
+import com.jerotes.jerotes.entity.Interface.*;
+import com.jerotes.jerotes.entity.Mob.HumanEntity;
+import com.jerotes.jerotes.goal.JerotesAttackAvoidEntityGoal;
+import com.jerotes.jerotes.goal.JerotesHelpAlliesGoal;
+import com.jerotes.jerotes.goal.JerotesHelpSameFactionGoal;
+import com.jerotes.jerotes.goal.JerotesMeleeAttackGoal;
+import com.jerotes.jerotes.init.JerotesGameRules;
+import com.jerotes.jerotes.init.JerotesMobEffects;
+import com.jerotes.jerotes.init.JerotesParticleTypes;
+import com.jerotes.jerotes.init.JerotesSoundEvents;
+import com.jerotes.jerotes.item.Interface.JerotesItemThrownJavelinUse;
+import com.jerotes.jerotes.item.Tool.ItemToolBaseCrossbow;
+import com.jerotes.jerotes.spell.MagicType;
+import com.jerotes.jerotes.spell.SpellTypeInterface;
+import com.jerotes.jerotes.util.AttackFind;
+import com.jerotes.jerotes.util.EntityFactionFind;
+import com.jerotes.jerotes.util.Main;
+import com.jerotes.jerotesvillage.config.OtherMainConfig;
+import com.jerotes.jerotesvillage.entity.Boss.TyrantOfTheMountainRealmEntity;
+import com.jerotes.jerotesvillage.goal.FollowTyrantOfTheMountainRealmGoal;
+import com.jerotes.jerotesvillage.goal.WonderlinFindStatueGoal;
+import com.jerotes.jerotesvillage.init.JerotesVillageSoundEvents;
+import com.jerotes.jerotesvillage.util.OtherEntityFactionFind;
+import net.minecraft.ChatFormatting;
+import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.DamageTypeTags;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.TimeUtil;
+import net.minecraft.util.VisibleForDebug;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.goal.*;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.ResetUniversalAngerTargetGoal;
+import net.minecraft.world.entity.ai.navigation.GroundPathNavigation;
+import net.minecraft.world.entity.ai.util.GoalUtils;
+import net.minecraft.world.entity.monster.CrossbowAttackMob;
+import net.minecraft.world.entity.monster.RangedAttackMob;
+import net.minecraft.world.entity.npc.InventoryCarrier;
+import net.minecraft.world.entity.npc.Npc;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.ProjectileUtil;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.common.ToolActions;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.IItemHandlerModifiable;
+import net.minecraftforge.items.wrapper.CombinedInvWrapper;
+import net.minecraftforge.items.wrapper.EntityArmorInvWrapper;
+import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
+import net.minecraftforge.items.wrapper.InvWrapper;
+import org.joml.Vector3f;
+
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
+import java.util.function.Predicate;
+
+public abstract class BaseWonderlinEntity extends PathfinderMob implements SpellUseEntity, WizardEntity, ShiftKeyDownEntity, UseThrownJavelinEntity, InventoryEntity, CrossbowAttackMob, RangedAttackMob, UseThrowEntity, UseShieldEntity, NeutralMob, InventoryCarrier, Npc, UseCrossbowEntity, UseBowEntity, JerotesEntity, FactionEntity {
+	private static final EntityDataAccessor<Integer> COMBAT_STYLE = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.INT);
+	private static final EntityDataAccessor<Boolean> USE_SELF_NOT_SPELL_LIST = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<Boolean> IS_WONDERLIN_RUSH = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.BOOLEAN);
+	private static final EntityDataAccessor<Integer> SPELL_TICK = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.INT);
+	private static final EntityDataAccessor<Integer> BOW_LEVEL = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.INT);
+	private static final EntityDataAccessor<Integer> SHIELD_LEVEL = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.INT);
+	private static final EntityDataAccessor<Boolean> IS_CHARGING_CROSSBOW = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<Integer> ANIM_STATE = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.INT);
+	private static final EntityDataAccessor<Integer> ANIM_TICK = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.INT);
+	private static final EntityDataAccessor<Boolean> CAN_CHANGE_INVENTORY = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.BOOLEAN);
+	private static final EntityDataAccessor<Boolean> CAN_CHANGE_MELEE_OR_RANGE = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.BOOLEAN);
+	private static final EntityDataAccessor<Boolean> NO_COMBAT_EMPTY_WEAPON = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.BOOLEAN);
+	private static final EntityDataAccessor<Boolean> NO_COMBAT_EMPTY_SHIELD = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.BOOLEAN);
+	private static final EntityDataAccessor<Integer> CHANGE_INVENTORY_COOLDOWN_TICK = SynchedEntityData.defineId(BaseWonderlinEntity.class, EntityDataSerializers.INT);
+	public final SimpleContainer inventory = new SimpleContainer(inventoryCount());
+	private LazyOptional<?> itemHandler = null;
+	public AnimationState idleAnimationState = new AnimationState();
+	public AnimationState attackAnimationState = new AnimationState();
+	public AnimationState kickAnimationState = new AnimationState();
+	public AnimationState pushAnimationState = new AnimationState();
+	public AnimationState rushAnimationState = new AnimationState();
+
+	public BaseWonderlinEntity(EntityType<? extends BaseWonderlinEntity> entityType, Level level) {
+		super(entityType, level);
+		this.xpReward = 5;
+		setMaxUpStep(0.6f);
+		this.applyOpenDoorsAbility();
+		this.setCanPickUpLoot(true);
+		this.setPathfindingMalus(BlockPathTypes.DOOR_WOOD_CLOSED, 0.0f);
+		this.setPathfindingMalus(BlockPathTypes.UNPASSABLE_RAIL, 0.0f);
+		this.itemHandler = LazyOptional.of(this::createCombinedHandler);
+	}
+	private IItemHandler createCombinedHandler() {
+		IItemHandlerModifiable handsHandler = new EntityHandsInvWrapper(this);
+		IItemHandlerModifiable armorHandler = new EntityArmorInvWrapper(this);
+		IItemHandlerModifiable customHandler = new InvWrapper(this.inventory);
+		return new CombinedInvWrapper(
+				armorHandler,
+				handsHandler,
+				customHandler
+		);
+	}
+
+	@Override
+	public String getFirstFactionTypeName() {
+		return "wonderlin_caves";
+	}
+
+	@VisibleForDebug
+	@Override
+	public SimpleContainer getInventory() {
+		return this.inventory;
+	}
+
+	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
+		return capability == ForgeCapabilities.ITEM_HANDLER && itemHandler != null &&
+				this.isAlive() ? itemHandler.cast() : super.getCapability(capability, facing);
+	}
+	public void invalidateCaps() {
+		super.invalidateCaps();
+		if (this.itemHandler != null) {
+			LazyOptional<?> oldHandler = this.itemHandler;
+			this.itemHandler = null;
+			oldHandler.invalidate();
+		}
+	}
+
+	protected ItemStack addToInventory(ItemStack itemStack) {
+		return this.inventory.addItem(itemStack);
+	}
+
+	protected boolean canAddToInventory(ItemStack itemStack) {
+		return this.inventory.canAddItem(itemStack);
+	}
+
+	@Override
+	public boolean wantsToPickUp(ItemStack itemStack) {
+		if ((itemStack.canEquip(EquipmentSlot.CHEST,this) || itemStack.canEquip(EquipmentSlot.LEGS,this) || itemStack.canEquip(EquipmentSlot.FEET,this)) && !OtherMainConfig.WonderlinCanWearAllArmor) {
+			return false;
+		}
+		return super.wantsToPickUp(itemStack);
+	}
+	@Override
+	public ItemStack equipItemIfPossible(ItemStack itemStack) {
+		EquipmentSlot equipmentSlot = Mob.getEquipmentSlotForItem(itemStack);
+		ItemStack itemStack2 = this.getItemBySlot(equipmentSlot);
+		boolean bl = this.canReplaceCurrentItem(itemStack, itemStack2);
+		if (equipmentSlot.isArmor() && !bl) {
+			equipmentSlot = EquipmentSlot.MAINHAND;
+			itemStack2 = this.getItemBySlot(equipmentSlot);
+			bl = itemStack2.isEmpty();
+		}
+		if (bl && this.canHoldItem(itemStack)) {
+			double d = this.getEquipmentDropChance(equipmentSlot);
+			if (this.canAddToInventory(itemStack2)) {
+				this.addToInventory(itemStack2);
+			}
+			else {
+				this.spawnAtLocation(itemStack2);
+			}
+
+			if (equipmentSlot.isArmor() && itemStack.getCount() > 1) {
+				ItemStack itemStack3 = itemStack.copyWithCount(1);
+				this.setItemSlotAndDropWhenKilled(equipmentSlot, itemStack3);
+				return itemStack3;
+			}
+			this.setItemSlotAndDropWhenKilled(equipmentSlot, itemStack);
+			return itemStack;
+		}
+		return ItemStack.EMPTY;
+	}
+
+	@Override
+	protected boolean canReplaceCurrentItem(ItemStack newItem, ItemStack oldItem) {
+		return InventoryEntity.canReplaceCurrentItem(this, newItem, oldItem);
+	}
+
+	@Override
+	protected void populateDefaultEquipmentSlots(RandomSource randomSource, DifficultyInstance difficultyInstance) {
+	}
+
+	public static AttributeSupplier.Builder createAttributes() {
+		AttributeSupplier.Builder builder = Mob.createMobAttributes();
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.32);
+		builder = builder.add(Attributes.MAX_HEALTH, 14);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 2);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
+		return builder;
+	}
+
+	private void applyOpenDoorsAbility() {
+		if (GoalUtils.hasGroundPathNavigation(this)) {
+			((GroundPathNavigation)this.getNavigation()).setCanOpenDoors(true);
+		}
+	}
+
+	@Override
+	protected void registerGoals() {
+		this.getNavigation().getNodeEvaluator().setCanOpenDoors(true);
+		this.goalSelector.addGoal(0, new OpenDoorGoal(this, true));
+		if (!(this instanceof TyrantOfTheMountainRealmEntity)) {
+			this.goalSelector.addGoal(0, new FloatGoal(this));
+			this.goalSelector.addGoal(1, new WonderlinFindStatueGoal(this));
+			this.goalSelector.addGoal(2, new FollowTyrantOfTheMountainRealmGoal(this, 1.1f));
+		}
+		this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, Player.class, 3.0f, 1.0f));
+		this.goalSelector.addGoal(2, new LookAtPlayerGoal(this, HumanEntity.class, 3.0f, 1.0f));
+		this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, BaseWonderlinEntity.class, 3.0f, 1.0f));
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0.6));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.targetSelector.addGoal(1, new HurtByTargetGoal(this, BaseWonderlinEntity.class).setAlertOthers(new Class[0]));
+		this.targetSelector.addGoal(1, new JerotesHelpSameFactionGoal(this, LivingEntity.class, false, false, livingEntity -> livingEntity instanceof LivingEntity));
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<LivingEntity>(this, LivingEntity.class, 5, false, false, livingEntity -> EntityFactionFind.isHateFaction(this, livingEntity)));
+		this.targetSelector.addGoal(1, new JerotesHelpAlliesGoal(this, LivingEntity.class, false, false, livingEntity -> livingEntity instanceof LivingEntity));
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<Player>(this, Player.class, 10, true, false, this::isAngryAt));
+		this.targetSelector.addGoal(3, new ResetUniversalAngerTargetGoal<BaseWonderlinEntity>(this, true));
+	}
+	static class WonderlinMeleeAttackGoal extends JerotesMeleeAttackGoal {
+		private final BaseWonderlinEntity entity;
+
+		public WonderlinMeleeAttackGoal(BaseWonderlinEntity wonderlinEntity) {
+			super(wonderlinEntity, 1.4, true);
+			this.entity = wonderlinEntity;
+		}
+
+		@Override
+		public boolean canUse() {
+			List<BaseWonderlinEntity> list = this.entity.level().getEntitiesOfClass(BaseWonderlinEntity.class, entity.getBoundingBox().inflate(32, 32.0, 32));
+			List<TyrantOfTheMountainRealmEntity> listBoss = this.entity.level().getEntitiesOfClass(TyrantOfTheMountainRealmEntity.class, entity.getBoundingBox().inflate(32, 32.0, 32));
+			listBoss.removeIf(mob -> !mob.isAlliedTo(this.entity));
+			if (list.size() < 3 && listBoss.isEmpty() && this.entity.getTarget() != null && Main.canSee(this.entity , this.entity.getTarget())) {
+				return false;
+			}
+			return super.canUse();
+		}
+
+		@Override
+		public boolean canContinueToUse() {
+			List<BaseWonderlinEntity> list = this.entity.level().getEntitiesOfClass(BaseWonderlinEntity.class, entity.getBoundingBox().inflate(32, 32.0, 32));
+			List<TyrantOfTheMountainRealmEntity> listBoss = this.entity.level().getEntitiesOfClass(TyrantOfTheMountainRealmEntity.class, entity.getBoundingBox().inflate(32, 32.0, 32));
+			listBoss.removeIf(mob -> !mob.isAlliedTo(this.entity));
+			if (list.size() < 3 && listBoss.isEmpty() && this.entity.getTarget() != null && Main.canSee(this.entity , this.entity.getTarget())) {
+				return false;
+			}
+			return super.canContinueToUse();
+		}
+	}
+	static class WonderlinAvoidGoal extends JerotesAttackAvoidEntityGoal {
+		private final BaseWonderlinEntity entity;
+
+		public WonderlinAvoidGoal(BaseWonderlinEntity wonderlinEntity) {
+			super(wonderlinEntity, LivingEntity.class, 12.0f, 1.4f, 1.2);
+			this.entity = wonderlinEntity;
+		}
+
+		@Override
+		public boolean canUse() {
+			List<BaseWonderlinEntity> list = this.entity.level().getEntitiesOfClass(BaseWonderlinEntity.class, entity.getBoundingBox().inflate(32, 32.0, 32));
+			List<TyrantOfTheMountainRealmEntity> listBoss = this.entity.level().getEntitiesOfClass(TyrantOfTheMountainRealmEntity.class, entity.getBoundingBox().inflate(32, 32.0, 32));
+			listBoss.removeIf(mob -> !mob.isAlliedTo(this.entity));
+			if (list.size() < 3 && listBoss.isEmpty() && this.entity.getTarget() != null && Main.canSee(this.entity , this.entity.getTarget())) {
+				return super.canUse();
+			}
+			return false;
+		}
+
+		@Override
+		public boolean canContinueToUse() {
+			List<BaseWonderlinEntity> list = this.entity.level().getEntitiesOfClass(BaseWonderlinEntity.class, entity.getBoundingBox().inflate(32, 32.0, 32));
+			List<TyrantOfTheMountainRealmEntity> listBoss = this.entity.level().getEntitiesOfClass(TyrantOfTheMountainRealmEntity.class, entity.getBoundingBox().inflate(32, 32.0, 32));
+			listBoss.removeIf(mob -> !mob.isAlliedTo(this.entity));
+			if (list.size() < 3 && listBoss.isEmpty() && this.entity.getTarget() != null && Main.canSee(this.entity , this.entity.getTarget())) {
+				return super.canContinueToUse();
+			}
+			return false;
+		}
+	}
+
+	@Override
+	public void performRangedAttack(LivingEntity livingEntity, float f) {
+		ItemStack handItem = this.getMainHandItem();
+		if ((this.getMainHandItem().isEmpty() || InventoryEntity.isMeleeWeapon(this.getMainHandItem())) && !this.getOffhandItem().isEmpty()) {
+			handItem = this.getOffhandItem();
+		}
+		if (InventoryEntity.isRangeJavelin(handItem)) {
+			useTridentShoot(this, livingEntity);
+			if (!(handItem.getItem() instanceof JerotesItemThrownJavelinUse jerotesItemThrownJavelinUse && jerotesItemThrownJavelinUse.JerotesUseSpecialThrownJavelinAnim())) {
+				if (!this.level().isClientSide()) {
+					this.setAnimTick(10);
+					if (handItem == this.getMainHandItem()) {
+						this.setAnimationState("throw1");
+					} else {
+						this.setAnimationState("throw2");
+					}
+				}
+			}
+		}
+		if (InventoryEntity.isBow(handItem)) {
+			useBowShoot(this, livingEntity, f, getBowLevel(), 20);
+		}
+		if (InventoryEntity.isThrow(handItem)) {
+			useThrowShoot(this, livingEntity);
+			if (!this.isSilent()) {
+				this.level().playSound(null, this.getX(), this.getY(), this.getZ(), JerotesSoundEvents.ITEM_THROW, this.getSoundSource(), 0.5f, 0.4f / (this.level().getRandom().nextFloat() * 0.4f + 0.8f));
+			}
+			if (!this.isSilent()) {
+				this.level().playSound(null, this.getX(), this.getY(), this.getZ(), JerotesVillageSoundEvents.WONDERLIN_THROW, this.getSoundSource(), 5.0f, 0.8f + this.getRandom().nextFloat() * 0.4f);
+			}
+			if (!this.level().isClientSide()) {
+				this.setAnimTick(10);
+				this.setAnimationState("kick");
+			}
+		}
+		if (InventoryEntity.isCrossbow(handItem)) {
+			useCrossbowShoot(this, 3.15F);
+		}
+		if (JerotesGameRules.JEROTES_RANGE_CAN_BREAK != null && this.level().getLevelData().getGameRules().getBoolean(JerotesGameRules.JEROTES_RANGE_CAN_BREAK)) {
+            if (handItem.getItem() instanceof BowItem || handItem.getItem() instanceof TridentItem) {
+                handItem.hurtAndBreak(1, this, player -> player.broadcastBreakEvent((this.getMainHandItem().isEmpty() || InventoryEntity.isMeleeWeapon(this.getMainHandItem())) && !this.getOffhandItem().isEmpty() ? EquipmentSlot.OFFHAND : EquipmentSlot.MAINHAND));
+            }
+        }
+	}
+	@Override
+	public ItemStack getProjectile(ItemStack itemStack) {
+		if (itemStack.getItem() instanceof ProjectileWeaponItem projectileWeaponItem) {
+			Predicate<ItemStack> predicate = projectileWeaponItem.getSupportedHeldProjectiles();
+			ItemStack itemStack2 = ProjectileWeaponItem.getHeldProjectile(this, predicate);
+			if (predicate.test(this.getMainHandItem())) {
+				itemStack2 = this.getMainHandItem();
+			}
+			else if (predicate.test(this.getOffhandItem())) {
+				itemStack2 = this.getOffhandItem();
+			}
+			else {
+				for (int n = 0; n < this.inventoryCount(); ++n) {
+					ItemStack finds = this.mobInventory().getItem(n);
+					if (predicate.test(finds)) {
+						itemStack2 = finds;
+						break;
+					}
+				}
+			}
+			return itemStack2.isEmpty() ? new ItemStack(Items.ARROW) : itemStack2;
+		}
+		return ItemStack.EMPTY;
+	}
+	public boolean isChargingCrossbow() {
+		return this.entityData.get(IS_CHARGING_CROSSBOW);
+	}
+	@Override
+	public void setChargingCrossbow(boolean bl) {
+		this.entityData.set(IS_CHARGING_CROSSBOW, bl);
+	}
+
+	@Override
+	public void shootCrossbowProjectile(LivingEntity livingEntity, ItemStack itemStack, Projectile projectile, float f) {
+		this.shootCrossbowProjectile(this, livingEntity, projectile, f, itemStack.getItem() instanceof ItemToolBaseCrossbow itemToolBaseCrossbow ? itemToolBaseCrossbow.getShootingPower(itemStack) : 3.15f);
+	}
+	@Override
+	public void shootCrossbowProjectile(LivingEntity livingEntity, LivingEntity livingEntity2, Projectile projectile, float f, float f2) {
+		double d0 = livingEntity2.getX() - livingEntity.getX();
+		double d1 = livingEntity2.getZ() - livingEntity.getZ();
+		double d2 = Math.sqrt(d0 * d0 + d1 * d1);
+		double d3 = livingEntity2.getY(0.3333333333333333) - projectile.getY() + d2 * 0.1;
+		Vector3f vector3f = this.getProjectileShotVector(livingEntity, new Vec3(d0, d3, d1), f);
+		projectile.shoot((double)vector3f.x(), (double)vector3f.y(), (double)vector3f.z(), f2, Math.max(0, 20 - getBowLevel()) / 5f);
+		livingEntity.playSound(SoundEvents.CROSSBOW_SHOOT, 1.0F, 1.0F / (livingEntity.getRandom().nextFloat() * 0.4F + 0.8F));
+	}
+
+	@Override
+	public void onCrossbowAttackPerformed() {
+		this.noActionTime = 0;
+	}
+
+	@Override
+	protected void dropCustomDeathLoot(DamageSource damageSource, int n, boolean bl) {
+		super.dropCustomDeathLoot(damageSource, n, bl);
+		this.inventory.removeAllItems().forEach(this::spawnAtLocation);
+	}
+	@Override
+	public AbstractArrow getCustomArrow(ItemStack itemStack, float f) {
+		return ProjectileUtil.getMobArrow(this, itemStack, f);
+	}
+
+	@Override
+	public boolean canFireProjectileWeapon(ProjectileWeaponItem projectileWeaponItem) {
+		return projectileWeaponItem instanceof BowItem || projectileWeaponItem instanceof CrossbowItem || super.canFireProjectileWeapon(projectileWeaponItem);
+	}
+
+	@Override
+	protected SoundEvent getAmbientSound() {
+		if (!this.isAggressive()) {
+			return JerotesVillageSoundEvents.WONDERLIN_AMBIENT;
+		}
+		return null;
+	}
+	@Override
+	protected SoundEvent getHurtSound(DamageSource damageSource) {
+		if (this.isDamageSourceBlocked(damageSource)) {
+			return SoundEvents.SHIELD_BLOCK;
+		}
+		return JerotesVillageSoundEvents.WONDERLIN_HURT;
+	}
+	@Override
+	protected SoundEvent getDeathSound() {
+		return JerotesVillageSoundEvents.WONDERLIN_DEATH;
+	}
+	@Override
+	public boolean removeWhenFarAway(double d) {
+		return false;
+	}
+	@Override
+	public boolean canBeLeashed(Player player) {
+		return false;
+	}
+	@Override
+	protected float getStandingEyeHeight(Pose pose, EntityDimensions entityDimensions) {
+		return 0.9f;
+	}
+	public AABB getAttackBoundingBox() {
+		Entity entity = this.getVehicle();
+		AABB aabb;
+		if (entity != null) {
+			AABB aabb1 = entity.getBoundingBox();
+			AABB aabb2 = this.getBoundingBox();
+			aabb = new AABB(Math.min(aabb2.minX, aabb1.minX), aabb2.minY, Math.min(aabb2.minZ, aabb1.minZ), Math.max(aabb2.maxX, aabb1.maxX), aabb2.maxY, Math.max(aabb2.maxZ, aabb1.maxZ));
+		} else {
+			aabb = this.getBoundingBox();
+		}
+		AABB aabb1 = aabb.inflate(Math.sqrt((double)2.04F) - (double)0.6F, 0.0D, Math.sqrt((double)2.04F) - (double)0.6F);
+		return aabb1.inflate(0.25d, 0.25d, 0.25d);
+	}
+	public boolean isWithinMeleeAttackRange(LivingEntity entity) {
+		return this.getAttackBoundingBox().intersects(entity.getBoundingBox());
+	}
+	protected Vector3f getPassengerAttachmentPoint(Entity entity, EntityDimensions entityDimensions, float f) {
+		return new Vector3f(0.0f, entityDimensions.height + 0.0625f * f, 0.0f);
+	}
+	protected float ridingOffset(Entity entity) {
+		return -0.7f;
+	}
+	public double getMyRidingOffset() {
+		return this.isBaby() ? 0.0D : -0.45D;
+	}
+	public boolean canRush() {
+		return false;
+	}
+	@Override
+	public int getMaxFallDistance() {
+		return super.getMaxFallDistance() * 64;
+	}
+
+	@Nullable
+	private LivingEntity notAttackTarget;
+	@Nullable
+	private UUID notAttackTargetUUID;
+	@Nullable
+	public LivingEntity getNotAttackTarget() {
+		Entity entity;
+		if (this.notAttackTarget == null && this.notAttackTargetUUID != null && this.level() instanceof ServerLevel && (entity = ((ServerLevel)this.level()).getEntity(this.notAttackTargetUUID)) instanceof LivingEntity) {
+			this.notAttackTarget = (LivingEntity)entity;
+		}
+		return this.notAttackTarget;
+	}
+	public void setNotAttackTarget(@Nullable LivingEntity livingEntity) {
+		this.notAttackTarget = livingEntity;
+		this.notAttackTargetUUID = livingEntity == null ? null : livingEntity.getUUID();
+	}
+	public boolean isWonderlinRush() {
+		return this.getEntityData().get(IS_WONDERLIN_RUSH);
+	}
+	public void setWonderlinRush(boolean bl) {
+		this.getEntityData().set(IS_WONDERLIN_RUSH, bl);
+	}
+	//动画
+	public void setAnimTick(int n){
+		this.getEntityData().set(ANIM_TICK, n);
+	}
+	public int getAnimTick(){
+		return this.getEntityData().get(ANIM_TICK);
+	}
+	public void setAnimationState(String input) {
+		this.setAnimationState(this.getAnimationState(input));
+	}
+	public void setAnimationState(int id) {
+		this.entityData.set(ANIM_STATE, id);
+	}
+	public int getAnimationState(String animation) {
+		if (Objects.equals(animation, "attack")){
+			return 1;
+		}
+		else if (Objects.equals(animation, "kick")){
+			return 2;
+		}
+		else if (Objects.equals(animation, "push")){
+			return 3;
+		}
+		else {
+			return 0;
+		}
+	}
+	public List<AnimationState> getAllAnimations(){
+		List<AnimationState> list = new ArrayList<>();
+		list.add(this.attackAnimationState);
+		list.add(this.kickAnimationState);
+		list.add(this.pushAnimationState);
+		return list;
+	}
+	public void stopMostAnimation(AnimationState exception){
+		for (AnimationState state : this.getAllAnimations()){
+			if (state != exception) {
+				state.stop();
+			}
+		}
+	}
+	public void stopAllAnimation(){
+		for (AnimationState state : this.getAllAnimations()){
+			state.stop();
+		}
+	}
+	//
+	@Override
+	public SimpleContainer mobInventory() {
+		return inventory;
+	}
+	@Override
+	public int inventoryCount() {
+		return 8;
+	}
+	@Override
+	public boolean isCanChangeInventory() {
+		return this.getEntityData().get(CAN_CHANGE_INVENTORY);
+	}
+	@Override
+	public void setCanChangeInventory(boolean bl) {
+		this.getEntityData().set(CAN_CHANGE_INVENTORY, bl);
+	}
+	@Override
+	public boolean isCanChangeMeleeOrRange() {
+		return this.getEntityData().get(CAN_CHANGE_MELEE_OR_RANGE);
+	}
+	@Override
+	public void setCanChangeMeleeOrRange(boolean bl) {
+		this.getEntityData().set(CAN_CHANGE_MELEE_OR_RANGE, bl);
+	}
+	public int shieldCoolDown;
+	public int shieldCanUse = 1;
+	@Override
+	public boolean shieldCanUse() {
+		return this.shieldCanUse == 1 && this.shieldCoolDown <= 0;
+	}
+	@Override
+	public boolean canUseChestplate() {
+		return OtherMainConfig.WonderlinCanWearAllArmor;
+	}
+	@Override
+	public boolean canUseLeggings() {
+		return OtherMainConfig.WonderlinCanWearAllArmor;
+	}
+	@Override
+	public boolean canUseBoots() {
+		return OtherMainConfig.WonderlinCanWearAllArmor;
+	}
+	@Override
+	public boolean NonCombatEmptyWeapon() {
+		return this.isNoCombatEmptyWeapon();
+	}
+	@Override
+	public boolean NonCombatEmptyShield() {
+		return this.isNoCombatEmptyShield();
+	}
+	@Override
+	public int changeInventoryCooldownTick() {
+		return this.getChangeInventoryCooldownTick();
+	}
+	public boolean isNoCombatEmptyWeapon() {
+		return this.getEntityData().get(NO_COMBAT_EMPTY_WEAPON);
+	}
+	public void setNoCombatEmptyWeapon(boolean bl) {
+		this.getEntityData().set(NO_COMBAT_EMPTY_WEAPON, bl);
+	}
+	public boolean isNoCombatEmptyShield() {
+		return this.getEntityData().get(NO_COMBAT_EMPTY_SHIELD);
+	}
+	public void setNoCombatEmptyShield(boolean bl) {
+		this.getEntityData().set(NO_COMBAT_EMPTY_SHIELD, bl);
+	}
+	public int getChangeInventoryCooldownTick() {
+		return this.getEntityData().get(CHANGE_INVENTORY_COOLDOWN_TICK);
+	}
+	public void setChangeInventoryCooldownTick(int n) {
+		this.getEntityData().set(CHANGE_INVENTORY_COOLDOWN_TICK, n);
+	}
+	@Override
+	public void SpellUseAfterAttack(String string, MagicType magicType, MagicType magicType2) {
+		if (!this.level().isClientSide()) {
+			this.setSpellTick(10);
+		}
+	}
+	@Override
+	public List<SpellTypeInterface> SelfMainSpellList() {
+		return new ArrayList<>();
+	}
+	@Override
+	public List<SpellTypeInterface> SelfAddSpellList() {
+		return new ArrayList<>();
+	}
+	public int spellLevel = 1;
+	@Override
+	public int getSpellLevel() {
+		return this.spellLevel;
+	}
+	public void setSpellTick(int n){
+		this.getEntityData().set(SPELL_TICK, n);
+	}
+	public int getSpellTick(){
+		return this.getEntityData().get(SPELL_TICK);
+	}
+	public int getCombatStyle() {
+		return this.getEntityData().get(COMBAT_STYLE);
+	}
+	public void setCombatStyle(int n) {
+		this.getEntityData().set(COMBAT_STYLE, n);
+	}
+	public boolean isUseSelfNotStringSpellList() {
+		return this.getEntityData().get(USE_SELF_NOT_SPELL_LIST);
+	}
+	public void setUseSelfNotStringSpellList(boolean bl) {
+		this.getEntityData().set(USE_SELF_NOT_SPELL_LIST, bl);
+	}
+	public boolean isMagicUseStyle() {
+		return this.getSpellTick() > 0;
+	}
+	@Override
+	public boolean isSpellHumanoid() {
+		return true;
+	}
+	public void setBowLevel(int n){
+		this.getEntityData().set(BOW_LEVEL, n);
+	}
+	public int getBowLevel(){
+		return this.getEntityData().get(BOW_LEVEL);
+	}
+	public void setShieldLevel(int n){
+		this.getEntityData().set(SHIELD_LEVEL, n);
+	}
+	public int getShieldLevel(){
+		return this.getEntityData().get(SHIELD_LEVEL);
+	}
+	@Override
+	public void addAdditionalSaveData(CompoundTag compoundTag) {
+		super.addAdditionalSaveData(compoundTag);
+		compoundTag.putInt("AnimTick", this.getAnimTick());
+		if (this.notAttackTargetUUID != null) {
+			compoundTag.putUUID("NotAttackTarget", this.notAttackTargetUUID);
+		}
+		compoundTag.putInt("SpellLevel", this.spellLevel);
+		compoundTag.putInt("SpellTick", this.getSpellTick());
+		compoundTag.putInt("CombatStyle", this.getCombatStyle());
+		compoundTag.putInt("BowLevel", this.getBowLevel());
+		compoundTag.putInt("ShieldLevel", this.getShieldLevel());
+		compoundTag.putBoolean("UseSelfNotStringSpellList", this.isUseSelfNotStringSpellList());
+		compoundTag.putBoolean("IsNoCombatEmptyWeapon", this.isNoCombatEmptyWeapon());
+		compoundTag.putBoolean("IsNoCombatEmptyShield", this.isNoCombatEmptyShield());
+		compoundTag.putInt("ChangeInventoryCooldownTick", this.getChangeInventoryCooldownTick());
+		compoundTag.putBoolean("IsCanChangeInventory", this.isCanChangeInventory());
+		compoundTag.putBoolean("IsCanChangeMeleeOrRange", this.isCanChangeMeleeOrRange());
+		compoundTag.putBoolean("IsWonderlinRush", this.isWonderlinRush());
+		compoundTag.putInt("ShieldCoolDown", this.shieldCoolDown);
+		compoundTag.putInt("ShieldCanUse", this.shieldCanUse);
+		this.addPersistentAngerSaveData(compoundTag);
+		this.writeInventoryToTag(compoundTag);
+	}
+	@Override
+	public void readAdditionalSaveData(CompoundTag compoundTag) {
+		super.readAdditionalSaveData(compoundTag);
+		this.setAnimTick(compoundTag.getInt("AnimTick"));
+		if (compoundTag.hasUUID("NotAttackTarget")) {
+			this.notAttackTargetUUID = compoundTag.getUUID("NotAttackTarget");
+		}
+		this.setBowLevel(compoundTag.getInt("BowLevel"));
+		this.setShieldLevel(compoundTag.getInt("ShieldLevel"));
+		this.spellLevel = compoundTag.getInt("SpellLevel");
+		this.setSpellTick(compoundTag.getInt("SpellTick"));
+		this.setCombatStyle(compoundTag.getInt("CombatStyle"));
+		this.setUseSelfNotStringSpellList(compoundTag.getBoolean("UseSelfNotStringSpellList"));
+		this.setNoCombatEmptyWeapon(compoundTag.getBoolean("IsNoCombatEmptyWeapon"));
+		this.setNoCombatEmptyShield(compoundTag.getBoolean("IsNoCombatEmptyShield"));
+		this.setChangeInventoryCooldownTick(compoundTag.getInt("ChangeInventoryCooldownTick"));
+		this.setCanChangeInventory(compoundTag.getBoolean("IsCanChangeInventory"));
+		this.setCanChangeMeleeOrRange(compoundTag.getBoolean("IsCanChangeMeleeOrRange"));
+		this.setWonderlinRush(compoundTag.getBoolean("IsWonderlinRush"));
+		this.shieldCoolDown = compoundTag.getInt("ShieldCoolDown");
+		this.shieldCanUse = compoundTag.getInt("ShieldCanUse");
+		this.readPersistentAngerSaveData((Level)this.level(), compoundTag);
+		this.readInventoryFromTag(compoundTag);
+	}
+	@Override
+	protected void defineSynchedData() {
+		super.defineSynchedData();
+		this.getEntityData().define(BOW_LEVEL, 15);
+		this.getEntityData().define(SHIELD_LEVEL, 1);
+		this.getEntityData().define(IS_CHARGING_CROSSBOW, false);
+		this.getEntityData().define(SPELL_TICK, 0);
+		this.getEntityData().define(IS_WONDERLIN_RUSH, false);
+		this.getEntityData().define(USE_SELF_NOT_SPELL_LIST, true);
+		this.getEntityData().define(COMBAT_STYLE, 1);
+		this.getEntityData().define(ANIM_STATE, 0);
+		this.getEntityData().define(ANIM_TICK, 0);
+		if (!(this instanceof WonderlinMerchantEntity)) {
+			this.getEntityData().define(CAN_CHANGE_INVENTORY, false);
+			this.getEntityData().define(CAN_CHANGE_MELEE_OR_RANGE, false);
+			this.getEntityData().define(NO_COMBAT_EMPTY_WEAPON, false);
+			this.getEntityData().define(NO_COMBAT_EMPTY_SHIELD, false);
+		}
+		else {
+			this.getEntityData().define(CAN_CHANGE_INVENTORY, true);
+			this.getEntityData().define(CAN_CHANGE_MELEE_OR_RANGE, true);
+			this.getEntityData().define(NO_COMBAT_EMPTY_WEAPON, true);
+			this.getEntityData().define(NO_COMBAT_EMPTY_SHIELD, true);
+		}
+		this.getEntityData().define(CHANGE_INVENTORY_COOLDOWN_TICK, 50);
+	}
+	@Override
+	public void onSyncedDataUpdated(EntityDataAccessor<?> entityDataAccessor) {
+		if (!(this instanceof TyrantOfTheMountainRealmEntity)) {
+			if (ANIM_STATE.equals(entityDataAccessor)) {
+				if (this.level().isClientSide()) {
+					switch (this.entityData.get(ANIM_STATE)) {
+						case 0:
+							this.stopAllAnimation();
+							break;
+						case 1:
+							this.attackAnimationState.startIfStopped(this.tickCount);
+							this.stopMostAnimation(this.attackAnimationState);
+							break;
+						case 2:
+							this.kickAnimationState.startIfStopped(this.tickCount);
+							this.stopMostAnimation(this.kickAnimationState);
+							break;
+						case 3:
+							this.pushAnimationState.startIfStopped(this.tickCount);
+							this.stopMostAnimation(this.pushAnimationState);
+							break;
+					}
+				}
+			}
+		}
+		super.onSyncedDataUpdated(entityDataAccessor);
+	}
+
+	@Override
+	protected InteractionResult mobInteract(Player player, InteractionHand interactionHand) {
+		if (!this.isAggressive() && this.getTarget() == null && MainConfig.MobSayQuestionMark) {
+			if (!this.level().isClientSide() && player instanceof ServerPlayer serverPlayer && interactionHand == InteractionHand.MAIN_HAND) {
+				serverPlayer.sendSystemMessage(Component.translatable("talk.jerotesvillage.normal", this.getDisplayName()).withStyle(ChatFormatting.WHITE));
+			}
+		}
+		return super.mobInteract(player, interactionHand);
+	}
+
+	@Override
+	public void aiStep() {
+		super.aiStep();
+		this.updateSwingTime();
+		this.updateNoActionTime();
+		if (this.random.nextInt(900) == 1 && this.deathTime == 0) {
+			this.heal(3.0f);
+		}
+		if (!this.level().isClientSide()) {
+			this.updatePersistentAnger((ServerLevel)this.level(), true);
+		}
+		//停止战斗
+		if (this.getTarget() != null && (!this.getTarget().isAlive() || this.getTarget() instanceof Player player && (player.isCreative() || player.isSpectator()))){
+			this.setTarget(null);
+		}
+		//
+		//法术
+		if (!this.level().isClientSide()) {
+			this.setSpellTick(Math.max(0, this.getSpellTick() - 1));
+		}
+		//
+		//清除动画
+		if (!this.level().isClientSide()) {
+			this.setAnimTick(Math.max(-1, this.getAnimTick() - 1));
+		}
+		if (this.getAnimTick() == 0) {
+			if (!this.level().isClientSide()) {
+				this.setAnimationState(0);
+			}
+		}
+		//奇灵冲撞
+		if (this.isWonderlinRush()) {
+			this.rushAnimationState.start(this.tickCount);
+			if (this.onGround() || Main.isInFluid(this) || this.horizontalCollision || this.verticalCollision || !this.isAlive()) {
+				this.setWonderlinRush(false);
+				this.rushAnimationState.stop();
+			}
+			this.getNavigation().stop();
+			//命中
+			List<LivingEntity> list = this.level().getEntitiesOfClass(LivingEntity.class, this.getAttackBoundingBox());
+			for (LivingEntity attack : list) {
+				if (AttackFind.FindCanNotAttack(this, attack)) continue;
+				if (!this.hasLineOfSight(attack)) continue;
+				if (attack instanceof Mob mob && OtherEntityFactionFind.isWonderlin(mob.getType()) && mob.getTarget() != this && this.getTarget() != mob)
+					continue;
+				if (attack instanceof WonderlinEntity wonderlin && wonderlin.isWonderlinRush())
+					continue;
+				DamageSource damageSource = AttackFind.findDamageType(this, DamageTypes.MOB_ATTACK_NO_AGGRO, this);
+				boolean bl2 = AttackFind.attackAfterCustomDamage(this, attack, damageSource, 0f, 2.0f, true, this.getHealth());
+				if (bl2) {
+					if (!attack.level().isClientSide()) {
+						//麻醉
+						float anesthetizedTicks = 0;
+						double anesthetizedAdds = this.getHealth() * 10 * 20;
+						if (anesthetizedAdds != 0) {
+							if (attack.level() instanceof ServerLevel serverLevel) {
+								serverLevel.sendParticles(JerotesParticleTypes.ANESTHETIZED_VIII.get(), attack.getRandomX(0.5), attack.getRandomY(), attack.getRandomZ(0.5), 3, 0, 0, 0, 0);
+							}
+						}
+						if (attack.hasEffect(JerotesMobEffects.ANESTHETIZED.get())) {
+							anesthetizedTicks = attack.getEffect(JerotesMobEffects.ANESTHETIZED.get()).getDuration();
+						}
+						if (!attack.level().isClientSide && (anesthetizedAdds != 0 || anesthetizedTicks != 0) && !EntityFactionFind.isMachine(attack) && !EntityFactionFind.isConstruct(attack)) {
+							attack.addEffect(new MobEffectInstance(JerotesMobEffects.ANESTHETIZED.get(), (int) (anesthetizedAdds + anesthetizedTicks), 0, false, false));
+						}
+					}
+				}
+				//横扫效果
+				Main.sweepAttack(this);
+				this.setWonderlinRush(false);
+				this.rushAnimationState.stop();
+			}
+		}
+		else {
+			this.rushAnimationState.stop();
+		}
+		if (this.shieldCoolDown > 0){
+			this.shieldCoolDown -= 1;
+			this.shieldCanUse = 0;
+		}
+		if (this.shieldCoolDown <= 0){
+			this.shieldCanUse = 1;
+		}
+		//摧毁骑乘物
+		Main.destroyRides(this);
+		//使用盾牌和双手武器
+		if (!(this instanceof TyrantOfTheMountainRealmEntity)) {
+			useBlockingItem(this);
+		}
+		//替换自己的物品
+		changeInventory(this);
+		if (!(this instanceof TyrantOfTheMountainRealmEntity) && this.tickCount % 20 == 0) {
+			List<TyrantOfTheMountainRealmEntity> listBoss = this.level().getEntitiesOfClass(TyrantOfTheMountainRealmEntity.class, this.getBoundingBox().inflate(32, 32.0, 32));
+			listBoss.removeIf(mob -> !mob.isAlliedTo(this));
+			//敌人
+			if (this.getTarget() != null) {
+				if (!this.level().isClientSide()) {
+					this.setNotAttackTarget(null);
+				}
+			}
+			//被发现取消以及避免持续攻击
+			if (this.getNotAttackTarget() != null && listBoss.isEmpty()) {
+				if (Main.canSee(this, this.getNotAttackTarget()) || this.getNotAttackTarget().hasEffect(MobEffects.UNLUCK)) {
+
+					if (!this.level().isClientSide()) {
+						this.setNotAttackTarget(null);
+					}
+				}
+			}
+		}
+	}
+
+	protected void updateNoActionTime() {
+		float f = this.getLightLevelDependentMagicValue();
+		if (f > 0.5f) {
+			this.noActionTime += 1.1;
+		}
+	}
+
+	@Override
+	protected void blockUsingShield(LivingEntity entityIn) {
+		super.blockUsingShield(entityIn);
+		if (entityIn instanceof BreakShieldEntity breakShield) this.disableShieldBreak(breakShield.getShieldBreakStrength());
+		if (entityIn.getMainHandItem().canDisableShield(this.useItem, this, entityIn) || entityIn.canDisableShield()) this.disableShield();
+		this.disableShieldTry();
+	}
+
+	@Override
+	public boolean isDamageSourceBlocks(DamageSource damageSource) {
+		Vec3 object;
+		Entity entity = damageSource.getDirectEntity();
+		boolean bl = entity instanceof AbstractArrow && ((AbstractArrow) (AbstractArrow) entity).getPierceLevel() > 0;
+		if (!damageSource.is(DamageTypeTags.BYPASSES_SHIELD) && !bl && (object = damageSource.getSourcePosition()) != null) {
+			Vec3 vec3 = this.calculateViewVector(0.0f, this.getYHeadRot());
+			Vec3 vec32 = object.vectorTo(this.position());
+			vec32 = new Vec3(vec32.x, 0.0, vec32.z).normalize();
+			return vec32.dot(vec3) < 0.0;
+		}
+		return false;
+	}
+
+	@Override
+	protected void hurtCurrentlyUsedShield(float f) {
+		if (JerotesGameRules.JEROTES_MELEE_CAN_BREAK != null && this.level().getLevelData().getGameRules().getBoolean(JerotesGameRules.JEROTES_SHIELD_CAN_BREAK)) {
+			if (this.useItem.canPerformAction(ToolActions.SHIELD_BLOCK)) {
+				if (f >= 3.0f) {
+					int n = 1 + Mth.floor(f);
+					InteractionHand interactionHand = this.getUsedItemHand();
+					this.useItem.hurtAndBreak(n, this, player -> player.broadcastBreakEvent(interactionHand));
+					if (this.useItem.isEmpty()) {
+						if (interactionHand == InteractionHand.MAIN_HAND) {
+							this.setItemSlot(EquipmentSlot.MAINHAND, ItemStack.EMPTY);
+						} else {
+							this.setItemSlot(EquipmentSlot.OFFHAND, ItemStack.EMPTY);
+						}
+						this.useItem = ItemStack.EMPTY;
+						this.playSound(SoundEvents.SHIELD_BREAK, 0.8f, 0.8f + this.level().random.nextFloat() * 0.4f);
+					}
+				}
+			}
+		}
+	}
+
+	@Override
+	public void disableShield() {
+		if (this.getRandom().nextFloat() <= (1 - (this.getShieldLevel() - 1) * 0.2f)) {
+			if (this.shieldCoolDown < 100) {
+				this.shieldCoolDown = 100;
+			}
+			this.shieldCanUse = 0;
+			if (this.getUseItem().getItem() instanceof ShieldItem) {
+				this.stopUsingItem();
+			}
+		}
+	}
+	@Override
+	public void disableShieldTry() {
+		if (this.getRandom().nextFloat() <= (0.15 - (this.getShieldLevel() - 1) * 0.05f)) {
+			if (this.shieldCoolDown < 100) {
+				this.shieldCoolDown = 100;
+			}
+			this.shieldCanUse = 0;
+			if (this.getUseItem().getItem() instanceof ShieldItem) {
+				this.stopUsingItem();
+			}
+		}
+	}
+	@Override
+	public void disableShieldBreak(int tick) {
+		if (tick == 0) {
+			return;
+		}
+		if (this.shieldCoolDown < tick) {
+			this.shieldCoolDown = tick;
+		}
+		this.shieldCanUse = 0;
+		if (this.getUseItem().getItem() instanceof ShieldItem) {
+			this.stopUsingItem();
+		}
+	}
+
+	@Override
+	protected void hurtArmor(DamageSource damageSource, float damage) {
+		if (JerotesGameRules.JEROTES_ARMOR_CAN_BREAK != null && this.level().getLevelData().getGameRules().getBoolean(JerotesGameRules.JEROTES_ARMOR_CAN_BREAK)) {
+			if (damage >= 0.0F) {
+				damage = damage / 4.0F;
+				if (damage < 1.0F) {
+					damage = 1.0F;
+				}
+				ItemStack head = this.getItemBySlot(EquipmentSlot.HEAD);
+				ItemStack chest = this.getItemBySlot(EquipmentSlot.CHEST);
+				ItemStack legs = this.getItemBySlot(EquipmentSlot.LEGS);
+				ItemStack feet = this.getItemBySlot(EquipmentSlot.FEET);
+				if ((!damageSource.is(DamageTypes.ON_FIRE) || !head.getItem().isFireResistant() && !damageSource.is(DamageTypeTags.BYPASSES_ARMOR))) {
+					if (head.getItem() instanceof ArmorItem) {
+						head.hurtAndBreak((int) damage, this, player -> player.broadcastBreakEvent(EquipmentSlot.HEAD));
+					}
+					if (chest.getItem() instanceof ArmorItem) {
+						chest.hurtAndBreak((int) damage, this, player -> player.broadcastBreakEvent(EquipmentSlot.CHEST));
+					}
+					if (legs.getItem() instanceof ArmorItem) {
+						legs.hurtAndBreak((int) damage, this, player -> player.broadcastBreakEvent(EquipmentSlot.LEGS));
+					}
+					if (feet.getItem() instanceof ArmorItem) {
+						feet.hurtAndBreak((int) damage, this, player -> player.broadcastBreakEvent(EquipmentSlot.FEET));
+					}
+				}
+			}
+		}
+	}
+
+	@Override
+	public boolean doHurtTarget(Entity entity) {
+		if (this.isWonderlinRush()) {
+			return false;
+		}
+		this.attackAnimation();
+		boolean bl = super.doHurtTarget(entity);
+		if (bl) {
+			if (!this.isSilent()) {
+				this.playSound(JerotesVillageSoundEvents.WONDERLIN_ATTACK, 1.0f, 1.0f);
+			}
+			if (JerotesGameRules.JEROTES_MELEE_CAN_BREAK != null && this.level().getLevelData().getGameRules().getBoolean(JerotesGameRules.JEROTES_MELEE_CAN_BREAK)) {
+				ItemStack hand = this.getMainHandItem();
+				hand.hurtAndBreak(1, this, player -> player.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+			}
+		}
+		return bl;
+	}
+	public void attackAnimation() {
+		if (!this.level().isClientSide()) {
+			this.setAnimTick(8);
+			this.setAnimationState("attack");
+		}
+	}
+
+	public boolean kickTarget(Entity entity) {
+		double d = 0.0;
+		if (entity instanceof LivingEntity livingEntity && livingEntity.getAttribute(Attributes.KNOCKBACK_RESISTANCE) != null) {
+			d = Math.max(livingEntity.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE), 1.0);
+		}
+		double d3 = Math.max(0, 1 - d);
+		float damage = 0;
+		if (entity instanceof Player) {
+			damage = 0.1f;
+		}
+
+		if (this.getRandom().nextFloat() > 0.5f) {
+			if (!this.level().isClientSide()) {
+				this.setAnimTick(10);
+				this.setAnimationState("kick");
+			}
+			DamageSource damageSource = AttackFind.findDamageType(this, DamageTypes.MOB_ATTACK_NO_AGGRO, this);
+			AttackFind.attackBegin(this, entity);
+			boolean bl = AttackFind.attackAfterCustomDamage(this, entity, damageSource, 0f, 1.0f, true, damage);
+			if (bl) {
+				if (!this.isSilent()) {
+					this.playSound(JerotesVillageSoundEvents.WONDERLIN_KICK, 1.0f, 1.0f);
+				}
+				if (!entity.level().isClientSide && entity instanceof LivingEntity livingEntity) {
+					livingEntity.addEffect(new MobEffectInstance(MobEffects.UNLUCK, 200, 0), this);
+				}
+				entity.setOnGround(false);
+				entity.setDeltaMovement(entity.getDeltaMovement().add(-(this.getX() - entity.getX()) * 1.4 * (d3 + 0.3), -(this.getY() - entity.getY()) * 2 * (d3 + 0.35), -(this.getZ() - entity.getZ()) * 1.4 * (d3 + 0.3)));
+			}
+			if (!this.level().isClientSide()) {
+				this.setNotAttackTarget(null);
+			}
+			return bl;
+		}
+		else {
+			if (!this.level().isClientSide()) {
+				this.setAnimTick(10);
+				this.setAnimationState("push");
+			}
+			DamageSource damageSource = AttackFind.findDamageType(this, DamageTypes.MOB_ATTACK_NO_AGGRO, this);
+			AttackFind.attackBegin(this, entity);
+			boolean bl = AttackFind.attackAfterCustomDamage(this, entity, damageSource, 0f, 1.0f, true, damage);
+			if (bl) {
+				if (!this.isSilent()) {
+					this.playSound(JerotesVillageSoundEvents.WONDERLIN_PUSH, 1.0f, 1.0f);
+				}
+				if (!entity.level().isClientSide && entity instanceof LivingEntity livingEntity) {
+					livingEntity.addEffect(new MobEffectInstance(MobEffects.UNLUCK, 200, 0), this);
+				}
+				entity.setOnGround(false);
+				entity.setDeltaMovement(entity.getDeltaMovement().add(-(this.getX() - entity.getX()) * 1.4 * (d3 + 0.3), -(this.getY() - entity.getY()) * 0.5 * (d3 + 0.35), -(this.getZ() - entity.getZ()) * 1.4 * (d3 + 0.3)));
+			}
+			if (!this.level().isClientSide()) {
+				this.setNotAttackTarget(null);
+			}
+			return bl;
+		}
+	}
+
+	@Override
+	public boolean isInvulnerableTo(DamageSource damageSource) {
+		if (this.isWonderlinRush() && damageSource.is(DamageTypeTags.IS_FALL)) {
+			return true;
+		}
+		return super.isInvulnerableTo(damageSource);
+	}
+
+	@Override
+	public boolean isAlliedTo(Entity entity) {
+		if (entity == null) {
+			return false;
+		}
+		if (entity == this) {
+			return true;
+		}
+		if (super.isAlliedTo(entity)) {
+			return true;
+		}
+		if (entity instanceof LivingEntity livingEntity && EntityFactionFind.isFaction(this, livingEntity)) {
+			return this.getTeam() == null && entity.getTeam() == null;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean canAttack(LivingEntity livingEntity) {
+		if (((this.getTeam() == null && livingEntity.getTeam() == null) || this.getTeam() == livingEntity.getTeam()) &&
+				EntityFactionFind.isFaction(this, livingEntity)
+		) {
+			return false;
+		}
+		return super.canAttack(livingEntity);
+	}
+
+	@Nullable
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor serverLevelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData, @Nullable CompoundTag compoundTag) {
+		RandomSource randomSource = serverLevelAccessor.getRandom();
+		if (mobSpawnType != MobSpawnType.CONVERSION) {
+			this.populateDefaultEquipmentSlots(randomSource, difficultyInstance);
+			float weaponRandom = this.random.nextFloat();
+			float offhandRandom = this.random.nextFloat();
+			this.setItemSlot(EquipmentSlot.MAINHAND, this.createSpawnWeapon(weaponRandom));
+			this.setItemSlot(EquipmentSlot.OFFHAND, this.createSpawnOffhand(offhandRandom));
+			this.populateDefaultEquipmentEnchantments(randomSource, difficultyInstance);
+		}
+		return super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
+	}
+
+	public ItemStack createSpawnWeapon(float weaponRandom) {
+		return new ItemStack(Items.AIR);
+	}
+
+	public ItemStack createSpawnOffhand(float offhandRandom) {
+		return new ItemStack(Items.AIR);
+	}
+
+	@Nullable
+	private UUID persistentAngerTarget;
+	private static final UniformInt PERSISTENT_ANGER_TIME = TimeUtil.rangeOfSeconds(20, 39);
+	private int remainingPersistentAngerTime;
+
+	@Override
+	public int getRemainingPersistentAngerTime() {
+		return this.remainingPersistentAngerTime;
+	}
+
+	@Override
+	public void setRemainingPersistentAngerTime(int n) {
+		this.remainingPersistentAngerTime = n;
+	}
+
+
+	@Override
+	public void startPersistentAngerTimer() {
+		this.setRemainingPersistentAngerTime(PERSISTENT_ANGER_TIME.sample(this.random));
+	}
+
+	@Nullable
+	@Override
+	public UUID getPersistentAngerTarget() {
+		return this.persistentAngerTarget;
+	}
+
+	@Override
+	public void setPersistentAngerTarget(@Nullable UUID uUID) {
+		this.persistentAngerTarget = uUID;
+	}
+}
+

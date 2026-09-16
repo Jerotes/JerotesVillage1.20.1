@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Hunter",
+  "icon": "jerotesvillage:villager_block_hunter",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_hunter",
+      "title": "Villager Block Hunter",
+      "text": "$(l:villager_profession/hunter)Hunter$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_hunter_craft"
+    }
+  ]
+}

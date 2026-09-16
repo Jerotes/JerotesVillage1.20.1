@@ -1,0 +1,47 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_rapier",
+    "particle": "jerotesvillage:item/meror_rapier"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/meror_rapier_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/meror_rapier_model",
+      "particle": "jerotesvillage:item/meror_rapier"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/meror_rapier_use"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_rapier"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_rapier"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_rapier"
+      },
+      "gui_light": "front"
+    }
+
+  }
+}

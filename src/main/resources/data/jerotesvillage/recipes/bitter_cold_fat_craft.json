@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": [
+      {
+        "item": "jerotesvillage:meganose_snow_lizard_meat"
+      },
+      {
+        "item": "jerotesvillage:cooked_meganose_snow_lizard_meat"
+      }
+    ]
+  },
+  "result": {
+    "item": "jerotesvillage:bitter_cold_fat"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:scaly_bear_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "jerotesvillage:rambler_leather_helmet"
+  },
+  "addition": {
+    "tag": "forge:ingots/gold"
+  },
+  "result": {
+    "item": "jerotesvillage:scaly_bear_helmet"
+  }
+}

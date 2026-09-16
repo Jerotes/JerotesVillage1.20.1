@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jerotesvillage:block/petrified_black_yellow_slab"
+    },
+    "type=double": {
+      "model": "jerotesvillage:block/black_yellow_planks"
+    },
+    "type=top": {
+      "model": "jerotesvillage:block/petrified_black_yellow_slab_top"
+    }
+  }
+}

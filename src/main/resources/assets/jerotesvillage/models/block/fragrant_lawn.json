@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/fragrant_lawn",
+    "particle": "jerotesvillage:block/fragrant_lawn"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "facing=north,part=0": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue"
+    },
+    "facing=north,part=1": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue"
+    },
+    "facing=north,part=2": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue"
+    },
+    "facing=north,part=3": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue"
+    },
+    "facing=north,part=4": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue"
+    },
+    "facing=east,part=0": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 90
+    },
+    "facing=east,part=1": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 90
+    },
+    "facing=east,part=2": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 90
+    },
+    "facing=east,part=3": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 90
+    },
+    "facing=east,part=4": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 90
+    },
+    "facing=south,part=0": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 180
+    },
+    "facing=south,part=1": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 180
+    },
+    "facing=south,part=2": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 180
+    },
+    "facing=south,part=3": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 180
+    },
+    "facing=south,part=4": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 180
+    },
+    "facing=west,part=0": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 270
+    },
+    "facing=west,part=1": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 270
+    },
+    "facing=west,part=2": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 270
+    },
+    "facing=west,part=3": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 270
+    },
+    "facing=west,part=4": {
+      "model": "jerotesvillage:block/tyrant_of_the_mountain_realm_statue",
+      "y": 270
+    }
+  }
+}

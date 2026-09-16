@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_fungus"
+    },
+    {
+      "item": "jerotesvillage:second_rounder_map"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:hoglin_farm_map",
+    "count": 1
+  }
+}

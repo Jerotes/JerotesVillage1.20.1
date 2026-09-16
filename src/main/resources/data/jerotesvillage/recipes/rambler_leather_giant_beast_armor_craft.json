@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "ccc",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:rambler_leather"
+    },
+    "b": {
+      "item": "jerotes:giant_beast_armor_base"
+    },
+    "c": {
+      "item": "jerotesvillage:rambler_leather_block"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:rambler_leather_giant_beast_armor",
+    "count": 1
+  }
+}

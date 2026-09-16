@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jerotesvillage:block/wonderland_slab"
+    },
+    "type=double": {
+      "model": "jerotesvillage:block/wonderland_planks"
+    },
+    "type=top": {
+      "model": "jerotesvillage:block/wonderland_slab_top"
+    }
+  }
+}

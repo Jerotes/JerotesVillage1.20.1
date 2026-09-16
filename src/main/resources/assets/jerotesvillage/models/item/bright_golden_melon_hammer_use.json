@@ -1,0 +1,95 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/bright_golden_melon_hammer",
+    "particle": "jerotesvillage:item/bright_golden_melon_hammer"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/bright_golden_melon_hammer_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/bright_golden_melon_hammer_model",
+      "particle": "jerotesvillage:item/bright_golden_melon_hammer"
+    },
+    "elements": [
+      {
+        "name": "rod",
+        "from": [7.5, 0, 7.5],
+        "to": [8.5, 15, 8.5],
+        "rotation": {"angle": 0, "axis": "y", "origin": [8, 9.5, 8]},
+        "faces": {
+          "north": {"uv": [0.5, 0.5, 1, 8], "texture": "#0"},
+          "east": {"uv": [0, 0.5, 0.5, 8], "texture": "#0"},
+          "south": {"uv": [1.5, 0.5, 2, 8], "texture": "#0"},
+          "west": {"uv": [1, 0.5, 1.5, 8], "texture": "#0"},
+          "up": {"uv": [1, 0.5, 0.5, 0], "texture": "#0"},
+          "down": {"uv": [1.5, 0, 1, 0.5], "texture": "#0"}
+        }
+      },
+      {
+        "name": "head",
+        "from": [5.5, 9, 5.5],
+        "to": [10.5, 14, 10.5],
+        "rotation": {"angle": 0, "axis": "y", "origin": [8, 11.5, 8]},
+        "faces": {
+          "north": {"uv": [4.5, 2.5, 7, 5], "texture": "#0"},
+          "east": {"uv": [2, 2.5, 4.5, 5], "texture": "#0"},
+          "south": {"uv": [9.5, 2.5, 12, 5], "texture": "#0"},
+          "west": {"uv": [7, 2.5, 9.5, 5], "texture": "#0"},
+          "up": {"uv": [7, 2.5, 4.5, 0], "texture": "#0"},
+          "down": {"uv": [9.5, 0, 7, 2.5], "texture": "#0"}
+        }
+      }
+    ],
+    "display": {
+      "thirdperson_righthand": {
+        "rotation": [0, 0, 28],
+        "translation": [-1.25, 2.25, 1.25]
+      },
+      "thirdperson_lefthand": {
+        "rotation": [0, 0, 28],
+        "translation": [-1.25, 2.25, 1.25]
+      },
+      "firstperson_righthand": {
+        "rotation": [0, 0, 59],
+        "translation": [-2.75, 5.25, 1.25]
+      },
+      "firstperson_lefthand": {
+        "rotation": [0, 0, 59],
+        "translation": [-2.75, 5.25, 1.25]
+      }
+    },
+    "groups": [
+      {
+        "name": "body",
+        "origin": [7.5, 0, 7.5],
+        "color": 0,
+        "nbt": "{}",
+        "children": [0, 1]
+      }
+    ]
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bright_golden_melon_hammer"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bright_golden_melon_hammer"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bright_golden_melon_hammer"
+      },
+      "gui_light": "front"
+    }
+  }
+}

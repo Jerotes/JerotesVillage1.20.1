@@ -1,0 +1,41 @@
+{
+  "parent": "jerotesvillage:elemental_materials",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:magicka_scale_upgrade_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.magic_resistance.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.magic_resistance.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "magic_resistance": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:magicka_scale_upgrade_smithing_template"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:magicka_scale_helmet_smith",
+      "jerotesvillage:magicka_scale_chestplate_smith",
+      "jerotesvillage:magicka_scale_leggings_smith",
+      "jerotesvillage:magicka_scale_boots_smith"
+    ]
+  }
+}

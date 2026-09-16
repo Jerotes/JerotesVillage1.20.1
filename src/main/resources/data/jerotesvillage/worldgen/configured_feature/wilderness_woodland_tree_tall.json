@@ -1,0 +1,355 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [
+      {
+        "type": "jerotesvillage:place_on_ground",
+        "block_state_provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "north",
+                  "age": "1"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "east",
+                  "age": "1"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "south",
+                  "age": "1"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "west",
+                  "age": "1"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "north",
+                  "age": "2"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "east",
+                  "age": "2"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "south",
+                  "age": "2"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "west",
+                  "age": "2"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "north",
+                  "age": "3"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "east",
+                  "age": "3"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "south",
+                  "age": "3"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "west",
+                  "age": "3"
+                }
+              },
+              "weight": 1
+            }
+          ]
+        },
+        "height": 2,
+        "radius": 4,
+        "tries": 96
+      },
+      {
+        "type": "jerotesvillage:place_on_ground",
+        "block_state_provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "north",
+                  "age": "1"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "east",
+                  "age": "1"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "south",
+                  "age": "1"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "west",
+                  "age": "1"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "north",
+                  "age": "2"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "east",
+                  "age": "2"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "south",
+                  "age": "2"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "west",
+                  "age": "2"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "north",
+                  "age": "3"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "east",
+                  "age": "3"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "south",
+                  "age": "3"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "west",
+                  "age": "3"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "north",
+                  "age": "4"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "east",
+                  "age": "4"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "south",
+                  "age": "4"
+                }
+              },
+              "weight": 1
+            },
+            {
+              "data": {
+                "Name": "jerotesvillage:black_yellow_leaf_litter",
+                "Properties": {
+                  "facing": "west",
+                  "age": "4"
+                }
+              },
+              "weight": 1
+            }
+          ]
+        },
+        "height": 2,
+        "radius": 2,
+        "tries": 150
+      }
+    ],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "jerotesvillage:wilderness_dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:blob_foliage_placer",
+      "height": 5,
+      "offset": 0,
+      "radius": 2
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "jerotesvillage:black_yellow_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 2,
+      "lower_size": 2,
+      "upper_size": 4
+    },
+    "trunk_placer": {
+      "type": "minecraft:giant_trunk_placer",
+      "base_height": 10,
+      "height_rand_a": 6,
+      "height_rand_b": 19
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "jerotesvillage:black_yellow_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

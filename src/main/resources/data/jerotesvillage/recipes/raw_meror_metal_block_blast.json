@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 7200,
+  "experience": 45.0,
+  "ingredient": {
+    "item": "jerotesvillage:raw_meror_metal_block"
+  },
+  "result": "jerotesvillage:meror_metal_block"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:refine_meror_metal_block"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:refine_meror_metal_ingot",
+    "count": 9
+  }
+}

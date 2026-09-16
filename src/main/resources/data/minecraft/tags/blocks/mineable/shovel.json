@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:gemstone_gravel",
+    "jerotesvillage:deep_dust_block",
+    "jerotesvillage:slider_mark",
+    "jerotesvillage:carved_villager_concertina_wire",
+    "jerotesvillage:sediment_moisture_proof_paste"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "jerotesvillage:block/white_breeze_violet"
+  },
+  "render_type": "cutout"
+}

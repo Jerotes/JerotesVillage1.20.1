@@ -1,0 +1,9 @@
+{
+  "name": "merorsenergeticgun.gun.crimson_cunpowder_storm.name",
+  "tooltip": "merorsenergeticgun.gun.crimson_cunpowder_storm.desc",
+  "data": "merorsenergeticgun:crimson_cunpowder_storm_data",
+  "display": "merorsenergeticgun:crimson_cunpowder_storm_display",
+  "type": "mg",
+  "item_type": "modern_kinetic",
+  "sort": 3
+}

@@ -1,0 +1,101 @@
+{
+  "texture_size": [32, 32],
+  "textures": {
+    "0": "jerotesvillage:item/drought_wildfire_shield_model",
+    "particle": "jerotesvillage:item/drought_wildfire_shield"
+  },
+  "elements": [
+    {
+      "name": "shield",
+      "from": [7, 8, 6],
+      "to": [9, 14, 12],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 11, 9]},
+      "faces": {
+        "north": {"uv": [1.5, 1.5, 2, 3], "texture": "#0"},
+        "east": {"uv": [0, 1.5, 1.5, 3], "texture": "#0"},
+        "south": {"uv": [3.5, 1.5, 4, 3], "texture": "#0"},
+        "west": {"uv": [2, 1.5, 3.5, 3], "texture": "#0"},
+        "up": {"uv": [2, 1.5, 1.5, 0], "texture": "#0"},
+        "down": {"uv": [2.5, 0, 2, 1.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "shield",
+      "from": [1.75, 1.75, 3.5],
+      "to": [14.25, 20.25, 6],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 11, 4.75]},
+      "faces": {
+        "north": {"uv": [0.5, 11.5, 3.5, 16], "texture": "#0"},
+        "east": {"uv": [0, 11.5, 0.5, 16], "texture": "#0"},
+        "south": {"uv": [4, 11.5, 7, 16], "texture": "#0"},
+        "west": {"uv": [3.5, 11.5, 4, 16], "texture": "#0"},
+        "up": {"uv": [3.5, 11.5, 0.5, 11], "texture": "#0"},
+        "down": {"uv": [6.5, 11, 3.5, 11.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "shield",
+      "from": [2, 2, 3.75],
+      "to": [14, 20, 5.75],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 11, 4.75]},
+      "faces": {
+        "north": {"uv": [0.5, 6.5, 3.5, 11], "texture": "#0"},
+        "east": {"uv": [0, 6.5, 0.5, 11], "texture": "#0"},
+        "south": {"uv": [4, 6.5, 7, 11], "texture": "#0"},
+        "west": {"uv": [3.5, 6.5, 4, 11], "texture": "#0"},
+        "up": {"uv": [3.5, 6.5, 0.5, 6], "texture": "#0"},
+        "down": {"uv": [6.5, 6, 3.5, 6.5], "texture": "#0"}
+      }
+    }
+  ],
+  "gui_light": "front",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, -90, 0],
+      "translation": [1, -5, 4]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, -90, 0],
+      "translation": [1, -5, 4]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, 0, -5],
+      "translation": [0, -13, 0],
+      "scale": [1.25, 1.25, 1.25]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 0, -5],
+      "translation": [0, -13, 0],
+      "scale": [1.25, 1.25, 1.25]
+    },
+    "ground": {
+      "scale": [0.25, 0.25, 0.25]
+    },
+    "gui": {
+      "rotation": [0, -155, 5],
+      "translation": [-2, -2, 0],
+      "scale": [0.65, 0.65, 0.65]
+    },
+    "fixed": {
+      "translation": [0, -1.5, 0],
+      "scale": [0.55, 0.55, 0.55]
+    }
+  },
+  "groups": [
+    {
+      "name": "shield",
+      "origin": [8, 11, 9],
+      "scope": 0,
+      "color": 0,
+      "children": [0, 1, 2]
+    }
+  ],
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "jerotesvillage:item/drought_wildfire_shield_blocking"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/ominous_mace",
+    "particle": "jerotesvillage:item/ominous_mace"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/ominous_mace_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/ominous_mace_model",
+      "particle": "jerotesvillage:item/ominous_mace"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_mace"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_mace"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_mace"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cbc",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/meror_metal"
+    },
+    "b": {
+      "tag": "forge:rods/meror_metal"
+    },
+    "c": {
+      "item": "jerotes:high_strength_string"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:meror_metal_crossbow",
+    "count": 1
+  }
+}

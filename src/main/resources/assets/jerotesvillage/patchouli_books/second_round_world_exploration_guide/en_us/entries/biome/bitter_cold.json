@@ -1,0 +1,12 @@
+{
+  "name": "Bitter Cold",
+  "icon": "jerotesvillage:snow_frozen_soil",
+  "category": "jerotesvillage:biome",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Take a deep breath, allowing yourself time to adapt to dimensional shifts—but remain vigilant. The most critical first step begins now: determine your location. According to our intelligence, the Second Round World contains 13 distinct biomes. Use the descriptions below to immediately identify your biome."
+    }
+  ],
+  "sortnum": 1
+}

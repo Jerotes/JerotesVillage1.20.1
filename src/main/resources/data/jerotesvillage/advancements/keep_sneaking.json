@@ -1,0 +1,48 @@
+{
+  "parent": "jerotesvillage:jerotes_adventure",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:resurrecter_coffin"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.keep_sneaking.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.keep_sneaking.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "keep_sneaking": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "jerotesvillage:sediment_catacombs"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:sediment_mud_brick_slab_craft",
+      "jerotesvillage:sediment_mud_brick_slab_from_sediment_mud_bricks_stonecutting",
+      "jerotesvillage:sediment_mud_brick_stairs_craft",
+      "jerotesvillage:sediment_mud_brick_stairs_from_sediment_mud_bricks_stonecutting",
+      "jerotesvillage:sediment_mud_brick_wall_craft",
+      "jerotesvillage:sediment_mud_brick_wall_from_sediment_mud_bricks_stonecutting",
+      "jerotesvillage:sediment_moisture_proof_paste_craft"
+    ]
+  }
+}

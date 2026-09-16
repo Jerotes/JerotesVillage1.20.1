@@ -1,0 +1,16 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:drought_fire_mud"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:red_sand"
+    }
+  ]
+}

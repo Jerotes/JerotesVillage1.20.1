@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:deep_dust"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:deep_dust_block",
+    "count": 1
+  }
+}

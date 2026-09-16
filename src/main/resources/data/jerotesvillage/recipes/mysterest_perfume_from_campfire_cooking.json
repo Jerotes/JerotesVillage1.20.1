@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "jerotesvillage:bagged_mysterest_petals"
+  },
+  "result": "jerotesvillage:mysterest_perfume"
+}

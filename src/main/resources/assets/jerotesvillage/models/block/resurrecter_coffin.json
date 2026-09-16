@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "jerotesvillage:block/resurrecter_coffin_bottom",
+    "side": "jerotesvillage:block/resurrecter_coffin",
+    "top": "jerotesvillage:block/resurrecter_coffin_top"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "parent": "jerotesvillage:bright_grassland",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:bright_melon"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.crisp.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.crisp.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crisp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:bright_melon_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:bright_melon_seeds_craft",
+      "jerotesvillage:bright_melon_crate_craft",
+      "jerotesvillage:bright_melon_craft"
+    ]
+  }
+}

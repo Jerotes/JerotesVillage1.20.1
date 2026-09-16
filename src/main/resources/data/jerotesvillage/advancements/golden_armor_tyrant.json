@@ -1,0 +1,39 @@
+{
+  "parent": "jerotesvillage:harmonious_wonderland",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:tyrant_of_the_mountain_realm_helmet_plume"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.golden_armor_tyrant.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.golden_armor_tyrant.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "golden_armor_tyrant": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:tyrant_of_the_mountain_realm"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

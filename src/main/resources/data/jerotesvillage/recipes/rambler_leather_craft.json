@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:rambler_skin"
+    },
+    "b":[
+      {
+        "item": "jerotesvillage:pink_slime_ball"
+      },
+      {
+        "item": "jerotesvillage:tinbush"
+      }
+    ]
+  },
+  "result": {
+    "item": "jerotesvillage:rambler_leather",
+    "count": 1
+  }
+}

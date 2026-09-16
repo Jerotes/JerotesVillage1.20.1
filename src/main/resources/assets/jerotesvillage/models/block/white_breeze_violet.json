@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/white_breeze_violet",
+    "particle": "jerotesvillage:block/white_breeze_violet"
+  },
+  "render_type": "cutout"
+}

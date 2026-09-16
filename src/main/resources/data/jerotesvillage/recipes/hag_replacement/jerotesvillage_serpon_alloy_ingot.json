@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:serpon_alloy_ingot"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ]
+}

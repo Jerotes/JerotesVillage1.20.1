@@ -1,0 +1,28 @@
+{
+  "name": "Forger",
+  "icon": "minecraft:iron_ingot",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_forger\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:iron_ingot",
+      "title": "Forger"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_forger\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_forger",
+      "title": "Villager Metal Anvil",
+      "text": "$(l:villager_block/forge)Villager Metal Anvil$()"
+    }
+  ]
+}

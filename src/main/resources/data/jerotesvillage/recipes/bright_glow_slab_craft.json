@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_slab",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:bright_glow_planks"
+    }
+  },
+  "result": {
+    "count": 6,
+    "item": "jerotesvillage:bright_glow_slab"
+  }
+}

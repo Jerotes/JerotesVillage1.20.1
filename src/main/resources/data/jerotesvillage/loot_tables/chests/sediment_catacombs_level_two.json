@@ -1,0 +1,367 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jerotes:heal_javelin",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:diamond",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 12.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:emerald",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 6.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gold_ingot",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:experience_bottle",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:golden_apple",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:name_tag",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9.0,
+                "min": 4.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:golden_carrot",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30.0,
+              "treasure": true
+            }
+          ],
+          "name": "minecraft:book"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jerotesvillage:rambler_leather",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jerotes:high_strength_string",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:chain",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:brush"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:healing"
+            }
+          ],
+          "name": "minecraft:splash_potion"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_pincer"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30.0,
+              "treasure": true
+            }
+          ],
+          "name": "minecraft:book"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 14.0,
+        "min": 3.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 32.0,
+                "min": 8.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jerotesvillage:ancient_second_rounder_arrow",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_dagger",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_sword",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_war_axe",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_mace",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_greatsword",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_battleaxe",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_warhammer",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_warspear",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_pike",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_pincer",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_bow",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_helmet",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_shield",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_chestplate",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_leggings",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_boots",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_heavy_helmet",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_heavy_chestplate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_heavy_leggings",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:ancient_second_rounder_heavy_boots",
+          "weight": 2
+        }
+      ],
+      "rolls": 3.0
+    }
+  ],
+  "random_sequence": "jerotesvillage:chests/sediment_catacombs_level_two"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/copper"
+    },
+    "b": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_base",
+    "count": 3
+  }
+}

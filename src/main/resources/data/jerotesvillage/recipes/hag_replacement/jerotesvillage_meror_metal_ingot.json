@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:meror_metal_ingot"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:ruin_stone_bricks"
+    }
+  ]
+}

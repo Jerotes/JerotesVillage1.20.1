@@ -1,0 +1,39 @@
+{
+  "parent": "jerotesvillage:rambler_skin",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:prosperous_envoy_flower"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.tribal_leader.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.tribal_leader.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tribal_leader": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:prosperous_envoy"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

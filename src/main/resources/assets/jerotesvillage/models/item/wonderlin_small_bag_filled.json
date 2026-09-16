@@ -1,0 +1,6 @@
+{
+    "parent": "jerotesvillage:item/wonderlin_small_bag",
+    "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_small_bag_filled"
+    }
+}

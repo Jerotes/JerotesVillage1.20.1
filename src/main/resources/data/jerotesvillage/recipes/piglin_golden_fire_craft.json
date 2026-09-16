@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ada",
+    "bbb",
+    "ece"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:gems/quartz"
+    },
+    "b": {
+      "item": "minecraft:fire_charge"
+    },
+    "c": {
+      "tag": "forge:ingots/gold"
+    },
+    "d": {
+      "item": "minecraft:ender_eye"
+    },
+    "e": {
+      "item": "jerotesvillage:firelight_stone"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:piglin_golden_fire",
+    "count": 1
+  }
+}

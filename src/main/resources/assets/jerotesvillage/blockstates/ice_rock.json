@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "jerotesvillage:block/ice_rock"
+      },
+      {
+        "model": "jerotesvillage:block/ice_rock",
+        "y": 90
+      },
+      {
+        "model": "jerotesvillage:block/ice_rock",
+        "y": 180
+      },
+      {
+        "model": "jerotesvillage:block/ice_rock",
+        "y": 270
+      }
+    ]
+  }
+}

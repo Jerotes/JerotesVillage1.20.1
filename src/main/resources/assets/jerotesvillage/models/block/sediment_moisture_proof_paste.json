@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "jerotesvillage:block/sediment_moisture_proof_paste"
+  }
+}

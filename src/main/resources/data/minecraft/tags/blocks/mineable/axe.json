@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+   "jerotesvillage:flavorless_melon",
+   "jerotesvillage:bright_grass",
+   "jerotesvillage:tall_bright_grass",
+   "jerotesvillage:stone_leaves_fern",
+   "jerotesvillage:large_stone_leaves_fern",
+   "jerotesvillage:rambler_leather_block",
+   "jerotesvillage:virtual_cave_fishing_net_block",
+   "jerotesvillage:carved_villager_concertina_wire",
+   "jerotesvillage:bright_land_drum",
+   "jerotesvillage:wilderness_thorns",
+   "jerotesvillage:predation_toothed_flower_block",
+   "jerotesvillage:botanize_altar",
+   "jerotesvillage:tyrant_of_the_mountain_realm_statue",
+   "jerotesvillage:bright_melon_crate",
+   "jerotesvillage:golden_bright_melon_crate",
+   "jerotesvillage:second_round_nigrum_crate",
+   "jerotesvillage:wonderland_fruit_crate"
+  ]
+}

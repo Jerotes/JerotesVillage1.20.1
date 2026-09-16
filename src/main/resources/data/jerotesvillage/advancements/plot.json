@@ -1,0 +1,40 @@
+{
+  "parent": "jerotesvillage:harmonious_wonderland",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:celestial_coilvine_broken_vine"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.plot.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.plot.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "plot": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:celestial_coilvine"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:celestial_coilvine_carpet_craft"
+    ]
+  }
+}

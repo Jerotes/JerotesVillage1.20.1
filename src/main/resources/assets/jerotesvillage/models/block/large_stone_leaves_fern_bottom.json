@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "jerotesvillage:block/large_stone_leaves_fern_bottom"
+  },
+  "render_type": "cutout"
+}

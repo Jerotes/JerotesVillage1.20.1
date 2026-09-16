@@ -1,0 +1,28 @@
+{
+  "name": "灾厄村民",
+  "icon": "minecraft:totem_of_undying",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_illager\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:totem_of_undying",
+      "title": "灾厄村民"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_illager\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_illager",
+      "title": "村民工作台 灾厄村民",
+      "text": "$(l:villager_block/illager)村民工作台 灾厄村民$()"
+    }
+  ]
+}

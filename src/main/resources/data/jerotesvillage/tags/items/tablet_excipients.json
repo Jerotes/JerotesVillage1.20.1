@@ -1,0 +1,18 @@
+{
+  "__comment": "药片基底",
+  "replace": false,
+  "values": [
+    "minecraft:wheat",
+    "minecraft:potato",
+    "minecraft:bone_meal",
+    "minecraft:sugar",
+    "minecraft:quartz",
+    "minecraft:dried_kelp",
+    "minecraft:beetroot",
+    "minecraft:sugar",
+    "minecraft:glowstone_dust",
+    "minecraft:redstone",
+    "jerotesvillage:virtual_cave_evil_crystal",
+    "jerotesvillage:flavorless_melon_slice"
+  ]
+}

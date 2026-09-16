@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:villager_warrior",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:carved_flag"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.liberty_leading_the_villager.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.liberty_leading_the_villager.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "liberty_leading_the_villager": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

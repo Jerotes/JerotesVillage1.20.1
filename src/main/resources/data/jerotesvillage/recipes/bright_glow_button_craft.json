@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:bright_glow_planks"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:bright_glow_button"
+  }
+}

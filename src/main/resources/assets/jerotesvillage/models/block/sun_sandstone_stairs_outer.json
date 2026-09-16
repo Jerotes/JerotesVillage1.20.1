@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "jerotesvillage:block/sun_sandstone_bottom",
+    "side": "jerotesvillage:block/sun_sandstone",
+    "top": "jerotesvillage:block/sun_sandstone_top"
+  }
+}

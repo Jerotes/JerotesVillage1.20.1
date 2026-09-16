@@ -1,0 +1,37 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:mud"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "jerotesvillage:industrial_residual_soil"
+    },
+    {
+      "item": "jerotesvillage:industrial_residual_soil"
+    },
+    {
+      "item": "jerotesvillage:industrial_residual_soil"
+    },
+    {
+      "item": "jerotesvillage:industrial_residual_soil"
+    },
+    {
+      "item": "jerotesvillage:drought_fire_mud"
+    }
+  ]
+}

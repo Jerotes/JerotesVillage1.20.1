@@ -1,0 +1,47 @@
+{
+  "replace": false,
+  "values": [
+    "#jerotesvillage:villager_block",
+
+    "jerotesvillage:hags_cauldron",
+    "jerotesvillage:unstable_hags_cauldron",
+    "jerotesvillage:dirty_hags_cauldron",
+    "jerotesvillage:new_hags_cauldron",
+
+    "jerotesvillage:second_round_anchor_core",
+
+    "jerotesvillage:resurrecter_coffin",
+    "jerotesvillage:resurrecter_empty_coffin",
+    "jerotesvillage:sediment_lord_coffin",
+    "jerotesvillage:sediment_lord_empty_coffin",
+    "jerotesvillage:sediment_coffin",
+    "jerotesvillage:sediment_urn",
+
+    "jerotesvillage:enchanted_stone",
+    "jerotesvillage:villager_metal_block",
+    "jerotesvillage:villager_metal_base_block",
+    "jerotesvillage:second_round_world_block",
+    "jerotesvillage:ice_rock",
+    "jerotesvillage:ocean_gemstone_block",
+    "jerotesvillage:bright_cobblestone",
+    "jerotesvillage:drought_fire_stone",
+    "jerotesvillage:drought_fire_bricks",
+    "jerotesvillage:sediment_mud_bricks",
+    "jerotesvillage:carved_bricks",
+    "jerotesvillage:ruin_stone_bricks",
+    "jerotesvillage:raw_meror_metal_block",
+    "jerotesvillage:meror_metal_block",
+    "jerotesvillage:refine_meror_metal_block",
+    "jerotesvillage:virtual_cave_evil_block",
+    "jerotesvillage:carved_villager_concertina_wire",
+    "jerotesvillage:carved_lodestone",
+    "jerotesvillage:meror_projection_table",
+    "jerotesvillage:firelight_stone",
+    "jerotesvillage:serpon_alloy_block",
+    "jerotesvillage:serpon_classical_bomb",
+    "jerotesvillage:serpon_connection_point",
+    "jerotesvillage:qoaiku_metal_block",
+    "jerotesvillage:torch_of_firm_ice",
+    "jerotesvillage:greyscale_prize_machine"
+  ]
+}

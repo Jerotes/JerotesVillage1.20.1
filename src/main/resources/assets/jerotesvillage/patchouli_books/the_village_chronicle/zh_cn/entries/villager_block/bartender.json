@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 酒保",
+  "icon": "jerotesvillage:villager_block_bartender",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_bartender",
+      "title": "村民工作台 酒保",
+      "text": "$(l:villager_profession/bartender)酒保$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_bartender_craft"
+    }
+  ]
+}

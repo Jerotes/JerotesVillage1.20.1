@@ -1,0 +1,63 @@
+{
+  "texture_size": [32, 32],
+  "textures": {
+    "0": "jerotesvillage:item/ominous_bomb_model",
+    "particle": "jerotesvillage:item/ominous_bomb"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [6, 0, 6],
+      "to": [10, 16, 10],
+      "rotation": {"angle": 0, "axis": "y", "origin": [7, 8, 7]},
+      "faces": {
+        "north": {"uv": [2, 2, 4, 10], "texture": "#0"},
+        "east": {"uv": [0, 2, 2, 10], "texture": "#0"},
+        "south": {"uv": [6, 2, 8, 10], "texture": "#0"},
+        "west": {"uv": [4, 2, 6, 10], "texture": "#0"},
+        "up": {"uv": [4, 2, 2, 0], "texture": "#0"},
+        "down": {"uv": [6, 0, 4, 2], "texture": "#0"}
+      }
+    },
+    {
+      "name": "body",
+      "from": [5.75, -0.25, 5.75],
+      "to": [10.25, 16.25, 10.25],
+      "rotation": {"angle": 0, "axis": "y", "origin": [7, 8, 7]},
+      "faces": {
+        "north": {"uv": [10, 2, 12, 10], "texture": "#0"},
+        "east": {"uv": [8, 2, 10, 10], "texture": "#0"},
+        "south": {"uv": [14, 2, 16, 10], "texture": "#0"},
+        "west": {"uv": [12, 2, 14, 10], "texture": "#0"},
+        "up": {"uv": [12, 2, 10, 0], "texture": "#0"},
+        "down": {"uv": [14, 0, 12, 2], "texture": "#0"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [0, 0, 1.5],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "thirdperson_lefthand": {
+      "translation": [0, 0, 1.5],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "firstperson_righthand": {
+      "translation": [0, 4.75, 1.5],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "firstperson_lefthand": {
+      "translation": [0, 4.75, 1.5],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  },
+  "groups": [
+    {
+      "name": "body",
+      "origin": [0, 0, 0],
+      "color": 0,
+      "children": [0, 1]
+    }
+  ]
+}

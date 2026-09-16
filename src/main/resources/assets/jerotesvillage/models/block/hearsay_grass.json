@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/hearsay_grass",
+    "particle": "jerotesvillage:block/hearsay_grass"
+  },
+  "render_type": "cutout"
+}

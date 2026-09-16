@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "jerotesvillage:block/bitter_cold_door_bottom",
+    "top": "jerotesvillage:block/bitter_cold_door_top"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:virtual_cave_evil_block"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:virtual_cave_evil_crystal",
+    "count": 9
+  }
+}

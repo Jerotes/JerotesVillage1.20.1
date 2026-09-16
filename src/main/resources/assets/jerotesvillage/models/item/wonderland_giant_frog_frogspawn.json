@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:block/wonderland_giant_frog_frogspawn"
+  }
+}

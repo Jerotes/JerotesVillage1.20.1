@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aca",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:gems/diamond"
+    },
+    "b": {
+      "tag": "forge:ingots/gold"
+    },
+    "c": {
+      "item": "jerotesvillage:slavery_supervisor_upgrade_smithing_template"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:slavery_supervisor_upgrade_smithing_template",
+    "count": 2
+  }
+}

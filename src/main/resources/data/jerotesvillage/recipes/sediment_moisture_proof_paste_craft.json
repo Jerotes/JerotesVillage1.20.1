@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": [
+      {
+        "item": "jerotesvillage:sediment_mud_bricks"
+      }
+    ],
+    "b": [
+      {
+        "item": "jerotesvillage:funerary_sheet"
+      }
+    ]
+  },
+  "result": {
+    "count": 16,
+    "item": "jerotesvillage:sediment_moisture_proof_paste"
+  }
+}

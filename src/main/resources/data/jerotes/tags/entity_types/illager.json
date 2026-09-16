@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:explorer",
+    "jerotesvillage:mapmaker",
+    "jerotesvillage:executioner",
+    "jerotesvillage:defector",
+    "jerotesvillage:banner_bearer",
+    "jerotesvillage:javelin_thrower",
+    "jerotesvillage:zombie_keeper",
+    "jerotesvillage:blaster",
+    "jerotesvillage:trumpeter",
+    "jerotesvillage:teleporter",
+    "jerotesvillage:cycloner",
+    "jerotesvillage:bitter_cold_sorcerer",
+    "jerotesvillage:fire_spitter",
+    "jerotesvillage:wild_finder",
+    "jerotesvillage:submariner",
+    "jerotesvillage:lamp_wizard",
+    "jerotesvillage:slavery_supervisor",
+    "jerotesvillage:adventurer",
+    "jerotesvillage:necromancy_warlock",
+    "jerotesvillage:gaviler",
+    "jerotesvillage:ax_crazy"
+  ]
+}

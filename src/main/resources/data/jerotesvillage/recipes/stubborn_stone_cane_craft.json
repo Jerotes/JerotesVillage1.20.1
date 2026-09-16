@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aab",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    "b": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:stubborn_stone_cane",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": "jerotesvillage:wilderness_woodland_tree",
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.33333334,
+        "feature": {
+          "feature": "jerotesvillage:wilderness_woodland_tree_tall",
+          "placement": []
+        }
+      }
+    ]
+  }
+}

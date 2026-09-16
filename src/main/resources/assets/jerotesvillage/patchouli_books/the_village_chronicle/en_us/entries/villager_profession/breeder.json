@@ -1,0 +1,28 @@
+{
+  "name": "Breeder",
+  "icon": "minecraft:wheat",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_breeder\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:wheat",
+      "title": "Breeder"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_breeder\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_breeder",
+      "title": "Villager Block Breeder",
+      "text": "$(l:villager_block/breeder)Villager Block Breeder$()"
+    }
+  ]
+}

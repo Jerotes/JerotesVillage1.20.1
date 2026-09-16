@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotes:anesthetic_craft_use"
+    },
+    {
+      "tag": "jerotes:anesthetic_craft_use"
+    },
+    {
+      "tag": "jerotes:anesthetic_craft_use"
+    },
+    {
+      "tag": "jerotes:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:anesthetic_tablet"
+  }
+}

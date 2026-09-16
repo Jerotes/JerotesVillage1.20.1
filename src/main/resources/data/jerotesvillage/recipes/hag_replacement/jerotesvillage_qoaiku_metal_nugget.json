@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:qoaiku_metal_nugget"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotes:copper_nugget"
+    }
+  ]
+}

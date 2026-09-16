@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/villager_metal"
+    },
+    {
+      "item": "jerotesvillage:second_round_world_key"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:second_round_world_block",
+    "count": 1
+  }
+}

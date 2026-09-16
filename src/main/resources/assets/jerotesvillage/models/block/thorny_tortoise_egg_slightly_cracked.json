@@ -1,0 +1,7 @@
+{
+  "parent": "jerotesvillage:block/base_thorny_tortoise_egg",
+  "textures": {
+    "particle": "jerotesvillage:block/thorny_tortoise_egg_top_slightly_cracked",
+    "0": "jerotesvillage:block/thorny_tortoise_egg_slightly_cracked"
+  }
+}

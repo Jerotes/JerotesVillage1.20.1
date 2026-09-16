@@ -1,0 +1,58 @@
+{
+  "parent": "jerotesvillage:jerotes_adventure",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:explorer_helmet"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.how_did_they_get_here.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.how_did_they_get_here.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "how_did_they_get_here": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:explorer"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:explorer_iron_helmet_smith",
+      "jerotesvillage:explorer_iron_chestplate_smith",
+      "jerotesvillage:explorer_iron_leggings_smith",
+      "jerotesvillage:explorer_iron_boots_smith",
+      "jerotesvillage:explorer_helmet_smith",
+      "jerotesvillage:explorer_chestplate_smith",
+      "jerotesvillage:explorer_leggings_smith",
+      "jerotesvillage:explorer_boots_smith",
+      "jerotesvillage:iron_nugget_from_explorer_smelt",
+      "jerotesvillage:iron_nugget_from_explorer_blast",
+      "jerotesvillage:guidelines_for_the_craft_of_the_second_rounder_gem_craft",
+      "jerotesvillage:second_rounder_gem_craft",
+      "jerotesvillage:second_round_world_teleport_stone_smith",
+      "jerotesvillage:ominous_war_beast_armor_craft",
+      "jerotesvillage:ominous_giant_beast_armor_craft",
+      "jerotesvillage:adventurer_helmet_smith",
+      "jerotesvillage:adventurer_chestplate_smith",
+      "jerotesvillage:adventurer_leggings_smith",
+      "jerotesvillage:adventurer_boots_smith"
+    ]
+  }
+}

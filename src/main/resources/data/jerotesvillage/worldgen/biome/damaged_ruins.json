@@ -1,0 +1,188 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.2,
+  "downfall": 0.3,
+  "effects": {
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "particle": {
+      "options": {
+        "type": "jerotesvillage:damaged_ruins"
+      },
+      "probability": 0.001
+    },
+    "foliage_color": -15378150,
+    "grass_color": -8031393,
+    "sky_color": -6115681,
+    "fog_color": -6115681,
+    "water_color": -11036251,
+    "water_fog_color": -13272699
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [],
+    [],
+    [
+      "jerotesvillage:dr_garbage",
+      "jerotesvillage:dr_stalagnate",
+      "jerotesvillage:dr_dirt"
+    ],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:ore_emerald",
+      "minecraft:underwater_magma",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel",
+      "jerotesvillage:grass_animal",
+      "jerotesvillage:more_meror_metal_ore",
+      "jerotesvillage:dr_bench",
+      "jerotesvillage:dr_frame",
+      "jerotesvillage:dr_lamp",
+      "jerotesvillage:dr_wire"
+    ],
+    [
+      "minecraft:ore_infested"
+    ],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "minecraft:red_mushroom_normal"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "spawn_costs": {},
+  "spawners": {
+    "monster": [
+      {
+        "type": "jerotesvillage:second_rounder_spider",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "jerotesvillage:second_rounder_zombie",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
+        "type": "jerotesvillage:second_rounder_skeleton",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 15
+      },
+      {
+        "type": "minecraft:slime",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 3
+      },
+      {
+        "type": "jerotesvillage:ruins_breeze",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 2
+      },
+      {
+        "type": "jerotesvillage:ender_stowaway",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "creature": [
+      {
+        "type": "jerotesvillage:rustle_fox",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 7
+      },
+      {
+        "type": "jerotesvillage:ruins_mouse",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 6
+      },
+      {
+        "type": "jerotesvillage:dust_moth",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 6
+      },
+      {
+        "type": "jerotesvillage:cleaning_robot",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 4
+      },
+      {
+        "type": "jerotesvillage:meror_adventurer",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "jerotesvillage:meror_merchant",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [
+      {
+        "type": "jerotesvillage:flowminnow",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 12
+      },
+      {
+        "type": "jerotesvillage:chromasnap_bass",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 8
+      }
+    ],
+    "misc": []
+  }
+}

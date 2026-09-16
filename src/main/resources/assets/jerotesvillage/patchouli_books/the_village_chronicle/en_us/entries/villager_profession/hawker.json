@@ -1,0 +1,28 @@
+{
+  "name": "Hawker",
+  "icon": "minecraft:diamond",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_hawker\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:diamond",
+      "title": "Hawker"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_hawker\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_hawker",
+      "title": "Villager Block hawker",
+      "text": "$(l:villager_block/hawker)Villager Block hawker$()"
+    }
+  ]
+}

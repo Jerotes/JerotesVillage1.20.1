@@ -1,0 +1,27 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:wonderlin_fake_ears"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:wonderland_fruit_crate"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:haunting_imp\"}"
+    },
+    {
+      "item": "jerotesvillage:wonderland_fence"
+    },
+    {
+      "item": "jerotesvillage:wonderland_fence"
+    },
+    {
+      "item": "jerotesvillage:wonderland_fence"
+    }
+  ]
+}

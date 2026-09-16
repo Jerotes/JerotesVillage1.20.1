@@ -1,0 +1,28 @@
+{
+  "name": "Lamplighter",
+  "icon": "minecraft:lantern",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_lamplighter\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:lantern",
+      "title": "Lamplighter"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_lamplighter\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_lamplighter",
+      "title": "Villager Block Lamplighter",
+      "text": "$(l:villager_block/lamplighter)Villager Block Lamplighter$()"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "jerotesvillage:block/villager_metal_pressure_plate"
+  }
+}

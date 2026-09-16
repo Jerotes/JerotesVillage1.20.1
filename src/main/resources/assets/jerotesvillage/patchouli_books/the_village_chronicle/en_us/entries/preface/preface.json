@@ -1,0 +1,30 @@
+{
+  "name": "Preface",
+  "icon": "minecraft:writable_book",
+  "category": "jerotesvillage:preface",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "As a member of the Copper Carved Company responsible for village operations, I have compiled this text based on firsthand knowledge. You may address me by the informal title \"Maid\"—a voluntary, non-official designation."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I trust you are aware of our introduction of numerous new professions to the villages. This achievement stems not solely from formal members of the Copper Carved Company, but from the collaborative pooling of ideas by all honorary members and villagers. It has elevated previously overlooked trades to rightful recognition. The same applies to new inventions: these are not sudden creations, but systematized integrations of existing objects—now reconfigured for broader accessibility."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:weaponsmith,level:5}}",
+      "border": true,
+      "text": "For example, he"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Consider this: our villages never lacked forgers, yet specialized metal ingot smiths were never formally recognized as a distinct profession. This was no manufactured demand, nor was it the Copper Carved Company \"fulfilling a gap.\" Did builders and managers not exist among villagers long before us? Such roles cannot be invented. Yet, speaking for the Copper Carved Company, we take pride in having facilitated this evolution and left our imprint upon it."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "jerotesvillage:carved_villager{SpecialSkin:2}",
+      "text": "With that said, let the formal introductions commence."
+    }
+  ]
+}

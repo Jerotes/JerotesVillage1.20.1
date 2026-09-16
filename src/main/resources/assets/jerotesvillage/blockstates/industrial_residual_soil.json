@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "jerotesvillage:block/industrial_residual_soil"
+      },
+      {
+        "model": "jerotesvillage:block/industrial_residual_soil",
+        "y": 90
+      },
+      {
+        "model": "jerotesvillage:block/industrial_residual_soil",
+        "y": 180
+      },
+      {
+        "model": "jerotesvillage:block/industrial_residual_soil",
+        "y": 270
+      }
+    ]
+  }
+}

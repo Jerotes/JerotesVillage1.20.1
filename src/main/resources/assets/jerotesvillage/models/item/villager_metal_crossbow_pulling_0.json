@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/villager_metal_crossbow",
+  "textures": {
+    "layer0": "jerotesvillage:item/villager_metal_crossbow_pulling_0"
+  }
+}

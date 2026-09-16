@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:villager_metal_ingot",
+    "jerotesvillage:ocean_gemstone",
+    "jerotesvillage:enchanted_stone",
+    "jerotesvillage:meror_metal_ingot",
+    "jerotesvillage:refine_meror_metal_ingot",
+    "jerotesvillage:serpon_alloy_ingot",
+    "jerotesvillage:qoaiku_metal_ingot"
+  ]
+}

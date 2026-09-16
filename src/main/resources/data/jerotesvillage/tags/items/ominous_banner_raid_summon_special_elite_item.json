@@ -1,0 +1,7 @@
+{
+  "__comment": "灾厄旗帜投影进行特殊精英是否可能出现的判定时，被锁敌的玩家需要手持的物品",
+  "replace": false,
+  "values": [
+    "minecraft:iron_axe"
+  ]
+}

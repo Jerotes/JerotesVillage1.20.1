@@ -1,0 +1,8 @@
+{
+  "parent": "jerotesvillage:block/base_botanize_altar",
+  "textures": {
+    "particle": "jerotesvillage:block/botanize_altar_particle",
+    "0": "jerotesvillage:block/botanize_altar"
+  },
+  "render_type": "cutout"
+}

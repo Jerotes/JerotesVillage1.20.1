@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jerotesvillage:block/second_round_aloe_bundle_end",
+    "side": "jerotesvillage:block/second_round_aloe_bundle_side"
+  }
+}

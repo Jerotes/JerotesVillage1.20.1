@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:bitter_cold",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_wool"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.the_reinforced.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.the_reinforced.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "the_reinforced": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

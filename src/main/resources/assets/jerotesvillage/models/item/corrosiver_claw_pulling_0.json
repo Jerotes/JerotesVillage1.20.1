@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/corrosiver_claw",
+  "textures": {
+    "layer0": "jerotesvillage:item/corrosiver_claw_pulling_0"
+  }
+}

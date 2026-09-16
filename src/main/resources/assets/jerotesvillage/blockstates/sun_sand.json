@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "jerotesvillage:block/sun_sand"
+      },
+      {
+        "model": "jerotesvillage:block/sun_sand",
+        "y": 90
+      },
+      {
+        "model": "jerotesvillage:block/sun_sand",
+        "y": 180
+      },
+      {
+        "model": "jerotesvillage:block/sun_sand",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:villager_metal_shovel",
+    "jerotesvillage:serpon_shovel",
+    "jerotesvillage:qoaiku_shovel",
+    "jerotesvillage:spirve_spatula",
+    "jerotesvillage:spirve_ladle",
+    "jerotesvillage:spirve_dustpan",
+    "jerotesvillage:meror_metal_shovel",
+    "jerotesvillage:meror_roller"
+  ]
+}

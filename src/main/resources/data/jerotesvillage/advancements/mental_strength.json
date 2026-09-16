@@ -1,0 +1,41 @@
+{
+  "parent": "jerotesvillage:scaly_bear_hunter",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:scaly_bear_upgrade_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.mental_strength.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.mental_strength.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mental_strength": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:scaly_bear_upgrade_smithing_template"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:scaly_bear_helmet_smith",
+      "jerotesvillage:scaly_bear_chestplate_smith",
+      "jerotesvillage:scaly_bear_leggings_smith",
+      "jerotesvillage:scaly_bear_boots_smith"
+    ]
+  }
+}

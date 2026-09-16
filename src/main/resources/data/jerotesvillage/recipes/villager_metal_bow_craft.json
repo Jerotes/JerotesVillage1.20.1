@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ab",
+    "c b",
+    " ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/villager_metal"
+    },
+    "b": {
+      "tag": "forge:string"
+    },
+    "c": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_bow",
+    "count": 1
+  }
+}

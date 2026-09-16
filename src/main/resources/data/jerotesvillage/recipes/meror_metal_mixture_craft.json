@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:gems/ocean_gemstone"
+    },
+    "b": {
+      "tag": "forge:ingots/meror_metal"
+    },
+    "c": {
+      "tag": "forge:storage_blocks/meror_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:meror_metal_mixture",
+    "count": 1
+  }
+}

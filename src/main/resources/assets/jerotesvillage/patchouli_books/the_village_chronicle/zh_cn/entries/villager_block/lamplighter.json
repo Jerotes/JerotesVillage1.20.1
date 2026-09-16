@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 点灯人",
+  "icon": "jerotesvillage:villager_block_lamplighter",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_lamplighter",
+      "title": "村民工作台 点灯人",
+      "text": "$(l:villager_profession/lamplighter)点灯人$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_lamplighter_craft"
+    }
+  ]
+}

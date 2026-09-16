@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/guidelines_for_the_craft_of_the_second_rounder_gem"
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:3}"
+            }
+          ],
+          "name": "jerotesvillage:greyscale",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:bright_grassland"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:bright_grass_carp",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:bright_grassland"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:damaged_ruins"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:wilderness_woodland"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:chromasnap_bass",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:bright_grassland"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:harmonious_wonderland"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:unknown_deep"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:virtual_cave"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:wilderness_woodland"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:lake_loach",
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:damaged_ruins"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:harmonious_wonderland"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:unknown_deep"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:virtual_cave"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:flowminnow",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:bitter_cold"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:bitter_cod",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:endless_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:sand_beach"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:3}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:4}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:5}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:6}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:7}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.24
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:8}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.24
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:9}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.144
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:10}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.144
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:11}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.0432
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{FishSize:12}",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.0432
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:greyscale",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:endless_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:sand_beach"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:jewelroamer",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:endless_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:sand_beach"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:starbrite",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "jerotesvillage:endless_ocean"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "jerotesvillage:abyssaler",
+          "weight": 20
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "jerotesvillage:gameplay/fishing/fish"
+}

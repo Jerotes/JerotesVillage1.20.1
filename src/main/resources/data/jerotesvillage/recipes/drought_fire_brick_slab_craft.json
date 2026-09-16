@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": [
+      {
+        "item": "jerotesvillage:drought_fire_bricks"
+      }
+    ]
+  },
+  "result": {
+    "count": 6,
+    "item": "jerotesvillage:drought_fire_brick_slab"
+  }
+}

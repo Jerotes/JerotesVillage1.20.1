@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "jerotesvillage:block/bright_glow_sapling"
+  },
+  "render_type": "cutout"
+}

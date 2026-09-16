@@ -1,0 +1,83 @@
+{
+  "texture_size": [32, 32],
+  "textures": {
+    "0": "jerotesvillage:item/virtual_cave_fishing_net_model",
+    "particle": "jerotesvillage:item/virtual_cave_fishing_net"
+  },
+  "elements": [
+    {
+      "name": "net",
+      "from": [6, 19.5, 5],
+      "to": [10, 31.5, 11],
+      "rotation": {"angle": 0, "axis": "y", "origin": [3.5, 18, 8]},
+      "faces": {
+        "north": {"uv": [1.5, 1.5, 2.5, 4.5], "texture": "#0"},
+        "east": {"uv": [0, 1.5, 1.5, 4.5], "texture": "#0"},
+        "south": {"uv": [4, 1.5, 5, 4.5], "texture": "#0"},
+        "west": {"uv": [2.5, 1.5, 4, 4.5], "texture": "#0"},
+        "up": {"uv": [2.5, 1.5, 1.5, 0], "texture": "#0"},
+        "down": {"uv": [3.5, 0, 2.5, 1.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "net",
+      "from": [5, 8.75, 4.25],
+      "to": [10.5, 22.25, 11.75],
+      "rotation": {"angle": 0, "axis": "y", "origin": [2.5, 8, 8]},
+      "faces": {
+        "north": {"uv": [1.5, 1.5, 2.5, 4.5], "texture": "#0"},
+        "east": {"uv": [0, 1.5, 1.5, 4.5], "texture": "#0"},
+        "south": {"uv": [4, 1.5, 5, 4.5], "texture": "#0"},
+        "west": {"uv": [2.5, 1.5, 4, 4.5], "texture": "#0"},
+        "up": {"uv": [2.5, 1.5, 1.5, 0], "texture": "#0"},
+        "down": {"uv": [3.5, 0, 2.5, 1.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "net",
+      "from": [4, -6.25, 3.25],
+      "to": [11.5, 13.25, 12.75],
+      "rotation": {"angle": 0, "axis": "y", "origin": [1.5, -4.25, 8]},
+      "faces": {
+        "north": {"uv": [6.5, 1.5, 7.5, 5.5], "texture": "#0"},
+        "east": {"uv": [5, 1.5, 6.5, 5.5], "texture": "#0"},
+        "south": {"uv": [9, 1.5, 10, 5.5], "texture": "#0"},
+        "west": {"uv": [7.5, 1.5, 9, 5.5], "texture": "#0"},
+        "up": {"uv": [7.5, 1.5, 6.5, 0], "texture": "#0"},
+        "down": {"uv": [8.5, 0, 7.5, 1.5], "texture": "#0"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [0, -13.75, 0.25],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "thirdperson_lefthand": {
+      "translation": [0, -13.75, 0.25],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "firstperson_righthand": {
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "firstperson_lefthand": {
+      "scale": [0.5, 0.5, 0.5]
+    }
+  },
+  "groups": [
+    {
+      "name": "net",
+      "origin": [-15.5, 20.07764, -1.27831],
+      "color": 0,
+      "children": [0, 1, 2]
+    }
+  ],
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/meror_rete"
+    }
+  ]
+}

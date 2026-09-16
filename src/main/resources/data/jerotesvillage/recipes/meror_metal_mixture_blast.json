@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 1600,
+  "experience": 5.0,
+  "ingredient": {
+    "item": "jerotesvillage:meror_metal_mixture"
+  },
+  "result": "jerotesvillage:refine_meror_metal_ingot"
+}

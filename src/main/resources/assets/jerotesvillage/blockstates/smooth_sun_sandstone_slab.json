@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jerotesvillage:block/smooth_sun_sandstone_slab"
+    },
+    "type=double": {
+      "model": "jerotesvillage:block/smooth_sun_sandstone"
+    },
+    "type=top": {
+      "model": "jerotesvillage:block/smooth_sun_sandstone_slab_top"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "jerotesvillage:block/second_round_nigrums_stage0"
+    },
+    "age=1": {
+      "model": "jerotesvillage:block/second_round_nigrums_stage1"
+    },
+    "age=2": {
+      "model": "jerotesvillage:block/second_round_nigrums_stage1"
+    },
+    "age=3": {
+      "model": "jerotesvillage:block/second_round_nigrums_stage2"
+    },
+    "age=4": {
+      "model": "jerotesvillage:block/second_round_nigrums_stage2"
+    },
+    "age=5": {
+      "model": "jerotesvillage:block/second_round_nigrums_stage3"
+    },
+    "age=6": {
+      "model": "jerotesvillage:block/second_round_nigrums_stage3"
+    },
+    "age=7": {
+      "model": "jerotesvillage:block/second_round_nigrums_stage4"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+package com.jerotes.jerotesvillage.client.layer;
+
+import com.jerotes.jerotesvillage.JerotesVillage;
+import com.jerotes.jerotesvillage.entity.Boss.Biome.GemstoneMalignasaurEntity;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.EntityModel;
+import net.minecraft.client.model.Model;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.LivingEntityRenderer;
+import net.minecraft.client.renderer.entity.RenderLayerParent;
+import net.minecraft.client.renderer.entity.layers.RenderLayer;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+
+public class GemstoneMalignasaurGlowOtherBodyLayer<T extends LivingEntity, M extends EntityModel<T>> extends RenderLayer<T, M> {
+    private static final ResourceLocation LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/gemstone_malignasaur_glow.png");
+    private static final ResourceLocation LOCATION_ARMOR = new ResourceLocation(JerotesVillage.MODID, "textures/entity/gemstone_malignasaur_armor_glow.png");
+    private final EntityModel<T> model;
+
+    public GemstoneMalignasaurGlowOtherBodyLayer(RenderLayerParent<T, M> renderLayerParent, M m) {
+        super(renderLayerParent);
+        this.model = m;
+    }
+
+    @Override
+    public void render(PoseStack poseStack, MultiBufferSource multiBufferSource, int n, T t, float f, float f2, float f3, float f4, float f5, float f6) {
+        boolean bl;
+        Minecraft minecraft = Minecraft.getInstance();
+        boolean bl2 = bl = minecraft.shouldEntityAppearGlowing((Entity)t) && ((Entity)t).isInvisible();
+        if (((Entity)t).isInvisible() && !bl) {
+            return;
+        }
+        ResourceLocation resourceLocation = LOCATION;
+        if (t instanceof GemstoneMalignasaurEntity gemstoneMalignasaur && gemstoneMalignasaur.isArmor()) {
+            resourceLocation = LOCATION_ARMOR;
+        }
+        this.getParentModel().copyPropertiesTo(this.model);
+        this.model.prepareMobModel(t, f, f2, f3);
+        this.model.setupAnim(t, f, f2, f4, f5, f6);
+        VertexConsumer vertexConsumer = multiBufferSource.getBuffer(RenderType.energySwirl(resourceLocation, 0, 0));
+        ((Model)this.model).renderToBuffer(poseStack, vertexConsumer, n, LivingEntityRenderer.getOverlayCoords(t, 0.0f), 1.0f, 1.0f, 1.0f, 1.0f);
+    }
+
+    private float xOffset(float f) {
+        return f * 0.08f;
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jerotesvillage:item/executioners_axe"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/executioners_axe_blocking"
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 2, -90, 55 ],
+      "translation": [ 0, 2.5, 0.5 ],
+      "scale": [ 1.5, 1.5, 1.5 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 2, 90, -55 ],
+      "translation": [ 0, 2.5, 0.5 ],
+      "scale": [ 1.5, 1.5, 1.5 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 0, -90, 25 ],
+      "translation": [ 1.13, 5.2, 1.13 ],
+      "scale": [ 1.5, 1.5, 1.5 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, 90, -25 ],
+      "translation": [ 1.13, 5.2, 1.13 ],
+      "scale": [ 1.5, 1.5, 1.5 ]
+    }
+  }
+}

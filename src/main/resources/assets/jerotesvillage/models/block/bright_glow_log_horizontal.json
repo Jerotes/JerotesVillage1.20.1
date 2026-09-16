@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "jerotesvillage:block/bright_glow_log_top",
+    "side": "jerotesvillage:block/bright_glow_log"
+  }
+}

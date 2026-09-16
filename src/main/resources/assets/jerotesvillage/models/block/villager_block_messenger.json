@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "jerotesvillage:block/letter_box_bottom",
+    "front": "jerotesvillage:block/letter_box_front",
+    "side": "jerotesvillage:block/letter_box_side",
+    "top": "jerotesvillage:block/letter_box_top"
+  },
+  "render_type": "solid"
+}

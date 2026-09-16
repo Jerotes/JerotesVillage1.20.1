@@ -1,0 +1,43 @@
+{
+  "parent": "jerotesvillage:jerotes_adventure",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:raw_meror_metal"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.legacy_of_the_old_era.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.legacy_of_the_old_era.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "legacy_of_the_old_era": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:raw_meror_metal"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:raw_meror_metal_blast",
+      "jerotesvillage:raw_meror_metal_block_blast",
+      "jerotesvillage:raw_meror_metal_block_craft",
+      "jerotesvillage:raw_meror_metal_craft",
+      "jerotesvillage:meror_metal_ore_blast",
+      "jerotesvillage:deepslate_meror_metal_ore_blast"
+    ]
+  }
+}

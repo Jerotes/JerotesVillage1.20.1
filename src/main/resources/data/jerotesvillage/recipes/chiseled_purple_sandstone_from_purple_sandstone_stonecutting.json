@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jerotesvillage:purple_sandstone"
+  },
+  "result": "jerotesvillage:chiseled_purple_sandstone"
+}

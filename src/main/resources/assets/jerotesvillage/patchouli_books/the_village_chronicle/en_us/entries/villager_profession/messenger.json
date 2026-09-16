@@ -1,0 +1,28 @@
+{
+  "name": "Messenger",
+  "icon": "minecraft:feather",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_messenger\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:feather",
+      "title": "Messenger"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_messenger\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_messenger",
+      "title": "Village Letter Box",
+      "text": "$(l:villager_block/messenger)Village Letter Box$()"
+    }
+  ]
+}

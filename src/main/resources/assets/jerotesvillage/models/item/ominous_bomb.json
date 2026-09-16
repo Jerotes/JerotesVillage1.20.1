@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/ominous_bomb",
+    "particle": "jerotesvillage:item/ominous_bomb"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/ominous_bomb_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/ominous_bomb_model",
+      "particle": "jerotesvillage:item/ominous_bomb"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_bomb"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_bomb"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_bomb"
+      },
+      "gui_light": "front"
+    }
+  }
+}

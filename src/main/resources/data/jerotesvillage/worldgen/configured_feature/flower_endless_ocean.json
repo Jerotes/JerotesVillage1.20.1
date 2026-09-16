@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_threshold_provider",
+            "default_state": {
+              "Name": "minecraft:seagrass"
+            },
+            "high_chance": 0.33333334,
+            "high_states": [
+              {
+                "Name": "jerotesvillage:gemstone_anemone"
+              },
+              {
+                "Name": "minecraft:seagrass"
+              },
+              {
+                "Name": "minecraft:seagrass"
+              },
+              {
+                "Name": "minecraft:seagrass"
+              }
+            ],
+            "low_states": [
+              {
+                "Name": "jerotesvillage:gemstone_anemone"
+              },
+              {
+                "Name": "minecraft:seagrass"
+              },
+              {
+                "Name": "minecraft:seagrass"
+              },
+              {
+                "Name": "minecraft:seagrass"
+              }
+            ],
+            "noise": {
+              "amplitudes": [
+                1.0
+              ],
+              "firstOctave": 0
+            },
+            "scale": 0.005,
+            "seed": 2345,
+            "threshold": -0.8
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_fluids",
+            "fluids": "minecraft:water"
+          }
+        }
+      ]
+    },
+    "tries": 64,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

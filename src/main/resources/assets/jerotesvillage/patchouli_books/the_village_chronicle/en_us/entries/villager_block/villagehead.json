@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Villagehead",
+  "icon": "jerotesvillage:villager_block_villagehead",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_villagehead",
+      "title": "Villager Block Villagehead",
+      "text": "$(l:villager_profession/villagehead)Villagehead$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_villagehead_craft"
+    }
+  ]
+}

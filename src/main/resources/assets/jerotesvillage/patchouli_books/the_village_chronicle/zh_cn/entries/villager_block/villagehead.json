@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 村长",
+  "icon": "jerotesvillage:villager_block_villagehead",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_villagehead",
+      "title": "村民工作台 村长",
+      "text": "$(l:villager_profession/villagehead)村长$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_villagehead_craft"
+    }
+  ]
+}

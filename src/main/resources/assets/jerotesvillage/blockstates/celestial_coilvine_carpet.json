@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "jerotesvillage:block/celestial_coilvine_carpet",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "jerotesvillage:block/celestial_coilvine_carpet"
+    },
+    "facing=south": {
+      "model": "jerotesvillage:block/celestial_coilvine_carpet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jerotesvillage:block/celestial_coilvine_carpet",
+      "y": 270
+    }
+  }
+}

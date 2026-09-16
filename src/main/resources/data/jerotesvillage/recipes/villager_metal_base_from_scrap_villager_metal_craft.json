@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:scrap_villager_metal"
+    },
+    {
+      "item": "jerotesvillage:scrap_villager_metal"
+    },
+    {
+      "item": "jerotesvillage:scrap_villager_metal"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:villager_metal_base",
+    "count": 1
+  }
+}

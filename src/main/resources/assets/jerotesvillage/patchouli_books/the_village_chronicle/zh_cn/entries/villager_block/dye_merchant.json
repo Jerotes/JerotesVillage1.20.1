@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 染料商",
+  "icon": "jerotesvillage:villager_block_dye_merchant",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_dye_merchant",
+      "title": "村民工作台 染料商",
+      "text": "$(l:villager_profession/dye_merchant)染料商$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_dye_merchant_craft"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "parent": "jerotesvillage:villager_craftsmanship",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:villager_block"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.additional_professions.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.additional_professions.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "additional_professions": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:villager_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:second_round_world_key_craft",
+
+      "jerotesvillage:therapeutic_tablet_craft",
+      "jerotesvillage:firm_tablet_craft",
+      "jerotesvillage:violent_tablet_craft",
+      "jerotesvillage:dexterous_tablet_craft",
+      "jerotesvillage:debilitated_tablet_craft",
+      "jerotesvillage:ablepsia_tablet_craft",
+
+      "jerotesvillage:villager_metal_mortar_and_pestle_craft",
+
+      "jerotesvillage:therapeutic_tablet_use_mortar_and_pestle_craft",
+      "jerotesvillage:firm_tablet_use_mortar_and_pestle_craft",
+      "jerotesvillage:violent_tablet_use_mortar_and_pestle_craft",
+      "jerotesvillage:dexterous_tablet_use_mortar_and_pestle_craft",
+      "jerotesvillage:debilitated_tablet_use_mortar_and_pestle_craft",
+      "jerotesvillage:ablepsia_tablet_use_mortar_and_pestle_craft",
+
+      "jerotesvillage:villager_block_witch_craft",
+      "jerotesvillage:villager_block_observer_craft",
+      "jerotesvillage:villager_block_shopkeeper_craft",
+      "jerotesvillage:villager_block_villagehead_craft",
+      "jerotesvillage:villager_block_forger_craft",
+      "jerotesvillage:villager_block_chef_craft",
+      "jerotesvillage:villager_block_hunter_craft",
+      "jerotesvillage:villager_block_physician_craft",
+      "jerotesvillage:villager_block_conscription_craft",
+      "jerotesvillage:villager_block_bartender_craft",
+      "jerotesvillage:villager_block_lamplighter_craft",
+      "jerotesvillage:villager_block_horseman_craft",
+      "jerotesvillage:villager_block_coachman_craft",
+      "jerotesvillage:villager_block_builder_craft",
+      "jerotesvillage:villager_block_breeder_craft",
+      "jerotesvillage:villager_block_hawker_craft",
+      "jerotesvillage:villager_block_jailer_craft",
+      "jerotesvillage:villager_block_piscator_craft",
+      "jerotesvillage:villager_block_magician_craft",
+      "jerotesvillage:villager_block_captain_craft",
+      "jerotesvillage:villager_block_messenger_craft",
+      "jerotesvillage:villager_block_dye_merchant_craft",
+      "jerotesvillage:villager_block_illager_craft",
+      "jerotesvillage:villager_block_piglin_craft",
+      "jerotesvillage:villager_block_beekeeper_craft"
+    ]
+  }
+}

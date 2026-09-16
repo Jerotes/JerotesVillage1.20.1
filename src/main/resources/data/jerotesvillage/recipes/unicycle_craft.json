@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:wool_carpets"
+    },
+    "b": {
+      "tag": "minecraft:planks"
+    },
+    "c": {
+      "tag": "forge:ingots/villager_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:unicycle_item",
+    "count": 1
+  }
+}

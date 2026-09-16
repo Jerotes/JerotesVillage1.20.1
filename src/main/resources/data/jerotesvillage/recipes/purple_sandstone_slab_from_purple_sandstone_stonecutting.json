@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jerotesvillage:purple_sandstone"
+  },
+  "result": "jerotesvillage:purple_sandstone_slab"
+}

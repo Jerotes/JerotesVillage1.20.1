@@ -1,0 +1,20 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jerotesvillage:item/spirve_flail"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pull": 1
+      },
+      "model": "jerotesvillage:item/spirve_flail_attack"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_swing": 1
+      },
+      "model": "jerotesvillage:item/spirve_flail_attack"
+    }
+  ]
+}

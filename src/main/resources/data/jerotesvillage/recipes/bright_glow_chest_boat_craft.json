@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chest_boat",
+  "ingredients": [
+    {
+      "tag": "forge:chests/wooden"
+    },
+    {
+      "item": "jerotesvillage:bright_glow_boat"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:bright_glow_chest_boat"
+  }
+}

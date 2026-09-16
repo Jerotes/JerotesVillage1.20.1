@@ -1,0 +1,27 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:hag_eye"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:purple_sand_hag_eye"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:purple_sands_secret\"}"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "jerotesvillage:block/stem_cross",
+  "textures": {
+    "cross": "jerotesvillage:block/second_round_aloe_crop_stage1",
+    "particle": "jerotesvillage:block/second_round_aloe_crop_stage1"
+  },
+  "render_type": "cutout"
+}

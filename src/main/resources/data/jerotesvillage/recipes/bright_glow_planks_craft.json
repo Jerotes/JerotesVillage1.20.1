@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "jerotesvillage:bright_glow_logs"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:bright_glow_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "jerotesvillage:how_did_they_get_here",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:explorer_tracking_record"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.deadly_dont_change.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.deadly_dont_change.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "deadly_dont_change": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:ominous_banner_raid_tag_deployer_craft"
+    ]
+  }
+}

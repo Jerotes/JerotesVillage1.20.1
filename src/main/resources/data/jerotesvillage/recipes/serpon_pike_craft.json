@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    "bc ",
+    "bb "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/serpon_alloy"
+    },
+    "b": {
+      "tag": "forge:ingots/gold"
+    },
+    "c": {
+      "item": "jerotes:simple_pike"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_pike",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+  ],
+  "random_sequence": "jerotesvillage:entities/fury_second_rounder_animated_armor"
+}

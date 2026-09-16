@@ -1,0 +1,9 @@
+{
+  "asset_name": "qoaiku_metal",
+  "description": {
+    "color": "#64FFD6",
+    "translate": "trim_material.jerotesvillage.qoaiku_metal"
+  },
+  "ingredient": "jerotesvillage:qoaiku_metal_ingot",
+  "item_model_index": 0.8
+}

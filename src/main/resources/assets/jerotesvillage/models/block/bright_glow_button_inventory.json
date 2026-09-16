@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "jerotesvillage:block/bright_glow_planks"
+  }
+}

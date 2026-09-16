@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_fence_gate",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:rods/wooden"
+    },
+    "b": {
+      "item": "jerotesvillage:bright_glow_planks"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:bright_glow_fence_gate"
+  }
+}

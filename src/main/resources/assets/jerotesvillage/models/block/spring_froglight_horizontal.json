@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "jerotesvillage:block/spring_froglight_top",
+    "side": "jerotesvillage:block/spring_froglight_side"
+  }
+}

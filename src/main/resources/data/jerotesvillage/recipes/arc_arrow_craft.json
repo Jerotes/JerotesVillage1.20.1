@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:arc_fang"
+    },
+    "b": [
+      {
+        "tag": "forge:rods"
+      },
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "c": {
+      "item": "jerotesvillage:rambler_leather"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:arc_arrow",
+    "count": 4
+  }
+}

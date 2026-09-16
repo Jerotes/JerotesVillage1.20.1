@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:bookshelf"
+  },
+  "base": {
+    "item": "jerotesvillage:villager_metal_base_block"
+  },
+  "addition": {
+    "tag": "forge:storage_blocks/emerald"
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_block"
+  }
+}

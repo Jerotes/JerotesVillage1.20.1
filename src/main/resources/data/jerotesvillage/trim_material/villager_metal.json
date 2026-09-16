@@ -1,0 +1,9 @@
+{
+  "asset_name": "villager_metal",
+  "description": {
+    "color": "#F99433",
+    "translate": "trim_material.jerotesvillage.villager_metal"
+  },
+  "ingredient": "jerotesvillage:villager_metal_ingot",
+  "item_model_index": 0.5
+}

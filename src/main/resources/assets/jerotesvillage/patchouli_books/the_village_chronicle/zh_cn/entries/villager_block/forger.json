@@ -1,0 +1,17 @@
+{
+  "name": "村民金属砧",
+  "icon": "jerotesvillage:villager_block_forger",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_forger",
+      "title": "村民金属砧",
+      "text": "$(l:villager_profession/forger)锻造师$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_forger_craft"
+    }
+  ]
+}

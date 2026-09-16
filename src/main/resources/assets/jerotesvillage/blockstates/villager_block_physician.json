@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jerotesvillage:block/villager_block_physician"
+    },
+    "facing=east": {
+      "model": "jerotesvillage:block/villager_block_physician",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jerotesvillage:block/villager_block_physician",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jerotesvillage:block/villager_block_physician",
+      "y": 270
+    }
+  }
+}

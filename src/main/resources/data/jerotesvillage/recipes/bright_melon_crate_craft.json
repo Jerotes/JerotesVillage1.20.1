@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:bright_melon"
+    },
+    {
+      "item": "jerotesvillage:bright_melon"
+    },
+    {
+      "item": "jerotesvillage:bright_melon"
+    },
+    {
+      "item": "jerotesvillage:bright_melon"
+    },
+    {
+      "item": "jerotesvillage:bright_melon"
+    },
+    {
+      "item": "jerotesvillage:bright_melon"
+    },
+    {
+      "item": "jerotesvillage:bright_melon"
+    },
+    {
+      "item": "jerotesvillage:bright_melon"
+    },
+    {
+      "item": "jerotesvillage:bright_melon"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:bright_melon_crate"
+  }
+}

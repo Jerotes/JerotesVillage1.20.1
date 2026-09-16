@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_lantern"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "jerotesvillage:carved_contacter"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:illager_signal_light",
+    "count": 1
+  }
+}

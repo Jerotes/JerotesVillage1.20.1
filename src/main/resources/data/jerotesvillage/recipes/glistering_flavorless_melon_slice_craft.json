@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:nuggets/gold"
+    },
+    "b": {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:glistering_flavorless_melon_slice"
+  }
+}

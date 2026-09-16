@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/serpon_alloy"
+    },
+    "b": {
+      "item": "jerotes:simple_hammer"
+    },
+    "c": {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_mace",
+    "count": 1
+  }
+}

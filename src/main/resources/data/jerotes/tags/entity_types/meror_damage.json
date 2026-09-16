@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "#jerotes:meror_machine",
+    "jerotesvillage:projectile_throw_meror_metal_javelin",
+    "jerotesvillage:projectile_thrown_meror_pilum",
+    "jerotesvillage:projectile_meror_metal_arrow",
+    "jerotesvillage:projectile_meror_charging_arrow_1",
+    "jerotesvillage:projectile_meror_charging_arrow_2",
+    "jerotesvillage:projectile_meror_charging_arrow_3",
+    "jerotesvillage:projectile_meror_charging_arrow_4",
+    "jerotesvillage:projectile_meror_charging_arrow_5",
+    "jerotesvillage:meror_shock_wave",
+    "jerotesvillage:meror_fire",
+    "jerotesvillage:meror_rapier_shoot",
+    "jerotesvillage:meror_scythe_shoot",
+    "jerotesvillage:meror_bullet",
+    "jerotesvillage:meror_rete",
+    "jerotesvillage:meror_bomb",
+    "jerotesvillage:meror_trap",
+    "jerotesvillage:second_rounder_golem_sword"
+  ]
+}

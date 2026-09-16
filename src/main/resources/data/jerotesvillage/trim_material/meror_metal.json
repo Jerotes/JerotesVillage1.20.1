@@ -1,0 +1,9 @@
+{
+  "asset_name": "meror_metal",
+  "description": {
+    "color": "#D8891C",
+    "translate": "trim_material.jerotesvillage.meror_metal"
+  },
+  "ingredient": "jerotesvillage:meror_metal_ingot",
+  "item_model_index": 0.4
+}

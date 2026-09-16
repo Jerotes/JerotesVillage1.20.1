@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "bab",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:scaly_bear_hair"
+    },
+    "b": {
+      "item": "jerotesvillage:scaly_bear_scale"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:scaly_bear_upgrade_smithing_template",
+    "count": 1
+  }
+}

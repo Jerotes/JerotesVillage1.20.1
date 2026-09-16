@@ -1,0 +1,39 @@
+{
+  "parent": "jerotesvillage:be_careful_of_vibrations",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:bright_land_beast_fluff"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.stupid_but_brave.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.stupid_but_brave.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stupid_but_brave": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:bright_land_beast"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

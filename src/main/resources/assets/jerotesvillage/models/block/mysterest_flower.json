@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/mysterest_flower",
+    "particle": "jerotesvillage:block/mysterest_flower"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:lapis_block"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:enchanted_stone"
+    }
+  ]
+}

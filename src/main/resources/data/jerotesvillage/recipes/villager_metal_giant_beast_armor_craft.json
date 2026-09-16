@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "cbc",
+    "ddd",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/villager_metal"
+    },
+    "b": {
+      "item": "jerotes:giant_beast_armor_base"
+    },
+    "c": {
+      "tag": "forge:ingots/iron"
+    },
+    "d": {
+      "tag": "forge:storage_blocks/villager_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_giant_beast_armor",
+    "count": 1
+  }
+}

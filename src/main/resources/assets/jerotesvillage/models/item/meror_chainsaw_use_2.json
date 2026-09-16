@@ -1,0 +1,61 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_chainsaw_use",
+    "particle": "jerotesvillage:item/meror_chainsaw_use"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/meror_chainsaw_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/meror_chainsaw_model_use_2",
+      "particle": "jerotesvillage:item/meror_chainsaw_use"
+    },
+    "display": {
+      "thirdperson_righthand": {
+        "rotation": [-40, 0, 0],
+        "translation": [0, 2, -3.25]
+      },
+      "thirdperson_lefthand": {
+        "rotation": [-40, 0, 0],
+        "translation": [0, 2, -3.25]
+      },
+      "firstperson_righthand": {
+        "rotation": [-70, 9, 17],
+        "translation": [-2.5, 4.25, -4.25],
+        "scale": [1.25, 1.25, 1.25]
+      },
+      "firstperson_lefthand": {
+        "rotation": [-70, 9, 0],
+        "translation": [0, 2.25, 0],
+        "scale": [1.25, 1.25, 1.25]
+      },
+      "head": {
+        "translation": [0, 11, 0]
+      }
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_chainsaw_use"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_chainsaw_use"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_chainsaw_use"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jerotesvillage:block/cut_glitter_sandstone_slab"
+    },
+    "type=double": {
+      "model": "jerotesvillage:block/cut_glitter_sandstone"
+    },
+    "type=top": {
+      "model": "jerotesvillage:block/cut_glitter_sandstone_slab_top"
+    }
+  }
+}

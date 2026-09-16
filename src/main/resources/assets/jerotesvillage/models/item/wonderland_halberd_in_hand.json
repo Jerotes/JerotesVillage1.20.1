@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/halberd_in_hand",
+  "textures": {
+    "layer0": "jerotesvillage:item/wonderland_halberd_in_hand"
+  }
+}

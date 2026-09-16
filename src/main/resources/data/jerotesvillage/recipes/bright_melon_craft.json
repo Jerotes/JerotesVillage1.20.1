@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:bright_melon_crate"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:bright_melon",
+    "count": 9
+  }
+}

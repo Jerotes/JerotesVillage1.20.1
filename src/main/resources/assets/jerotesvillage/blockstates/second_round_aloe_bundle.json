@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "jerotesvillage:block/second_round_aloe_bundle_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "jerotesvillage:block/second_round_aloe_bundle"
+    },
+    "axis=z": {
+      "model": "jerotesvillage:block/second_round_aloe_bundle_horizontal",
+      "x": 90
+    }
+  }
+}

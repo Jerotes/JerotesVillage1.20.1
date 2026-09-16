@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "jerotesvillage:block/second_round_nigrums_stage1"
+  },
+  "render_type": "cutout"
+}

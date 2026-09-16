@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:soul_sand"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:soul_soil"
+    }
+  ]
+}

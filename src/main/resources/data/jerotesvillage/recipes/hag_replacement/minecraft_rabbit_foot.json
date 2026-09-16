@@ -1,0 +1,15 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:rabbit_foot"
+    }
+  ],
+  "result": [
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:uneasy_rabbit\"}"
+    }
+  ]
+}

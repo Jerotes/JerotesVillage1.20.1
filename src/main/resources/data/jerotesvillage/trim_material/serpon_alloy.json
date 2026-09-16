@@ -1,0 +1,9 @@
+{
+  "asset_name": "serpon_alloy",
+  "description": {
+    "color": "#EAC403",
+    "translate": "trim_material.jerotesvillage.serpon_alloy"
+  },
+  "ingredient": "jerotesvillage:serpon_alloy_ingot",
+  "item_model_index": 0.6
+}

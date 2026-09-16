@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "jerotesvillage:lake_loach"
+  },
+  "result": "jerotesvillage:cooked_lake_loach"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "jerotesvillage:block/green_humanoid_cane"
+  },
+  "render_type": "cutout"
+}

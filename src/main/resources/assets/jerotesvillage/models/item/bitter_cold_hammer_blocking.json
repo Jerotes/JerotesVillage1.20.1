@@ -1,0 +1,61 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/bitter_cold_hammer",
+    "particle": "jerotesvillage:item/bitter_cold_hammer"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/bitter_cold_hammer_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/bitter_cold_hammer_model",
+      "particle": "jerotesvillage:item/bitter_cold_hammer"
+    },
+    "gui_light": "front",
+    "display": {
+      "thirdperson_righthand": {
+        "translation": [0, 6.5, 1.5],
+        "scale": [0.75, 0.75, 0.75],
+        "rotation": [0, 0, 1.5]
+      },
+      "thirdperson_lefthand": {
+        "translation": [0, 6.5, 1.5],
+        "scale": [0.75, 0.75, 0.75],
+        "rotation": [0, 0, 1.5]
+      },
+      "firstperson_righthand": {
+        "translation": [0, 5, 0],
+        "scale": [0.75, 0.75, 0.75],
+        "rotation": [0, 0, 45]
+      },
+      "firstperson_lefthand": {
+        "translation": [0, 5, 0],
+        "scale": [0.75, 0.75, 0.75],
+        "rotation": [0, 0, 45]
+      }
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bitter_cold_hammer"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bitter_cold_hammer"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bitter_cold_hammer"
+      },
+      "gui_light": "front"
+    }
+  }
+}

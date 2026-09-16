@@ -1,0 +1,76 @@
+{
+  "parent": "jerotesvillage:second_round_world_come",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:wonderland_log"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.harmonious_wonderland.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.harmonious_wonderland.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "harmonious_wonderland": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "jerotesvillage:harmonious_wonderland"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "recipes": [
+      "jerotesvillage:vine_throwing_ball_craft",
+      "jerotesvillage:awn_herb_bandage_craft",
+
+      "jerotesvillage:wonderland_fruit_crate_craft",
+      "jerotesvillage:wonderland_fruit_craft",
+
+      "jerotesvillage:wonderland_dagger_axe_craft",
+      "jerotesvillage:wonderland_hook_shield_craft",
+      "jerotesvillage:wonderland_halberd_craft",
+
+      "jerotesvillage:wonderland_sign_craft",
+      "jerotesvillage:wonderland_hanging_sign_craft",
+      "jerotesvillage:wonderland_boat_craft",
+      "jerotesvillage:wonderland_chest_boat_craft",
+      "jerotesvillage:wonderland_button_craft",
+      "jerotesvillage:wonderland_door_craft",
+      "jerotesvillage:wonderland_fence_craft",
+      "jerotesvillage:wonderland_fence_gate_craft",
+      "jerotesvillage:wonderland_planks_craft",
+      "jerotesvillage:wonderland_pressure_craft",
+      "jerotesvillage:wonderland_slab_craft",
+      "jerotesvillage:wonderland_stairs_craft",
+      "jerotesvillage:wonderland_trapdoor_craft",
+      "jerotesvillage:wonderland_wood_craft",
+      "jerotesvillage:stripped_wonderland_wood_craft",
+      "jerotesvillage:dye_from_magenta_mums",
+      "jerotesvillage:dye_from_red_lush",
+      "jerotesvillage:dye_from_wonderland_flower",
+      "jerotesvillage:dye_from_hearsay_grass",
+      "jerotesvillage:dye_from_awn_herb",
+      "jerotesvillage:dye_from_harmonious_dream_bell",
+      "jerotesvillage:botanize_powder_craft",
+      "jerotesvillage:botanize_powder_sugar_craft",
+      "jerotesvillage:immortal_brew_craft",
+      "jerotesvillage:wonderland_challenge_craft"
+    ]
+  }
+}

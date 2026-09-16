@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "dad",
+    " b ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:villager_block"
+    },
+    "b": {
+      "tag": "forge:ingots/villager_metal"
+    },
+    "c": {
+      "tag": "forge:ingots/iron"
+    },
+    "d": {
+      "tag": "forge:storage_blocks/villager_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_block_forger",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Coachman",
+  "icon": "minecraft:saddle",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_coachman\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:saddle",
+      "title": "Coachman"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_coachman\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_coachman",
+      "title": "Villager Block Coachman",
+      "text": "$(l:villager_block/coachman)Villager Block Coachman$()"
+    }
+  ]
+}

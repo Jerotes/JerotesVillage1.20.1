@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jerotesvillage:wonderland_dagger_axe",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jerotesvillage:wonderland_hook_shield",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "jerotesvillage:wonderland_halberd",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:immortal_brew",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:wonderlin_fake_ears",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:wonderland_fruit",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:vine_throwing_ball",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:awn_herb_bandage",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "jerotesvillage:wonderlin_painting",
+          "weight": 5
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8.0,
+        "min": 3.0
+      }
+    }
+  ],
+  "random_sequence": "jerotesvillage:chests/wonderlin_cave"
+}

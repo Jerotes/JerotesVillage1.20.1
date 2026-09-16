@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jerotesvillage:block/bitter_cold_log",
+    "side": "jerotesvillage:block/bitter_cold_log"
+  }
+}

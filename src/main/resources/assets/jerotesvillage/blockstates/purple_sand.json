@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "jerotesvillage:block/purple_sand"
+      },
+      {
+        "model": "jerotesvillage:block/purple_sand",
+        "y": 90
+      },
+      {
+        "model": "jerotesvillage:block/purple_sand",
+        "y": 180
+      },
+      {
+        "model": "jerotesvillage:block/purple_sand",
+        "y": 270
+      }
+    ]
+  }
+}

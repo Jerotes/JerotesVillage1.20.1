@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 31441212,
+    "separation": 48,
+    "spacing": 64
+  },
+  "structures": [
+    {
+      "structure": "jerotesvillage:illager_tower",
+      "weight": 1
+    }
+  ]
+}

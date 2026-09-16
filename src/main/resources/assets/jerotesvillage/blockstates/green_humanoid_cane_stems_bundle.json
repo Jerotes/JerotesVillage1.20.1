@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "jerotesvillage:block/green_humanoid_cane_stems_bundle_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "jerotesvillage:block/green_humanoid_cane_stems_bundle"
+    },
+    "axis=z": {
+      "model": "jerotesvillage:block/green_humanoid_cane_stems_bundle_horizontal",
+      "x": 90
+    }
+  }
+}

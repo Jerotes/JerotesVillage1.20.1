@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:meror_standard_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "jerotesvillage:meror_metal_boots"
+  },
+  "addition": {
+    "tag": "forge:ingots/refine_meror_metal"
+  },
+  "result": {
+    "item": "jerotesvillage:meror_standard_boots"
+  }
+}

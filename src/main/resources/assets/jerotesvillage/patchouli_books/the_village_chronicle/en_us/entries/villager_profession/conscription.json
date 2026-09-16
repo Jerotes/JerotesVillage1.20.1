@@ -1,0 +1,28 @@
+{
+  "name": "Conscription",
+  "icon": "minecraft:iron_sword",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_conscription\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:iron_sword",
+      "title": "Conscription"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_conscription\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_conscription",
+      "title": "Villager Block Conscription",
+      "text": "$(l:villager_block/conscription)Villager Block Conscription$()"
+    }
+  ]
+}

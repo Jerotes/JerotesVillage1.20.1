@@ -1,0 +1,47 @@
+{
+  "display": {
+    "background": "jerotesvillage:textures/block/villager_metal_block_top.png",
+    "icon": {
+      "item": "jerotesvillage:villager_metal_ingot"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.jerotesvillage_craft_use.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.jerotesvillage_craft_use.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "jerotesvillage_craft_use": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:second_round_world_exploration_guide_craft",
+      "jerotesvillage:the_village_chronicle_craft",
+
+      "jerotes:villager_metal_war_beast_armor_craft",
+      "jerotes:villager_metal_giant_beast_armor_craft",
+
+      "jerotesvillage:iron_nugget_from_other_smelt",
+      "jerotesvillage:iron_nugget_from_other_blast",
+      "jerotesvillage:gold_nugget_from_other_smelt",
+      "jerotesvillage:gold_nugget_from_other_blast"
+    ]
+  }
+}

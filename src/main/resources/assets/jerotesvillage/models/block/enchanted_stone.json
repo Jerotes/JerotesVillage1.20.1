@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jerotesvillage:block/enchanted_stone_top",
+    "side": "jerotesvillage:block/enchanted_stone",
+    "particle": "jerotesvillage:block/enchanted_stone"
+  }
+}

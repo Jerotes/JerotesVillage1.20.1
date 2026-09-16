@@ -1,0 +1,28 @@
+{
+  "name": "捕鱼人",
+  "icon": "minecraft:fishing_rod",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_piscator\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:fishing_rod",
+      "title": "捕鱼人"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_piscator\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_piscator",
+      "title": "村民工作台 捕鱼人",
+      "text": "$(l:villager_block/piscator)村民工作台 捕鱼人$()"
+    }
+  ]
+}

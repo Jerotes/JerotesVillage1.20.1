@@ -1,0 +1,9 @@
+{
+  "name": "merorsenergeticgun.gun.meror_guardian_pistol_iv.name",
+  "tooltip": "merorsenergeticgun.gun.meror_guardian_pistol_iv.desc",
+  "data": "merorsenergeticgun:meror_guardian_pistol_iv_data",
+  "display": "merorsenergeticgun:meror_guardian_pistol_iv_display",
+  "type": "pistol",
+  "sort": 3,
+  "item_type": "modern_kinetic"
+}

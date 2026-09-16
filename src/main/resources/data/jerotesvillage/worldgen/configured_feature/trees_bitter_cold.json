@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": "jerotesvillage:bitter_cold_tree",
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.33333334,
+        "feature": {
+          "feature": "jerotesvillage:bitter_cold_tree_tall",
+          "placement": []
+        }
+      }
+    ]
+  }
+}

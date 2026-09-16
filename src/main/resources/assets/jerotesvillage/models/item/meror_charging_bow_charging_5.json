@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/meror_charging_bow",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_charging_bow_charging_5"
+  }
+}

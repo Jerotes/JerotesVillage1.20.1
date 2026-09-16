@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "jerotesvillage:block/bitter_cold_planks",
+    "side": "jerotesvillage:block/bitter_cold_planks",
+    "top": "jerotesvillage:block/bitter_cold_planks"
+  }
+}

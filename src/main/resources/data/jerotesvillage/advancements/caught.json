@@ -1,0 +1,38 @@
+{
+  "parent": "jerotesvillage:endless_ocean",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:abyssaler_bucket"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.caught.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.caught.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "caught": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:abyssaler_bucket"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:malignasaur_bait_fishgig_craft"
+    ]
+  }
+}

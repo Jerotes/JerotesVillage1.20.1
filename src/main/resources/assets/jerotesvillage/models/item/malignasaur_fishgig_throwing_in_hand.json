@@ -1,0 +1,121 @@
+{
+  "texture_size": [32, 32],
+  "textures": {
+    "0": "jerotesvillage:item/malignasaur_fishgig_model",
+    "particle": "jerotesvillage:item/malignasaur_fishgig"
+  },
+  "elements": [
+    {
+      "name": "rod",
+      "from": [7.5, 0, 7.5],
+      "to": [8.5, 25, 8.5],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8.25, 15.25, 8.25]},
+      "faces": {
+        "north": {"uv": [0.5, 0.5, 1, 13], "texture": "#0"},
+        "east": {"uv": [0, 0.5, 0.5, 13], "texture": "#0"},
+        "south": {"uv": [1.5, 0.5, 2, 13], "texture": "#0"},
+        "west": {"uv": [1, 0.5, 1.5, 13], "texture": "#0"},
+        "up": {"uv": [1, 0.5, 0.5, 0], "texture": "#0"},
+        "down": {"uv": [1.5, 0, 1, 0.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "rod",
+      "from": [8.485, 23.235, 7.485],
+      "to": [11.515, 26.265, 8.515],
+      "rotation": {"angle": -45, "axis": "z", "origin": [8, 26.75, 8]},
+      "faces": {
+        "north": {"uv": [2.5, 0.5, 4, 2], "texture": "#0"},
+        "east": {"uv": [2, 0.5, 2.5, 2], "texture": "#0"},
+        "south": {"uv": [4.5, 0.5, 6, 2], "texture": "#0"},
+        "west": {"uv": [4, 0.5, 4.5, 2], "texture": "#0"},
+        "up": {"uv": [4, 0.5, 2.5, 0], "texture": "#0"},
+        "down": {"uv": [5.5, 0, 4, 0.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "rod",
+      "from": [7.5, 24.25, 7.5],
+      "to": [8.5, 30, 8.5],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8.25, 15.5, 8.25]},
+      "faces": {
+        "north": {"uv": [2.5, 2.5, 3, 5], "texture": "#0"},
+        "east": {"uv": [2, 2.5, 2.5, 5], "texture": "#0"},
+        "south": {"uv": [3.5, 2.5, 4, 5], "texture": "#0"},
+        "west": {"uv": [3, 2.5, 3.5, 5], "texture": "#0"},
+        "up": {"uv": [3, 2.5, 2.5, 2], "texture": "#0"},
+        "down": {"uv": [3.5, 2, 3, 2.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "rod",
+      "from": [5.5, 24.25, 7.5],
+      "to": [6.5, 29, 8.5],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8.25, 15.5, 8.25]},
+      "faces": {
+        "north": {"uv": [2.5, 2.5, 3, 4.5], "texture": "#0"},
+        "east": {"uv": [2, 2.5, 2.5, 4.5], "texture": "#0"},
+        "south": {"uv": [3.5, 2.5, 4, 4.5], "texture": "#0"},
+        "west": {"uv": [3, 2.5, 3.5, 4.5], "texture": "#0"},
+        "up": {"uv": [3, 2.5, 2.5, 2], "texture": "#0"},
+        "down": {"uv": [3.5, 2, 3, 2.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "rod",
+      "from": [9.5, 24.25, 7.5],
+      "to": [10.5, 29, 8.5],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8.25, 15.5, 8.25]},
+      "faces": {
+        "north": {"uv": [2.5, 2.5, 3, 4.5], "texture": "#0"},
+        "east": {"uv": [2, 2.5, 2.5, 4.5], "texture": "#0"},
+        "south": {"uv": [3.5, 2.5, 4, 4.5], "texture": "#0"},
+        "west": {"uv": [3, 2.5, 3.5, 4.5], "texture": "#0"},
+        "up": {"uv": [3, 2.5, 2.5, 2], "texture": "#0"},
+        "down": {"uv": [3.5, 2, 3, 2.5], "texture": "#0"}
+      }
+    },
+    {
+      "name": "fish",
+      "from": [6, 22, 7.75],
+      "to": [14, 30, 7.75],
+      "rotation": {"angle": 45, "axis": "z", "origin": [8, 24, 7.75]},
+      "faces": {
+        "north": {"uv": [8, 0, 12, 4], "texture": "#0"},
+        "east": {"uv": [8, 0, 8, 4], "texture": "#0"},
+        "south": {"uv": [12, 0, 16, 4], "texture": "#0"},
+        "west": {"uv": [12, 0, 12, 4], "texture": "#0"},
+        "up": {"uv": [12, 0, 8, 0], "texture": "#0"},
+        "down": {"uv": [16, 0, 12, 0], "texture": "#0"}
+      }
+    }
+  ],
+  "gui_light": "front",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0, 0, 180],
+      "translation": [ 0, 0, 1]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0, 0, 180],
+      "translation": [ 0, 0, 1]
+    },
+    "firstperson_righthand": {
+      "rotation": [-60, 0, 2],
+      "translation": [ 4, -3, 8]
+    },
+    "firstperson_lefthand": {
+      "rotation": [-60, 0, 2],
+      "translation": [ 4, -3, 8]
+    }
+  },
+  "groups": [
+    {
+      "name": "body",
+      "origin": [8, 14, 8],
+      "color": 0,
+      "nbt": "{}",
+      "children": [0, 1, 2]
+    }
+  ]
+}

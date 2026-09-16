@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "jerotesvillage:block/green_humanoid_cane_crop_stage0"
+    },
+    "age=1": {
+      "model": "jerotesvillage:block/green_humanoid_cane_crop_stage0"
+    },
+    "age=2": {
+      "model": "jerotesvillage:block/green_humanoid_cane_crop_stage2"
+    },
+    "age=3": {
+      "model": "jerotesvillage:block/green_humanoid_cane_crop_stage2"
+    },
+    "age=4": {
+      "model": "jerotesvillage:block/green_humanoid_cane_crop_stage4"
+    },
+    "age=5": {
+      "model": "jerotesvillage:block/green_humanoid_cane_crop_stage4"
+    },
+    "age=6": {
+      "model": "jerotesvillage:block/green_humanoid_cane_crop_stage6"
+    },
+    "age=7": {
+      "model": "jerotesvillage:block/green_humanoid_cane_crop_stage7"
+    }
+  }
+}

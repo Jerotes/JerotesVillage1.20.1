@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:bone_block"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:rotten_dog_spawn_egg"
+    }
+  ]
+}

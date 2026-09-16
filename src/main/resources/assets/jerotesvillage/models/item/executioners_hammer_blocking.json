@@ -1,0 +1,57 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/executioners_hammer",
+    "particle": "jerotesvillage:item/executioners_hammer"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/executioners_hammer_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/executioners_hammer_model",
+      "particle": "jerotesvillage:item/executioners_hammer"
+    },
+    "gui_light": "front",
+    "display": {
+      "thirdperson_righthand": {
+        "rotation": [-45, 0, 0],
+        "translation": [0, -1, 0]
+      },
+      "thirdperson_lefthand": {
+        "rotation": [-45, 0, 0],
+        "translation": [0, -1, 0]
+      },
+      "firstperson_righthand": {
+        "rotation": [-45, -45, 10],
+        "translation": [0, 3.75, 0]
+      },
+      "firstperson_lefthand": {
+        "rotation": [-45, -45, 10],
+        "translation": [0, 3.75, 0]
+      }
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/executioners_hammer"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/executioners_hammer"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/executioners_hammer"
+      },
+      "gui_light": "front"
+    }
+  }
+}

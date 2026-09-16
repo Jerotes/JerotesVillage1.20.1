@@ -1,0 +1,14 @@
+{
+  "type": "jerotesvillage:structure_feature",
+  "config": {
+    "structure": "jerotesvillage:dr/dr_lamp",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:water",
+    "offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:crying_obsidian"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:obsidian"
+    }
+  ]
+}

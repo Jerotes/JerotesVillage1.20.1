@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/purple_ponuo",
+    "particle": "jerotesvillage:block/purple_ponuo"
+  },
+  "render_type": "cutout"
+}

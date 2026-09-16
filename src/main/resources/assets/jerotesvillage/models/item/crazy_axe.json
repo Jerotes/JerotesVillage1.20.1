@@ -1,0 +1,32 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jerotesvillage:item/crazy_axe"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_tick_count_4": 1
+      },
+      "model": "jerotesvillage:item/crazy_axe_use_0"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_tick_count_4": 2
+      },
+      "model": "jerotesvillage:item/crazy_axe_use_1"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_tick_count_4": 3
+      },
+      "model": "jerotesvillage:item/crazy_axe_use_2"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_tick_count_4": 4
+      },
+      "model": "jerotesvillage:item/crazy_axe_use_3"
+    }
+  ]
+}

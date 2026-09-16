@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:endless_ocean",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:sea_monster_potion"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.i_find_the_way.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.i_find_the_way.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "i_find_the_way": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:explorer_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "jerotesvillage:explorer_iron_leggings"
+  },
+  "addition": {
+    "item": "minecraft:leather_leggings"
+  },
+  "result": {
+    "item": "jerotesvillage:explorer_leggings"
+  }
+}

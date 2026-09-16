@@ -1,0 +1,44 @@
+{
+  "parent": "jerotesvillage:crisp",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:golden_bright_melon"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.crisp_teeth.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.crisp_teeth.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "crisp_teeth": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:golden_bright_melon"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:golden_bright_melon_crate_craft",
+      "jerotesvillage:golden_bright_melon_crate_by_gold_craft",
+      "jerotesvillage:golden_bright_melon_craft_by_crate",
+      "jerotesvillage:bright_golden_melon_hammer_craft",
+      "jerotesvillage:golden_bright_melon_craft",
+      "jerotesvillage:gold_nugget_from_bright_golden_melon_hammer_blast",
+      "jerotesvillage:gold_nugget_from_bright_golden_melon_hammer_smelt"
+    ]
+  }
+}

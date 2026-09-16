@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jerotesvillage:block/bitter_cold_slab"
+    },
+    "type=double": {
+      "model": "jerotesvillage:block/bitter_cold_planks"
+    },
+    "type=top": {
+      "model": "jerotesvillage:block/bitter_cold_slab_top"
+    }
+  }
+}

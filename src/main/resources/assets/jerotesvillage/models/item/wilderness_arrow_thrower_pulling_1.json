@@ -1,0 +1,24 @@
+{
+  "parent": "jerotesvillage:item/wilderness_arrow_thrower",
+  "textures": {
+    "layer0": "jerotesvillage:item/wilderness_arrow_thrower_pulling"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [-45, -90, 0],
+      "translation": [0, 0, 2]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [-45, 90, 0],
+      "translation": [0, 0, 2]
+    },
+    "firstperson_righthand": {
+      "rotation": [-45, -90, -90],
+      "translation": [0, 8.25, 3.5]
+    },
+    "firstperson_lefthand": {
+      "rotation": [-45, 90, 90],
+      "translation": [0, 8.25, 3.5]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "parent": "jerotesvillage:additional_professions",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:second_round_world_key"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.second_round_world_key.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.second_round_world_key.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "second_round_world_key": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:second_round_world_key"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:unicycle_craft",
+      "jerotesvillage:spear_machine_craft",
+      "jerotesvillage:key_second_round_world_block_craft"
+    ]
+  }
+}

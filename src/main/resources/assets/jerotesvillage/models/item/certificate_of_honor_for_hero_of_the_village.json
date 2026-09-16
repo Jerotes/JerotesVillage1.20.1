@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/certificate_of_honor_for_hero_of_the_village"
+  }
+}

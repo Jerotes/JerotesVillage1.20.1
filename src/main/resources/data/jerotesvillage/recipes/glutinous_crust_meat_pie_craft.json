@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aea",
+    "bcb",
+    "daf"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:wheat"
+    },
+    "b": {
+      "tag": "minecraft:meat"
+    },
+    "c": {
+      "tag": "forge:eggs"
+    },
+    "d": {
+      "item": "jerotesvillage:pink_slime_ball"
+    },
+    "e": {
+      "item": "minecraft:sugar"
+    },
+    "f": [
+      {
+        "tag": "forge:milk"
+      },
+      {
+        "item": "minecraft:milk_bucket"
+      }
+    ]
+  },
+  "result": {
+    "item": "jerotesvillage:glutinous_crust_meat_pie",
+    "count": 3
+  }
+}

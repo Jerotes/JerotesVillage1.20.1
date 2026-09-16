@@ -1,0 +1,25 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:mud_bricks"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:sediment_mud_bricks"
+    },
+    {
+      "item": "jerotesvillage:sediment_mud_bricks"
+    },
+    {
+      "item": "jerotesvillage:sediment_mud_bricks"
+    },
+    {
+      "item": "jerotesvillage:sediment_mud_bricks"
+    },
+    {
+      "item": "jerotesvillage:sediment_moisture_proof_paste"
+    }
+  ]
+}

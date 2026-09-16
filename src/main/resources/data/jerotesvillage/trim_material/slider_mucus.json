@@ -1,0 +1,9 @@
+{
+  "asset_name": "slider_mucus",
+  "description": {
+    "color": "#76FFBE",
+    "translate": "trim_material.jerotesvillage.slider_mucus"
+  },
+  "ingredient": "jerotesvillage:slider_mucus",
+  "item_model_index": 0.7
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "bbb",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/villager_metal"
+    },
+    "b": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_leggings",
+    "count": 1
+  }
+}

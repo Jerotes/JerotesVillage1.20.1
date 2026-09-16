@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:tools/tridents"
+    },
+    "b": {
+      "tag": "minecraft:planks"
+    },
+    "c": {
+      "tag": "forge:ingots/villager_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:spear_machine_item",
+    "count": 1
+  }
+}

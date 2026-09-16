@@ -1,0 +1,39 @@
+{
+  "parent": "jerotesvillage:sand_beach",
+  "display": {
+    "icon": {
+      "item": "minecraft:saddle"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.supersonic_speed.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.supersonic_speed.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "supersonic_speed": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate":{
+              "type": "jerotesvillage:thorny_tortoise"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

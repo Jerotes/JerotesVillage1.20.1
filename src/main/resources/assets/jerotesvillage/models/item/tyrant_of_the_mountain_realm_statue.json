@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/tyrant_of_the_mountain_realm_statue"
+  }
+}

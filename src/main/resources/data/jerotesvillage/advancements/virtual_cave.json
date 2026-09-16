@@ -1,0 +1,52 @@
+{
+  "parent": "jerotesvillage:second_round_world_come",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:virtual_cave_evil_block"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.virtual_cave.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.virtual_cave.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "virtual_cave": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "jerotesvillage:virtual_cave"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "recipes": [
+      "jerotesvillage:virtual_cave_crystal_throwing_ball",
+
+      "jerotesvillage:virtual_cave_evil_crystal_craft",
+      "jerotesvillage:virtual_cave_evil_block_craft",
+      "jerotesvillage:slider_mucus_craft",
+      "jerotesvillage:slider_block_craft",
+      "jerotesvillage:virtual_cave_fishing_net_craft",
+      "jerotesvillage:virtual_cave_insect_net_craft",
+      "jerotesvillage:virtual_cave_crystal_arrow_craft",
+      "jerotesvillage:dye_from_black_pretty_bush",
+      "jerotesvillage:dye_from_fibre_dust_flower"
+    ]
+  }
+}

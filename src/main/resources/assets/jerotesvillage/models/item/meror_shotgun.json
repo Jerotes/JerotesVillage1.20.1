@@ -1,0 +1,53 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_shotgun",
+    "particle": "jerotesvillage:item/meror_shotgun"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/meror_shotgun_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/meror_shotgun_model",
+      "particle": "jerotesvillage:item/meror_shotgun"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "charged": 1,
+        "jerotesvillage_shift": 0
+      },
+      "model": "jerotesvillage:item/meror_shotgun_fine"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_shift": 1
+      },
+      "model": "jerotesvillage:item/meror_shotgun_shift"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_shotgun"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_shotgun"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_shotgun"
+      },
+      "gui_light": "front"
+    }
+  }
+}

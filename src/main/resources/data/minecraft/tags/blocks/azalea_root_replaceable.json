@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:purple_sand",
+    "jerotesvillage:ice_rock",
+    "jerotesvillage:gemstone_gravel",
+    "jerotesvillage:deep_dust_block"
+  ]
+}

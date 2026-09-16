@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:cut_purple_sandstone",
+    "jerotesvillage:chiseled_purple_sandstone",
+    "jerotesvillage:smooth_purple_sandstone",
+
+    "jerotesvillage:cut_sun_sandstone",
+    "jerotesvillage:chiseled_sun_sandstone",
+    "jerotesvillage:smooth_sun_sandstone",
+
+    "jerotesvillage:cut_glitter_sandstone",
+    "jerotesvillage:chiseled_glitter_sandstone",
+    "jerotesvillage:smooth_glitter_sandstone"
+  ]
+}

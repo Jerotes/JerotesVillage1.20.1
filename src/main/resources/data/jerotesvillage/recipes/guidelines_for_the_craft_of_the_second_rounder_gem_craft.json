@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:explorer_tracking_record"
+    },
+    "b": {
+      "item": "minecraft:enchanted_book"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:guidelines_for_the_craft_of_the_second_rounder_gem",
+    "count": 1
+  }
+}

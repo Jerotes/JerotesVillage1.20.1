@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Magician",
+  "icon": "jerotesvillage:villager_block_magician",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_magician",
+      "title": "Villager Block Magician",
+      "text": "$(l:villager_profession/magician)Magician$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_magician_craft"
+    }
+  ]
+}

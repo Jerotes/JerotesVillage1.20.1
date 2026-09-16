@@ -1,0 +1,28 @@
+{
+  "name": "建筑工",
+  "icon": "minecraft:iron_pickaxe",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_builder\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:iron_pickaxe",
+      "title": "建筑工"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_builder\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_builder",
+      "title": "村民工作台 建筑工",
+      "text": "$(l:villager_block/builder)村民工作台 建筑工$()"
+    }
+  ]
+}

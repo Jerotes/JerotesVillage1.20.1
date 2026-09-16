@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "tag": "forge:storage_blocks/qoaiku_metal"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:copper_block"
+    }
+  ]
+}

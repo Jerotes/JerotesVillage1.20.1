@@ -1,0 +1,29 @@
+{
+    "sources": [
+        {
+            "type": "paletted_permutations",
+            "textures": [
+                "trims/items/leggings_trim",
+                "trims/items/chestplate_trim",
+                "trims/items/helmet_trim",
+                "trims/items/boots_trim"
+            ],
+            "palette_key": "trims/color_palettes/trim_palette",
+            "permutations": {
+                "villager_metal": "jerotesvillage:trims/color_palettes/villager_metal",
+                "ocean_gemstone": "jerotesvillage:trims/color_palettes/ocean_gemstone",
+                "blamer_soul": "jerotesvillage:trims/color_palettes/blamer_soul",
+                "meror_metal": "jerotesvillage:trims/color_palettes/meror_metal",
+                "refine_meror_metal": "jerotesvillage:trims/color_palettes/refine_meror_metal",
+                "slider_mucus": "jerotesvillage:trims/color_palettes/slider_mucus",
+                "virtual_cave_evil_crystal": "jerotesvillage:trims/color_palettes/virtual_cave_evil_crystal",
+                "frost_yeti_hair": "jerotesvillage:trims/color_palettes/frost_yeti_hair",
+                "lightning_worm_chitin": "jerotesvillage:trims/color_palettes/lightning_worm_chitin",
+                "fire_secretor_adhesive": "jerotesvillage:trims/color_palettes/fire_secretor_adhesive",
+                "malignasaur_teeth": "jerotesvillage:trims/color_palettes/malignasaur_teeth",
+                "serpon_alloy": "jerotesvillage:trims/color_palettes/serpon_alloy",
+                "qoaiku_metal": "jerotesvillage:trims/color_palettes/qoaiku_metal"
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " c ",
+    "cbc",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:wilderness_wood_core"
+    },
+    "b": {
+      "item": "jerotesvillage:rambler_leather_strip"
+    },
+    "c": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:wilderness_sword",
+    "count": 1
+  }
+}

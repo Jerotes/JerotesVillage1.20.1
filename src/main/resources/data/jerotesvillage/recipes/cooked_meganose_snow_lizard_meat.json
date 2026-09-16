@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "jerotesvillage:meganose_snow_lizard_meat"
+  },
+  "result": "jerotesvillage:cooked_meganose_snow_lizard_meat"
+}

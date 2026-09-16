@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/bright_glow_sapling"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "bab",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/villager_metal"
+    },
+    "b": {
+      "tag": "minecraft:stone_crafting_materials"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:villager_metal_mortar_and_pestle",
+    "count": 1
+  }
+}

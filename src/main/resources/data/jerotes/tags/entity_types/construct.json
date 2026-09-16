@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "#jerotes:second_rounder_machine",
+
+    "jerotesvillage:ominous_banner_projection",
+    "jerotesvillage:iron_teeth",
+    "jerotesvillage:fury_iron_teeth",
+    "jerotesvillage:spear_machine",
+    "jerotesvillage:unicycle",
+    "jerotesvillage:carved_iron_golem",
+    "jerotesvillage:serpon_chariot",
+    "jerotesvillage:serpon_crossbow_turret",
+    "jerotesvillage:serpon_combat_platform",
+    "jerotesvillage:firepower_pourer",
+    "jerotesvillage:animated_chain",
+    "jerotesvillage:second_rounder_animated_armor",
+    "jerotesvillage:fury_second_rounder_animated_armor",
+
+    "jerotesvillage:bitter_cold_altar"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:purple_sandstone_wall",
+    "jerotesvillage:sun_sandstone_wall",
+    "jerotesvillage:glitter_sandstone_wall",
+    "jerotesvillage:ruin_stone_brick_wall",
+    "jerotesvillage:bright_cobblestone_wall",
+    "jerotesvillage:drought_fire_brick_wall",
+    "jerotesvillage:sediment_mud_brick_wall",
+    "jerotesvillage:carved_brick_wall"
+  ]
+}

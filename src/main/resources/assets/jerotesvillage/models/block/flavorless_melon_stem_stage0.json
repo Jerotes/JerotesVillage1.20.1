@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/stem_growth0",
+  "textures": {
+    "stem": "jerotesvillage:block/flavorless_melon_stem"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/base_dagger",
+  "textures": {
+    "layer0": "jerotesvillage:item/ominous_probe"
+  }
+}

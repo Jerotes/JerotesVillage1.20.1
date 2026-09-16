@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "jerotesvillage:block/black_pretty_bush"
+  },
+  "render_type": "cutout"
+}

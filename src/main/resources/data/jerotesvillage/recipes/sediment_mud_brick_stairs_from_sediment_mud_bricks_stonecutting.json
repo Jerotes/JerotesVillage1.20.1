@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jerotesvillage:sediment_mud_bricks"
+  },
+  "result": "jerotesvillage:sediment_mud_brick_stairs"
+}

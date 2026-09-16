@@ -1,0 +1,9 @@
+{
+  "asset_name": "blamer_soul",
+  "description": {
+    "color": "#99558F",
+    "translate": "trim_material.jerotesvillage.blamer_soul"
+  },
+  "ingredient": "jerotesvillage:blamer_soul",
+  "item_model_index": 1.0
+}

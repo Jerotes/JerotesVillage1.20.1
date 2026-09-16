@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Lamplighter",
+  "icon": "jerotesvillage:villager_block_lamplighter",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_lamplighter",
+      "title": "Villager Block Lamplighter",
+      "text": "$(l:villager_profession/lamplighter)Lamplighter$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_lamplighter_craft"
+    }
+  ]
+}

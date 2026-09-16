@@ -1,0 +1,57 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_rapier_use",
+    "particle": "jerotesvillage:item/meror_rapier_use"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/meror_rapier_in_hand",
+    "texture_size": [64, 64],
+    "textures": {
+      "0": "jerotesvillage:item/meror_rapier_use_model",
+      "particle": "jerotesvillage:item/meror_rapier_use"
+    },
+    "display": {
+      "thirdperson_righthand": {
+        "translation": [0, 6, 1.25],
+        "scale": [0.6, 0.6, 0.6]
+      },
+      "thirdperson_lefthand": {
+        "translation": [0, 6, 1.25],
+        "scale": [0.6, 0.6, 0.6]
+      },
+      "firstperson_righthand": {
+        "translation": [-62, 7.25, 1.25],
+        "scale": [0.5, 0.5, 0.5]
+      },
+      "firstperson_lefthand": {
+        "translation": [-62, 7.25, 1.25],
+        "scale": [0.5, 0.5, 0.5]
+      }
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_rapier_use"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_rapier_use"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_rapier_use"
+      },
+      "gui_light": "front"
+    }
+  }
+}

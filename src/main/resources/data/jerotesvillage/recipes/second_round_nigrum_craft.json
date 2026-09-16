@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:second_round_nigrum_crate"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:second_round_nigrum",
+    "count": 9
+  }
+}

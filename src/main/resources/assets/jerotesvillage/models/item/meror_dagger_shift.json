@@ -1,0 +1,14 @@
+{
+  "parent": "jerotesvillage:item/base_dagger_shift",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_dagger_use"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_offhand": 1
+      },
+      "model": "jerotesvillage:item/meror_dagger_use"
+    }
+  ]
+}

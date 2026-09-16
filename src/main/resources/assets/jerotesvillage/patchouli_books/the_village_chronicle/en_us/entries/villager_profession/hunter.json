@@ -1,0 +1,28 @@
+{
+  "name": "Hunter",
+  "icon": "minecraft:bow",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_hunter\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:bow",
+      "title": "Hunter"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_hunter\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_hunter",
+      "title": "Villager Block Hunter",
+      "text": "$(l:villager_block/hunter)Villager Block Hunter$()"
+    }
+  ]
+}

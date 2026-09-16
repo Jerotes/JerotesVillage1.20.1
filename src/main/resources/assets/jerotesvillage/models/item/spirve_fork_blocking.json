@@ -1,0 +1,56 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/spirve_fork",
+    "particle": "jerotesvillage:item/spirve_fork"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/spirve_fork_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/spirve_fork_model",
+      "particle": "jerotesvillage:item/spirve_fork"
+    },
+    "gui_light": "front",
+    "display": {
+      "thirdperson_righthand": {
+        "rotation": [0, 0, 0]
+      },
+      "thirdperson_lefthand": {
+        "rotation": [0, 0, 0]
+      },
+      "firstperson_righthand": {
+        "rotation": [0, 0, 45]
+      },
+      "firstperson_lefthand": {
+        "rotation": [0, 0, 45]
+      }
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/spirve_fork",
+        "particle": "jerotesvillage:item/spirve_fork"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/spirve_fork",
+        "particle": "jerotesvillage:item/spirve_fork"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/spirve_fork",
+        "particle": "jerotesvillage:item/spirve_fork"
+      },
+      "gui_light": "front"
+    }
+  }
+}

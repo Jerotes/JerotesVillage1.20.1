@@ -1,0 +1,9 @@
+{
+  "asset_name": "virtual_cave_evil_crystal",
+  "description": {
+    "color": "#D2D2D2",
+    "translate": "trim_material.jerotesvillage.virtual_cave_evil_crystal"
+  },
+  "ingredient": "jerotesvillage:virtual_cave_evil_crystal",
+  "item_model_index": 0.1
+}

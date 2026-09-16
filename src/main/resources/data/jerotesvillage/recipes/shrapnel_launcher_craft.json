@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    "cdc",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/iron"
+    },
+    "b": {
+      "item": "minecraft:gunpowder"
+    },
+    "c": {
+      "tag": "forge:ingots/villager_metal"
+    },
+    "d": {
+      "item": "minecraft:crossbow"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:shrapnel_launcher",
+    "count": 1
+  }
+}

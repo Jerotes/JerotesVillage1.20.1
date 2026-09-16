@@ -1,0 +1,28 @@
+{
+  "name": "猪灵",
+  "icon": "minecraft:gold_ingot",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_piglin\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:gold_ingot",
+      "title": "猪灵"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_piglin\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_piglin",
+      "title": "村民工作台 猪灵",
+      "text": "$(l:villager_block/piglin)村民工作台 猪灵$()"
+    }
+  ]
+}

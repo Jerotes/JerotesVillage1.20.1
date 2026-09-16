@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 43234321,
+    "separation": 16,
+    "spacing": 32
+  },
+  "structures": [
+    {
+      "structure": "jerotesvillage:wonderlin_cave",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "cbd",
+    "dde",
+    "cac"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:villager_block"
+    },
+    "b": {
+      "tag": "forge:dusts/redstone"
+    },
+    "c": {
+      "tag": "forge:ingots/villager_metal"
+    },
+    "d": {
+      "tag": "forge:ingots/iron"
+    },
+    "e": [
+      {
+        "item": "minecraft:clock"
+      },
+      {
+        "item": "minecraft:compass"
+      }
+    ]
+  },
+  "result": {
+    "item": "jerotesvillage:villager_block_physician",
+    "count": 1
+  }
+}

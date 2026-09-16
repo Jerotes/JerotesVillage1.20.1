@@ -1,0 +1,39 @@
+{
+  "parent": "jerotesvillage:keep_sneaking",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:ancient_second_rounder_sword"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.defeat_resurrecter.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.defeat_resurrecter.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "defeat_resurrecter": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:sediment_guard"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

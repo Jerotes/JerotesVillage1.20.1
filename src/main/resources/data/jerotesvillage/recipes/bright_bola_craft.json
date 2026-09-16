@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    " a ",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:string"
+    },
+    "b": {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:bright_bola",
+    "count": 1
+  }
+}

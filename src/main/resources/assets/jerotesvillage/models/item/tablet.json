@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/tablet_base",
+    "layer1": "jerotesvillage:item/tablet_add"
+  }
+}

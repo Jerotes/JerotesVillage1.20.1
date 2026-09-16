@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:wilderness_dirt"
+    },
+    {
+      "item": "jerotesvillage:wilderness_dirt"
+    }
+  ],
+  "result": {
+    "item": "minecraft:flint",
+    "count": 4
+  }
+}

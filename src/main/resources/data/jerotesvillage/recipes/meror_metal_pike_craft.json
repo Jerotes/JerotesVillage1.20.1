@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    "bc ",
+    "bb "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/meror_metal"
+    },
+    "b": {
+      "tag": "forge:rods/meror_metal"
+    },
+    "c": {
+      "item": "jerotes:simple_pike"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:meror_metal_pike",
+    "count": 1
+  }
+}

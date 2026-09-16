@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:bitter_cold_planks"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:bitter_cold_button"
+  }
+}

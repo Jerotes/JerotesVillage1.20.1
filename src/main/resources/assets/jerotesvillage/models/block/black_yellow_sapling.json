@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/black_yellow_sapling"
+  },
+  "render_type": "cutout"
+}

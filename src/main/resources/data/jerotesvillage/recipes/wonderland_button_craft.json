@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:wonderland_planks"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:wonderland_button"
+  }
+}

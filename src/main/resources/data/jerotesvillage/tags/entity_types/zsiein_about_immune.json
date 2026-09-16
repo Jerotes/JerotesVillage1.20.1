@@ -1,0 +1,9 @@
+{
+  "__comment": "免疫泽林造成特殊效果的生物",
+  "replace": false,
+  "values": [
+    "#jerotes:meror_machine",
+    "#jerotes:zsiein",
+    "#forge:bosses"
+  ]
+}

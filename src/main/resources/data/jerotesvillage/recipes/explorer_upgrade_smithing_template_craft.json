@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "bcb",
+    "bab",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:explorer_iron_upgrade_smithing_template"
+    },
+    "b": {
+      "item": "minecraft:leather"
+    },
+    "c": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:explorer_upgrade_smithing_template",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:black_yellow_leaves"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:black_yellow_leaf_litter"
+    }
+  ]
+}

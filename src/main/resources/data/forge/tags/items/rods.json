@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:rods/botanize",
+    "#forge:rods/bulge",
+    "#forge:rods/meror_metal"
+  ]
+}

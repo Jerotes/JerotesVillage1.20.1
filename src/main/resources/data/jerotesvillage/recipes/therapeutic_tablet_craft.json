@@ -1,0 +1,18 @@
+{
+  "type": "jerotesvillage:tablet_pressing",
+  "category": "tablet",
+  "base": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    }
+  ],
+  "addition": [
+    {
+      "item": "minecraft:ghast_tear"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:therapeutic_tablet",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:shrapnel_launcher",
+    "jerotesvillage:meror_shotgun",
+    "jerotesvillage:meror_impact_pistol",
+    "jerotesvillage:villager_metal_crossbow",
+    "jerotesvillage:meror_metal_crossbow",
+    "jerotesvillage:firepower_pourer_crossbow"
+  ]
+}

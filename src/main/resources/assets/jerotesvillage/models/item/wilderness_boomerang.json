@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/wilderness_boomerang",
+    "particle": "jerotesvillage:item/wilderness_boomerang"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/wilderness_boomerang_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/wilderness_boomerang_model",
+      "particle": "jerotesvillage:item/wilderness_boomerang"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wilderness_boomerang"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wilderness_boomerang"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wilderness_boomerang"
+      },
+      "gui_light": "front"
+    }
+  }
+}

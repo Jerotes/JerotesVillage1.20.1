@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "jerotesvillage:block/bright_glow_leaves"
+  }
+}

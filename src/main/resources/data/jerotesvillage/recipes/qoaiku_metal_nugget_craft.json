@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/qoaiku_metal"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:qoaiku_metal_nugget",
+    "count": 9
+  }
+}

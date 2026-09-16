@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:snow_frozen_soil",
+    "jerotesvillage:drought_fire_mud",
+    "jerotesvillage:industrial_residual_soil",
+    "jerotesvillage:wilderness_dirt"
+  ]
+}

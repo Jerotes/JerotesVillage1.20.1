@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 捕鱼人",
+  "icon": "jerotesvillage:villager_block_piscator",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_piscator",
+      "title": "村民工作台 捕鱼人",
+      "text": "$(l:villager_profession/piscator)捕鱼人$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_piscator_craft"
+    }
+  ]
+}

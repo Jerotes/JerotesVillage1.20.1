@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:additional_professions",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:villager_metal_syringe"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.drug_allergy.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.drug_allergy.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "drug_allergy": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

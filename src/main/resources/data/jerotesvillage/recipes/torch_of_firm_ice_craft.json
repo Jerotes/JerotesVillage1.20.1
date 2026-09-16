@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " a ",
+    " b ",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:bitter_cold_firm_ice"
+    },
+    "b": {
+      "item": "jerotesvillage:ice_rock"
+    },
+    "c": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:torch_of_firm_ice"
+  }
+}

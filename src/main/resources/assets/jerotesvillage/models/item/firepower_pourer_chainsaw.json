@@ -1,0 +1,58 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/firepower_pourer_chainsaw",
+    "particle": "jerotesvillage:item/firepower_pourer_chainsaw"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/firepower_pourer_chainsaw_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/firepower_pourer_chainsaw_model",
+      "particle": "jerotesvillage:item/firepower_pourer_chainsaw"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_tick_count_3": 1
+      },
+      "model": "jerotesvillage:item/firepower_pourer_chainsaw_use_0"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_tick_count_3": 2
+      },
+      "model": "jerotesvillage:item/firepower_pourer_chainsaw_use_1"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_tick_count_3": 3
+      },
+      "model": "jerotesvillage:item/firepower_pourer_chainsaw_use_2"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/firepower_pourer_chainsaw"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/firepower_pourer_chainsaw"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/firepower_pourer_chainsaw"
+      },
+      "gui_light": "front"
+    }
+  }
+}

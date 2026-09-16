@@ -1,0 +1,28 @@
+{
+  "name": "村长",
+  "icon": "minecraft:bell",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_villagehead\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:bell",
+      "title": "村长"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_villagehead\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_villagehead",
+      "title": "村民工作台 村长$",
+      "text": "$(l:villager_block/villagehead)村民工作台 村长$$()"
+    }
+  ]
+}

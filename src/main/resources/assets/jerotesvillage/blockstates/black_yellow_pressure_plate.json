@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "jerotesvillage:block/black_yellow_pressure_plate"
+    },
+    "powered=true": {
+      "model": "jerotesvillage:block/black_yellow_pressure_plate_down"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/virtual_cave_fishing_net",
+    "particle": "jerotesvillage:item/virtual_cave_fishing_net"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/virtual_cave_fishing_net_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/virtual_cave_fishing_net_model",
+      "particle": "jerotesvillage:item/virtual_cave_fishing_net"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/virtual_cave_fishing_net_throwing"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/virtual_cave_fishing_net"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/virtual_cave_fishing_net"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/virtual_cave_fishing_net"
+      },
+      "gui_light": "front"
+    }
+  }
+}

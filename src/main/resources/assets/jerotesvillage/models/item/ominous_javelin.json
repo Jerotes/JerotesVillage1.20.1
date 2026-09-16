@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/ominous_javelin",
+    "particle": "jerotesvillage:item/ominous_javelin"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/javelin_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/ominous_javelin_model",
+      "particle": "jerotesvillage:item/ominous_javelin"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/ominous_javelin_throwing"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_javelin"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_javelin"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_javelin"
+      },
+      "gui_light": "front"
+    }
+  }
+}

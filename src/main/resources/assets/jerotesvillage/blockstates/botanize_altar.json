@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "jerotesvillage:block/botanize_altar"
+    },
+    "facing=east": {
+      "model": "jerotesvillage:block/botanize_altar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "jerotesvillage:block/botanize_altar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "jerotesvillage:block/botanize_altar",
+      "y": 270
+    }
+  }
+}

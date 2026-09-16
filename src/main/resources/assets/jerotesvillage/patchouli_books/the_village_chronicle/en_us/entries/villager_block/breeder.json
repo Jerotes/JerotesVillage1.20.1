@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Breeder",
+  "icon": "jerotesvillage:villager_block_breeder",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_breeder",
+      "title": "Villager Block Breeder",
+      "text": "$(l:villager_profession/breeder)Breeder$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_breeder_craft"
+    }
+  ]
+}

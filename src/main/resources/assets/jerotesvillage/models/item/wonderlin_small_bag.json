@@ -1,0 +1,15 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_small_bag"
+    },
+    "overrides": [
+        {
+            "predicate":
+            {
+                "filled": 0.0000001
+            },
+            "model": "jerotesvillage:item/wonderlin_small_bag_filled"
+        }
+    ]
+}

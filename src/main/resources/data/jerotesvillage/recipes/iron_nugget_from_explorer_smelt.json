@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:explorer_iron_helmet"
+    },
+    {
+      "item": "jerotesvillage:explorer_iron_chestplate"
+    },
+    {
+      "item": "jerotesvillage:explorer_iron_leggings"
+    },
+    {
+      "item": "jerotesvillage:explorer_iron_boots"
+    },
+    {
+      "item": "jerotesvillage:explorer_helmet"
+    },
+    {
+      "item": "jerotesvillage:explorer_chestplate"
+    },
+    {
+      "item": "jerotesvillage:explorer_leggings"
+    },
+    {
+      "item": "jerotesvillage:explorer_boots"
+    }
+  ],
+  "result": "minecraft:iron_nugget"
+}

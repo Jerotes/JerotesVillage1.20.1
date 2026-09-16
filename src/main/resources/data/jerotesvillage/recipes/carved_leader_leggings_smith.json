@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:carved_leader_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "jerotesvillage:villager_metal_leggings"
+  },
+  "addition": {
+    "tag": "forge:ingots/netherite"
+  },
+  "result": {
+    "item": "jerotesvillage:carved_leader_leggings"
+  }
+}

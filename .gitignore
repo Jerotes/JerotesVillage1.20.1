@@ -1,0 +1,41 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# libs：他人作品的 jar（tacz / spark / blackgoldalliance / jerotesvillagedelight）一律不得入库
+# 自己的前置库 jerotes-*.jar 要进仓库，否则别人 clone 下来编不过
+/libs/*
+!/libs/jerotes-*.jar
+
+# 注解处理器 / IDE 生成物
+.apt_generated
+.apt_generated_tests
+.vscode
+
+# gunpack 里被误带进来的 IDE 配置（会一起打进 jar）
+src/main/resources/MerorsEnergeticGun1.20.1/.idea/
+
+# 私人进度笔记，不公开
+更新进度.txt

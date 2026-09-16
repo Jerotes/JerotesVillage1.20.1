@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:purple_sandstone_stairs",
+    "jerotesvillage:smooth_purple_sandstone_stairs",
+    "jerotesvillage:sun_sandstone_stairs",
+    "jerotesvillage:smooth_sun_sandstone_stairs",
+    "jerotesvillage:glitter_sandstone_stairs",
+    "jerotesvillage:smooth_glitter_sandstone_stairs",
+    "jerotesvillage:ruin_stone_brick_stairs",
+    "jerotesvillage:bright_cobblestone_stairs",
+    "jerotesvillage:drought_fire_brick_stairs",
+    "jerotesvillage:sediment_mud_brick_stairs",
+    "jerotesvillage:carved_brick_stairs"
+  ]
+}

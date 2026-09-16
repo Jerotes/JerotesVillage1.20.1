@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jerotesvillage:block/rambler_leather_block_side",
+    "up": "jerotesvillage:block/rambler_leather_block",
+    "north": "jerotesvillage:block/rambler_leather_block",
+    "east": "jerotesvillage:block/rambler_leather_block_side",
+    "south": "jerotesvillage:block/rambler_leather_block",
+    "west": "jerotesvillage:block/rambler_leather_block_side",
+    "particle": "jerotesvillage:block/rambler_leather_block"
+  },
+  "render_type": "solid"
+}

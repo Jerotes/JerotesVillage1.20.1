@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jerotesvillage:block/sun_sandstone_top",
+    "side": "jerotesvillage:block/cut_sun_sandstone"
+  }
+}

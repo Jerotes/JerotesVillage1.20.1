@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 小贩",
+  "icon": "jerotesvillage:villager_block_hawker",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_hawker",
+      "title": "村民工作台 小贩",
+      "text": "$(l:villager_profession/hawker)小贩$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_hawker_craft"
+    }
+  ]
+}

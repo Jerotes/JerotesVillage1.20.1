@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/meror_metal"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:meror_metal_nugget",
+    "count": 9
+  }
+}

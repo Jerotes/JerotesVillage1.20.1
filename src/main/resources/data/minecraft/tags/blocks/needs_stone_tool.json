@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#jerotesvillage:villager_block",
+
+    "jerotesvillage:villager_metal_base_block",
+    "jerotesvillage:enchanted_stone",
+    "jerotesvillage:bright_cobblestone",
+    "jerotesvillage:bright_cobblestone_stairs",
+    "jerotesvillage:bright_cobblestone_slab",
+    "jerotesvillage:bright_cobblestone_wall"
+  ]
+}

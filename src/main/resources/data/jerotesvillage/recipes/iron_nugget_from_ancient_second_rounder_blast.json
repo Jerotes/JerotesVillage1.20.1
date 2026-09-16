@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:ancient_second_rounder_dagger"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_sword"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_war_axe"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_mace"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_mace"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_greatsword"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_battleaxe"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_warhammer"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_warspear"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_pike"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_pincer"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_bow"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_arrow"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_shield"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_helmet"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_chestplate"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_leggings"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_boots"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_heavy_helmet"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_heavy_chestplate"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_heavy_leggings"
+    },
+    {
+      "item": "jerotesvillage:ancient_second_rounder_heavy_boots"
+    }
+  ],
+  "result": "minecraft:iron_nugget"
+}

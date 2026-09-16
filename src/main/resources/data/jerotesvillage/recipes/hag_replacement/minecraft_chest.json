@@ -1,0 +1,16 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:chest"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:sediment_coffin"
+    },
+    {
+      "item": "jerotesvillage:sediment_urn"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:gems/ocean_gemstone"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:ocean_gemstone_fragments",
+    "count": 9
+  }
+}

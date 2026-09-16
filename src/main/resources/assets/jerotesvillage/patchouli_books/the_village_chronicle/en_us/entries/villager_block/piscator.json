@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Piscator",
+  "icon": "jerotesvillage:villager_block_piscator",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_piscator",
+      "title": "Villager Block Piscator",
+      "text": "$(l:villager_profession/piscator)Piscator$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_piscator_craft"
+    }
+  ]
+}

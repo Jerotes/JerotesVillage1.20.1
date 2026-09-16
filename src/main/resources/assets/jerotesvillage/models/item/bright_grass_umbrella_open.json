@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/bright_grass_umbrella_open",
+    "particle": "jerotesvillage:item/bright_grass_umbrella_open"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/base_umbrella_open",
+    "textures": {
+      "0": "jerotesvillage:item/bright_grass_umbrella_model_open",
+      "particle": "jerotesvillage:item/bright_grass_umbrella_open"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bright_grass_umbrella_open"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bright_grass_umbrella_open"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/bright_grass_umbrella_open"
+      },
+      "gui_light": "front"
+    }
+  }
+}

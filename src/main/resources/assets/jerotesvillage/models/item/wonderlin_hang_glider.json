@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/wonderlin_hang_glider",
+    "particle": "jerotesvillage:item/wonderlin_hang_glider"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/base_hang_glider",
+    "textures": {
+      "0": "jerotesvillage:item/wonderlin_hang_glider_model",
+      "particle": "jerotesvillage:item/wonderlin_hang_glider"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_hang_glider"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_hang_glider"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_hang_glider"
+      },
+      "gui_light": "front"
+    }
+  }
+}

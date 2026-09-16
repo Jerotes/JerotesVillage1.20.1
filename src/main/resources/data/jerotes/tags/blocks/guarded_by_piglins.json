@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:serpon_alloy_block",
+    "jerotesvillage:serpon_classical_bomb",
+    "jerotesvillage:villager_block_piglin",
+    "jerotesvillage:golden_bright_melon_crate"
+  ]
+}

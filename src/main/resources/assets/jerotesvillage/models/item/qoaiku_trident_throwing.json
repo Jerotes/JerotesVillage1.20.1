@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/qoaiku_trident",
+    "particle": "jerotesvillage:item/qoaiku_trident"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/qoaiku_trident_throwing_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/qoaiku_trident_model",
+      "particle": "jerotesvillage:item/qoaiku_trident"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/qoaiku_trident"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/qoaiku_trident"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/qoaiku_trident"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "jerotesvillage:block/deep_dust_block"
+      },
+      {
+        "model": "jerotesvillage:block/deep_dust_block",
+        "y": 90
+      },
+      {
+        "model": "jerotesvillage:block/deep_dust_block",
+        "y": 180
+      },
+      {
+        "model": "jerotesvillage:block/deep_dust_block",
+        "y": 270
+      }
+    ]
+  }
+}

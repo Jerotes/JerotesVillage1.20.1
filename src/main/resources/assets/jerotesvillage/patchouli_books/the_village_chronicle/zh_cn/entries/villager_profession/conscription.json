@@ -1,0 +1,28 @@
+{
+  "name": "应征官",
+  "icon": "minecraft:iron_sword",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_conscription\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:iron_sword",
+      "title": "应征官"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_conscription\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_conscription",
+      "title": "村民工作台 应征官",
+      "text": "$(l:villager_block/conscription)村民工作台 应征官$()"
+    }
+  ]
+}

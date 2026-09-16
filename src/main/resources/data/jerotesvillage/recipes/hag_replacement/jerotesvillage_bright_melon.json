@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:bright_melon"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:apple"
+    }
+  ]
+}

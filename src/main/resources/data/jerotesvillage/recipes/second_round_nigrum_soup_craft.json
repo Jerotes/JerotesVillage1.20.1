@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "jerotesvillage:cooked_second_round_nigrum"
+    },
+    {
+      "item": "jerotesvillage:cooked_second_round_nigrum"
+    },
+    {
+      "item": "jerotesvillage:cooked_second_round_nigrum"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:second_round_nigrum_soup"
+  }
+}

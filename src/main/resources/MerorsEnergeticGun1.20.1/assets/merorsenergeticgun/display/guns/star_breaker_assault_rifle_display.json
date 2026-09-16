@@ -1,0 +1,73 @@
+{
+  "model": "merorsenergeticgun:gun/star_breaker_assault_rifle_geo",
+  "texture": "merorsenergeticgun:gun/uv/star_breaker_assault_rifle",
+  "iron_zoom": 1.33,
+  "zoom_model_fov": 55,
+  "ammo_count_style": "normal",
+  "damage_style": "per_projectile",
+  "show_crosshair": true,
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        1.2,
+        1.2,
+        1.2
+      ]
+    }
+  },
+  "sounds": {
+    "shoot": "tacz:m4a1/m4a1_shoot",
+    "shoot_3p": "tacz:m4a1/m4a1_shoot_3p",
+    "reload_empty": "tacz:m4a1/m4a1_reload_empty",
+    "reload_tactical": "tacz:m4a1/m4a1_reload_tactical",
+    "inspect": "tacz:m4a1/m4a1_inspect",
+    "inspect_empty": "tacz:m4a1/m4a1_inspect_empty",
+    "draw": "tacz:m4a1/m4a1_draw",
+    "put_away": "tacz:m4a1/m4a1_put_away",
+    "silence": "tacz:m4a1/m4a1_silence",
+    "silence_3p": "tacz:m4a1/m4a1_silence_3p",
+    "melee_push": "tacz:melee_stock/melee_stock_01",
+    "melee_stock": "tacz:melee_stock/melee_stock_02"
+  },
+  "animation": "merorsenergeticgun:star_breaker_assault_rifle",
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "hud": "merorsenergeticgun:gun/hud/star_breaker_assault_rifle",
+  "slot": "merorsenergeticgun:gun/slot/star_breaker_assault_rifle",
+  "muzzle_flash": {
+    "texture": "merorsenergeticgun:flash/meror_guardian_pistol_iv_flash",
+    "scale": 1.05
+  },
+  "ammo": {
+    "tracer_color": "#FFBBDF"
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [
+        -1,
+        19,
+        3
+      ],
+      "rotate": [
+        -180,
+        0,
+        130
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  }
+}

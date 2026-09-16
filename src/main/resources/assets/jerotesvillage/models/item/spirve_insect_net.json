@@ -1,0 +1,38 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/spirve_insect_net"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 0, 0, 45 ],
+      "translation": [ 0, 4, 0 ],
+      "scale": [ 0.68, 0.68, 0.68 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 0, 0, -45 ],
+      "translation": [ 0, 4, 0 ],
+      "scale": [ 0.68, 0.68, 0.68 ]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "brushing": 0.25
+      },
+      "model": "jerotesvillage:item/spirve_insect_net_brushing_0"
+    },
+    {
+      "predicate": {
+        "brushing": 0.5
+      },
+      "model": "jerotesvillage:item/spirve_insect_net_brushing_1"
+    },
+    {
+      "predicate": {
+        "brushing": 0.75
+      },
+      "model": "jerotesvillage:item/spirve_insect_net_brushing_2"
+    }
+  ]
+}

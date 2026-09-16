@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "jerotesvillage:block/villager_block_forger",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "jerotesvillage:block/villager_block_forger",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "jerotesvillage:block/villager_block_forger"
+    },
+    "facing=west": {
+      "model": "jerotesvillage:block/villager_block_forger",
+      "y": 90
+    }
+  }
+}

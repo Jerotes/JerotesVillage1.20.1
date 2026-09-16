@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:banner_bearer",
+    "jerotesvillage:mapmaker",
+    "jerotesvillage:trumpeter",
+    "jerotesvillage:teleporter"
+  ]
+}

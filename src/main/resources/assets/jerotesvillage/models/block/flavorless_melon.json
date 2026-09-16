@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jerotesvillage:block/flavorless_melon_top",
+    "side": "jerotesvillage:block/flavorless_melon_side"
+  }
+}

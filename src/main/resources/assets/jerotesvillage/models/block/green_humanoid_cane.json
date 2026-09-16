@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/green_humanoid_cane",
+    "particle": "jerotesvillage:block/green_humanoid_cane"
+  },
+  "render_type": "cutout"
+}

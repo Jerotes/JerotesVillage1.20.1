@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aca",
+    "beb",
+    "dcd"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:lightning_worm_chitin"
+    },
+    "b": {
+      "item": "jerotesvillage:frost_yeti_hair"
+    },
+    "c": {
+      "item": "jerotesvillage:fire_secretor_adhesive"
+    },
+    "d": {
+      "item": "jerotesvillage:marine_reptiles_fine_scale"
+    },
+    "e": {
+      "item": "jerotesvillage:malignasaur_teeth"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:magicka_scale_upgrade_smithing_template",
+    "count": 1
+  }
+}

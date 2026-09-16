@@ -1,0 +1,28 @@
+{
+  "name": "Builder",
+  "icon": "minecraft:iron_pickaxe",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_builder\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:iron_pickaxe",
+      "title": "Builder"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_builder\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_builder",
+      "title": "Villager Block Builder",
+      "text": "$(l:villager_block/builder)Villager Block Builder$()"
+    }
+  ]
+}

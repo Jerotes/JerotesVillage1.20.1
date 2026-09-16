@@ -1,0 +1,28 @@
+{
+  "name": "酒保",
+  "icon": "minecraft:sweet_berries",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_bartender\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:sweet_berries",
+      "title": "酒保"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_bartender\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_bartender",
+      "title": "村民工作台 酒保",
+      "text": "$(l:villager_block/bartender)村民工作台 酒保$()"
+    }
+  ]
+}

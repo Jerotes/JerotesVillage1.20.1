@@ -1,0 +1,39 @@
+{
+  "parent": "jerotesvillage:bitter_cold",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:bitter_cold_bell"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.legend_of_the_abominable.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.legend_of_the_abominable.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "legend_of_the_abominable": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate":{
+              "type": "jerotesvillage:snowy_ape"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

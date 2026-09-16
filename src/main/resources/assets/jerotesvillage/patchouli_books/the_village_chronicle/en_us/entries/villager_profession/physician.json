@@ -1,0 +1,28 @@
+{
+  "name": "Physician",
+  "icon": "minecraft:milk_bucket",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_physician\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:milk_bucket",
+      "title": "Physician"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_physician\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_physician",
+      "title": "Tablet Press Machine",
+      "text": "$(l:villager_block/physician)Tablet Press Machine$()"
+    }
+  ]
+}

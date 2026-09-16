@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ead",
+    " b ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bone"
+    },
+    "b": {
+      "item": "jerotes:simple_javelin"
+    },
+    "c": {
+      "item": "jerotesvillage:wilderness_wood_core"
+    },
+    "d": {
+      "item": "jerotesvillage:brown_venomous_slug"
+    },
+    "e": {
+      "item": "jerotesvillage:rambler_leather_strip"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:wilderness_throwing_spear_of_spear",
+    "count": 1
+  }
+}

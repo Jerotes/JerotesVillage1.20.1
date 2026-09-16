@@ -1,0 +1,18 @@
+{
+  "type": "jerotesvillage:tablet_pressing",
+  "category": "tablet",
+  "base": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    }
+  ],
+  "addition": [
+    {
+      "item": "minecraft:rabbit_foot"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:dexterous_tablet",
+    "count": 1
+  }
+}

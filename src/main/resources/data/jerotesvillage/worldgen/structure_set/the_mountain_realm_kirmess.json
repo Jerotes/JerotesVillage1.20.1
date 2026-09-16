@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 40383612,
+    "separation": 18,
+    "spacing": 36
+  },
+  "structures": [
+    {
+      "structure": "jerotesvillage:the_mountain_realm_kirmess",
+      "weight": 1
+    }
+  ]
+}

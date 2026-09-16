@@ -1,0 +1,66 @@
+{
+  "parent": "jerotesvillage:second_round_world_key",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:second_round_world_block"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.second_round_world_come.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.second_round_world_come.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "second_round_world_come": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "jerotesvillage:second_round_world"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:shrapnel_launcher_craft",
+      "jerotesvillage:iron_nugget_from_ancient_second_rounder_smelt",
+      "jerotesvillage:iron_nugget_from_ancient_second_rounder_blast",
+
+      "jerotesvillage:cooked_bitter_cod",
+      "jerotesvillage:cooked_bitter_cod_campfire_cooking",
+      "jerotesvillage:cooked_bitter_cod_from_smoking",
+
+      "jerotesvillage:cooked_bright_grass_carp",
+      "jerotesvillage:cooked_bright_grass_carp_campfire_cooking",
+      "jerotesvillage:cooked_bright_grass_carp_from_smoking",
+
+      "jerotesvillage:cooked_chromasnap_bass",
+      "jerotesvillage:cooked_chromasnap_bass_campfire_cooking",
+      "jerotesvillage:cooked_chromasnap_bass_from_smoking",
+
+      "jerotesvillage:cooked_flowminnow",
+      "jerotesvillage:cooked_flowminnow_campfire_cooking",
+      "jerotesvillage:cooked_flowminnow_from_smoking",
+
+      "jerotesvillage:cooked_greyscale",
+      "jerotesvillage:cooked_greyscale_campfire_cooking",
+      "jerotesvillage:cooked_greyscale_from_smoking",
+
+      "jerotesvillage:cooked_jewelroamer",
+      "jerotesvillage:cooked_jewelroamer_campfire_cooking",
+      "jerotesvillage:cooked_jewelroamer_from_smoking",
+
+      "jerotesvillage:cooked_lake_loach",
+      "jerotesvillage:cooked_lake_loach_campfire_cooking",
+      "jerotesvillage:cooked_lake_loach_from_smoking",
+
+      "jerotesvillage:cooked_starbrite",
+      "jerotesvillage:cooked_starbrite_campfire_cooking",
+      "jerotesvillage:cooked_starbrite_from_smoking"
+    ]
+  }
+}

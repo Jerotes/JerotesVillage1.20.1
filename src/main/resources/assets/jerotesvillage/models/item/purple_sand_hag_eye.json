@@ -1,0 +1,12 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/purple_sand_hag_eye"
+  },
+	"display": {
+		"head": {
+			"translation": [3.5, -0.25, -6.75],
+			"scale": [0.75, 0.75, 0.75]
+		}
+	}
+}

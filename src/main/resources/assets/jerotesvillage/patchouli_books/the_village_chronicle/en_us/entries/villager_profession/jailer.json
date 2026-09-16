@@ -1,0 +1,28 @@
+{
+  "name": "Jailer",
+  "icon": "minecraft:iron_bars",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_jailer\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:iron_bars",
+      "title": "Jailer"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_jailer\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_jailer",
+      "title": "Villager Block Jailer",
+      "text": "$(l:villager_block/jailer)Villager Block Jailer$()"
+    }
+  ]
+}

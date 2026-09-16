@@ -1,0 +1,49 @@
+{
+  "parent": "jerotesvillage:be_careful_of_vibrations",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:bright_grass"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.why_is_there_grass_growing_on_your_head.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.why_is_there_grass_growing_on_your_head.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "why_is_there_grass_growing_on_your_head": {
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:spyglass"
+          ]
+        },
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "looking_at": {
+                  "type": "jerotesvillage:bright_land_beast"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

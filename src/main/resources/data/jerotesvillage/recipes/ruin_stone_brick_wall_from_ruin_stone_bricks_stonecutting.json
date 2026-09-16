@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "jerotesvillage:ruin_stone_bricks"
+  },
+  "result": "jerotesvillage:ruin_stone_brick_wall"
+}

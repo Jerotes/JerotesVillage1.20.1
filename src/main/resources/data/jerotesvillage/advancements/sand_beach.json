@@ -1,0 +1,66 @@
+{
+  "parent": "jerotesvillage:second_round_world_come",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:sun_sand"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.sand_beach.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.sand_beach.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sand_beach": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "jerotesvillage:sand_beach"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "recipes": [
+      "jerotesvillage:sun_sand_tnt_craft",
+      "jerotesvillage:sun_sand_craft",
+      "jerotesvillage:chiseled_sun_sandstone_craft",
+      "jerotesvillage:chiseled_sun_sandstone_from_sun_sandstone_stonecutting",
+      "jerotesvillage:cut_sun_sandstone_craft",
+      "jerotesvillage:cut_sun_sandstone_from_sun_sandstone_stonecutting",
+      "jerotesvillage:cut_sun_sandstone_slab_craft",
+      "jerotesvillage:cut_sun_sandstone_slab_from_cut_sun_sandstone_stonecutting",
+      "jerotesvillage:cut_sun_sandstone_slab_from_sun_sandstone_stonecutting",
+      "jerotesvillage:sun_sandstone_craft",
+      "jerotesvillage:sun_sandstone_slab_craft",
+      "jerotesvillage:sun_sandstone_slab_from_sun_sandstone_stonecutting",
+      "jerotesvillage:sun_sandstone_stairs_craft",
+      "jerotesvillage:sun_sandstone_stairs_from_sun_sandstone_stonecutting",
+      "jerotesvillage:sun_sandstone_wall_craft",
+      "jerotesvillage:sun_sandstone_wall_from_sun_sandstone_stonecutting",
+      "jerotesvillage:smooth_sun_sandstone_craft",
+      "jerotesvillage:smooth_sun_sandstone_slab_craft",
+      "jerotesvillage:smooth_sun_sandstone_slab_from_smooth_sun_sandstone_stonecutting",
+      "jerotesvillage:smooth_sun_sandstone_stairs_craft",
+      "jerotesvillage:smooth_sun_sandstone_stairs_from_smooth_sun_sandstone_stonecutting",
+      "jerotesvillage:cooked_sun_crab",
+      "jerotesvillage:cooked_sun_crab_from_campfire_cooking",
+      "jerotesvillage:cooked_sun_crab_from_smoking",
+      "jerotesvillage:arc_arrow_craft"
+    ]
+  }
+}

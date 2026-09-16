@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/meror_token_e",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_token_e_most"
+  }
+}

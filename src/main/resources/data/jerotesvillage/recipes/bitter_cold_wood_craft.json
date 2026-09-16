@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bark",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:bitter_cold_log"
+    }
+  },
+  "result": {
+    "count": 3,
+    "item": "jerotesvillage:bitter_cold_wood"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:lingering_potion"
+    }
+  ],
+  "result": [
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:big_witch_heal\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:big_witch_hurt\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:loves_shame\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:witch_rot\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:uneasy_rabbit\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:wither_sleep\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:vomit_inducer\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:lich_curse\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:last_stand\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:troll_tongue\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:haunting_imp\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:purple_sands_secret\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:serpent_scale\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:despicable_meror\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:sea_monster_worship\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:dark_heart\"}"
+    },
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:lingering_potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:binding_pact\"}"
+    },
+    {
+      "item": "minecraft:experience_bottle"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ]
+}

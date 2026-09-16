@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "jerotesvillage:block/sediment_urn"
+    },
+    "open=true": {
+      "model": "jerotesvillage:block/sediment_urn_open"
+    }
+  }
+}

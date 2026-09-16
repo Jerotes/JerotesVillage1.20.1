@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:illager_signal_light"
+    },
+    {
+      "item": "jerotesvillage:ominous_probe"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:ominous_probe"
+  }
+}

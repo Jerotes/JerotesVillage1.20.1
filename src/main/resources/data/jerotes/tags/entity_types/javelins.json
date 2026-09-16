@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:projectile_throw_villager_metal_javelin",
+    "jerotesvillage:projectile_ominous_javelin",
+    "jerotesvillage:projectile_throw_wilderness_throwing_spear",
+    "jerotesvillage:projectile_throw_wilderness_boomerang",
+    "jerotesvillage:projectile_throw_meror_metal_javelin",
+    "jerotesvillage:projectile_thrown_meror_pilum",
+    "jerotesvillage:projectile_throw_serpon_javelin",
+    "jerotesvillage:projectile_throw_qoaiku_trident",
+    "jerotesvillage:projectile_throw_malignasaur_fishgig",
+    "jerotesvillage:projectile_throw_malignasaur_bait_fishgig",
+    "jerotesvillage:projectile_throw_mountain_realm_flag_spear"
+  ]
+}

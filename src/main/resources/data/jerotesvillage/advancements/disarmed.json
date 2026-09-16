@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:how_did_they_get_here",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:firepower_pourer_chainsaw"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.disarmed.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.disarmed.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "a_bolt_from_the_purple": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

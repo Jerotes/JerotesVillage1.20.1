@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:block/purple_black_dead_bush_base",
+    "layer1": "jerotesvillage:block/purple_black_dead_bush_color"
+  }
+}

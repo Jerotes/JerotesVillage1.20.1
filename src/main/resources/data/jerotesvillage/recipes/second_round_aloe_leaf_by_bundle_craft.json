@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:second_round_aloe_bundle"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:second_round_aloe_leaf",
+    "count": 9
+  }
+}

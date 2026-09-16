@@ -1,0 +1,39 @@
+{
+  "parent": "block/thin_block",
+  "textures": {
+    "0": "jerotesvillage:block/meror_projection_table",
+    "particle": "jerotesvillage:block/meror_projection_table"
+  },
+  "render_type": "cutout",
+  "elements": [
+    {
+      "name": "base",
+      "from": [1, 0, 1],
+      "to": [15, 1, 15],
+      "faces": {
+        "north": {"uv": [1, 14, 15, 15], "texture": "#0"},
+        "east": {"uv": [1, 14, 15, 15], "texture": "#0"},
+        "south": {"uv": [1, 14, 15, 15], "texture": "#0"},
+        "west": {"uv": [1, 14, 15, 15], "texture": "#0"},
+        "up": {"uv": [15, 15, 1, 1], "texture": "#0"},
+        "down": {"uv": [1, 1, 15, 15], "texture": "#0"}
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "base",
+      "origin": [0, 0, 0],
+      "color": 0,
+      "nbt": "{}",
+      "children": [0]
+    },
+    {
+      "name": "boss",
+      "origin": [0, 0, 0],
+      "color": 0,
+      "nbt": "{}",
+      "children": []
+    }
+  ]
+}

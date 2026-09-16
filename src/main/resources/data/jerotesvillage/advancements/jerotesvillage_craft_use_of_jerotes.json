@@ -1,0 +1,37 @@
+{
+  "parent": "jerotes:a_brand_new_world",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:villager_metal_ingot"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.jerotesvillage_craft_use.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.jerotesvillage_craft_use.desc"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "jerotesvillage_craft_use": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+    ]
+  }
+}

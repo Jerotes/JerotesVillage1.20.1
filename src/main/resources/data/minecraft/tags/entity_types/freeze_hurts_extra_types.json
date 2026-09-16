@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:flying_fireball",
+    "jerotesvillage:fury_flying_fireball",
+    "jerotesvillage:fire_secretor",
+    "jerotesvillage:flamoar",
+    "jerotesvillage:drought_blaze",
+    "jerotesvillage:fury_drought_blaze",
+    "jerotesvillage:drought_wildfire",
+    "jerotesvillage:fury_drought_wildfire"
+  ]
+}

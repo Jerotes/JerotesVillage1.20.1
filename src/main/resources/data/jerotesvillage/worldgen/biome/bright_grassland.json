@@ -1,0 +1,237 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "effects": {
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "foliage_color": -16741632,
+    "grass_color": -9780374,
+    "sky_color": -5781505,
+    "fog_color": -5781505,
+    "water_color": -7282956,
+    "water_fog_color": -7282956
+  },
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [
+      "jerotesvillage:bright_light"
+    ],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:ore_emerald",
+      "minecraft:underwater_magma",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel",
+      "jerotesvillage:meror_metal_ore"
+    ],
+    [],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:patch_tall_grass_2",
+      "jerotesvillage:trees_bright_glow",
+      "minecraft:patch_grass_plain",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane",
+      "jerotesvillage:patch_flavorless_melon",
+      "jerotesvillage:bright_grass",
+      "jerotesvillage:tall_bright_grass",
+      "jerotesvillage:flower_bright_grassland"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "spawn_costs": {},
+  "spawners": {
+    "monster": [
+      {
+        "type": "jerotesvillage:second_rounder_spider",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:slime",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "jerotesvillage:second_rounder_zombie",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 100
+      },
+      {
+        "type": "jerotesvillage:second_rounder_skeleton",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 100
+      },
+      {
+        "type": "jerotesvillage:ender_stowaway",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
+        "type": "jerotesvillage:tangler",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 8
+      }
+    ],
+    "creature": [
+      {
+        "type": "jerotesvillage:soft_spiral_sheep",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "jerotesvillage:irishtail_chicken",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      },
+      {
+        "type": "jerotesvillage:scaly_bear",
+        "maxCount": 6,
+        "minCount": 3,
+        "weight": 3
+      },
+      {
+        "type": "jerotesvillage:rusher",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 3
+      },
+      {
+        "type": "jerotesvillage:glow_sparrow",
+        "maxCount": 6,
+        "minCount": 2,
+        "weight": 5
+      },
+      {
+        "type": "jerotesvillage:bright_mouse",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 8
+      },
+      {
+        "type": "jerotesvillage:big_wool_gemsbok",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 8
+      },
+      {
+        "type": "jerotesvillage:meror_adventurer",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "jerotesvillage:wonderland_giant_frog",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 4
+      },
+      {
+        "type": "jerotesvillage:meror_merchant",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "jerotesvillage:archnosed_hornbeast",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 10
+      }
+    ],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [
+      {
+        "type": "jerotesvillage:blue_shimmer_squid",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 1
+      }
+    ],
+    "water_ambient": [
+      {
+        "type": "jerotesvillage:bright_grass_carp",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 8
+      },
+      {
+        "type": "jerotesvillage:chromasnap_bass",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 8
+      },
+      {
+        "type": "jerotesvillage:lake_loach",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 8
+      }
+    ],
+    "misc": []
+  }
+}

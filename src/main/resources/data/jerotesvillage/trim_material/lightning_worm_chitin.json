@@ -1,0 +1,9 @@
+{
+  "asset_name": "lightning_worm_chitin",
+  "description": {
+    "color": "#341098",
+    "translate": "trim_material.jerotesvillage.lightning_worm_chitin"
+  },
+  "ingredient": "jerotesvillage:lightning_worm_chitin",
+  "item_model_index": 1.0
+}

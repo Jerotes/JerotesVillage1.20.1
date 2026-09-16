@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/harmonious_dream_bell_top"
+  },
+  "render_type": "cutout"
+}

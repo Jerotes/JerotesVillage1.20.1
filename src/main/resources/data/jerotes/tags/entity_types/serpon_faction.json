@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:war_python",
+    "jerotesvillage:royal_war_python",
+    "jerotesvillage:flamoar",
+    "jerotesvillage:serpon_chariot",
+    "jerotesvillage:serpon_crossbow_turret",
+    "jerotesvillage:serpon_combat_platform"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_token_e"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_count_12": 1
+      },
+      "model": "jerotesvillage:item/meror_token_e_more"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_count_48": 1
+      },
+      "model": "jerotesvillage:item/meror_token_e_most"
+    }
+  ]
+}

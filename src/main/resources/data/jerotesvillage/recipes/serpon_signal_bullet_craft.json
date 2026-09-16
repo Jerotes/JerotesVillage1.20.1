@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "dbd",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:firelight_stone"
+    },
+    "b": {
+      "item": "minecraft:firework_rocket"
+    },
+    "c": {
+      "tag": "forge:storage_blocks/gold"
+    },
+    "d": {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_signal_bullet",
+    "count": 1
+  }
+}

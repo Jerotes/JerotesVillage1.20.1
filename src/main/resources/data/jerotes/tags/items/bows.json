@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:villager_metal_bow",
+    "jerotesvillage:wilderness_bow",
+    "jerotesvillage:wilderness_arrow_thrower",
+    "jerotesvillage:meror_metal_bow",
+    "jerotesvillage:meror_charging_bow",
+    "jerotesvillage:serpon_blowpipe",
+    "jerotesvillage:ancient_second_rounder_bow",
+    "jerotesvillage:ominous_bow"
+  ]
+}

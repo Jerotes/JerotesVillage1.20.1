@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "jerotesvillage:block/drought_fire_stone",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "jerotesvillage:block/drought_fire_stone"
+    },
+    "axis=z": {
+      "model": "jerotesvillage:block/drought_fire_stone",
+      "x": 90
+    }
+  }
+}

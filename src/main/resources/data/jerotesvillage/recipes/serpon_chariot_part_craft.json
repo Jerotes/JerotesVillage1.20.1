@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/serpon_alloy"
+    },
+    "b": {
+      "item": "jerotesvillage:serpon_chariot_part"
+    },
+    "c": {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_chariot_part",
+    "count": 1
+  }
+}

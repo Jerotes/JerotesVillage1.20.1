@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  a",
+    "cbc",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/qoaiku_metal"
+    },
+    "b": {
+      "item": "jerotes:war_beast_armor_base"
+    },
+    "c": {
+      "tag": "forge:ingots/copper"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:qoaiku_war_beast_armor",
+    "count": 1
+  }
+}

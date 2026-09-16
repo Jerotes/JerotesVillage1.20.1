@@ -1,0 +1,61 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/mountain_realm_nine_ringed_dao",
+    "particle": "jerotesvillage:item/mountain_realm_nine_ringed_dao"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/mountain_realm_nine_ringed_dao_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/mountain_realm_nine_ringed_dao_model",
+      "particle": "jerotesvillage:item/mountain_realm_nine_ringed_dao"
+    },
+    "gui_light": "front",
+    "display": {
+      "thirdperson_righthand": {
+        "rotation": [-45, 0, 1.5],
+        "translation": [0, 5, 5.5],
+        "scale": [0.75, 0.75, 0.75]
+      },
+      "thirdperson_lefthand": {
+        "rotation": [-45, 0, 1.5],
+        "translation": [0, 5, 5.5],
+        "scale": [0.75, 0.75, 0.75]
+      },
+      "firstperson_righthand": {
+        "rotation": [-45, -45, 20],
+        "translation": [0, 0, 5.5],
+        "scale": [0.75, 0.75, 0.75]
+      },
+      "firstperson_lefthand": {
+        "rotation": [-45, -45, 20],
+        "translation": [0, 0, 5.5],
+        "scale": [0.75, 0.75, 0.75]
+      }
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/mountain_realm_nine_ringed_dao"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/mountain_realm_nine_ringed_dao"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/mountain_realm_nine_ringed_dao"
+      },
+      "gui_light": "front"
+    }
+  }
+}

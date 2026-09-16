@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:sun_sandstone"
+    }
+  },
+  "result": {
+    "count": 4,
+    "item": "jerotesvillage:cut_sun_sandstone"
+  }
+}

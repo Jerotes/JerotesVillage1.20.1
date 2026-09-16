@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:black_yellow_planks"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:black_yellow_pressure_plate"
+  }
+}

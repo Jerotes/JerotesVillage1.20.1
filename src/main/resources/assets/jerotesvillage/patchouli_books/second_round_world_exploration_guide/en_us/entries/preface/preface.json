@@ -1,0 +1,35 @@
+{
+  "name": "Preface",
+  "icon": "minecraft:writable_book",
+  "category": "jerotesvillage:preface",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "\"The Second Round World\" — such is the name we have chosen for this dimension gradually regaining its stability. Due to catastrophic events whose nature remains undetermined, this fractured ecosystem – initially mirroring the Overworld yet now slowly stabilizing over time – has drawn the attention of multiple factions."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Beyond our Copper Carved Company, forces including Illagers, Piglins, and even entities from other enigmatic dimensions have taken notice of this realm. While their precise intentions toward the Second Round World remain unknown, intelligence gathered necessitates our highest level of preparedness."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["jerotesvillage:textures/gui/entries/copper_carved_company.png"],
+      "border": true,
+      "text": "Copper Carved Company"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The indigenous inhabitants call themselves the Meror People, yet the exodus of the majority has rendered this dimension a true no-man's-land. As the cradle of Meror Civilization, these technologically advanced beings clearly never abandoned their homeland. If exploring the Second Round World proves critical to containing the expansion of the Ominous Faction, the Meror Civilization may well become our ally rather than adversary."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "jerotesvillage:carved_villager{SpecialSkin:1b}",
+      "text": "Hi!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Given the complexities of strategic expedition planning, we have compiled this introductory guide for adventurers bound for the Second Round World – though we caution that real-time progress tracking, being both imperceptible and fundamentally non-existent, cannot be provided."
+    }
+  ],
+  "sortnum": 0
+}

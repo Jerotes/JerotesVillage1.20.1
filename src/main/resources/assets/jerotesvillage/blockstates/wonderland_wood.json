@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "jerotesvillage:block/wonderland_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "jerotesvillage:block/wonderland_wood"
+    },
+    "axis=z": {
+      "model": "jerotesvillage:block/wonderland_wood",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:ruin_stone_bricks",
+    "jerotesvillage:ruin_stone_brick_stairs",
+    "jerotesvillage:ruin_stone_brick_slab",
+    "jerotesvillage:ruin_stone_brick_wall",
+    "jerotesvillage:raw_meror_metal_block",
+    "jerotesvillage:meror_metal_ore",
+    "jerotesvillage:deepslate_meror_metal_ore",
+    "jerotesvillage:meror_metal_block",
+    "jerotesvillage:refine_meror_metal_block",
+    "jerotesvillage:sediment_lord_coffin",
+    "jerotesvillage:sediment_lord_empty_coffin",
+    "jerotesvillage:serpon_connection_point"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aba",
+    " c ",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:wonderland_leaves"
+    },
+    "b": {
+      "item": "jerotesvillage:pink_slime_ball"
+    },
+    "c": {
+      "tag": "forge:rods/botanize"
+    },
+    "d": {
+      "tag": "jerotesvillage:wonderland_logs"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:lucky_club",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#jerotes:resurrecter",
+    "#jerotes:wilderness_giant_skeleton",
+
+    "jerotesvillage:blamer",
+    "jerotesvillage:spirve",
+    "jerotesvillage:tangler"
+  ]
+}

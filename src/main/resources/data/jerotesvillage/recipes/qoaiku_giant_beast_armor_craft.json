@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "cbc",
+    "ddd",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/qoaiku_metal"
+    },
+    "b": {
+      "item": "jerotes:giant_beast_armor_base"
+    },
+    "c": {
+      "tag": "forge:ingots/copper"
+    },
+    "d": {
+      "tag": "forge:storage_blocks/qoaiku_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:qoaiku_giant_beast_armor",
+    "count": 1
+  }
+}

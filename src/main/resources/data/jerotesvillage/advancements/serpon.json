@@ -1,0 +1,74 @@
+{
+  "parent": "jerotesvillage:drought_fire",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:serpon_alloy_nugget"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.serpon.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.serpon.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "meror_metal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:serpon_alloy_nugget"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:serpon_crossbow_turret_part_craft",
+      "jerotesvillage:serpon_chariot_part_craft",
+      "jerotesvillage:serpon_alloy_ingotin_craft",
+      "jerotesvillage:serpon_alloy_nugget_craft",
+      "jerotesvillage:serpon_alloy_ingot_craft",
+      "jerotesvillage:serpon_alloy_block_craft",
+      "jerotesvillage:serpon_torch_craft",
+      "jerotesvillage:serpon_sword_craft",
+      "jerotesvillage:serpon_axe_craft",
+      "jerotesvillage:serpon_pickaxe_craft",
+      "jerotesvillage:serpon_shovel_craft",
+      "jerotesvillage:serpon_hoe_craft",
+      "jerotesvillage:serpon_spear_craft",
+      "jerotesvillage:serpon_pike_craft",
+      "jerotesvillage:serpon_dagger_craft",
+      "jerotesvillage:serpon_mace_craft",
+      "jerotesvillage:serpon_blowpipe_craft",
+      "jerotesvillage:serpon_dart_craft",
+      "jerotesvillage:serpon_glaive_craft",
+      "jerotesvillage:serpon_javelin_craft",
+      "jerotesvillage:serpon_spiked_shield_craft",
+      "jerotesvillage:serpon_war_beast_armor_craft",
+      "jerotesvillage:serpon_giant_beast_armor_craft",
+      "jerotesvillage:serpon_helmet_craft",
+      "jerotesvillage:serpon_chestplate_craft",
+      "jerotesvillage:serpon_leggings_craft",
+      "jerotesvillage:serpon_boots_craft",
+      "jerotesvillage:serpon_alloy_nugget_from_smelt",
+      "jerotesvillage:serpon_alloy_nugget_from_blast",
+      "jerotesvillage:serpon_powerhouse_helmet_smith",
+      "jerotesvillage:serpon_powerhouse_chestplate_smith",
+      "jerotesvillage:serpon_powerhouse_leggings_smith",
+      "jerotesvillage:serpon_powerhouse_boots_smith",
+      "jerotesvillage:serpon_chariot_craft",
+      "jerotesvillage:serpon_crossbow_turret_craft",
+      "jerotesvillage:serpon_powerhouse_upgrade_smithing_template_craft",
+      "jerotesvillage:serpon_classical_bomb_craft"
+    ]
+  }
+}

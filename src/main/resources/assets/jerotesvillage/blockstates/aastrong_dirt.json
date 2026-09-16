@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "jerotesvillage:block/aastrong_dirt"
+      },
+      {
+        "model": "jerotesvillage:block/aastrong_dirt",
+        "y": 90
+      },
+      {
+        "model": "jerotesvillage:block/aastrong_dirt",
+        "y": 180
+      },
+      {
+        "model": "jerotesvillage:block/aastrong_dirt",
+        "y": 270
+      }
+    ]
+  }
+}

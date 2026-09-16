@@ -1,0 +1,51 @@
+{
+  "parent": "jerotesvillage:jerotes_adventure",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:second_rounder_map"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.omniscient.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.omniscient.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "omniscient": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:second_rounder_map"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:bitter_cold_igloo_map_craft",
+      "jerotesvillage:explorer_camp_map_craft",
+      "jerotesvillage:piglin_base_map_craft",
+      "jerotesvillage:hoglin_farm_map_craft",
+      "jerotesvillage:sediment_catacombs_map_craft",
+      "jerotesvillage:serpon_training_ground_map_craft",
+      "jerotesvillage:serpon_watchtower_map_craft",
+      "jerotesvillage:wilderness_giant_camp_craft",
+      "jerotesvillage:wilderness_giant_hunter_camp_map_craft",
+      "jerotesvillage:witch_coven_map_craft",
+      "jerotesvillage:witch_residence_map_craft",
+      "jerotesvillage:illager_tower_map_craft",
+      "jerotesvillage:botanize_village_map_craft",
+      "jerotesvillage:wonderlin_cave_map_craft"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_door",
+  "pattern": [
+    "aa",
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:bitter_cold_planks"
+    }
+  },
+  "result": {
+    "count": 3,
+    "item": "jerotesvillage:bitter_cold_door"
+  }
+}

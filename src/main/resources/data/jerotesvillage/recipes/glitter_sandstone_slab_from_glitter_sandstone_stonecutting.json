@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jerotesvillage:glitter_sandstone"
+  },
+  "result": "jerotesvillage:glitter_sandstone_slab"
+}

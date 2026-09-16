@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/pink_cactus_flower",
+    "particle": "jerotesvillage:block/pink_cactus_flower"
+  },
+  "render_type": "cutout"
+}

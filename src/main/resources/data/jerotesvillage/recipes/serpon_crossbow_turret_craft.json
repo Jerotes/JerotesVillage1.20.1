@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bad",
+    " b ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:serpon_crossbow_turret_part"
+    },
+    "b": {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    },
+    "c": {
+      "tag": "forge:ingots/serpon_alloy"
+    },
+    "d": {
+      "item": "minecraft:crossbow"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_crossbow_turret_item",
+    "count": 1
+  }
+}

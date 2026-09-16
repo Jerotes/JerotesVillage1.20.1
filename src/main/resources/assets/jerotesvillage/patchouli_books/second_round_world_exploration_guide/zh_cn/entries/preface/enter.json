@@ -1,0 +1,64 @@
+{
+  "name": "进入二轮世界",
+  "icon": "jerotesvillage:second_round_world_key",
+  "category": "jerotesvillage:preface",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "对于普通成员来说，二轮世界可能过于危险。虽然二轮世界进入方法已经脱离高等机密范畴，我们仍希望普通成员不要尝试独自进入二轮世界。事实上，铜刻佣兵团最终考虑“二轮世界”这一代称的原因正在于此：这是对经验丰富冒险家的第二轮挑战。或许苛刻的进入要求已经被撤销，铜刻佣兵团仍需确保每一位成员的安全。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:second_round_world_key",
+      "title": "二轮世界钥匙",
+      "text": "1.获得二轮世界钥匙。对于拥有足够的工艺能力的成员，可以使用下界石英或闪长岩、末影之眼或末影珍珠、村民金属锭手工制作出二轮世界钥匙。不同维度相互影响的力量将是你进入二轮世界的重要媒介。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:second_round_world_key_craft"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_metal_base",
+      "title": "村民金属锭",
+      "text": "2.如果你依然不知道村民金属锭的获得方法，或许你应该求助村民工匠们，将铜与铁构成的村民金属坯教给他们就好。如果你实在无法找到能够帮你进行锻造的大师，你也可以选择更笨拙的方法锻造。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_metal_base_craft",
+      "recipe2": "jerotesvillage:key_second_round_world_block_craft"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:second_round_world_block",
+      "title": "二轮世界方块",
+      "text": "3.对村民金属块使用二轮世界钥匙即可转化为二轮世界方块，将二轮世界方块呈方形框架摆放，随后再次使用二轮世界钥匙激活其内部便会制造出二轮世界传送门。二轮世界传送门与下界传送门的形态十分相似，唯一的区别在于二轮世界传送门允许的框架大小条件更为宽松。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "multiblock": {
+        "pattern": [
+          [ "BBBBB" ],
+          [ "BPPPB" ],
+          [ "BPQPB" ],
+          [ "BPPPB" ],
+          [ "BB0BB" ]
+        ],
+        "mapping": {
+          "B": "jerotesvillage:second_round_world_block",
+          "0": "jerotesvillage:second_round_world_block",
+          "P": "jerotesvillage:second_round_world_portal_block[axis=z,hatch=1]",
+          "Q": "jerotesvillage:second_round_world_portal_block[axis=z,hatch=0]"
+        },
+        "symmetrical": false
+      }
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:totem_of_undying",
+      "title": "真的准备好了吗？",
+      "text": "4.当你做好一切对于主世界冒险堪称浪费的准备后，便可以与你的同伴一同进入传送门中，正式前往二轮世界。记住，请不要在你的主世界生存已经充满艰辛，无法保障的情况下进入二轮世界——它绝不是你想象的理想国。"
+    }
+  ],
+  "sortnum": 1
+}

@@ -1,0 +1,13 @@
+{
+  "__comment": "药片",
+  "replace": false,
+  "values": [
+    "jerotesvillage:therapeutic_tablet",
+    "jerotesvillage:firm_tablet",
+    "jerotesvillage:violent_tablet",
+    "jerotesvillage:dexterous_tablet",
+    "jerotesvillage:debilitated_tablet",
+    "jerotesvillage:ablepsia_tablet",
+    "jerotesvillage:anesthetic_tablet"
+  ]
+}

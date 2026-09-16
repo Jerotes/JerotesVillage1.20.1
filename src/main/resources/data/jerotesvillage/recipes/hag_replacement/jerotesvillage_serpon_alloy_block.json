@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:gold_block"
+    }
+  ]
+}

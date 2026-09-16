@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "jerotesvillage:block/summer_froglight_top",
+    "side": "jerotesvillage:block/summer_froglight_side"
+  }
+}

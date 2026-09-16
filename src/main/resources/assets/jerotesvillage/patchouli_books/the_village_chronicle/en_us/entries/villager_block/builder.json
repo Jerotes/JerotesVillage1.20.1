@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Builder",
+  "icon": "jerotesvillage:villager_block_builder",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_builder",
+      "title": "Villager Block Builder",
+      "text": "$(l:villager_profession/builder)Builder$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_builder_craft"
+    }
+  ]
+}

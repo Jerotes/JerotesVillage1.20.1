@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 建筑工",
+  "icon": "jerotesvillage:villager_block_builder",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_builder",
+      "title": "村民工作台 建筑工",
+      "text": "$(l:villager_profession/builder)建筑工$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_builder_craft"
+    }
+  ]
+}

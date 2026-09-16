@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:ominous_torch"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:wilderness_wolf_spawn_egg"
+    }
+  ]
+}

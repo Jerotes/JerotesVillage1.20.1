@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": [
+      {
+        "item": "jerotesvillage:bright_grass"
+      },
+      {
+        "item": "jerotesvillage:tall_bright_grass"
+      }
+    ],
+    "b": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:bright_grass_umbrella",
+    "count": 1
+  }
+}

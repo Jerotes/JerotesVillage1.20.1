@@ -1,0 +1,28 @@
+{
+  "name": "猎人",
+  "icon": "minecraft:bow",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_hunter\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:bow",
+      "title": "猎人"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_hunter\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_hunter",
+      "title": "村民工作台 猎人",
+      "text": "$(l:villager_block/hunter)村民工作台 猎人$()"
+    }
+  ]
+}

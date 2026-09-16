@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 店主",
+  "icon": "jerotesvillage:villager_block_shopkeeper",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_shopkeeper",
+      "title": "村民工作台 店主",
+      "text": "$(l:villager_profession/shopkeeper)店主$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_shopkeeper_craft"
+    }
+  ]
+}

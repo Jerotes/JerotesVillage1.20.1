@@ -1,0 +1,47 @@
+{
+  "parent": "jerotesvillage:second_round_world_come",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:ruin_stone_bricks"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.damaged_ruins.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.damaged_ruins.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "damaged_ruins": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "jerotesvillage:damaged_ruins"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "recipes": [
+      "jerotesvillage:ruin_stone_brick_slab_craft",
+      "jerotesvillage:ruin_stone_brick_slab_from_ruin_stone_bricks_stonecutting",
+      "jerotesvillage:ruin_stone_brick_stairs_craft",
+      "jerotesvillage:ruin_stone_brick_stairs_from_ruin_stone_bricks_stonecutting",
+      "jerotesvillage:ruin_stone_brick_wall_craft",
+      "jerotesvillage:ruin_stone_brick_wall_from_ruin_stone_bricks_stonecutting"
+    ]
+  }
+}

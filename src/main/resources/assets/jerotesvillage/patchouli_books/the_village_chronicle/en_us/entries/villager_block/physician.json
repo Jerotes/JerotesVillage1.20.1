@@ -1,0 +1,17 @@
+{
+  "name": "Tablet Press Machine",
+  "icon": "jerotesvillage:villager_block_physician",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_bartender",
+      "title": "Tablet Press Machine",
+      "text": "$(l:villager_profession/bartender)Physician$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_bartender_craft"
+    }
+  ]
+}

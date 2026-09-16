@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:animated_iron_helmet"
+    },
+    {
+      "item": "jerotesvillage:animated_iron_chestplate"
+    },
+    {
+      "item": "jerotesvillage:animated_iron_leggings"
+    },
+    {
+      "item": "jerotesvillage:animated_iron_boots"
+    }
+  ],
+  "result": "minecraft:iron_nugget"
+}

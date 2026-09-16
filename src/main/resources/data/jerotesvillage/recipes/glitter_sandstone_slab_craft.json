@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": [
+      {
+        "item": "jerotesvillage:glitter_sandstone"
+      },
+      {
+        "item": "jerotesvillage:chiseled_glitter_sandstone"
+      }
+    ]
+  },
+  "result": {
+    "count": 6,
+    "item": "jerotesvillage:glitter_sandstone_slab"
+  }
+}

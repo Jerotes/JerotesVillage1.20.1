@@ -1,0 +1,13 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:pink_slime_ball"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ]
+}

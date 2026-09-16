@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jerotesvillage:item/captured_dust_moth"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_catch_queen": 1
+      },
+      "model": "jerotesvillage:item/captured_dust_moth_queen"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_catch_baby": 1
+      },
+      "model": "jerotesvillage:item/captured_dust_moth_baby"
+    },
+    {
+      "predicate": {
+        "jerotesvillage_catch_pupa": 1
+      },
+      "model": "jerotesvillage:item/captured_dust_moth_pupa"
+    }
+  ]
+}

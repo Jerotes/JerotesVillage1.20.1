@@ -1,0 +1,28 @@
+{
+  "name": "培育者",
+  "icon": "minecraft:wheat",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_breeder\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:wheat",
+      "title": "培育者"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_breeder\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_breeder",
+      "title": "村民工作台 培育者",
+      "text": "$(l:villager_block/breeder)村民工作台 培育者$()"
+    }
+  ]
+}

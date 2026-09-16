@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/wilderness_staff",
+    "particle": "jerotesvillage:item/wilderness_staff"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/wilderness_staff_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/wilderness_staff_model",
+      "particle": "jerotesvillage:item/wilderness_staff"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/wilderness_staff_blocking"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wilderness_staff"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wilderness_staff"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wilderness_staff"
+      },
+      "gui_light": "front"
+    }
+  }
+}

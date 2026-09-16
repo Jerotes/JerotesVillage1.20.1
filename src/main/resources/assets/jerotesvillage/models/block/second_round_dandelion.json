@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "jerotesvillage:block/second_round_dandelion",
+    "particle": "jerotesvillage:block/second_round_dandelion"
+  },
+  "render_type": "cutout"
+}

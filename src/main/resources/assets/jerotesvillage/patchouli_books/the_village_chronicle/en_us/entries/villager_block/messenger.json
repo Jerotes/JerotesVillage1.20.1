@@ -1,0 +1,17 @@
+{
+  "name": "Village Letter Box",
+  "icon": "jerotesvillage:villager_block_messenger",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_messenger",
+      "title": "Village Letter Box",
+      "text": "$(l:villager_profession/messenger)Messenger$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_messenger_craft"
+    }
+  ]
+}

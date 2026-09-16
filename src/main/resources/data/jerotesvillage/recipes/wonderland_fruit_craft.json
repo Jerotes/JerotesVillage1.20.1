@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:wonderland_fruit_crate"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:wonderland_fruit",
+    "count": 9
+  }
+}

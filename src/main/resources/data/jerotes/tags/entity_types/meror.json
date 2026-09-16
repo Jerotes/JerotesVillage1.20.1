@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:meror",
+    "jerotesvillage:meror_adventurer",
+    "jerotesvillage:meror_merchant",
+    "jerotesvillage:meror_bounty_hunter"
+  ]
+}

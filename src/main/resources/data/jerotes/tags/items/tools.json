@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:villager_metal_syringe",
+    "jerotesvillage:prosperous_pouch",
+    "jerotesvillage:envoy_fan",
+    "jerotesvillage:ominous_probe",
+
+    "jerotesvillage:spirve_insect_net",
+    "jerotesvillage:virtual_cave_insect_net",
+
+    "jerotesvillage:spirve_scissors",
+    "jerotesvillage:spirve_razor",
+
+    "jerotesvillage:second_round_world_key",
+    "jerotesvillage:villager_metal_mortar_and_pestle",
+
+    "jerotesvillage:piglin_golden_fire",
+
+    "jerotesvillage:stubborn_stone_cane",
+
+    "jerotesvillage:hags_brush",
+    "jerotesvillage:spirve_broom",
+    "jerotesvillage:spirve_duster",
+    "jerotesvillage:spirve_mop",
+
+    "jerotesvillage:collecting_arrows_ball",
+    "jerotesvillage:suspicious_branch",
+    "jerotesvillage:rambler_skin_wand",
+
+    "jerotesvillage:hag_eye",
+    "jerotesvillage:purple_sand_hag_eye",
+
+    "jerotesvillage:bright_grass_umbrella",
+    "jerotesvillage:wonderlin_hang_glider",
+
+    "jerotesvillage:rambler_leather_glove",
+    "jerotesvillage:wooden_slingshot",
+    "jerotesvillage:leather_sling"
+  ]
+}

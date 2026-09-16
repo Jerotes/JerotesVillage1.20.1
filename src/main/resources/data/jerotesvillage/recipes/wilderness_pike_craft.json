@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " ca",
+    " dc",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bone"
+    },
+    "b": {
+      "item": "jerotesvillage:wilderness_wood_core"
+    },
+    "c": {
+      "item": "jerotesvillage:rambler_leather_strip"
+    },
+    "d": {
+      "item": "jerotes:simple_pike"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:wilderness_pike",
+    "count": 1
+  }
+}

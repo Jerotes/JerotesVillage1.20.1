@@ -1,0 +1,28 @@
+{
+  "name": "Shopkeeper",
+  "icon": "minecraft:emerald",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_shopkeeper\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:emerald",
+      "title": "Shopkeeper"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_shopkeeper\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_shopkeeper",
+      "title": "Villager Block Shopkeeper",
+      "text": "$(l:villager_block/shopkeeper)Villager Block Shopkeeper$()"
+    }
+  ]
+}

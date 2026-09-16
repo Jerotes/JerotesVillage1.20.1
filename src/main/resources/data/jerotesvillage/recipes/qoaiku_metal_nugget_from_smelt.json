@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:qoaiku_helmet"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_chestplate"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_leggings"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_boots"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_dagger"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_trident"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_knife"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_axe"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_pickaxe"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_shovel"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_hoe"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_round_shield"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_spike"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_spear"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_gavel"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_war_beast_armor"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_giant_beast_armor"
+    },
+    {
+      "item": "jerotesvillage:qoaiku_fishing_rod"
+    }
+  ],
+  "result": "jerotesvillage:qoaiku_metal_nugget"
+}

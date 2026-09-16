@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/serpon_alloy"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:serpon_alloy_nugget",
+    "count": 9
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:serpon_alloy_ingot",
+    "count": 9
+  }
+}

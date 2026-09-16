@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:purple_sandstone_slab",
+    "jerotesvillage:smooth_purple_sandstone_slab",
+    "jerotesvillage:cut_purple_sandstone_slab",
+    "jerotesvillage:sun_sandstone_slab",
+    "jerotesvillage:smooth_sun_sandstone_slab",
+    "jerotesvillage:cut_sun_sandstone_slab",
+    "jerotesvillage:glitter_sandstone_slab",
+    "jerotesvillage:smooth_glitter_sandstone_slab",
+    "jerotesvillage:cut_glitter_sandstone_slab",
+    "jerotesvillage:ruin_stone_brick_slab",
+    "jerotesvillage:bright_cobblestone_slab",
+    "jerotesvillage:drought_fire_brick_slab",
+    "jerotesvillage:sediment_mud_brick_slab",
+    "jerotesvillage:carved_brick_slab"
+  ]
+}

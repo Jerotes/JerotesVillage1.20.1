@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 养马人",
+  "icon": "jerotesvillage:villager_block_horseman",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_horseman",
+      "title": "村民工作台 养马人",
+      "text": "$(l:villager_profession/horseman)养马人$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_horseman_craft"
+    }
+  ]
+}

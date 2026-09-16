@@ -1,0 +1,28 @@
+{
+  "parent": "jerotesvillage:jerotes_adventure",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:meror_token_m"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.prohibit_rip_of.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.prohibit_rip_of.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "prohibit_rip_of": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

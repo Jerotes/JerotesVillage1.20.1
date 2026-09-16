@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Witch",
+  "icon": "jerotesvillage:villager_block_witch",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_witch",
+      "title": "Villager Block Witch",
+      "text": "$(l:villager_profession/witch)Witch$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_witch_craft"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "parent": "jerotesvillage:unknown_deep",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:animated_iron_helmet"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.constructed_nature.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.constructed_nature.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "animated_iron_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:animated_iron_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "animated_iron_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:animated_iron_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "animated_iron_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:animated_iron_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "animated_iron_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:animated_iron_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "animated_iron_boots",
+      "animated_iron_chestplate",
+      "animated_iron_helmet",
+      "animated_iron_leggings"
+    ]
+  ],
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:iron_nugget_from_explorer_blast",
+      "jerotesvillage:iron_nugget_from_explorer_smelt"
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "parent": "jerotesvillage:second_round_world_come",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:wilderness_dirt"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.wilderness_woodland.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.wilderness_woodland.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "wilderness_woodland": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "jerotesvillage:wilderness_woodland"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "recipes": [
+      "jerotesvillage:black_yellow_sign_craft",
+      "jerotesvillage:black_yellow_hanging_sign_craft",
+      "jerotesvillage:black_yellow_boat_craft",
+      "jerotesvillage:black_yellow_chest_boat_craft",
+      "jerotesvillage:black_yellow_button_craft",
+      "jerotesvillage:black_yellow_door_craft",
+      "jerotesvillage:black_yellow_fence_craft",
+      "jerotesvillage:black_yellow_fence_gate_craft",
+      "jerotesvillage:black_yellow_planks_craft",
+      "jerotesvillage:black_yellow_pressure_craft",
+      "jerotesvillage:black_yellow_slab_craft",
+      "jerotesvillage:black_yellow_stairs_craft",
+      "jerotesvillage:black_yellow_trapdoor_craft",
+      "jerotesvillage:black_yellow_wood_craft",
+      "jerotesvillage:stripped_black_yellow_wood_craft",
+      "jerotesvillage:cooked_brown_venomous_slug",
+      "jerotesvillage:cooked_brown_venomous_slug_from_campfire_cooking",
+      "jerotesvillage:cooked_brown_venomous_slug_from_smoking",
+      "jerotesvillage:cooked_cloud_fur_venison",
+      "jerotesvillage:cooked_cloud_fur_venison_from_campfire_cooking",
+      "jerotesvillage:cooked_cloud_fur_venison_from_smoking",
+      "jerotesvillage:bagged_mysterest_petals_craft_leather",
+      "jerotesvillage:mysterest_perfume_from_cooking",
+      "jerotesvillage:mysterest_perfume_from_campfire_cooking",
+      "jerotesvillage:mysterest_perfume_from_smoking",
+      "jerotesvillage:dye_from_tinbush",
+      "jerotesvillage:dye_from_sun_orange_flower",
+      "jerotesvillage:dye_from_green_humanoid_cane",
+      "jerotesvillage:dye_from_brown_mud_thorns",
+      "jerotesvillage:dye_from_mysterest_flower",
+
+      "jerotesvillage:flavorless_melon_craft",
+      "jerotesvillage:flavorless_melon_seeds_craft",
+      "jerotesvillage:glistering_flavorless_melon_slice_craft",
+
+      "jerotesvillage:flint_from_wilderness_dirt_craft",
+      "jerotesvillage:wilderness_wood_core_craft",
+
+      "jerotesvillage:wilderness_giant_helmet_craft",
+      "jerotesvillage:wilderness_giant_chestplate_craft",
+      "jerotesvillage:wilderness_giant_leggings_craft",
+      "jerotesvillage:wilderness_giant_boots_craft",
+
+      "jerotesvillage:wilderness_sword_craft",
+      "jerotesvillage:wilderness_throwing_spear_craft",
+      "jerotesvillage:wilderness_machete_craft",
+      "jerotesvillage:wilderness_stick_craft",
+      "jerotesvillage:wilderness_staff_craft",
+      "jerotesvillage:wilderness_pike_craft",
+      "jerotesvillage:wilderness_boomerang_craft",
+      "jerotesvillage:wilderness_bow_craft",
+      "jerotesvillage:wilderness_arrow_thrower_craft"
+    ]
+  }
+}

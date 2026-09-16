@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "jerotesvillage:drought_fire_bricks"
+  },
+  "result": "jerotesvillage:drought_fire_brick_slab"
+}

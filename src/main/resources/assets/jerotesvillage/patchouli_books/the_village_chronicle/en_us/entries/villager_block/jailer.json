@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Jailer",
+  "icon": "jerotesvillage:villager_block_jailer",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_jailer",
+      "title": "Villager Block Jailer",
+      "text": "$(l:villager_profession/jailer)Jailer$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_jailer_craft"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "村庄信箱",
+  "icon": "jerotesvillage:villager_block_messenger",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_messenger",
+      "title": "村庄信箱",
+      "text": "$(l:villager_profession/messenger)信使$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_messenger_craft"
+    }
+  ]
+}

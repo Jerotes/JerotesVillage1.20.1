@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "pattern": [
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:black_yellow_planks"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:black_yellow_boat"
+  }
+}

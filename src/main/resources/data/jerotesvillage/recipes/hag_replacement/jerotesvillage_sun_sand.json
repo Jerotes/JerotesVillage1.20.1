@@ -1,0 +1,22 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:sun_sand"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:purple_sand"
+    },
+    {
+      "item": "jerotesvillage:glitter_sand"
+    },
+    {
+      "item": "minecraft:red_sand"
+    },
+    {
+      "item": "minecraft:sand"
+    }
+  ]
+}

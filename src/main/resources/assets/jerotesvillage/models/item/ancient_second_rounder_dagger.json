@@ -1,0 +1,14 @@
+{
+  "parent": "jerotesvillage:item/base_dagger",
+  "textures": {
+    "layer0": "jerotesvillage:item/ancient_second_rounder_dagger"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_shift": 1
+      },
+      "model": "jerotesvillage:item/ancient_second_rounder_dagger_shift"
+    }
+  ]
+}

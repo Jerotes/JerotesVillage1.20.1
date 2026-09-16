@@ -1,0 +1,72 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/shrapnel_launcher_standby_item",
+    "particle": "jerotesvillage:item/shrapnel_launcher_standby_item"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/shrapnel_launcher_base",
+    "textures": {
+      "layer0": "jerotesvillage:item/shrapnel_launcher_standby"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "jerotesvillage:item/shrapnel_launcher_pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "jerotesvillage_pull_crossbow": 0.58
+      },
+      "model": "jerotesvillage:item/shrapnel_launcher_pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "jerotesvillage_pull_crossbow": 1.0
+      },
+      "model": "jerotesvillage:item/shrapnel_launcher_pulling_2"
+    },
+    {
+      "predicate": {
+        "charged": 1
+      },
+      "model": "jerotesvillage:item/shrapnel_launcher_arrow"
+    },
+    {
+      "predicate": {
+        "charged": 1,
+        "firework": 1
+      },
+      "model": "jerotesvillage:item/shrapnel_launcher_firework"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/shrapnel_launcher_standby_item"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/shrapnel_launcher_standby_item"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/shrapnel_launcher_standby_item"
+      },
+      "gui_light": "front"
+    }
+  }
+}

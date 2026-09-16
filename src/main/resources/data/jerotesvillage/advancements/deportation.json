@@ -1,0 +1,42 @@
+{
+  "parent": "jerotesvillage:watchman_of_flames",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:serpon_combat_executer_medal"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.deportation.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.deportation.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "deportation": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:serpon_combat_executer"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:glaive_of_serpent_dominater_smith",
+      "jerotesvillage:serpent_dominater_armor_trim_smithing_template_craft",
+      "jerotesvillage:serpent_dominater_armor_trim"
+    ]
+  }
+}

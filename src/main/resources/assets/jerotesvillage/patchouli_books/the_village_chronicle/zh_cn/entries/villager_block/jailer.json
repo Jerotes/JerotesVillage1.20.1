@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 狱卒",
+  "icon": "jerotesvillage:villager_block_jailer",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_jailer",
+      "title": "村民工作台 狱卒",
+      "text": "$(l:villager_profession/jailer)狱卒$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_jailer_craft"
+    }
+  ]
+}

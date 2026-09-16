@@ -1,0 +1,82 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "jerotesvillage:ruin_stone_brick_wall"
+    }
+  ],
+  "result": [
+    {
+      "item": "jerotesvillage:meror_metal_nugget"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    },
+    {
+      "item": "minecraft:stone_brick_wall"
+    }
+  ]
+}

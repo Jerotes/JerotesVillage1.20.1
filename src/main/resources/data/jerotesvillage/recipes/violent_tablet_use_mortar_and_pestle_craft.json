@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "tag": "jerotes:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:violent_tablet"
+  }
+}

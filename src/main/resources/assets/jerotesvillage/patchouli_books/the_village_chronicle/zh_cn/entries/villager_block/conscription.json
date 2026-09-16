@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 应征官",
+  "icon": "jerotesvillage:villager_block_conscription",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_conscription",
+      "title": "村民工作台 应征官",
+      "text": "$(l:villager_profession/conscription)应征官$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_conscription_craft"
+    }
+  ]
+}

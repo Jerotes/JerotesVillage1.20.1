@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 厨师",
+  "icon": "jerotesvillage:villager_block_chef",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_chef",
+      "title": "村民工作台 厨师",
+      "text": "$(l:villager_profession/chef)厨师$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_chef_craft"
+    }
+  ]
+}

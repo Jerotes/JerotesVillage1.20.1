@@ -1,0 +1,28 @@
+{
+  "name": "医师",
+  "icon": "minecraft:milk_bucket",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_physician\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:milk_bucket",
+      "title": "医师"
+     },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_physician\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_physician",
+      "title": "压片机",
+      "text": "$(l:villager_block/physician)压片机$()"
+    }
+  ]
+}

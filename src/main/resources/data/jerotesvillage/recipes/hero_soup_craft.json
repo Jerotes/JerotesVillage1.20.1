@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "jerotesvillage:cooked_second_round_nigrum"
+    },
+    {
+      "item": "jerotesvillage:cooked_second_round_nigrum"
+    },
+    {
+      "item": "jerotesvillage:cooked_second_round_nigrum"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:hero_soup"
+  }
+}

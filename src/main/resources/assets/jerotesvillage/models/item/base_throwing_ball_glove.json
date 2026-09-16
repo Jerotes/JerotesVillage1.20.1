@@ -1,0 +1,54 @@
+{
+  "texture_size": [16, 16],
+  "textures": {
+    "0": "jerotesvillage:item/rambler_leather_glove_model",
+    "particle": "jerotesvillage:item/rambler_leather_glove_model"
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [6, 0, 6],
+      "to": [10, 4, 10],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 2, 8]},
+      "faces": {
+        "north": {"uv": [4, 4, 8, 8], "texture": "#0"},
+        "east": {"uv": [0, 4, 4, 8], "texture": "#0"},
+        "south": {"uv": [12, 4, 16, 8], "texture": "#0"},
+        "west": {"uv": [8, 4, 12, 8], "texture": "#0"},
+        "up": {"uv": [8, 4, 4, 0], "texture": "#0"},
+        "down": {"uv": [12, 0, 8, 4], "texture": "#0"}
+      }
+    }
+  ],
+  "gui_light": "front",
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [90, 0, 0],
+      "translation": [0, -2, 8],
+      "scale": [1.25, 1.25, 1.25]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [90, 0, 0],
+      "translation": [0, -2, 8],
+      "scale": [1.25, 1.25, 1.25]
+    },
+    "firstperson_righthand": {
+      "rotation": [90, 0, 0],
+      "translation": [0, -2, 8],
+      "scale": [1.5, 1.5, 1.5]
+    },
+    "firstperson_lefthand": {
+      "rotation": [90, 0, 0],
+      "translation": [0, -2, 8],
+      "scale": [1.5, 1.5, 1.5]
+    }
+  },
+  "groups": [
+    {
+      "name": "body",
+      "origin": [8, 8, 8],
+      "color": 0,
+      "children": [0]
+    }
+  ]
+}

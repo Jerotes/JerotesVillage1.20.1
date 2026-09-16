@@ -1,0 +1,31 @@
+{
+  "parent": "jerotesvillage:second_round_world_come",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:second_round_world_exploration_guide"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.jerotes_adventure.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.jerotes_adventure.desc"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "jerotes_adventure": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "jerotesvillage:second_round_world"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+    ]
+  }
+}

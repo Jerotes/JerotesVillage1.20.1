@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:villager_block"
+    },
+    {
+      "item": "minecraft:bow"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:villager_block_hunter",
+    "count": 1
+  }
+}

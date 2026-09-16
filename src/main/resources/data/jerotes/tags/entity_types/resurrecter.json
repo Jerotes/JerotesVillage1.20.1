@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:resurrecter",
+    "jerotesvillage:sediment_guard",
+    "jerotesvillage:sediment_soul_stabilizer",
+    "jerotesvillage:heavy_armored_sediment_guard",
+    "jerotesvillage:sediment_lord"
+  ]
+}

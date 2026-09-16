@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jerotesvillage:block/carved_brick_slab"
+    },
+    "type=double": {
+      "model": "jerotesvillage:block/carved_bricks"
+    },
+    "type=top": {
+      "model": "jerotesvillage:block/carved_brick_slab_top"
+    }
+  }
+}

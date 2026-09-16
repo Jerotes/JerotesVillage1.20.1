@@ -1,0 +1,35 @@
+{
+  "name": "序言",
+  "icon": "minecraft:writable_book",
+  "category": "jerotesvillage:preface",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "“二轮世界”，我们决定对这个逐渐恢复稳固的维度冠以这样的代称。由于一些我们暂时不能给出定论的灾害，这个与主世界相仿又支离破碎，随着时间的推移才趋于稳定的生态已经被多方势力所注意到。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "除了我们——铜刻佣兵团之外，灾厄村民、猪灵，乃至其他神秘维度的势力都已经注意到了这一维度。虽然我们并不知道这些家伙对于二轮世界的具体意图，但就我们所掌握的情报而言，必须准备最高程度的防范措施。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["jerotesvillage:textures/gui/entries/copper_carved_company.png"],
+      "border": true,
+      "text": "铜刻佣兵团"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "二轮世界的原住民自称为“莫厄人”，而绝大多数原住民的离开导致这一维度成为了真正的无主之地。作为莫厄文明的摇篮，拥有发达科技的莫厄人显然从未放弃自己的家园。如果将二轮世界的探索视作“抑制灾厄势力扩张”这一目标的重要节点的话，相信莫厄文明未必是我们的敌人。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "jerotesvillage:carved_villager{SpecialSkin:1b}",
+      "text": "你好！"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "考虑到做出合理的冒险规划并不是一件简单事，我们决定编写这本探索指南指引前往二轮世界的冒险者，尽管我们并不能给出实时进度这样难以被所有人注意到，也根本不会存在的指引。"
+    }
+  ],
+  "sortnum": 0
+}

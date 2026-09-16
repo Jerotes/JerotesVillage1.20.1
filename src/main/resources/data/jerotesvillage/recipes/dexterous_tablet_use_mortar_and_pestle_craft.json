@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    },
+    {
+      "item": "minecraft:rabbit_foot"
+    },
+    {
+      "tag": "jerotes:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:dexterous_tablet"
+  }
+}

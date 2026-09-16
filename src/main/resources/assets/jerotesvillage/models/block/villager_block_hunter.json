@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jerotesvillage:block/villager_block",
+    "up": "jerotesvillage:block/villager_block2_hunter",
+    "north": "jerotesvillage:block/villager_block1",
+    "east": "jerotesvillage:block/villager_block1",
+    "south": "jerotesvillage:block/villager_block1",
+    "west": "jerotesvillage:block/villager_block1",
+    "particle": "jerotesvillage:block/villager_block"
+  },
+  "render_type": "solid"
+}

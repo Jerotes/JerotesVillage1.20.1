@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_threshold_provider",
+            "default_state": {
+              "Name": "minecraft:air"
+            },
+            "high_chance": 0.33333334,
+            "high_states": [
+              {
+                "Name": "jerotesvillage:fragrant_lawn"
+              },
+              {
+                "Name": "jerotesvillage:cyan_root"
+              },
+              {
+                "Name": "jerotesvillage:bitter_cold_snow_flower"
+              }
+            ],
+            "low_states": [
+              {
+                "Name": "jerotesvillage:fragrant_lawn"
+              },
+              {
+                "Name": "jerotesvillage:cyan_root"
+              },
+              {
+                "Name": "jerotesvillage:bitter_cold_snow_flower"
+              }
+            ],
+            "noise": {
+              "amplitudes": [
+                1.0
+              ],
+              "firstOctave": 0
+            },
+            "scale": 0.005,
+            "seed": 2345,
+            "threshold": -0.8
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 64,
+    "xz_spread": 3,
+    "y_spread": 2
+  }
+}

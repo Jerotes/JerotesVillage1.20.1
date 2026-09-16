@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/villager_metal"
+    }
+  },
+  "result": {
+    "count": 2,
+    "item": "jerotesvillage:villager_metal_trapdoor"
+  }
+}

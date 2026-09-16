@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "jerotesvillage:wonderland_fruit"
+    },
+    {
+      "item": "jerotesvillage:wonderland_fruit"
+    },
+    {
+      "item": "jerotesvillage:wonderland_fruit"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:immortal_brew"
+  }
+}

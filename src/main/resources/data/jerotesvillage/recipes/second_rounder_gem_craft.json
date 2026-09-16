@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:gems/emerald"
+    },
+    "b": {
+      "tag": "forge:gems/quartz"
+    },
+    "c": {
+      "item": "jerotesvillage:illager_signal_light"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:second_rounder_gem",
+    "count": 1
+  }
+}

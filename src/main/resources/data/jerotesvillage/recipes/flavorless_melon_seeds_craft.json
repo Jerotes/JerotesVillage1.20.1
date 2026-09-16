@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jerotesvillage:flavorless_melon_slice"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:flavorless_melon_seeds"
+  }
+}

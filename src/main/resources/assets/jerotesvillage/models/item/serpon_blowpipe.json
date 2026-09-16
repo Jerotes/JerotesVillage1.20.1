@@ -1,0 +1,36 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jerotesvillage:item/serpon_blowpipe"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ -90, 35, 25 ],
+      "translation": [ 0, 0, -2.5 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ -90, -145, -25 ],
+      "translation": [ 0, 0, -2.5 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 0, -90, 125 ],
+      "translation": [ 1.13, 3.2, 1.13 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, 90, -125 ],
+      "translation": [ 1.13, 3.2, 1.13 ],
+      "scale": [ 1, 1, 1 ]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "jerotesvillage:item/serpon_blowpipe_pulling"
+    }
+  ]
+}

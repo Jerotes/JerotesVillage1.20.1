@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "X": [
+      {
+        "item": "jerotesvillage:deep_dust"
+      }
+    ]
+  },
+
+  "result": {
+    "item": "minecraft:torch",
+    "count": 4
+  }
+}

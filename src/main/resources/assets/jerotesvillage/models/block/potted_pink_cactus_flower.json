@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "jerotesvillage:block/pink_cactus_flower"
+  },
+  "render_type": "cutout"
+}

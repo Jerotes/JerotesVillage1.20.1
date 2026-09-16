@@ -1,0 +1,160 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_1"
+      },
+      "when": {
+        "facing": "north",
+        "age": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_1",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "age": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_1",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "age": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_1",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "age": "1"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_2"
+      },
+      "when": {
+        "facing": "north",
+        "age": "2|3"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_2",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "age": "2|3"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_2",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "age": "2|3"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_2",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "age": "2|3"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_3"
+      },
+      "when": {
+        "facing": "north",
+        "age": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_3",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "age": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_3",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "age": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_3",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "age": "3"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_4"
+      },
+      "when": {
+        "facing": "north",
+        "age": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_4",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "age": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_4",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "age": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "jerotesvillage:block/black_yellow_leaf_litter_4",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "age": "4"
+      }
+    }
+  ]
+}

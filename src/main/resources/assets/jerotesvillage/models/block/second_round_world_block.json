@@ -1,0 +1,13 @@
+{
+  "parent": "jerotesvillage:block/villager_metal_block",
+  "textures": {
+    "down": "jerotesvillage:block/second_round_world_block",
+    "up": "jerotesvillage:block/second_round_world_block",
+    "north": "jerotesvillage:block/second_round_world_block",
+    "east": "jerotesvillage:block/second_round_world_block",
+    "south": "jerotesvillage:block/second_round_world_block",
+    "west": "jerotesvillage:block/second_round_world_block",
+    "particle": "jerotesvillage:block/second_round_world_block"
+  },
+  "render_type": "cutout_mipped"
+}

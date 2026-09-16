@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "jerotesvillage:block/raw_meror_metal_block",
+    "particle": "jerotesvillage:block/raw_meror_metal_block"
+  }
+}

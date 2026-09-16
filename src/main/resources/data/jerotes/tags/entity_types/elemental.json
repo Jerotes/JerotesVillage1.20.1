@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:drought_blaze",
+    "jerotesvillage:fury_drought_blaze",
+    "jerotesvillage:drought_wildfire",
+    "jerotesvillage:fury_drought_wildfire",
+    "jerotesvillage:botanize",
+    "jerotesvillage:coilvine_botanize",
+    "jerotesvillage:bulge",
+    "jerotesvillage:fury_bulge",
+    "jerotesvillage:seawave",
+    "jerotesvillage:fury_seawave",
+    "jerotesvillage:smart_bulge",
+    "jerotesvillage:ruins_breeze",
+
+    "jerotesvillage:flying_fireball",
+    "jerotesvillage:fury_flying_fireball",
+
+    "jerotesvillage:flamoar",
+    "jerotesvillage:fire_secretor",
+    "jerotesvillage:bitter_cold_wind",
+    "jerotesvillage:flowing_dust",
+
+    "jerotesvillage:darisorder",
+    "jerotesvillage:fury_darisorder"
+  ]
+}

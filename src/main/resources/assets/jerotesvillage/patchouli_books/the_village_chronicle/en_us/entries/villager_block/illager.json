@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Illager",
+  "icon": "jerotesvillage:villager_block_illager",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_illager",
+      "title": "Villager Block Illager",
+      "text": "$(l:villager_profession/illager)Illager$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_illager_craft"
+    }
+  ]
+}

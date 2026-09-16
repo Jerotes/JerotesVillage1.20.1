@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/villager_metal_javelin",
+    "particle": "jerotesvillage:item/villager_metal_javelin"
+  },
+  "base": {
+    "parent": "jerotes:item/javelin_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/villager_metal_javelin_model",
+      "particle": "jerotesvillage:item/villager_metal_javelin"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/villager_metal_javelin_throwing"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/villager_metal_javelin"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/villager_metal_javelin"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/villager_metal_javelin"
+      },
+      "gui_light": "front"
+    }
+  }
+}

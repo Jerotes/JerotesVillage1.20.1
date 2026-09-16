@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 猪灵",
+  "icon": "jerotesvillage:villager_block_piglin",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_piglin",
+      "title": "村民工作台 猪灵",
+      "text": "$(l:villager_profession/piglin)猪灵$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_piglin_craft"
+    }
+  ]
+}

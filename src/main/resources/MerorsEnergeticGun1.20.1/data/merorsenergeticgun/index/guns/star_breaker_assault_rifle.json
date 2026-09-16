@@ -1,0 +1,9 @@
+{
+  "name": "merorsenergeticgun.gun.star_breaker_assault_rifle.name",
+  "tooltip": "merorsenergeticgun.gun.star_breaker_assault_rifle.desc",
+  "data": "merorsenergeticgun:star_breaker_assault_rifle_data",
+  "display": "merorsenergeticgun:star_breaker_assault_rifle_display",
+  "type": "rifle",
+  "item_type": "modern_kinetic",
+  "sort": 3
+}

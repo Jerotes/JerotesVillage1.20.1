@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "jerotesvillage:block/tall_bright_grass_top"
+  },
+  "render_type": "cutout"
+}

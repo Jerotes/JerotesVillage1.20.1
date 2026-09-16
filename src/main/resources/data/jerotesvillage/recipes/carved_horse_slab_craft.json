@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/villager_metal"
+    },
+    {
+      "tag": "minecraft:slabs"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:carved_horse_slab",
+    "count": 1
+  }
+}

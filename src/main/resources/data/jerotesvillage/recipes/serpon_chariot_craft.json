@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bab",
+    "cbc",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:serpon_chariot_part"
+    },
+    "b": {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    },
+    "c": {
+      "tag": "forge:ingots/serpon_alloy"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_chariot_item",
+    "count": 1
+  }
+}

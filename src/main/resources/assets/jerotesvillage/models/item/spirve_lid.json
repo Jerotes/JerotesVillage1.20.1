@@ -1,0 +1,46 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/spirve_lid",
+    "particle": "jerotesvillage:item/spirve_lid"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/spirve_lid_in_hand",
+    "textures": {
+      "0": "jerotesvillage:item/spirve_lid_model",
+      "particle": "jerotesvillage:item/spirve_lid"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/spirve_lid_blocking"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/spirve_lid"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/spirve_lid"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/spirve_lid"
+      },
+      "gui_light": "front"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/wonderlin_fake_ears",
+    "particle": "jerotesvillage:item/wonderlin_fake_ears"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/base_wonderlin_fake_ears",
+    "textures": {
+      "0": "jerotesvillage:item/wonderlin_fake_ears_model",
+      "particle": "jerotesvillage:item/wonderlin_fake_ears"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_color": 1
+      },
+      "model": "jerotesvillage:item/wonderlin_fake_ears_color"
+    }
+  ],
+  "perspectives": {
+    "thirdperson_righthand": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_fake_ears"
+      },
+      "gui_light": "front"
+    },
+    "thirdperson_lefthand": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_fake_ears"
+      },
+      "gui_light": "front"
+    },
+    "firstperson_righthand": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_fake_ears"
+      },
+      "gui_light": "front"
+    },
+    "firstperson_lefthand": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_fake_ears"
+      },
+      "gui_light": "front"
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_fake_ears"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_fake_ears"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/wonderlin_fake_ears"
+      },
+      "gui_light": "front"
+    }
+  }
+}

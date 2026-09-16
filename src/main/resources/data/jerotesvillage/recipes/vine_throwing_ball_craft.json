@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    "b": {
+      "item": "jerotesvillage:pink_slime_ball"
+    },
+    "c": {
+      "item": "jerotesvillage:harmonious_dream_bell"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:vine_throwing_ball",
+    "count": 6
+  }
+}

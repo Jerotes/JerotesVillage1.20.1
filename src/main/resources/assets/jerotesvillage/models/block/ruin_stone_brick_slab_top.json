@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "jerotesvillage:block/ruin_stone_bricks",
+    "side": "jerotesvillage:block/ruin_stone_bricks",
+    "top": "jerotesvillage:block/ruin_stone_bricks"
+  }
+}

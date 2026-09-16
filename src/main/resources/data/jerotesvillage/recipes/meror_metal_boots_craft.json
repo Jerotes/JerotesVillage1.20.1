@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/meror_metal"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:meror_metal_boots",
+    "count": 1
+  }
+}

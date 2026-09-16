@@ -1,0 +1,43 @@
+{
+  "parent": "jerotesvillage:wilderness_woodland",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:green_humanoid_cane"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.anesthesia_therapy.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.anesthesia_therapy.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "anesthesia_therapy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:green_humanoid_cane"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:anesthetic_throwing_ball_craft",
+      "jerotesvillage:anesthetic_tablet_craft",
+      "jerotesvillage:anesthetic_tablet_use_mortar_and_pestle_craft",
+      "jerotesvillage:green_humanoid_cane_stems_craft",
+      "jerotesvillage:green_humanoid_cane_stems_bundle_craft",
+      "jerotesvillage:green_humanoid_cane_stems_of_bundle_craft"
+    ]
+  }
+}

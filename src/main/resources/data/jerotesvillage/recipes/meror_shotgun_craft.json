@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "caa",
+    "ab ",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:ingots/refine_meror_metal"
+    },
+    "b": {
+      "tag": "forge:rods/meror_metal"
+    },
+    "c": {
+      "item": "jerotesvillage:meror_energy_regime"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:meror_shotgun",
+    "count": 1
+  }
+}

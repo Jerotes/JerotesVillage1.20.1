@@ -1,0 +1,67 @@
+{
+  "parent": "jerotesvillage:legacy_of_the_old_era",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:meror_metal_ingot"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.meror_metal.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.meror_metal.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "meror_metal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:meror_metal_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:meror_metal_ingotin_craft",
+      "jerotesvillage:meror_metal_nugget_craft",
+      "jerotesvillage:meror_metal_ingot_craft",
+      "jerotesvillage:meror_metal_block_craft",
+      "jerotesvillage:meror_metal_mixture_craft",
+      "jerotesvillage:meror_metal_mixture_blast",
+      "jerotesvillage:meror_metal_nugget_from_meror_blast",
+      "jerotesvillage:meror_metal_stick_craft",
+      "jerotesvillage:meror_metal_ingot_by_stick_craft",
+      "jerotesvillage:meror_metal_bow_craft",
+      "jerotesvillage:meror_metal_sword_craft",
+      "jerotesvillage:meror_metal_greatsword_craft",
+      "jerotesvillage:meror_metal_axe_craft",
+      "jerotesvillage:meror_metal_hoe_craft",
+      "jerotesvillage:meror_metal_dagger_craft",
+      "jerotesvillage:meror_metal_mace_craft",
+      "jerotesvillage:meror_metal_spear_craft",
+      "jerotesvillage:meror_metal_pike_craft",
+      "jerotesvillage:meror_metal_pickaxe_craft",
+      "jerotesvillage:meror_metal_shovel_craft",
+      "jerotesvillage:meror_metal_arrow_craft",
+      "jerotesvillage:meror_metal_javelin_craft",
+      "jerotesvillage:meror_metal_shield_craft",
+      "jerotesvillage:meror_metal_crossbow_craft",
+      "jerotesvillage:meror_metal_war_beast_armor_craft",
+      "jerotesvillage:meror_metal_giant_beast_armor_craft",
+      "jerotesvillage:meror_metal_helmet_craft",
+      "jerotesvillage:meror_metal_chestplate_craft",
+      "jerotesvillage:meror_metal_leggings_craft",
+      "jerotesvillage:meror_metal_boots_craft"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "axis=x,hatch=0": {
+      "model": "jerotesvillage:block/second_round_world_portal_block_ns"
+    },
+    "axis=z,hatch=0": {
+      "model": "jerotesvillage:block/second_round_world_portal_block_ew"
+    },
+    "axis=x,hatch=1": {
+      "model": "jerotesvillage:block/second_round_world_portal_block_ns_side"
+    },
+    "axis=z,hatch=1": {
+      "model": "jerotesvillage:block/second_round_world_portal_block_ew_side"
+    },
+    "axis=x,hatch=2": {
+      "model": "jerotesvillage:block/second_round_world_portal_block_ns_side"
+    },
+    "axis=z,hatch=2": {
+      "model": "jerotesvillage:block/second_round_world_portal_block_ew_side"
+    }
+  }
+}

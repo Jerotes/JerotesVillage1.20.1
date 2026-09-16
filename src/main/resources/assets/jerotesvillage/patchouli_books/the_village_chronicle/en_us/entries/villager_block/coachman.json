@@ -1,0 +1,17 @@
+{
+  "name": "Villager Block Coachman",
+  "icon": "jerotesvillage:villager_block_coachman",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_coachman",
+      "title": "Villager Block Coachman",
+      "text": "$(l:villager_profession/coachman)Coachman$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_coachman_craft"
+    }
+  ]
+}

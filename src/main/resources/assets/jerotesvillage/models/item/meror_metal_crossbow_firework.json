@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/meror_metal_crossbow",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_metal_crossbow_firework"
+  }
+}

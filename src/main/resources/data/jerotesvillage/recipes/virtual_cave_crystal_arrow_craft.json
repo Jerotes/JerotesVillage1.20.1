@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:virtual_cave_evil_crystal"
+    },
+    "b": [
+      {
+        "tag": "forge:rods"
+      },
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "c": [
+      {
+        "item": "minecraft:feather"
+      },
+      {
+        "tag": "forge:string"
+      }
+    ]
+  },
+  "result": {
+    "item": "jerotesvillage:virtual_cave_crystal_arrow",
+    "count": 4
+  }
+}

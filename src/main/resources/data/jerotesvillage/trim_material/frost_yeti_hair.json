@@ -1,0 +1,9 @@
+{
+  "asset_name": "frost_yeti_hair",
+  "description": {
+    "color": "#DBF2F0",
+    "translate": "trim_material.jerotesvillage.frost_yeti_hair"
+  },
+  "ingredient": "jerotesvillage:frost_yeti_hair",
+  "item_model_index": 0.1
+}

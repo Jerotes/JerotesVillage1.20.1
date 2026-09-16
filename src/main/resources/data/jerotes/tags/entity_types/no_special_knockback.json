@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:bright_land_beast",
+    "jerotesvillage:second_rounder_golem",
+    "jerotesvillage:variant_zsiein",
+    "jerotesvillage:corrosiver",
+    "jerotesvillage:tyrant_of_the_mountain_realm",
+    "jerotesvillage:serpon_combat_executer",
+    "jerotesvillage:ominous_banner_projection",
+    "jerotesvillage:celestial_coilvine",
+
+    "jerotesvillage:thorn_spike",
+    "jerotesvillage:serpon_crossbow_turret",
+    "jerotesvillage:cogon_sword",
+    "jerotesvillage:vineheart_bomb",
+    "jerotesvillage:celestial_coilvine_flower",
+    "jerotesvillage:imprison_vine",
+    "jerotesvillage:unclean_tentacle",
+    "jerotesvillage:animated_chain",
+    "jerotesvillage:predation_toothed_flower",
+    "jerotesvillage:bitter_cold_altar",
+
+    "jerotesvillage:serpon_fire_apostle"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "type": "jerotesvillage:hag_replacement",
+  "base": [
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "result": [
+    {
+      "type": "forge:nbt",
+      "item": "minecraft:potion",
+      "nbt": "{\"Potion\":\"jerotesvillage:troll_tongue\"}"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:bright_cobblestone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    }
+  ]
+}

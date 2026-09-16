@@ -1,0 +1,197 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "effects": {
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "foliage_color": -16729831,
+    "grass_color": -16729831,
+    "sky_color": -5973761,
+    "fog_color": -7143431,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [
+      "jerotesvillage:sand_beach_campfire"
+    ],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite_upper",
+      "minecraft:ore_granite_lower",
+      "minecraft:ore_diorite_upper",
+      "minecraft:ore_diorite_lower",
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_tuff",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel",
+      "jerotesvillage:meror_metal_ore",
+      "jerotesvillage:suspicious_sun_sand",
+      "jerotesvillage:suspicious_sun_sand_large"
+    ],
+    [],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane",
+      "jerotesvillage:patch_flavorless_melon",
+      "jerotesvillage:trees_sand_beach"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "spawn_costs": {},
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:drowned",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "jerotesvillage:second_rounder_spider",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 100
+      },
+      {
+        "type": "jerotesvillage:second_rounder_zombie",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 100
+      },
+      {
+        "type": "jerotesvillage:second_rounder_skeleton",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 100
+      },
+      {
+        "type": "minecraft:slime",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
+        "type": "jerotesvillage:ender_stowaway",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 10
+      }
+    ],
+    "creature": [
+      {
+        "type": "jerotesvillage:rambler",
+        "maxCount": 6,
+        "minCount": 4,
+        "weight": 8
+      },
+      {
+        "type": "jerotesvillage:thorny_tortoise",
+        "maxCount": 4,
+        "minCount": 3,
+        "weight": 6
+      },
+      {
+        "type": "jerotesvillage:sun_crab",
+        "maxCount": 8,
+        "minCount": 4,
+        "weight": 12
+      },
+      {
+        "type": "jerotesvillage:beach_terror_bird",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 6
+      }
+    ],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [
+      {
+        "type": "jerotesvillage:pranced_dolphin",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 2
+      }
+    ],
+    "water_ambient": [
+      {
+        "type": "jerotesvillage:starbrite",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 12
+      },
+      {
+        "type": "jerotesvillage:greyscale",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 15
+      },
+      {
+        "type": "jerotesvillage:jewelroamer",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 25
+      },
+      {
+        "type": "minecraft:pufferfish",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 15
+      }
+    ],
+    "misc": []
+  }
+}

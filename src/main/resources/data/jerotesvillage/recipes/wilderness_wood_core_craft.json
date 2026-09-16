@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "jerotesvillage:black_yellow_logs"
+    },
+    {
+      "tag": "jerotesvillage:black_yellow_logs"
+    },
+    {
+      "tag": "jerotesvillage:black_yellow_logs"
+    },
+    {
+      "item": "minecraft:flint"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:wilderness_wood_core",
+    "count": 1
+  }
+}

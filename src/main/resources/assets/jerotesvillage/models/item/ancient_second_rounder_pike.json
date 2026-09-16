@@ -1,0 +1,45 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/ancient_second_rounder_pike",
+    "particle": "jerotesvillage:item/ancient_second_rounder_pike"
+  },
+  "base": {
+    "parent": "jerotesvillage:item/ancient_second_rounder_pike_in_hand",
+    "textures": {
+      "layer0": "jerotesvillage:item/ancient_second_rounder_pike_in_hand"
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "throwing": 1
+      },
+      "model": "jerotesvillage:item/ancient_second_rounder_pike_use"
+    }
+  ],
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ancient_second_rounder_pike"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ancient_second_rounder_pike"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ancient_second_rounder_pike"
+      },
+      "gui_light": "front"
+    }
+  }
+}

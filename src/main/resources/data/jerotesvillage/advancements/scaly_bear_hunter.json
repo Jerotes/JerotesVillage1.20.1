@@ -1,0 +1,60 @@
+{
+  "parent": "jerotesvillage:bright_grassland",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:scaly_bear_scale"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.scaly_bear_hunter.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.scaly_bear_hunter.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "scaly_bear_hunter_hunting": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "jerotesvillage:scaly_bear"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "scaly_bear_hunter_taming": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate":{
+              "type": "jerotesvillage:scaly_bear"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tame_animal"
+    }
+  },
+  "requirements": [
+    [
+      "scaly_bear_hunter_hunting",
+      "scaly_bear_hunter_taming"
+    ]
+  ],
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:scaly_bear_upgrade_smithing_template_craft"
+    ]
+  }
+}

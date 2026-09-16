@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "tag": "jerotesvillage:tablet_excipients"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "tag": "jerotes:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "item": "jerotesvillage:debilitated_tablet"
+  }
+}

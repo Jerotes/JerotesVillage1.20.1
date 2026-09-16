@@ -1,0 +1,38 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/ominous_torch",
+    "particle": "jerotesvillage:item/ominous_torch"
+  },
+  "base": {
+    "parent": "jerotesvillage:block/ominous_torch",
+    "textures": {
+      "0": "jerotesvillage:block/ominous_torch",
+      "particle": "jerotesvillage:item/ominous_torch"
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_torch"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_torch"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/ominous_torch"
+      },
+      "gui_light": "front"
+    }
+  }
+}

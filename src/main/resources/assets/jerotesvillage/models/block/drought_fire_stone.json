@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jerotesvillage:block/drought_fire_stone_top",
+    "up": "jerotesvillage:block/drought_fire_stone_top",
+    "north": "jerotesvillage:block/drought_fire_stone_side",
+    "east": "jerotesvillage:block/drought_fire_stone_side",
+    "south": "jerotesvillage:block/drought_fire_stone_side",
+    "west": "jerotesvillage:block/drought_fire_stone_side",
+    "particle": "jerotesvillage:block/drought_fire_stone_top"
+  },
+  "render_type": "solid"
+}

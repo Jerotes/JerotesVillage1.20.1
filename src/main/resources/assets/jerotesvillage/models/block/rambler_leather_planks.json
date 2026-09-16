@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "jerotesvillage:block/rambler_leather_planks_bottom",
+    "side": "jerotesvillage:block/rambler_leather_planks",
+    "top": "jerotesvillage:block/rambler_leather_planks_top",
+    "particle": "jerotesvillage:block/rambler_leather_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "H"
+  ],
+  "key": {
+    "H": [
+      {
+        "item": "jerotesvillage:bitter_cold_fat"
+      }
+    ],
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "minecraft:candle"
+  }
+}

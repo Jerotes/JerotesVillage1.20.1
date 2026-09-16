@@ -1,0 +1,41 @@
+{
+  "parent": "jerotesvillage:harmonious_wonderland",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:pink_slime_ball"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.gift_for_you.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.gift_for_you.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gift_for_you": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jerotesvillage:pink_slime_ball"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:pink_slime_ball_craft",
+      "jerotesvillage:pink_slime_block_craft",
+      "jerotesvillage:high_strength_string_craft",
+      "jerotesvillage:glutinous_crust_meat_pie_craft"
+    ]
+  }
+}

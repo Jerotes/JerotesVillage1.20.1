@@ -1,0 +1,56 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_roller_use",
+    "particle": "jerotesvillage:item/meror_roller_use"
+  },
+  "base": {
+    "textures": {
+      "0": "jerotesvillage:item/meror_roller_use_model",
+      "particle": "jerotesvillage:item/meror_roller_use"
+    },
+    "parent": "jerotesvillage:item/meror_roller_in_hand",
+    "display": {
+      "thirdperson_righthand": {
+        "rotation": [-45, 0, 0],
+        "translation": [0, 2.25, -1.75]
+      },
+      "thirdperson_lefthand": {
+        "rotation": [-45, 0, 0],
+        "translation": [0, 2.25, -1.75]
+      },
+      "firstperson_righthand": {
+        "rotation": [-115, 0, 0],
+        "translation": [0, 3.5, 0]
+      },
+      "firstperson_lefthand": {
+        "rotation": [-115, 0, 0],
+        "translation": [0, 3.5, 0]
+      }
+    }
+  },
+  "perspectives": {
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_roller_use"
+      },
+      "gui_light": "front"
+    },
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_roller_use"
+      },
+      "gui_light": "front"
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "jerotesvillage:item/meror_roller_use"
+      },
+      "gui_light": "front"
+    }
+  }
+}

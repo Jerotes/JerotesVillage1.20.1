@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a",
+    "b ",
+    " a"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:wilderness_wood_core"
+    },
+    "b": {
+      "item": "jerotesvillage:rambler_leather_strip"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:wilderness_boomerang",
+    "count": 1
+  }
+}

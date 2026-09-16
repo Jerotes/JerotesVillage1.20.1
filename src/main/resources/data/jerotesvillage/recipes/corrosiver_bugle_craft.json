@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": [
+      {
+        "item": "jerotesvillage:giant_monster_hair"
+      },
+      {
+        "item": "jerotesvillage:bitter_cold_fat"
+      }
+    ],
+    "b": [
+      {
+        "item": "jerotesvillage:giant_monster_horn"
+      },
+      {
+        "item": "minecraft:goat_horn"
+      }
+    ],
+    "c": {
+      "tag": "forge:gems/diamond"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:corrosiver_bugle",
+    "count": 1
+  }
+}

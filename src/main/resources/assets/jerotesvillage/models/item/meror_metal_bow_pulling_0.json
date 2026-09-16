@@ -1,0 +1,6 @@
+{
+  "parent": "jerotesvillage:item/meror_metal_bow",
+  "textures": {
+    "layer0": "jerotesvillage:item/meror_metal_bow_pulling_0"
+  }
+}

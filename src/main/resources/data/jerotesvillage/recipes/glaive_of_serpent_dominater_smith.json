@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:the_grace_of_serpenperth"
+  },
+  "base": {
+    "item": "jerotesvillage:serpon_glaive"
+  },
+  "addition": {
+    "tag": "forge:obsidian"
+  },
+  "result": {
+    "item": "jerotesvillage:glaive_of_serpent_dominater"
+  }
+}

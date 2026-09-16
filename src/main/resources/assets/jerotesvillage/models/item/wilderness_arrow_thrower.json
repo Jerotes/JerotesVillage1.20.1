@@ -1,0 +1,39 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "jerotesvillage:item/wilderness_arrow_thrower"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [-45, -90, 0],
+      "translation": [0, 0, 2]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [-45, 90, 0],
+      "translation": [0, 0, 2]
+    },
+    "firstperson_righthand": {
+      "rotation": [-45, -90, -10],
+      "translation": [0, 8.25, 3.5]
+    },
+    "firstperson_lefthand": {
+      "rotation": [-45, 90, 10],
+      "translation": [0, 8.25, 3.5]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "jerotesvillage:item/wilderness_arrow_thrower_pulling_0"
+    },
+    {
+      "predicate": {
+        "pull": 0.9,
+        "pulling": 1
+      },
+      "model": "jerotesvillage:item/wilderness_arrow_thrower_pulling_1"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "jerotesvillage:item/base_dagger",
+  "textures": {
+    "layer0": "jerotesvillage:item/ominous_dagger"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "jerotesvillage_shift": 1
+      },
+      "model": "jerotesvillage:item/ominous_dagger_shift"
+    }
+  ]
+}

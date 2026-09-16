@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "jerotesvillage:block/serpon_alloy_block",
+    "particle": "jerotesvillage:block/serpon_alloy_block"
+  }
+}

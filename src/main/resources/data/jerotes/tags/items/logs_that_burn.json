@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#jerotesvillage:bitter_cold_logs",
+    "#jerotesvillage:wonderland_logs",
+    "#jerotesvillage:black_yellow_logs",
+    "jerotesvillage:bright_glow_log",
+    "jerotesvillage:bright_glow_wood",
+    "jerotesvillage:stripped_bright_glow_log",
+    "jerotesvillage:stripped_bright_glow_wood"
+  ]
+}

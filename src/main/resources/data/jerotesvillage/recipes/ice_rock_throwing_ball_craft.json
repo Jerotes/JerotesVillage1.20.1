@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "jerotesvillage:throwing_stubborn_stone"
+    },
+    "b": {
+      "item": "jerotesvillage:ice_rock"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:ice_rock_throwing_ball",
+    "count": 6
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "村民工作台 船长",
+  "icon": "jerotesvillage:villager_block_captain",
+  "category": "jerotesvillage:villager_block",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_captain",
+      "title": "村民工作台 船长",
+      "text": "$(l:villager_profession/captain)船长$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "jerotesvillage:villager_block_captain_craft"
+    }
+  ]
+}

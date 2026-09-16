@@ -1,0 +1,42 @@
+{
+  "parent": "jerotesvillage:serpon",
+  "display": {
+    "icon": {
+      "item": "jerotesvillage:serpon_signal_bullet"
+    },
+    "title": {
+      "translate": "advancements.jerotesvillage.watchman_of_flames.title"
+    },
+    "description": {
+      "translate": "advancements.jerotesvillage.watchman_of_flames.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "watchman_of_flames": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "jerotesvillage:serpon_watchtower"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "jerotesvillage:serpon_signal_bullet_craft"
+    ]
+  }
+}

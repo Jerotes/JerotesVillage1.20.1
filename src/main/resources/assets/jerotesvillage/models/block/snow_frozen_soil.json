@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "jerotesvillage:block/snow_frozen_soil",
+    "particle": "jerotesvillage:block/snow_frozen_soil"
+  }
+}

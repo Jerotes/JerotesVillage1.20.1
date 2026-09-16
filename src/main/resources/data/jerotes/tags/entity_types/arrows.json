@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "jerotesvillage:projectile_carved_villager_spectral_arrow",
+    "jerotesvillage:projectile_meror_metal_arrow",
+    "jerotesvillage:projectile_arc_arrow",
+    "jerotesvillage:projectile_meror_charging_arrow_1",
+    "jerotesvillage:projectile_meror_charging_arrow_2",
+    "jerotesvillage:projectile_meror_charging_arrow_3",
+    "jerotesvillage:projectile_meror_charging_arrow_4",
+    "jerotesvillage:projectile_meror_charging_arrow_5",
+    "jerotesvillage:projectile_malignasaur_arrow",
+    "jerotesvillage:projectile_virtual_cave_crystal_arrow",
+    "jerotesvillage:projectile_virtual_cave_spider_setae",
+    "jerotesvillage:projectile_ancient_second_rounder_arrow",
+    "jerotesvillage:projectile_serpon_crossbow_turret_arrow",
+    "jerotesvillage:projectile_vinebolt",
+    "jerotesvillage:ominous_bomb_fragment",
+    "jerotesvillage:serpon_dart"
+  ]
+}

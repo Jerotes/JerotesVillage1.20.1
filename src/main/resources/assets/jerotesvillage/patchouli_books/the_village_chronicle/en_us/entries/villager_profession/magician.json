@@ -1,0 +1,28 @@
+{
+  "name": "Magician",
+  "icon": "minecraft:redstone",
+  "category": "jerotesvillage:villager_profession",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager{VillagerData:{profession:\"jerotesvillage:villager_magician\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:redstone",
+      "title": "Magician"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:zombie_villager{VillagerData:{profession:\"jerotesvillage:villager_magician\",level:5}}",
+      "border": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:villager_block_magician",
+      "title": "Villager Block Magician",
+      "text": "$(l:villager_block/magician)Villager Block Magician$()"
+    }
+  ]
+}

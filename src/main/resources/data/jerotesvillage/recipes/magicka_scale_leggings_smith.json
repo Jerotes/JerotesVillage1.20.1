@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "jerotesvillage:magicka_scale_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "jerotesvillage:scaly_bear_leggings"
+  },
+  "addition": {
+    "tag": "forge:gems/diamond"
+  },
+  "result": {
+    "item": "jerotesvillage:magicka_scale_leggings"
+  }
+}

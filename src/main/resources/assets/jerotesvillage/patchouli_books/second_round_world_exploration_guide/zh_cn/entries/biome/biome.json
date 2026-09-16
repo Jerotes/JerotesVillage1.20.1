@@ -1,0 +1,82 @@
+{
+  "name": "确定群系",
+  "icon": "minecraft:compass",
+  "category": "jerotesvillage:biome",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "深呼吸，给自己适应不同维度差异的时间。但也不要过度放松，因为探险中最重要的第一步需要开始：确认自己所在的位置。根据我们已知的情报，二轮世界共有13种差异明显的群系。根据如下的描述，你需要第一时间判断出自己所在的群系。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:snow_frozen_soil",
+      "title": "苦寒之地",
+      "text": "$(l:biome/bitter_cold)苦寒之地$()是二轮世界唯一永久被冰雪覆盖的生物群系，遍布细雪与覆雪冻土。苦寒之地的岩层由特殊的冰岩构成，大型植物仅包括蓝色的苦寒树。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:purple_sand",
+      "title": "紫色沙漠",
+      "text": "紫色沙漠是被独特的紫沙与紫砂岩所覆盖的沙漠，其上生长着独特的粉仙人掌，在紫色沙漠中很少能找到大面积水域。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:gemstone_gravel",
+      "title": "无尽海洋",
+      "text": "无尽海洋是二轮世界中分布范围最广，也是二轮世界大型海域中的唯一群系，而无尽海洋的陆地部分则由淡蓝色的闪晶沙构成。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:bright_cobblestone",
+      "title": "明路草原",
+      "text": "明路草原的生态与主世界相似，但生长着闪烁的明路草，分布着永久散发光芒的明路圆石使明路草原永远不缺失光源。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:drought_fire_stone",
+      "title": "旱火山地",
+      "text": "旱火山地是受到下界入侵者以及另一炎热维度影响最明显的群系，大面积的岩浆渗透进地表各处，旱火石构筑成的树状结构遍布。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:pink_slime_block",
+      "title": "和谐仙境",
+      "text": "称为和谐仙境的山地生物群系是二轮世界最安全的地区，由于某些神秘力量的影响，几乎没有任何危险生物会愿意出现在这里。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:sun_sand",
+      "title": "沙屿海岸",
+      "text": "沙屿海岸的生态与主世界温暖地带的海岸相似，但是其上遍布的日光沙较为特殊，这种温暖金黄色沙子上甚至可以生长植物。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:ruin_stone_bricks",
+      "title": "损毁遗迹",
+      "text": "损毁遗迹来自于旧莫厄文明工业区的遗址，在其他莫厄文明痕迹已被刻意抹除的如今，时间的冲刷仍未能消除这些废墟，或许要归功于这些有惊人的抗性，被代称为“遗迹石砖”的材料。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:deep_dust_block",
+      "title": "未知深坑",
+      "text": "未知深坑是二轮世界两大地下群系之一，作为地下溶洞式的群系，未知深坑中的深坑灰尘虽有窒息探索者的风险，确也是相当不错的燃料。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:virtual_cave_evil_block",
+      "title": "虚洞洞穴",
+      "text": "虚洞洞穴是二轮世界的另一地下群系，其生态与主世界的繁茂洞穴相似，但是其中的生命更加狂野、危险，也更具有攻击性。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "jerotesvillage:wilderness_dirt",
+      "title": "林地荒野",
+      "text": "林地荒野是分布众多高大黑黄木的森林群系，同时似乎也被二轮世界原住民的遗留者，荒野巨人们视为最理想的居住地带。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "如果你已经确定了自己的位置，你可能会好奇自己接下来该去做些什么。我给出的建议只有一句话，开始你的探索。"
+    }
+  ],
+  "sortnum": 0
+}

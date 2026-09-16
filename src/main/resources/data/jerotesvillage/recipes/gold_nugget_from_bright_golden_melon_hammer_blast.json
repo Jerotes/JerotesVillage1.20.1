@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "jerotesvillage:golden_bright_melon"
+    }
+  ],
+  "result": "minecraft:gold_nugget"
+}
