@@ -374,7 +374,7 @@ public class GiantMonsterEntity extends BaseTamableAnimalEntity implements CanBe
 			Objects.requireNonNull(this.getAttribute(Attributes.ARMOR)).removeModifier(ARMOR_MODIFIER_UUID);
 			Objects.requireNonNull(this.getAttribute(Attributes.ARMOR_TOUGHNESS)).removeModifier(ARMOR_TOUGHNESS_MODIFIER_UUID);
 			Objects.requireNonNull(this.getAttribute(Attributes.KNOCKBACK_RESISTANCE)).removeModifier(KNOCKBACK_RESISTANCE_MODIFIER_UUID);
-			if (itemStack.getItem() instanceof ItemBeastArmor armor && (n = armor.getProtection()) != 0) {
+			if (itemStack.getItem() instanceof ItemBeastArmor armor && (n = armor.getBeastArmorProtection()) != 0) {
 				Objects.requireNonNull(this.getAttribute(Attributes.ARMOR)).addTransientModifier(new AttributeModifier(ARMOR_MODIFIER_UUID, "Giant Beast Armor bonus", n, AttributeModifier.Operation.ADDITION));
 			}
 			if (itemStack.getItem() instanceof ItemBeastArmor armor && (n2 = armor.getToughness()) != 0) {

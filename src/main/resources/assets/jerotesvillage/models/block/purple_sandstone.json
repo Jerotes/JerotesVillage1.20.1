@@ -5,7 +5,8 @@
     "side": "jerotesvillage:block/purple_sandstone",
     "top": "jerotesvillage:block/purple_sandstone_top",
     "overlay": "jerotesvillage:block/purple_sandstone_overlay",
-    "top_overlay": "jerotesvillage:block/purple_sandstone_top_overlay"
+    "top_overlay": "jerotesvillage:block/purple_sandstone_top_overlay",
+    "particle": "jerotesvillage:block/purple_sandstone"
   },
   "elements": [
     {

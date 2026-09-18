@@ -1,6 +1,5 @@
 package com.jerotes.jerotesvillage.entity.Other.OtherSpell;
 
-import com.jerotes.jerotes.entity.Interface.UseShieldEntity;
 import com.jerotes.jerotes.entity.Other.OtherSpell.OtherSpellBaseEntity;
 import com.jerotes.jerotes.entity.Shoot.Magic.MagicAbout;
 import com.jerotes.jerotes.init.JerotesDamageTypes;
@@ -13,8 +12,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.level.Level;
 
 import java.util.List;
@@ -95,13 +92,6 @@ public class TorchGazeEntity extends OtherSpellBaseEntity implements TraceableEn
         }
         if (AttackFind.FindCanNotAttack(this.getOwner(), livingEntity))
             return false;
-        if (livingEntity.getUseItem().getItem() instanceof ShieldItem) {
-            if (livingEntity instanceof Player player) {
-                player.disableShield(true);
-            } else if (livingEntity instanceof UseShieldEntity useShieldEntity) {
-                useShieldEntity.disableShield();
-            }
-        }
         DamageSource damageSource = AttackFind.findDamageType(this, JerotesDamageTypes.RADIANT, this);
         DamageSource damageSource2 = AttackFind.findDamageType(this, JerotesDamageTypes.BYPASSES_COOLDOWN_FIRE, this);
         if (livingEntity2 != null) {
@@ -122,7 +112,7 @@ public class TorchGazeEntity extends OtherSpellBaseEntity implements TraceableEn
             }
         }
         if (bl2) {
-            livingEntity.setSecondsOnFire(6);
+            livingEntity.setSecondsOnFire(6 + getSpellLevel() * 3);
         }
         return true;
     }

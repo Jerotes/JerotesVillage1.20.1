@@ -1099,6 +1099,7 @@ public class JerotesVillageItems implements JerotesItemsAdd {
 	public static final RegistryObject<Item> WILDERNESS_GIANT_TRAMP_SPAWN_EGG = REGISTRY.register("wilderness_giant_tramp_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.WILDERNESS_GIANT_TRAMP, -8819625, -12300241, new Item.Properties()));
 	public static final RegistryObject<Item> WILDERNESS_GIANT_HUNTER_SPAWN_EGG = REGISTRY.register("wilderness_giant_hunter_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.WILDERNESS_GIANT_HUNTER, -8819625, -10805248, new Item.Properties()));
 	public static final RegistryObject<Item> WOODLAND_HEART_GUARDIAN_SPAWN_EGG = REGISTRY.register("woodland_heart_guardian_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.WOODLAND_HEART_GUARDIAN, 0x80756f, 0x2d5c03, new Item.Properties().rarity(Rarity.RARE)));
+	public static final RegistryObject<Item> EAGLE_BOW_SPAWN_EGG = REGISTRY.register("eagle_bow_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.EAGLE_BOW, 0x80756f, 0x763f1d, new Item.Properties().rarity(Rarity.EPIC)));
 	//瘟疫
 	public static final RegistryObject<Item> MUSIC_DISC_VARIANT_ZSIEIN = REGISTRY.register("music_disc_variant_zsiein", () -> new RecordItem(1, JerotesVillageSoundEvents.BOSS_MUSIC_1, new Item.Properties().fireResistant().stacksTo(1).rarity(Rarity.EPIC), 471));
 	public static final RegistryObject<Item> SCAVENGER_SPAWN_EGG = REGISTRY.register("scavenger_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.SCAVENGER, 12169711, 11511290, new Item.Properties()));

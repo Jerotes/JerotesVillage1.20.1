@@ -1926,6 +1926,12 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 		//技能-法术反制
 		if (this.tickCount % 600 == 0 || this.tickCount == 1) {
 			if (!this.level().isClientSide()) {
+				int spellLevel = this.getSpellLevel() - 1;
+				if (this.level().getDifficulty() == Difficulty.NORMAL) {
+					spellLevel = this.getSpellLevel();
+				} else if (this.level().getDifficulty() == Difficulty.HARD) {
+					spellLevel = this.getSpellLevel() + 1;
+				}
 				this.addEffect(new MobEffectInstance(JerotesMobEffects.COUNTERSPELL.get(), 600, spellLevel, false, false), this);
 			}
 		}
@@ -3943,7 +3949,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 				amount *= 0.5f;
 			if (damageSource.getEntity() instanceof LivingEntity livingEntity && livingEntity.getMobType() == MobType.UNDEAD)
 				amount *= 0.5f;
-			if (damageSource.getEntity() instanceof LivingEntity livingEntity && EntityFactionFind.isFiend(livingEntity))
+			else if (damageSource.getEntity() instanceof LivingEntity livingEntity && EntityFactionFind.isFiend(livingEntity))
 				amount *= 0.5f;
 		}
 		float trueDamage = amount;

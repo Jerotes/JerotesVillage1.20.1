@@ -12,6 +12,7 @@ import com.jerotes.jerotesvillage.network.OtherPacketHandler;
 import com.jerotes.jerotesvillage.spell.OtherSpellType;
 import com.jerotes.jerotesvillage.util.ViewerNameManager;
 import com.jerotes.jerotesvillage.world.density.JerotesDensityFunctions;
+import com.jerotes.jerotesvillage.world.features.DroughtFireLavaFractureFeature;
 import com.jerotes.jerotesvillage.world.features.StructureFeature;
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
@@ -56,6 +57,7 @@ public class JerotesVillage {
         JerotesVillageBiomeSources.register(FMLJavaModLoadingContext.get().getModEventBus());
         JerotesVillageTreeDecorator.REGISTRY.register(modEventBus);
         StructureFeature.REGISTRY.register(modEventBus);
+        DroughtFireLavaFractureFeature.REGISTRY.register(modEventBus);
         JerotesDensityFunctions.REGISTRY.register(modEventBus);
         WonderlinPaintingVariants.REGISTRY.register(modEventBus);
         modEventBus.addListener(this::initClient);

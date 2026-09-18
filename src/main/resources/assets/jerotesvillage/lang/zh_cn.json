@@ -1473,7 +1473,7 @@
   "item.jerotesvillage.lucky_club.desc": "造成额外的随机伤害，根据幸运值增加伤害幅度",
   "item.jerotesvillage.wonderland_challenge": "仙境战书",
   "item.jerotesvillage.wonderland_challenge.desc_0": "为仙境主宰所下的战书",
-  "item.jerotesvillage.wonderland_challenge.desc_1": "对镇山大王雕塑或植究人祭坛使用",
+  "item.jerotesvillage.wonderland_challenge.desc_1": "对镇山大王雕塑或植究祭坛使用",
   "item.jerotesvillage.mountain_realm_nine_ringed_dao": "镇山九环刀",
   "item.jerotesvillage.mountain_realm_nine_ringed_dao.desc_0": "攻击可破盾，跳劈会赋予对方震撼和震动状态效果，自身获得嚣张状态效果",
   "item.jerotesvillage.mountain_realm_flag_spear_of_javelin": "镇山旗矛",
@@ -2000,6 +2000,8 @@
   "item.jerotesvillage.wilderness_giant_hunter_spawn_egg": "荒野巨人猎手刷怪蛋",
   "entity.jerotesvillage.woodland_heart_guardian": "林地之心守卫",
   "item.jerotesvillage.woodland_heart_guardian_spawn_egg": "林地之心守卫刷怪蛋",
+  "entity.jerotesvillage.eagle_bow": "鹰弓",
+  "item.jerotesvillage.eagle_bow_spawn_egg": "鹰弓刷怪蛋",
 
   "biome.jerotesvillage.plague_zone": "瘟疫地带",
   "item.jerotesvillage.music_disc_variant_zsiein": "音乐唱片",

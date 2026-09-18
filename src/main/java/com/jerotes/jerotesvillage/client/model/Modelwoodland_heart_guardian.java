@@ -133,6 +133,12 @@ public class Modelwoodland_heart_guardian<T extends WoodlandHeartGuardianEntity>
 //		this.slash_add.x *= 1.15f;
 //		this.slash_add.z *= 1.15f;
 
+		this.hat.copyFrom(this.head);
+		this.jacket.copyFrom(this.body);
+		this.left_sleeve.copyFrom(this.left_arm);
+		this.right_sleeve.copyFrom(this.right_arm);
+		this.left_pants.copyFrom(this.left_leg);
+		this.right_pants.copyFrom(this.right_leg);
 	}
 
 	public ModelPart root() {

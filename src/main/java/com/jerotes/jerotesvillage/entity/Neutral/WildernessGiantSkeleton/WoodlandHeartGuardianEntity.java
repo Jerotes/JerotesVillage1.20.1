@@ -632,7 +632,6 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 		}
 		return super.hurt(damageSource, amount);
 	}
-
 	@Nullable
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor serverLevelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData, @Nullable CompoundTag compoundTag) {

@@ -369,6 +369,7 @@ public class JerotesVillageEntityRenderers {
         event.registerEntityRenderer(JerotesVillageEntityType.WILDERNESS_GIANT_TRAMP.get(), WildernessGiantRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.WILDERNESS_GIANT_HUNTER.get(), WildernessGiantRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.WOODLAND_HEART_GUARDIAN.get(), WoodlandHeartGuardianRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.EAGLE_BOW.get(), EagleBowRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SCAVENGER.get(), ScavengerRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.BLOODSUCKER.get(), BloodsuckerRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.RIGIDER.get(), RigiderRenderer::new);

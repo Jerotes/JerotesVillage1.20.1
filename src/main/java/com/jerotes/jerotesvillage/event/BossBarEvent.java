@@ -58,6 +58,12 @@ public class BossBarEvent {
 					color = OtherMainConfig.SedimentLordBossBarNameColor;
 					colorBar = OtherMainConfig.SedimentLordBossBarColor;
 				}
+				else if (boss instanceof EagleBowEntity) {
+					event.setCanceled(true);
+					barLocation = new ResourceLocation(JerotesVillage.MODID,"textures/gui/sprites/boss_bar/eagle_bow_progress.png");
+					color = OtherMainConfig.EagleBowBossBarNameColor;
+					colorBar = OtherMainConfig.EagleBowBossBarColor;
+				}
 				else if (boss instanceof ProsperousEnvoyEntity) {
 					event.setCanceled(true);
 					barLocation = new ResourceLocation(JerotesVillage.MODID,"textures/gui/sprites/boss_bar/prosperous_envoy_progress.png");

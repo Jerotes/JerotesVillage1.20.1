@@ -23,7 +23,7 @@ public class AloeVeraPulp extends Item {
 	public static final String TAG_EXTRACT_LEVEL = "ExtractLevel";
 
 	public AloeVeraPulp() {
-		super(new Properties().stacksTo(1).rarity(Rarity.UNCOMMON).food(JerotesVillageFoods.ALOE_VERA_PULP));
+		super(new Properties().stacksTo(16).rarity(Rarity.UNCOMMON).food(JerotesVillageFoods.ALOE_VERA_PULP));
 	}
 
 
@@ -62,7 +62,7 @@ public class AloeVeraPulp extends Item {
 
 	@Override
 	public int getUseDuration(ItemStack itemStack) {
-		return 20;
+		return 10;
 	}
 
 	@Override
@@ -122,6 +122,12 @@ public class AloeVeraPulp extends Item {
 	public void addExtractLevel(ItemStack itemStack) {
 		CompoundTag compoundtag = itemStack.hasTag() ? itemStack.getTag().copy() : new CompoundTag();
 		compoundtag.putInt(TAG_EXTRACT_LEVEL,  compoundtag.getInt(TAG_EXTRACT_LEVEL) + 1);
+		itemStack.setTag(compoundtag);
+	}
+
+	public static void setExtractLevel(ItemStack itemStack, int n) {
+		CompoundTag compoundtag = itemStack.hasTag() ? itemStack.getTag().copy() : new CompoundTag();
+		compoundtag.putInt(TAG_EXTRACT_LEVEL,  n - 1);
 		itemStack.setTag(compoundtag);
 	}
 

@@ -39,7 +39,8 @@
       "minecraft:amethyst_geode"
     ],
     [
-      "minecraft:delta",
+      "jerotesvillage:drought_fire_lava_delta",
+      "jerotesvillage:drought_fire_lava_fracture",
       "jerotesvillage:trees_drought_fire",
       "jerotesvillage:trees_drought_fire_coal"
     ],

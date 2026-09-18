@@ -15,8 +15,7 @@ public class WildernessGiantSkeletonRenderer extends HumanoidMobRenderer<Wildern
     private static final ResourceLocation LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/wilderness_giant_skeleton.png");
     public WildernessGiantSkeletonRenderer(EntityRendererProvider.Context context) {
         super(context, new Modelwilderness_giant_skeleton(context.bakeLayer(Modelwilderness_giant_skeleton.LAYER_LOCATION)), 0.90f);
-        this.addLayer(new HumanoidArmorLayer(this, new HumanoidArmorModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)),
-                new HumanoidArmorModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
+        this.addLayer(new HumanoidArmorLayer(this, new HumanoidArmorModel(context.bakeLayer(ModelLayers.SKELETON_INNER_ARMOR)), new HumanoidArmorModel(context.bakeLayer(ModelLayers.SKELETON_OUTER_ARMOR)), context.getModelManager()));
     }
 
     @Override
@@ -24,6 +23,7 @@ public class WildernessGiantSkeletonRenderer extends HumanoidMobRenderer<Wildern
         poseStack.scale(1.75f, 1.75f, 1.75f);
         super.scale(entity, poseStack, f);
     }
+
     @Override
     public ResourceLocation getTextureLocation(WildernessGiantSkeletonEntity entity) {
         return LOCATION;

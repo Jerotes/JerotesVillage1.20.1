@@ -445,6 +445,8 @@ public class JerotesVillageSpawnPlacements {
 						SpawnRules.BlockSpawn(64, JerotesVillageBlocks.SECOND_ROUND_ANCHOR_CORE.get(), arg_1, arg_2, arg_3, arg_4));
 		SpawnPlacements.register(JerotesVillageEntityType.WOODLAND_HEART_GUARDIAN.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
 				SpawnRules.NPCSpawn(1, 128, arg_0, arg_1, arg_2, arg_3, arg_4));
+		SpawnPlacements.register(JerotesVillageEntityType.EAGLE_BOW.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
+				SpawnRules.BossSpawn(1, 256, arg_0, arg_1, arg_2, arg_3, arg_4));
 		SpawnPlacements.register(JerotesVillageEntityType.SCAVENGER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
 				SpawnRules.NeutralSpawn(64, 64, arg_0, arg_1, arg_2, arg_3, arg_4));
 		SpawnPlacements.register(JerotesVillageEntityType.BLOODSUCKER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->

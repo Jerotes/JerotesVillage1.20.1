@@ -1,6 +1,7 @@
 {
   "parent": "jerotesvillage:block/base_color_cube_all",
   "textures": {
-    "all": "jerotesvillage:block/sun_sand"
+    "all": "jerotesvillage:block/sun_sand",
+    "particle": "jerotesvillage:block/sun_sand"
   }
 }

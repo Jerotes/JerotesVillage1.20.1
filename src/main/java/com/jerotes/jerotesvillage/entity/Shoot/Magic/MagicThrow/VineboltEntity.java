@@ -1,4 +1,4 @@
-package com.jerotes.jerotesvillage.entity.Shoot.Arrow.Magic;
+package com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicThrow;
 
 import com.jerotes.jerotes.entity.Shoot.Magic.MagicAbout;
 import com.jerotes.jerotes.entity.Shoot.Magic.MagicAboutThrowEntity;

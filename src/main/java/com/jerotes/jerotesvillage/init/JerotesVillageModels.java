@@ -211,6 +211,7 @@ public class JerotesVillageModels {
 		event.registerLayerDefinition(Modelbrown_venomous_slug.LAYER_LOCATION, Modelbrown_venomous_slug::createBodyLayer);
 		event.registerLayerDefinition(Modelwoodland_heart_guardian.LAYER_LOCATION, Modelwoodland_heart_guardian::createBodyLayer);
 		event.registerLayerDefinition(Modelwoodland_heart_guardian_mask.LAYER_LOCATION, Modelwoodland_heart_guardian_mask::createBodyLayer);
+		event.registerLayerDefinition(Modeleagle_bow.LAYER_LOCATION, Modeleagle_bow::createBodyLayer);
 		event.registerLayerDefinition(Modelscavenger.LAYER_LOCATION, Modelscavenger::createBodyLayer);
 		event.registerLayerDefinition(Modelbloodsucker.LAYER_LOCATION, Modelbloodsucker::createBodyLayer);
 		event.registerLayerDefinition(Modelrigider.LAYER_LOCATION, Modelrigider::createBodyLayer);

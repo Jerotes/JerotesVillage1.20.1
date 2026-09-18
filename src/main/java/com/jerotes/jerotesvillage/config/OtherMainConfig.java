@@ -215,6 +215,21 @@ public final class OtherMainConfig {
     public static double SedimentLordMagicAttackPercentage;
     public static double SedimentLordDamageCap;
     public static double SedimentLordDamageCooldownTick;
+    //鹰弓
+    public static int EagleBowBossBarColor;
+    public static int EagleBowBossBarNameColor;
+    public static double EagleBowMaxHealth;
+    public static double EagleBowMeleeDamage;
+    public static double EagleBowArmor;
+    public static double EagleBowMovementSpeed;
+    public static double EagleBowAttackKnockback;
+    public static double EagleBowKnockbackResistance;
+    public static double EagleBowOrderCooldown;
+    public static double EagleBowDropEquipmentChance;
+    public static double EagleBowAttackPercentage;
+    public static double EagleBowMagicAttackPercentage;
+    public static double EagleBowDamageCap;
+    public static double EagleBowDamageCooldownTick;
     //繁兴使者
     public static int ProsperousEnvoyBossBarColor;
     public static int ProsperousEnvoyBossBarNameColor;
@@ -640,6 +655,21 @@ public final class OtherMainConfig {
         SedimentLordMagicAttackPercentage = COMMON.SedimentLordMagicAttackPercentage.get();
         SedimentLordDamageCap = COMMON.SedimentLordDamageCap.get();
         SedimentLordDamageCooldownTick = COMMON.SedimentLordDamageCooldownTick.get();
+        //鹰弓
+        EagleBowBossBarColor = COMMON.EagleBowBossBarColor.get();
+        EagleBowBossBarNameColor = COMMON.EagleBowBossBarNameColor.get();
+        EagleBowMaxHealth = COMMON.EagleBowMaxHealth.get();
+        EagleBowMeleeDamage = COMMON.EagleBowMeleeDamage.get();
+        EagleBowArmor = COMMON.EagleBowArmor.get();
+        EagleBowMovementSpeed = COMMON.EagleBowMovementSpeed.get();
+        EagleBowAttackKnockback = COMMON.EagleBowAttackKnockback.get();
+        EagleBowKnockbackResistance = COMMON.EagleBowKnockbackResistance.get();
+        EagleBowOrderCooldown = COMMON.EagleBowOrderCooldown.get();
+        EagleBowDropEquipmentChance = COMMON.EagleBowDropEquipmentChance.get();
+        EagleBowAttackPercentage = COMMON.EagleBowAttackPercentage.get();
+        EagleBowMagicAttackPercentage = COMMON.EagleBowMagicAttackPercentage.get();
+        EagleBowDamageCap = COMMON.EagleBowDamageCap.get();
+        EagleBowDamageCooldownTick = COMMON.EagleBowDamageCooldownTick.get();
         //繁兴使者
         ProsperousEnvoyBossBarColor = COMMON.ProsperousEnvoyBossBarColor.get();
         ProsperousEnvoyBossBarNameColor = COMMON.ProsperousEnvoyBossBarNameColor.get();
@@ -1059,6 +1089,21 @@ public final class OtherMainConfig {
         public final ForgeConfigSpec.DoubleValue SedimentLordMagicAttackPercentage;
         public final ForgeConfigSpec.DoubleValue SedimentLordDamageCap;
         public final ForgeConfigSpec.DoubleValue SedimentLordDamageCooldownTick;
+        //鹰弓
+        public final ForgeConfigSpec.IntValue EagleBowBossBarColor;
+        public final ForgeConfigSpec.IntValue EagleBowBossBarNameColor;
+        public final ForgeConfigSpec.DoubleValue EagleBowMaxHealth;
+        public final ForgeConfigSpec.DoubleValue EagleBowMeleeDamage;
+        public final ForgeConfigSpec.DoubleValue EagleBowArmor;
+        public final ForgeConfigSpec.DoubleValue EagleBowMovementSpeed;
+        public final ForgeConfigSpec.DoubleValue EagleBowAttackKnockback;
+        public final ForgeConfigSpec.DoubleValue EagleBowKnockbackResistance;
+        public final ForgeConfigSpec.DoubleValue EagleBowOrderCooldown;
+        public final ForgeConfigSpec.DoubleValue EagleBowDropEquipmentChance;
+        public final ForgeConfigSpec.DoubleValue EagleBowAttackPercentage;
+        public final ForgeConfigSpec.DoubleValue EagleBowMagicAttackPercentage;
+        public final ForgeConfigSpec.DoubleValue EagleBowDamageCap;
+        public final ForgeConfigSpec.DoubleValue EagleBowDamageCooldownTick;
     //繁兴使者
         public final ForgeConfigSpec.IntValue ProsperousEnvoyBossBarColor;
         public final ForgeConfigSpec.IntValue ProsperousEnvoyBossBarNameColor;
@@ -1705,6 +1750,37 @@ public final class OtherMainConfig {
                     .defineInRange("Sediment Lord Damage Cap", 22, 0.0, Double.MAX_VALUE);
             SedimentLordDamageCooldownTick = builder.comment("[Boss] Damage Cooldown Tick : 20")
                     .defineInRange("Sediment Lord Damage Cooldown Tick", 20, 0.0, Double.MAX_VALUE);
+            builder.pop();
+            //鹰弓
+            builder.push("Eagle Bow");
+            EagleBowBossBarColor = builder.comment("Eagle Bow Boss Bar Color")
+                    .defineInRange("鹰弓Boss血条颜色", 4, 0, 6);
+            EagleBowBossBarNameColor = builder.comment("Eagle Bow Boss Bar Name Color")
+                    .defineInRange("鹰弓Boss血条名字颜色", 0xa7703d, 0, Integer.MAX_VALUE);
+            EagleBowMaxHealth = builder.comment("[Boss] Max Health : 200.0")
+                    .defineInRange("Eagle Bow Max Health", 200.0, 0.0, Double.MAX_VALUE);
+            EagleBowMeleeDamage = builder.comment("[Boss] Melee Damage : 11.0")
+                    .defineInRange("Eagle Bow Melee Damage", 11.0, 0.0, Double.MAX_VALUE);
+            EagleBowArmor = builder.comment("[Boss] Armor : 5.0")
+                    .defineInRange("Eagle Bow Armor", 5.0, 0.0, Double.MAX_VALUE);
+            EagleBowMovementSpeed = builder.comment("[Boss] Movement Speed : 0.25")
+                    .defineInRange("Eagle Bow Movement Speed", 0.25, 0.0, Double.MAX_VALUE);
+            EagleBowAttackKnockback = builder.comment("[Boss] Attack Knockback : 0.25")
+                    .defineInRange("Eagle Bow Attack Knockback", 0.25, 0.0, Double.MAX_VALUE);
+            EagleBowKnockbackResistance = builder.comment("[Boss] Knockback Resistance : 0.6")
+                    .defineInRange("Eagle Bow Knockback Resistance", 0.6, 0.0, Double.MAX_VALUE);
+            EagleBowOrderCooldown = builder.comment("[Boss] Order Cooldown : 60.0")
+                    .defineInRange("Eagle Bow Order Cooldown", 60.0, 0.0, Double.MAX_VALUE);
+            EagleBowDropEquipmentChance = builder.comment("[Boss] Drop Equipment Chance : 0.0")
+                    .defineInRange("Eagle Bow Drop Equipment Chance", 0.0, 0.0, Double.MAX_VALUE);
+            EagleBowAttackPercentage = builder.comment("[Boss] Attack Percentage : 5.0")
+                    .defineInRange("Eagle Bow Attack Percentage", 5.0, 0.0, Double.MAX_VALUE);
+            EagleBowMagicAttackPercentage = builder.comment("[Boss] Magic Attack Percentage : 5.0")
+                    .defineInRange("Eagle Bow Magic Attack Percentage", 5.0, 0.0, Double.MAX_VALUE);
+            EagleBowDamageCap = builder.comment("[Boss] Damage Cap : 25")
+                    .defineInRange("Eagle Bow Damage Cap", 25, 0.0, Double.MAX_VALUE);
+            EagleBowDamageCooldownTick = builder.comment("[Boss] Damage Cooldown Tick : 20")
+                    .defineInRange("Eagle Bow Damage Cooldown Tick", 20, 0.0, Double.MAX_VALUE);
             builder.pop();
             //繁兴使者
             builder.push("Prosperous Envoy");

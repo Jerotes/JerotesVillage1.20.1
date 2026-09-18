@@ -365,13 +365,7 @@ public class GavilerEntity extends SpellIllagerEntity implements RangedAttackMob
             this.lookAt(this.getTarget(), 360.0f, 360.0f);
             this.RushAttack();
         }
-        //技能
-        List<LivingEntity> listTarget = this.level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(32.0, 32.0, 32.0));
-        listTarget.removeIf(entity -> !(this.getTarget() == entity || (!entity.isAlliedTo(this) && (entity instanceof AbstractVillager || entity instanceof IronGolem)) || entity instanceof Player || (entity instanceof Mob mob && mob.getTarget() == this)));
-        listTarget.removeIf(entity -> entity instanceof Player player && player.isAlliedTo(this));
-        listTarget.removeIf(entity -> entity == this);
-        listTarget.removeIf(entity -> this.getTarget() != entity && !this.hasLineOfSight(entity));
-        //增强
+         //增强
         int spellLevel = this.getSpellLevel();
         String string = ChatFormatting.stripFormatting(this.getName().getString());
         if ("Master".equals(string)) {

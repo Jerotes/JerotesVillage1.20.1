@@ -1892,7 +1892,7 @@ public class OtherSpellList {
 	public static MagicSpell UndeadBanishing(int n, LivingEntity caster, Entity target) {
 		return new MagicSpell(n, caster, target, MagicType.TARGET, MagicType.MAIN, "undead_banishing", JerotesVillageParticleTypes.UNDEAD_BANISHING_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_UNDEAD_BANISHING){
 			public boolean spellFindUse() {
-				return OtherSpellFind.UndeadBanishing(getCaster(), getSpellLevel(), getSpellLevel(), getSpellLevel(), 24);
+				return OtherSpellFind.UndeadBanishing(getCaster(), getSpellLevel(), getSpellLevel(), (int)Math.ceil((getSpellLevel()) / 3.0), 24);
 			}
 			public String getSpellModId() {
 				return JerotesVillage.MODID;
@@ -1935,7 +1935,7 @@ public class OtherSpellList {
 	public static MagicSpell WiltMissile(int n, LivingEntity caster, Entity target) {
 		return new MagicSpell(n, caster, target, MagicType.TARGET, MagicType.MAIN, "wilt_missile", JerotesVillageParticleTypes.WILT_MISSILE_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_WILT_MISSILE){
 			public boolean spellFindUse() {
-				return OtherSpellFind.WiltMissile(getCaster(), (getTarget() instanceof LivingEntity livingEntity) ? livingEntity : getCaster(), getSpellLevel(), 6 + (getSpellLevel() - 1) * 3, 1, getSpellAccuracy(), 1, 1, getSpellLevel(), getCaster() instanceof Player);
+				return OtherSpellFind.WiltMissile(getCaster(), (getTarget() instanceof LivingEntity livingEntity) ? livingEntity : getCaster(), getSpellLevel(), 6 + (getSpellLevel() - 1) * 3, (int)Math.ceil((getSpellLevel()) / 2.0), getSpellAccuracy(), 1, 1, getSpellLevel(), getCaster() instanceof Player);
 			}
 			public int getCastingTicks() {
 				return (getSpellLevel() - 1) * 5 + 4;
@@ -1950,7 +1950,7 @@ public class OtherSpellList {
 					if (!(entity != null && entity.isAlive())) {
 						entity = getCaster();
 					}
-					OtherSpellFind.WiltMissile(getCaster(), (entity instanceof LivingEntity livingEntity) ? livingEntity : getCaster(), getSpellLevel(), 6 + (getSpellLevel() - 1) * 3, 1, getSpellAccuracy(), 1, 1, 1, getCaster() instanceof Player);
+					OtherSpellFind.WiltMissile(getCaster(), (entity instanceof LivingEntity livingEntity) ? livingEntity : getCaster(), getSpellLevel(), 6 + (getSpellLevel() - 1) * 3, (int)Math.ceil((getSpellLevel()) / 2.0), getSpellAccuracy(), 1, 1, 1, getCaster() instanceof Player);
 					if (!getCaster().isSilent()) {
 						getCaster().level().playSound(null, getCaster().getX(), getCaster().getY(), getCaster().getZ(), getSound(),
 								getCaster().getSoundSource(), getSoundLevel(), 1.0F);

@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "jerotesvillage.refmap.json",
   "mixins": [
+    "AbstractArrowMixin",
     "AbstractFishMixin",
     "AbstractPiglinMixin",
     "AbstractVillagerMixin",
@@ -27,6 +28,7 @@
     "NaturalSpawnerMixin",
     "PanicGoalMixin",
     "PlayerMixin",
+    "ProjectileMixin",
     "StructureCheckMixin",
     "StructureManagerAccessor",
     "ThrownEggMixin",

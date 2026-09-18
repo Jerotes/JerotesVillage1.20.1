@@ -2,7 +2,7 @@ package com.jerotes.jerotesvillage.client.renderer;
 
 import com.jerotes.jerotesvillage.JerotesVillage;
 import com.jerotes.jerotesvillage.client.model.Modelvinebolt;
-import com.jerotes.jerotesvillage.entity.Shoot.Arrow.Magic.VineboltEntity;
+import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicThrow.VineboltEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;

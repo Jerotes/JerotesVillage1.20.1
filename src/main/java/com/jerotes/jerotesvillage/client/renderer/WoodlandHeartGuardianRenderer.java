@@ -27,8 +27,8 @@ public class WoodlandHeartGuardianRenderer extends MobRenderer<WoodlandHeartGuar
        this.addLayer(new CustomHeadLayer(this, context.getModelSet(), 1.0F, 1.0F, 1.0F, context.getItemInHandRenderer()));
         this.addLayer(new ElytraLayer(this, context.getModelSet()));
         this.addLayer(new SedimentItemInHandLayer<>(this, context.getItemInHandRenderer()));
-        this.addLayer(new HumanoidArmorLayer(this, new HumanoidArmorModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidArmorModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
-    }
+       this.addLayer(new HumanoidArmorLayer(this, new HumanoidArmorModel(context.bakeLayer(ModelLayers.SKELETON_INNER_ARMOR)), new HumanoidArmorModel(context.bakeLayer(ModelLayers.SKELETON_OUTER_ARMOR)), context.getModelManager()));
+   }
 
     @Override
     protected void scale(WoodlandHeartGuardianEntity entity, PoseStack poseStack, float f) {

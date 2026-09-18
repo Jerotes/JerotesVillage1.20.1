@@ -18,7 +18,7 @@ import java.util.List;
 
 public class MerorStimulin extends Item {
 	public MerorStimulin() {
-		super(new Properties().stacksTo(1).rarity(Rarity.EPIC).food(JerotesVillageFoods.MEROR_STIMULIN));
+		super(new Properties().stacksTo(16).rarity(Rarity.EPIC).food(JerotesVillageFoods.MEROR_STIMULIN));
 	}
 
 	@Override

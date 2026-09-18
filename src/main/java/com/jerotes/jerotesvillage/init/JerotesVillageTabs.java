@@ -2,6 +2,7 @@ package com.jerotes.jerotesvillage.init;
 
 import com.jerotes.jerotesvillage.JerotesVillage;
 import com.jerotes.jerotesvillage.entity.Animal.IrishtailChickenEntity;
+import com.jerotes.jerotesvillage.item.AloeVeraPulp;
 import com.jerotes.jerotesvillage.item.Greyscale;
 import com.jerotes.jerotesvillage.item.ItemCatchBaseAdd;
 import net.minecraft.ChatFormatting;
@@ -567,6 +568,11 @@ public class JerotesVillageTabs {
 						tabData.accept(JerotesVillageItems.BRIGHT_GOLDEN_MELON_HAMMER.get());
 						tabData.accept(JerotesVillageItems.SECOND_ROUND_ALOE_LEAF.get());
 						tabData.accept(JerotesVillageItems.ALOE_VERA_PULP.get());
+						tabData.accept(AloeVeraPulp(2));
+						tabData.accept(AloeVeraPulp(3));
+						tabData.accept(AloeVeraPulp(4));
+						tabData.accept(AloeVeraPulp(5));
+						tabData.accept(AloeVeraPulp(6));
 						tabData.accept(JerotesVillageItems.HERO_SOUP.get());
 						tabData.accept(JerotesVillageItems.BRIGHT_LAND_DRUMSTICK.get());
 						tabData.accept(JerotesVillageItems.BRIGHT_GRASS_UMBRELLA.get());
@@ -1059,6 +1065,7 @@ public class JerotesVillageTabs {
 						tabData.accept(JerotesVillageItems.WILDERNESS_GIANT_TRAMP_SPAWN_EGG.get());
 						tabData.accept(JerotesVillageItems.WILDERNESS_GIANT_HUNTER_SPAWN_EGG.get());
 						tabData.accept(JerotesVillageItems.WOODLAND_HEART_GUARDIAN_SPAWN_EGG.get());
+						tabData.accept(JerotesVillageItems.EAGLE_BOW_SPAWN_EGG.get());
 						//瘟疫
 						tabData.accept(JerotesVillageItems.SCAVENGER_SPAWN_EGG.get());
 						tabData.accept(JerotesVillageItems.BLOODSUCKER_SPAWN_EGG.get());
@@ -1088,6 +1095,12 @@ public class JerotesVillageTabs {
 		BlockItem.setBlockEntityData(itemStack, BlockEntityType.BANNER, compoundTag);
 		itemStack.hideTooltipPart(ItemStack.TooltipPart.ADDITIONAL);
 		itemStack.setHoverName(Component.translatable("block.jerotesvillage.serpon_combat_team_banner").withStyle(ChatFormatting.GOLD));
+		return itemStack;
+	}
+
+	public static ItemStack AloeVeraPulp(int n) {
+		ItemStack itemStack = new ItemStack(JerotesVillageItems.ALOE_VERA_PULP.get());
+		AloeVeraPulp.setExtractLevel(itemStack, n);
 		return itemStack;
 	}
 

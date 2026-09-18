@@ -6,11 +6,8 @@ import com.jerotes.jerotesvillage.entity.Animal.*;
 import com.jerotes.jerotesvillage.entity.Animal.Fish.AbyssalerEntity;
 import com.jerotes.jerotesvillage.entity.Animal.Fish.BenthicFish.*;
 import com.jerotes.jerotesvillage.entity.Animal.Fish.SolishEntity;
+import com.jerotes.jerotesvillage.entity.Boss.*;
 import com.jerotes.jerotesvillage.entity.Boss.Biome.*;
-import com.jerotes.jerotesvillage.entity.Boss.OminousBannerProjectionEntity;
-import com.jerotes.jerotesvillage.entity.Boss.ProsperousEnvoyEntity;
-import com.jerotes.jerotesvillage.entity.Boss.SedimentLordEntity;
-import com.jerotes.jerotesvillage.entity.Boss.TyrantOfTheMountainRealmEntity;
 import com.jerotes.jerotesvillage.entity.Humanoid.CarvedVillagerEntity;
 import com.jerotes.jerotesvillage.entity.Humanoid.ChibaoEntity;
 import com.jerotes.jerotesvillage.entity.Humanoid.Meror.MerorAdventurerEntity;
@@ -91,7 +88,7 @@ import com.jerotes.jerotesvillage.entity.Part.DuneshocklerPart;
 import com.jerotes.jerotesvillage.entity.Part.ImprisonVinePart;
 import com.jerotes.jerotesvillage.entity.Part.WarPythonBasePartLivingEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Arrow.*;
-import com.jerotes.jerotesvillage.entity.Shoot.Arrow.Magic.VineboltEntity;
+import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicThrow.VineboltEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Breath.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Cloud.CorrosiveSnowCloudEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Cloud.RainEffectCloudEntity;
@@ -756,6 +753,9 @@ public class JerotesVillageEntityType {
 	public static final RegistryObject<EntityType<WoodlandHeartGuardianEntity>> WOODLAND_HEART_GUARDIAN = register("woodland_heart_guardian",
 			EntityType.Builder.of(WoodlandHeartGuardianEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32)
 					.sized(1.05f, 3.4f));
+	public static final RegistryObject<EntityType<EagleBowEntity>> EAGLE_BOW = register("eagle_bow",
+			EntityType.Builder.of(EagleBowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32)
+					.sized(1.05f, 3.4f));
 	public static final RegistryObject<EntityType<ScavengerEntity>> SCAVENGER = register("scavenger",
 			EntityType.Builder.of(ScavengerEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).immuneTo(Blocks.POWDER_SNOW)
 					.sized(2.2f, 1.8f));
@@ -1379,6 +1379,7 @@ public class JerotesVillageEntityType {
 		event.put(WILDERNESS_GIANT_TRAMP.get(), WildernessGiantTrampEntity.createAttributes().build());
 		event.put(WILDERNESS_GIANT_HUNTER.get(), WildernessGiantHunterEntity.createAttributes().build());
 		event.put(WOODLAND_HEART_GUARDIAN.get(), WoodlandHeartGuardianEntity.createAttributes().build());
+		event.put(EAGLE_BOW.get(), EagleBowEntity.createAttributes().build());
 		event.put(SCAVENGER.get(), ScavengerEntity.createAttributes().build());
 		event.put(BLOODSUCKER.get(), BloodsuckerEntity.createAttributes().build());
 		event.put(RIGIDER.get(), RigiderEntity.createAttributes().build());

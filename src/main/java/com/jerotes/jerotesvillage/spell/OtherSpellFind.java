@@ -44,7 +44,7 @@ import com.jerotes.jerotesvillage.entity.Other.ShootTargetSpell.SerpenperthMeteo
 import com.jerotes.jerotesvillage.entity.Other.ShootTargetSpell.TakeRootEntity;
 import com.jerotes.jerotesvillage.entity.Other.ShootTargetSpell.VirosaansForceBurstBallEntity;
 import com.jerotes.jerotesvillage.entity.Part.MalignasaurPart;
-import com.jerotes.jerotesvillage.entity.Shoot.Arrow.Magic.VineboltEntity;
+import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicThrow.VineboltEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Arrow.ThrownSerponJavelinEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Breath.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Cloud.CorrosiveSnowCloudEntity;

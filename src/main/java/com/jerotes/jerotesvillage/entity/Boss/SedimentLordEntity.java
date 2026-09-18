@@ -304,7 +304,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 		return JerotesVillageSoundEvents.BOSS_MUSIC_1;
 	}
 
-	public int spellLevel = 4;
+	public int spellLevel = 3;
 	@Override
 	public int getSpellLevel() {
 		return this.spellLevel;
@@ -796,7 +796,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 					}
 				}
 				if (this.getLeadUseTick() == 15) {
-					OtherSpellFind.SedimentOrder(this, this.getTarget(), this.getSpellLevel(), this.getSpellLevel() + 2, 4, 32);
+					OtherSpellFind.SedimentOrder(this, this.getTarget(), 4, 4 + 2, 4, 32);
 					if (!this.isSilent()) {
 						this.level().playSound(null, this.getX(), this.getY(), this.getZ(), JerotesVillageSoundEvents.SEDIMENT_LORD_LEAD, this.getSoundSource(), 10.0f, 1.0f);
 					}

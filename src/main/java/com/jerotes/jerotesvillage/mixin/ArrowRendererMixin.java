@@ -1,6 +1,6 @@
 package com.jerotes.jerotesvillage.mixin;
 
-import com.jerotes.jerotesvillage.entity.Humanoid.WildernessGiant.WildernessGiantEntity;
+import com.jerotes.jerotesvillage.util.JerotesVillageChangeArrow;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
@@ -30,19 +30,10 @@ public abstract class ArrowRendererMixin<T extends AbstractArrow> extends Entity
 
     @Inject(method = "render(Lnet/minecraft/world/entity/projectile/AbstractArrow;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V", at = @At("HEAD"), cancellable = true)
     public void getTextureLocation(T t, float p_113840_, float p_113841_, PoseStack p_113842_, MultiBufferSource p_113843_, int p_113844_, CallbackInfo ci) {
-        if (t.getOwner() instanceof WildernessGiantEntity) {
+        if (((JerotesVillageChangeArrow)t).jerotes$isGiantArrow()) {
             p_113842_.pushPose();
             p_113842_.mulPose(Axis.YP.rotationDegrees(Mth.lerp(p_113841_, t.yRotO, t.getYRot()) - 90.0F));
             p_113842_.mulPose(Axis.ZP.rotationDegrees(Mth.lerp(p_113841_, t.xRotO, t.getXRot())));
-            float $$7 = 0.0F;
-            float $$8 = 0.5F;
-            float $$9 = 0.0F;
-            float $$10 = 0.15625F;
-            float $$11 = 0.0F;
-            float $$12 = 0.15625F;
-            float $$13 = 0.15625F;
-            float $$14 = 0.3125F;
-            float $$15 = 0.05625F;
             float $$16 = (float)t.shakeTime - p_113841_;
             if ($$16 > 0.0F) {
                 float $$17 = -Mth.sin($$16 * 3.0F) * $$16;

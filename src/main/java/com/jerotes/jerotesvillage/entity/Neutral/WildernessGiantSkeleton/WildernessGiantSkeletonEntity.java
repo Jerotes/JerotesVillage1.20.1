@@ -11,8 +11,11 @@ import com.jerotes.jerotes.spell.MagicType;
 import com.jerotes.jerotes.spell.SpellTypeInterface;
 import com.jerotes.jerotes.util.EntityFactionFind;
 import com.jerotes.jerotes.util.Main;
+import com.jerotes.jerotesvillage.entity.Boss.EagleBowEntity;
 import com.jerotes.jerotesvillage.entity.Monster.BlamerEntity;
+import com.jerotes.jerotesvillage.goal.EagleBowRangedBowAttackGoal;
 import com.jerotes.jerotesvillage.goal.SedimentLordMeleeAttackGoal;
+import com.jerotes.jerotesvillage.goal.SmartBulgeDodgeProjectileGoal;
 import com.jerotes.jerotesvillage.init.JerotesVillageMobEffects;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -221,7 +224,12 @@ public class WildernessGiantSkeletonEntity extends PathfinderMob implements Spel
 		this.goalSelector.addGoal(0, new OpenDoorGoal(this, true));
 		this.goalSelector.addGoal(0, new JerotesOpenTwoDoorGoal(this, true));
 		this.goalSelector.addGoal(0, new FloatGoal(this));
-		if (!(this instanceof WoodlandHeartGuardianEntity)) {
+		if (this instanceof EagleBowEntity entity) {
+			this.goalSelector.addGoal(1, new EagleBowRangedBowAttackGoal<EagleBowEntity>(entity, 0.5, 20, 15.0f));
+			this.goalSelector.addGoal(2, new JerotesMeleeAttackGoal(WildernessGiantSkeletonEntity.this, 1.2, true));
+			this.goalSelector.addGoal(3, new SmartBulgeDodgeProjectileGoal(this));
+		}
+		else if (!(this instanceof WoodlandHeartGuardianEntity)) {
 			this.goalSelector.addGoal(1, new JerotesShiftKeyDownGoal(this));
 			this.goalSelector.addGoal(1, new JerotesMainSpellAttackGoal(this, this.getSpellLevel(), 60, 240, 0.5f));
 			this.goalSelector.addGoal(1, new JerotesAddSpellAttackGoal(this, this.getSpellLevel(), 180, 240, 0.5f));

@@ -1,7 +1,7 @@
 package com.jerotes.jerotesvillage.client.model;
 
 import com.jerotes.jerotesvillage.JerotesVillage;
-import com.jerotes.jerotesvillage.entity.Shoot.Arrow.Magic.VineboltEntity;
+import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicThrow.VineboltEntity;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
