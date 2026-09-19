@@ -9,6 +9,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
@@ -20,16 +21,30 @@ public class HeroSoup extends BowlFoodItem {
 	}
 
 	@Override
-	public ItemStack finishUsingItem(ItemStack itemstack, Level level, LivingEntity entity) {
+	public ItemStack finishUsingItem(ItemStack itemStack, Level level, LivingEntity livingEntity) {
+		Player player;
+		super.finishUsingItem(itemStack, level, livingEntity);
 		if (!level.isClientSide) {
-			entity.removeEffect(JerotesMobEffects.ABACK.get());
-			entity.removeEffect(MobEffects.WEAKNESS);
-			entity.removeEffect(JerotesMobEffects.ANESTHETIZED.get());
+			livingEntity.removeEffect(JerotesMobEffects.ABACK.get());
+			livingEntity.removeEffect(MobEffects.WEAKNESS);
+			livingEntity.removeEffect(JerotesMobEffects.ANESTHETIZED.get());
 		}
 		if (level.isClientSide) {
 			Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(JerotesVillageItems.ABUNDANT_COURAGE.get()));
 		}
-		return super.finishUsingItem(itemstack, level, entity);
+		if (itemStack.isEmpty()) {
+			return new ItemStack(Items.BOWL);
+		}
+		if (livingEntity instanceof Player) {
+			player = (Player)livingEntity;
+			if (!player.getAbilities().instabuild) {
+				ItemStack itemStack2 = new ItemStack(Items.BOWL);
+				if (!player.getInventory().add(itemStack2)) {
+					player.drop(itemStack2, false);
+				}
+			}
+		}
+		return itemStack;
 	}
 
 	@Override

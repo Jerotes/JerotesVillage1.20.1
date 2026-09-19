@@ -86,10 +86,10 @@ public class BotanizeAltarEntity extends BlockEntity {
 			this.setSummonTick(this.getSummonTick() + 1);
 			BlockPos blockPos = this.getBlockPos();
 			for (int i = 0; i < 64; ++i) {
-				serverLevel.sendParticles(new BlockParticleOption(ParticleTypes.BLOCK, JerotesVillageBlocks.WONDERLAND_LEAVES.get().defaultBlockState()),
-						blockPos.getX() + 0.5D + (serverLevel.random.nextDouble() - 0.5D) * 2.25D,
+				serverLevel.sendParticles(new BlockParticleOption(ParticleTypes.BLOCK, JerotesVillageBlocks.WONDERLAND_WOOD.get().defaultBlockState()),
+						blockPos.getX() + 0.5D + (serverLevel.random.nextDouble() - 0.5D),
 						blockPos.getY() + 0.5D * serverLevel.random.nextDouble(),
-						blockPos.getZ() + 0.5D + (serverLevel.random.nextDouble() - 0.5D) * 2.25D,
+						blockPos.getZ() + 0.5D + (serverLevel.random.nextDouble() - 0.5D),
 						0, 0.0D, 0.0D, 0.0D, 0.0D);
 			}
 		}
@@ -99,7 +99,7 @@ public class BotanizeAltarEntity extends BlockEntity {
 	}
 
 	public void summonBoss(ServerLevel serverLevel) {
-		BlockPos blockPos = Main.findSpawnPositionNearFillOnBlock(serverLevel, this.getBlockPos(), 24);
+		BlockPos blockPos = Main.findSpawnPositionNearFillOnBlock(serverLevel, this.getBlockPos(), 4);
 		if (blockPos == null || !SpawnRules.BossSpawnFind(JerotesVillageEntityType.CELESTIAL_COILVINE.get(), serverLevel, blockPos)) {
 			this.setSummonTick(0);
 			return;
@@ -109,8 +109,20 @@ public class BotanizeAltarEntity extends BlockEntity {
 			this.setSummonTick(0);
 			return;
 		}
+		boss.yBodyRot = 0.0f;
+		boss.yBodyRotO = 0.0f;
+		if (!boss.level().isClientSide()) {
+			boss.setAnimTick(20);
+			boss.setBodyType(1);
+			boss.setFirstHeal(true);
+			boss.setAnimationState("start");
+			boss.setHideUseTick(140);
+			boss.setSpellTick(145);
+		}
 		boss.setDeltaMovement(0, 0, 0);
 		serverLevel.playSound(null, blockPos.getX() + 0.5D, blockPos.getY() + 0.5D, blockPos.getZ() + 0.5D, JerotesVillageSoundEvents.CELESTIAL_COILVINE_AMBIENT, SoundSource.NEUTRAL, 20.0f, 1.0f);
+		serverLevel.playSound(null, blockPos.getX() + 0.5D, blockPos.getY() + 0.5D, blockPos.getZ() + 0.5D,
+				JerotesVillageSoundEvents.CELESTIAL_COILVINE_TELEPORT, SoundSource.NEUTRAL, 20.0f, 1.0f);
 		this.setSummonTick(0);
 	}
 

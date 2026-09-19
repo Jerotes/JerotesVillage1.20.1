@@ -141,8 +141,8 @@ public class ContinuousCutLeaf extends ItemToolBaseTwoHandedSword implements Ite
 				if (hurt == null || hurt.distanceTo(livingEntity) > reachs * 4) continue;
 				if (!hurt.isAlive()) continue;
 				if (AttackFind.FindCanNotAttack(livingEntity, hurt)) continue;
-				if (!Main.canSee(hurt, livingEntity)) continue;
-				if (!hurt.hasLineOfSight(livingEntity)) continue;
+				if (!Main.canSee(hurt, livingEntity) && !(hurt.getBoundingBox().intersects(livingEntity.getBoundingBox()))) continue;
+				if (!hurt.hasLineOfSight(livingEntity) && !(hurt.getBoundingBox().intersects(livingEntity.getBoundingBox()))) continue;
 				double healthOld = hurt.getHealth();
 				DamageSource damageSource = AttackFind.findDamageType(livingEntity, JerotesDamageTypes.BYPASSES_COOLDOWN_MELEE, livingEntity);
 				AttackFind.attackBegin(livingEntity, hurt);

@@ -1,12 +1,11 @@
 package com.jerotes.jerotesvillage.item;
 
-import com.jerotes.jerotes.entity.Interface.JerotesPlayerBaseEntity;
+import com.jerotes.jerotes.item.Tool.ItemToolBasePickaxe;
+import com.jerotes.jerotes.util.AttackFind;
+import com.jerotes.jerotes.util.Main;
 import com.jerotes.jerotesvillage.init.JerotesVillageItems;
 import com.jerotes.jerotesvillage.init.JerotesVillageParticleTypes;
 import com.jerotes.jerotesvillage.init.JerotesVillageSoundEvents;
-import com.jerotes.jerotes.item.Tool.*;
-import com.jerotes.jerotes.util.AttackFind;
-import com.jerotes.jerotes.util.Main;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -30,7 +29,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-import net.minecraftforge.common.ForgeMod;
 
 import java.util.List;
 
@@ -182,8 +180,8 @@ public class MerorDrill extends ItemToolBasePickaxe {
 			for (LivingEntity hurt : list) {
 				if (hurt == null || hurt.distanceTo(livingEntity) > reachs * 4) continue;
 				if (AttackFind.FindCanNotAttack(livingEntity, hurt)) continue;
-				if (!Main.canSee(hurt, livingEntity)) continue;
-				if (!hurt.hasLineOfSight(livingEntity)) continue;
+				if (!Main.canSee(hurt, livingEntity) && !(hurt.getBoundingBox().intersects(livingEntity.getBoundingBox()))) continue;
+				if (!hurt.hasLineOfSight(livingEntity) && !(hurt.getBoundingBox().intersects(livingEntity.getBoundingBox()))) continue;
 				AttackFind.attackBegin(livingEntity, hurt);
 				boolean bl2 = AttackFind.attackAfter(livingEntity, hurt, 0.3f, 0.1f, false, 0f);
 				if (bl2) {

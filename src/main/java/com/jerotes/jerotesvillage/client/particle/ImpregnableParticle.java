@@ -18,8 +18,6 @@ public class ImpregnableParticle extends TextureSheetParticle {
 		super(level, x, y, z);
 		this.sprites = sprites;
 		this.setSpriteFromAge(sprites);
-
-		// 基础参数
 		this.rCol = 1.0f;
 		this.gCol = 1.0f;
 		this.bCol = 1.0f;
@@ -33,17 +31,10 @@ public class ImpregnableParticle extends TextureSheetParticle {
 	public void tick() {
 		super.tick();
 		this.setSpriteFromAge(this.sprites);
-
 		float progress = (float)this.age / this.lifetime;
 		float easeOut = 1 - (float)Math.pow(1 - progress, 4);
-
-		// 平滑放大
 		this.quadSize = (baseScale * (1 + easeOut * 0.25f));
-
-		// 透明度衰减
 		this.alpha = 0.6f * (1 - progress);
-
-		// 扭曲进度
 		this.distortionProgress = easeOut;
 	}
 

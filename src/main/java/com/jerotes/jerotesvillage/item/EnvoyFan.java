@@ -95,8 +95,8 @@ public class EnvoyFan extends Item implements Vanishable {
 			List<LivingEntity> list = serverLevel.getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(reach * 3, reach * 3, reach * 3));
 			for (LivingEntity hurt : list) {
 				if (hurt == null || hurt.distanceTo(player) > reach * 12) continue;
-				if (!Main.canSee(hurt, player)) continue;
-				if (!hurt.hasLineOfSight(player)) continue;
+				if (!Main.canSee(hurt, player) && !(hurt.getBoundingBox().intersects(player.getBoundingBox()))) continue;
+				if (!hurt.hasLineOfSight(player) && !(hurt.getBoundingBox().intersects(player.getBoundingBox()))) continue;
 				if (AttackFind.FindCanNotAttack(player, hurt)) continue;
 				if (hurt.getAttribute(Attributes.KNOCKBACK_RESISTANCE) != null) {
 					double d2 = hurt.getAttribute(Attributes.KNOCKBACK_RESISTANCE) != null ? hurt.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE) : 0;

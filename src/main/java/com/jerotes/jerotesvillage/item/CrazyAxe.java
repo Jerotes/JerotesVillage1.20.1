@@ -134,8 +134,8 @@ public class CrazyAxe extends ItemToolBaseAxe {
 							}
 						continue;
 					}
-					if (!hurt.hasLineOfSight(livingEntity)) continue;
-					if (!Main.canSee(hurt, livingEntity)) continue;
+					if (!hurt.hasLineOfSight(livingEntity) && !(hurt.getBoundingBox().intersects(livingEntity.getBoundingBox()))) continue;
+					if (!Main.canSee(hurt, livingEntity) && !(hurt.getBoundingBox().intersects(livingEntity.getBoundingBox()))) continue;
 					double healthOld = hurt.getHealth();
 					DamageSource damageSource = AttackFind.findDamageType(livingEntity, JerotesVillageDamageTypes.AX_CRAZY_ATTACK, livingEntity);
 					AttackFind.attackBegin(livingEntity, hurt);

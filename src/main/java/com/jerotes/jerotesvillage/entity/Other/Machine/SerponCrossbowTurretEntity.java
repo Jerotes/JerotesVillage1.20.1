@@ -614,6 +614,7 @@ public class SerponCrossbowTurretEntity extends PathfinderMob implements Jerotes
 				}
 			}
 			if (bl) {
+				this.playSound(SoundEvents.ENCHANTMENT_TABLE_USE);
 				if (!player.getAbilities().instabuild) {
 					itemStack.shrink(1);
 				}

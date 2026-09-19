@@ -1,8 +1,7 @@
 package com.jerotes.jerotesvillage.item;
 
 import com.google.common.collect.Multimap;
-import com.jerotes.jerotes.entity.Interface.JerotesPlayerBaseEntity;
-import com.jerotes.jerotes.item.Tool.*;
+import com.jerotes.jerotes.item.Tool.ItemToolBaseHammer;
 import com.jerotes.jerotes.util.AttackFind;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
@@ -22,7 +21,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.common.ForgeMod;
 
 import java.util.List;
 
@@ -94,7 +92,7 @@ public class BrightGoldenMelonHammer extends ItemToolBaseHammer {
 			for (LivingEntity hurt : list) {
 				if (hurt == null || hurt.distanceTo(user) > reachs * 4) continue;
 				if (AttackFind.FindCanNotAttack(user, hurt)) continue;
-				if (!hurt.hasLineOfSight(user)) continue;
+				if (!hurt.hasLineOfSight(user) && !(hurt.getBoundingBox().intersects(user.getBoundingBox()))) continue;
 				AttackFind.attackBegin(user, hurt);
 				AttackFind.attackAfter(user, hurt, 1f, 0.5f, false, 0f);
 			}
