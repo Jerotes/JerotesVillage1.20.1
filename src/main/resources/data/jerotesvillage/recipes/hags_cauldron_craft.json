@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a a",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "b": {
+      "item": "jerotesvillage:evil_potion"
+    },
+    "c": {
+      "tag": "forge:storage_blocks/copper"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:hags_cauldron",
+    "count": 1
+  }
+}

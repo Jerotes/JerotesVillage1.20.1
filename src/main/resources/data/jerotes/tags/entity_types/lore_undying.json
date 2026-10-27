@@ -1,0 +1,25 @@
+{
+  "__comment": "仅影响设定及部分判定：设定上未死亡",
+  "replace": false,
+  "values": [
+    "jerotesvillage:tyrant_of_the_mountain_realm",
+
+    "jerotesvillage:corrosiver",
+    "jerotesvillage:purple_sand_hag",
+    "jerotesvillage:purple_sand_hag",
+    "jerotesvillage:gemstone_malignasaur",
+    "jerotesvillage:bright_land_beast",
+    "jerotesvillage:serpon_combat_executer",
+    "jerotesvillage:celestial_coilvine",
+    "jerotesvillage:second_rounder_golem",
+    "jerotesvillage:variant_zsiein",
+
+    "#jerotes:meror",
+    "#jerotes:serpon",
+    "#jerotes:zsiein",
+
+    "jerotesvillage:coven_hag_one",
+    "jerotesvillage:coven_hag_two",
+    "jerotesvillage:meror_locator"
+  ]
+}

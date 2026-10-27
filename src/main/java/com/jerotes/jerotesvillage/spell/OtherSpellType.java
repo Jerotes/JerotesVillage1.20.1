@@ -34,8 +34,10 @@ public enum OtherSpellType implements SpellTypeInterface {
 	JEROTESVILLAGE_SERPON_SIROCCO("jerotesvillage_serpon_sirocco"),
 	JEROTESVILLAGE_EYE_DISC_SHOOT("jerotesvillage_eye_disc_shoot"),
 	JEROTESVILLAGE_ICE_ROCK_THROW("jerotesvillage_ice_rock_throw"),
+	JEROTESVILLAGE_ASTRAL_JAVELIN("jerotesvillage_astral_javelin"),
 	JEROTESVILLAGE_BITTER_COLD_FROSTBITE("jerotesvillage_bitter_cold_frostbite"),
 	JEROTESVILLAGE_SERPON_FLAMES("jerotesvillage_serpon_flames"),
+	JEROTESVILLAGE_VIRTUAL_CAVE_SURGE_SIPHON("jerotesvillage_virtual_cave_surge_siphon"),
 	JEROTESVILLAGE_OMINOUS_FLAMES("jerotesvillage_ominous_flames"),
 	JEROTESVILLAGE_WORM_THUNDERSTORM("jerotesvillage_worm_thunderstorm"),
 	JEROTESVILLAGE_PUSH_FORCE("jerotesvillage_push_force"),
@@ -44,6 +46,7 @@ public enum OtherSpellType implements SpellTypeInterface {
 	JEROTESVILLAGE_OCEAN_DRAGON_DETERRENCE("jerotesvillage_ocean_dragon_deterrence"),
 	JEROTESVILLAGE_GEMSTONE_WAVES("jerotesvillage_gemstone_waves"),
 	JEROTESVILLAGE_ELECTROFLASH("jerotesvillage_electroflash"),
+	JEROTESVILLAGE_SKYLANCE_DRAGON_BEAM("jerotesvillage_skylance_dragon_beam"),
 	JEROTESVILLAGE_INDOMITABLE_WILL("jerotesvillage_indomitable_will"),
 	JEROTESVILLAGE_FLOATING_FORCE("jerotesvillage_floating_force"),
 	JEROTESVILLAGE_GRAVITY_FORCE("jerotesvillage_gravity_force"),
@@ -82,6 +85,8 @@ public enum OtherSpellType implements SpellTypeInterface {
 	JEROTESVILLAGE_TAKE_ROOT("jerotesvillage_take_root"),
 	JEROTESVILLAGE_DEAD_CENTER("jerotesvillage_dead_center"),
 	JEROTESVILLAGE_SNAP_BOLT("jerotesvillage_snap_bolt"),
+	JEROTESVILLAGE_VIROSAANS_MAGIC_MISSILE("jerotesvillage_virosaans_magic_missile"),
+	JEROTESVILLAGE_STARBURST_MARKER("jerotesvillage_starburst_marker"),
 	JEROTESVILLAGE_WHIP_THE_TIDE("jerotesvillage_whip_the_tide");
 
 	private final String id;
@@ -124,8 +129,10 @@ public enum OtherSpellType implements SpellTypeInterface {
 			case JEROTESVILLAGE_SERPON_SIROCCO -> OtherSpellList.SerponSirocco(level, caster, target);
 			case JEROTESVILLAGE_EYE_DISC_SHOOT -> OtherSpellList.EyeDiscShoot(level, caster, target);
 			case JEROTESVILLAGE_ICE_ROCK_THROW -> OtherSpellList.IceRockThrow(level, caster, target);
+			case JEROTESVILLAGE_ASTRAL_JAVELIN -> OtherSpellList.AstralJavelin(level, caster, target);
 			case JEROTESVILLAGE_BITTER_COLD_FROSTBITE -> OtherSpellList.BitterColdFrostbite(level, caster, target);
 			case JEROTESVILLAGE_SERPON_FLAMES -> OtherSpellList.SerponFlames(level, caster, target);
+			case JEROTESVILLAGE_VIRTUAL_CAVE_SURGE_SIPHON -> OtherSpellList.VirtualCaveSurgeSiphon(level, caster, target);
 			case JEROTESVILLAGE_OMINOUS_FLAMES -> OtherSpellList.OminousFlames(level, caster, target);
 			case JEROTESVILLAGE_WORM_THUNDERSTORM -> OtherSpellList.WormThunderstorm(level, caster, target);
 			case JEROTESVILLAGE_PUSH_FORCE -> OtherSpellList.PushForce(level, caster, target);
@@ -134,6 +141,7 @@ public enum OtherSpellType implements SpellTypeInterface {
 			case JEROTESVILLAGE_OCEAN_DRAGON_DETERRENCE -> OtherSpellList.OceanDragonDeterrence(level, caster, target);
 			case JEROTESVILLAGE_GEMSTONE_WAVES -> OtherSpellList.GemstoneWaves(level, caster, target);
 			case JEROTESVILLAGE_ELECTROFLASH -> OtherSpellList.Electroflash(level, caster, target);
+			case JEROTESVILLAGE_SKYLANCE_DRAGON_BEAM -> OtherSpellList.SkylanceDragonBeam(level, caster, target);
 			case JEROTESVILLAGE_INDOMITABLE_WILL -> OtherSpellList.IndomitableWill(level, caster, target);
 			case JEROTESVILLAGE_FLOATING_FORCE -> OtherSpellList.FloatingForce(level, caster, target);
 			case JEROTESVILLAGE_GRAVITY_FORCE -> OtherSpellList.GravityForce(level, caster, target);
@@ -172,6 +180,8 @@ public enum OtherSpellType implements SpellTypeInterface {
 			case JEROTESVILLAGE_TAKE_ROOT -> OtherSpellList.TakeRoot(level, caster, target);
 			case JEROTESVILLAGE_DEAD_CENTER -> OtherSpellList.DeadCenter(level, caster, target);
 			case JEROTESVILLAGE_SNAP_BOLT -> OtherSpellList.SnapBolt(level, caster, target);
+			case JEROTESVILLAGE_VIROSAANS_MAGIC_MISSILE -> OtherSpellList.VirosaansMagicMissile(level, caster, target);
+			case JEROTESVILLAGE_STARBURST_MARKER -> OtherSpellList.StarburstMarker(level, caster, target);
 			case JEROTESVILLAGE_WHIP_THE_TIDE -> OtherSpellList.WhipTheTide(level, caster, target);
 		};
 	}

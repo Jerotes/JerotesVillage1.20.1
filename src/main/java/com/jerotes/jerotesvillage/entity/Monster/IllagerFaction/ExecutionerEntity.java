@@ -231,7 +231,6 @@ public class ExecutionerEntity extends MeleeIllagerEntity {
         if (this.getAttackTick() > 0) {
             if (this.getTarget() != null && this.getAttackTick() > 15) {
                 this.getLookControl().setLookAt(this.getTarget(), 360f, 360f);
-                this.lookAt(this.getTarget(), 360.0f, 360.0f);
             }
             this.getNavigation().stop();
         }
@@ -280,7 +279,7 @@ public class ExecutionerEntity extends MeleeIllagerEntity {
             if (!this.hasLineOfSight(hurt)) continue;
             if (!Main.canSee(hurt, this)) continue;
             AttackFind.attackBegin(this, hurt);
-            AttackFind.attackAfter(this, hurt, 1.1f, 1.0f, false, 0f);
+            AttackFind.attackAfter(this, hurt, 1.25f, 1.0f, false, 0f);
         }
         //横扫效果
         Main.sweepAttack(this);

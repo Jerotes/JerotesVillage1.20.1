@@ -97,7 +97,8 @@ public class EnvoyFan extends Item implements Vanishable {
 				if (hurt == null || hurt.distanceTo(player) > reach * 12) continue;
 				if (!Main.canSee(hurt, player) && !(hurt.getBoundingBox().intersects(player.getBoundingBox()))) continue;
 				if (!hurt.hasLineOfSight(player) && !(hurt.getBoundingBox().intersects(player.getBoundingBox()))) continue;
-				if (AttackFind.FindCanNotAttack(player, hurt)) continue;
+				if (player == hurt) continue;
+				//if (AttackFind.FindCanNotAttack(player, hurt)) continue;
 				if (hurt.getAttribute(Attributes.KNOCKBACK_RESISTANCE) != null) {
 					double d2 = hurt.getAttribute(Attributes.KNOCKBACK_RESISTANCE) != null ? hurt.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE) : 0;
 					double d3 = Math.max(0.25f, 1.25 - d2);

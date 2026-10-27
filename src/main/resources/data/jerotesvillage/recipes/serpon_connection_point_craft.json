@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aca",
+    "cbc",
+    "aca"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:storage_blocks/serpon_alloy"
+    },
+    "b": {
+      "item": "jerotesvillage:serpon_signal_bullet"
+    },
+    "c": {
+      "item": "jerotesvillage:magma_block"
+    }
+  },
+  "result": {
+    "item": "jerotesvillage:serpon_connection_point",
+    "count": 1
+  }
+}

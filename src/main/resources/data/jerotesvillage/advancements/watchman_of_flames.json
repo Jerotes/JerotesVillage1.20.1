@@ -36,7 +36,8 @@
   "rewards": {
     "experience": 20,
     "recipes": [
-      "jerotesvillage:serpon_signal_bullet_craft"
+      "jerotesvillage:serpon_signal_bullet_craft",
+      "jerotesvillage:serpon_connection_point_craft"
     ]
   }
 }

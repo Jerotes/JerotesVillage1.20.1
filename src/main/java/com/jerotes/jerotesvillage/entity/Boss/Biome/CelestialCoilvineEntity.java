@@ -515,6 +515,14 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 	protected BodyRotationControl createBodyControl() {
 		return new CelestialCoilvineBodyRotationControl(this);
 	}
+	@Override
+	public boolean removeWhenFarAway(double d) {
+		return false;
+	}
+	@Override
+	protected boolean shouldDespawnInPeaceful() {
+		return false;
+	}
 	//体型相关
 	@Override
 	public EntityDimensions getDimensions(Pose pose) {
@@ -3766,7 +3774,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 			if (bl) {
 				if (bls) {
 					if (!this.level().isClientSide()) {
-						hurt.addEffect(new MobEffectInstance(JerotesMobEffects.PRONE.get(), 120, 0), this);
+						hurt.addEffect(new MobEffectInstance(JerotesMobEffects.PRONE.get(), 120, 0, false, false), this);
 					}
 				}
 				double healthNew = hurt.getHealth();

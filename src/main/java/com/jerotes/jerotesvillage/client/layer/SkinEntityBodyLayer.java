@@ -19,6 +19,9 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 
+import static com.jerotes.jerotesvillage.client.layer.SkinLayerCache.colorRgb;
+import static com.jerotes.jerotesvillage.client.layer.SkinLayerCache.tex;
+
 public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T>> extends RenderLayer<T, M> {
     private final EntityModel<T> model;
     private final String string;
@@ -53,48 +56,48 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
         String SkinColorHave = "null";
         String ClothesColorHave = "null";
         //皮肤
-        ResourceLocation bodyLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/base.png");
+        ResourceLocation bodyLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/base.png");
         //眼睛
-        ResourceLocation eyeBaseLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/eye_base.png");
-        ResourceLocation leftEyeLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/eye/eye_left.png");
-        ResourceLocation rightEyeLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/eye/eye_right.png");
+        ResourceLocation eyeBaseLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/eye_base.png");
+        ResourceLocation leftEyeLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/eye/eye_left.png");
+        ResourceLocation rightEyeLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/eye/eye_right.png");
         //头发
-        ResourceLocation hairLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/hair/hair_" + ((SkinEntity)t).HairType() + ".png");
+        ResourceLocation hairLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/hair/hair_" + ((SkinEntity)t).HairType() + ".png");
         if (t.isBaby()) {
-            hairLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/baby_hair/hair_" + ((SkinEntity)t).HairType() + ".png");
+            hairLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/baby_hair/hair_" + ((SkinEntity)t).HairType() + ".png");
         }
         //附件
-        ResourceLocation addLocation_1 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/add/add_" + ((SkinEntity)t).AddType_1() + ".png");
-        ResourceLocation addBaseLocation_1 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/add/add_base_" + ((SkinEntity)t).AddType_1() + ".png");
-        ResourceLocation addLocation_2 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/add/add_" + ((SkinEntity)t).AddType_2() + ".png");
-        ResourceLocation addBaseLocation_2 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/add/add_base_" + ((SkinEntity)t).AddType_2() + ".png");
-        ResourceLocation addLocation_3 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/add/add_" + ((SkinEntity)t).AddType_3() + ".png");
-        ResourceLocation addBaseLocation_3 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/add/add_base_" + ((SkinEntity)t).AddType_3() + ".png");
+        ResourceLocation addLocation_1 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/add/add_" + ((SkinEntity)t).AddType_1() + ".png");
+        ResourceLocation addBaseLocation_1 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/add/add_base_" + ((SkinEntity)t).AddType_1() + ".png");
+        ResourceLocation addLocation_2 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/add/add_" + ((SkinEntity)t).AddType_2() + ".png");
+        ResourceLocation addBaseLocation_2 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/add/add_base_" + ((SkinEntity)t).AddType_2() + ".png");
+        ResourceLocation addLocation_3 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/add/add_" + ((SkinEntity)t).AddType_3() + ".png");
+        ResourceLocation addBaseLocation_3 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/add/add_base_" + ((SkinEntity)t).AddType_3() + ".png");
         //上衣
-        ResourceLocation jacketLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/jacket_" + ((SkinEntity)t).JacketType() + ".png");
-        ResourceLocation jacketBaseLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/jacket_base_" + ((SkinEntity)t).JacketType() + ".png");
+        ResourceLocation jacketLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/jacket_" + ((SkinEntity)t).JacketType() + ".png");
+        ResourceLocation jacketBaseLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/jacket_base_" + ((SkinEntity)t).JacketType() + ".png");
         //裤子
-        ResourceLocation pantsLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/pants_" + ((SkinEntity)t).PantsType() + ".png");
-        ResourceLocation pantsBaseLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/pants_base_" + ((SkinEntity)t).PantsType() + ".png");
+        ResourceLocation pantsLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/pants_" + ((SkinEntity)t).PantsType() + ".png");
+        ResourceLocation pantsBaseLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/pants_base_" + ((SkinEntity)t).PantsType() + ".png");
         //手套
-        ResourceLocation glovesLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/gloves_" + ((SkinEntity)t).GlovesType() + ".png");
-        ResourceLocation glovesBaseLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/gloves_base_" + ((SkinEntity)t).GlovesType() + ".png");
+        ResourceLocation glovesLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/gloves_" + ((SkinEntity)t).GlovesType() + ".png");
+        ResourceLocation glovesBaseLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/gloves_base_" + ((SkinEntity)t).GlovesType() + ".png");
         //饰品
-        ResourceLocation baubleLocation_1 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_" + ((SkinEntity)t).BaubleType_1() + ".png");
-        ResourceLocation baubleBaseLocation_1 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_base_" + ((SkinEntity)t).BaubleType_1() + ".png");
-        ResourceLocation baubleLocation_2 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_" + ((SkinEntity)t).BaubleType_2() + ".png");
-        ResourceLocation baubleBaseLocation_2 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_base_" + ((SkinEntity)t).BaubleType_2() + ".png");
-        ResourceLocation baubleLocation_3 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_" + ((SkinEntity)t).BaubleType_3() + ".png");
-        ResourceLocation baubleBaseLocation_3 = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_base_" + ((SkinEntity)t).BaubleType_3() + ".png");
+        ResourceLocation baubleLocation_1 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_" + ((SkinEntity)t).BaubleType_1() + ".png");
+        ResourceLocation baubleBaseLocation_1 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_base_" + ((SkinEntity)t).BaubleType_1() + ".png");
+        ResourceLocation baubleLocation_2 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_" + ((SkinEntity)t).BaubleType_2() + ".png");
+        ResourceLocation baubleBaseLocation_2 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_base_" + ((SkinEntity)t).BaubleType_2() + ".png");
+        ResourceLocation baubleLocation_3 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_" + ((SkinEntity)t).BaubleType_3() + ".png");
+        ResourceLocation baubleBaseLocation_3 = tex("textures/entity/skin/" + this.string + "/" + sexual + "/bauble/bauble_base_" + ((SkinEntity)t).BaubleType_3() + ".png");
         //鞋子
-        ResourceLocation shoesLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/shoes_" + ((SkinEntity)t).ShoesType() + ".png");
-        ResourceLocation shoesBaseLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/shoes_base_" + ((SkinEntity)t).ShoesType() + ".png");
+        ResourceLocation shoesLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/shoes_" + ((SkinEntity)t).ShoesType() + ".png");
+        ResourceLocation shoesBaseLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/shoes_base_" + ((SkinEntity)t).ShoesType() + ".png");
         //帽子
-        ResourceLocation hatLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/hat_" + ((SkinEntity)t).HatType() + ".png");
-        ResourceLocation hatBaseLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/hat_base_" + ((SkinEntity)t).HatType() + ".png");
+        ResourceLocation hatLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/hat_" + ((SkinEntity)t).HatType() + ".png");
+        ResourceLocation hatBaseLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/hat_base_" + ((SkinEntity)t).HatType() + ".png");
         //外套
-        ResourceLocation overcoatLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/overcoat_" + ((SkinEntity)t).OvercoatType() + ".png");
-        ResourceLocation overcoatBaseLocation = new ResourceLocation(JerotesVillage.MODID, "textures/entity/skin/" + this.string + "/" + sexual + "/clothes/overcoat_base_" + ((SkinEntity)t).OvercoatType() + ".png");
+        ResourceLocation overcoatLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/overcoat_" + ((SkinEntity)t).OvercoatType() + ".png");
+        ResourceLocation overcoatBaseLocation = tex("textures/entity/skin/" + this.string + "/" + sexual + "/clothes/overcoat_base_" + ((SkinEntity)t).OvercoatType() + ".png");
 
         //皮肤
         if (((SkinEntity)t).SkinType() > 0 && ((SkinEntity)t).SkinColor() > 0) {
@@ -194,7 +197,7 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             else {
                 SkinColor = "ffffff";
             }
-            int[] arrf = Color.colorStringToRGBInt(SkinColor);
+            int[] arrf = colorRgb(SkinColor);
             float r = arrf[0] / 255f;
             float g = arrf[1] / 255f;
             float b = arrf[2] / 255f;
@@ -220,13 +223,13 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             else {
                 EyeBaseColor = "ffffff";
             }
-            int[] arrf = Color.colorStringToRGBInt(EyeBaseColor);
+            int[] arrf = colorRgb(EyeBaseColor);
             float r = arrf[0] / 255f;
             float g = arrf[1] / 255f;
             float b = arrf[2] / 255f;
             if (!SkinColorHave.equals("null") && t.hurtTime > 0) {
                 EyeBaseColor = SkinColorHave;
-                arrf = Color.colorStringToRGBInt(EyeBaseColor);
+                arrf = colorRgb(EyeBaseColor);
                 int addColor = 20;
 
                 r = Mth.clamp((arrf[0] - addColor), 0, 255) / 255f;
@@ -254,11 +257,11 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
                     LeftEyeColor = "000000";
                     RightEyeColor = LeftEyeColor;
                 }
-                int[] left_arrf = Color.colorStringToRGBInt(LeftEyeColor);
+                int[] left_arrf = colorRgb(LeftEyeColor);
                 float left_r = left_arrf[0] / 255f;
                 float left_g = left_arrf[1] / 255f;
                 float left_b = left_arrf[2] / 255f;
-                int[] right_arrf = Color.colorStringToRGBInt(RightEyeColor);
+                int[] right_arrf = colorRgb(RightEyeColor);
                 float right_r = right_arrf[0] / 255f;
                 float right_g = right_arrf[1] / 255f;
                 float right_b = right_arrf[2] / 255f;
@@ -275,12 +278,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             //附加_1
             if (((SkinEntity)t).AddType_1() > 0) {
                 //附加基础
-                int[] arrf_base_1 = Color.colorStringToRGBInt("ffffff");
+                int[] arrf_base_1 = colorRgb("ffffff");
                 float r_base_1 = arrf_base_1[0] / 255f;
                 float g_base_1 = arrf_base_1[1] / 255f;
                 float b_base_1 = arrf_base_1[2] / 255f;
                 SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, addBaseLocation_1, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_1, g_base_1, b_base_1);
-                int[] arrf_1 = Color.colorStringToRGBInt(SkinColorHave);
+                int[] arrf_1 = colorRgb(SkinColorHave);
                 float r_1 = arrf_1[0] / 255f;
                 float g_1 = arrf_1[1] / 255f;
                 float b_1 = arrf_1[2] / 255f;
@@ -289,12 +292,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             //附加_2
             if (((SkinEntity)t).AddType_2() > 0) {
                 //附加基础
-                int[] arrf_base_2 = Color.colorStringToRGBInt("ffffff");
+                int[] arrf_base_2 = colorRgb("ffffff");
                 float r_base_2 = arrf_base_2[0] / 255f;
                 float g_base_2 = arrf_base_2[1] / 255f;
                 float b_base_2 = arrf_base_2[2] / 255f;
                 SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, addBaseLocation_2, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_2, g_base_2, b_base_2);
-                int[] arrf_2 = Color.colorStringToRGBInt(SkinColorHave);
+                int[] arrf_2 = colorRgb(SkinColorHave);
                 float r_2 = arrf_2[0] / 255f;
                 float g_2 = arrf_2[1] / 255f;
                 float b_2 = arrf_2[2] / 255f;
@@ -303,12 +306,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             //附加_3
             if (((SkinEntity)t).AddType_3() > 0) {
                 //附加基础
-                int[] arrf_base_3 = Color.colorStringToRGBInt("ffffff");
+                int[] arrf_base_3 = colorRgb("ffffff");
                 float r_base_3 = arrf_base_3[0] / 255f;
                 float g_base_3 = arrf_base_3[1] / 255f;
                 float b_base_3 = arrf_base_3[2] / 255f;
                 SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, addBaseLocation_3, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_3, g_base_3, b_base_3);
-                int[] arrf_3 = Color.colorStringToRGBInt(SkinColorHave);
+                int[] arrf_3 = colorRgb(SkinColorHave);
                 float r_3 = arrf_3[0] / 255f;
                 float g_3 = arrf_3[1] / 255f;
                 float b_3 = arrf_3[2] / 255f;
@@ -477,12 +480,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
                 ClothesColor = "ffffff";
             }
             ClothesColorHave = ClothesColor;
-            int[] arrf_base_1 = Color.colorStringToRGBInt("ffffff");
+            int[] arrf_base_1 = colorRgb("ffffff");
             float r_base_1 = arrf_base_1[0] / 255f;
             float g_base_1 = arrf_base_1[1] / 255f;
             float b_base_1 = arrf_base_1[2] / 255f;
             SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, jacketBaseLocation, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_1, g_base_1, b_base_1);
-            int[] arrf_1 = Color.colorStringToRGBInt(ClothesColor);
+            int[] arrf_1 = colorRgb(ClothesColor);
             float r_1 = arrf_1[0] / 255f;
             float g_1 = arrf_1[1] / 255f;
             float b_1 = arrf_1[2] / 255f;
@@ -649,12 +652,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             else {
                 ClothesColor = "ffffff";
             }
-            int[] arrf_base_1 = Color.colorStringToRGBInt("ffffff");
+            int[] arrf_base_1 = colorRgb("ffffff");
             float r_base_1 = arrf_base_1[0] / 255f;
             float g_base_1 = arrf_base_1[1] / 255f;
             float b_base_1 = arrf_base_1[2] / 255f;
             SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, pantsBaseLocation, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_1, g_base_1, b_base_1);
-            int[] arrf_1 = Color.colorStringToRGBInt(ClothesColor);
+            int[] arrf_1 = colorRgb(ClothesColor);
             float r_1 = arrf_1[0] / 255f;
             float g_1 = arrf_1[1] / 255f;
             float b_1 = arrf_1[2] / 255f;
@@ -821,12 +824,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             else {
                 ClothesColor = "ffffff";
             }
-            int[] arrf_base_1 = Color.colorStringToRGBInt("ffffff");
+            int[] arrf_base_1 = colorRgb("ffffff");
             float r_base_1 = arrf_base_1[0] / 255f;
             float g_base_1 = arrf_base_1[1] / 255f;
             float b_base_1 = arrf_base_1[2] / 255f;
             SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, glovesBaseLocation, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_1, g_base_1, b_base_1);
-            int[] arrf_1 = Color.colorStringToRGBInt(ClothesColor);
+            int[] arrf_1 = colorRgb(ClothesColor);
             float r_1 = arrf_1[0] / 255f;
             float g_1 = arrf_1[1] / 255f;
             float b_1 = arrf_1[2] / 255f;
@@ -1038,7 +1041,7 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             else {
                 HairColor = "000000";
             }
-            int[] arrf = Color.colorStringToRGBInt(HairColor);
+            int[] arrf = colorRgb(HairColor);
             float r = arrf[0] / 255f;
             float g = arrf[1] / 255f;
             float b = arrf[2] / 255f;
@@ -1049,12 +1052,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
         //饰品_1
             if (((SkinEntity)t).BaubleType_1() > 0) {
                 //饰品基础
-                int[] arrf_base_1 = Color.colorStringToRGBInt("ffffff");
+                int[] arrf_base_1 = colorRgb("ffffff");
                 float r_base_1 = arrf_base_1[0] / 255f;
                 float g_base_1 = arrf_base_1[1] / 255f;
                 float b_base_1 = arrf_base_1[2] / 255f;
                 SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, baubleBaseLocation_1, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_1, g_base_1, b_base_1);
-                int[] arrf_1 = Color.colorStringToRGBInt(ClothesColorHave);
+                int[] arrf_1 = colorRgb(ClothesColorHave);
                 float r_1 = arrf_1[0] / 255f;
                 float g_1 = arrf_1[1] / 255f;
                 float b_1 = arrf_1[2] / 255f;
@@ -1063,12 +1066,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             //饰品_2
             if (((SkinEntity)t).BaubleType_2() > 0) {
                 //饰品基础
-                int[] arrf_base_2 = Color.colorStringToRGBInt("ffffff");
+                int[] arrf_base_2 = colorRgb("ffffff");
                 float r_base_2 = arrf_base_2[0] / 255f;
                 float g_base_2 = arrf_base_2[1] / 255f;
                 float b_base_2 = arrf_base_2[2] / 255f;
                 SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, baubleBaseLocation_2, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_2, g_base_2, b_base_2);
-                int[] arrf_2 = Color.colorStringToRGBInt(ClothesColorHave);
+                int[] arrf_2 = colorRgb(ClothesColorHave);
                 float r_2 = arrf_2[0] / 255f;
                 float g_2 = arrf_2[1] / 255f;
                 float b_2 = arrf_2[2] / 255f;
@@ -1077,12 +1080,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             //饰品_3
             if (((SkinEntity)t).BaubleType_3() > 0) {
                 //饰品基础
-                int[] arrf_base_3 = Color.colorStringToRGBInt("ffffff");
+                int[] arrf_base_3 = colorRgb("ffffff");
                 float r_base_3 = arrf_base_3[0] / 255f;
                 float g_base_3 = arrf_base_3[1] / 255f;
                 float b_base_3 = arrf_base_3[2] / 255f;
                 SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, baubleBaseLocation_3, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_3, g_base_3, b_base_3);
-                int[] arrf_3 = Color.colorStringToRGBInt(ClothesColorHave);
+                int[] arrf_3 = colorRgb(ClothesColorHave);
                 float r_3 = arrf_3[0] / 255f;
                 float g_3 = arrf_3[1] / 255f;
                 float b_3 = arrf_3[2] / 255f;
@@ -1250,12 +1253,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             else {
                 ClothesColor = "ffffff";
             }
-            int[] arrf_base_1 = Color.colorStringToRGBInt("ffffff");
+            int[] arrf_base_1 = colorRgb("ffffff");
             float r_base_1 = arrf_base_1[0] / 255f;
             float g_base_1 = arrf_base_1[1] / 255f;
             float b_base_1 = arrf_base_1[2] / 255f;
             SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, shoesBaseLocation, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_1, g_base_1, b_base_1);
-            int[] arrf_1 = Color.colorStringToRGBInt(ClothesColor);
+            int[] arrf_1 = colorRgb(ClothesColor);
             float r_1 = arrf_1[0] / 255f;
             float g_1 = arrf_1[1] / 255f;
             float b_1 = arrf_1[2] / 255f;
@@ -1419,12 +1422,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             else {
                 ClothesColor = "ffffff";
             }
-            int[] arrf_base_1 = Color.colorStringToRGBInt("ffffff");
+            int[] arrf_base_1 = colorRgb("ffffff");
             float r_base_1 = arrf_base_1[0] / 255f;
             float g_base_1 = arrf_base_1[1] / 255f;
             float b_base_1 = arrf_base_1[2] / 255f;
             SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, hatBaseLocation, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_1, g_base_1, b_base_1);
-            int[] arrf_1 = Color.colorStringToRGBInt(ClothesColor);
+            int[] arrf_1 = colorRgb(ClothesColor);
             float r_1 = arrf_1[0] / 255f;
             float g_1 = arrf_1[1] / 255f;
             float b_1 = arrf_1[2] / 255f;
@@ -1591,12 +1594,12 @@ public class SkinEntityBodyLayer<T extends LivingEntity, M extends EntityModel<T
             else {
                 ClothesColor = "ffffff";
             }
-            int[] arrf_base_1 = Color.colorStringToRGBInt("ffffff");
+            int[] arrf_base_1 = colorRgb("ffffff");
             float r_base_1 = arrf_base_1[0] / 255f;
             float g_base_1 = arrf_base_1[1] / 255f;
             float b_base_1 = arrf_base_1[2] / 255f;
             SkinEntityBodyLayer.coloredCutoutModelCopyLayerRender(this.getParentModel(), this.model, overcoatBaseLocation, poseStack, multiBufferSource, n, t, f, f2, f4, f5, f6, f3, r_base_1, g_base_1, b_base_1);
-            int[] arrf_1 = Color.colorStringToRGBInt(ClothesColor);
+            int[] arrf_1 = colorRgb(ClothesColor);
             float r_1 = arrf_1[0] / 255f;
             float g_1 = arrf_1[1] / 255f;
             float b_1 = arrf_1[2] / 255f;

@@ -384,7 +384,7 @@ public class JerotesVillageSoundEvents {
     public static final SoundEvent PURPLE_SAND_HAG_DEATH = createSoundEvent("purple_sand_hag_death");
     public static final SoundEvent PURPLE_SAND_HAG_LAUGH_1 = createSoundEvent("purple_sand_hag_laugh_1");
     public static final SoundEvent PURPLE_SAND_HAG_COVENS = createSoundEvent("purple_sand_hag_covens");
-    public static final SoundEvent PURPLE_SAND_HAG_CONJURE_SPIRVE = createSoundEvent("purple_sand_hag_conjure_spirve");
+    public static final SoundEvent PURPLE_SAND_HAG_CONJURE_SPIRVES = createSoundEvent("purple_sand_hag_conjure_spirves");
     public static final SoundEvent SOLISH_AMBIENT = createSoundEvent("solish_ambient");
     public static final SoundEvent SOLISH_HURT = createSoundEvent("solish_hurt");
     public static final SoundEvent SOLISH_DEATH = createSoundEvent("solish_death");
@@ -769,13 +769,17 @@ public class JerotesVillageSoundEvents {
     public static final SoundEvent MAGIC_RUINS_WIND_CHARGE = createSoundEvent("magic_ruins_wind_charge");
     public static final SoundEvent MAGIC_RADIANT_BOMB = createSoundEvent("magic_radiant_bomb");
     public static final SoundEvent MAGIC_SNAP_BOLT = createSoundEvent("magic_snap_bolt");
+    public static final SoundEvent MAGIC_VIROSAANS_MAGIC_MISSILE = createSoundEvent("magic_virosaans_magic_missile");
+    public static final SoundEvent MAGIC_STARBURST_MARKER = createSoundEvent("magic_starburst_marker");
     public static final SoundEvent MAGIC_ARCANE_LIGHT_SPOT = createSoundEvent("magic_arcane_light_spot");
     public static final SoundEvent MAGIC_SERPON_SIROCCO = createSoundEvent("magic_serpon_sirocco");
     public static final SoundEvent MAGIC_EYE_DISC_SHOOT = createSoundEvent("magic_eye_disc_shoot");
     public static final SoundEvent MAGIC_ICE_ROCK_THROW = createSoundEvent("magic_ice_rock_throw");
+    public static final SoundEvent MAGIC_ASTRAL_JAVELIN = createSoundEvent("magic_astral_javelin");
     public static final SoundEvent MAGIC_WHIP_THE_TIDE = createSoundEvent("magic_whip_the_tide");
     public static final SoundEvent MAGIC_BITTER_COLD_FROSTBITE = createSoundEvent("magic_bitter_cold_frostbite");
     public static final SoundEvent MAGIC_SERPON_FLAMES = createSoundEvent("magic_serpon_flames");
+    public static final SoundEvent MAGIC_VIRTUAL_CAVE_SURGE_SIPHON = createSoundEvent("magic_virtual_cave_surge_siphon");
     public static final SoundEvent MAGIC_OMINOUS_FLAMES = createSoundEvent("magic_ominous_flames");
     public static final SoundEvent MAGIC_WORM_THUNDERSTORM = createSoundEvent("magic_worm_thunderstorm");
     public static final SoundEvent MAGIC_PUSH_FORCE = createSoundEvent("magic_push_force");
@@ -784,6 +788,7 @@ public class JerotesVillageSoundEvents {
     public static final SoundEvent MAGIC_OCEAN_DRAGON_DETERRENCE = createSoundEvent("magic_ocean_dragon_deterrence");
     public static final SoundEvent MAGIC_GEMSTONE_WAVES = createSoundEvent("magic_gemstone_waves");
     public static final SoundEvent MAGIC_ELECTROFLASH = createSoundEvent("magic_electroflash");
+    public static final SoundEvent MAGIC_SKYLANCE_DRAGON_BEAM = createSoundEvent("magic_skylance_dragon_beam");
     public static final SoundEvent MAGIC_VINEBOLT = createSoundEvent("magic_vinebolt");
     public static final SoundEvent MAGIC_INDOMITABLE_WILL = createSoundEvent("magic_indomitable_will");
     public static final SoundEvent MAGIC_FLOATING_FORCE = createSoundEvent("magic_floating_force");

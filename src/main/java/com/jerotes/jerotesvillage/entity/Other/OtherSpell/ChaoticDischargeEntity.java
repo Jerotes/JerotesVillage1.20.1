@@ -88,7 +88,7 @@ public class ChaoticDischargeEntity extends OtherSpellBaseEntity implements Trac
             List<Entity> list = this.level().getEntitiesOfClass(Entity.class, this.getBoundingBox().inflate(1.75,1.75,1.75));
             double radius = 2.25;
             double radiusSq = radius * radius;
-            list.removeIf(livingEntity -> livingEntity.distanceToSqr(this) > radiusSq);
+            list.removeIf(livingEntity -> livingEntity.distanceToSqr(this) > (radiusSq + ((Main.mobWidth(livingEntity) / 2) * (Main.mobWidth(livingEntity) / 2))));
             if (this.level() instanceof ServerLevel serverLevel) {
                 InvisibleLightningBolt fakeBolt = new InvisibleLightningBolt(JerotesEntityType.INVISIBLE_LIGHTNING_BOLT.get(), serverLevel);
                 fakeBolt.setDamage(0);

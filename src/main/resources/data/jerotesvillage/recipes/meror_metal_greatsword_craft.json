@@ -3,8 +3,8 @@
   "category": "equipment",
   "pattern": [
     "  a",
-    " ba",
-    "c  "
+    "ab ",
+    "ca "
   ],
   "key": {
     "a": {
@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "jerotesvillage:meror_metal_sword",
+    "item": "jerotesvillage:meror_metal_greatsword",
     "count": 1
   }
 }

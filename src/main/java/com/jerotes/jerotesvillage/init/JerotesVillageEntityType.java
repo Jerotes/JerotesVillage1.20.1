@@ -94,6 +94,7 @@ import com.jerotes.jerotesvillage.entity.Shoot.Magic.Cloud.CorrosiveSnowCloudEnt
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Cloud.RainEffectCloudEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Cloud.UncleanBloodRainEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicBeam.ElectroflashEntity;
+import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicBeam.SkylanceDragonBeamEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicMissile.ArcaneLightSpotEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicMissile.SedimentMissileEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicMissile.VertigoDelugeEntity;
@@ -102,6 +103,7 @@ import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicShoot.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicSpray.BitterColdFrostbiteEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicSpray.OminousFlamesEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicSpray.SerponFlamesEntity;
+import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicSpray.VirtualCaveSurgeSiphonEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicThrow.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Ray.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Target.DeadCenterEntity;
@@ -827,6 +829,12 @@ public class JerotesVillageEntityType {
 	public static final RegistryObject<EntityType<SnapBoltEntity>> SNAP_BOLT = register("snap_bolt",
 			EntityType.Builder.<SnapBoltEntity>of(SnapBoltEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(4)
 					.sized(0.3125F, 0.3125F));
+	public static final RegistryObject<EntityType<VirosaansMagicMissileEntity>> VIROSAANS_MAGIC_MISSILE = register("virosaans_magic_missile",
+			EntityType.Builder.<VirosaansMagicMissileEntity>of(VirosaansMagicMissileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(4)
+					.sized(0.3125F, 0.3125F));
+	public static final RegistryObject<EntityType<StarburstMarkerEntity>> STARBURST_MARKER = register("starburst_marker",
+			EntityType.Builder.<StarburstMarkerEntity>of(StarburstMarkerEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(4)
+					.sized(0.3125F, 0.3125F));
 	public static final RegistryObject<EntityType<BloodyScreamEntity>> BLOODY_SCREAM = register("bloody_scream",
 			EntityType.Builder.<BloodyScreamEntity>of(BloodyScreamEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(4)
 					.sized(1.6f, 1.6f));
@@ -855,6 +863,10 @@ public class JerotesVillageEntityType {
 			EntityType.Builder.<IceRockThrowEntity>of(IceRockThrowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(4)
 					.setUpdateInterval(Integer.MAX_VALUE)
 					.sized(1.0f, 1.0f));
+	public static final RegistryObject<EntityType<AstralJavelinEntity>> ASTRAL_JAVELIN = register("astral_javelin",
+			EntityType.Builder.<AstralJavelinEntity>of(AstralJavelinEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(4)
+					.setUpdateInterval(Integer.MAX_VALUE)
+					.sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<WhipTheTideEntity>> WHIP_THE_TIDE = register("whip_the_tide",
 			EntityType.Builder.<WhipTheTideEntity>of(WhipTheTideEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(4)
 					.setUpdateInterval(Integer.MAX_VALUE)
@@ -948,6 +960,9 @@ public class JerotesVillageEntityType {
 					.sized(0.3125F, 0.3125F));
 	public static final RegistryObject<EntityType<SerponFlamesEntity>> SERPON_FLAMES = register("serpon_flames",
 			EntityType.Builder.<SerponFlamesEntity>of(SerponFlamesEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(16)
+					.sized(0.3125F, 0.3125F));
+	public static final RegistryObject<EntityType<VirtualCaveSurgeSiphonEntity>> VIRTUAL_CAVE_SURGE_SIPHON = register("virtual_cave_surge_siphon",
+			EntityType.Builder.<VirtualCaveSurgeSiphonEntity>of(VirtualCaveSurgeSiphonEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(16)
 					.sized(0.3125F, 0.3125F));
 	public static final RegistryObject<EntityType<SecreteFireOilBombEntity>> SECRETE_FIRE_OIL_BOMB = register("secrete_fire_oil_bomb",
 			EntityType.Builder.<SecreteFireOilBombEntity>of(SecreteFireOilBombEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(16)
@@ -1125,6 +1140,9 @@ public class JerotesVillageEntityType {
 	public static final RegistryObject<EntityType<ElectroflashEntity>> ELECTROFLASH = register("electroflash",
 			EntityType.Builder.<ElectroflashEntity>of(ElectroflashEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).updateInterval(1)
 					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<SkylanceDragonBeamEntity>> SKYLANCE_DRAGON_BEAM = register("skylance_dragon_beam",
+			EntityType.Builder.<SkylanceDragonBeamEntity>of(SkylanceDragonBeamEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(256).updateInterval(1)
+					.sized(1.5f, 1.5f));
 	public static final RegistryObject<EntityType<VirosaansWindOfSlaughterEffectEntity>> VIROSAANS_WIND_OF_SLAUGHTER_EFFECT = register("virosaans_wind_of_slaughter_effect",
 			EntityType.Builder.<VirosaansWindOfSlaughterEffectEntity>of(VirosaansWindOfSlaughterEffectEntity::new, MobCategory.MISC).fireImmune().clientTrackingRange(10).updateInterval(Integer.MAX_VALUE)
 					.sized(0.15f, 0.15f));
@@ -1134,6 +1152,9 @@ public class JerotesVillageEntityType {
 	public static final RegistryObject<EntityType<TakeRootEntity>> TAKE_ROOT = register("take_root",
 			EntityType.Builder.<TakeRootEntity>of(TakeRootEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(10)
 					.sized(1.0f, 1.0f));
+	public static final RegistryObject<EntityType<AstralJavelinPointEntity>> ASTRAL_JAVELIN_POINT = register("astral_javelin_point",
+			EntityType.Builder.<AstralJavelinPointEntity>of(AstralJavelinPointEntity::new, MobCategory.MISC).fireImmune().clientTrackingRange(10)
+					.sized(0.5F, 0.5F));
 	//投影
 	public static final RegistryObject<EntityType<BossShowEntity>> BOSS_SHOW_ENTITY_CORROSIVER = register("boss_show_entity_corrosiver",
 			EntityType.Builder.of(BossShowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)

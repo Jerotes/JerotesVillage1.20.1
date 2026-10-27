@@ -27,6 +27,10 @@ public class ElectroflashEntity extends BaseMagicBeamEntity {
         return 240;
     }
 
+    public double getMaxDistance() {
+        return 60.0F;
+    }
+
     public ResourceLocation getBeamLocation() {
         return new ResourceLocation(JerotesVillage.MODID, "textures/entity/beam/electroflash.png");
     }

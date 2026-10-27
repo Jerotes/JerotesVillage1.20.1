@@ -51,7 +51,7 @@ public class CollapseZoneRenderer extends EntityRenderer<CollapseZoneEntity> {
         Matrix3f normalMat = pose.normal();
 
         int alpha = (int) (80 * alphaFade);
-        int r = 234, g = 173, b = 20;
+        int r = 185, g = 133, b = 92;
 
         float outer = 3.0f;
         float inner = 2.75f;

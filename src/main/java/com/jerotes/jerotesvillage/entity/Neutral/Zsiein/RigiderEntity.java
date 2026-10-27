@@ -42,7 +42,7 @@ public class RigiderEntity extends ZsieinEntity {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0);
 		builder = builder.add(Attributes.ARMOR, 16);
-		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 0.8f);
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.25);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
 		return builder;

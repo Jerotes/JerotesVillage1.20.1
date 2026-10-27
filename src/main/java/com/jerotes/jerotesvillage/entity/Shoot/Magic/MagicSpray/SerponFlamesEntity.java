@@ -67,7 +67,7 @@ public class SerponFlamesEntity extends BaseMagicSprayEntity {
         if (this.level().isClientSide()) {
             return;
         }
-        Main.placeFire(this.level(), blockPos, this.getOwner());
+        Main.placeFireOnFlammable(this.level(), blockPos, this.getOwner());
         Main.igniteBlock(this.level(), blockPos, this.getOwner());
     }
 

@@ -183,6 +183,11 @@ public class EagleBowRangedBowAttackGoal<T extends EagleBowEntity> extends Goal 
 				this.mob.setYRot(bodyYaw);
 				this.mob.setYBodyRot(bodyYaw);
 				this.mob.setYHeadRot(bodyYaw);
+				if (this.mob.getTicksUsingItem() >= 19) {
+					this.mob.yRotO = bodyYaw;
+					this.mob.yBodyRotO = bodyYaw;
+					this.mob.yHeadRotO = bodyYaw;
+				}
 			}
 
 			if (this.mob.isUsingItem()) {
@@ -210,6 +215,7 @@ public class EagleBowRangedBowAttackGoal<T extends EagleBowEntity> extends Goal 
 					this.mob.setShootTick(30);
 					this.mob.setAnimTick(30);
 					this.mob.level().broadcastEntityEvent(this.mob, (byte) 101);
+					mob.setShootAnim(Math.max(20, mob.getShootAnim()));
 				}
 				if ((this.mob.onGround() || Main.isInFluid(this.mob))) {
 					if (this.mob.distanceToSqr(livingentity) < 12) {
@@ -219,9 +225,10 @@ public class EagleBowRangedBowAttackGoal<T extends EagleBowEntity> extends Goal 
 						float f4 = -Mth.sin(f2 * 0.017453292f);
 						float f5 = Mth.cos(f1 * 0.017453292f) * Mth.cos(f2 * 0.017453292f);
 						float f6 = Mth.sqrt(f3 * f3 + f4 * f4 + f5 * f5);
-						float f7 = -0.55f * this.mob.getRandom().nextFloat();
+						float f7 = -0.55f * (this.mob.getRandom().nextFloat() / 2 + 0.5f);
 						this.mob.setOnGround(false);
 						this.mob.setDeltaMovement(this.mob.getDeltaMovement().add(f3 *= f7 / f6 * 2, 0.25, f5 *= f7 / f6 * 2));
+						this.mob.setShadowAnim(Math.max(40, this.mob.getShadowAnim()));
 					}
 				}
 			}

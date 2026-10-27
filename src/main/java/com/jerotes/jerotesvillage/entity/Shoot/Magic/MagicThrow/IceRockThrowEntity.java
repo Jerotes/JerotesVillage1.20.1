@@ -68,6 +68,9 @@ public class IceRockThrowEntity extends MagicAboutThrowEntity {
     @Override
     protected void onHitBlock(BlockHitResult blockHitResult) {
         super.onHitBlock(blockHitResult);
+        if (this.level().isClientSide) {
+            return;
+        }
         BlockPos center = blockHitResult.getBlockPos();
         Level level = this.level();
         Entity owner = this.getOwner();

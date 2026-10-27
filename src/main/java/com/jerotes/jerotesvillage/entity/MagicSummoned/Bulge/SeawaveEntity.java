@@ -10,6 +10,7 @@ import com.jerotes.jerotes.spell.SpellType;
 import com.jerotes.jerotes.util.AttackFind;
 import com.jerotes.jerotes.util.EntityAndItemFind;
 import com.jerotes.jerotes.util.Main;
+import com.jerotes.jerotes.util.ParticlesUse;
 import com.jerotes.jerotesvillage.entity.Boss.Biome.CelestialCoilvineEntity;
 import com.jerotes.jerotesvillage.goal.BigWitchAttackGoal;
 import com.jerotes.jerotesvillage.goal.BulgeFloatGoal;
@@ -759,6 +760,10 @@ public class SeawaveEntity extends BulgeEntity implements RangedAttackMob, Conce
 			}
 			SpellType.setConcentrationSpellTargetJerotes(this.getOwner(), UUID.fromString("00000000-0000-0000-0000-000000000000"));
 			SpellType.endConcentrationMessage(this.getOwner(), OtherSpellType.JEROTESVILLAGE_CONJURE_SEAWAVE.magicSpellGet(1, (LivingEntity) null, (Entity) null).getSpellName());
+		}
+		if (this.level() instanceof ServerLevel serverLevel) {
+			ParticlesUse.summonParticle(serverLevel, this, this.getX(), this.getY(), this.getZ(),
+					0x033177, 0x4ac8ff);
 		}
 		this.discard();
 		return true;

@@ -91,7 +91,7 @@ public class JerotesVillageParticleTypes {
 	public static final RegistryObject<SimpleParticleType> BITTER_COLD_WINDCALLER_DISPLAY = REGISTRY.register("bitter_cold_windcaller_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> CORROSIVE_SNOW_CLOUD_DISPLAY = REGISTRY.register("corrosive_snow_cloud_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> HAG_COVENS_DISPLAY = REGISTRY.register("hag_covens_display", () -> new SimpleParticleType(true));
-	public static final RegistryObject<SimpleParticleType> CONJURE_SPIRVE_DISPLAY = REGISTRY.register("conjure_spirve_display", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> CONJURE_SPIRVES_DISPLAY = REGISTRY.register("conjure_spirves_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> PURPLE_SAND_PHANTOM_DISPLAY = REGISTRY.register("purple_sand_phantom_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> OCEAN_CURRENT_BREATH_DISPLAY = REGISTRY.register("ocean_current_breath_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> WHIRLPOOL_DISPLAY = REGISTRY.register("whirlpool_display", () -> new SimpleParticleType(true));
@@ -105,6 +105,7 @@ public class JerotesVillageParticleTypes {
 	public static final RegistryObject<SimpleParticleType> VERTIGO_DELUGE_DISPLAY = REGISTRY.register("vertigo_deluge_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> YETI_DETER_DISPLAY = REGISTRY.register("yeti_deter_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> ICE_ROCK_THROW_DISPLAY = REGISTRY.register("ice_rock_throw_display", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> ASTRAL_JAVELIN_DISPLAY = REGISTRY.register("astral_javelin_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> BITTER_COLD_ICE_SPIKE_DISPLAY = REGISTRY.register("bitter_cold_ice_spike_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> CORROSIVE_ICE_SPIKE_DISPLAY = REGISTRY.register("corrosive_ice_spike_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> CHAOTIC_DISCHARGE_DISPLAY = REGISTRY.register("chaotic_discharge_display", () -> new SimpleParticleType(true));
@@ -128,6 +129,7 @@ public class JerotesVillageParticleTypes {
 	public static final RegistryObject<SimpleParticleType> MAP_INFERENCE_DISPLAY = REGISTRY.register("map_inference_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> SERPON_FIREBALL_DISPLAY = REGISTRY.register("serpon_fireball_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> SERPON_FLAMES_DISPLAY = REGISTRY.register("serpon_flames_display", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> VIRTUAL_CAVE_SURGE_SIPHON_DISPLAY = REGISTRY.register("virtual_cave_surge_siphon_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> ZSIEIN_SONIC_DISPLAY = REGISTRY.register("zsiein_sonic_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> FLAME_SLASH_DISPLAY = REGISTRY.register("flame_slash_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> WHIRLWIND_SLASH_DISPLAY = REGISTRY.register("whirlwind_slash_display", () -> new SimpleParticleType(true));
@@ -228,6 +230,7 @@ public class JerotesVillageParticleTypes {
 	public static final RegistryObject<SimpleParticleType> DISARMING_ATTACK_DISPLAY = REGISTRY.register("disarming_attack_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> DISTRACTING_STRIKE_DISPLAY = REGISTRY.register("distracting_strike_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> ELECTROFLASH_DISPLAY = REGISTRY.register("electroflash_display", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> SKYLANCE_DRAGON_BEAM_DISPLAY = REGISTRY.register("skylance_dragon_beam_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> VINEBOLT_DISPLAY = REGISTRY.register("vinebolt_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> RAPIER_FLURRY_DISPLAY = REGISTRY.register("rapier_flurry_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> RAPIER_PARRY_RIPOSTE_DISPLAY = REGISTRY.register("rapier_parry_riposte_display", () -> new SimpleParticleType(true));
@@ -241,6 +244,8 @@ public class JerotesVillageParticleTypes {
 	public static final RegistryObject<SimpleParticleType> TAKE_ROOT_DISPLAY = REGISTRY.register("take_root_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> DEAD_CENTER_DISPLAY = REGISTRY.register("dead_center_display", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> SNAP_BOLT_DISPLAY = REGISTRY.register("snap_bolt_display", () -> new SimpleParticleType(true));
+    public static final RegistryObject<SimpleParticleType> VIROSAANS_MAGIC_MISSILE_DISPLAY = REGISTRY.register("virosaans_magic_missile_display", () -> new SimpleParticleType(true));
+    public static final RegistryObject<SimpleParticleType> STARBURST_MARKER_DISPLAY = REGISTRY.register("starburst_marker_display", () -> new SimpleParticleType(true));
     public static final RegistryObject<SimpleParticleType> WHIP_THE_TIDE_DISPLAY = REGISTRY.register("whip_the_tide_display", () -> new SimpleParticleType(true));
     public static final RegistryObject<SimpleParticleType> COLLAPSE_ZONE_DISPLAY = REGISTRY.register("collapse_zone_display", () -> new SimpleParticleType(true));
 }

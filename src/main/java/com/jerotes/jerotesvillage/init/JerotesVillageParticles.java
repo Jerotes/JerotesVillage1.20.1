@@ -13,7 +13,7 @@ public class JerotesVillageParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(JerotesVillageParticleTypes.SECOND_ROUND_WORLD_PORTAL_PARTICLE.get(), ShootParticle::provider);
-		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR.get(), ShootParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR.get(), ElementParticle.Provider::new);
 		event.registerSpriteSet(JerotesVillageParticleTypes.GEMSTONE_BUBBLE.get(), GemstoneBubbleParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.GEMSTONE_BUBBLE_LAND.get(), GemstoneBubbleLandParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.CORROSIVER_BREATH.get(), ShootParticle::provider);
@@ -25,7 +25,7 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.OCEAN_DRAGON_DETERRENCE.get(), VoiceParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.ABACK.get(), SymbolParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_LOCATOR.get(), VoiceParticle::provider);
-		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_SCYTHE_SHOOT.get(), ShootParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_SCYTHE_SHOOT.get(), ElementParticle.Provider::new);
 		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_CHARGING_BOW_ARROW_I.get(), ShootParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_CHARGING_BOW_ARROW_II.get(), ShootParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_CHARGING_BOW_ARROW_III.get(), ShootParticle::provider);
@@ -33,7 +33,7 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_CHARGING_BOW_ARROW_V.get(), ShootParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_BULLET.get(), MerorBulletParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_SHOCK_WAVE.get(), ElementParticle.Provider::new);
-		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_FIRE.get(), ShootParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.MEROR_FIRE.get(), ElementParticle.ElementFlameParticle.Provider::new);
 		event.registerSpriteSet(JerotesVillageParticleTypes.WORM_THUNDERSTORM.get(), ShootParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.PREDATION_TOOTHED_FLOWER_SHOOT.get(), ShootParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.EYE_DISC.get(), EyeDiscParticle::provider);
@@ -94,7 +94,7 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.BITTER_COLD_WINDCALLER_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.CORROSIVE_SNOW_CLOUD_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.HAG_COVENS_DISPLAY.get(), DisplayParticle::provider);
-		event.registerSpriteSet(JerotesVillageParticleTypes.CONJURE_SPIRVE_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.CONJURE_SPIRVES_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.PURPLE_SAND_PHANTOM_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.OCEAN_CURRENT_BREATH_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.WHIRLPOOL_DISPLAY.get(), DisplayParticle::provider);
@@ -108,6 +108,7 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.VERTIGO_DELUGE_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.YETI_DETER_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.ICE_ROCK_THROW_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.ASTRAL_JAVELIN_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.BITTER_COLD_ICE_SPIKE_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.CORROSIVE_ICE_SPIKE_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.CHAOTIC_DISCHARGE_DISPLAY.get(), DisplayParticle::provider);
@@ -131,6 +132,7 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.MAP_INFERENCE_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.SERPON_FIREBALL_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.SERPON_FLAMES_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.VIRTUAL_CAVE_SURGE_SIPHON_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.ZSIEIN_SONIC_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.FLAME_SLASH_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.WHIRLWIND_SLASH_DISPLAY.get(), DisplayParticle::provider);
@@ -231,6 +233,7 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.DISARMING_ATTACK_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.DISTRACTING_STRIKE_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.ELECTROFLASH_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.SKYLANCE_DRAGON_BEAM_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.VINEBOLT_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.RAPIER_FLURRY_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.RAPIER_PARRY_RIPOSTE_DISPLAY.get(), DisplayParticle::provider);
@@ -244,6 +247,8 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.TAKE_ROOT_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.DEAD_CENTER_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.SNAP_BOLT_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.VIROSAANS_MAGIC_MISSILE_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.STARBURST_MARKER_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.WHIP_THE_TIDE_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.COLLAPSE_ZONE_DISPLAY.get(), DisplayParticle::provider);
 	}

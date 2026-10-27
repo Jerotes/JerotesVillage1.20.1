@@ -79,6 +79,7 @@ public class ElectroflashRenderer<T extends ElectroflashEntity> extends EntityRe
 		float dy = (float) (f8 - Mth.lerp(partialTick, entity.yo, f11));
 		float dz = (float) (f9 - Mth.lerp(partialTick, entity.zo, f12));
 
+		poseStack.translate(0.0f, entity.getBbHeight() / 2.0f, 0.0f);
 		renderBeam(entity, dx, dy, dz, partialTick, entity.tickCount, poseStack, buffer, packedLight);
 
 		poseStack.popPose();

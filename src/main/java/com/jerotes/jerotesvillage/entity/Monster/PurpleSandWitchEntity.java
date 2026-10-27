@@ -1,9 +1,6 @@
 package com.jerotes.jerotesvillage.entity.Monster;
 
-import com.jerotes.jerotes.entity.Interface.CanBeIllagerFactionEntity;
-import com.jerotes.jerotes.entity.Interface.FactionEntity;
-import com.jerotes.jerotes.entity.Interface.JerotesEntity;
-import com.jerotes.jerotes.entity.Interface.PurpleSandSisterhoodEntity;
+import com.jerotes.jerotes.entity.Interface.*;
 import com.jerotes.jerotes.goal.JerotesHelpAlliesGoal;
 import com.jerotes.jerotes.goal.JerotesHelpSameFactionGoal;
 import com.jerotes.jerotes.init.JerotesMobEffects;
@@ -47,7 +44,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class PurpleSandWitchEntity extends Witch implements PurpleSandSisterhoodEntity, JerotesEntity, FactionEntity, CanBeIllagerFactionEntity {
+public class PurpleSandWitchEntity extends Witch implements PurpleSandSisterhoodEntity, JerotesEntity, SpellUseEntity, FactionEntity, CanBeIllagerFactionEntity {
 	private static final UUID SPEED_MODIFIER_DRINKING_UUID = UUID.fromString("5727C5E0-5008-5FFA-A277-72981359E585");
 	private static final AttributeModifier SPEED_MODIFIER_DRINKING = new AttributeModifier(SPEED_MODIFIER_DRINKING_UUID, "Drinking speed penalty", -0.25D, AttributeModifier.Operation.ADDITION);
 	private static final EntityDataAccessor<Boolean> DATA_USING_ITEM = SynchedEntityData.defineId(PurpleSandWitchEntity.class, EntityDataSerializers.BOOLEAN);
@@ -174,11 +171,18 @@ public class PurpleSandWitchEntity extends Witch implements PurpleSandSisterhood
 	public void addAdditionalSaveData(CompoundTag compoundTag) {
 		super.addAdditionalSaveData(compoundTag);
 		compoundTag.putBoolean("IsIllagerFaction", this.isIllagerFaction());
+		compoundTag.putInt("SpellLevel", this.spellLevel);
 	}
 	@Override
 	public void readAdditionalSaveData(CompoundTag compoundTag) {
 		super.readAdditionalSaveData(compoundTag);
 		this.setIllagerFaction(compoundTag.getBoolean("IsIllagerFaction"));
+		this.spellLevel = compoundTag.getInt("SpellLevel");
+	}
+	public int spellLevel = 3;
+	@Override
+	public int getSpellLevel() {
+		return this.spellLevel;
 	}
 	@Override
 	protected void defineSynchedData() {

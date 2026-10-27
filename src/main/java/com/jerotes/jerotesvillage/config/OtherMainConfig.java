@@ -68,6 +68,7 @@ public final class OtherMainConfig {
     public static double ZsieinExtremelyInfectedLevel;
 
     public static boolean SecondRoundWorldSpecialScreen;
+    public static List<String> SecondRoundWorldStructureWhitelist;
     public static boolean RandomSkinMobHasUnderTexture;
     public static double PurpleSandWeatherLightningChance;
     public static boolean PurpleSandEyeProtectionMode;
@@ -509,6 +510,7 @@ public final class OtherMainConfig {
         ZsieinExtremelyInfectedLevel = COMMON.ZsieinExtremelyInfectedLevel.get();
 
         SecondRoundWorldSpecialScreen = COMMON.SecondRoundWorldSpecialScreen.get();
+        SecondRoundWorldStructureWhitelist = COMMON.SecondRoundWorldStructureWhitelist.get();
         RandomSkinMobHasUnderTexture = COMMON.RandomSkinMobHasUnderTexture.get();
         PurpleSandWeatherLightningChance = COMMON.PurpleSandWeatherLightningChance.get();
         PurpleSandEyeProtectionMode = COMMON.PurpleSandEyeProtectionMode.get();
@@ -944,6 +946,7 @@ public final class OtherMainConfig {
         public final ForgeConfigSpec.DoubleValue ZsieinExtremelyInfectedLevel;
 
         public final ForgeConfigSpec.BooleanValue SecondRoundWorldSpecialScreen;
+        public final ForgeConfigSpec.ConfigValue<List<String>> SecondRoundWorldStructureWhitelist;
         public final ForgeConfigSpec.BooleanValue RandomSkinMobHasUnderTexture;
         public final ForgeConfigSpec.DoubleValue PurpleSandWeatherLightningChance;
         public final ForgeConfigSpec.BooleanValue PurpleSandEyeProtectionMode;
@@ -1421,6 +1424,8 @@ public final class OtherMainConfig {
             builder.push("Other");
             SecondRoundWorldSpecialScreen = builder.comment("Second Round World Special Screen")
                     .define("二轮世界特殊屏幕", true);
+            SecondRoundWorldStructureWhitelist = builder.comment("Structures allowed to generate in the Second Round World. modid = whole mod, modid:path = one structure, #modid:tag = structure tag. Anything not listed is not generated")
+                    .define("二轮世界结构白名单", Lists.newArrayList("minecraft", "jerotesvillage", "#jerotesvillage:second_round_world_structures"));
             RandomSkinMobHasUnderTexture = builder.comment("Random Skin Mob Has Under Texture")
                     .define("随机纹理生物拥有底层纹理", false);
             PurpleSandWeatherLightningChance = builder.comment("Purple Sand Weather Chance Per Second")
@@ -1904,47 +1909,47 @@ public final class OtherMainConfig {
                     .defineInRange("Tyrant Of The Mountain Realm Damage Cooldown Tick", 20, 0.0, Double.MAX_VALUE);
             builder.pop();
             //蚀龙兽
-            builder.push("Corrosiver");
-            CorrosiverBossBarColor = builder.comment("Corrosiver Boss Bar Color")
+            builder.push("Dragon-Corrosiver");
+            CorrosiverBossBarColor = builder.comment("Dragon-Corrosiver Boss Bar Color")
                     .defineInRange("蚀龙兽Boss血条颜色", 6, 0, 6);
-            CorrosiverBossBarNameColor = builder.comment("Corrosiver Boss Bar Name Color")
+            CorrosiverBossBarNameColor = builder.comment("Dragon-Corrosiver Boss Bar Name Color")
                     .defineInRange("蚀龙兽Boss血条名字颜色", 0x00624e, 0, Integer.MAX_VALUE);
             CorrosiverMaxHealth = builder.comment("[Boss] Max Health : 225.0")
-                    .defineInRange("Corrosiver Max Health", 225.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Max Health", 225.0, 0.0, Double.MAX_VALUE);
             CorrosiverMeleeDamage = builder.comment("[Boss] Melee Damage : 12.0")
-                    .defineInRange("Corrosiver Melee Damage", 12.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Melee Damage", 12.0, 0.0, Double.MAX_VALUE);
             CorrosiverArmor = builder.comment("[Boss] Armor : 5.0")
-                    .defineInRange("Corrosiver Armor", 5.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Armor", 5.0, 0.0, Double.MAX_VALUE);
             CorrosiverMovementSpeed = builder.comment("[Boss] Movement Speed : 0.36")
-                    .defineInRange("Corrosiver Movement Speed", 0.36, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Movement Speed", 0.36, 0.0, Double.MAX_VALUE);
             CorrosiverAttackKnockback = builder.comment("[Boss] Attack Knockback : 0.6")
-                    .defineInRange("Corrosiver Attack Knockback", 0.6, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Attack Knockback", 0.6, 0.0, Double.MAX_VALUE);
             CorrosiverKnockbackResistance = builder.comment("[Boss] Knockback Resistance : 1.0")
-                    .defineInRange("Corrosiver Knockback Resistance", 1.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Knockback Resistance", 1.0, 0.0, Double.MAX_VALUE);
             CorrosiverToughHurtCooldown = builder.comment("[Boss] Tough Hurt Cooldown : 2.0")
-                    .defineInRange("Corrosiver Tough Hurt Cooldown", 2.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Tough Hurt Cooldown", 2.0, 0.0, Double.MAX_VALUE);
             CorrosiverBreakToughHurtCooldownMultiple = builder.comment("[Boss] Break Tough Hurt Cooldown Multiple : 3")
-                    .defineInRange("Corrosiver Break Tough Hurt Cooldown Multiple", 3, 0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Break Tough Hurt Cooldown Multiple", 3, 0, Double.MAX_VALUE);
             CorrosiverBreakToughNeedBaseDamage = builder.comment("[Boss] Break Tough Need Base Damage : 6.0")
-                    .defineInRange("Corrosiver Break Tough Need Base Damage", 6.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Break Tough Need Base Damage", 6.0, 0.0, Double.MAX_VALUE);
             CorrosiverMeleeAttackCooldown = builder.comment("[Boss] Melee Attack Cooldown : 0.25")
-                    .defineInRange("Corrosiver Melee Attack Cooldown", 0.25, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Melee Attack Cooldown", 0.25, 0.0, Double.MAX_VALUE);
             CorrosiverSpellCooldown = builder.comment("[Boss] Spell Cooldown : 12.0")
-                    .defineInRange("Corrosiver Spell Cooldown", 12.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Spell Cooldown", 12.0, 0.0, Double.MAX_VALUE);
             CorrosiverSpellNormalLevel = builder.comment("[Boss] Spell Normal Level : 5")
-                    .defineInRange("Corrosiver Spell Normal Level", 5, 0, Integer.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Spell Normal Level", 5, 0, Integer.MAX_VALUE);
             CorrosiverColdAbsorptionPercentage = builder.comment("[Boss] Cold Absorption Percentage : 100.0")
-                    .defineInRange("Corrosiver Cold Absorption Percentage", 100.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Cold Absorption Percentage", 100.0, 0.0, Double.MAX_VALUE);
             CorrosiverBreakBlockCooldown = builder.comment("[Boss] Break Block Cooldown : 2.5")
-                    .defineInRange("Corrosiver Break Block Cooldown", 2.5, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Break Block Cooldown", 2.5, 0.0, Double.MAX_VALUE);
             CorrosiverAttackPercentage = builder.comment("[Boss] Attack Percentage : 8.0")
-                    .defineInRange("Corrosiver Attack Percentage", 8.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Attack Percentage", 8.0, 0.0, Double.MAX_VALUE);
             CorrosiverMagicAttackPercentage = builder.comment("[Boss] Magic Attack Percentage : 8.0")
-                    .defineInRange("Corrosiver Magic Attack Percentage", 8.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Magic Attack Percentage", 8.0, 0.0, Double.MAX_VALUE);
             CorrosiverDamageCap = builder.comment("[Boss] Damage Cap : 18")
-                    .defineInRange("Corrosiver Damage Cap", 18, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Damage Cap", 18, 0.0, Double.MAX_VALUE);
             CorrosiverDamageCooldownTick = builder.comment("[Boss] Damage Cooldown Tick : 20")
-                    .defineInRange("Corrosiver Damage Cooldown Tick", 20, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Dragon-Corrosiver Damage Cooldown Tick", 20, 0.0, Double.MAX_VALUE);
             builder.pop();
             //紫沙鬼婆
             builder.push("Purple Sand Hag");
@@ -2008,7 +2013,7 @@ public final class OtherMainConfig {
             GemstoneMalignasaurBreakToughNeedBaseDamage = builder.comment("[Boss] Break Tough Need Base Damage : 6.0")
                     .defineInRange("Gemstone Malignasaur Break Tough Need Base Damage", 6.0, 0.0, Double.MAX_VALUE);
             GemstoneMalignasaurMeleeAttackCooldown = builder.comment("[Boss] Melee Attack Cooldown : 0.25")
-                    .defineInRange("Bright Land Beast Melee Attack Cooldown", 0.25, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Gemstone Malignasaur Melee Attack Cooldown", 0.25, 0.0, Double.MAX_VALUE);
             GemstoneMalignasaurJumpAttackLevel = builder.comment("[Boss] Jump Attack Level : 3")
                     .defineInRange("Gemstone Malignasaur Jump Attack Level", 3, 0, Integer.MAX_VALUE);
             GemstoneMalignasaurJumpAttackCooldown = builder.comment("[Boss] Jump Attack Cooldown : 18")
@@ -2090,7 +2095,7 @@ public final class OtherMainConfig {
             SerponCombatExecuterMeleeDamage = builder.comment("[Boss] Melee Damage : 8.0")
                     .defineInRange("Serpon Combat Executer Melee Damage", 8.0, 0.0, Double.MAX_VALUE);
             SerponCombatExecuterMeleeDamageFury = builder.comment("[Boss] Melee Damage Fury : 13.0")
-                    .defineInRange("Serpon Combat Executer Melee Damage Fury", 12.0, 0.0, Double.MAX_VALUE);
+                    .defineInRange("Serpon Combat Executer Melee Damage Fury", 13.0, 0.0, Double.MAX_VALUE);
             SerponCombatExecuterArmor = builder.comment("[Boss] Armor : 5.0")
                     .defineInRange("Serpon Combat Executer Armor", 5.0, 0.0, Double.MAX_VALUE);
             SerponCombatExecuterArmorFury = builder.comment("[Boss] Armor Fury : 18.0")

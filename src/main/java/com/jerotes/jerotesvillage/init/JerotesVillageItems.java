@@ -1130,6 +1130,7 @@ public class JerotesVillageItems implements JerotesItemsAdd {
 	public static final RegistryObject<Item> SERPON_FIRE_CHARGE = REGISTRY.register("serpon_fire_charge", () -> new Shoot());
 	public static final RegistryObject<Item> SERPON_FIREBALL = REGISTRY.register("serpon_fireball", () -> new Shoot());
 	public static final RegistryObject<Item> SERPON_FLAMES = REGISTRY.register("serpon_flames", () -> new Shoot());
+	public static final RegistryObject<Item> VIRTUAL_CAVE_SURGE_SIPHON = REGISTRY.register("virtual_cave_surge_siphon", () -> new Shoot());
 	public static final RegistryObject<Item> SECRETE_FIRE_OIL_BOMB = REGISTRY.register("secrete_fire_oil_bomb", () -> new Shoot());
 	public static final RegistryObject<Item> SMOKE_MISSILE = REGISTRY.register("smoke_missile", () -> new Shoot());
 	public static final RegistryObject<Item> SERPON_SIROCCO = REGISTRY.register("serpon_sirocco", () -> new Shoot());

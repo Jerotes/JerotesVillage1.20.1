@@ -355,10 +355,10 @@ public class PurpleSandHagEntity extends BaseHagEntity implements BossEntity, Lo
 						this.setAnimTick(15);
 						this.setAnimationState("spell2");
 					}
-					OtherSpellFind.ConjureSpirve(this, 3);
+					OtherSpellFind.ConjureSpirves(this, 3);
 					OtherParticlesUse.ParticleMagic(this);
 					if (!this.isSilent()) {
-						this.level().playSound(null, this.getX(), this.getY(), this.getZ(), JerotesVillageSoundEvents.PURPLE_SAND_HAG_CONJURE_SPIRVE, this.getSoundSource(), 10.0f, 0.8f + this.getRandom().nextFloat() * 0.4f);
+						this.level().playSound(null, this.getX(), this.getY(), this.getZ(), JerotesVillageSoundEvents.PURPLE_SAND_HAG_CONJURE_SPIRVES, this.getSoundSource(), 10.0f, 0.8f + this.getRandom().nextFloat() * 0.4f);
 					}
 				}
 			}

@@ -1276,7 +1276,9 @@ public abstract class BaseHagEntity extends Raider implements WizardEntity, Spel
 			List<BaseHagEntity> list = this.level().getEntitiesOfClass(BaseHagEntity.class, this.getBoundingBox().inflate(10.0, 10.0, 10.0));
 			list.removeIf(entity -> (entity.getTeam() != null || this.getTeam() != null) && !this.isAlliedTo(entity));
 			if (!this.level().isClientSide) {
-				this.setCoven(list.size() >= 3);
+				boolean coven = list.size() >= 3;
+				this.setCoven(coven);
+				this.setCovens(coven);
 			}
 			if (this.isCoven() && !this.isInvisible()) {
 				if (this.level() instanceof ServerLevel serverLevel) {

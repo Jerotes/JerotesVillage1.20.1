@@ -134,6 +134,8 @@ public class CrazyAxe extends ItemToolBaseAxe {
 							}
 						continue;
 					}
+					if (livingEntity == hurt) continue;
+					//if (AttackFind.FindCanNotAttack(livingEntity, hurt)) continue;
 					if (!hurt.hasLineOfSight(livingEntity) && !(hurt.getBoundingBox().intersects(livingEntity.getBoundingBox()))) continue;
 					if (!Main.canSee(hurt, livingEntity) && !(hurt.getBoundingBox().intersects(livingEntity.getBoundingBox()))) continue;
 					double healthOld = hurt.getHealth();

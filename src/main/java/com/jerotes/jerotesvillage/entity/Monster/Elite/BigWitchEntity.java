@@ -9,7 +9,6 @@ import com.jerotes.jerotes.init.JerotesMobEffects;
 import com.jerotes.jerotes.init.JerotesPotions;
 import com.jerotes.jerotes.spell.SpellList;
 import com.jerotes.jerotes.util.AttackFind;
-import com.jerotes.jerotes.util.EntityAndItemFind;
 import com.jerotes.jerotes.util.EntityFactionFind;
 import com.jerotes.jerotes.util.Main;
 import com.jerotes.jerotesvillage.config.OtherMainConfig;
@@ -255,7 +254,7 @@ public class BigWitchEntity extends Witch implements PurpleSandSisterhoodEntity,
 			potion = JerotesVillagePotions.LOVES_SHAME.get();
 		}
 		//大巫婆伤害药水
-		else if (livingEntity.getHealth() >= 8.0f && !livingEntity.hasEffect(MobEffects.POISON)) {
+		else if (livingEntity.getHealth() >= 8.0f && !livingEntity.hasEffect(MobEffects.POISON) && livingEntity.getMobType() != MobType.UNDEAD) {
 			potion = JerotesVillagePotions.BIG_WITCH_HURT.get();
 		}
 		//虚弱药水

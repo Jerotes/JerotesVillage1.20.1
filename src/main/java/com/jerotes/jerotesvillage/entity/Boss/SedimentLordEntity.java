@@ -1214,7 +1214,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 					if ((Main.mobSizeSmall(hurt) || Main.mobSizeMedium(hurt) || Main.mobSizeLarge(hurt))
 							&& !EntityAndItemFind.isNoSpecialKnockback(hurt.getType())) {
 						if (!hurt.level().isClientSide()) {
-							hurt.addEffect(new MobEffectInstance(JerotesMobEffects.PRONE.get(), spellLevel * 20, 0));
+							hurt.addEffect(new MobEffectInstance(JerotesMobEffects.PRONE.get(), spellLevel * 20, 0, false, false), this);
 						}
 					}
 				}

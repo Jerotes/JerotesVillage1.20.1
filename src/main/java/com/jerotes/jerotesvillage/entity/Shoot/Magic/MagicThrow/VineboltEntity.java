@@ -171,6 +171,7 @@ public class VineboltEntity extends MagicAboutThrowEntity implements MagicAbout 
 				this.yo = y;
 				this.zo = z;
 				this.setPos(x, y, z);
+				this.setRot(this.getRelativeYaw(), this.getRelativePitch());
 				this.xOld = target.xOld;
 				this.yOld = target.yOld + target.getBbHeight() / 2.0;
 				this.zOld = target.zOld;

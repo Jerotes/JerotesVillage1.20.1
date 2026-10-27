@@ -101,9 +101,7 @@ public class BitterColdHammer extends ItemToolBaseTwoHandedHammer {
 					HitResult hitResult = Minecraft.getInstance().hitResult;
 					boolean miningBlock = hitResult != null && hitResult.getType() == HitResult.Type.BLOCK;
 					if (getAttackType(itemInHand) == 0) {
-						boolean crit = AttackFind.shouldCritAttack(player, player) || (player.fallDistance > 1.5f && !player.isFallFlying());
-						setAttackType(itemInHand, (crit || miningBlock) ? 4 : Main.randomReach(player.getRandom(), 1, 3));
-						setCritAttack(itemInHand, crit);
+					    setAttackType(itemInHand, miningBlock ? 4 : Main.randomReach(player.getRandom(), 1, 3));
 					}
 					if (swingProcess >= 0.98) {
 						setAttackType(itemInHand, 0);

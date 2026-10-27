@@ -168,8 +168,7 @@ public class BeachTerrorBirdEntity extends BaseTamableAnimalEntity implements Ne
 
 	@Override
 	public boolean isFood(ItemStack itemStack) {
-		Item item = itemStack.getItem();
-		return item.isEdible() && item.getFoodProperties().isMeat();
+		return FOOD_ITEMS.test(itemStack);
 	}
 
 	@Nullable

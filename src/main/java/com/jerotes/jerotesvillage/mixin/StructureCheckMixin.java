@@ -1,9 +1,9 @@
 package com.jerotes.jerotesvillage.mixin;
 
-import com.jerotes.jerotesvillage.config.StructureFilterConfig;
+import com.jerotes.jerotesvillage.init.JerotesVillageDimensions;
+import com.jerotes.jerotesvillage.util.StructureFilter;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
@@ -28,15 +28,14 @@ public class StructureCheckMixin {
     private Registry<Structure> structureConfigs;
 
     @Inject(method = "checkStart", at = @At("HEAD"), cancellable = true)
-    private void onCheckStart(ChunkPos chunkPos, Structure structure, boolean skipKnown,
-                              CallbackInfoReturnable<StructureCheckResult> cir) {
-        ResourceLocation currentDim = this.dimension.location();
-        ResourceLocation structureId = this.structureConfigs.getKey(structure);
-        if (structureId == null) return;
-        String modId = structureId.getNamespace();
-        boolean allowed = StructureFilterConfig.isStructureAllowed(currentDim, modId);
-        if (!allowed) {
-            cir.setReturnValue(StructureCheckResult.START_NOT_PRESENT);
+    private void jerotesvillage$filterStructureInSecondRoundWorld(ChunkPos chunkPos, Structure structure, boolean skipKnown,
+                                                                  CallbackInfoReturnable<StructureCheckResult> cir) {
+        if (!this.dimension.location().equals(JerotesVillageDimensions.SECOND_ROUND_WORLD.location())) {
+            return;
         }
+        if (StructureFilter.isAllowed(this.structureConfigs, structure)) {
+            return;
+        }
+        cir.setReturnValue(StructureCheckResult.START_NOT_PRESENT);
     }
 }

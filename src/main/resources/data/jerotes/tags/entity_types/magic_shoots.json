@@ -3,6 +3,7 @@
   "values": [
     "jerotesvillage:serpon_fireball",
     "jerotesvillage:serpon_flames",
+    "jerotesvillage:virtual_cave_surge_siphon",
     "jerotesvillage:predation_toothed_flower_shoot",
     "jerotesvillage:corrosiver_breath",
     "jerotesvillage:lightning_spit",
@@ -19,10 +20,12 @@
     "jerotesvillage:ocean_current_breath",
     "jerotesvillage:whirlpool",
     "jerotesvillage:ice_rock_throw",
+    "jerotesvillage:astral_javelin",
     "jerotesvillage:elastic_light_ball",
     "jerotesvillage:bitter_cold_ice_spike",
     "jerotesvillage:corrosive_ice_spike",
     "jerotesvillage:radiant_bomb",
+    "jerotesvillage:skylance_dragon_beam",
     "jerotesvillage:ominous_flames",
     "jerotesvillage:arcane_light_spot",
     "jerotesvillage:worm_thunderstorm",
@@ -40,6 +43,8 @@
     "jerotesvillage:slavery_supervisor_chain",
     "jerotesvillage:ruins_wind_charge",
     "jerotesvillage:snap_bolt",
+    "jerotesvillage:virosaans_magic_missile",
+    "jerotesvillage:starburst_marker",
     "jerotesvillage:whip_the_tide",
     "jerotesvillage:projectile_vinebolt"
   ]

@@ -63,7 +63,7 @@ public class VirosaansForceBurstBallEntity extends AbstractFireballEntity {
                 if (bl) {
                     if (!EntityAndItemFind.savingSpellThrow(livingHurt)) {
                         if (!this.level().isClientSide()) {
-                            livingHurt.addEffect(new MobEffectInstance(JerotesMobEffects.PRONE.get(), 120, 0), this.getOwner());
+                            livingHurt.addEffect(new MobEffectInstance(JerotesMobEffects.PRONE.get(), 120, 0, false, false), this.getOwner());
                         }
                     }
                 }
@@ -74,16 +74,18 @@ public class VirosaansForceBurstBallEntity extends AbstractFireballEntity {
                 } else {
                     knock = 0.0;
                 }
-                double d2 = Math.max(0.2, 1.2 - knock);
-                livingHurt.setDeltaMovement(livingHurt.getDeltaMovement().add(
-                        -(this.getX() - livingHurt.getX()) * d2 / 3,
-                        -(this.getY() - livingHurt.getY()) * d2 / 8,
-                        -(this.getZ() - livingHurt.getZ()) * d2 / 3));
-                if (Main.mobSizeSmall(hurt) || Main.mobSizeMedium(hurt) || Main.mobSizeLarge(hurt)) {
+                if (!EntityAndItemFind.isNoSpecialKnockback(hurt.getType())) {
+                    double d2 = Math.max(0.2, 1.2 - knock);
                     livingHurt.setDeltaMovement(livingHurt.getDeltaMovement().add(
-                            -(this.getX() - hurt.getX()) * strength * 0.2F,
-                            -(this.getY() - hurt.getY()) * strength * 0.1F,
-                            -(this.getZ() - hurt.getZ()) * strength * 0.2F));
+                            -(this.getX() - livingHurt.getX()) * d2 / 3,
+                            -(this.getY() - livingHurt.getY()) * d2 / 8,
+                            -(this.getZ() - livingHurt.getZ()) * d2 / 3));
+                    if (Main.mobSizeSmall(hurt) || Main.mobSizeMedium(hurt) || Main.mobSizeLarge(hurt)) {
+                        livingHurt.setDeltaMovement(livingHurt.getDeltaMovement().add(
+                                -(this.getX() - hurt.getX()) * strength * 0.2F,
+                                -(this.getY() - hurt.getY()) * strength * 0.1F,
+                                -(this.getZ() - hurt.getZ()) * strength * 0.2F));
+                    }
                 }
             }
             if (hurt instanceof ItemEntity itemEntity && itemEntity.getItem().getRarity() == Rarity.COMMON) {

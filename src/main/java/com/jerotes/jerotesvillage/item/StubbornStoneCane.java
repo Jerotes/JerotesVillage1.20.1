@@ -3,17 +3,23 @@ package com.jerotes.jerotesvillage.item;
 import com.jerotes.jerotes.init.JerotesSoundEvents;
 import com.jerotes.jerotesvillage.init.JerotesVillageItems;
 import com.jerotes.jerotesvillage.init.JerotesVillageMobEffects;
+import net.minecraft.ChatFormatting;
+import net.minecraft.Util;
+import net.minecraft.network.chat.CommonComponents;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Vanishable;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 public class StubbornStoneCane extends Item implements Vanishable {
 	public StubbornStoneCane() {
@@ -50,5 +56,14 @@ public class StubbornStoneCane extends Item implements Vanishable {
 	@Override
 	public boolean isValidRepairItem(ItemStack itemStack, ItemStack itemStack2) {
 		return itemStack2.is(JerotesVillageItems.THROWING_STUBBORN_STONE.get()) || super.isValidRepairItem(itemStack, itemStack2);
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> list, TooltipFlag tooltipFlag) {
+		super.appendHoverText(itemStack, level, list, tooltipFlag);
+		list.add(this.getDisplayName().withStyle(ChatFormatting.GRAY));
+	}
+	public MutableComponent getDisplayName() {
+		return Component.translatable(this.getDescriptionId() + ".desc");
 	}
 }

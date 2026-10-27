@@ -4085,12 +4085,12 @@
       }
     ]
   },
-  "purple_sand_hag_conjure_spirve": {
-    "subtitle": "subtitle.jerotesvillage.purple_sand_hag_conjure_spirve",
+  "purple_sand_hag_conjure_spirves": {
+    "subtitle": "subtitle.jerotesvillage.purple_sand_hag_conjure_spirves",
     "category": "hostile",
     "sounds": [
       {
-        "name": "jerotesvillage:entities/hag/conjure_spirve",
+        "name": "jerotesvillage:entities/hag/conjure_spirves",
         "volume": 1.0
       }
     ]
@@ -9957,6 +9957,26 @@
       }
     ]
   },
+  "magic_virosaans_magic_missile": {
+    "subtitle": "subtitle.jerotesvillage.magic_virosaans_magic_missile",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotesvillage:others/magic/missile",
+        "volume": 1.0
+      }
+    ]
+  },
+  "magic_starburst_marker": {
+    "subtitle": "subtitle.jerotesvillage.magic_starburst_marker",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotesvillage:others/magic/missile",
+        "volume": 1.0
+      }
+    ]
+  },
   "magic_arcane_light_spot": {
     "subtitle": "subtitle.jerotesvillage.magic_arcane_light_spot",
     "category": "neutral",
@@ -9993,6 +10013,16 @@
     "sounds": [
       {
         "name": "jerotesvillage:others/magic/throw",
+        "volume": 1.0
+      }
+    ]
+  },
+  "magic_astral_javelin": {
+    "subtitle": "subtitle.jerotesvillage.magic_astral_javelin",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotes:others/magic/force",
         "volume": 1.0
       }
     ]
@@ -10044,6 +10074,17 @@
       },
       {
         "name": "jerotes:others/magic/fire_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "magic_virtual_cave_surge_siphon": {
+    "subtitle": "subtitle.jerotesvillage.magic_virtual_cave_surge_siphon",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotes:others/magic/scream",
         "volume": 1.0,
         "weight": 1.0
       }
@@ -10136,6 +10177,16 @@
     "sounds": [
       {
         "name": "jerotesvillage:others/magic/force",
+        "volume": 1.0
+      }
+    ]
+  },
+  "magic_skylance_dragon_beam": {
+    "subtitle": "subtitle.jerotesvillage.magic_skylance_dragon_beam",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotes:others/magic/lightning",
         "volume": 1.0
       }
     ]

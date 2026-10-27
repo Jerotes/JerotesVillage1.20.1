@@ -91,7 +91,8 @@ public class BrightGoldenMelonHammer extends ItemToolBaseHammer {
 			List<LivingEntity> list = serverLevel.getEntitiesOfClass(LivingEntity.class, user.getBoundingBox().inflate(reachs, reachs, reachs));
 			for (LivingEntity hurt : list) {
 				if (hurt == null || hurt.distanceTo(user) > reachs * 4) continue;
-				if (AttackFind.FindCanNotAttack(user, hurt)) continue;
+				if (user == hurt) continue;
+				//if (AttackFind.FindCanNotAttack(user, hurt)) continue;
 				if (!hurt.hasLineOfSight(user) && !(hurt.getBoundingBox().intersects(user.getBoundingBox()))) continue;
 				AttackFind.attackBegin(user, hurt);
 				AttackFind.attackAfter(user, hurt, 1f, 0.5f, false, 0f);

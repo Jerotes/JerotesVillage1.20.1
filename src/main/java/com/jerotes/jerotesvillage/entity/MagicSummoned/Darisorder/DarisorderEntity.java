@@ -14,6 +14,7 @@ import com.jerotes.jerotes.spell.SpellType;
 import com.jerotes.jerotes.util.AttackFind;
 import com.jerotes.jerotes.util.EntityAndItemFind;
 import com.jerotes.jerotes.util.Main;
+import com.jerotes.jerotes.util.ParticlesUse;
 import com.jerotes.jerotesvillage.entity.Animal.GlowSparrowEntity;
 import com.jerotes.jerotesvillage.goal.DarisorderAvoidGlowEntityGoal;
 import com.jerotes.jerotesvillage.goal.DarisorderAvoidPlayerGoal;
@@ -748,6 +749,10 @@ public class DarisorderEntity extends MagicSummonedEntity implements JerotesEnti
 			this.entityData.set(DATA_OWNER_UUID_ID, Optional.empty());
 		}
 		else {
+			if (this.level() instanceof ServerLevel serverLevel) {
+				ParticlesUse.summonParticle(serverLevel, this, this.getX(), this.getY(), this.getZ(),
+						0x11100f, 0x252423);
+			}
 			this.discard();
 		}
 		return true;

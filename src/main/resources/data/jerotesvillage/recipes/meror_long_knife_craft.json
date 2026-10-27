@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "  a",
-    " c ",
-    "b  "
+    "  c",
+    "ad ",
+    "ba "
   ],
   "key": {
     "a": {
@@ -15,6 +15,9 @@
     },
     "c": {
       "item": "jerotesvillage:meror_energy_regime"
+    },
+    "d": {
+      "item": "jerotes:simple_greatsword"
     }
   },
   "result": {

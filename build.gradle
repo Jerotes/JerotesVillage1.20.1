@@ -34,6 +34,7 @@ minecraft {
     runs {
         configureEach {
             workingDirectory project.file('run')
+            jvmArgs '-Xmx2G', '-Xms512M', '-XX:MaxMetaspaceSize=512m'
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             mods {
@@ -88,7 +89,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-    implementation fg.deobf("blank:jerotes-1.20.1:1.3.3")
+    implementation fg.deobf("blank:jerotes-1.20.1:1.3.4")
     runtimeOnly fg.deobf("blank:blackgoldalliance-1.20.1:1.0.3")
     //implementation fg.deobf("blank:tacz-1.20.1:1.1.7")
 

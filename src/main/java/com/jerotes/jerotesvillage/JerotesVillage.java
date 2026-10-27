@@ -4,7 +4,6 @@ import com.jerotes.jerotes.spell.SpellRegistry;
 import com.jerotes.jerotesvillage.client.CilentInit;
 import com.jerotes.jerotesvillage.compat.tacz.MerorsResourceManager;
 import com.jerotes.jerotesvillage.config.OtherMainConfig;
-import com.jerotes.jerotesvillage.config.StructureFilterConfig;
 import com.jerotes.jerotesvillage.entity.Other.WonderlinPainting.WonderlinPaintingVariants;
 import com.jerotes.jerotesvillage.event.RendererEvent;
 import com.jerotes.jerotesvillage.init.*;
@@ -67,7 +66,6 @@ public class JerotesVillage {
         for (OtherSpellType type : OtherSpellType.values()) {
             SpellRegistry.register(type);
         }
-        StructureFilterConfig.load();
         MinecraftForge.EVENT_BUS.register(this);
     }
 

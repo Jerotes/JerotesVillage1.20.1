@@ -46,10 +46,12 @@ public class JerotesVillageEntityRenderers {
         event.registerEntityRenderer(JerotesVillageEntityType.CORROSIVE_SNOW_CLOUD.get(), NoopRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.MEROR_TRAP.get(), MerorTrapRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.ELECTROFLASH.get(), ElectroflashRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.SKYLANCE_DRAGON_BEAM.get(), SkylanceDragonBeamRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.VIROSAANS_WIND_OF_SLAUGHTER_EFFECT.get(), NoopRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.VIROSAANS_FORCE_BURST_BALL.get(), VirosaansForceBurstBallRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.TAKE_ROOT.get(), TakeRootRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.DEAD_CENTER.get(), DeadCenterRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.ASTRAL_JAVELIN_POINT.get(), AstralJavelinPointRenderer::new);
 
         event.registerEntityRenderer(JerotesVillageEntityType.SMART.get(), SmartRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SMART_BULGE.get(), BulgeRenderer::new);
@@ -71,6 +73,8 @@ public class JerotesVillageEntityRenderers {
         event.registerEntityRenderer(JerotesVillageEntityType.ELASTIC_LIGHT_BALL.get(), ElasticLightBallRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.RADIANT_BOMB.get(), RadiantBombRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SNAP_BOLT.get(), SnapBoltRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.VIROSAANS_MAGIC_MISSILE.get(), VirosaansMagicMissileRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.STARBURST_MARKER.get(), StarburstMarkerRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SLAVERY_SUPERVISOR_CHAIN.get(), RayRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.BLOODY_SCREAM.get(), ShootRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.PUSH_FORCE.get(), RayRenderer::new);
@@ -81,6 +85,7 @@ public class JerotesVillageEntityRenderers {
         event.registerEntityRenderer(JerotesVillageEntityType.INDOMITABLE_WILL.get(), TargetRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.ICE_ROCK_THROWING_BALL.get(), ShootRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.ICE_ROCK_THROW.get(), IceRockThrowRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.ASTRAL_JAVELIN.get(), AstralJavelinRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.WHIP_THE_TIDE.get(), WhipTheTideRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.WHIP_THE_TIDE_VINE.get(), WhipTheTideVineRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.CORROSIVER_BREATH.get(), ShootRenderer::new);
@@ -112,6 +117,7 @@ public class JerotesVillageEntityRenderers {
         event.registerEntityRenderer(JerotesVillageEntityType.DROUGHT_FIREBALL.get(), LittleFireballRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SERPON_FIREBALL.get(), LittleFireballRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SERPON_FLAMES.get(), MagicSprayRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.VIRTUAL_CAVE_SURGE_SIPHON.get(), MagicSprayRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SECRETE_FIRE_OIL_BOMB.get(), ShootRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SMOKE_MISSILE.get(), ShootRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SERPON_SIROCCO.get(), SerponSiroccoRenderer::new);

@@ -10,8 +10,6 @@ import com.jerotes.jerotesvillage.init.JerotesVillageItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
@@ -64,6 +62,9 @@ public class CorrosiveIceSpikeEntity extends MagicAboutThrowEntity {
     @Override
     protected void onHitBlock(BlockHitResult blockHitResult) {
         super.onHitBlock(blockHitResult);
+        if (this.level().isClientSide) {
+            return;
+        }
         BlockPos center = blockHitResult.getBlockPos();
         Level level = this.level();
         Entity owner = this.getOwner();

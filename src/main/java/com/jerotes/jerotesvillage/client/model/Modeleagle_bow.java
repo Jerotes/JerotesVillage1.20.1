@@ -11,6 +11,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.HumanoidArm;
 import org.joml.Vector3f;
@@ -85,7 +86,7 @@ public class Modeleagle_bow<T extends EagleBowEntity> extends Modelspecial_actio
 	}
 
 	@Override
-	public void setupAnim(T t, float f, float f2, float f3, float f4, float f5) {
+		public void setupAnim(T t, float f, float f2, float f3, float f4, float f5) {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.head.yRot = f4 * ((float)Math.PI / 180F);
 		this.head.xRot = f5 * ((float)Math.PI / 180F);
@@ -93,7 +94,9 @@ public class Modeleagle_bow<T extends EagleBowEntity> extends Modelspecial_actio
 		this.animateWalk(EagleBowAnimation.ATTACKWALK, f, f2 * Math.min(1, (t.attackAnimProgress / 10f)) * Math.min(1, (1 - t.shootAnimProgress / 10f)), 1.5f, 2.0f);
 		this.animateWalk(EagleBowAnimation.WALK, f, f2 * Math.min(1, (1 - t.attackAnimProgress / 10f)) * Math.min(1, (1 - t.shootAnimProgress / 10f)), 1.5f, 2.0f);
 		this.animate(t.idleAnimationState, EagleBowAnimation.IDLE, f3);
-		this.animateIdle2(t, t.idleAnimationState, EagleBowAnimation.IDLEBASE, f3);
+		this.animateIdle2(t, t.idleAnimationState, EagleBowAnimation.IDLEBASE, f3,
+				Mth.clamp((1 - (Mth.clamp(f2 - 0.5f, 0, 1)) * 2f), 0, 1)
+		);
 
 		this.animate(t.attack1AnimationState, EagleBowAnimation.ATTACK1, f3);
 		this.animate(t.attack2AnimationState, EagleBowAnimation.ATTACK2, f3);
@@ -104,6 +107,8 @@ public class Modeleagle_bow<T extends EagleBowEntity> extends Modelspecial_actio
 		this.animate(t.shootSlow2AnimationState, EagleBowAnimation.SHOOTSLOW2, f3);
 		this.animate(t.shootSlow3AnimationState, EagleBowAnimation.SHOOTSLOW3, f3);
 		this.animate(t.shootSlow4AnimationState, EagleBowAnimation.SHOOTSLOW4, f3);
+
+		this.animate(t.deadAnimationState, EagleBowAnimation.DEAD, f3);
 		this.right_arm.xScale *= 1.001f;
 		this.right_arm.zScale *= 1.001f;
 		this.left_arm.xScale *= 1.001f;
@@ -116,12 +121,12 @@ public class Modeleagle_bow<T extends EagleBowEntity> extends Modelspecial_actio
 		this.right_pants.copyFrom(this.right_leg);
 	}
 	protected void animateIdle2(EagleBowEntity entity, AnimationState animationState,
-								AnimationDefinition animation, float ageInTicks) {
+								AnimationDefinition animation, float ageInTicks, float f2) {
 		animationState.updateTime(ageInTicks, 1.0F);
 		animationState.ifStarted((state) -> {
 			Modelspecial_action.animate(this, animation,
 					animationState.getAccumulatedTime(),
-					Math.min(1, 1 - entity.attackAnimProgress / 10f) * Math.min(1, 1 - entity.shootAnimProgress / 10f),
+					Math.min(1, 1 - entity.attackAnimProgress / 10f) * Math.min(1, 1 - entity.shootAnimProgress / 10f) * f2,
 					new Vector3f());
 		});
 	}

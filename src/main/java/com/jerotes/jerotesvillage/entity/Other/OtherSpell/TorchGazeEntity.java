@@ -72,7 +72,7 @@ public class TorchGazeEntity extends OtherSpellBaseEntity implements TraceableEn
             List<Entity> list = this.level().getEntitiesOfClass(Entity.class, this.getBoundingBox().inflate(4f,8.5f,4f).move(0,9f,0));
             double radius = 2.25f;
             double radiusSq = radius * radius;
-            list.removeIf(livingEntity -> livingEntity.distanceToSqr(this) > radiusSq);
+            list.removeIf(livingEntity -> livingEntity.distanceToSqr(this) > (radiusSq + ((Main.mobWidth(livingEntity) / 2) * (Main.mobWidth(livingEntity) / 2))));
             if (this.level() instanceof ServerLevel serverLevel) {
                 for (Entity entity : list) {
                     if (entity instanceof LivingEntity livingEntity) {
@@ -99,10 +99,10 @@ public class TorchGazeEntity extends OtherSpellBaseEntity implements TraceableEn
             damageSource2 = AttackFind.findDamageType(this, JerotesDamageTypes.BYPASSES_COOLDOWN_FIRE, this, livingEntity2);
         }
         boolean bl = livingEntity.hurt(damageSource,
-                Main.rollDice(5 + getSpellLevel() - 5, 6, getRandom())
+                Main.rollDice(4 + getSpellLevel() - 5, 6, getRandom())
         );
         boolean bl2 = livingEntity.hurt(damageSource2,
-                Main.rollDice(5 + getSpellLevel() - 5, 6, getRandom())
+                Main.rollDice(4 + getSpellLevel() - 5, 6, getRandom())
         );
         if (bl) {
             if (this.level() instanceof ServerLevel serverLevel) {

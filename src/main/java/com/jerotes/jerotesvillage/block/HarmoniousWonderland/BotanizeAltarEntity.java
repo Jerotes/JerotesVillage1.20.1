@@ -1,16 +1,15 @@
 package com.jerotes.jerotesvillage.block.HarmoniousWonderland;
 
 import com.jerotes.jerotes.util.Main;
+import com.jerotes.jerotesvillage.client.block.BotanizeAltarClientTick;
 import com.jerotes.jerotesvillage.entity.Boss.Biome.CelestialCoilvineEntity;
 import com.jerotes.jerotesvillage.event.AdvancementEvent;
 import com.jerotes.jerotesvillage.init.JerotesVillageBlockEntityType;
 import com.jerotes.jerotesvillage.init.JerotesVillageBlocks;
 import com.jerotes.jerotesvillage.init.JerotesVillageEntityType;
 import com.jerotes.jerotesvillage.init.JerotesVillageItems;
-import com.jerotes.jerotesvillage.init.JerotesVillageParticleTypes;
 import com.jerotes.jerotesvillage.init.JerotesVillageSoundEvents;
 import com.jerotes.jerotesvillage.util.SpawnRules;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -33,12 +32,13 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.Vec3;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.DistExecutor;
 
 import javax.annotation.Nullable;
 
 public class BotanizeAltarEntity extends BlockEntity {
 	public static final String GIFT_ITEM = "jerotesvillage:gameplay/jerotesvillage_other/botanize_gift";
-	private int tickCount;
 
 	public BotanizeAltarEntity(BlockPos blockPos, BlockState blockState) {
 		super(JerotesVillageBlockEntityType.BOTANIZE_ALTAR.get(), blockPos, blockState);
@@ -49,7 +49,7 @@ public class BotanizeAltarEntity extends BlockEntity {
 		return (levelIn, blockPos, blockStateIn, blockEntity) -> {
 			BotanizeAltarEntity botanizeAltarEntity = (BotanizeAltarEntity) blockEntity;
 			if (levelIn.isClientSide()) {
-				botanizeAltarEntity.clientTick();
+				DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> BotanizeAltarClientTick.tick(botanizeAltarEntity));
 			} else {
 				botanizeAltarEntity.serverTick();
 			}
@@ -61,21 +61,6 @@ public class BotanizeAltarEntity extends BlockEntity {
 				|| itemStack.is(JerotesVillageItems.TYRANT_OF_THE_MOUNTAIN_REALM_HELMET_PLUME.get())
 				|| itemStack.is(JerotesVillageItems.MUSIC_DISC_TYRANT_OF_THE_MOUNTAIN_REALM.get())
 				|| itemStack.is(ItemTags.FLOWERS);
-	}
-
-	private void clientTick() {
-		Player player = Minecraft.getInstance().player;
-		if (player == null || !(canOffer(player.getMainHandItem()) || canOffer(player.getOffhandItem()))) {
-			return;
-		}
-		++this.tickCount;
-		if (this.tickCount % 5 != 0) {
-			return;
-		}
-		BlockPos blockPos = this.getBlockPos();
-		this.level.addParticle(JerotesVillageParticleTypes.CELESTIAL_COILVINE_TARGET.get(),
-				blockPos.getX() + 0.5D, blockPos.getY() + 1.2D, blockPos.getZ() + 0.5D,
-				(this.level.random.nextFloat() / 5 - 0.1f) * 0.05f, (0.15f + this.level.random.nextFloat() / 5) * 0.05f, (this.level.random.nextFloat() / 5 - 0.1f) * 0.05f);
 	}
 
 	private void serverTick() {

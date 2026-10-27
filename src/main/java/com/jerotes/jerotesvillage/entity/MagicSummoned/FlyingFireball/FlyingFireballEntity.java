@@ -340,6 +340,10 @@ public class FlyingFireballEntity extends MagicSummonedEntity implements Jerotes
 			SpellType.setConcentrationSpellTargetJerotes(this.getOwner(), UUID.fromString("00000000-0000-0000-0000-000000000000"));
 			SpellType.endConcentrationMessage(this.getOwner(), OtherSpellType.JEROTESVILLAGE_CONJURE_FLYING_FIREBALL.magicSpellGet(1, (LivingEntity) null, (Entity) null).getSpellName());
 		}
+		if (this.level() instanceof ServerLevel serverLevel) {
+			ParticlesUse.summonParticle(serverLevel, this, this.getX(), this.getY(), this.getZ(),
+					0xa32800, 0xeac900);
+		}
 		this.discard();
 		return true;
 	}

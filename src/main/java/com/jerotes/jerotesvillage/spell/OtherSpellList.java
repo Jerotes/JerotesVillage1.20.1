@@ -645,6 +645,7 @@ public class OtherSpellList {
 			}
 		};
 	}
+	//一指弹顷
 	public static MagicSpell SnapBolt(int n, LivingEntity caster, Entity target) {
 		return new MagicSpell(n, caster, target, MagicType.SHOOT, MagicType.MAIN, "snap_bolt", JerotesVillageParticleTypes.SNAP_BOLT_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_SNAP_BOLT){
 			public boolean spellFindUse() {
@@ -655,6 +656,54 @@ public class OtherSpellList {
 			}
 			public int getBaseSpellLevel() {
 				return 4;
+			}
+			public SpellSchool getSpellSchool() {
+				return SpellSchool.EVOCATION;
+			}
+			public float getSpellDistanceBase() {
+				return 90;
+			}
+		};
+	}
+	//维落萨恩的魔法飞弹
+	public static MagicSpell VirosaansMagicMissile(int n, LivingEntity caster, Entity target) {
+		return new MagicSpell(n, caster, target, MagicType.SHOOT, MagicType.MAIN, "virosaans_magic_missile", JerotesVillageParticleTypes.VIROSAANS_MAGIC_MISSILE_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_VIROSAANS_MAGIC_MISSILE){
+			public boolean spellFindUse() {
+				return OtherSpellFind.VirosaansMagicMissile(getCaster(), getTarget(), getSpellLevel(), getSpellAccuracy(), 12, 5, getCaster() instanceof Player, getSubcategory());
+			}
+			public String getSpellModId() {
+				return JerotesVillage.MODID;
+			}
+			public int getBaseSpellLevel() {
+				return 1;
+			}
+			public SpellSchool getSpellSchool() {
+				return SpellSchool.EVOCATION;
+			}
+			public float getSpellDistanceBase() {
+				return 40;
+			}
+			//
+			public int getCustomSubcategoryReachAdd() {
+				return 6;
+			}
+			public int usedByNonPlayerFindSubcategory(LivingEntity livingEntity) {
+				return 0;
+			}
+			//
+		};
+	}
+	//星芒标点
+	public static MagicSpell StarburstMarker(int n, LivingEntity caster, Entity target) {
+		return new MagicSpell(n, caster, target, MagicType.SHOOT, MagicType.MAIN, "starburst_marker", JerotesVillageParticleTypes.STARBURST_MARKER_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_STARBURST_MARKER){
+			public boolean spellFindUse() {
+				return OtherSpellFind.StarburstMarker(getCaster(), getTarget(), getSpellLevel(), getSpellAccuracy(), 3 + (getSpellLevel() - 2) * 2, 5, getCaster() instanceof Player);
+			}
+			public String getSpellModId() {
+				return JerotesVillage.MODID;
+			}
+			public int getBaseSpellLevel() {
+				return 2;
 			}
 			public SpellSchool getSpellSchool() {
 				return SpellSchool.EVOCATION;
@@ -802,6 +851,26 @@ public class OtherSpellList {
 			}
 		};
 	}
+	//星体标枪
+	public static MagicSpell AstralJavelin(int n, LivingEntity caster, Entity target) {
+		return new MagicSpell(n, caster, target, MagicType.SHOOT, MagicType.MAIN, "astral_javelin", JerotesVillageParticleTypes.ASTRAL_JAVELIN_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_ASTRAL_JAVELIN){
+			public boolean spellFindUse() {
+				return OtherSpellFind.AstralJavelin(getCaster(), getTarget(), getSpellLevel(), 6 + (getSpellLevel() - 1) * 3, 1.6f, getSpellAccuracy(), 1, 5, getCaster() instanceof Player);
+			}
+			public String getSpellModId() {
+				return JerotesVillage.MODID;
+			}
+			public int getBaseSpellLevel() {
+				return 4;
+			}
+			public SpellSchool getSpellSchool() {
+				return SpellSchool.EVOCATION;
+			}
+			public float getSpellDistanceBase() {
+				return 45;
+			}
+		};
+	}
 	//苦寒霜噬术
 	public static MagicSpell BitterColdFrostbite(int n, LivingEntity caster, Entity target) {
 		return new MagicSpell(n, caster, target, MagicType.SHOOT, MagicType.MAIN, "bitter_cold_frostbite", JerotesVillageParticleTypes.BITTER_COLD_FROSTBITE_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_BITTER_COLD_FROSTBITE){
@@ -851,6 +920,42 @@ public class OtherSpellList {
 						getCaster().swing(InteractionHand.MAIN_HAND, true);
 					}
 					OtherSpellFind.SerponFlames(getCaster(), getTarget(), getSpellLevel(), 6 + (getSpellLevel() - 1) * 3, getSpellAccuracy(), getCaster() instanceof Player);
+					if (!getCaster().isSilent()) {
+						getCaster().level().playSound(null, getCaster().getX(), getCaster().getY(), getCaster().getZ(), getSound(),
+								getCaster().getSoundSource(), getSoundLevel(), 1.0F);
+					}
+				}
+				return true;
+			}
+			public String getSpellModId() {
+				return JerotesVillage.MODID;
+			}
+			public int getBaseSpellLevel() {
+				return 3;
+			}
+			public SpellSchool getSpellSchool() {
+				return SpellSchool.EVOCATION;
+			}
+			public float getSpellDistanceBase() {
+				return 9;
+			}
+		};
+	}
+	//虚洞涌取
+	public static MagicSpell VirtualCaveSurgeSiphon(int n, LivingEntity caster, Entity target) {
+		return new MagicSpell(n, caster, target, MagicType.SHOOT, MagicType.MAIN, "virtual_cave_surge_siphon", JerotesVillageParticleTypes.VIRTUAL_CAVE_SURGE_SIPHON_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_VIRTUAL_CAVE_SURGE_SIPHON){
+			public boolean spellFindUse() {
+				return OtherSpellFind.VirtualCaveSurgeSiphon(getCaster(), getTarget(), getSpellLevel(), 6 + (getSpellLevel() - 1) * 3, getSpellAccuracy(), getCaster() instanceof Player);
+			}
+			public int getCastingTicks() {
+				return 59;
+			}
+			public boolean CastingAboutBase(int n) {
+				if (n % 2 == 0 && n != 0) {
+					if (!(getCaster().getUseItem().getItem() instanceof DroughtWildfireShield)) {
+						getCaster().swing(InteractionHand.MAIN_HAND, true);
+					}
+					OtherSpellFind.VirtualCaveSurgeSiphon(getCaster(), getTarget(), getSpellLevel(), 6 + (getSpellLevel() - 1) * 3, getSpellAccuracy(), getCaster() instanceof Player);
 					if (!getCaster().isSilent()) {
 						getCaster().level().playSound(null, getCaster().getX(), getCaster().getY(), getCaster().getZ(), getSound(),
 								getCaster().getSoundSource(), getSoundLevel(), 1.0F);
@@ -1053,7 +1158,33 @@ public class OtherSpellList {
 				return 3;
 			}
 			public float getSpellDistanceBase() {
-				return 64;
+				return 60;
+			}
+			public SpellSchool getSpellSchool() {
+				return SpellSchool.EVOCATION;
+			}
+		};
+	}
+	//空贯龙光
+	public static MagicSpell SkylanceDragonBeam(int n, LivingEntity caster, Entity target) {
+		return new MagicSpell(n, caster, target, MagicType.SHOOT, MagicType.MAIN, "skylance_dragon_beam", JerotesVillageParticleTypes.SKYLANCE_DRAGON_BEAM_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_SKYLANCE_DRAGON_BEAM){
+			public boolean spellFindUse() {
+				return OtherSpellFind.SkylanceDragonBeam(getCaster(), getSpellLevel());
+			}
+			public int getCastingTicks() {
+				return 240;
+			}
+			public boolean isCastingCanNotStop() {
+				return true;
+			}
+			public String getSpellModId() {
+				return JerotesVillage.MODID;
+			}
+			public int getBaseSpellLevel() {
+				return 8;
+			}
+			public float getSpellDistanceBase() {
+				return 60;
 			}
 			public SpellSchool getSpellSchool() {
 				return SpellSchool.EVOCATION;

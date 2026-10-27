@@ -38,6 +38,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.phys.AABB;
@@ -70,7 +71,10 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 	private static final EntityDataAccessor<Integer> ATTACK_TICK = SynchedEntityData.defineId(EagleBowEntity.class, EntityDataSerializers.INT);
 	private static final EntityDataAccessor<Integer> ATTACK_USE = SynchedEntityData.defineId(EagleBowEntity.class, EntityDataSerializers.INT);
 	private static final EntityDataAccessor<Integer> SHOOT_TICK = SynchedEntityData.defineId(EagleBowEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Integer> SHADOW_ANIM = SynchedEntityData.defineId(EagleBowEntity.class, EntityDataSerializers.INT);
 	private final JerotesBossEvent bossEvent = new JerotesBossEvent(this, this.getUUID(), BossEvent.BossBarColor.YELLOW, false);
+	public static final int MAX_SHADOW_HISTORY = 12;
+	public static final int SHADOW_COOLDOWN = 10;
 
 	public EagleBowEntity(EntityType<? extends EagleBowEntity> entityType, Level level) {
 		super(entityType, level);
@@ -94,6 +98,29 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 		}
 		if (level.isClientSide) {
 			BossBarEvent.BOSSES.add(this);
+		}
+		for (int i = 0; i < 20; i++) {
+			listRenderer1.add(0f);
+			listRenderer2.add(0f);
+			listRenderer3.add(0);
+			listX.add(0d);
+			listY.add(0d);
+			listZ.add(0d);
+			listXRot.add(0f);
+			listYRot.add(0f);
+			listXRotO.add(0f);
+			listYRotO.add(0f);
+			listAttackTime.add(0f);
+			listYBodyRot.add(0f);
+			listYHeadRot.add(0f);
+			listYBodyRotO.add(0f);
+			listYHeadRotO.add(0f);
+			listWalkSpeed.add(0f);
+			listWalkPosition.add(0f);
+			listBob.add(0f);
+			listRiding.add(false);
+			listRidingLivingEntity.add(false);
+			listAgeInTicks.add(0f);
 		}
 	}
 	//百分比
@@ -270,6 +297,7 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 	public float thisTickRenderTime = 0;
 	public float lastTickRenderTime = 6;
 	public float attackAnimProgress = 0.0f;
+	public float shadowAnimProgress = 0.0f;
 	public float shootAnimProgress = 0.0f;
 	public int spellLevel = 3;
 	@Override
@@ -279,7 +307,28 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 	public int startTick;
 	public double leadTick;
 	public int specialBlockTick;
-	public int shieldAttackTick = -20;
+	public int renderTick = 0;
+	public List<Float> listRenderer1 = new ArrayList<>();
+	public List<Float> listRenderer2 = new ArrayList<>();
+	public List<Integer> listRenderer3 = new ArrayList<>();
+	public List<Double> listX = new ArrayList<>();
+	public List<Double> listY = new ArrayList<>();
+	public List<Double> listZ = new ArrayList<>();
+	public List<Float> listXRot = new ArrayList<>();
+	public List<Float> listXRotO = new ArrayList<>();
+	public List<Float> listYRot = new ArrayList<>();
+	public List<Float> listYRotO = new ArrayList<>();
+	public List<Float> listAttackTime = new ArrayList<>();
+	public List<Float> listYBodyRot = new ArrayList<>();
+	public List<Float> listYHeadRot = new ArrayList<>();
+	public List<Float> listYBodyRotO = new ArrayList<>();
+	public List<Float> listYHeadRotO = new ArrayList<>();
+	public List<Float> listWalkSpeed = new ArrayList<>();
+	public List<Float> listWalkPosition = new ArrayList<>();
+	public List<Float> listBob = new ArrayList<>();
+	public List<Boolean> listRiding = new ArrayList<>();
+	public List<Boolean> listRidingLivingEntity = new ArrayList<>();
+	public List<Float> listAgeInTicks = new ArrayList<>();
 	public boolean specialAction() {
 		return false;
 	}
@@ -304,6 +353,12 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 	}
 	public void setAttackAnim(int n) {
 		this.getEntityData().set(ATTACK_ANIM, n);
+	}
+	public int getShadowAnim() {
+		return this.getEntityData().get(SHADOW_ANIM);
+	}
+	public void setShadowAnim(int n) {
+		this.getEntityData().set(SHADOW_ANIM, n);
 	}
 	public int getShootAnim() {
 		return this.getEntityData().get(SHOOT_ANIM);
@@ -379,13 +434,13 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 		compoundTag.putInt("StartTick", this.startTick);
 		compoundTag.putDouble("LeadTick", this.leadTick);
 		compoundTag.putInt("SpecialBlockTick", this.specialBlockTick);
-		compoundTag.putInt("ShieldAttackTick", this.shieldAttackTick);
 		compoundTag.putInt("AnimTick", this.getAnimTick());
 		compoundTag.putInt("AttackAnim", this.getAttackAnim());
 		compoundTag.putInt("ShootAnim", this.getShootAnim());
 		compoundTag.putInt("AttackTick", this.getAttackTick());
 		compoundTag.putInt("AttackUse", this.getAttackUse());
 		compoundTag.putInt("ShootTick", this.getShootTick());
+		compoundTag.putInt("ShadowAnim", this.getShadowAnim());
 	}
 	@Override
 	public void readAdditionalSaveData(CompoundTag compoundTag) {
@@ -397,13 +452,13 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 		this.startTick = compoundTag.getInt("StartTick");
 		this.leadTick = compoundTag.getDouble("LeadTick");
 		this.specialBlockTick = compoundTag.getInt("SpecialBlockTick");
-		this.shieldAttackTick = compoundTag.getInt("ShieldAttackTick");
 		this.setAnimTick(compoundTag.getInt("AnimTick"));
 		this.setAttackAnim(compoundTag.getInt("AttackAnim"));
 		this.setShootAnim(compoundTag.getInt("ShootAnim"));
 		this.setAttackTick(compoundTag.getInt("AttackTick"));
 		this.setAttackUse(compoundTag.getInt("AttackUse"));
 		this.setShootTick(compoundTag.getInt("ShootTick"));
+		this.setShadowAnim(compoundTag.getInt("ShadowAnim"));
 		this.bossEvent.setId(this.getUUID());
 	}
 	@Override
@@ -414,6 +469,7 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 		this.getEntityData().define(ANIM_TICK, 0);
 		this.getEntityData().define(ATTACK_ANIM, 0);
 		this.getEntityData().define(SHOOT_TICK, 0);
+		this.getEntityData().define(SHADOW_ANIM, 0);
 		this.getEntityData().define(SHOOT_ANIM, 0);
 		this.getEntityData().define(ATTACK_TICK, 0);
 		this.getEntityData().define(ATTACK_USE, 0);
@@ -476,6 +532,9 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 		}
 		if (this.isAlive()) {
 			this.idleAnimationState.startIfStopped(this.tickCount);
+		}
+		if (!this.level().isClientSide()) {
+			this.setShadowAnim(Math.max(this.getShadowAnim() - 1, 0));
 		}
 		//近战攻击
 		if (!this.level().isClientSide()) {
@@ -559,7 +618,28 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 						hurt.setOnGround(false);
 						hurt.setDeltaMovement(hurt.getDeltaMovement().add(
 								-((this.getX() - hurt.getX()) * d2 / 3) * (0.7 + knockbackMulti / 3),
-								-((this.getX() - hurt.getX()) * d2 / 3) * (0.7 + knockbackMulti / 3) + 0.2f,
+								-((this.getX() - hurt.getX()) * d2 / 8) * (0.7 + knockbackMulti / 3) + 0.2f,
+								-((this.getZ() - hurt.getZ()) * d2 / 3) * (0.7 + knockbackMulti / 3)
+						));
+					}
+				}
+			}
+			else if (bls) {
+				if ((Main.mobSizeSmall(hurt) || Main.mobSizeMedium(hurt) || Main.mobSizeLarge(hurt)) &&
+						!EntityAndItemFind.isNoSpecialKnockback(hurt.getType())) {
+					float knockbackMulti = 1.0f;
+					double d;
+					if (hurt.getAttribute(Attributes.KNOCKBACK_RESISTANCE) != null) {
+						d = hurt.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE);
+					} else {
+						d = 0.0;
+					}
+					double d2 = Math.max(0.3, 1.3 - d);
+					if (!EntityAndItemFind.isNoSpecialKnockback(hurt.getType()) && (Main.mobSizeSmall(hurt) || Main.mobSizeMedium(hurt) || Main.mobSizeLarge(hurt))) {
+						hurt.setOnGround(false);
+						hurt.setDeltaMovement(hurt.getDeltaMovement().add(
+								-((this.getX() - hurt.getX()) * d2 / 3) * (0.7 + knockbackMulti / 3),
+								-((this.getX() - hurt.getX()) * d2 / 8) * (0.7 + knockbackMulti / 3) + 0.2f,
 								-((this.getZ() - hurt.getZ()) * d2 / 3) * (0.7 + knockbackMulti / 3)
 						));
 					}
@@ -613,8 +693,11 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 
 	@Override
 	public ItemStack createSpawnWeapon(float weaponRandom) {
-		return new ItemStack(JerotesVillageItems.WILDERNESS_BOW.get());
+		ItemStack itemStack = new ItemStack(JerotesVillageItems.WILDERNESS_BOW.get());
+		itemStack.enchant(Enchantments.POWER_ARROWS, 3);
+		return itemStack;
 	}
+
 
 	@Nullable
 	@Override
@@ -673,7 +756,7 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 	public void tickDeath() {
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
-				this.setAnimTick(20);
+				this.setAnimTick(40);
 				this.setAnimationState("dead");
 			}
 		}

@@ -50,6 +50,7 @@ import com.jerotes.jerotesvillage.entity.Shoot.Magic.Breath.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Cloud.CorrosiveSnowCloudEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Cloud.UncleanBloodRainEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicBeam.ElectroflashEntity;
+import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicBeam.SkylanceDragonBeamEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicMissile.ArcaneLightSpotEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicMissile.SedimentMissileEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicMissile.VertigoDelugeEntity;
@@ -58,6 +59,7 @@ import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicShoot.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicSpray.BitterColdFrostbiteEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicSpray.OminousFlamesEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicSpray.SerponFlamesEntity;
+import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicSpray.VirtualCaveSurgeSiphonEntity;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.MagicThrow.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Ray.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Magic.Target.DeadCenterEntity;
@@ -332,7 +334,7 @@ public class OtherSpellFind {
 					mob.lookAt(target, 360.0f, 360.0f);
 				}
 				vinebolt = new VineboltEntity(spellLevelDamage, serverLevel, caster);
-				vinebolt.shootFromRotation(caster, caster.getXRot(), (caster.getYRot() - ((count - 1) * distance) / 2 + i * distance), 0, spellLevelSpeed, count);
+				vinebolt.shootFromRotation(caster, caster.getXRot(), (caster.getYRot() - ((count - 1) * distance) / 2 + i * distance), 0, spellLevelSpeed, spellLevelAccuracy + count);
 				vinebolt.setOwner(caster);
 				serverLevel.addFreshEntity(vinebolt);
 			}
@@ -341,7 +343,7 @@ public class OtherSpellFind {
 				mob.lookAt(target, 360.0f, 360.0f);
 			}
 			vinebolt = new VineboltEntity(spellLevelDamage, serverLevel, caster);
-			vinebolt.shootFromRotation(caster, caster.getXRot(), caster.getYRot(), 0, spellLevelSpeed, count);
+			vinebolt.shootFromRotation(caster, caster.getXRot(), caster.getYRot(), 0, spellLevelSpeed, spellLevelAccuracy + count);
 			vinebolt.setOwner(caster);
 			serverLevel.addFreshEntity(vinebolt);
 		}
@@ -477,7 +479,7 @@ public class OtherSpellFind {
 					mob.lookAt(target, 360.0f, 360.0f);
 				}
 				whipTheTide = new WhipTheTideEntity(spellLevelDamage, serverLevel, caster);
-				whipTheTide.shootFromRotation(caster, caster.getXRot(), (caster.getYRot() - ((count - 1) * distance) / 2 + i * distance), 0.0f, spellLevelSpeed, count);
+				whipTheTide.shootFromRotation(caster, caster.getXRot(), (caster.getYRot() - ((count - 1) * distance) / 2 + i * distance), 0.0f, spellLevelSpeed, spellLevelAccuracy + count);
 				whipTheTide.setOwner(caster);
 				serverLevel.addFreshEntity(whipTheTide);
 			}
@@ -505,6 +507,23 @@ public class OtherSpellFind {
 				iceRock.shootFromRotation(caster, caster.getXRot(), (caster.getYRot() - ((count - 1) * distance) / 2 + i * distance), 0.0f, spellLevelSpeed, spellLevelAccuracy);
 				iceRock.setOwner(caster);
 				serverLevel.addFreshEntity(iceRock);
+			}
+		}
+		return true;
+	}
+	//星体标枪$法术
+	public static boolean AstralJavelin(LivingEntity caster, Entity target, int spellLevelDamage, int spellLevelFreezeTime, float spellLevelSpeed, float spellLevelAccuracy, int count, float distance, boolean isPlayer) {
+		if (caster.level() instanceof ServerLevel serverLevel) {
+			AstralJavelinEntity astralJavelin;
+			for (int i = 0; i < count; ++i) {
+				if (!isPlayer && target != caster && caster instanceof Mob mob && target != null) {
+					mob.getLookControl().setLookAt(target, 360.0f, 360.0f);
+					mob.lookAt(target, 360.0f, 360.0f);
+				}
+				astralJavelin = new AstralJavelinEntity(spellLevelDamage, spellLevelFreezeTime, serverLevel, caster);
+				astralJavelin.shootFromRotation(caster, caster.getXRot(), (caster.getYRot() - ((count - 1) * distance) / 2 + i * distance), 0.0f, spellLevelSpeed, spellLevelAccuracy);
+				astralJavelin.setOwner(caster);
+				serverLevel.addFreshEntity(astralJavelin);
 			}
 		}
 		return true;
@@ -557,6 +576,25 @@ public class OtherSpellFind {
 			double d3 = caster.getLookAngle().y;
 			double d4 = caster.getLookAngle().z;
 			spell = new SerponFlamesEntity(spellLevelDamage, spellLevelFireTime, serverLevel, caster, d2, d3, d4);
+			spell.setPos(caster.getX(), caster.getY(0.7) - spell.getBbHeight()/2, caster.getZ());
+			spell.shootFromRotation(caster, caster.getXRot(), caster.getYRot(), 0f, 1f, spellLevelAccuracy);
+			spell.setOwner(caster);
+			serverLevel.addFreshEntity(spell);
+		}
+		return true;
+	}
+	//虚洞涌取$法术
+	public static boolean VirtualCaveSurgeSiphon(LivingEntity caster, Entity target, int spellLevelDamage, int spellLevelFireTime, float spellLevelAccuracy, boolean isPlayer) {
+		if (caster.level() instanceof ServerLevel serverLevel) {
+			VirtualCaveSurgeSiphonEntity spell;
+			if (!isPlayer && target != caster && caster instanceof Mob mob && target != null) {
+				mob.getLookControl().setLookAt(target, 360.0f, 360.0f);
+				mob.lookAt(target, 360.0f, 360.0f);
+			}
+			double d2 = caster.getLookAngle().x;
+			double d3 = caster.getLookAngle().y;
+			double d4 = caster.getLookAngle().z;
+			spell = new VirtualCaveSurgeSiphonEntity(spellLevelDamage, spellLevelFireTime, serverLevel, caster, d2, d3, d4);
 			spell.setPos(caster.getX(), caster.getY(0.7) - spell.getBbHeight()/2, caster.getZ());
 			spell.shootFromRotation(caster, caster.getXRot(), caster.getYRot(), 0f, 1f, spellLevelAccuracy);
 			spell.setOwner(caster);
@@ -838,6 +876,7 @@ public class OtherSpellFind {
 		}
 		return true;
 	}
+	//一指弹顷$法术
 	public static boolean SnapBolt(LivingEntity caster, Entity target, int spellLevelDamage, float spellLevelAccuracy, int count, float distance, boolean isPlayer) {
 		if (caster.level() instanceof ServerLevel serverLevel) {
 			SnapBoltEntity spell;
@@ -861,6 +900,78 @@ public class OtherSpellFind {
 							pos.x, pos.y, pos.z,
 							1, dx, dy, dz, 0.05);
 				}
+			}
+		}
+		return true;
+	}
+	//星芒标点$法术
+	public static boolean StarburstMarker(LivingEntity caster, Entity target, int spellLevelDamage, float spellLevelAccuracy, int count, float distance, boolean isPlayer) {
+		if (caster.level() instanceof ServerLevel serverLevel) {
+			StarburstMarkerEntity spell;
+			for (int i = 0; i < count; ++i) {
+				if (!isPlayer && target != caster && caster instanceof Mob mob && target != null) {
+					mob.getLookControl().setLookAt(target, 360.0f, 360.0f);
+					mob.lookAt(target, 360.0f, 360.0f);
+				}
+				spell = new StarburstMarkerEntity(spellLevelDamage, serverLevel, caster, caster.getLookAngle().x, caster.getLookAngle().y, caster.getLookAngle().z);
+				spell.setPos(caster.getX(), caster.getY(0.7), caster.getZ());
+				spell.shootFromRotation(caster, caster.getXRot(), caster.getYRot(), 0, 1, spellLevelAccuracy + count * 1.5f);
+				spell.setOwner(caster);
+				serverLevel.addFreshEntity(spell);
+			}
+			if (target != null && target != caster) {
+				List<StarburstMarkerEntity> list = caster.level().getEntitiesOfClass(StarburstMarkerEntity.class,
+						caster.getBoundingBox().inflate(90, 90, 90));
+				list.removeIf(starburstMarkerEntity -> starburstMarkerEntity.getOwner() != caster || !starburstMarkerEntity.isUseful());
+				for (StarburstMarkerEntity starburstMarkerEntity : list) {
+					if (starburstMarkerEntity.distanceTo(caster) > 90) continue;
+					starburstMarkerEntity.setStartTick(20);
+					starburstMarkerEntity.setUseful(false);
+					//发射
+					Vec3 dir = target.getEyePosition().subtract(starburstMarkerEntity.position()).normalize();
+					starburstMarkerEntity.setDeltaMovement(dir);
+					starburstMarkerEntity.xPower = dir.x * 0.1;
+					starburstMarkerEntity.yPower = dir.y * 0.1;
+					starburstMarkerEntity.zPower = dir.z * 0.1;
+					starburstMarkerEntity.hurtMarked = true;
+				}
+			}
+		}
+		return true;
+	}
+	//维落萨恩的魔法飞弹$法术
+	public static boolean VirosaansMagicMissile(LivingEntity caster, Entity target, int spellLevelDamage, float spellLevelAccuracy, int count, float distance, boolean isPlayer, int spellSubcategory) {
+		if (caster.level() instanceof ServerLevel serverLevel) {
+			VirosaansMagicMissileEntity spell;
+			int n = 0;
+			if (spellSubcategory == 1)
+				n = 1;
+			else if (spellSubcategory == 2)
+				n = 2;
+			else if (spellSubcategory == 3)
+				n = 3;
+			else if (spellSubcategory == 4)
+				n = 5;
+			else if (spellSubcategory == 5)
+				n = 7;
+			else if (spellSubcategory == 6)
+				n = 10;
+			count += n;
+			if (n > 0) {
+				DamageSource damageSourceRadiant = AttackFind.findDamageType(caster,
+						JerotesDamageTypes.BYPASSES_COOLDOWN_NECROTIC);
+				caster.hurt(damageSourceRadiant, n * 2);
+			}
+			for (int i = 0; i < count; ++i) {
+				if (!isPlayer && target != caster && caster instanceof Mob mob && target != null) {
+					mob.getLookControl().setLookAt(target, 360.0f, 360.0f);
+					mob.lookAt(target, 360.0f, 360.0f);
+				}
+				spell = new VirosaansMagicMissileEntity(spellLevelDamage, spellSubcategory, serverLevel, caster, caster.getLookAngle().x, caster.getLookAngle().y, caster.getLookAngle().z);
+				spell.setPos(caster.getX(), caster.getY(0.7), caster.getZ());
+				spell.shootFromRotation(caster, caster.getXRot(), caster.getYRot(), 0, 1, spellLevelAccuracy + count * 1.5f);
+				spell.setOwner(caster);
+				serverLevel.addFreshEntity(spell);
 			}
 		}
 		return true;
@@ -1134,9 +1245,22 @@ public class OtherSpellFind {
 	public static boolean Electroflash(LivingEntity caster, int spellLevelDamage) {
 		if (caster.level() instanceof ServerLevel serverLevel) {
 			ElectroflashEntity baseBeamEntity = new ElectroflashEntity(JerotesVillageEntityType.ELECTROFLASH.get(), serverLevel, spellLevelDamage);
-			baseBeamEntity.setPos(caster.getX(), caster.getY(0.75), caster.getZ());
+			baseBeamEntity.setPos(caster.getX(), caster.getY(0.75) - baseBeamEntity.getBbHeight()/2, caster.getZ());
 			baseBeamEntity.setLightLockX((float) caster.getX());
-			baseBeamEntity.setLightLockY((float) (caster.getY(0.75)));
+			baseBeamEntity.setLightLockY((float) (caster.getY(0.75) - baseBeamEntity.getBbHeight()/2));
+			baseBeamEntity.setLightLockZ((float) caster.getZ());
+			baseBeamEntity.setOwner(caster);
+			serverLevel.addFreshEntity(baseBeamEntity);
+		}
+		return true;
+	}
+	//空贯龙光$法术
+	public static boolean SkylanceDragonBeam(LivingEntity caster, int spellLevelDamage) {
+		if (caster.level() instanceof ServerLevel serverLevel) {
+			SkylanceDragonBeamEntity baseBeamEntity = new SkylanceDragonBeamEntity(JerotesVillageEntityType.SKYLANCE_DRAGON_BEAM.get(), serverLevel, spellLevelDamage);
+			baseBeamEntity.setPos(caster.getX(), caster.getY(0.75) - baseBeamEntity.getBbHeight()/2, caster.getZ());
+			baseBeamEntity.setLightLockX((float) caster.getX());
+			baseBeamEntity.setLightLockY((float) (caster.getY(0.75) - baseBeamEntity.getBbHeight()/2));
 			baseBeamEntity.setLightLockZ((float) caster.getZ());
 			baseBeamEntity.setOwner(caster);
 			serverLevel.addFreshEntity(baseBeamEntity);
@@ -2071,7 +2195,7 @@ public class OtherSpellFind {
 
 			Vec3 targetPos = caster.getPosition(0);
 			if (target != null) {
-				targetPos = new Vec3(target.getX() + 0.5D, target.getY(), target.getZ() + 0.5D);
+				targetPos = new Vec3(target.getX(), target.getY(), target.getZ());
 			}
 			if (caster instanceof Player && (target == null || target == caster)) {
 				Vec3 startPos = caster.getEyePosition(1.0f);
@@ -2702,7 +2826,7 @@ public class OtherSpellFind {
 				BlockPos summonPos = Main.findSpawnPositionNearFillOnBlock(caster, summonDistance);
 				Vec3 targetPos;
 				if (target != null) {
-					targetPos = new Vec3(target.getX() + 0.5D, target.getY(), target.getZ() + 0.5D);
+					targetPos = new Vec3(target.getX(), target.getY(), target.getZ());
 					summonPos = Main.findSafePosition(serverLevel, targetPos);
 				}
 				if (caster instanceof Player) {
@@ -3512,7 +3636,7 @@ public class OtherSpellFind {
 		return true;
 	}
 	//召唤灵奴
-	public static boolean ConjureSpirve(LivingEntity caster, int summonDistance) {
+	public static boolean ConjureSpirves(LivingEntity caster, int summonDistance) {
 		if (caster.level() instanceof ServerLevel serverLevel) {
 			PlayerTeam teams = (PlayerTeam) caster.getTeam();
 			BlockPos summonPos = Main.findSpawnPositionNearFillOnBlock(caster, summonDistance);
@@ -3559,7 +3683,7 @@ public class OtherSpellFind {
 			}
 			serverLevel.gameEvent(GameEvent.ENTITY_PLACE, new BlockPos((int) caster.getX(), (int) caster.getY(), (int) caster.getZ()), GameEvent.Context.of(caster));
 			if (!caster.isInvisible()) {
-				serverLevel.sendParticles(JerotesVillageParticleTypes.CONJURE_SPIRVE_DISPLAY.get(), caster.getX(), caster.getBoundingBox().maxY + 0.5, caster.getZ(), 0, 0.0, 0.0, 0.0, 0.0);
+				serverLevel.sendParticles(JerotesVillageParticleTypes.CONJURE_SPIRVES_DISPLAY.get(), caster.getX(), caster.getBoundingBox().maxY + 0.5, caster.getZ(), 0, 0.0, 0.0, 0.0, 0.0);
 			}
 		}
 		return true;
@@ -3813,7 +3937,7 @@ public class OtherSpellFind {
 		if (caster.level() instanceof ServerLevel serverLevel) {
 			Vec3 targetPos = caster.getPosition(0);
 			if (target != null) {
-				targetPos = new Vec3(target.getX() + 0.5D, target.getY(), target.getZ() + 0.5D);
+				targetPos = new Vec3(target.getX(), target.getY(), target.getZ());
 			}
 			if (caster instanceof Player && (target == null || target == caster)) {
 				Vec3 startPos = caster.getEyePosition(1.0f);
@@ -3844,7 +3968,7 @@ public class OtherSpellFind {
 		if (caster.level() instanceof ServerLevel serverLevel) {
 			Vec3 targetPos = caster.getPosition(0);
 			if (target != null) {
-				targetPos = new Vec3(target.getX() + 0.5D, target.getY(), target.getZ() + 0.5D);
+				targetPos = new Vec3(target.getX(), target.getY(), target.getZ());
 			}
 			if (caster instanceof Player && (target == null || target == caster)) {
 				Vec3 startPos = caster.getEyePosition(1.0f);

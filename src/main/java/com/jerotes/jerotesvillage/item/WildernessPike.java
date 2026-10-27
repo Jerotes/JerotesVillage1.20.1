@@ -3,6 +3,7 @@ package com.jerotes.jerotesvillage.item;
 import com.jerotes.jerotes.init.JerotesMobEffects;
 import com.jerotes.jerotes.init.JerotesSoundEvents;
 import com.jerotes.jerotes.item.Tool.ItemToolBasePike;
+import com.jerotes.jerotes.util.EntityAndItemFind;
 import com.jerotes.jerotesvillage.init.JerotesVillageItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -29,7 +30,7 @@ public class WildernessPike extends ItemToolBasePike {
 				  }
 
 				  public float getAttackDamageBonus() {
-					  return 10f;
+					  return EntityAndItemFind.getItemAttackDamageFromDPS(11.2f, 0.875f, EntityAndItemFind.WeaponCategory.PIKE);
 				  }
 
 				  public int getLevel() {
