@@ -8,7 +8,10 @@ import com.jerotes.jerotes.util.AttackFind;
 import com.jerotes.jerotes.util.Main;
 import com.jerotes.jerotesvillage.init.JerotesVillageItems;
 import com.jerotes.jerotesvillage.init.JerotesVillageSoundEvents;
+import net.minecraft.ChatFormatting;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.DamageTypeTags;
@@ -278,8 +281,26 @@ public class ExecutionerEntity extends MeleeIllagerEntity {
             if (AttackFind.FindCanNotAttack(this, hurt)) continue;
             if (!this.hasLineOfSight(hurt)) continue;
             if (!Main.canSee(hurt, this)) continue;
+            double healthOldMain = hurt.getHealth();
             AttackFind.attackBegin(this, hurt);
-            AttackFind.attackAfter(this, hurt, 1.25f, 1.0f, false, 0f);
+            String string = ChatFormatting.stripFormatting(this.getName().getString());
+            if ("乐刑者".equals(string) || "Happiexecutioner".equals(string)) {
+               boolean bl2 = AttackFind.attackAfter(this, hurt, 1.25f * 1.5f, 1.0f, false, 0f);
+                if (bl2) {
+                    double healthNewMain = hurt.getHealth();
+                    if ((float) (healthOldMain - healthNewMain) / 3 > 0) {
+                        this.heal((float) (healthOldMain - healthNewMain) / 3);
+                    }
+                    if (this.level() instanceof ServerLevel serverLevel) {
+                        for (int i = 0; i < (healthOldMain - healthNewMain) / 6; ++i) {
+                            serverLevel.sendParticles(ParticleTypes.HEART, this.getRandomX(1f), this.getRandomY(), this.getRandomZ(1f), 0, 0, 0.0, 0, 0.0);
+                        }
+                    }
+                }
+            }
+            else {
+                AttackFind.attackAfter(this, hurt, 1.25f, 1.0f, false, 0f);
+            }
         }
         //横扫效果
         Main.sweepAttack(this);
