@@ -255,6 +255,7 @@ public class RamblerEntity extends Animal implements JerotesEntity, NeutralMob {
 	public void attackAnimation() {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(5);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}
@@ -288,6 +289,7 @@ public class RamblerEntity extends Animal implements JerotesEntity, NeutralMob {
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -347,7 +349,9 @@ public class RamblerEntity extends Animal implements JerotesEntity, NeutralMob {
 							this.stopAllAnimation();
 							break;
 						case 1:
-							this.attackAnimationState.startIfStopped(this.tickCount);
+							this.attackAnimationState.stop();
+
+							this.attackAnimationState.start(this.tickCount);
 							this.stopMostAnimation(this.attackAnimationState);
 							break;
 					}

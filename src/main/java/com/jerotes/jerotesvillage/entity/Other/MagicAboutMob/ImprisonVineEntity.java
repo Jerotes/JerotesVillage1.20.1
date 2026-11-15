@@ -197,6 +197,7 @@ public class ImprisonVineEntity extends Mob implements JerotesEntity, TraceableE
         return this.getEntityData().get(ANIM_TICK);
     }
     public void setAnimationState(String input) {
+        this.setAnimationState(0);
         this.setAnimationState(this.getAnimationState(input));
     }
     public void setAnimationState(int id) {
@@ -286,11 +287,15 @@ public class ImprisonVineEntity extends Mob implements JerotesEntity, TraceableE
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.startAnimationState.startIfStopped(this.tickCount);
+                        this.startAnimationState.stop();
+
+                        this.startAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.startAnimationState);
                         break;
                     case 2:
-                        this.deadAnimationState.startIfStopped(this.tickCount);
+                        this.deadAnimationState.stop();
+
+                        this.deadAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.deadAnimationState);
                         break;
                 }
@@ -482,6 +487,7 @@ public class ImprisonVineEntity extends Mob implements JerotesEntity, TraceableE
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor serverLevelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData, @Nullable CompoundTag compoundTag) {
         if (!this.level().isClientSide()) {
             this.setAnimTick(20);
+            this.setAnimationState(0);
             this.setAnimationState("start");
         }
         return super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
@@ -492,6 +498,7 @@ public class ImprisonVineEntity extends Mob implements JerotesEntity, TraceableE
         if(deathTime <= 0){
             if (!this.level().isClientSide()) {
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("dead");
             }
         }

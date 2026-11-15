@@ -294,6 +294,7 @@ public class SerponCrossbowTurretEntity extends PathfinderMob implements Jerotes
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -387,7 +388,9 @@ public class SerponCrossbowTurretEntity extends PathfinderMob implements Jerotes
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.fireAnimationState.startIfStopped(this.tickCount);
+						this.fireAnimationState.stop();
+
+						this.fireAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.fireAnimationState);
 						break;
 				}
@@ -523,6 +526,7 @@ public class SerponCrossbowTurretEntity extends PathfinderMob implements Jerotes
 	public void shoot(LivingEntity passenger) {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(5);
+			this.setAnimationState(0);
 			this.setAnimationState("fire");
 		}
 		if (passenger instanceof Player) {

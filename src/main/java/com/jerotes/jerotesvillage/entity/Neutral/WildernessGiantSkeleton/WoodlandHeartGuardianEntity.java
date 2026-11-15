@@ -186,6 +186,7 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -322,39 +323,57 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.left1AnimationState.startIfStopped(this.tickCount);
+						this.left1AnimationState.stop();
+
+						this.left1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.left1AnimationState);
 						break;
 					case 2:
-						this.right1AnimationState.startIfStopped(this.tickCount);
+						this.right1AnimationState.stop();
+
+						this.right1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.right1AnimationState);
 						break;
 					case 3:
-						this.left2AnimationState.startIfStopped(this.tickCount);
+						this.left2AnimationState.stop();
+
+						this.left2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.left2AnimationState);
 						break;
 					case 4:
-						this.right2AnimationState.startIfStopped(this.tickCount);
+						this.right2AnimationState.stop();
+
+						this.right2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.right2AnimationState);
 						break;
 					case 5:
-						this.left3AnimationState.startIfStopped(this.tickCount);
+						this.left3AnimationState.stop();
+
+						this.left3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.left3AnimationState);
 						break;
 					case 6:
-						this.right3AnimationState.startIfStopped(this.tickCount);
+						this.right3AnimationState.stop();
+
+						this.right3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.right3AnimationState);
 						break;
 					case 7:
-						this.cutAnimationState.startIfStopped(this.tickCount);
+						this.cutAnimationState.stop();
+
+						this.cutAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.cutAnimationState);
 						break;
 					case 8:
-						this.rollAnimationState.startIfStopped(this.tickCount);
+						this.rollAnimationState.stop();
+
+						this.rollAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.rollAnimationState);
 						break;
 					case 9:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -401,7 +420,7 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 			this.trueHurt();
 		}
 		if (this.getAttackUse() == 5 && this.isAlive()) {
-			if (this.getAttackTick() == 20 || this.getAttackTick() == 10) {
+			if (this.getAttackTick() == 22 || this.getAttackTick() == 18 || this.getAttackTick() == 10) {
 				this.trueHurt();
 			}
 		}
@@ -459,9 +478,11 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 				this.setAttackTick(25);
 				this.setAttackUse(1);
 				if (onlyRight) {
+					this.setAnimationState(0);
 					this.setAnimationState("right1");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("left1");
 				}
 			} else if (attackRandom > 80) {
@@ -469,9 +490,11 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 				this.setAttackTick(25);
 				this.setAttackUse(1);
 				if (onlyLeft) {
+					this.setAnimationState(0);
 					this.setAnimationState("left1");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("right1");
 				}
 			}
@@ -481,9 +504,11 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 				this.setAttackTick(25);
 				this.setAttackUse(2);
 				if (onlyRight) {
+					this.setAnimationState(0);
 					this.setAnimationState("right2");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("left2");
 				}
 			}
@@ -492,9 +517,11 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 				this.setAttackTick(25);
 				this.setAttackUse(2);
 				if (onlyLeft) {
+					this.setAnimationState(0);
 					this.setAnimationState("left2");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("right2");
 				}
 			}
@@ -504,9 +531,11 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 				this.setAttackTick(25);
 				this.setAttackUse(3);
 				if (onlyRight) {
+					this.setAnimationState(0);
 					this.setAnimationState("right3");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("left3");
 				}
 			}
@@ -515,9 +544,11 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 				this.setAttackTick(25);
 				this.setAttackUse(3);
 				if (onlyLeft) {
+					this.setAnimationState(0);
 					this.setAnimationState("left3");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("right3");
 				}
 			}
@@ -526,6 +557,7 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 				this.setAnimTick(20);
 				this.setAttackTick(25);
 				this.setAttackUse(4);
+				this.setAnimationState(0);
 				this.setAnimationState("cut");
 			}
 			//5-风车
@@ -533,6 +565,7 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 				this.setAnimTick(25);
 				this.setAttackTick(30);
 				this.setAttackUse(5);
+				this.setAnimationState(0);
 				this.setAnimationState("roll");
 			}
 		}
@@ -587,7 +620,7 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 			reach = 1.5f;
 		}
 		if (this.getAttackUse() == 5) {
-			damageMulti = 2f;
+			damageMulti = 1.5f;
 			knockbackMulti = 2f;
 			reach = 1.5f;
 		}
@@ -653,6 +686,7 @@ public class WoodlandHeartGuardianEntity extends WildernessGiantSkeletonEntity i
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

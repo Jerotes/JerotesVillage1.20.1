@@ -101,6 +101,7 @@ public class VirtualCaveSpiderEntity extends Spider implements JerotesEntity, Ca
 	public boolean doHurtTarget(Entity entity) {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(7);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		boolean bl = super.doHurtTarget(entity);
@@ -152,6 +153,7 @@ public class VirtualCaveSpiderEntity extends Spider implements JerotesEntity, Ca
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -224,7 +226,9 @@ public class VirtualCaveSpiderEntity extends Spider implements JerotesEntity, Ca
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 				}

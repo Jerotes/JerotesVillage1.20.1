@@ -306,6 +306,7 @@ public class MerorMachineEntity extends AbstractGolem implements NeutralMob, Cha
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -423,15 +424,21 @@ public class MerorMachineEntity extends AbstractGolem implements NeutralMob, Cha
 						this.stopAllAnimation();
 						break;
 					case 101:
-						this.pose1AnimationState.startIfStopped(this.tickCount);
+						this.pose1AnimationState.stop();
+
+						this.pose1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.pose1AnimationState);
 						break;
 					case 102:
-						this.pose2AnimationState.startIfStopped(this.tickCount);
+						this.pose2AnimationState.stop();
+
+						this.pose2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.pose2AnimationState);
 						break;
 					case 103:
-						this.pose3AnimationState.startIfStopped(this.tickCount);
+						this.pose3AnimationState.stop();
+
+						this.pose3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.pose3AnimationState);
 						break;
 				}
@@ -636,12 +643,15 @@ public class MerorMachineEntity extends AbstractGolem implements NeutralMob, Cha
 			if (!this.level().isClientSide()) {
 				int poseRandom = this.getRandom().nextInt(30);
 				if (poseRandom > 20) {
+					this.setAnimationState(0);
 					this.setAnimationState("pose1");
 				}
 				else if (poseRandom > 10) {
+					this.setAnimationState(0);
 					this.setAnimationState("pose2");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("pose3");
 				}
 				this.setPoseTick(960 + this.getRandom().nextInt(10 * 20));
@@ -681,6 +691,7 @@ public class MerorMachineEntity extends AbstractGolem implements NeutralMob, Cha
 	public void attackAnimation() {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(10);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}

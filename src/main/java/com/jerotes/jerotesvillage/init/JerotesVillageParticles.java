@@ -2,6 +2,7 @@ package com.jerotes.jerotesvillage.init;
 
 import com.jerotes.jerotes.client.particle.*;
 import com.jerotes.jerotes.client.particle.ShootParticle;
+import com.jerotes.jerotesvillage.client.particle.VirtualCaveSoulParticle;
 import com.jerotes.jerotesvillage.client.particle.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
@@ -97,6 +98,8 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.CONJURE_SPIRVES_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.PURPLE_SAND_PHANTOM_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.OCEAN_CURRENT_BREATH_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.MOCKER_JUMP_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.SWELLING_BOMB_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.WHIRLPOOL_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.GEMSTONE_SCALE_ARMOR_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.ASPHYXIA_CONTROL_DISPLAY.get(), DisplayParticle::provider);
@@ -113,6 +116,8 @@ public class JerotesVillageParticles {
 		event.registerSpriteSet(JerotesVillageParticleTypes.CORROSIVE_ICE_SPIKE_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.CHAOTIC_DISCHARGE_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.TORCH_GAZE_DISPLAY.get(), DisplayParticle::provider);
+		event.registerSpriteSet(JerotesVillageParticleTypes.VIRTUAL_CAVE_SOUL.get(), VirtualCaveSoulParticle.Provider::new);
+		event.registerSpriteSet(JerotesVillageParticleTypes.WAIL_OF_THE_PETITIONER_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.WORM_THUNDERSTORM_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.SECRETE_FIRE_OIL_BOMB_DISPLAY.get(), DisplayParticle::provider);
 		event.registerSpriteSet(JerotesVillageParticleTypes.DROUGHT_FIREBALL_DISPLAY.get(), DisplayParticle::provider);

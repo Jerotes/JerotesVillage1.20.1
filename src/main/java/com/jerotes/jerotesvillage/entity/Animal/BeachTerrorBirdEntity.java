@@ -150,10 +150,13 @@ public class BeachTerrorBirdEntity extends BaseTamableAnimalEntity implements Ne
 			this.setAnimTick(15);
 			int attackRandom = this.getRandom().nextInt(40);
 			if (attackRandom > 20) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom > 10) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else {
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			}
 		}
@@ -365,6 +368,7 @@ public class BeachTerrorBirdEntity extends BaseTamableAnimalEntity implements Ne
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -436,15 +440,21 @@ public class BeachTerrorBirdEntity extends BaseTamableAnimalEntity implements Ne
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 				}

@@ -156,6 +156,10 @@ public class JerotesVillageTabs {
 						tabData.accept(JerotesVillageItems.SECOND_ROUNDER_SKELETON_SPAWN_EGG.get());
 						tabData.accept(JerotesVillageItems.SECOND_ROUNDER_SPIDER_SPAWN_EGG.get());
 						tabData.accept(JerotesVillageItems.ENDER_STOWAWAY_SPAWN_EGG.get());
+						tabData.accept(JerotesVillageItems.MOCKER_SPAWN_EGG.get());
+						tabData.accept(JerotesVillageItems.CONJOINER_SPAWN_EGG.get());
+						tabData.accept(JerotesVillageItems.PETITIONER_SPAWN_EGG.get());
+						tabData.accept(JerotesVillageItems.SWELLING_SPAWN_EGG.get());
 						//沉降
 						tabData.accept(JerotesVillageItems.RESURRECTER_COFFIN.get());
 						tabData.accept(JerotesVillageItems.RESURRECTER_EMPTY_COFFIN.get());

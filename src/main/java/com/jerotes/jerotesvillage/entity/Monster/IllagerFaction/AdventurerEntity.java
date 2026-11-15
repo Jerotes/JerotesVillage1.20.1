@@ -405,19 +405,27 @@ public class AdventurerEntity extends MeleeIllagerEntity implements EliteEntity,
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attack1AnimationState.startIfStopped(this.tickCount);
+                        this.attack1AnimationState.stop();
+
+                        this.attack1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack1AnimationState);
                         break;
                     case 2:
-                        this.attack2AnimationState.startIfStopped(this.tickCount);
+                        this.attack2AnimationState.stop();
+
+                        this.attack2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack2AnimationState);
                         break;
                     case 3:
-                        this.bombAnimationState.startIfStopped(this.tickCount);
+                        this.bombAnimationState.stop();
+
+                        this.bombAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.bombAnimationState);
                         break;
                     case 4:
-                        this.deadAnimationState.startIfStopped(this.tickCount);
+                        this.deadAnimationState.stop();
+
+                        this.deadAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.deadAnimationState);
                         break;
                 }
@@ -549,6 +557,7 @@ public class AdventurerEntity extends MeleeIllagerEntity implements EliteEntity,
                         this.setBombCooldown(240);
                         this.setBombTick(30);
                         this.setAnimTick(30);
+                        this.setAnimationState(0);
                         this.setAnimationState("bomb");
                         if (this.level() instanceof ServerLevel serverLevel) {
                             if (!this.isInvisible()) {
@@ -648,8 +657,10 @@ public class AdventurerEntity extends MeleeIllagerEntity implements EliteEntity,
                 this.setAnimTick(5);
                 this.setAttackUse(1);
                 if (attackRandom < 20) {
+                    this.setAnimationState(0);
                     this.setAnimationState("attack1");
                 } else {
+                    this.setAnimationState(0);
                     this.setAnimationState("attack2");
                 }
             }
@@ -690,6 +701,7 @@ public class AdventurerEntity extends MeleeIllagerEntity implements EliteEntity,
                         this.setBombCooldown(240);
                         this.setBombTick(30);
                         this.setAnimTick(30);
+                        this.setAnimationState(0);
                         this.setAnimationState("bomb");
                         if (this.level() instanceof ServerLevel serverLevel) {
                             if (!this.isInvisible()) {
@@ -1005,6 +1017,7 @@ public class AdventurerEntity extends MeleeIllagerEntity implements EliteEntity,
             this.lungingAttackAnimationState.stop();
             if (!this.level().isClientSide()) {
                 this.setAnimTick(40);
+                this.setAnimationState(0);
                 this.setAnimationState("dead");
             }
         }

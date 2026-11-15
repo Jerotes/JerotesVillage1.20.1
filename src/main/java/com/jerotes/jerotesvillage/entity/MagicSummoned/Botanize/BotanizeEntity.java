@@ -160,6 +160,7 @@ public class BotanizeEntity extends MagicSummonedEntity {
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -239,19 +240,27 @@ public class BotanizeEntity extends MagicSummonedEntity {
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.tiltAnimationState.startIfStopped(this.tickCount);
+						this.tiltAnimationState.stop();
+
+						this.tiltAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.tiltAnimationState);
 						break;
 					case 2:
-						this.growAnimationState.startIfStopped(this.tickCount);
+						this.growAnimationState.stop();
+
+						this.growAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.growAnimationState);
 						break;
 					case 3:
-						this.giveAnimationState.startIfStopped(this.tickCount);
+						this.giveAnimationState.stop();
+
+						this.giveAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.giveAnimationState);
 						break;
 					case 4:
-						this.shootAnimationState.startIfStopped(this.tickCount);
+						this.shootAnimationState.stop();
+
+						this.shootAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shootAnimationState);
 						break;
 				}
@@ -275,6 +284,7 @@ public class BotanizeEntity extends MagicSummonedEntity {
 				if (!this.level().isClientSide()) {
 					this.setTiltTick(60);
 					this.setAnimTick(60);
+					this.setAnimationState(0);
 					this.setAnimationState("tilt");
 				}
 				return InteractionResult.SUCCESS;
@@ -289,6 +299,7 @@ public class BotanizeEntity extends MagicSummonedEntity {
 					this.setTiltTick(0);
 					this.setGiveTick(70);
 					this.setAnimTick(70);
+					this.setAnimationState(0);
 					this.setAnimationState("give");
 				}
 				this.swapItem(player, itemStack, interactionHand);
@@ -395,6 +406,7 @@ public class BotanizeEntity extends MagicSummonedEntity {
 		}
 		if (this.getGrowTick() == 115) {
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("grow");
 		}
 	}

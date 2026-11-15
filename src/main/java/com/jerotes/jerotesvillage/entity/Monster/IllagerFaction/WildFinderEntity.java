@@ -286,11 +286,15 @@ public class WildFinderEntity extends MeleeIllagerEntity implements RangedAttack
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.waveAnimationState.startIfStopped(this.tickCount);
+                        this.waveAnimationState.stop();
+
+                        this.waveAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.waveAnimationState);
                         break;
                     case 2:
-                        this.shootAnimationState.startIfStopped(this.tickCount);
+                        this.shootAnimationState.stop();
+
+                        this.shootAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shootAnimationState);
                         break;
                 }
@@ -315,6 +319,7 @@ public class WildFinderEntity extends MeleeIllagerEntity implements RangedAttack
             if (!this.level().isClientSide()) {
                 this.setThrowTick(30);
                 this.setAnimTick(30);
+                this.setAnimationState(0);
                 this.setAnimationState("shoot");
             }
             this.idleAnimationState.stop();
@@ -336,6 +341,7 @@ public class WildFinderEntity extends MeleeIllagerEntity implements RangedAttack
                 if (!this.level().isClientSide()) {
                     this.setSpellTick(600);
                     this.setAnimTick(20);
+                    this.setAnimationState(0);
                     this.setAnimationState("wave");
                 }
                 OtherSpellFind.WildernessDriven(this, spellLevel + 1, (int) ((spellLevel + 1) * 1.5), 24);

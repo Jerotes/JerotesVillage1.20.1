@@ -243,35 +243,51 @@ public class CyclonerEntity extends MeleeIllagerEntity {
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attackAnimationState.startIfStopped(this.tickCount);
+                        this.attackAnimationState.stop();
+
+                        this.attackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attackAnimationState);
                         break;
                     case 2:
-                        this.rollAnimationState.startIfStopped(this.tickCount);
+                        this.rollAnimationState.stop();
+
+                        this.rollAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.rollAnimationState);
                         break;
                     case 3:
-                        this.rollStartAnimationState.startIfStopped(this.tickCount);
+                        this.rollStartAnimationState.stop();
+
+                        this.rollStartAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.rollStartAnimationState);
                         break;
                     case 4:
-                        this.rollStopAnimationState.startIfStopped(this.tickCount);
+                        this.rollStopAnimationState.stop();
+
+                        this.rollStopAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.rollStopAnimationState);
                         break;
                     case 5:
-                        this.itemAttack1AnimationState.startIfStopped(this.tickCount);
+                        this.itemAttack1AnimationState.stop();
+
+                        this.itemAttack1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.itemAttack1AnimationState);
                         break;
                     case 6:
-                        this.itemAttack2AnimationState.startIfStopped(this.tickCount);
+                        this.itemAttack2AnimationState.stop();
+
+                        this.itemAttack2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.itemAttack2AnimationState);
                         break;
                     case 7:
-                        this.itemAttack3AnimationState.startIfStopped(this.tickCount);
+                        this.itemAttack3AnimationState.stop();
+
+                        this.itemAttack3AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.itemAttack3AnimationState);
                         break;
                     case 8:
-                        this.itemAttack4AnimationState.startIfStopped(this.tickCount);
+                        this.itemAttack4AnimationState.stop();
+
+                        this.itemAttack4AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.itemAttack4AnimationState);
                         break;
                 }
@@ -294,6 +310,7 @@ public class CyclonerEntity extends MeleeIllagerEntity {
                 }
                 if (!this.level().isClientSide()) {
                     this.setAnimTick(20);
+                    this.setAnimationState(0);
                     this.setAnimationState("rollStart");
                 }
             }
@@ -319,6 +336,7 @@ public class CyclonerEntity extends MeleeIllagerEntity {
                     this.rollStartAnimationState.stop();
                     if (!this.level().isClientSide()) {
                         this.setAnimTick(10);
+                        this.setAnimationState(0);
                         this.setAnimationState("rollStop");
                     }
                 }
@@ -326,6 +344,7 @@ public class CyclonerEntity extends MeleeIllagerEntity {
                     this.rollStartAnimationState.stop();
                     if (!this.level().isClientSide()) {
                         this.setAnimTick(10);
+                        this.setAnimationState(0);
                         this.setAnimationState("roll");
                     }
                 }
@@ -374,6 +393,7 @@ public class CyclonerEntity extends MeleeIllagerEntity {
         if (this.getMainHandItem().isEmpty()) {
             if (!this.level().isClientSide()) {
                 this.setAnimTick(8);
+                this.setAnimationState(0);
                 this.setAnimationState("attack");
             }
         }
@@ -382,15 +402,19 @@ public class CyclonerEntity extends MeleeIllagerEntity {
                 int attackRandom = this.getRandom().nextInt(40);
                 if (attackRandom < 10) {
                     this.setAnimTick(15);
+                    this.setAnimationState(0);
                     this.setAnimationState("itemAttack1");
                 } else if (attackRandom < 20) {
                     this.setAnimTick(15);
+                    this.setAnimationState(0);
                     this.setAnimationState("itemAttack2");
                 } else if (attackRandom < 30) {
                     this.setAnimTick(15);
+                    this.setAnimationState(0);
                     this.setAnimationState("itemAttack3");
                 } else {
                     this.setAnimTick(15);
+                    this.setAnimationState(0);
                     this.setAnimationState("itemAttack4");
                 }
             }

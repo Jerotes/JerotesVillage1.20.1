@@ -156,6 +156,7 @@ public class GavilerEntity extends SpellIllagerEntity implements RangedAttackMob
             if (!this.level().isClientSide()) {
                 this.setSpellTick(20);
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("shoot");
             }
             //技能列表-推动力场
@@ -257,19 +258,27 @@ public class GavilerEntity extends SpellIllagerEntity implements RangedAttackMob
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.shootAnimationState.startIfStopped(this.tickCount);
+                        this.shootAnimationState.stop();
+
+                        this.shootAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shootAnimationState);
                         break;
                     case 2:
-                        this.upAnimationState.startIfStopped(this.tickCount);
+                        this.upAnimationState.stop();
+
+                        this.upAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.upAnimationState);
                         break;
                     case 3:
-                        this.downAnimationState.startIfStopped(this.tickCount);
+                        this.downAnimationState.stop();
+
+                        this.downAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.downAnimationState);
                         break;
                     case 4:
-                        this.deadAnimationState.startIfStopped(this.tickCount);
+                        this.deadAnimationState.stop();
+
+                        this.deadAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.deadAnimationState);
                         break;
                 }
@@ -379,6 +388,7 @@ public class GavilerEntity extends SpellIllagerEntity implements RangedAttackMob
                     this.setSpellOneTick(20);
                     this.setSpellThreeTick(120);
                     this.setAnimTick(20);
+                    this.setAnimationState(0);
                     this.setAnimationState("up");
                 }
                 //法术列表-漂浮力场
@@ -393,6 +403,7 @@ public class GavilerEntity extends SpellIllagerEntity implements RangedAttackMob
                     this.setSpellTwoTick(20);
                     this.setSpellThreeTick(120);
                     this.setAnimTick(20);
+                    this.setAnimationState(0);
                     this.setAnimationState("down");
                 }
                 //法术列表-漂浮力场
@@ -438,6 +449,7 @@ public class GavilerEntity extends SpellIllagerEntity implements RangedAttackMob
         if(deathTime <= 0){
             if (!this.level().isClientSide()) {
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("dead");
             }
         }

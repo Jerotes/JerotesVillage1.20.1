@@ -259,6 +259,7 @@ public class ZsieinEntity extends PathfinderMob implements NeutralMob, OwnableEn
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {

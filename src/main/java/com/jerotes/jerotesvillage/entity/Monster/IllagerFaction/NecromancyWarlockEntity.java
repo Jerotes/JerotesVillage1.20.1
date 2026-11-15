@@ -156,6 +156,7 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
             if (!this.level().isClientSide()) {
                 this.setSpellTick(40);
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("summon");
             }
             //法术列表-邪祟召唤
@@ -167,6 +168,7 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
                 this.setSpellTick(90);
                 this.setSpellOneTick(90);
                 this.setAnimTick(90);
+                this.setAnimationState(0);
                 this.setAnimationState("gear");
             }
             if (!this.isSilent()) {
@@ -178,6 +180,7 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
             if (!this.level().isClientSide()) {
                 this.setSpellTick(20);
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("scream");
             }
             //法术列表-血腥尖啸
@@ -188,6 +191,7 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
             if (!this.level().isClientSide()) {
                 this.setSpellTick(25);
                 this.setAnimTick(25);
+                this.setAnimationState(0);
                 this.setAnimationState("whisper");
             }
             //法术列表-血腥尖啸
@@ -199,6 +203,7 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
                 this.setSpellTick(15);
                 this.setSpellTwoTick(15);
                 this.setAnimTick(15);
+                this.setAnimationState(0);
                 this.setAnimationState("rain");
             }
         }
@@ -207,6 +212,7 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
             if (!this.level().isClientSide()) {
                 this.setSpellTick(40);
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("summon");
             }
             //法术列表-邪祟召唤
@@ -218,6 +224,7 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
                 this.setSpellTick(15);
                 this.setSpellThreeTick(15);
                 this.setAnimTick(15);
+                this.setAnimationState(0);
                 this.setAnimationState("fog");
             }
         }
@@ -332,31 +339,45 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.gearAnimationState.startIfStopped(this.tickCount);
+                        this.gearAnimationState.stop();
+
+                        this.gearAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.gearAnimationState);
                         break;
                     case 2:
-                        this.screamAnimationState.startIfStopped(this.tickCount);
+                        this.screamAnimationState.stop();
+
+                        this.screamAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.screamAnimationState);
                         break;
                     case 3:
-                        this.whisperAnimationState.startIfStopped(this.tickCount);
+                        this.whisperAnimationState.stop();
+
+                        this.whisperAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.whisperAnimationState);
                         break;
                     case 4:
-                        this.rainAnimationState.startIfStopped(this.tickCount);
+                        this.rainAnimationState.stop();
+
+                        this.rainAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.rainAnimationState);
                         break;
                     case 5:
-                        this.fogAnimationState.startIfStopped(this.tickCount);
+                        this.fogAnimationState.stop();
+
+                        this.fogAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.fogAnimationState);
                         break;
                     case 6:
-                        this.summonAnimationState.startIfStopped(this.tickCount);
+                        this.summonAnimationState.stop();
+
+                        this.summonAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.summonAnimationState);
                         break;
                     case 7:
-                        this.deadAnimationState.startIfStopped(this.tickCount);
+                        this.deadAnimationState.stop();
+
+                        this.deadAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.deadAnimationState);
                         break;
                 }
@@ -479,6 +500,7 @@ public class NecromancyWarlockEntity extends SpellIllagerEntity implements Range
         if(deathTime <= 0){
             if (!this.level().isClientSide()) {
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("dead");
             }
         }

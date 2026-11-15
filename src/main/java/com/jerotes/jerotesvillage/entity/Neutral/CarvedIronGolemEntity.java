@@ -58,6 +58,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.ForgeMod;
@@ -82,6 +83,7 @@ public class CarvedIronGolemEntity extends IronGolem implements JerotesEntity, C
 	public CarvedIronGolemEntity(EntityType<? extends CarvedIronGolemEntity> entityType, Level level) {
 		super(entityType, level);
 		this.setMaxUpStep(1.0f);
+		this.setPathfindingMalus(BlockPathTypes.UNPASSABLE_RAIL, 0.0f);
 	}
 
 
@@ -107,8 +109,6 @@ public class CarvedIronGolemEntity extends IronGolem implements JerotesEntity, C
 		builder = builder.add(Attributes.FOLLOW_RANGE, 48);
 		return builder;
 	}
-
-
 
 
 	@Override
@@ -189,6 +189,7 @@ public class CarvedIronGolemEntity extends IronGolem implements JerotesEntity, C
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -274,15 +275,21 @@ public class CarvedIronGolemEntity extends IronGolem implements JerotesEntity, C
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 				}
@@ -460,12 +467,15 @@ public class CarvedIronGolemEntity extends IronGolem implements JerotesEntity, C
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom < 10) {
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom < 20) {
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else {
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			}
 		}

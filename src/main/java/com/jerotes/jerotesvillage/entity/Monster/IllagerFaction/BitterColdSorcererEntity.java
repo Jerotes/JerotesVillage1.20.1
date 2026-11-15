@@ -128,12 +128,14 @@ public class BitterColdSorcererEntity extends SpellIllagerEntity implements Spel
         if (string.equals("jerotesvillage_bitter_cold_frostbite")) {
             if (!this.level().isClientSide()) {
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("shoot2");
             }
         }
         else {
             if (!this.level().isClientSide()) {
                 this.setAnimTick(9);
+                this.setAnimationState(0);
                 this.setAnimationState("shoot1");
             }
         }
@@ -233,15 +235,21 @@ public class BitterColdSorcererEntity extends SpellIllagerEntity implements Spel
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.shoot1AnimationState.startIfStopped(this.tickCount);
+                        this.shoot1AnimationState.stop();
+
+                        this.shoot1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shoot1AnimationState);
                         break;
                     case 2:
-                        this.shoot2AnimationState.startIfStopped(this.tickCount);
+                        this.shoot2AnimationState.stop();
+
+                        this.shoot2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shoot2AnimationState);
                         break;
                     case 3:
-                        this.ceremonyAnimationState.startIfStopped(this.tickCount);
+                        this.ceremonyAnimationState.stop();
+
+                        this.ceremonyAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.ceremonyAnimationState);
                         break;
                 }
@@ -269,6 +277,7 @@ public class BitterColdSorcererEntity extends SpellIllagerEntity implements Spel
                     this.setSpellTick(40);
                     this.setSpellOneTick(600);
                     this.setAnimTick(40);
+                    this.setAnimationState(0);
                     this.setAnimationState("ceremony");
                 }
                 OtherSpellList.BitterColdAltar(getSpellLevel(), this, this.getTarget() == null ? this : this.getTarget()).spellUse();

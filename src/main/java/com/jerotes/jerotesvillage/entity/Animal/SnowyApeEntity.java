@@ -138,6 +138,7 @@ public class SnowyApeEntity extends BaseTamableAnimalEntity implements NeutralMo
 	public void performRangedAttack(LivingEntity livingEntity, float f) {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(13);
+			this.setAnimationState(0);
 			this.setAnimationState("throw");
 		}
 		ItemStack handItem = this.getMainHandItem();
@@ -341,9 +342,11 @@ public class SnowyApeEntity extends BaseTamableAnimalEntity implements NeutralMo
 			int attackRandom = this.getRandom().nextInt(25);
 			if (attackRandom < 10) {
 				this.setAnimTick(12);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			} else {
 				this.setAnimTick(12);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			}
 		}
@@ -353,6 +356,7 @@ public class SnowyApeEntity extends BaseTamableAnimalEntity implements NeutralMo
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(15);
 			this.setAttackTick(15);
+			this.setAnimationState(0);
 			this.setAnimationState("attack2");
 		}
 	}
@@ -437,6 +441,7 @@ public class SnowyApeEntity extends BaseTamableAnimalEntity implements NeutralMo
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -538,19 +543,27 @@ public class SnowyApeEntity extends BaseTamableAnimalEntity implements NeutralMo
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 					case 4:
-						this.throwAnimationState.startIfStopped(this.tickCount);
+						this.throwAnimationState.stop();
+
+						this.throwAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.throwAnimationState);
 						break;
 				}
@@ -754,6 +767,7 @@ public class SnowyApeEntity extends BaseTamableAnimalEntity implements NeutralMo
 			if (!this.level().isClientSide()) {
 				this.setThrowingTick(15);
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 				this.setThrow(false);
 			}
@@ -980,15 +994,18 @@ public class SnowyApeEntity extends BaseTamableAnimalEntity implements NeutralMo
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom < 10) {
 				this.setAnimTick(12);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			}
 			else if (attackRandom < 15) {
 				this.setAnimTick(15);
 				this.setAttackTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 				return true;
 			} else {
 				this.setAnimTick(12);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			}
 		}

@@ -143,6 +143,7 @@ public class ThornSpikeEntity extends Mob implements JerotesEntity, TraceableEnt
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -235,15 +236,21 @@ public class ThornSpikeEntity extends Mob implements JerotesEntity, TraceableEnt
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 					case 2:
-						this.startAnimationState.startIfStopped(this.tickCount);
+						this.startAnimationState.stop();
+
+						this.startAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.startAnimationState);
 						break;
 					case 3:
-						this.stopAnimationState.startIfStopped(this.tickCount);
+						this.stopAnimationState.stop();
+
+						this.stopAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.stopAnimationState);
 						break;
 				}
@@ -379,6 +386,7 @@ public class ThornSpikeEntity extends Mob implements JerotesEntity, TraceableEnt
 			if (bl) {
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(8);
+					this.setAnimationState(0);
 					this.setAnimationState("attack");
 				}
 			}
@@ -431,6 +439,7 @@ public class ThornSpikeEntity extends Mob implements JerotesEntity, TraceableEnt
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor serverLevelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData, @Nullable CompoundTag compoundTag) {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(10);
+			this.setAnimationState(0);
 			this.setAnimationState("start");
 		}
 		return super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
@@ -440,6 +449,7 @@ public class ThornSpikeEntity extends Mob implements JerotesEntity, TraceableEnt
 	public void tickDeath() {
 		if(deathTime <= 0){
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("stop");
 		}
 		++this.deathTime;

@@ -20,8 +20,7 @@ import com.jerotes.jerotesvillage.entity.Monster.IllagerFaction.MeleeIllagerEnti
 import com.jerotes.jerotesvillage.entity.Monster.IllagerFaction.SpellIllagerEntity;
 import com.jerotes.jerotesvillage.entity.Monster.Resurrecter.ResurrecterEntity;
 import com.jerotes.jerotesvillage.entity.Monster.SpirveEntity;
-import com.jerotes.jerotesvillage.entity.Monster.WickedRidiculeCalls.SecondRounderSkeletonEntity;
-import com.jerotes.jerotesvillage.entity.Monster.WickedRidiculeCalls.SecondRounderZombieEntity;
+import com.jerotes.jerotesvillage.entity.Monster.WickedRidiculeCalls.*;
 import com.jerotes.jerotesvillage.entity.Shoot.Arrow.CarvedVillagerSpectralArrowEntity;
 import com.jerotes.jerotesvillage.init.JerotesVillageItems;
 import com.jerotes.jerotesvillage.init.JerotesVillageVillagerProfessions;
@@ -32,7 +31,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -64,8 +62,6 @@ public class VillagerEvent {
 	@SubscribeEvent
 	public static void VillagerGoal(EntityJoinLevelEvent event) {
 		Entity entity = event.getEntity();
-		if (!(entity.getType() == EntityType.VILLAGER || entity.getType() == EntityType.WANDERING_TRADER))
-			return;
         if (entity instanceof Villager villager) {
 			if (!(villager.getVillagerData().getProfession() == JerotesVillageVillagerProfessions.VILLAGER_CONSCRIPTION.get() && villager.getVillagerData().getLevel() > 0)) {
 				VillagerAddGoal(villager);
@@ -337,6 +333,11 @@ public class VillagerEvent {
 		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, BlamerEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, SecondRounderZombieEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, SecondRounderSkeletonEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, SecondRounderSpiderEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, MockerEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, ConjoinerEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, SwellingEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, PetitionerEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, RottenDogEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, BaseHagEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.addGoal(1, new AvoidEntityGoal<>(villager, FirepowerPourerEntity.class, 8.0F, 0.8D, 0.8D));
@@ -353,6 +354,11 @@ public class VillagerEvent {
 		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, BlamerEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, SecondRounderZombieEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, SecondRounderSkeletonEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, SecondRounderSpiderEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, MockerEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, ConjoinerEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, SwellingEntity.class, 8.0F, 0.8D, 0.8D));
+		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, PetitionerEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, RottenDogEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, BaseHagEntity.class, 8.0F, 0.8D, 0.8D));
 		villager.goalSelector.removeGoal(new AvoidEntityGoal<>(villager, FirepowerPourerEntity.class, 8.0F, 0.8D, 0.8D));

@@ -98,6 +98,7 @@ public class PredationToothedFlowerEntity extends Monster implements RangedAttac
 		if (!this.level().isClientSide()) {
 			this.setShootTick(85);
 			this.setAnimTick(10);
+			this.setAnimationState(0);
 			this.setAnimationState("shoot");
 		}
 		//法术列表-捕食齿花喷吐
@@ -179,6 +180,7 @@ public class PredationToothedFlowerEntity extends Monster implements RangedAttac
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -261,19 +263,27 @@ public class PredationToothedFlowerEntity extends Monster implements RangedAttac
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 					case 2:
-						this.shootAnimationState.startIfStopped(this.tickCount);
+						this.shootAnimationState.stop();
+
+						this.shootAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shootAnimationState);
 						break;
 					case 3:
-						this.hideAnimationState.startIfStopped(this.tickCount);
+						this.hideAnimationState.stop();
+
+						this.hideAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.hideAnimationState);
 						break;
 					case 4:
-						this.unHideAnimationState.startIfStopped(this.tickCount);
+						this.unHideAnimationState.stop();
+
+						this.unHideAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.unHideAnimationState);
 						break;
 				}
@@ -344,6 +354,7 @@ public class PredationToothedFlowerEntity extends Monster implements RangedAttac
 				this.setUnHide(false);
 				this.setHideTick(20);
 				this.setAnimTick(21);
+				this.setAnimationState(0);
 				this.setAnimationState("hide");
 				this.setBoundingBox(this.makeBoundingBox());
 			}
@@ -353,6 +364,7 @@ public class PredationToothedFlowerEntity extends Monster implements RangedAttac
 				this.setUnHide(true);
 				this.setHideTick(20);
 				this.setAnimTick(21);
+				this.setAnimationState(0);
 				this.setAnimationState("unHide");
 				this.setBoundingBox(this.makeBoundingBox());
 			}
@@ -411,6 +423,7 @@ public class PredationToothedFlowerEntity extends Monster implements RangedAttac
 		}
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(10);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		boolean bl = super.doHurtTarget(entity);

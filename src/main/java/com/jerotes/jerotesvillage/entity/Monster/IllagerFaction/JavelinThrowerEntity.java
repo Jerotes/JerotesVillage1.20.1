@@ -151,9 +151,11 @@ public class JavelinThrowerEntity extends MeleeIllagerEntity implements AlwaysSh
             if (!this.level().isClientSide()) {
                 this.setAnimTick(10);
                 if (handItem == this.getMainHandItem()) {
+                    this.setAnimationState(0);
                     this.setAnimationState("throw1");
                 }
                 else {
+                    this.setAnimationState(0);
                     this.setAnimationState("throw2");
                 }
             }
@@ -181,9 +183,11 @@ public class JavelinThrowerEntity extends MeleeIllagerEntity implements AlwaysSh
                     this.setThrowTick(60);
                     this.setAnimTick(10);
                     if (handItem == this.getMainHandItem()) {
+                        this.setAnimationState(0);
                         this.setAnimationState("throw1");
                     }
                     else {
+                        this.setAnimationState(0);
                         this.setAnimationState("throw2");
                     }
                 }
@@ -324,19 +328,27 @@ public class JavelinThrowerEntity extends MeleeIllagerEntity implements AlwaysSh
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attackAnimationState.startIfStopped(this.tickCount);
+                        this.attackAnimationState.stop();
+
+                        this.attackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attackAnimationState);
                         break;
                     case 2:
-                        this.itemAttackAnimationState.startIfStopped(this.tickCount);
+                        this.itemAttackAnimationState.stop();
+
+                        this.itemAttackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.itemAttackAnimationState);
                         break;
                     case 3:
-                        this.throw1AnimationState.startIfStopped(this.tickCount);
+                        this.throw1AnimationState.stop();
+
+                        this.throw1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.throw1AnimationState);
                         break;
                     case 4:
-                        this.throw2AnimationState.startIfStopped(this.tickCount);
+                        this.throw2AnimationState.stop();
+
+                        this.throw2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.throw2AnimationState);
                         break;
                 }
@@ -399,10 +411,12 @@ public class JavelinThrowerEntity extends MeleeIllagerEntity implements AlwaysSh
             this.setAttackTick(0);
             if (this.getMainHandItem().isEmpty()) {
                 this.setAnimTick(5);
+                this.setAnimationState(0);
                 this.setAnimationState("attack");
             }
             else {
                 this.setAnimTick(8);
+                this.setAnimationState(0);
                 this.setAnimationState("itemAttack");
             }
         }

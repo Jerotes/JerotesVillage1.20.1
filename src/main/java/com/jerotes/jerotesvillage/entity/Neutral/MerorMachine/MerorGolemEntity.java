@@ -329,19 +329,27 @@ public class MerorGolemEntity extends MerorMachineEntity implements SpellUseEnti
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.sendAnimationState.startIfStopped(this.tickCount);
+						this.sendAnimationState.stop();
+
+						this.sendAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.sendAnimationState);
 						break;
 					case 4:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -483,6 +491,7 @@ public class MerorGolemEntity extends MerorMachineEntity implements SpellUseEnti
 					if (!this.level().isClientSide()) {
 						this.setSendTick(0);
 						this.setAnimTick(90);
+						this.setAnimationState(0);
 						this.setAnimationState("send");
 					}
 				}
@@ -538,8 +547,10 @@ public class MerorGolemEntity extends MerorMachineEntity implements SpellUseEnti
 			this.setAnimTick(15);
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom > 15) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else {
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			}
 		}
@@ -570,6 +581,7 @@ public class MerorGolemEntity extends MerorMachineEntity implements SpellUseEnti
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

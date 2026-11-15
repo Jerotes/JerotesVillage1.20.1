@@ -278,6 +278,7 @@ public class WonderlandBroncoEntity extends Horse implements PlayerRideableJumpi
 			return;
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(50);
+			this.setAnimationState(0);
 			this.setAnimationState("eatGrass");
 		}
 	}
@@ -345,6 +346,7 @@ public class WonderlandBroncoEntity extends Horse implements PlayerRideableJumpi
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}
@@ -356,6 +358,7 @@ public class WonderlandBroncoEntity extends Horse implements PlayerRideableJumpi
 		if (!this.level().isClientSide()) {
 			this.setSpecialAttackTick(20);
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("angry1");
 		}
 	}
@@ -501,6 +504,7 @@ public class WonderlandBroncoEntity extends Horse implements PlayerRideableJumpi
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -719,19 +723,27 @@ public class WonderlandBroncoEntity extends Horse implements PlayerRideableJumpi
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 					case 2:
-						this.angry1AnimationState.startIfStopped(this.tickCount);
+						this.angry1AnimationState.stop();
+
+						this.angry1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.angry1AnimationState);
 						break;
 					case 3:
-						this.angry2AnimationState.startIfStopped(this.tickCount);
+						this.angry2AnimationState.stop();
+
+						this.angry2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.angry2AnimationState);
 						break;
 					case 4:
-						this.eatGrassAnimationState.startIfStopped(this.tickCount);
+						this.eatGrassAnimationState.stop();
+
+						this.eatGrassAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eatGrassAnimationState);
 						break;
 				}
@@ -1015,6 +1027,7 @@ public class WonderlandBroncoEntity extends Horse implements PlayerRideableJumpi
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		boolean bl = super.doHurtTarget(entity);
@@ -1056,6 +1069,7 @@ public class WonderlandBroncoEntity extends Horse implements PlayerRideableJumpi
 	public void makeMad() {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(50);
+			this.setAnimationState(0);
 			this.setAnimationState("angry2");
 		}
 		super.makeMad();
@@ -1064,6 +1078,7 @@ public class WonderlandBroncoEntity extends Horse implements PlayerRideableJumpi
 		super.makeMad();
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("angry1");
 		}
 	}

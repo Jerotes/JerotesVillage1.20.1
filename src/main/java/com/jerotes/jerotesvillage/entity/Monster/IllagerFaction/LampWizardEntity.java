@@ -113,6 +113,7 @@ public class LampWizardEntity extends SpellIllagerEntity implements SpellUseEnti
             if (!this.level().isClientSide()) {
                 this.setSpellTick(20);
                 this.setAnimTick(25);
+                this.setAnimationState(0);
                 this.setAnimationState("shoot1");
             }
         }
@@ -120,6 +121,7 @@ public class LampWizardEntity extends SpellIllagerEntity implements SpellUseEnti
             if (!this.level().isClientSide()) {
                 this.setSpellTick(20);
                 this.setAnimTick(15);
+                this.setAnimationState(0);
                 this.setAnimationState("shoot2");
             }
         }
@@ -127,6 +129,7 @@ public class LampWizardEntity extends SpellIllagerEntity implements SpellUseEnti
             if (!this.level().isClientSide()) {
                 this.setSpellTick(20);
                 this.setAnimTick(16);
+                this.setAnimationState(0);
                 this.setAnimationState("shoot3");
             }
         }
@@ -258,15 +261,21 @@ public class LampWizardEntity extends SpellIllagerEntity implements SpellUseEnti
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.shoot1AnimationState.startIfStopped(this.tickCount);
+                        this.shoot1AnimationState.stop();
+
+                        this.shoot1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shoot1AnimationState);
                         break;
                     case 2:
-                        this.shoot2AnimationState.startIfStopped(this.tickCount);
+                        this.shoot2AnimationState.stop();
+
+                        this.shoot2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shoot2AnimationState);
                         break;
                     case 3:
-                        this.shoot3AnimationState.startIfStopped(this.tickCount);
+                        this.shoot3AnimationState.stop();
+
+                        this.shoot3AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shoot3AnimationState);
                         break;
                 }

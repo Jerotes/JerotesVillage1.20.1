@@ -100,6 +100,7 @@ public class BulgeEntity extends MagicSummonedEntity implements RangedAttackMob,
 	public void performRangedAttack(LivingEntity livingEntity, float f) {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("shoot");
 		}
 		//法术列表-波涛射弹
@@ -157,6 +158,7 @@ public class BulgeEntity extends MagicSummonedEntity implements RangedAttackMob,
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -217,7 +219,9 @@ public class BulgeEntity extends MagicSummonedEntity implements RangedAttackMob,
 							this.stopAllAnimation();
 							break;
 						case 1:
-							this.shootAnimationState.startIfStopped(this.tickCount);
+							this.shootAnimationState.stop();
+
+							this.shootAnimationState.start(this.tickCount);
 							this.stopMostAnimation(this.shootAnimationState);
 							break;
 					}

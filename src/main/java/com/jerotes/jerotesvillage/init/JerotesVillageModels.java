@@ -1,6 +1,8 @@
 package com.jerotes.jerotesvillage.init;
 
 import com.jerotes.jerotesvillage.client.model.*;
+import com.jerotes.jerotesvillage.client.model.Modelconjoiner;
+import com.jerotes.jerotesvillage.client.model.Modelpetitioner;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -10,6 +12,10 @@ import net.minecraftforge.fml.common.Mod;
 public class JerotesVillageModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelmocker.LAYER_LOCATION, Modelmocker::createBodyLayer);
+		event.registerLayerDefinition(Modelconjoiner.LAYER_LOCATION, Modelconjoiner::createBodyLayer);
+		event.registerLayerDefinition(Modelpetitioner.LAYER_LOCATION, Modelpetitioner::createBodyLayer);
+		event.registerLayerDefinition(Modelswelling.LAYER_LOCATION, Modelswelling::createBodyLayer);
 		event.registerLayerDefinition(Modeltorch_of_firm_ice.LAYER_LOCATION, Modeltorch_of_firm_ice::createBodyLayer);
 
 		event.registerLayerDefinition(Modelcarved_iron_golem.LAYER_LOCATION, Modelcarved_iron_golem::createBodyLayer);

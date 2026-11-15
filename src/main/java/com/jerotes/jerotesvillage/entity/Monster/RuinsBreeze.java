@@ -131,6 +131,7 @@ public class RuinsBreeze extends Monster implements RangedAttackMob, JerotesEnti
         if (!this.level().isClientSide()) {
             this.setShootTick(60);
             this.setAnimTick(23);
+            this.setAnimationState(0);
             this.setAnimationState("shoot");
         }
         this.getNavigation().stop();
@@ -167,6 +168,7 @@ public class RuinsBreeze extends Monster implements RangedAttackMob, JerotesEnti
         return this.getEntityData().get(ANIM_TICK);
     }
     public void setAnimationState(String input) {
+        this.setAnimationState(0);
         this.setAnimationState(this.getAnimationState(input));
     }
     public void setAnimationState(int id) {
@@ -235,11 +237,15 @@ public class RuinsBreeze extends Monster implements RangedAttackMob, JerotesEnti
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.longJumpAnimationState.startIfStopped(this.tickCount);
+                        this.longJumpAnimationState.stop();
+
+                        this.longJumpAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.longJumpAnimationState);
                         break;
                     case 2:
-                        this.shootAnimationState.startIfStopped(this.tickCount);
+                        this.shootAnimationState.stop();
+
+                        this.shootAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shootAnimationState);
                         break;
                 }
@@ -318,6 +324,7 @@ public class RuinsBreeze extends Monster implements RangedAttackMob, JerotesEnti
                     if (!this.level().isClientSide()) {
                         this.setJumpTick(10);
                         this.setAnimTick(23);
+                        this.setAnimationState(0);
                         this.setAnimationState("longJump");
                     }
                     this.playSound(JerotesVillageSoundEvents.RUINS_BREEZE_JUMP, 1.0f, 1.0f);

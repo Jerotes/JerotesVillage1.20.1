@@ -155,6 +155,7 @@ public class ViewerEntity extends PathfinderMob implements JerotesEntity, SkinEn
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -223,11 +224,15 @@ public class ViewerEntity extends PathfinderMob implements JerotesEntity, SkinEn
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.clap1AnimationState.startIfStopped(this.tickCount);
+						this.clap1AnimationState.stop();
+
+						this.clap1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.clap1AnimationState);
 						break;
 					case 2:
-						this.clap2AnimationState.startIfStopped(this.tickCount);
+						this.clap2AnimationState.stop();
+
+						this.clap2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.clap2AnimationState);
 						break;
 				}

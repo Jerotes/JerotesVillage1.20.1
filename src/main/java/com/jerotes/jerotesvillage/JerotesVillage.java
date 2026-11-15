@@ -91,7 +91,7 @@ public class JerotesVillage {
 
     }
     @SubscribeEvent
-    public static void onAddReloadListeners(AddReloadListenerEvent event) {
+    public void onAddReloadListeners(AddReloadListenerEvent event) {
         event.addListener(ViewerNameManager.getInstance());
     }
 

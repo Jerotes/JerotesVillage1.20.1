@@ -577,51 +577,75 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.chop1AnimationState.startIfStopped(this.tickCount);
+						this.chop1AnimationState.stop();
+
+						this.chop1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.chop1AnimationState);
 						break;
 					case 2:
-						this.chop2AnimationState.startIfStopped(this.tickCount);
+						this.chop2AnimationState.stop();
+
+						this.chop2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.chop2AnimationState);
 						break;
 					case 3:
-						this.slash1AnimationState.startIfStopped(this.tickCount);
+						this.slash1AnimationState.stop();
+
+						this.slash1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.slash1AnimationState);
 						break;
 					case 4:
-						this.slash2AnimationState.startIfStopped(this.tickCount);
+						this.slash2AnimationState.stop();
+
+						this.slash2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.slash2AnimationState);
 						break;
 					case 5:
-						this.slash3AnimationState.startIfStopped(this.tickCount);
+						this.slash3AnimationState.stop();
+
+						this.slash3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.slash3AnimationState);
 						break;
 					case 6:
-						this.stomp1AnimationState.startIfStopped(this.tickCount);
+						this.stomp1AnimationState.stop();
+
+						this.stomp1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.stomp1AnimationState);
 						break;
 					case 7:
-						this.overloadAnimationState.startIfStopped(this.tickCount);
+						this.overloadAnimationState.stop();
+
+						this.overloadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.overloadAnimationState);
 						break;
 					case 8:
-						this.shockAnimationState.startIfStopped(this.tickCount);
+						this.shockAnimationState.stop();
+
+						this.shockAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shockAnimationState);
 						break;
 					case 9:
-						this.throwAnimationState.startIfStopped(this.tickCount);
+						this.throwAnimationState.stop();
+
+						this.throwAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.throwAnimationState);
 						break;
 					case 10:
-						this.cycloneAnimationState.startIfStopped(this.tickCount);
+						this.cycloneAnimationState.stop();
+
+						this.cycloneAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.cycloneAnimationState);
 						break;
 					case 11:
-						this.hornAnimationState.startIfStopped(this.tickCount);
+						this.hornAnimationState.stop();
+
+						this.hornAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.hornAnimationState);
 						break;
 					case 12:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -878,6 +902,7 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 					if (!this.level().isClientSide()) {
 						this.setShockTick(0);
 						this.setAnimTick(40);
+						this.setAnimationState(0);
 						this.setAnimationState("shock");
 					}
 					if (this.level() instanceof ServerLevel serverLevel) {
@@ -1019,6 +1044,7 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 					if (!this.level().isClientSide()) {
 						this.setReteTick(0);
 						this.setAnimTick(40);
+						this.setAnimationState(0);
 						this.setAnimationState("throw");
 					}
 					if (!this.isSilent()) {
@@ -1062,6 +1088,7 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 					if (!this.level().isClientSide()) {
 						this.setCycloneTick(0);
 						this.setAnimTick(100);
+						this.setAnimationState(0);
 						this.setAnimationState("cyclone");
 					}
 					if (!this.isSilent()) {
@@ -1124,6 +1151,7 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 					if (!this.level().isClientSide()) {
 						this.setRushTick(0);
 						this.setAnimTick(140);
+						this.setAnimationState(0);
 						this.setAnimationState("Rush");
 					}
 					if (!this.isSilent()) {
@@ -1291,6 +1319,7 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 		if (bl) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
+				this.setAnimationState(0);
 				this.setAnimationState("horn");
 			}
 		}
@@ -1387,36 +1416,42 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 				this.setAttackTick(20);
 				this.setAnimTick(20);
 				this.setAttackUse(1);
+				this.setAnimationState(0);
 				this.setAnimationState("chop1");
 			}
 			else if (attackRandom > 50) {
 				this.setAttackTick(20);
 				this.setAnimTick(20);
 				this.setAttackUse(1);
+				this.setAnimationState(0);
 				this.setAnimationState("chop2");
 			}
 			else if (attackRandom > 45) {
 				this.setAttackTick(30);
 				this.setAnimTick(30);
 				this.setAttackUse(2);
+				this.setAnimationState(0);
 				this.setAnimationState("slash1");
 			}
 			else if (attackRandom > 35) {
 				this.setAttackTick(20);
 				this.setAnimTick(20);
 				this.setAttackUse(3);
+				this.setAnimationState(0);
 				this.setAnimationState("slash2");
 			}
 			else if (attackRandom > 25) {
 				this.setAttackTick(20);
 				this.setAnimTick(20);
 				this.setAttackUse(3);
+				this.setAnimationState(0);
 				this.setAnimationState("slash3");
 			}
 			else if (attackRandom > 10) {
 				this.setAttackTick(20);
 				this.setAnimTick(20);
 				this.setAttackUse(4);
+				this.setAnimationState(0);
 				this.setAnimationState("stomp1");
 			}
 			else if (this.getOverloadCooldown() <= 0) {
@@ -1424,6 +1459,7 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 				this.setAttackTick(50);
 				this.setAnimTick(50);
 				this.setAttackUse(5);
+				this.setAnimationState(0);
 				this.setAnimationState("overload");
 				if (this.level() instanceof ServerLevel serverLevel) {
 					if (!this.isInvisible()) {
@@ -1435,6 +1471,7 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 				this.setAttackTick(20);
 				this.setAnimTick(20);
 				this.setAttackUse(3);
+				this.setAnimationState(0);
 				this.setAnimationState("slash2");
 			}
 		}
@@ -1692,6 +1729,7 @@ public class MerorChampionEntity extends MerorMachineEntity implements BreakShie
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

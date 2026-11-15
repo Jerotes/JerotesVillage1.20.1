@@ -13,7 +13,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class SecondRounderSpiderRenderer extends SpiderRenderer<SecondRounderSpiderEntity> {
     private static final ResourceLocation LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/second_rounder_spider.png");
-    private static final ResourceLocation WICKED_RIDICULE_CALLS_LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/wicked_ridicule_calls_second_rounder_spider_eye.png");
+    private static final ResourceLocation WICKED_RIDICULE_CALLS_LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/wicked_ridicule_calls_second_rounder_spider_eyes.png");
     private static final ResourceLocation PUSH_LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/second_rounder_spider_push.png");
 
     public SecondRounderSpiderRenderer(EntityRendererProvider.Context context) {

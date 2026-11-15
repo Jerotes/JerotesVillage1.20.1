@@ -927,138 +927,208 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.pullAnimationState.startIfStopped(this.tickCount);
+						this.pullAnimationState.stop();
+
+						this.pullAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.pullAnimationState);
 						break;
 					case 2:
-						this.pullAttackAnimationState.startIfStopped(this.tickCount);
+						this.pullAttackAnimationState.stop();
+
+						this.pullAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.pullAttackAnimationState);
 						break;
 					case 3:
-						this.backAnimationState.startIfStopped(this.tickCount);
+						this.backAnimationState.stop();
+
+						this.backAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.backAnimationState);
 						break;
 					case 4:
-						this.cleave1AnimationState.startIfStopped(this.tickCount);
+						this.cleave1AnimationState.stop();
+
+						this.cleave1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.cleave1AnimationState);
 						break;
 					case 5:
-						this.cleave2AnimationState.startIfStopped(this.tickCount);
+						this.cleave2AnimationState.stop();
+
+						this.cleave2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.cleave2AnimationState);
 						break;
 					case 6:
-						this.cleave3AnimationState.startIfStopped(this.tickCount);
+						this.cleave3AnimationState.stop();
+
+						this.cleave3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.cleave3AnimationState);
 						break;
 					case 7:
-						this.slash1AnimationState.startIfStopped(this.tickCount);
+						this.slash1AnimationState.stop();
+
+						this.slash1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.slash1AnimationState);
 						break;
 					case 8:
-						this.slash2AnimationState.startIfStopped(this.tickCount);
+						this.slash2AnimationState.stop();
+
+						this.slash2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.slash2AnimationState);
 						break;
 					case 9:
-						this.slash3AnimationState.startIfStopped(this.tickCount);
+						this.slash3AnimationState.stop();
+
+						this.slash3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.slash3AnimationState);
 						break;
 					case 10:
-						this.stomp1AnimationState.startIfStopped(this.tickCount);
+						this.stomp1AnimationState.stop();
+
+						this.stomp1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.stomp1AnimationState);
 						break;
 					case 11:
-						this.stomp2AnimationState.startIfStopped(this.tickCount);
+						this.stomp2AnimationState.stop();
+
+						this.stomp2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.stomp2AnimationState);
 						break;
 					case 12:
-						this.stomp3AnimationState.startIfStopped(this.tickCount);
+						this.stomp3AnimationState.stop();
+
+						this.stomp3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.stomp3AnimationState);
 						break;
 					case 13:
-						this.fist1AnimationState.startIfStopped(this.tickCount);
+						this.fist1AnimationState.stop();
+
+						this.fist1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.fist1AnimationState);
 						break;
 					case 14:
-						this.fist2AnimationState.startIfStopped(this.tickCount);
+						this.fist2AnimationState.stop();
+
+						this.fist2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.fist2AnimationState);
 						break;
 					case 15:
-						this.fist3AnimationState.startIfStopped(this.tickCount);
+						this.fist3AnimationState.stop();
+
+						this.fist3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.fist3AnimationState);
 						break;
 					case 16:
-						this.shake1AnimationState.startIfStopped(this.tickCount);
+						this.shake1AnimationState.stop();
+
+						this.shake1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shake1AnimationState);
 						break;
 					case 17:
-						this.shake2AnimationState.startIfStopped(this.tickCount);
+						this.shake2AnimationState.stop();
+
+						this.shake2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shake2AnimationState);
 						break;
 					case 18:
-						this.shake3AnimationState.startIfStopped(this.tickCount);
+						this.shake3AnimationState.stop();
+
+						this.shake3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shake3AnimationState);
 						break;
 					case 19:
-						this.block1AnimationState.startIfStopped(this.tickCount);
+						this.block1AnimationState.stop();
+
+						this.block1AnimationState.start(this.tickCount);
 						break;
 					case 20:
-						this.block2AnimationState.startIfStopped(this.tickCount);
+						this.block2AnimationState.stop();
+
+						this.block2AnimationState.start(this.tickCount);
 						break;
 					case 21:
-						this.block3AnimationState.startIfStopped(this.tickCount);
+						this.block3AnimationState.stop();
+
+						this.block3AnimationState.start(this.tickCount);
 						break;
 					case 22:
-						this.block4AnimationState.startIfStopped(this.tickCount);
+						this.block4AnimationState.stop();
+
+						this.block4AnimationState.start(this.tickCount);
 						break;
 					case 23:
-						this.block5AnimationState.startIfStopped(this.tickCount);
+						this.block5AnimationState.stop();
+
+						this.block5AnimationState.start(this.tickCount);
 						break;
 					case 24:
-						this.throwAnimationState.startIfStopped(this.tickCount);
+						this.throwAnimationState.stop();
+
+						this.throwAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.throwAnimationState);
 						break;
 					case 25:
-						this.wonderlinCallAnimationState.startIfStopped(this.tickCount);
+						this.wonderlinCallAnimationState.stop();
+
+						this.wonderlinCallAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.wonderlinCallAnimationState);
 						break;
 					case 26:
-						this.wonderlinRushAnimationState.startIfStopped(this.tickCount);
+						this.wonderlinRushAnimationState.stop();
+
+						this.wonderlinRushAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.wonderlinRushAnimationState);
 						break;
 					case 27:
-						this.goldAnimationState.startIfStopped(this.tickCount);
+						this.goldAnimationState.stop();
+
+						this.goldAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.goldAnimationState);
 						break;
 					case 28:
-						this.thornAnimationState.startIfStopped(this.tickCount);
+						this.thornAnimationState.stop();
+
+						this.thornAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.thornAnimationState);
 						break;
 					case 29:
-						this.grappleAnimationState.startIfStopped(this.tickCount);
+						this.grappleAnimationState.stop();
+
+						this.grappleAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.grappleAnimationState);
 						break;
 					case 30:
-						this.rushAttackAnimationState.startIfStopped(this.tickCount);
+						this.rushAttackAnimationState.stop();
+
+						this.rushAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.rushAttackAnimationState);
 						break;
 					case 31:
-						this.shockAnimationState.startIfStopped(this.tickCount);
+						this.shockAnimationState.stop();
+
+						this.shockAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shockAnimationState);
 						break;
 					case 32:
-						this.angryAttackAnimationState.startIfStopped(this.tickCount);
+						this.angryAttackAnimationState.stop();
+
+						this.angryAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.angryAttackAnimationState);
 						break;
 					case 33:
-						this.snapAttackAnimationState.startIfStopped(this.tickCount);
+						this.snapAttackAnimationState.stop();
+
+						this.snapAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.snapAttackAnimationState);
 						break;
 					case 34:
-						this.blockAttackAnimationState.startIfStopped(this.tickCount);
+						this.blockAttackAnimationState.stop();
+
+						this.blockAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.blockAttackAnimationState);
 						break;
 					case 35:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -1236,6 +1306,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 						this.setUseSword(false);
 						this.setChangeSword(20);
 						this.setAnimTick(20);
+						this.setAnimationState(0);
 						this.setAnimationState("back");
 					}
 				}
@@ -1251,11 +1322,13 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 							this.setAttackTick(20);
 							this.setAttackUse(2);
 							this.setAnimTick(20);
+							this.setAnimationState(0);
 							this.setAnimationState("pullAttack");
 						}
 					} else {
 						if (!this.level().isClientSide()) {
 							this.setAnimTick(20);
+							this.setAnimationState(0);
 							this.setAnimationState("pull");
 						}
 					}
@@ -1300,6 +1373,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 					if (!this.level().isClientSide()) {
 						this.setThrowSpearTick(0);
 						this.setAnimTick(45);
+						this.setAnimationState(0);
 						this.setAnimationState("throw");
 					}
 					if (this.level() instanceof ServerLevel serverLevel) {
@@ -1353,6 +1427,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 					if (!this.level().isClientSide()) {
 						this.setWonderlinCallAndRushTick(0);
 						this.setAnimTick(40);
+						this.setAnimationState(0);
 						this.setAnimationState("wonderlinCall");
 					}
 					if (!this.isSilent()) {
@@ -1367,6 +1442,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 				if (this.getWonderlinCallAndRushUseTick() == 35 && this.isAlive()) {
 					if (!this.level().isClientSide()) {
 						this.setAnimTick(35);
+						this.setAnimationState(0);
 						this.setAnimationState("wonderlinRush");
 					}
 
@@ -1409,6 +1485,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 					if (!this.level().isClientSide()) {
 						this.setGoldenBodyTick(0);
 						this.setAnimTick(50);
+						this.setAnimationState(0);
 						this.setAnimationState("gold");
 					}
 					if (this.level() instanceof ServerLevel serverLevel) {
@@ -1455,6 +1532,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 					if (!this.level().isClientSide()) {
 						this.setSummonThornTick(0);
 						this.setAnimTick(40);
+						this.setAnimationState(0);
 						this.setAnimationState("thorn");
 					}
 					if (!this.isSilent()) {
@@ -1490,6 +1568,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 					if (!this.level().isClientSide()) {
 						this.setGrappleTick(0);
 						this.setAnimTick(60);
+						this.setAnimationState(0);
 						this.setAnimationState("grapple");
 					}
 					if (!this.isSilent()) {
@@ -1651,6 +1730,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 						this.setAttackUse(1);
 						this.setRushUseTick(20);
 						this.setAnimTick(20);
+						this.setAnimationState(0);
 						this.setAnimationState("rushAttack");
 					}
 				}
@@ -1675,6 +1755,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 					if (!this.level().isClientSide()) {
 						this.setBlockAttackTick(0);
 						this.setAnimTick(40);
+						this.setAnimationState(0);
 						this.setAnimationState("blockAttack");
 					}
 				}
@@ -1706,6 +1787,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 					if (!this.level().isClientSide()) {
 						this.setUseSpellTick(40);
 						this.setAnimTick(40);
+						this.setAnimationState(0);
 						this.setAnimationState("shock");
 					}
 					if (!this.isSilent()) {
@@ -1747,6 +1829,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 						this.setAnimTick(70);
 						this.setAttackUse(2);
 						this.setAttackTick(30);
+						this.setAnimationState(0);
 						this.setAnimationState("angryAttack");
 					}
 					if (!this.isSilent()) {
@@ -1867,12 +1950,15 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 				this.setAttackUse(1);
 				this.setAnimTick(20);
 				if (attackRandom > 20) {
+					this.setAnimationState(0);
 					this.setAnimationState("cleave1");
 				}
 				else if (attackRandom > 10) {
+					this.setAnimationState(0);
 					this.setAnimationState("cleave2");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("cleave3");
 				}
 			} else if (attackChoose > 0.55f) {
@@ -1880,12 +1966,15 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 				this.setAttackUse(2);
 				this.setAnimTick(20);
 				if (attackRandom > 20) {
+					this.setAnimationState(0);
 					this.setAnimationState("slash1");
 				}
 				else if (attackRandom > 10) {
+					this.setAnimationState(0);
 					this.setAnimationState("slash2");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("slash3");
 				}
 			} else if (attackChoose > 0.4f) {
@@ -1893,12 +1982,15 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 				this.setAttackUse(3);
 				this.setAnimTick(20);
 				if (attackRandom > 20) {
+					this.setAnimationState(0);
 					this.setAnimationState("stomp1");
 				}
 				else if (attackRandom > 10) {
+					this.setAnimationState(0);
 					this.setAnimationState("stomp2");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("stomp3");
 				}
 			} else if (attackChoose > 0.15f) {
@@ -1906,12 +1998,15 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 				this.setAttackUse(4);
 				this.setAnimTick(20);
 				if (attackRandom > 20) {
+					this.setAnimationState(0);
 					this.setAnimationState("fist1");
 				}
 				else if (attackRandom > 10) {
+					this.setAnimationState(0);
 					this.setAnimationState("fist2");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("fist3");
 				}
 			} else if (attackChoose > 0.035f) {
@@ -1919,12 +2014,15 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 				this.setAttackUse(5);
 				this.setAnimTick(20);
 				if (attackRandom > 20) {
+					this.setAnimationState(0);
 					this.setAnimationState("shake1");
 				}
 				else if (attackRandom > 10) {
+					this.setAnimationState(0);
 					this.setAnimationState("shake2");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("shake3");
 				}
 			}
@@ -1932,6 +2030,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 				this.setAttackTick(20);
 				this.setAttackUse(6);
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("snapAttack");
 			}
 		}
@@ -2293,12 +2392,16 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 						//格挡
 						int blockRandom = this.getRandom().nextInt(40);
 						if (blockRandom > 30) {
+							this.setAnimationState(0);
 							this.setAnimationState("block1");
 						} else if (blockRandom > 20) {
+							this.setAnimationState(0);
 							this.setAnimationState("block2");
 						} else if (blockRandom > 10) {
+							this.setAnimationState(0);
 							this.setAnimationState("block3");
 						} else {
+							this.setAnimationState(0);
 							this.setAnimationState("block4");
 						}
 					}
@@ -2308,6 +2411,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 						this.setAttackTick(18);
 						this.setAttackUse(2);
 						this.setAnimTick(10);
+						this.setAnimationState(0);
 						this.setAnimationState("block5");
 					}
 				}
@@ -2430,6 +2534,7 @@ public class TyrantOfTheMountainRealmEntity extends BaseWonderlinEntity implemen
 		if(deathTime <= 0) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

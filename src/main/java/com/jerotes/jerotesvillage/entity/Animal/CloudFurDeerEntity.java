@@ -347,6 +347,7 @@ public class CloudFurDeerEntity extends AbstractHorse implements PlayerRideableJ
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}
@@ -359,6 +360,7 @@ public class CloudFurDeerEntity extends AbstractHorse implements PlayerRideableJ
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}
@@ -448,6 +450,7 @@ public class CloudFurDeerEntity extends AbstractHorse implements PlayerRideableJ
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -630,7 +633,9 @@ public class CloudFurDeerEntity extends AbstractHorse implements PlayerRideableJ
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 				}
@@ -841,6 +846,7 @@ public class CloudFurDeerEntity extends AbstractHorse implements PlayerRideableJ
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		boolean bl = super.doHurtTarget(entity);

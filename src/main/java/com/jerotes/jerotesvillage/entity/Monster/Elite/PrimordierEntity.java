@@ -350,6 +350,7 @@ public class PrimordierEntity extends Monster implements JerotesEntity, ColdAbso
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -494,47 +495,69 @@ public class PrimordierEntity extends Monster implements JerotesEntity, ColdAbso
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 					case 4:
-						this.attack4AnimationState.startIfStopped(this.tickCount);
+						this.attack4AnimationState.stop();
+
+						this.attack4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack4AnimationState);
 						break;
 					case 5:
-						this.attack5AnimationState.startIfStopped(this.tickCount);
+						this.attack5AnimationState.stop();
+
+						this.attack5AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack5AnimationState);
 						break;
 					case 6:
-						this.attack6AnimationState.startIfStopped(this.tickCount);
+						this.attack6AnimationState.stop();
+
+						this.attack6AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack6AnimationState);
 						break;
 					case 7:
-						this.attack7AnimationState.startIfStopped(this.tickCount);
+						this.attack7AnimationState.stop();
+
+						this.attack7AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack7AnimationState);
 						break;
 					case 8:
-						this.attack8AnimationState.startIfStopped(this.tickCount);
+						this.attack8AnimationState.stop();
+
+						this.attack8AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack8AnimationState);
 						break;
 					case 9:
-						this.shockAnimationState.startIfStopped(this.tickCount);
+						this.shockAnimationState.stop();
+
+						this.shockAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shockAnimationState);
 						break;
 					case 10:
-						this.shockToCorrosiveAnimationState.startIfStopped(this.tickCount);
+						this.shockToCorrosiveAnimationState.stop();
+
+						this.shockToCorrosiveAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shockToCorrosiveAnimationState);
 						break;
 					case 11:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -655,7 +678,7 @@ public class PrimordierEntity extends Monster implements JerotesEntity, ColdAbso
 		//技能
 		{
 			//威慑
-			if (this.isAlive()) {
+			if (this.isAlive() && !this.isNoAi()) {
 				//判定
 				if (this.isAggressive() && this.getAttackTick() <= -10 && !this.specialAction() && this.getShockTick() >= 600 && this.isShouldShock() && this.getTarget() != null && this.getTarget() instanceof LivingEntity) {
 					if (!this.level().isClientSide()) {
@@ -663,6 +686,7 @@ public class PrimordierEntity extends Monster implements JerotesEntity, ColdAbso
 						this.setShockTick(0);
 						this.setShockUseTick(120);
 						this.setAnimTick(60);
+						this.setAnimationState(0);
 						this.setAnimationState("shock");
 					}
 					if (this.level() instanceof ServerLevel serverLevel) {
@@ -691,6 +715,7 @@ public class PrimordierEntity extends Monster implements JerotesEntity, ColdAbso
 						if (!this.level().isClientSide()) {
 							this.setShockUseTick(0);
 							this.setAnimTick(15);
+							this.setAnimationState(0);
 							this.setAnimationState("shockToCorrosive");
 						}
 						if (!corrosiver.isSilent()) {
@@ -850,41 +875,49 @@ public class PrimordierEntity extends Monster implements JerotesEntity, ColdAbso
 			if (attackRandom > 35) {
 				this.setAnimTick(60);
 				this.setAttackTick(50);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 				this.setAttackUse(1);
 			} else if (attackRandom > 30) {
 				this.setAnimTick(40);
 				this.setAttackTick(42);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 				this.setAttackUse(2);
 			} else if (attackRandom > 25) {
 				this.setAnimTick(40);
 				this.setAttackTick(42);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 				this.setAttackUse(2);
 			} else if (attackRandom > 20) {
 				this.setAnimTick(50);
 				this.setAttackTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("attack4");
 				this.setAttackUse(2);
 			} else if (attackRandom > 15) {
 				this.setAnimTick(50);
 				this.setAttackTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("attack5");
 				this.setAttackUse(2);
 			} else if (attackRandom > 10) {
 				this.setAnimTick(60);
 				this.setAttackTick(50);
+				this.setAnimationState(0);
 				this.setAnimationState("attack6");
 				this.setAttackUse(4);
 			} else if (attackRandom > 5) {
 				this.setAnimTick(40);
 				this.setAttackTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("attack7");
 				this.setAttackUse(3);
 			} else {
 				this.setAnimTick(40);
 				this.setAttackTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("attack8");
 				this.setAttackUse(3);
 			}
@@ -1106,6 +1139,7 @@ public class PrimordierEntity extends Monster implements JerotesEntity, ColdAbso
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

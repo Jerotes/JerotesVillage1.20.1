@@ -1,5 +1,9 @@
 package com.jerotes.jerotesvillage.init;
 
+import com.jerotes.jerotesvillage.client.renderer.MockerRenderer;
+import com.jerotes.jerotesvillage.client.renderer.ConjoinerRenderer;
+import com.jerotes.jerotesvillage.client.renderer.PetitionerRenderer;
+import com.jerotes.jerotesvillage.client.renderer.SwellingRenderer;
 import com.jerotes.jerotes.client.renderer.*;
 import com.jerotes.jerotesvillage.client.renderer.*;
 import com.jerotes.jerotesvillage.client.renderer.PartRenderer;
@@ -38,6 +42,7 @@ public class JerotesVillageEntityRenderers {
         event.registerEntityRenderer(JerotesVillageEntityType.VIROSAANS_WIND_OF_SLAUGHTER.get(), BreathAreaRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.CHAOTIC_DISCHARGE.get(), ChaoticDischargeRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.TORCH_GAZE.get(), TorchGazeRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.WAIL_OF_THE_PETITIONER.get(), WailOfThePetitionerRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.COLLAPSE_ZONE.get(), CollapseZoneRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.OMINOUS_GEAR.get(), OminousGearRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.UNCLEAN_BLOOD_RAIN.get(), NoopRenderer::new);
@@ -174,6 +179,10 @@ public class JerotesVillageEntityRenderers {
         event.registerEntityRenderer(JerotesVillageEntityType.SECOND_ROUNDER_SKELETON.get(), SecondRounderSkeletonRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SECOND_ROUNDER_SPIDER.get(), SecondRounderSpiderRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.ENDER_STOWAWAY.get(), EnderStowawayRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.MOCKER.get(), MockerRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.CONJOINER.get(), ConjoinerRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.PETITIONER.get(), PetitionerRenderer::new);
+        event.registerEntityRenderer(JerotesVillageEntityType.SWELLING.get(), SwellingRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.PROSPEROUS_ENVOY.get(), ProsperousEnvoyRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.RESURRECTER.get(), ResurrecterRenderer::new);
         event.registerEntityRenderer(JerotesVillageEntityType.SEDIMENT_GUARD.get(), ResurrecterRenderer::new);

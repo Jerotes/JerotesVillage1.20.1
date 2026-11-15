@@ -120,9 +120,11 @@ public class BlasterEntity extends MeleeIllagerEntity implements AlwaysShowArmIl
             this.setThrowTick(80);
             this.setAnimTick(10);
             if (handItem == this.getMainHandItem()) {
+                this.setAnimationState(0);
                 this.setAnimationState("throw1");
             }
             else {
+                this.setAnimationState(0);
                 this.setAnimationState("throw2");
             }
         }
@@ -215,15 +217,21 @@ public class BlasterEntity extends MeleeIllagerEntity implements AlwaysShowArmIl
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attackAnimationState.startIfStopped(this.tickCount);
+                        this.attackAnimationState.stop();
+
+                        this.attackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attackAnimationState);
                         break;
                     case 2:
-                        this.throw1AnimationState.startIfStopped(this.tickCount);
+                        this.throw1AnimationState.stop();
+
+                        this.throw1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.throw1AnimationState);
                         break;
                     case 3:
-                        this.throw2AnimationState.startIfStopped(this.tickCount);
+                        this.throw2AnimationState.stop();
+
+                        this.throw2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.throw2AnimationState);
                         break;
                 }
@@ -255,6 +263,7 @@ public class BlasterEntity extends MeleeIllagerEntity implements AlwaysShowArmIl
         if (!this.level().isClientSide()) {
             this.setThrowTick(0);
             this.setAnimTick(5);
+            this.setAnimationState(0);
             this.setAnimationState("attack");
         }
         this.idle1AnimationState.stop();

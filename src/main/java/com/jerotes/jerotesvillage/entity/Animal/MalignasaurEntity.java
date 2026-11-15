@@ -510,6 +510,7 @@ public class MalignasaurEntity extends BaseTamableAnimalEntity implements Neutra
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -674,71 +675,105 @@ public class MalignasaurEntity extends BaseTamableAnimalEntity implements Neutra
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 					case 4:
-						this.headAttack1AnimationState.startIfStopped(this.tickCount);
+						this.headAttack1AnimationState.stop();
+
+						this.headAttack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.headAttack1AnimationState);
 						break;
 					case 5:
-						this.headAttack2AnimationState.startIfStopped(this.tickCount);
+						this.headAttack2AnimationState.stop();
+
+						this.headAttack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.headAttack2AnimationState);
 						break;
 					case 6:
-						this.headAttack3AnimationState.startIfStopped(this.tickCount);
+						this.headAttack3AnimationState.stop();
+
+						this.headAttack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.headAttack3AnimationState);
 						break;
 					case 7:
-						this.tailAttack1AnimationState.startIfStopped(this.tickCount);
+						this.tailAttack1AnimationState.stop();
+
+						this.tailAttack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.tailAttack1AnimationState);
 						break;
 					case 8:
-						this.tailAttack2AnimationState.startIfStopped(this.tickCount);
+						this.tailAttack2AnimationState.stop();
+
+						this.tailAttack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.tailAttack2AnimationState);
 						break;
 					case 9:
-						this.tailAttack3AnimationState.startIfStopped(this.tickCount);
+						this.tailAttack3AnimationState.stop();
+
+						this.tailAttack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.tailAttack3AnimationState);
 						break;
 					case 10:
-						this.breathAnimationState.startIfStopped(this.tickCount);
+						this.breathAnimationState.stop();
+
+						this.breathAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.breathAnimationState);
 						break;
 					case 11:
-						this.whirlpoolAnimationState.startIfStopped(this.tickCount);
+						this.whirlpoolAnimationState.stop();
+
+						this.whirlpoolAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.whirlpoolAnimationState);
 						break;
 					case 12:
-						this.jumpAnimationState.startIfStopped(this.tickCount);
+						this.jumpAnimationState.stop();
+
+						this.jumpAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.jumpAnimationState);
 						break;
 					case 13:
-						this.armorAnimationState.startIfStopped(this.tickCount);
+						this.armorAnimationState.stop();
+
+						this.armorAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.armorAnimationState);
 						break;
 					case 14:
-						this.controlAnimationState.startIfStopped(this.tickCount);
+						this.controlAnimationState.stop();
+
+						this.controlAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.controlAnimationState);
 						break;
 					case 15:
-						this.deterAnimationState.startIfStopped(this.tickCount);
+						this.deterAnimationState.stop();
+
+						this.deterAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deterAnimationState);
 						break;
 					case 16:
-						this.bombAnimationState.startIfStopped(this.tickCount);
+						this.bombAnimationState.stop();
+
+						this.bombAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.bombAnimationState);
 						break;
 					case 17:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -1130,6 +1165,7 @@ public class MalignasaurEntity extends BaseTamableAnimalEntity implements Neutra
 		if (!this.level().isClientSide()) {
 			this.setJumpTick(0);
 			this.setAnimTick(30);
+			this.setAnimationState(0);
 			this.setAnimationState("jump");
 		}
 		return true;
@@ -1246,10 +1282,13 @@ public class MalignasaurEntity extends BaseTamableAnimalEntity implements Neutra
 			this.setAttackUse(1);
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom > 20) {
+				this.setAnimationState(0);
 				this.setAnimationState("headAttack1");
 			} else if (attackRandom < 10) {
+				this.setAnimationState(0);
 				this.setAnimationState("headAttack2");
 			} else {
+				this.setAnimationState(0);
 				this.setAnimationState("headAttack3");
 			}
 		}
@@ -1269,10 +1308,13 @@ public class MalignasaurEntity extends BaseTamableAnimalEntity implements Neutra
 			this.setAttackUse(2);
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom > 20) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom < 10) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else {
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			}
 		}
@@ -1288,10 +1330,13 @@ public class MalignasaurEntity extends BaseTamableAnimalEntity implements Neutra
 			this.setAttackUse(3);
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom > 20) {
+				this.setAnimationState(0);
 				this.setAnimationState("tailAttack1");
 			} else if (attackRandom < 10) {
+				this.setAnimationState(0);
 				this.setAnimationState("tailAttack2");
 			} else {
+				this.setAnimationState(0);
 				this.setAnimationState("tailAttack3");
 			}
 		}

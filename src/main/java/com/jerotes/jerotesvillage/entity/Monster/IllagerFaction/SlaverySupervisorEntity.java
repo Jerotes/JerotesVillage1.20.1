@@ -351,43 +351,63 @@ public class SlaverySupervisorEntity extends MeleeIllagerEntity implements Elite
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attack1AnimationState.startIfStopped(this.tickCount);
+                        this.attack1AnimationState.stop();
+
+                        this.attack1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack1AnimationState);
                         break;
                     case 2:
-                        this.attack2AnimationState.startIfStopped(this.tickCount);
+                        this.attack2AnimationState.stop();
+
+                        this.attack2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack2AnimationState);
                         break;
                     case 3:
-                        this.swordAttack1AnimationState.startIfStopped(this.tickCount);
+                        this.swordAttack1AnimationState.stop();
+
+                        this.swordAttack1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.swordAttack1AnimationState);
                         break;
                     case 4:
-                        this.swordAttack2AnimationState.startIfStopped(this.tickCount);
+                        this.swordAttack2AnimationState.stop();
+
+                        this.swordAttack2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.swordAttack2AnimationState);
                         break;
                     case 5:
-                        this.swordAttack3AnimationState.startIfStopped(this.tickCount);
+                        this.swordAttack3AnimationState.stop();
+
+                        this.swordAttack3AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.swordAttack3AnimationState);
                         break;
                     case 6:
-                        this.swordAttack4AnimationState.startIfStopped(this.tickCount);
+                        this.swordAttack4AnimationState.stop();
+
+                        this.swordAttack4AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.swordAttack4AnimationState);
                         break;
                     case 7:
-                        this.getAttackAnimationState.startIfStopped(this.tickCount);
+                        this.getAttackAnimationState.stop();
+
+                        this.getAttackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.getAttackAnimationState);
                         break;
                     case 8:
-                        this.setAttackAnimationState.startIfStopped(this.tickCount);
+                        this.setAttackAnimationState.stop();
+
+                        this.setAttackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.setAttackAnimationState);
                         break;
                     case 9:
-                        this.leadAnimationState.startIfStopped(this.tickCount);
+                        this.leadAnimationState.stop();
+
+                        this.leadAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.leadAnimationState);
                         break;
                     case 10:
-                        this.deadAnimationState.startIfStopped(this.tickCount);
+                        this.deadAnimationState.stop();
+
+                        this.deadAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.deadAnimationState);
                         break;
                 }
@@ -434,6 +454,7 @@ public class SlaverySupervisorEntity extends MeleeIllagerEntity implements Elite
                     this.setGetAttackCooldown(80);
                 }
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("getAttack");
             }
         }
@@ -476,8 +497,10 @@ public class SlaverySupervisorEntity extends MeleeIllagerEntity implements Elite
                     this.setAttackTick(0);
                     this.setAnimTick(5);
                     if (attackRandom < 20) {
+                        this.setAnimationState(0);
                         this.setAnimationState("attack1");
                     } else {
+                        this.setAnimationState(0);
                         this.setAnimationState("attack2");
                     }
                 }
@@ -487,12 +510,16 @@ public class SlaverySupervisorEntity extends MeleeIllagerEntity implements Elite
                 this.setAttackTick(10);
                 this.setAnimTick(20);
                 if (attackRandom > 20) {
+                    this.setAnimationState(0);
                     this.setAnimationState("swordAttack1");
                 } else if (attackRandom > 10) {
+                    this.setAnimationState(0);
                     this.setAnimationState("swordAttack2");
                 } else if (attackRandom > 5) {
+                    this.setAnimationState(0);
                     this.setAnimationState("swordAttack3");
                 } else {
+                    this.setAnimationState(0);
                     this.setAnimationState("swordAttack4");
                 }
                 return true;
@@ -505,6 +532,7 @@ public class SlaverySupervisorEntity extends MeleeIllagerEntity implements Elite
                 this.setSetAttackTick(25);
                 this.setGetAttackCooldown(160);
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("setAttack");
             }
             if (this.level() instanceof ServerLevel serverLevel) {
@@ -601,6 +629,7 @@ public class SlaverySupervisorEntity extends MeleeIllagerEntity implements Elite
             if (!this.level().isClientSide()) {
                 this.setSpellTick(100);
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("lead");
             }
             OtherSpellFind.AtonementResistance(this);
@@ -644,6 +673,7 @@ public class SlaverySupervisorEntity extends MeleeIllagerEntity implements Elite
         if(deathTime <= 0){
             if (!this.level().isClientSide()) {
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("dead");
             }
         }

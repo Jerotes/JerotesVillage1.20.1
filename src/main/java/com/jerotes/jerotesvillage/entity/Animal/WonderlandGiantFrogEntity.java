@@ -271,6 +271,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 	protected SoundEvent getAmbientSound() {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("croak");
 		}
 		return SoundEvents.FROG_AMBIENT;
@@ -546,12 +547,14 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
 				this.setAttackTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("attack");
 			}
 		}
 		else {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
+				this.setAnimationState(0);
 				this.setAnimationState("attack");
 			}
 			if (!this.isSilent()) {
@@ -592,12 +595,14 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(24);
 				this.setAttackTick(60);
+				this.setAnimationState(0);
 				this.setAnimationState("tongue");
 			}
 		}
 		else {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
+				this.setAnimationState(0);
 				this.setAnimationState("attack");
 			}
 			if (!this.isSilent()) {
@@ -746,6 +751,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -952,23 +958,33 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.jumpAnimationState.startIfStopped(this.tickCount);
+						this.jumpAnimationState.stop();
+
+						this.jumpAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.jumpAnimationState);
 						break;
 					case 2:
-						this.croakAnimationState.startIfStopped(this.tickCount);
+						this.croakAnimationState.stop();
+
+						this.croakAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.croakAnimationState);
 						break;
 					case 3:
-						this.tongueAnimationState.startIfStopped(this.tickCount);
+						this.tongueAnimationState.stop();
+
+						this.tongueAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.tongueAnimationState);
 						break;
 					case 4:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 					case 5:
-						this.eatAnimationState.startIfStopped(this.tickCount);
+						this.eatAnimationState.stop();
+
+						this.eatAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eatAnimationState);
 						break;
 				}
@@ -997,6 +1013,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 			if (entity instanceof LivingEntity livingEntity && livingEntity.getType().is(EntityTypeTags.FROG_FOOD)) {
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(24);
+					this.setAnimationState(0);
 					this.setAnimationState("tongue");
 				}
 				AttackFind.attackBegin(this, entity);
@@ -1010,6 +1027,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 			} else {
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(10);
+					this.setAnimationState(0);
 					this.setAnimationState("attack");
 				}
 				boolean bl = super.doHurtTarget(entity);
@@ -1024,6 +1042,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 		else {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
+				this.setAnimationState(0);
 				this.setAnimationState("attack");
 			}
 			float damageMulti = 1;
@@ -1090,6 +1109,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 				if (this.getTarget() == null) {
 					if (!this.level().isClientSide()) {
 						this.setAnimTick(10);
+						this.setAnimationState(0);
 						this.setAnimationState("eat");
 					}
 				}
@@ -1102,6 +1122,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 					if (this.getTarget() == null) {
 						if (!this.level().isClientSide()) {
 							this.setAnimTick(10);
+							this.setAnimationState(0);
 							this.setAnimationState("eat");
 						}
 					}
@@ -1295,6 +1316,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 					if (!this.level().isClientSide()) {
 						this.setJumpTick(20);
 						this.setAnimTick(24);
+						this.setAnimationState(0);
 						this.setAnimationState("jump");
 						this.setOnGround(false);
 						this.setFallTick(0);
@@ -1448,6 +1470,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 				if (!this.level().isClientSide()) {
 					this.setJumpTick(20);
 					this.setAnimTick(24);
+					this.setAnimationState(0);
 					this.setAnimationState("jump");
 				}
 			}
@@ -1645,6 +1668,7 @@ public class WonderlandGiantFrogEntity extends BaseTamableAnimalEntity implement
 			if (!this.level().isClientSide()) {
 				this.setJumpTick(20);
 				this.setAnimTick(24);
+				this.setAnimationState(0);
 				this.setAnimationState("jump");
 			}
 		}

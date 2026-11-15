@@ -94,6 +94,7 @@ public class SeawaveEntity extends BulgeEntity implements RangedAttackMob, Conce
 			//波涛射弹
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(50);
+				this.setAnimationState(0);
 				this.setAnimationState("shoot");
 				this.setShootTick(50);
 				OtherSpellList.BulgeBullet(this.getSpellLevel(), this, livingEntity).spellUse();
@@ -103,6 +104,7 @@ public class SeawaveEntity extends BulgeEntity implements RangedAttackMob, Conce
 			//宝石海浪
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("wind");
 				this.setWindTick(30);
 			}
@@ -343,27 +345,39 @@ public class SeawaveEntity extends BulgeEntity implements RangedAttackMob, Conce
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.shootAnimationState.startIfStopped(this.tickCount);
+						this.shootAnimationState.stop();
+
+						this.shootAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shootAnimationState);
 						break;
 					case 2:
-						this.windAnimationState.startIfStopped(this.tickCount);
+						this.windAnimationState.stop();
+
+						this.windAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.windAnimationState);
 						break;
 					case 3:
-						this.bulgeAnimationState.startIfStopped(this.tickCount);
+						this.bulgeAnimationState.stop();
+
+						this.bulgeAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.bulgeAnimationState);
 						break;
 					case 4:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 5:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 6:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -514,6 +528,7 @@ public class SeawaveEntity extends BulgeEntity implements RangedAttackMob, Conce
 			if (this.getBulgeTick() >= 600 && listBulge.size() <= ListSeawave.size() * 4 && this.isAggressive() && !this.specialAction() && this.getAttackTick() <= 0) {
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(25);
+					this.setAnimationState(0);
 					this.setAnimationState("bulge");
 					this.setBulgeTick(0);
 					this.setBulgeUseTick(25);
@@ -548,6 +563,7 @@ public class SeawaveEntity extends BulgeEntity implements RangedAttackMob, Conce
 			this.setAnimTick(30);
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom > 15 || this.getTridentCount() <= 0) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 				this.setAttackUse(2);
 				if (!this.isSilent()) {
@@ -555,6 +571,7 @@ public class SeawaveEntity extends BulgeEntity implements RangedAttackMob, Conce
 				}
 			}
 			else {
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 				this.setAttackUse(1);
 			}
@@ -712,6 +729,7 @@ public class SeawaveEntity extends BulgeEntity implements RangedAttackMob, Conce
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

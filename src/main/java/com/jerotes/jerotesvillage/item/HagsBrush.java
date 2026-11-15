@@ -21,6 +21,12 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class HagsBrush extends ItemToolBaseBrush {
+
+	@Override
+	public int getEnchantmentValue() {
+		return 15;
+	}
+
 	public HagsBrush() {
 			super(new Properties().stacksTo(1).rarity(Rarity.EPIC), 2.0f, 1.0f);
 	}

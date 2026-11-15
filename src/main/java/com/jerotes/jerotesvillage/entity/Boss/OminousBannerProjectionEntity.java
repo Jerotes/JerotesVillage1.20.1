@@ -347,6 +347,7 @@ public class OminousBannerProjectionEntity extends Raider implements OminouseBan
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -456,11 +457,15 @@ public class OminousBannerProjectionEntity extends Raider implements OminouseBan
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.roundAnimationState.startIfStopped(this.tickCount);
+						this.roundAnimationState.stop();
+
+						this.roundAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.roundAnimationState);
 						break;
 					case 2:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -534,6 +539,7 @@ public class OminousBannerProjectionEntity extends Raider implements OminouseBan
 				}
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(10);
+					this.setAnimationState(0);
 					this.setAnimationState("round");
 				}
 				//最后一波
@@ -930,6 +936,7 @@ public class OminousBannerProjectionEntity extends Raider implements OminouseBan
 		if(deathTime <= 0) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

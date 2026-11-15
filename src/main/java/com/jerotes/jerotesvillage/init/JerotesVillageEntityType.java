@@ -43,6 +43,10 @@ import com.jerotes.jerotesvillage.entity.MagicSummoned.VinePodBomb.VinePodBombEn
 import com.jerotes.jerotesvillage.entity.Monster.*;
 import com.jerotes.jerotesvillage.entity.Monster.Elite.*;
 import com.jerotes.jerotesvillage.entity.Monster.Ender.EnderStowawayEntity;
+import com.jerotes.jerotesvillage.entity.Monster.WickedRidiculeCalls.MockerEntity;
+import com.jerotes.jerotesvillage.entity.Monster.WickedRidiculeCalls.ConjoinerEntity;
+import com.jerotes.jerotesvillage.entity.Monster.WickedRidiculeCalls.PetitionerEntity;
+import com.jerotes.jerotesvillage.entity.Monster.WickedRidiculeCalls.SwellingEntity;
 import com.jerotes.jerotesvillage.entity.Monster.Hag.CohortHagEntity;
 import com.jerotes.jerotesvillage.entity.Monster.Hag.CovenHagEntity;
 import com.jerotes.jerotesvillage.entity.Monster.IllagerFaction.*;
@@ -64,6 +68,7 @@ import com.jerotes.jerotesvillage.entity.Neutral.Wonderlin.WonderlinWarriorEntit
 import com.jerotes.jerotesvillage.entity.Neutral.Zsiein.BloodsuckerEntity;
 import com.jerotes.jerotesvillage.entity.Neutral.Zsiein.RigiderEntity;
 import com.jerotes.jerotesvillage.entity.Neutral.Zsiein.ScavengerEntity;
+import com.jerotes.jerotesvillage.entity.Other.OtherSpell.WailOfThePetitionerEntity;
 import com.jerotes.jerotesvillage.entity.Other.Boat.ABaseBoatEntity;
 import com.jerotes.jerotesvillage.entity.Other.Boat.ABaseChestBoatEntity;
 import com.jerotes.jerotesvillage.entity.Other.BreathAreaSpell.BloodyScreamAreaEntity;
@@ -191,6 +196,18 @@ public class JerotesVillageEntityType {
 	public static final RegistryObject<EntityType<EnderStowawayEntity>> ENDER_STOWAWAY = register("ender_stowaway",
 			EntityType.Builder.of(EnderStowawayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(10)
 					.sized(0.6f, 2.9f));
+	public static final RegistryObject<EntityType<MockerEntity>> MOCKER = register("mocker",
+			EntityType.Builder.of(MockerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(10)
+					.sized(0.9f, 1.95f));
+	public static final RegistryObject<EntityType<ConjoinerEntity>> CONJOINER = register("conjoiner",
+			EntityType.Builder.of(ConjoinerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(10)
+					.sized(0.8f, 2.75f));
+	public static final RegistryObject<EntityType<PetitionerEntity>> PETITIONER = register("petitioner",
+			EntityType.Builder.of(PetitionerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(10)
+					.sized(0.6f, 1.95f));
+	public static final RegistryObject<EntityType<SwellingEntity>> SWELLING = register("swelling",
+			EntityType.Builder.of(SwellingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(10)
+					.sized(0.45f, 1.3f));
 	public static final RegistryObject<EntityType<ProsperousEnvoyEntity>> PROSPEROUS_ENVOY = register("prosperous_envoy",
 			EntityType.Builder.of(ProsperousEnvoyEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32)
 					.sized(2.25f, 2.2f));
@@ -1107,6 +1124,9 @@ public class JerotesVillageEntityType {
 	public static final RegistryObject<EntityType<ChaoticDischargeEntity>> CHAOTIC_DISCHARGE = register("chaotic_discharge",
 			EntityType.Builder.<ChaoticDischargeEntity>of(ChaoticDischargeEntity::new, MobCategory.MISC).fireImmune().clientTrackingRange(16).updateInterval(Integer.MAX_VALUE)
 					.sized(0.5F, 0.5F));
+	public static final RegistryObject<EntityType<WailOfThePetitionerEntity>> WAIL_OF_THE_PETITIONER = register("wail_of_the_petitioner",
+			EntityType.Builder.<WailOfThePetitionerEntity>of(WailOfThePetitionerEntity::new, MobCategory.MISC).fireImmune().clientTrackingRange(10).updateInterval(Integer.MAX_VALUE)
+					.sized(12f, 12f));
 	public static final RegistryObject<EntityType<TorchGazeEntity>> TORCH_GAZE = register("torch_gaze",
 			EntityType.Builder.<TorchGazeEntity>of(TorchGazeEntity::new, MobCategory.MISC).fireImmune().clientTrackingRange(16).updateInterval(Integer.MAX_VALUE)
 					.sized(0.5F, 1.0f));
@@ -1218,6 +1238,11 @@ public class JerotesVillageEntityType {
 		event.put(SECOND_ROUNDER_SKELETON.get(), SecondRounderSkeletonEntity.createAttributes().build());
 		event.put(SECOND_ROUNDER_SPIDER.get(), SecondRounderSpiderEntity.createAttributes().build());
 		event.put(ENDER_STOWAWAY.get(), EnderStowawayEntity.createAttributes().build());
+		event.put(MOCKER.get(), MockerEntity.createAttributes().build());
+		event.put(CONJOINER.get(), ConjoinerEntity.createAttributes().build());
+		event.put(PETITIONER.get(), PetitionerEntity.createAttributes().build());
+
+		event.put(SWELLING.get(), SwellingEntity.createAttributes().build());
 		event.put(RESURRECTER.get(), ResurrecterEntity.createAttributes().build());
 		event.put(SEDIMENT_GUARD.get(), SedimentGuardEntity.createAttributes().build());
 		event.put(SEDIMENT_SOUL_STABILIZER.get(), SedimentSoulStabilizerEntity.createAttributes().build());

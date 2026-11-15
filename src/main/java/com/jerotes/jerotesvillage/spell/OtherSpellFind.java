@@ -2292,7 +2292,7 @@ public class OtherSpellFind {
 				MerorBombEntity trapTarget = JerotesVillageEntityType.MEROR_BOMB.get().spawn(serverLevel, BlockPos.containing(summonPosTarget.getX(), summonPosTarget.getY(), summonPosTarget.getZ()), MobSpawnType.MOB_SUMMONED);
 				String string = ChatFormatting.stripFormatting(caster.getName().getString());
 				if (trap != null) {
-					if ("Redstone Monstrosity".equals(string) || "红石巨兽".equals(string)) {
+					if ("Redstone Golem".equals(string) || "红石傀儡".equals(string)) {
 						trap.setOwnerType(2);
 					}
 					else {
@@ -2304,7 +2304,7 @@ public class OtherSpellFind {
 					trap.setNoGravity(true);
 				}
 				if (trapTarget != null) {
-					if ("Redstone Monstrosity".equals(string) || "红石巨兽".equals(string)) {
+					if ("Redstone Golem".equals(string) || "红石傀儡".equals(string)) {
 						trapTarget.setOwnerType(2);
 					}
 					else {
@@ -3798,6 +3798,19 @@ public class OtherSpellFind {
 					attackCount += 1;
 				}
 			}
+			serverLevel.gameEvent(GameEvent.ENTITY_PLACE, new BlockPos((int) caster.getX(), (int) caster.getY(), (int) caster.getZ()), GameEvent.Context.of(caster));
+		}
+		return true;
+	}
+	//诉冤者之嚎$法术
+	public static boolean WailOfThePetitioner(LivingEntity caster, Entity target, int spellLevelDamage) {
+		if (caster.level() instanceof ServerLevel serverLevel) {
+			Vec3 targetPos = caster.getPosition(0);
+			WailOfThePetitionerEntity cloud = new WailOfThePetitionerEntity(serverLevel, caster);
+			cloud.setSpellLevelDamage(spellLevelDamage);
+			cloud.setPos(targetPos.x, targetPos.y, targetPos.z);
+			cloud.setOwner(caster);
+			serverLevel.addFreshEntity(cloud);
 			serverLevel.gameEvent(GameEvent.ENTITY_PLACE, new BlockPos((int) caster.getX(), (int) caster.getY(), (int) caster.getZ()), GameEvent.Context.of(caster));
 		}
 		return true;

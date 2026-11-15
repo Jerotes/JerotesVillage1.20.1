@@ -153,12 +153,21 @@ public class SpawnRules {
 	}
 	//邪笑呼唤
 	public static boolean WickedRidculeCallsSpawn(int num, double area, EntityType<? extends Monster> entityType, ServerLevelAccessor serverLevelAccessor, MobSpawnType mobSpawnType, BlockPos blockPos, RandomSource randomSource) {
-		if (JerotesVillageLevelData.get(serverLevelAccessor) != null && !JerotesVillageLevelData.get(serverLevelAccessor).WickedRidiculeNight) {
+		if (JerotesVillageLevelData.get(serverLevelAccessor) == null || !JerotesVillageLevelData.get(serverLevelAccessor).WickedRidiculeNight) {
 			List<LivingEntity> list = serverLevelAccessor.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(blockPos.getX(), blockPos.getY(), blockPos.getZ()), area, area, area));
 			list.removeIf(entity -> entity.getType() != entityType);
 			return list.size() < num && Monster.checkMonsterSpawnRules(entityType, serverLevelAccessor, mobSpawnType, blockPos, randomSource);
 		}
 		return Monster.checkMonsterSpawnRules(entityType, serverLevelAccessor, mobSpawnType, blockPos, randomSource);
+	}
+	//邪笑呼唤
+	public static boolean WickedRidculeCallsOnlySpawn(int num, double area, EntityType<? extends Monster> entityType, ServerLevelAccessor serverLevelAccessor, MobSpawnType mobSpawnType, BlockPos blockPos, RandomSource randomSource) {
+		if (JerotesVillageLevelData.get(serverLevelAccessor) == null || !JerotesVillageLevelData.get(serverLevelAccessor).WickedRidiculeNight) {
+			return false;
+		}
+		List<LivingEntity> list = serverLevelAccessor.getEntitiesOfClass(LivingEntity.class, AABB.ofSize(new Vec3(blockPos.getX(), blockPos.getY(), blockPos.getZ()), area, area, area));
+		list.removeIf(entity -> entity.getType() != entityType);
+		return list.size() < num && Monster.checkMonsterSpawnRules(entityType, serverLevelAccessor, mobSpawnType, blockPos, randomSource);
 	}
 	//阳光怪物
 	public static boolean LightMonsterSpawn(int num, double area, EntityType<? extends Monster> entityType, LevelAccessor levelAccessor, MobSpawnType mobSpawnType, BlockPos blockPos, RandomSource randomSource) {

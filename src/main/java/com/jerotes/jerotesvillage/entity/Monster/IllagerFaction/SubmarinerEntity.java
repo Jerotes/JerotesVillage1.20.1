@@ -229,19 +229,27 @@ public class SubmarinerEntity extends MeleeIllagerEntity implements SpellUseEnti
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attackAnimationState.startIfStopped(this.tickCount);
+                        this.attackAnimationState.stop();
+
+                        this.attackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attackAnimationState);
                         break;
                     case 2:
-                        this.itemAttackAnimationState.startIfStopped(this.tickCount);
+                        this.itemAttackAnimationState.stop();
+
+                        this.itemAttackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.itemAttackAnimationState);
                         break;
                     case 3:
-                        this.waveAnimationState.startIfStopped(this.tickCount);
+                        this.waveAnimationState.stop();
+
+                        this.waveAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.waveAnimationState);
                         break;
                     case 4:
-                        this.waveInWaterAnimationState.startIfStopped(this.tickCount);
+                        this.waveInWaterAnimationState.stop();
+
+                        this.waveInWaterAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.waveInWaterAnimationState);
                         break;
                 }
@@ -284,9 +292,11 @@ public class SubmarinerEntity extends MeleeIllagerEntity implements SpellUseEnti
                 this.setSpellTick(240);
                 this.setAnimTick(20);
                 if (this.isInWater()) {
+                    this.setAnimationState(0);
                     this.setAnimationState("waveInWater");
                 }
                 else {
+                    this.setAnimationState(0);
                     this.setAnimationState("wave");
                 }
             }
@@ -315,10 +325,12 @@ public class SubmarinerEntity extends MeleeIllagerEntity implements SpellUseEnti
         if (!this.level().isClientSide()) {
             if (this.getMainHandItem().isEmpty()) {
                 this.setAnimTick(5);
+                this.setAnimationState(0);
                 this.setAnimationState("attack");
             }
             else {
                 this.setAnimTick(10);
+                this.setAnimationState(0);
                 this.setAnimationState("itemAttack");
             }
         }

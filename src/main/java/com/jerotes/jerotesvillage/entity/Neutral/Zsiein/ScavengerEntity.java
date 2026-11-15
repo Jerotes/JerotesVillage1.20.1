@@ -105,11 +105,15 @@ public class ScavengerEntity extends ZsieinEntity {
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 				}
@@ -140,9 +144,11 @@ public class ScavengerEntity extends ZsieinEntity {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(10);
 			if (this.getRandom().nextFloat() > 0.5f) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			}
 			else {
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			}
 		}

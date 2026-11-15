@@ -459,23 +459,33 @@ public class ProsperousEnvoyEntity extends RamblerEntity implements BossEntity, 
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 					case 4:
-						this.trampleAnimationState.startIfStopped(this.tickCount);
+						this.trampleAnimationState.stop();
+
+						this.trampleAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.trampleAnimationState);
 						break;
 					case 5:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -697,10 +707,13 @@ public class ProsperousEnvoyEntity extends RamblerEntity implements BossEntity, 
 				this.setAnimTick(10);
 				int attackRandom = this.getRandom().nextInt(30);
 				if (attackRandom > 20) {
+					this.setAnimationState(0);
 					this.setAnimationState("attack1");
 				} else if (attackRandom < 10) {
+					this.setAnimationState(0);
 					this.setAnimationState("attack2");
 				} else {
+					this.setAnimationState(0);
 					this.setAnimationState("attack3");
 				}
 			}
@@ -711,6 +724,7 @@ public class ProsperousEnvoyEntity extends RamblerEntity implements BossEntity, 
 				this.setAttackTick(0);
 				this.setTrampleTick(40);
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("trample");
 			}
 			if (this.level() instanceof ServerLevel serverLevel) {
@@ -1011,6 +1025,7 @@ public class ProsperousEnvoyEntity extends RamblerEntity implements BossEntity, 
 		if(deathTime <= 0) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

@@ -402,23 +402,33 @@ public class MerorMonstrosityEntity extends MerorMachineEntity implements BreakS
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.spellAnimationState.startIfStopped(this.tickCount);
+						this.spellAnimationState.stop();
+
+						this.spellAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spellAnimationState);
 						break;
 					case 4:
-						this.sendAnimationState.startIfStopped(this.tickCount);
+						this.sendAnimationState.stop();
+
+						this.sendAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.sendAnimationState);
 						break;
 					case 5:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -637,6 +647,7 @@ public class MerorMonstrosityEntity extends MerorMachineEntity implements BreakS
 					if (!this.level().isClientSide()) {
 						this.setSendTick(0);
 						this.setAnimTick(70);
+						this.setAnimationState(0);
 						this.setAnimationState("send");
 					}
 				}
@@ -693,6 +704,7 @@ public class MerorMonstrosityEntity extends MerorMachineEntity implements BreakS
 					if (!this.level().isClientSide()) {
 						this.setShootTick(0);
 						this.setAnimTick(45);
+						this.setAnimationState(0);
 						this.setAnimationState("spell");
 					}
 				}
@@ -730,6 +742,7 @@ public class MerorMonstrosityEntity extends MerorMachineEntity implements BreakS
 				if (!this.level().isClientSide()) {
 					this.setAttackTick(30);
 					this.setAnimTick(40);
+					this.setAnimationState(0);
 					this.setAnimationState("attack1");
 				}
 			}
@@ -737,6 +750,7 @@ public class MerorMonstrosityEntity extends MerorMachineEntity implements BreakS
 				if (!this.level().isClientSide()) {
 					this.setAttackTick(35);
 					this.setAnimTick(50);
+					this.setAnimationState(0);
 					this.setAnimationState("attack2");
 				}
 			}
@@ -865,6 +879,7 @@ public class MerorMonstrosityEntity extends MerorMachineEntity implements BreakS
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

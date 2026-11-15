@@ -204,6 +204,10 @@ public class JerotesVillageItems implements JerotesItemsAdd {
 	public static final RegistryObject<Item> SECOND_ROUNDER_SKELETON_SPAWN_EGG = REGISTRY.register("second_rounder_skeleton_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.SECOND_ROUNDER_SKELETON, -3753310, -9543093, new Item.Properties()));
 	public static final RegistryObject<Item> SECOND_ROUNDER_SPIDER_SPAWN_EGG = REGISTRY.register("second_rounder_spider_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.SECOND_ROUNDER_SPIDER, 4933462, 11013646, new Item.Properties()));
 	public static final RegistryObject<Item> ENDER_STOWAWAY_SPAWN_EGG = REGISTRY.register("ender_stowaway_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.ENDER_STOWAWAY, 1447446, -9894932, new Item.Properties()));
+	public static final RegistryObject<Item> MOCKER_SPAWN_EGG = REGISTRY.register("mocker_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.MOCKER, 0x9c6c73, 0x420708, new Item.Properties()));
+	public static final RegistryObject<Item> CONJOINER_SPAWN_EGG = REGISTRY.register("conjoiner_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.CONJOINER, 0x8d6270, 0x2f2227, new Item.Properties()));
+	public static final RegistryObject<Item> PETITIONER_SPAWN_EGG = REGISTRY.register("petitioner_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.PETITIONER, 0xe0e0e0, 0xc7b2ab, new Item.Properties()));
+	public static final RegistryObject<Item> SWELLING_SPAWN_EGG = REGISTRY.register("swelling_spawn_egg", () -> new ForgeSpawnEggItem(JerotesVillageEntityType.SWELLING, 0x573132, 0x3f1c1a, new Item.Properties()));
 	//沉降
 	public static final RegistryObject<Item> RESURRECTER_COFFIN = block(JerotesVillageBlocks.RESURRECTER_COFFIN);
 	public static final RegistryObject<Item> RESURRECTER_EMPTY_COFFIN = block(JerotesVillageBlocks.RESURRECTER_EMPTY_COFFIN);

@@ -461,14 +461,17 @@ public class GiantMonsterEntity extends BaseTamableAnimalEntity implements CanBe
 			if (attackRandom > 20) {
 				this.setAttackTick(20);
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom > 10) {
 				this.setAttackTick(20);
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else {
 				this.setAttackTick(25);
 				this.setAnimTick(25);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			}
 		}
@@ -480,14 +483,17 @@ public class GiantMonsterEntity extends BaseTamableAnimalEntity implements CanBe
 			if (attackRandom > 20) {
 				this.setAttackTick(20);
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom > 10) {
 				this.setAttackTick(20);
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else {
 				this.setAttackTick(25);
 				this.setAnimTick(25);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			}
 		}
@@ -648,6 +654,7 @@ public class GiantMonsterEntity extends BaseTamableAnimalEntity implements CanBe
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -791,15 +798,21 @@ public class GiantMonsterEntity extends BaseTamableAnimalEntity implements CanBe
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 				}
@@ -1201,14 +1214,17 @@ public class GiantMonsterEntity extends BaseTamableAnimalEntity implements CanBe
 			if (attackRandom > 20) {
 				this.setAttackTick(15);
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom > 10) {
 				this.setAttackTick(15);
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else {
 				this.setAttackTick(20);
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			}
 		}

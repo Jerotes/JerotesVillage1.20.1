@@ -200,15 +200,21 @@ public class ExecutionerEntity extends MeleeIllagerEntity {
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attackAnimationState.startIfStopped(this.tickCount);
+                        this.attackAnimationState.stop();
+
+                        this.attackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attackAnimationState);
                         break;
                     case 2:
-                        this.itemAttack1AnimationState.startIfStopped(this.tickCount);
+                        this.itemAttack1AnimationState.stop();
+
+                        this.itemAttack1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.itemAttack1AnimationState);
                         break;
                     case 3:
-                        this.itemAttack2AnimationState.startIfStopped(this.tickCount);
+                        this.itemAttack2AnimationState.stop();
+
+                        this.itemAttack2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.itemAttack2AnimationState);
                         break;
                 }
@@ -247,6 +253,7 @@ public class ExecutionerEntity extends MeleeIllagerEntity {
                 if (!this.level().isClientSide()) {
                     this.setAttackTick(0);
                     this.setAnimTick(5);
+                    this.setAnimationState(0);
                     this.setAnimationState("attack");
                 }
                 return super.doHurtTarget(entity);
@@ -257,10 +264,12 @@ public class ExecutionerEntity extends MeleeIllagerEntity {
                     if (attackRandom < 25) {
                         this.setAttackTick(10);
                         this.setAnimTick(25);
+                        this.setAnimationState(0);
                         this.setAnimationState("itemAttack1");
                     } else {
                         this.setAttackTick(10);
                         this.setAnimTick(30);
+                        this.setAnimationState(0);
                         this.setAnimationState("itemAttack2");
                     }
                 }

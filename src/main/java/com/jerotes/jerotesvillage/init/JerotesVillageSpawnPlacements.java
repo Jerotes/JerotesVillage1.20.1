@@ -51,6 +51,14 @@ public class JerotesVillageSpawnPlacements {
 				SpawnRules.WickedRidculeCallsSpawn(32, 128, arg_0, arg_1, arg_2, arg_3, arg_4));
 		SpawnPlacements.register(JerotesVillageEntityType.ENDER_STOWAWAY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
 				SpawnRules.DarkMonsterSpawn(4, 32, arg_0, arg_1, arg_2, arg_3, arg_4));
+		SpawnPlacements.register(JerotesVillageEntityType.MOCKER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
+				SpawnRules.WickedRidculeCallsOnlySpawn(16, 128, arg_0, arg_1, arg_2, arg_3, arg_4));
+		SpawnPlacements.register(JerotesVillageEntityType.CONJOINER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
+				SpawnRules.WickedRidculeCallsOnlySpawn(16, 128, arg_0, arg_1, arg_2, arg_3, arg_4));
+		SpawnPlacements.register(JerotesVillageEntityType.PETITIONER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
+				SpawnRules.WickedRidculeCallsOnlySpawn(16, 128, arg_0, arg_1, arg_2, arg_3, arg_4));
+		SpawnPlacements.register(JerotesVillageEntityType.SWELLING.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
+				SpawnRules.WickedRidculeCallsOnlySpawn(16, 128, arg_0, arg_1, arg_2, arg_3, arg_4));
 		SpawnPlacements.register(JerotesVillageEntityType.PROSPEROUS_ENVOY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->
 				SpawnRules.BossSpawn(1, 256, arg_0, arg_1, arg_2, arg_3, arg_4));
 		SpawnPlacements.register(JerotesVillageEntityType.RESURRECTER.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (arg_0, arg_1, arg_2, arg_3, arg_4) ->

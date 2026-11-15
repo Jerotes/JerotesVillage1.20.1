@@ -94,6 +94,7 @@ public class PurpleSandGeckoEntity extends Animal implements JerotesEntity {
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -158,7 +159,9 @@ public class PurpleSandGeckoEntity extends Animal implements JerotesEntity {
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.hurtAnimationState.startIfStopped(this.tickCount);
+						this.hurtAnimationState.stop();
+
+						this.hurtAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.hurtAnimationState);
 						break;
 				}
@@ -248,6 +251,7 @@ public class PurpleSandGeckoEntity extends Animal implements JerotesEntity {
 			if (!this.isNoTail()) {
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(20);
+					this.setAnimationState(0);
 					this.setAnimationState("hurt");
 				}
 				if (this.random.nextFloat() > 0.3 && this.isAlive()) {

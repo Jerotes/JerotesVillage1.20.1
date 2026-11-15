@@ -272,8 +272,10 @@ public class MerorOathguardMechEntity extends MerorMachineEntity implements Spel
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(10);
 					if (handItem == this.getMainHandItem()) {
+						this.setAnimationState(0);
 						this.setAnimationState("throw1");
 					} else {
+						this.setAnimationState(0);
 						this.setAnimationState("throw2");
 					}
 				}
@@ -287,9 +289,11 @@ public class MerorOathguardMechEntity extends MerorMachineEntity implements Spel
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
 				if (handItem == this.getMainHandItem()) {
+					this.setAnimationState(0);
 					this.setAnimationState("throw1");
 				}
 				else {
+					this.setAnimationState(0);
 					this.setAnimationState("throw2");
 				}
 			}
@@ -647,35 +651,51 @@ public class MerorOathguardMechEntity extends MerorMachineEntity implements Spel
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 					case 2:
-						this.itemAttack1AnimationState.startIfStopped(this.tickCount);
+						this.itemAttack1AnimationState.stop();
+
+						this.itemAttack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.itemAttack1AnimationState);
 						break;
 					case 3:
-						this.itemAttack2AnimationState.startIfStopped(this.tickCount);
+						this.itemAttack2AnimationState.stop();
+
+						this.itemAttack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.itemAttack2AnimationState);
 						break;
 					case 4:
-						this.itemAttack3AnimationState.startIfStopped(this.tickCount);
+						this.itemAttack3AnimationState.stop();
+
+						this.itemAttack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.itemAttack3AnimationState);
 						break;
 					case 5:
-						this.itemAttack4AnimationState.startIfStopped(this.tickCount);
+						this.itemAttack4AnimationState.stop();
+
+						this.itemAttack4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.itemAttack4AnimationState);
 						break;
 					case 6:
-						this.throw1AnimationState.startIfStopped(this.tickCount);
+						this.throw1AnimationState.stop();
+
+						this.throw1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.throw1AnimationState);
 						break;
 					case 7:
-						this.throw2AnimationState.startIfStopped(this.tickCount);
+						this.throw2AnimationState.stop();
+
+						this.throw2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.throw2AnimationState);
 						break;
 					case 8:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -832,6 +852,7 @@ public class MerorOathguardMechEntity extends MerorMachineEntity implements Spel
 		if (this.getMainHandItem().isEmpty()) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(8);
+				this.setAnimationState(0);
 				this.setAnimationState("attack");
 			}
 		}
@@ -840,15 +861,19 @@ public class MerorOathguardMechEntity extends MerorMachineEntity implements Spel
 				int attackRandom = this.getRandom().nextInt(40);
 				if (attackRandom < 10) {
 					this.setAnimTick(15);
+					this.setAnimationState(0);
 					this.setAnimationState("itemAttack1");
 				} else if (attackRandom < 20) {
 					this.setAnimTick(15);
+					this.setAnimationState(0);
 					this.setAnimationState("itemAttack2");
 				} else if (attackRandom < 30) {
 					this.setAnimTick(15);
+					this.setAnimationState(0);
 					this.setAnimationState("itemAttack3");
 				} else {
 					this.setAnimTick(15);
+					this.setAnimationState(0);
 					this.setAnimationState("itemAttack4");
 				}
 			}
@@ -972,6 +997,7 @@ public class MerorOathguardMechEntity extends MerorMachineEntity implements Spel
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

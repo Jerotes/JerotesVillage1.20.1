@@ -316,30 +316,31 @@ public class DefectorEntity extends MeleeIllagerEntity {
     @Override
     public void aiStep() {
         super.aiStep();
-        //必须迎战
-        List<Mob> listTeam = DefectorEntity.this.level().getEntitiesOfClass(Mob.class, DefectorEntity.this.getBoundingBox().inflate(16.0, 16.0, 16.0));
-        listTeam.removeIf(entity -> !EntityFactionFind.isRaider(entity) || entity instanceof DefectorEntity);
-        listTeam.removeIf(entity -> entity.isNoAi() || entity.hasEffect(JerotesMobEffects.PARALYZED.get()) || entity.hasEffect(JerotesMobEffects.ANESTHETIZED_HOLD.get()) || entity.hasEffect(JerotesMobEffects.ENSLAVEMENT.get()));
-        if (!listTeam.isEmpty() || OtherMainConfig.DefectorMustAttack) {
-            if (!this.level().isClientSide) {
-                this.setMustEnemy(true);
+        if (this.getRandom().nextInt(10) == 1 && !this.isNoAi()) {
+            //必须迎战
+            List<Mob> listTeam = DefectorEntity.this.level().getEntitiesOfClass(Mob.class, DefectorEntity.this.getBoundingBox().inflate(16.0, 16.0, 16.0));
+            listTeam.removeIf(entity -> !EntityFactionFind.isRaider(entity) || entity instanceof DefectorEntity);
+            listTeam.removeIf(entity -> entity.isNoAi() || entity.hasEffect(JerotesMobEffects.PARALYZED.get()) || entity.hasEffect(JerotesMobEffects.ANESTHETIZED_HOLD.get()) || entity.hasEffect(JerotesMobEffects.ENSLAVEMENT.get()));
+            if (!listTeam.isEmpty() || OtherMainConfig.DefectorMustAttack) {
+                if (!this.level().isClientSide) {
+                    this.setMustEnemy(true);
+                }
+            } else {
+                if (!this.level().isClientSide) {
+                    this.setMustEnemy(false);
+                }
             }
-        }
-        else {
-            if (!this.level().isClientSide) {
-                this.setMustEnemy(false);
+            if (this.isMustEnemy()) {
+                this.addParticlesAroundSelf(ParticleTypes.SPLASH);
             }
-        }
-        if (this.isMustEnemy()) {
-            this.addParticlesAroundSelf(ParticleTypes.SPLASH);
-        }
-        //逃离袭击
-        if (this.level() instanceof ServerLevel serverLevel && serverLevel.isRaided(this.getOnPos()) && !this.isMustEnemy()) {
-            this.setTarget(null);
-            this.setLastHurtByMob(null);
-            Vec3 vec = LandRandomPos.getPosAway(this, 64, 48, this.position());
-            if (vec != null) {
-                this.getNavigation().moveTo(vec.x, vec.y, vec.z, 1.3d);
+            //逃离袭击
+            if (this.level() instanceof ServerLevel serverLevel && serverLevel.isRaided(this.getOnPos()) && !this.isMustEnemy()) {
+                this.setTarget(null);
+                this.setLastHurtByMob(null);
+                Vec3 vec = LandRandomPos.getPosAway(this, 64, 48, this.position());
+                if (vec != null) {
+                    this.getNavigation().moveTo(vec.x, vec.y, vec.z, 1.3d);
+                }
             }
         }
     }

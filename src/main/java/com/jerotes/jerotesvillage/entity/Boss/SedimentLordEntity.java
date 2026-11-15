@@ -389,6 +389,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -592,100 +593,150 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.startAnimationState.startIfStopped(this.tickCount);
+						this.startAnimationState.stop();
+
+						this.startAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.startAnimationState);
 						break;
 					case 2:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 3:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 4:
-						this.swordAttack1AnimationState.startIfStopped(this.tickCount);
+						this.swordAttack1AnimationState.stop();
+
+						this.swordAttack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.swordAttack1AnimationState);
 						break;
 					case 5:
-						this.swordAttack2AnimationState.startIfStopped(this.tickCount);
+						this.swordAttack2AnimationState.stop();
+
+						this.swordAttack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.swordAttack2AnimationState);
 						break;
 					case 6:
-						this.swordAttack3AnimationState.startIfStopped(this.tickCount);
+						this.swordAttack3AnimationState.stop();
+
+						this.swordAttack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.swordAttack3AnimationState);
 						break;
 					case 7:
-						this.swordAttack4AnimationState.startIfStopped(this.tickCount);
+						this.swordAttack4AnimationState.stop();
+
+						this.swordAttack4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.swordAttack4AnimationState);
 						break;
 					case 8:
-						this.leadAnimationState.startIfStopped(this.tickCount);
+						this.leadAnimationState.stop();
+
+						this.leadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.leadAnimationState);
 						break;
 					case 9:
-						this.block1AnimationState.startIfStopped(this.tickCount);
+						this.block1AnimationState.stop();
+
+						this.block1AnimationState.start(this.tickCount);
 						break;
 					case 10:
-						this.block2AnimationState.startIfStopped(this.tickCount);
+						this.block2AnimationState.stop();
+
+						this.block2AnimationState.start(this.tickCount);
 						break;
 					case 11:
-						this.block3AnimationState.startIfStopped(this.tickCount);
+						this.block3AnimationState.stop();
+
+						this.block3AnimationState.start(this.tickCount);
 						break;
 					case 12:
-						this.shieldAttackAnimationState.startIfStopped(this.tickCount);
+						this.shieldAttackAnimationState.stop();
+
+						this.shieldAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shieldAttackAnimationState);
 						break;
 					case 13:
-						this.dead1AnimationState.startIfStopped(this.tickCount);
+						this.dead1AnimationState.stop();
+
+						this.dead1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.dead1AnimationState);
 						break;
 					case 14:
-						this.dead2AnimationState.startIfStopped(this.tickCount);
+						this.dead2AnimationState.stop();
+
+						this.dead2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.dead2AnimationState);
 						break;
 					case 15:
-						this.pushingAttackAnimationState.startIfStopped(this.tickCount);
+						this.pushingAttackAnimationState.stop();
+
+						this.pushingAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.pushingAttackAnimationState);
 						break;
 					case 16:
-						this.tripAttackAnimationState.startIfStopped(this.tickCount);
+						this.tripAttackAnimationState.stop();
+
+						this.tripAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.tripAttackAnimationState);
 						break;
 					case 17:
-						this.precisionAttackAnimationState.startIfStopped(this.tickCount);
+						this.precisionAttackAnimationState.stop();
+
+						this.precisionAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.precisionAttackAnimationState);
 						break;
 					case 18:
-						this.sweepingAttackAnimationState.startIfStopped(this.tickCount);
+						this.sweepingAttackAnimationState.stop();
+
+						this.sweepingAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.sweepingAttackAnimationState);
 						break;
 					case 19:
-						this.menacingAttackAnimationState.startIfStopped(this.tickCount);
+						this.menacingAttackAnimationState.stop();
+
+						this.menacingAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.menacingAttackAnimationState);
 						break;
 					case 20:
-						this.maneuveringAttackAnimationState.startIfStopped(this.tickCount);
+						this.maneuveringAttackAnimationState.stop();
+
+						this.maneuveringAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.maneuveringAttackAnimationState);
 						break;
 					case 21:
-						this.lungingAttackAnimationState.startIfStopped(this.tickCount);
+						this.lungingAttackAnimationState.stop();
+
+						this.lungingAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.lungingAttackAnimationState);
 						break;
 					case 22:
-						this.goadingAttackAnimationState.startIfStopped(this.tickCount);
+						this.goadingAttackAnimationState.stop();
+
+						this.goadingAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.goadingAttackAnimationState);
 						break;
 					case 23:
-						this.feintingAttackAnimationState.startIfStopped(this.tickCount);
+						this.feintingAttackAnimationState.stop();
+
+						this.feintingAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.feintingAttackAnimationState);
 						break;
 					case 24:
-						this.disarmingAttackAnimationState.startIfStopped(this.tickCount);
+						this.disarmingAttackAnimationState.stop();
+
+						this.disarmingAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.disarmingAttackAnimationState);
 						break;
 					case 25:
-						this.distractingStrikeAnimationState.startIfStopped(this.tickCount);
+						this.distractingStrikeAnimationState.stop();
+
+						this.distractingStrikeAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.distractingStrikeAnimationState);
 						break;
 				}
@@ -718,6 +769,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 			if (this.startTick == 40) {
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(40);
+					this.setAnimationState(0);
 					this.setAnimationState("start");
 				}
 			}
@@ -788,6 +840,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 					if (!this.level().isClientSide()) {
 						this.setLeadTick(0);
 						this.setAnimTick(25);
+						this.setAnimationState(0);
 						this.setAnimationState("lead");
 						if (this.getTarget() != null) {
 							this.getLookControl().setLookAt(this.getTarget(), 360f, 360f);
@@ -818,6 +871,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 						this.setSpecialAttackTick(20);
 						this.setAnimTick(20);
 						this.setSpecialAttackUse(7);
+						this.setAnimationState(0);
 						this.setAnimationState("lungingAttack");
 						if (this.level() instanceof ServerLevel serverLevel) {
 							if (!this.isInvisible()) {
@@ -891,6 +945,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				this.setAnimTick(20);
 				if (attackRandom > 36) {
 					this.setSpecialAttackUse(1);
+					this.setAnimationState(0);
 					this.setAnimationState("pushingAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -900,6 +955,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				}
 				else if (attackRandom > 32) {
 					this.setSpecialAttackUse(2);
+					this.setAnimationState(0);
 					this.setAnimationState("tripAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -909,6 +965,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				}
 				else if (attackRandom > 28) {
 					this.setSpecialAttackUse(3);
+					this.setAnimationState(0);
 					this.setAnimationState("precisionAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -918,6 +975,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				}
 				else if (attackRandom > 24) {
 					this.setSpecialAttackUse(4);
+					this.setAnimationState(0);
 					this.setAnimationState("sweepingAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -927,6 +985,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				}
 				else if (attackRandom > 20) {
 					this.setSpecialAttackUse(5);
+					this.setAnimationState(0);
 					this.setAnimationState("menacingAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -936,6 +995,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				}
 				else if (attackRandom > 16) {
 					this.setSpecialAttackUse(6);
+					this.setAnimationState(0);
 					this.setAnimationState("maneuveringAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -947,6 +1007,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 					this.setSpecialAttackTick(25);
 					this.setAnimTick(25);
 					this.setSpecialAttackUse(8);
+					this.setAnimationState(0);
 					this.setAnimationState("goadingAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -958,6 +1019,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 					this.setSpecialAttackTick(25);
 					this.setAnimTick(25);
 					this.setSpecialAttackUse(9);
+					this.setAnimationState(0);
 					this.setAnimationState("feintingAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -967,6 +1029,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				}
 				else if (attackRandom > 4) {
 					this.setSpecialAttackUse(10);
+					this.setAnimationState(0);
 					this.setAnimationState("disarmingAttack");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -976,6 +1039,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				}
 				else {
 					this.setSpecialAttackUse(11);
+					this.setAnimationState(0);
 					this.setAnimationState("distractingStrike");
 					if (this.level() instanceof ServerLevel serverLevel) {
 						if (!this.isInvisible()) {
@@ -1058,20 +1122,26 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 				if (this.getMainHandItem().isEmpty()) {
 					this.setAnimTick(5);
 					if (attackRandom <= 30) {
+						this.setAnimationState(0);
 						this.setAnimationState("attack1");
 					} else {
+						this.setAnimationState(0);
 						this.setAnimationState("attack2");
 					}
 					return super.doHurtTarget(entity);
 				} else {
 					this.setAnimTick(20);
 					if (attackRandom >= 30) {
+						this.setAnimationState(0);
 						this.setAnimationState("swordAttack1");
 					} else if (attackRandom >= 20) {
+						this.setAnimationState(0);
 						this.setAnimationState("swordAttack2");
 					} else if (attackRandom >= 10) {
+						this.setAnimationState(0);
 						this.setAnimationState("swordAttack3");
 					} else {
+						this.setAnimationState(0);
 						this.setAnimationState("swordAttack4");
 					}
 				}
@@ -1407,6 +1477,7 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 			if (!this.level().isClientSide()) {
 				this.setShieldAttackTick(60);
 				this.setAnimTick(70);
+				this.setAnimationState(0);
 				this.setAnimationState("shieldAttack");
 			}
 			if (this.level() instanceof ServerLevel serverLevel) {
@@ -1476,12 +1547,14 @@ public class SedimentLordEntity extends ResurrecterEntity implements BossEntity,
 			if (this.getMainHandItem().isEmpty()) {
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(40);
+					this.setAnimationState(0);
 					this.setAnimationState("dead1");
 				}
 			}
 			else {
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(40);
+					this.setAnimationState(0);
 					this.setAnimationState("dead2");
 				}
 			}

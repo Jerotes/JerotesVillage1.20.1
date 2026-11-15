@@ -99,6 +99,7 @@ public class FireSpitterEntity extends SpellIllagerEntity implements RangedAttac
                 this.setSpellTick(60);
                 this.setSpellOneTick(120);
                 this.setAnimTick(60);
+                this.setAnimationState(0);
                 this.setAnimationState("spitte");
             }
             //技能列表-不祥火舌术
@@ -181,11 +182,15 @@ public class FireSpitterEntity extends SpellIllagerEntity implements RangedAttac
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.drinkAnimationState.startIfStopped(this.tickCount);
+                        this.drinkAnimationState.stop();
+
+                        this.drinkAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.drinkAnimationState);
                         break;
                     case 2:
-                        this.spitteAnimationState.startIfStopped(this.tickCount);
+                        this.spitteAnimationState.stop();
+
+                        this.spitteAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.spitteAnimationState);
                         break;
                 }
@@ -206,6 +211,7 @@ public class FireSpitterEntity extends SpellIllagerEntity implements RangedAttac
                 this.setSpellTick(35);
                 this.setSpellOneTick(35);
                 this.setAnimTick(35);
+                this.setAnimationState(0);
                 this.setAnimationState("drink");
             }
         }
@@ -226,6 +232,7 @@ public class FireSpitterEntity extends SpellIllagerEntity implements RangedAttac
                     this.setSpellTick(35);
                     this.setSpellOneTick(35);
                     this.setAnimTick(35);
+                    this.setAnimationState(0);
                     this.setAnimationState("drink");
                 }
             }

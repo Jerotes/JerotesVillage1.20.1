@@ -80,7 +80,6 @@ public class Modelqoaiku_old_lore<T extends QoaikuEntity> extends Modelhumanoid<
 	@Override
 	public void setupAnim(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netbipedHeadYaw, float bipedHeadPitch) {
 		super.setupAnim(entityIn, limbSwing, limbSwingAmount, ageInTicks, netbipedHeadYaw, bipedHeadPitch);
-
 		this.hat.copyFrom(this.head);
 		this.jacket.copyFrom(this.body);
 		this.leftPants.copyFrom(this.leftLeg);

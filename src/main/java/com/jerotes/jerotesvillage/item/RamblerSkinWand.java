@@ -23,6 +23,12 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class RamblerSkinWand extends Item implements Vanishable {
+
+	@Override
+	public int getEnchantmentValue() {
+		return 15;
+	}
+
 	public RamblerSkinWand() {
 		super(new Properties().stacksTo(1).rarity(Rarity.EPIC).durability(600));
 	}

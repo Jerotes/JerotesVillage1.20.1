@@ -690,6 +690,7 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -893,63 +894,95 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.swordAttack1AnimationState.startIfStopped(this.tickCount);
+						this.swordAttack1AnimationState.stop();
+
+						this.swordAttack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.swordAttack1AnimationState);
 						break;
 					case 4:
-						this.swordAttack2AnimationState.startIfStopped(this.tickCount);
+						this.swordAttack2AnimationState.stop();
+
+						this.swordAttack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.swordAttack2AnimationState);
 						break;
 					case 5:
-						this.swordAttack3AnimationState.startIfStopped(this.tickCount);
+						this.swordAttack3AnimationState.stop();
+
+						this.swordAttack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.swordAttack3AnimationState);
 						break;
 					case 6:
-						this.swordAttack4AnimationState.startIfStopped(this.tickCount);
+						this.swordAttack4AnimationState.stop();
+
+						this.swordAttack4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.swordAttack4AnimationState);
 						break;
 					case 7:
-						this.windAttackAnimationState.startIfStopped(this.tickCount);
+						this.windAttackAnimationState.stop();
+
+						this.windAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.windAttackAnimationState);
 						break;
 					case 8:
-						this.flameAttackAnimationState.startIfStopped(this.tickCount);
+						this.flameAttackAnimationState.stop();
+
+						this.flameAttackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.flameAttackAnimationState);
 						break;
 					case 9:
-						this.block1AnimationState.startIfStopped(this.tickCount);
+						this.block1AnimationState.stop();
+
+						this.block1AnimationState.start(this.tickCount);
 						break;
 					case 10:
-						this.block2AnimationState.startIfStopped(this.tickCount);
+						this.block2AnimationState.stop();
+
+						this.block2AnimationState.start(this.tickCount);
 						break;
 					case 11:
-						this.block3AnimationState.startIfStopped(this.tickCount);
+						this.block3AnimationState.stop();
+
+						this.block3AnimationState.start(this.tickCount);
 						break;
 					case 12:
-						this.pikeSpellAnimationState.startIfStopped(this.tickCount);
+						this.pikeSpellAnimationState.stop();
+
+						this.pikeSpellAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.pikeSpellAnimationState);
 						break;
 					case 13:
-						this.hotWindSpellAnimationState.startIfStopped(this.tickCount);
+						this.hotWindSpellAnimationState.stop();
+
+						this.hotWindSpellAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.hotWindSpellAnimationState);
 						break;
 					case 14:
-						this.meteorSpellAnimationState.startIfStopped(this.tickCount);
+						this.meteorSpellAnimationState.stop();
+
+						this.meteorSpellAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.meteorSpellAnimationState);
 						break;
 					case 15:
-						this.pushAnimationState.startIfStopped(this.tickCount);
+						this.pushAnimationState.stop();
+
+						this.pushAnimationState.start(this.tickCount);
 						break;
 					case 16:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -1582,6 +1615,7 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 							if (!this.level().isClientSide()) {
 								this.setSpellChance(1);
 								this.setAnimTick(60);
+								this.setAnimationState(0);
 								this.setAnimationState("hotWindSpell");
 							}
 						}
@@ -1590,6 +1624,7 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 							if (!this.level().isClientSide()) {
 								this.setSpellChance(2);
 								this.setAnimTick(60);
+								this.setAnimationState(0);
 								this.setAnimationState("pikeSpell");
 							}
 							if (!this.isSilent()) {
@@ -1601,6 +1636,7 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 							if (!this.level().isClientSide()) {
 								this.setSpellChance(3);
 								this.setAnimTick(60);
+								this.setAnimationState(0);
 								this.setAnimationState("meteorSpell");
 							}
 						}
@@ -1719,20 +1755,26 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 					if (this.getMainHandItem().isEmpty()) {
 						this.setAnimTick(5);
 						if (attackRandom < 30) {
+							this.setAnimationState(0);
 							this.setAnimationState("attack1");
 						} else {
+							this.setAnimationState(0);
 							this.setAnimationState("attack2");
 						}
 					}
 					else {
 						this.setAnimTick(20);
 						if (attackRandom > 30) {
+							this.setAnimationState(0);
 							this.setAnimationState("swordAttack1");
 						} else if (attackRandom > 20) {
+							this.setAnimationState(0);
 							this.setAnimationState("swordAttack2");
 						} else if (attackRandom > 10) {
+							this.setAnimationState(0);
 							this.setAnimationState("swordAttack3");
 						} else {
+							this.setAnimationState(0);
 							this.setAnimationState("swordAttack4");
 						}
 					}
@@ -1747,6 +1789,7 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 						this.setFlameAttackTick(25);
 						this.setSpecialMeleeChance(3);
 						this.setAnimTick(15);
+						this.setAnimationState(0);
 						this.setAnimationState("flameAttack");
 					}
 					if (this.level() instanceof ServerLevel serverLevel) {
@@ -1762,6 +1805,7 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 						this.setWindAttackTick(25);
 						this.setSpecialMeleeChance(3);
 						this.setAnimTick(15);
+						this.setAnimationState(0);
 						this.setAnimationState("windAttack");
 					}
 					if (this.level() instanceof ServerLevel serverLevel) {
@@ -2041,6 +2085,7 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 		}
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("push");
 		}
 		if (!this.isSilent()) {
@@ -2117,6 +2162,7 @@ public class SerponCombatExecuterEntity extends SerponEntity implements BossEnti
 		if(deathTime <= 0) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

@@ -16,6 +16,12 @@ import net.minecraft.world.level.Level;
 import java.util.List;
 
 public class MerorRiotShield extends ItemToolBaseParryShield {
+
+	@Override
+	public int getEnchantmentValue() {
+		return 28;
+	}
+
 	public MerorRiotShield() {
 		super(new Properties().stacksTo(1).durability(18800 * 3).fireResistant().rarity(Rarity.EPIC), 4f, 2.8f, 28, Ingredient.of(JerotesVillageItems.REFINE_MEROR_METAL_INGOT.get()),
 				20, 5, 1.5f, 8f, 1.2f);

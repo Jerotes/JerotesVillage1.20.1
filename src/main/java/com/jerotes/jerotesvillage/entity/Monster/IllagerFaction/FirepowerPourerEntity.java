@@ -374,6 +374,7 @@ public class FirepowerPourerEntity extends Raider implements EliteEntity, Ominou
         return this.getEntityData().get(ANIM_TICK);
     }
     public void setAnimationState(String input) {
+        this.setAnimationState(0);
         this.setAnimationState(this.getAnimationState(input));
     }
     public void setAnimationState(int id) {
@@ -500,43 +501,63 @@ public class FirepowerPourerEntity extends Raider implements EliteEntity, Ominou
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attack1AnimationState.startIfStopped(this.tickCount);
+                        this.attack1AnimationState.stop();
+
+                        this.attack1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack1AnimationState);
                         break;
                     case 2:
-                        this.attack2AnimationState.startIfStopped(this.tickCount);
+                        this.attack2AnimationState.stop();
+
+                        this.attack2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack2AnimationState);
                         break;
                     case 3:
-                        this.attack3AnimationState.startIfStopped(this.tickCount);
+                        this.attack3AnimationState.stop();
+
+                        this.attack3AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack3AnimationState);
                         break;
                     case 4:
-                        this.attack4AnimationState.startIfStopped(this.tickCount);
+                        this.attack4AnimationState.stop();
+
+                        this.attack4AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack4AnimationState);
                         break;
                     case 5:
-                        this.attack5AnimationState.startIfStopped(this.tickCount);
+                        this.attack5AnimationState.stop();
+
+                        this.attack5AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attack5AnimationState);
                         break;
                     case 6:
-                        this.break1AnimationState.startIfStopped(this.tickCount);
+                        this.break1AnimationState.stop();
+
+                        this.break1AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.break1AnimationState);
                         break;
                     case 7:
-                        this.break2AnimationState.startIfStopped(this.tickCount);
+                        this.break2AnimationState.stop();
+
+                        this.break2AnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.break2AnimationState);
                         break;
                     case 8:
-                        this.shootAnimationState.startIfStopped(this.tickCount);
+                        this.shootAnimationState.stop();
+
+                        this.shootAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.shootAnimationState);
                         break;
                     case 9:
-                        this.coolAnimationState.startIfStopped(this.tickCount);
+                        this.coolAnimationState.stop();
+
+                        this.coolAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.coolAnimationState);
                         break;
                     case 10:
-                        this.deadAnimationState.startIfStopped(this.tickCount);
+                        this.deadAnimationState.stop();
+
+                        this.deadAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.deadAnimationState);
                         break;
                 }
@@ -583,6 +604,7 @@ public class FirepowerPourerEntity extends Raider implements EliteEntity, Ominou
         if (this.getCoolingTick() > 0 || this.getShootUseTick() > 0) {
             if (!this.level().isClientSide()) {
                 this.setAnimTick(5);
+                this.setAnimationState(0);
                 this.setAnimationState("break1");
             }
         }
@@ -591,6 +613,7 @@ public class FirepowerPourerEntity extends Raider implements EliteEntity, Ominou
         if (this.getCoolingTick() > 0 || this.getAttackTick() > -10) {
             if (!this.level().isClientSide()) {
                 this.setAnimTick(5);
+                this.setAnimationState(0);
                 this.setAnimationState("break2");
             }
         }
@@ -747,6 +770,7 @@ public class FirepowerPourerEntity extends Raider implements EliteEntity, Ominou
                 this.setCoolTick(0);
                 this.setCoolingTick(60);
                 this.setAnimTick(30);
+                this.setAnimationState(0);
                 this.setAnimationState("cool");
             }
             if (!this.isSilent()) {
@@ -800,6 +824,7 @@ public class FirepowerPourerEntity extends Raider implements EliteEntity, Ominou
                  this.setShootTick(0);
                  this.setShootUseTick(30);
                  this.setAnimTick(15);
+                 this.setAnimationState(0);
                  this.setAnimationState("shoot");
             }
             if (!this.isSilent()) {
@@ -884,36 +909,45 @@ public class FirepowerPourerEntity extends Raider implements EliteEntity, Ominou
                 if (hell) {
                     if (attackRandom > 35) {
                         this.setAttackUse(1);
+                        this.setAnimationState(0);
                         this.setAnimationState("attack1");
                     } else if (attackRandom > 10) {
                         this.setAttackUse(2);
+                        this.setAnimationState(0);
                         this.setAnimationState("attack2");
                     } else if (attackRandom > 5) {
                         this.setAttackUse(3);
+                        this.setAnimationState(0);
                         this.setAnimationState("attack3");
                     } else {
                         this.setAttackUse(4);
+                        this.setAnimationState(0);
                         this.setAnimationState("attack4");
                     }
                 }
                 else {
                     if (attackRandom > 30) {
                         this.setAttackUse(1);
+                        this.setAnimationState(0);
                         this.setAnimationState("attack1");
                     } else if (attackRandom > 20) {
                         this.setAttackUse(2);
+                        this.setAnimationState(0);
                         this.setAnimationState("attack2");
                     } else if (attackRandom > 10) {
                         this.setAttackUse(3);
+                        this.setAnimationState(0);
                         this.setAnimationState("attack3");
                     } else {
                         this.setAttackUse(4);
+                        this.setAnimationState(0);
                         this.setAnimationState("attack4");
                     }
                 }
             } else {
                 this.setAttackUse(5);
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("attack5");
             }
         }
@@ -1084,6 +1118,7 @@ public class FirepowerPourerEntity extends Raider implements EliteEntity, Ominou
         if(deathTime <= 0){
             if (!this.level().isClientSide()) {
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("dead");
             }
         }

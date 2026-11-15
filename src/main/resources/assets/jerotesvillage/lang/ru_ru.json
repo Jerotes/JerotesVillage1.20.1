@@ -1,7 +1,7 @@
 {
   "item_group.jerotesvillage.jerotesvillage_tab": "Jerotes Village",
 
-"advancements.jerotesvillage.jerotesvillage_craft_use.title": "Jerotes Village",
+  "advancements.jerotesvillage.jerotesvillage_craft_use.title": "Jerotes Village",
   "advancements.jerotesvillage.jerotesvillage_craft_use.desc": "Добро Пожаловать!",
   "advancements.jerotesvillage.jerotes_villager_trade.title": "Взаимодействуйте с Жителем",
   "advancements.jerotesvillage.jerotes_villager_trade.desc": "Поторгуйте с Жителем",
@@ -563,7 +563,7 @@
   "item.jerotesvillage.slavery_supervisor_upgrade_smithing_template.desc_0": "Улучшение Надзирателя Рабов",
   "item.jerotesvillage.slavery_supervisor_upgrade_smithing_template.desc_1": "Незеритовая Экипировка",
   "item.jerotesvillage.slavery_supervisor_helmet": "Шлем Надзирателя Рабов",
-    "item.jerotesvillage.slavery_supervisor_helmet.desc": "При убийстве Жителей или Злодеян есть шанс что выпадут изумруды",
+  "item.jerotesvillage.slavery_supervisor_helmet.desc": "При убийстве Жителей или Злодеян есть шанс что выпадут изумруды",
   "item.jerotesvillage.slavery_supervisor_chestplate": "Нагрудник Надзирателя Рабов",
   "item.jerotesvillage.slavery_supervisor_chestplate.desc": "При убийстве Жителей или Злодеян есть шанс что выпадут изумруды",
   "item.jerotesvillage.slavery_supervisor_leggings": "Поножи Надзирателя Рабов",
@@ -1952,7 +1952,7 @@
 
   "effect.jerotesvillage.carved_villager_arrow": "Стрела Резных Жителей",
   "effect.jerotesvillage.carved_villager_arrow.description": "Исцеляет Жителей и членов Компании Резной Меди，остальным существам наносит урон; сила эффекта увеличивается с уровнем.",
-   "effect.jerotesvillage.unclean_body": "Грязное Тело",
+  "effect.jerotesvillage.unclean_body": "Грязное Тело",
   "effect.jerotesvillage.unclean_body.description": "Постепенно наносит Летальный урон; увеличивает скорость ходьбы и ближний урон; Получая урон от существ теряйте больше здоровья; сила эффекта увеличивается с уровнем.",
   "effect.jerotesvillage.bitter_cold": "Кусачий Холод",
   "effect.jerotesvillage.bitter_cold.description": "Уменьшает скорость ходьбы и сопротивление откидыванию; сила эффекта увеличивается с уровнем.",
@@ -1962,13 +1962,13 @@
   "effect.jerotesvillage.bitter_cold_protection.description": "Увеличивает досягаемость до существ и блоков; сила эффекта увеличивается с уровнем.",
   "effect.jerotesvillage.glow_sparrow_blessing": "Благословление Светящегося Воробья",
   "effect.jerotesvillage.glow_sparrow_blessing.description": "Мерцающий свет сверкает рядом.",
-   "effect.jerotesvillage.malignasaur_asphyxia": "Удушье Малигназавра",
+  "effect.jerotesvillage.malignasaur_asphyxia": "Удушье Малигназавра",
   "effect.jerotesvillage.malignasaur_asphyxia.description": "Постепенно наносит Летальный урон; сила эффекта увеличивается с уровнем; не влияет на водных существ; не влияет на существ с эффектом Подводного Дыхания.",
   "effect.jerotesvillage.ocean_dragon_deterrence": "Отторжение Океанического Дракона",
   "effect.jerotesvillage.ocean_dragon_deterrence.description": "Влияет на мобильность существ в воде и на суше; сила эффекта увеличивается с уровнем.",
   "effect.jerotesvillage.abundant_courage": "Чрезмерная Храбрость",
   "effect.jerotesvillage.abundant_courage.description": "Увеличивает ближний урон; даёт сопротивление к шокированию некоторых сущностей; сила эффекта увеличивается с уровнем.",
- "effect.jerotesvillage.bright_land_heart": "Сердце Ярких Земель",
+  "effect.jerotesvillage.bright_land_heart": "Сердце Ярких Земель",
   "effect.jerotesvillage.bright_land_heart.description": "Увеличивает Максимальное здоровье; сила эффекта увеличивается с уровнем.",
   "effect.jerotesvillage.throwing_stubborn_stone": "Упрямый Метательный Камень",
   "effect.jerotesvillage.throwing_stubborn_stone.description": "Увеличивает скорость ходьбы; сила эффекта увеличивается с уровнем.",
@@ -2088,7 +2088,7 @@
   "item.minecraft.lingering_potion.effect.strong_wilderness_giant_poison": "Оседающее Зелье Яда Гигантов Диколесья",
   "item.minecraft.tipped_arrow.effect.strong_wilderness_giant_poison": "Стрела Яда Гигантов Диколесья",
 
-   "enchantment.jerotesvillage.elasticity": "Эластичность",
+  "enchantment.jerotesvillage.elasticity": "Эластичность",
   "enchantment.jerotesvillage.elasticity.desc": "Увеличивает количество отскоков метательного шарика.",
 
   "subtitle.jerotesvillage.spear_machine_attack": "Копьемашина атакует",

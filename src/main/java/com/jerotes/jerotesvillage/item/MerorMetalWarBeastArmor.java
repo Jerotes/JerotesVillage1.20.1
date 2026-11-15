@@ -15,6 +15,12 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class MerorMetalWarBeastArmor extends ItemWarBeastArmor {
+
+	@Override
+	public int getEnchantmentValue() {
+		return 24;
+	}
+
 	public MerorMetalWarBeastArmor() {
 		super(16, 6, 1, 0xb55667, JerotesVillage.MODID, "meror_metal", new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.RARE));
 	}

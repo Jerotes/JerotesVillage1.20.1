@@ -727,6 +727,7 @@ public abstract class BaseHagEntity extends Raider implements WizardEntity, Spel
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -849,12 +850,14 @@ public abstract class BaseHagEntity extends Raider implements WizardEntity, Spel
 		if (magicType2 == MagicType.MAIN && magicType == MagicType.SHOOT) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
+				this.setAnimationState(0);
 				this.setAnimationState("spell1");
 			}
 		}
 		else {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("spell2");
 			}
 		}
@@ -1167,23 +1170,33 @@ public abstract class BaseHagEntity extends Raider implements WizardEntity, Spel
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.spell1AnimationState.startIfStopped(this.tickCount);
+						this.spell1AnimationState.stop();
+
+						this.spell1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell1AnimationState);
 						break;
 					case 4:
-						this.spell2AnimationState.startIfStopped(this.tickCount);
+						this.spell2AnimationState.stop();
+
+						this.spell2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell2AnimationState);
 						break;
 					case 5:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -1438,9 +1451,11 @@ public abstract class BaseHagEntity extends Raider implements WizardEntity, Spel
 			}
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom > 15) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			}
 			else {
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			}
 		}

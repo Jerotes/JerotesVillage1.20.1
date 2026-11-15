@@ -715,26 +715,31 @@ public class ArchnosedHornbeastEntity extends BaseTamableAnimalEntity implements
 				this.setAttackTick(25);
 				this.setAttackUse(1);
 				this.setAnimTick(25);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom > 15) {
 				this.setAttackTick(25);
 				this.setAttackUse(1);
 				this.setAnimTick(25);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else if (attackRandom > 10) {
 				this.setAttackTick(25);
 				this.setAttackUse(2);
 				this.setAnimTick(25);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			} else if (attackRandom > 5) {
 				this.setAttackTick(25);
 				this.setAttackUse(2);
 				this.setAnimTick(30);
+				this.setAnimationState(0);
 				this.setAnimationState("attack4");
 			} else {
 				this.setAttackTick(25);
 				this.setAttackUse(3);
 				this.setAnimTick(30);
+				this.setAnimationState(0);
 				this.setAnimationState("attack5");
 			}
 		}
@@ -745,6 +750,7 @@ public class ArchnosedHornbeastEntity extends BaseTamableAnimalEntity implements
 			this.setAttackTick(35);
 			this.setAttackUse(4);
 			this.setAnimTick(35);
+			this.setAnimationState(0);
 			this.setAnimationState("attack6");
 		}
 	}
@@ -837,6 +843,7 @@ public class ArchnosedHornbeastEntity extends BaseTamableAnimalEntity implements
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -1021,43 +1028,63 @@ public class ArchnosedHornbeastEntity extends BaseTamableAnimalEntity implements
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 					case 4:
-						this.attack4AnimationState.startIfStopped(this.tickCount);
+						this.attack4AnimationState.stop();
+
+						this.attack4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack4AnimationState);
 						break;
 					case 5:
-						this.attack5AnimationState.startIfStopped(this.tickCount);
+						this.attack5AnimationState.stop();
+
+						this.attack5AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack5AnimationState);
 						break;
 					case 6:
-						this.attack6AnimationState.startIfStopped(this.tickCount);
+						this.attack6AnimationState.stop();
+
+						this.attack6AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack6AnimationState);
 						break;
 					case 7:
-						this.quakeAnimationState.startIfStopped(this.tickCount);
+						this.quakeAnimationState.stop();
+
+						this.quakeAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.quakeAnimationState);
 						break;
 					case 8:
-						this.quakeStartAnimationState.startIfStopped(this.tickCount);
+						this.quakeStartAnimationState.stop();
+
+						this.quakeStartAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.quakeStartAnimationState);
 						break;
 					case 9:
-						this.quakeUseAnimationState.startIfStopped(this.tickCount);
+						this.quakeUseAnimationState.stop();
+
+						this.quakeUseAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.quakeUseAnimationState);
 						break;
 					case 10:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -1165,12 +1192,14 @@ public class ArchnosedHornbeastEntity extends BaseTamableAnimalEntity implements
 		if (this.getQuakeUseTick() <= 90 && this.getQuakeUseTick() > 20 && !quakeAnimationState.isStarted()) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(80);
+				this.setAnimationState(0);
 				this.setAnimationState("quake");
 			}
 		}
 		if (this.getQuakeUseTick() == 20) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("quakeUse");
 			}
 		}
@@ -1237,6 +1266,7 @@ public class ArchnosedHornbeastEntity extends BaseTamableAnimalEntity implements
 					this.setQuakeUseTick(110);
 					this.setQuakeTick(640);
 					this.setAnimTick(20);
+					this.setAnimationState(0);
 					this.setAnimationState("quakeStart");
 					this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 3), this);
 				}
@@ -1350,31 +1380,37 @@ public class ArchnosedHornbeastEntity extends BaseTamableAnimalEntity implements
 					this.setAttackTick(25);
 					this.setAttackUse(1);
 					this.setAnimTick(25);
+					this.setAnimationState(0);
 					this.setAnimationState("attack1");
 				} else if (attackRandom > 20) {
 					this.setAttackTick(25);
 					this.setAttackUse(1);
 					this.setAnimTick(25);
+					this.setAnimationState(0);
 					this.setAnimationState("attack2");
 				} else if (attackRandom > 15) {
 					this.setAttackTick(25);
 					this.setAttackUse(2);
 					this.setAnimTick(25);
+					this.setAnimationState(0);
 					this.setAnimationState("attack3");
 				} else if (attackRandom > 10) {
 					this.setAttackTick(25);
 					this.setAttackUse(2);
 					this.setAnimTick(30);
+					this.setAnimationState(0);
 					this.setAnimationState("attack4");
 				} else if (attackRandom > 5) {
 					this.setAttackTick(25);
 					this.setAttackUse(3);
 					this.setAnimTick(30);
+					this.setAnimationState(0);
 					this.setAnimationState("attack5");
 				} else {
 					this.setAttackTick(35);
 					this.setAttackUse(4);
 					this.setAnimTick(35);
+					this.setAnimationState(0);
 					this.setAnimationState("attack6");
 				}
 			}

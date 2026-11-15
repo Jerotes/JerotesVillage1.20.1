@@ -160,9 +160,11 @@ public class MeganoseSnowLizardEntity extends Animal implements JerotesEntity, N
 			this.setAnimTick(10);
 			int attackRandom = this.getRandom().nextInt(30);
 			if (attackRandom < 15) {
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			}
 			else {
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			}
 		}
@@ -208,6 +210,7 @@ public class MeganoseSnowLizardEntity extends Animal implements JerotesEntity, N
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -271,11 +274,15 @@ public class MeganoseSnowLizardEntity extends Animal implements JerotesEntity, N
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 				}

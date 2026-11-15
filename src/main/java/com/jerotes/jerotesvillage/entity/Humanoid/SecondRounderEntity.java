@@ -1024,7 +1024,6 @@ public class SecondRounderEntity extends PathfinderMob implements SpellUseEntity
 
 	@Override
 	public boolean doHurtTarget(Entity entity) {
-		//巨人航空
 		{
 			String string = ChatFormatting.stripFormatting(this.getName().getString());
 			if (this instanceof WildernessGiantEntity && "Skyrim".equals(string)) {
@@ -1079,6 +1078,7 @@ public class SecondRounderEntity extends PathfinderMob implements SpellUseEntity
 				}
 			}
 		}
+		//巨人航空
 		boolean bl = super.doHurtTarget(entity);
 		if (bl) {
 			if (JerotesGameRules.JEROTES_MELEE_CAN_BREAK != null && this.level().getLevelData().getGameRules().getBoolean(JerotesGameRules.JEROTES_MELEE_CAN_BREAK)) {

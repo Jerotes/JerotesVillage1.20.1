@@ -101,7 +101,9 @@ public class RigiderEntity extends ZsieinEntity {
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 				}
@@ -130,6 +132,7 @@ public class RigiderEntity extends ZsieinEntity {
 	public boolean doHurtTarget(Entity entity) {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(8);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		boolean bl = super.doHurtTarget(entity);

@@ -466,17 +466,21 @@ public class ScalyBearEntity extends BaseTamableAnimalEntity implements NeutralM
 				if (attackRandom > 20) {
 					if (this.isVehicle()) {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack2");
 					} else {
 						this.setAnimTick(10);
+						this.setAnimationState(0);
 						this.setAnimationState("attack1");
 					}
 				} else {
 					if (attackRandom > 10) {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack4");
 					} else {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack3");
 					}
 				}
@@ -496,17 +500,21 @@ public class ScalyBearEntity extends BaseTamableAnimalEntity implements NeutralM
 				if (attackRandom > 20) {
 					if (this.isVehicle()) {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack2");
 					} else {
 						this.setAnimTick(10);
+						this.setAnimationState(0);
 						this.setAnimationState("attack1");
 					}
 				} else {
 					if (attackRandom > 10) {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack4");
 					} else {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack3");
 					}
 				}
@@ -620,6 +628,7 @@ public class ScalyBearEntity extends BaseTamableAnimalEntity implements NeutralM
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -743,19 +752,27 @@ public class ScalyBearEntity extends BaseTamableAnimalEntity implements NeutralM
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 					case 4:
-						this.attack4AnimationState.startIfStopped(this.tickCount);
+						this.attack4AnimationState.stop();
+
+						this.attack4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack4AnimationState);
 						break;
 				}
@@ -1011,17 +1028,21 @@ public class ScalyBearEntity extends BaseTamableAnimalEntity implements NeutralM
 				if (attackRandom > 20) {
 					if (this.isVehicle()) {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack2");
 					} else {
 						this.setAnimTick(10);
+						this.setAnimationState(0);
 						this.setAnimationState("attack1");
 					}
 				} else {
 					if (attackRandom > 10) {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack4");
 					} else {
 						this.setAnimTick(9);
+						this.setAnimationState(0);
 						this.setAnimationState("attack3");
 					}
 				}

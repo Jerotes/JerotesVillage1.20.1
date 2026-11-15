@@ -179,15 +179,21 @@ public class BannerBearerEntity extends MeleeIllagerEntity implements AlwaysShow
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.attackAnimationState.startIfStopped(this.tickCount);
+                        this.attackAnimationState.stop();
+
+                        this.attackAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.attackAnimationState);
                         break;
                     case 2:
-                        this.upAnimationState.startIfStopped(this.tickCount);
+                        this.upAnimationState.stop();
+
+                        this.upAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.upAnimationState);
                         break;
                     case 3:
-                        this.roundAnimationState.startIfStopped(this.tickCount);
+                        this.roundAnimationState.stop();
+
+                        this.roundAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.roundAnimationState);
                         break;
                 }
@@ -210,9 +216,11 @@ public class BannerBearerEntity extends MeleeIllagerEntity implements AlwaysShow
                 this.setBannerTick(60);
                 this.setAnimTick(25);
                 if (this.getRandom().nextFloat() > 0.5f) {
+                    this.setAnimationState(0);
                     this.setAnimationState("round");
                 }
                 else {
+                    this.setAnimationState(0);
                     this.setAnimationState("up");
                 }
             }
@@ -231,6 +239,7 @@ public class BannerBearerEntity extends MeleeIllagerEntity implements AlwaysShow
     public boolean doHurtTarget(Entity entity) {
         if (!this.level().isClientSide()) {
             this.setAnimTick(10);
+            this.setAnimationState(0);
             this.setAnimationState("attack");
         }
         boolean bl = super.doHurtTarget(entity);

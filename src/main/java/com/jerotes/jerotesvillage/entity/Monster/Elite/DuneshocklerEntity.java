@@ -329,6 +329,7 @@ public class DuneshocklerEntity extends Monster implements JerotesEntity, Lightn
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -468,31 +469,45 @@ public class DuneshocklerEntity extends Monster implements JerotesEntity, Lightn
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 					case 4:
-						this.attack4AnimationState.startIfStopped(this.tickCount);
+						this.attack4AnimationState.stop();
+
+						this.attack4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack4AnimationState);
 						break;
 					case 5:
-						this.shoot1AnimationState.startIfStopped(this.tickCount);
+						this.shoot1AnimationState.stop();
+
+						this.shoot1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shoot1AnimationState);
 						break;
 					case 6:
-						this.shoot2AnimationState.startIfStopped(this.tickCount);
+						this.shoot2AnimationState.stop();
+
+						this.shoot2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shoot2AnimationState);
 						break;
 					case 7:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -643,6 +658,7 @@ public class DuneshocklerEntity extends Monster implements JerotesEntity, Lightn
 					this.setAnimTick(25);
 					boolean bl = this.getRandom().nextBoolean();
 					this.setShootUse(bl ? 1 : 2);
+					this.setAnimationState(0);
 					this.setAnimationState(bl ? "shoot1" : "shoot2");
 				}
 			}
@@ -697,21 +713,25 @@ public class DuneshocklerEntity extends Monster implements JerotesEntity, Lightn
 			if (attackRandom > 30) {
 				this.setAnimTick(30);
 				this.setAttackTick(30);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 				this.setAttackUse(1);
 			} else if (attackRandom > 20) {
 				this.setAnimTick(30);
 				this.setAttackTick(30);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 				this.setAttackUse(1);
 			} else if (attackRandom > 10) {
 				this.setAnimTick(30);
 				this.setAttackTick(30);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 				this.setAttackUse(3);
 			} else {
 				this.setAnimTick(30);
 				this.setAttackTick(30);
+				this.setAnimationState(0);
 				this.setAnimationState("attack4");
 				this.setAttackUse(2);
 			}
@@ -827,6 +847,7 @@ public class DuneshocklerEntity extends Monster implements JerotesEntity, Lightn
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(20);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

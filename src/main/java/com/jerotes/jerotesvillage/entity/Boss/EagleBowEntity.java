@@ -392,6 +392,7 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -483,11 +484,15 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 						this.stopAllAnimation();
 						break;
 					case 5:
-						this.leadAnimationState.startIfStopped(this.tickCount);
+						this.leadAnimationState.stop();
+
+						this.leadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.leadAnimationState);
 						break;
 					case 6:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -757,6 +762,7 @@ public class EagleBowEntity extends WildernessGiantSkeletonEntity implements Bos
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

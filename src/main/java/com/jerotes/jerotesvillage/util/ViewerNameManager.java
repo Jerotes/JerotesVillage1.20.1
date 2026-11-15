@@ -26,12 +26,20 @@ public class ViewerNameManager implements ResourceManagerReloadListener {
 
 	@Override
 	public void onResourceManagerReload(ResourceManager resourceManager) {
+		LOGGER.info("viewer name reload start, namespaces={}", resourceManager.getNamespaces());
 		nameList.clear();
 		try {
 			for (String namespace : resourceManager.getNamespaces()) {
+				java.util.Optional<net.minecraft.server.packs.resources.Resource> found = java.util.Optional.empty();
 				ResourceLocation location = new ResourceLocation(namespace, "viewer_name/viewer_name.json");
-
-				resourceManager.getResource(location).ifPresent(resource -> {
+				java.util.Optional<net.minecraft.server.packs.resources.Resource> direct = resourceManager.getResource(location);
+				if (direct.isPresent()) {
+					found = direct;
+				} else {
+					ResourceLocation dataLocation = new ResourceLocation(namespace, "data/" + namespace + "/viewer_name/viewer_name.json");
+					found = resourceManager.getResource(dataLocation);
+				}
+				found.ifPresent(resource -> {
 					try (InputStream is = resource.open();
 						 InputStreamReader reader = new InputStreamReader(is)) {
 						JsonObject json = GSON.fromJson(reader, JsonObject.class);

@@ -166,6 +166,7 @@ public class FireSecretorEntity extends Monster implements RangedAttackMob, Jero
 			//技能-泌火油弹
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("fire");
 			}
 			//法术列表-泌火油弹
@@ -176,6 +177,7 @@ public class FireSecretorEntity extends Monster implements RangedAttackMob, Jero
 			int spellLevel = this.getSpellLevel();
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(15);
+				this.setAnimationState(0);
 				this.setAnimationState("smoke");
 			}
 			//法术列表-浓烟飞弹
@@ -345,6 +347,7 @@ public class FireSecretorEntity extends Monster implements RangedAttackMob, Jero
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -417,15 +420,21 @@ public class FireSecretorEntity extends Monster implements RangedAttackMob, Jero
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.fireAnimationState.startIfStopped(this.tickCount);
+						this.fireAnimationState.stop();
+
+						this.fireAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.fireAnimationState);
 						break;
 					case 2:
-						this.smokeAnimationState.startIfStopped(this.tickCount);
+						this.smokeAnimationState.stop();
+
+						this.smokeAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.smokeAnimationState);
 						break;
 					case 3:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 				}
@@ -459,6 +468,7 @@ public class FireSecretorEntity extends Monster implements RangedAttackMob, Jero
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

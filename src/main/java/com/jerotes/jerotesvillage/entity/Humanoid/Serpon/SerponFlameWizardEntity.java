@@ -27,29 +27,7 @@ public class SerponFlameWizardEntity extends SerponEntity implements SpellUseEnt
 	public SerponFlameWizardEntity(EntityType<? extends SerponFlameWizardEntity> entityType, Level level) {
 		super(entityType, level);
 		this.xpReward = 30;
-	}
-
-	@Override
-	public boolean wantsToPickUp(ItemStack itemStack) {
-		if (itemStack.canEquip(EquipmentSlot.HEAD,this)) {
-			return false;
-		}
-		if (itemStack.canEquip(EquipmentSlot.CHEST,this)) {
-			return false;
-		}
-		if (itemStack.canEquip(EquipmentSlot.LEGS,this)) {
-			return false;
-		}
-		if (itemStack.canEquip(EquipmentSlot.FEET,this)) {
-			return false;
-		}
-		if (itemStack.canEquip(EquipmentSlot.MAINHAND,this)) {
-			return false;
-		}
-		if (itemStack.canEquip(EquipmentSlot.OFFHAND,this)) {
-			return false;
-		}
-		return super.wantsToPickUp(itemStack);
+		this.setCanPickUpLoot(false);
 	}
 
 	@Override
@@ -120,6 +98,16 @@ public class SerponFlameWizardEntity extends SerponEntity implements SpellUseEnt
 	@Override
 	public boolean isSpellHumanoidTwoHanded() {
 		return true;
+	}
+	@Override
+	public void addAdditionalSaveData(CompoundTag compoundTag) {
+		super.addAdditionalSaveData(compoundTag);
+		compoundTag.putInt("SpellLevel", this.spellLevel);
+	}
+	@Override
+	public void readAdditionalSaveData(CompoundTag compoundTag) {
+		super.readAdditionalSaveData(compoundTag);
+		this.spellLevel = compoundTag.getInt("SpellLevel");
 	}
 
 	@Override

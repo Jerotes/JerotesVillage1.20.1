@@ -2592,31 +2592,31 @@
     ]
   },
   "gaviler_ambient": {
-  "subtitle": "subtitle.jerotesvillage.gaviler_ambient",
-  "category": "hostile",
-  "sounds": [
-    {
-      "name": "jerotesvillage:entities/gaviler/ambient_1",
-      "volume": 1.0,
-      "weight": 1.0
-    },
-    {
-      "name": "jerotesvillage:entities/gaviler/ambient_2",
-      "volume": 1.0,
-      "weight": 1.0
-    },
-    {
-      "name": "jerotesvillage:entities/gaviler/ambient_3",
-      "volume": 1.0,
-      "weight": 1.0
-    },
-    {
-      "name": "jerotesvillage:entities/gaviler/ambient_4",
-      "volume": 1.0,
-      "weight": 1.0
-    }
-  ]
-},
+    "subtitle": "subtitle.jerotesvillage.gaviler_ambient",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/gaviler/ambient_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/gaviler/ambient_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/gaviler/ambient_3",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/gaviler/ambient_4",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
   "gaviler_hurt": {
     "subtitle": "subtitle.jerotesvillage.gaviler_hurt",
     "category": "hostile",
@@ -3684,15 +3684,15 @@
     ]
   },
   "sandstone_beast_ambient": {
-  "subtitle": "subtitle.jerotesvillage.sandstone_beast_ambient",
-  "category": "neutral",
-  "sounds": [
-    {
-      "name": "jerotesvillage:entities/sandstone_beast/ambient",
-      "volume": 1.0
-    }
-  ]
-},
+    "subtitle": "subtitle.jerotesvillage.sandstone_beast_ambient",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/sandstone_beast/ambient",
+        "volume": 1.0
+      }
+    ]
+  },
   "sandstone_beast_hurt": {
     "subtitle": "subtitle.jerotesvillage.sandstone_beast_hurt",
     "category": "neutral",
@@ -5562,15 +5562,15 @@
     ]
   },
   "botanize_ambient": {
-  "subtitle": "subtitle.jerotesvillage.botanize_ambient",
-  "category": "neutral",
-  "sounds": [
-    {
-      "name": "jerotesvillage:entities/botanize/ambient",
-      "volume": 1.0
-    }
-  ]
-},
+    "subtitle": "subtitle.jerotesvillage.botanize_ambient",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/botanize/ambient",
+        "volume": 1.0
+      }
+    ]
+  },
   "botanize_hurt": {
     "subtitle": "subtitle.jerotesvillage.botanize_hurt",
     "category": "neutral",
@@ -6474,15 +6474,15 @@
     ]
   },
   "beach_terror_bird_ambient": {
-  "subtitle": "subtitle.jerotesvillage.beach_terror_bird_ambient",
-  "category": "neutral",
-  "sounds": [
-    {
-      "name": "jerotesvillage:entities/beach_terror_bird/ambient",
-      "volume": 1.0
-    }
-  ]
-},
+    "subtitle": "subtitle.jerotesvillage.beach_terror_bird_ambient",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/beach_terror_bird/ambient",
+        "volume": 1.0
+      }
+    ]
+  },
   "beach_terror_bird_hurt": {
     "subtitle": "subtitle.jerotesvillage.beach_terror_bird_hurt",
     "category": "neutral",
@@ -6574,15 +6574,15 @@
     ]
   },
   "dust_moth_ambient": {
-  "subtitle": "subtitle.jerotesvillage.dust_moth_ambient",
-  "category": "neutral",
-  "sounds": [
-    {
-      "name": "jerotesvillage:entities/dust_moth/ambient",
-      "volume": 1.0
-    }
-  ]
-},
+    "subtitle": "subtitle.jerotesvillage.dust_moth_ambient",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/dust_moth/ambient",
+        "volume": 1.0
+      }
+    ]
+  },
   "dust_moth_hurt": {
     "subtitle": "subtitle.jerotesvillage.dust_moth_hurt",
     "category": "neutral",
@@ -9566,7 +9566,6 @@
       }
     ]
   },
-
   "big_witchs_hat": {
     "subtitle": "subtitle.jerotesvillage.big_witchs_hat",
     "category": "neutral",
@@ -9705,7 +9704,6 @@
       }
     ]
   },
-
   "magic_sediment_missile": {
     "subtitle": "subtitle.jerotesvillage.magic_sediment_missile",
     "category": "neutral",
@@ -10391,6 +10389,16 @@
       }
     ]
   },
+  "magic_wail_of_the_petitioner": {
+    "subtitle": "subtitle.jerotesvillage.magic_wail_of_the_petitioner",
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "jerotesvillage:others/magic/wail_of_the_petitioner",
+        "volume": 1.0
+      }
+    ]
+  },
   "magic_conjure_flying_fireball": {
     "subtitle": "subtitle.jerotesvillage.magic_conjure_flying_fireball",
     "category": "neutral",
@@ -10571,8 +10579,6 @@
       }
     ]
   },
-
-
   "bright_land_drum": {
     "subtitle": "subtitle.jerotesvillage.bright_land_drum",
     "category": "block",
@@ -10643,8 +10649,6 @@
       }
     ]
   },
-
-
   "note_block_imitate_resurrecter": {
     "subtitle": "subtitle.jerotesvillage.resurrecter_ambient",
     "category": "event",
@@ -10696,8 +10700,6 @@
       }
     ]
   },
-
-
   "boss_music_1": {
     "subtitle": "subtitle.jerotesvillage.boss_music_1",
     "category": "music",
@@ -10805,6 +10807,369 @@
       {
         "name": "jerotesvillage:music/boss/biome/second_rounder_golem",
         "volume": 1.0
+      }
+    ]
+  },
+  "mocker_ambient": {
+    "subtitle": "subtitle.jerotesvillage.mocker_ambient",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/mocker/ambient_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/ambient_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/ambient_3",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/ambient_4",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "mocker_hurt": {
+    "subtitle": "subtitle.jerotesvillage.mocker_hurt",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/mocker/hurt_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/hurt_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/hurt_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "mocker_death": {
+    "subtitle": "subtitle.jerotesvillage.mocker_death",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/mocker/death_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/death_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/death_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "mocker_attack": {
+    "subtitle": "subtitle.jerotesvillage.mocker_attack",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/mocker/attack_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/attack_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/attack_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "mocker_jump": {
+    "subtitle": "subtitle.jerotesvillage.mocker_jump",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/mocker/jump_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/jump_2",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "mocker_crit": {
+    "subtitle": "subtitle.jerotesvillage.mocker_crit",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/mocker/crit_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/crit_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/crit_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "conjoiner_ambient": {
+    "subtitle": "subtitle.jerotesvillage.conjoiner_ambient",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/conjoiner/ambient_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/conjoiner/ambient_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/conjoiner/ambient_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "conjoiner_hurt": {
+    "subtitle": "subtitle.jerotesvillage.conjoiner_hurt",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/conjoiner/hurt_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/conjoiner/hurt_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/conjoiner/hurt_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "conjoiner_death": {
+    "subtitle": "subtitle.jerotesvillage.conjoiner_death",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/conjoiner/death_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/conjoiner/death_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/conjoiner/death_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "conjoiner_attack": {
+    "subtitle": "subtitle.jerotesvillage.conjoiner_attack",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/mocker/attack_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/attack_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/mocker/attack_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "petitioner_ambient": {
+    "subtitle": "subtitle.jerotesvillage.petitioner_ambient",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/petitioner/ambient_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/petitioner/ambient_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/petitioner/ambient_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "petitioner_hurt": {
+    "subtitle": "subtitle.jerotesvillage.petitioner_hurt",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/petitioner/hurt_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/petitioner/hurt_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/petitioner/hurt_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "petitioner_death": {
+    "subtitle": "subtitle.jerotesvillage.petitioner_death",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/petitioner/death_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/petitioner/death_2",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "swelling_ambient": {
+    "subtitle": "subtitle.jerotesvillage.swelling_ambient",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/swelling/ambient_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/swelling/ambient_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/swelling/ambient_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "swelling_hurt": {
+    "subtitle": "subtitle.jerotesvillage.swelling_hurt",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/swelling/hurt_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/swelling/hurt_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/swelling/hurt_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "swelling_death": {
+    "subtitle": "subtitle.jerotesvillage.swelling_death",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/swelling/death_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/swelling/death_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/swelling/death_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "swelling_jump": {
+    "subtitle": "subtitle.jerotesvillage.swelling_jump",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/swelling/jump_1",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/swelling/jump_2",
+        "volume": 1.0,
+        "weight": 1.0
+      },
+      {
+        "name": "jerotesvillage:entities/swelling/jump_3",
+        "volume": 1.0,
+        "weight": 1.0
+      }
+    ]
+  },
+  "swelling_bomb": {
+    "subtitle": "subtitle.jerotesvillage.swelling_bomb",
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "jerotesvillage:entities/swelling/bomb",
+        "volume": 1.0,
+        "weight": 1.0
       }
     ]
   }

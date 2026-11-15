@@ -1876,6 +1876,32 @@ public class OtherSpellList {
 			}
 		};
 	}
+	//诉冤者之嚎
+	public static MagicSpell WailOfThePetitioner(int n, LivingEntity caster, Entity target) {
+		return new MagicSpell(n, caster, target, MagicType.SELF, MagicType.MAIN, "wail_of_the_petitioner", JerotesVillageParticleTypes.WAIL_OF_THE_PETITIONER_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_WAIL_OF_THE_PETITIONER){
+			public boolean spellFindUse() {
+				return OtherSpellFind.WailOfThePetitioner(getCaster(), getTarget(), getSpellLevel());
+			}
+			public String getSpellModId() {
+				return JerotesVillage.MODID;
+			}
+			public int getBaseSpellLevel() {
+				return 2;
+			}
+			public float getSpellDistanceBase() {
+				return 9;
+			}
+			public SpellSchool getSpellSchool() {
+				return SpellSchool.NECROMANCY;
+			}
+			public boolean canUseTargetNone() {
+				return true;
+			}
+			public float getSoundLevel() {
+				return 5.625f;
+			}
+		};
+	}
 	//目光如炬
 	public static MagicSpell TorchGaze(int n, LivingEntity caster, Entity target) {
 		return new MagicSpell(n, caster, target, MagicType.TARGET, MagicType.MAIN, "torch_gaze", JerotesVillageParticleTypes.TORCH_GAZE_DISPLAY.get(), JerotesVillageSoundEvents.MAGIC_TORCH_GAZE){

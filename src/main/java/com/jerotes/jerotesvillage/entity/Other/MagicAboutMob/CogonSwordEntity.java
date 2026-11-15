@@ -144,6 +144,7 @@ public class CogonSwordEntity extends Mob implements JerotesEntity, TraceableEnt
         return this.getEntityData().get(ANIM_TICK);
     }
     public void setAnimationState(String input) {
+        this.setAnimationState(0);
         this.setAnimationState(this.getAnimationState(input));
     }
     public void setAnimationState(int id) {
@@ -228,7 +229,9 @@ public class CogonSwordEntity extends Mob implements JerotesEntity, TraceableEnt
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.startAnimationState.startIfStopped(this.tickCount);
+                        this.startAnimationState.stop();
+
+                        this.startAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.startAnimationState);
                         break;
                 }
@@ -391,6 +394,7 @@ public class CogonSwordEntity extends Mob implements JerotesEntity, TraceableEnt
     public SpawnGroupData finalizeSpawn(ServerLevelAccessor serverLevelAccessor, DifficultyInstance difficultyInstance, MobSpawnType mobSpawnType, @Nullable SpawnGroupData spawnGroupData, @Nullable CompoundTag compoundTag) {
         if (!this.level().isClientSide()) {
             this.setAnimTick(35);
+            this.setAnimationState(0);
             this.setAnimationState("start");
         }
         return super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);

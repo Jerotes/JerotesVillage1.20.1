@@ -270,6 +270,7 @@ public class WildernessBullEntity extends BaseTamableAnimalEntity implements Neu
 			this.setAttackTick(20);
 			this.setRushAttackTick(45);
 			this.setAnimTick(12);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		if (this.getRushAttackDamageTick() > 60) {
@@ -682,6 +683,7 @@ public class WildernessBullEntity extends BaseTamableAnimalEntity implements Neu
 			this.setAttackTick(20);
 			this.setRushAttackTick(45);
 			this.setAnimTick(12);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 			this.setRushAttackDamageTick(0);
 		}
@@ -695,6 +697,7 @@ public class WildernessBullEntity extends BaseTamableAnimalEntity implements Neu
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}
@@ -729,6 +732,7 @@ public class WildernessBullEntity extends BaseTamableAnimalEntity implements Neu
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -858,7 +862,9 @@ public class WildernessBullEntity extends BaseTamableAnimalEntity implements Neu
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 				}

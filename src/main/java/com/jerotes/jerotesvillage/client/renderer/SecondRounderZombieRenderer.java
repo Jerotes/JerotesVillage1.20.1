@@ -18,7 +18,7 @@ import net.minecraft.world.entity.monster.Zombie;
 public class SecondRounderZombieRenderer extends ZombieRenderer {
     private static final ResourceLocation LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/second_rounder_zombie.png");
     private static final ResourceLocation NULL_LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/null.png");
-    private static final ResourceLocation WICKED_RIDICULE_CALLS_LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/wicked_ridicule_calls_eye.png");
+    private static final ResourceLocation WICKED_RIDICULE_CALLS_LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/wicked_ridicule_calls_eyes.png");
     public SecondRounderZombieRenderer(EntityRendererProvider.Context context) {
         super(context, ModelLayers.ZOMBIE, ModelLayers.ZOMBIE_INNER_ARMOR, ModelLayers.ZOMBIE_OUTER_ARMOR);
         this.addLayer(new SkinEntityBodyLayer(this, new ZombieModel(context.bakeLayer(ModelLayers.ZOMBIE)), "second_rounder_zombie"));

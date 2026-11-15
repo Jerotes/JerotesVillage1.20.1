@@ -20,7 +20,7 @@ public class SecondRounderSkeletonRenderer extends SkeletonRenderer {
     private static final ResourceLocation LOCATION_A = new ResourceLocation(JerotesVillage.MODID, "textures/entity/second_rounder_skeleton_5.png");
     private static final ResourceLocation LOCATION_B = new ResourceLocation(JerotesVillage.MODID, "textures/entity/second_rounder_skeleton_6.png");
     private static final ResourceLocation LOCATION_C = new ResourceLocation(JerotesVillage.MODID, "textures/entity/second_rounder_skeleton_7.png");
-    private static final ResourceLocation WICKED_RIDICULE_CALLS_LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/wicked_ridicule_calls_second_rounder_skeleton_eye.png");
+    private static final ResourceLocation WICKED_RIDICULE_CALLS_LOCATION = new ResourceLocation(JerotesVillage.MODID, "textures/entity/wicked_ridicule_calls_second_rounder_skeleton_eyes.png");
     public SecondRounderSkeletonRenderer(EntityRendererProvider.Context context) {
         super(context, ModelLayers.SKELETON, ModelLayers.SKELETON_INNER_ARMOR, ModelLayers.SKELETON_OUTER_ARMOR);
         this.addLayer(new WickedRidiculeCallsEyesLayer(this, WICKED_RIDICULE_CALLS_LOCATION));

@@ -323,8 +323,10 @@ public abstract class BaseWonderlinEntity extends PathfinderMob implements Spell
 				if (!this.level().isClientSide()) {
 					this.setAnimTick(10);
 					if (handItem == this.getMainHandItem()) {
+						this.setAnimationState(0);
 						this.setAnimationState("throw1");
 					} else {
+						this.setAnimationState(0);
 						this.setAnimationState("throw2");
 					}
 				}
@@ -343,6 +345,7 @@ public abstract class BaseWonderlinEntity extends PathfinderMob implements Spell
 			}
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
+				this.setAnimationState(0);
 				this.setAnimationState("kick");
 			}
 		}
@@ -515,6 +518,7 @@ public abstract class BaseWonderlinEntity extends PathfinderMob implements Spell
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -766,15 +770,21 @@ public abstract class BaseWonderlinEntity extends PathfinderMob implements Spell
 							this.stopAllAnimation();
 							break;
 						case 1:
-							this.attackAnimationState.startIfStopped(this.tickCount);
+							this.attackAnimationState.stop();
+
+							this.attackAnimationState.start(this.tickCount);
 							this.stopMostAnimation(this.attackAnimationState);
 							break;
 						case 2:
-							this.kickAnimationState.startIfStopped(this.tickCount);
+							this.kickAnimationState.stop();
+
+							this.kickAnimationState.start(this.tickCount);
 							this.stopMostAnimation(this.kickAnimationState);
 							break;
 						case 3:
-							this.pushAnimationState.startIfStopped(this.tickCount);
+							this.pushAnimationState.stop();
+
+							this.pushAnimationState.start(this.tickCount);
 							this.stopMostAnimation(this.pushAnimationState);
 							break;
 					}
@@ -1046,6 +1056,7 @@ public abstract class BaseWonderlinEntity extends PathfinderMob implements Spell
 	public void attackAnimation() {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(8);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}
@@ -1064,6 +1075,7 @@ public abstract class BaseWonderlinEntity extends PathfinderMob implements Spell
 		if (this.getRandom().nextFloat() > 0.5f) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
+				this.setAnimationState(0);
 				this.setAnimationState("kick");
 			}
 			DamageSource damageSource = AttackFind.findDamageType(this, DamageTypes.MOB_ATTACK_NO_AGGRO, this);
@@ -1087,6 +1099,7 @@ public abstract class BaseWonderlinEntity extends PathfinderMob implements Spell
 		else {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(10);
+				this.setAnimationState(0);
 				this.setAnimationState("push");
 			}
 			DamageSource damageSource = AttackFind.findDamageType(this, DamageTypes.MOB_ATTACK_NO_AGGRO, this);

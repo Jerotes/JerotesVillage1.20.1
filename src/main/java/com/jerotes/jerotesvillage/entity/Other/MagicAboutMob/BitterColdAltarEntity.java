@@ -244,6 +244,7 @@ public class BitterColdAltarEntity extends Mob implements JerotesEntity, Traceab
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -348,11 +349,15 @@ public class BitterColdAltarEntity extends Mob implements JerotesEntity, Traceab
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.startAnimationState.startIfStopped(this.tickCount);
+						this.startAnimationState.stop();
+
+						this.startAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.startAnimationState);
 						break;
 					case 2:
-						this.stopAnimationState.startIfStopped(this.tickCount);
+						this.stopAnimationState.stop();
+
+						this.stopAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.stopAnimationState);
 						break;
 				}
@@ -558,6 +563,7 @@ public class BitterColdAltarEntity extends Mob implements JerotesEntity, Traceab
 	public void tickDeath() {
 		if(deathTime <= 0){
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("stop");
 		}
 		++this.deathTime;

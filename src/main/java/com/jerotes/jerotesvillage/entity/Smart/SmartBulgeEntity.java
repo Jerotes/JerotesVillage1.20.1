@@ -125,6 +125,7 @@ public class SmartBulgeEntity extends SmartEntity implements RangedAttackMob, Je
 		}
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(20);
+			this.setAnimationState(0);
 			this.setAnimationState("shoot");
 		}
 
@@ -184,6 +185,7 @@ public class SmartBulgeEntity extends SmartEntity implements RangedAttackMob, Je
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -243,7 +245,9 @@ public class SmartBulgeEntity extends SmartEntity implements RangedAttackMob, Je
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.shootAnimationState.startIfStopped(this.tickCount);
+						this.shootAnimationState.stop();
+
+						this.shootAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.shootAnimationState);
 						break;
 				}

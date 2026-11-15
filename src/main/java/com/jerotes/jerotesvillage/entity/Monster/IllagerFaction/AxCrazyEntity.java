@@ -384,11 +384,15 @@ public class AxCrazyEntity extends MeleeIllagerEntity implements EliteEntity {
                         this.stopAllAnimation();
                         break;
                     case 1:
-                        this.angryAnimationState.startIfStopped(this.tickCount);
+                        this.angryAnimationState.stop();
+
+                        this.angryAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.angryAnimationState);
                         break;
                     case 2:
-                        this.deadAnimationState.startIfStopped(this.tickCount);
+                        this.deadAnimationState.stop();
+
+                        this.deadAnimationState.start(this.tickCount);
                         this.stopMostAnimation(this.deadAnimationState);
                         break;
                 }
@@ -473,6 +477,7 @@ public class AxCrazyEntity extends MeleeIllagerEntity implements EliteEntity {
                     this.setStopTick(90);
                     this.setNeedStopTick(180);
                     this.setAnimTick(90);
+                    this.setAnimationState(0);
                     this.setAnimationState("angry");
                 }
                 if (this.level() instanceof ServerLevel serverLevel) {
@@ -752,6 +757,7 @@ public class AxCrazyEntity extends MeleeIllagerEntity implements EliteEntity {
         if(deathTime <= 0 && !("Sigma".equals(string) || "Bateman".equals(string))){
             if (!this.level().isClientSide()) {
                 this.setAnimTick(20);
+                this.setAnimationState(0);
                 this.setAnimationState("dead");
             }
         }

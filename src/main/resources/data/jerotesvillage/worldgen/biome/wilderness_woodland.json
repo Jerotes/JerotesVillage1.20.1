@@ -114,6 +114,30 @@
         "weight": 100
       },
       {
+        "type": "jerotesvillage:mocker",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
+        "type": "jerotesvillage:conjoiner",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
+        "type": "jerotesvillage:petitioner",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
+        "type": "jerotesvillage:swelling",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 10
+      },
+      {
         "type": "minecraft:slime",
         "maxCount": 4,
         "minCount": 4,

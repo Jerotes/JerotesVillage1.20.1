@@ -433,6 +433,7 @@ public class FluffmoundEntity extends BaseTamableAnimalEntity implements Hornabl
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}
@@ -445,6 +446,7 @@ public class FluffmoundEntity extends BaseTamableAnimalEntity implements Hornabl
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 	}
@@ -526,6 +528,7 @@ public class FluffmoundEntity extends BaseTamableAnimalEntity implements Hornabl
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -683,11 +686,15 @@ public class FluffmoundEntity extends BaseTamableAnimalEntity implements Hornabl
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 					case 2:
-						this.hurtAnimationState.startIfStopped(this.tickCount);
+						this.hurtAnimationState.stop();
+
+						this.hurtAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.hurtAnimationState);
 						break;
 				}
@@ -951,6 +958,7 @@ public class FluffmoundEntity extends BaseTamableAnimalEntity implements Hornabl
 		if (!this.level().isClientSide()) {
 			this.setAttackTick(20);
 			this.setAnimTick(9);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		boolean bl = super.doHurtTarget(entity);
@@ -976,6 +984,7 @@ public class FluffmoundEntity extends BaseTamableAnimalEntity implements Hornabl
 		if (AttackFind.isMeleeDamage(damageSource) && !this.hasEffect(MobEffects.DAMAGE_RESISTANCE) && !this.isVehicle() && !this.isAggressive()) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("hurt");
 				this.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 1, false, false), this);
 				this.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 2, false, false), this);

@@ -6,6 +6,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 
 public class BrightGrassUmbrella extends ItemToolBaseUmbrella {
+
+	@Override
+	public int getEnchantmentValue() {
+		return 15;
+	}
+
 	public BrightGrassUmbrella() {
 		super(new Properties().stacksTo(1).rarity(Rarity.COMMON).durability(120));
 	}

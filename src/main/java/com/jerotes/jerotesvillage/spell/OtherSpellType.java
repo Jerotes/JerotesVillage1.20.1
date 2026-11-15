@@ -67,6 +67,7 @@ public enum OtherSpellType implements SpellTypeInterface {
 	JEROTESVILLAGE_MALIGNASAUR_BOMB("jerotesvillage_malignasaur_bomb"),
 	JEROTESVILLAGE_CHAOTIC_DISCHARGE("jerotesvillage_chaotic_discharge"),
 	JEROTESVILLAGE_TORCH_GAZE("jerotesvillage_torch_gaze"),
+	JEROTESVILLAGE_WAIL_OF_THE_PETITIONER("jerotesvillage_wail_of_the_petitioner"),
 	JEROTESVILLAGE_COLLAPSE_ZONE("jerotesvillage_collapse_zone"),
 	JEROTESVILLAGE_CONJURE_IRON_TEETH("jerotesvillage_conjure_iron_teeth"),
 	JEROTESVILLAGE_CONJURE_FLYING_FIREBALL("jerotesvillage_conjure_flying_fireball"),
@@ -162,6 +163,7 @@ public enum OtherSpellType implements SpellTypeInterface {
 			case JEROTESVILLAGE_MALIGNASAUR_BOMB -> OtherSpellList.MalignasaurBomb(level, caster, target);
 			case JEROTESVILLAGE_CHAOTIC_DISCHARGE -> OtherSpellList.ChaoticDischarge(level, caster, target);
 			case JEROTESVILLAGE_TORCH_GAZE -> OtherSpellList.TorchGaze(level, caster, target);
+			case JEROTESVILLAGE_WAIL_OF_THE_PETITIONER -> OtherSpellList.WailOfThePetitioner(level, caster, target);
 			case JEROTESVILLAGE_COLLAPSE_ZONE -> OtherSpellList.CollapseZone(level, caster, target);
 			case JEROTESVILLAGE_CONJURE_IRON_TEETH -> OtherSpellList.ConjureIronTeeth(level, caster, target);
 			case JEROTESVILLAGE_CONJURE_FLYING_FIREBALL -> OtherSpellList.ConjureFlyingFireball(level, caster, target);

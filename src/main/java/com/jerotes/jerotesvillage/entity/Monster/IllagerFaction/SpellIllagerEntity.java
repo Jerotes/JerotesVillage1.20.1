@@ -256,6 +256,7 @@ public class SpellIllagerEntity extends SpellcasterIllager implements OminouseBa
         return this.getEntityData().get(ANIM_TICK);
     }
     public void setAnimationState(String input) {
+        this.setAnimationState(0);
         this.setAnimationState(this.getAnimationState(input));
     }
     public void setAnimationState(int id) {

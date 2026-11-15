@@ -718,59 +718,87 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attack1AnimationState.startIfStopped(this.tickCount);
+						this.attack1AnimationState.stop();
+
+						this.attack1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack1AnimationState);
 						break;
 					case 2:
-						this.attack2AnimationState.startIfStopped(this.tickCount);
+						this.attack2AnimationState.stop();
+
+						this.attack2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack2AnimationState);
 						break;
 					case 3:
-						this.attack3AnimationState.startIfStopped(this.tickCount);
+						this.attack3AnimationState.stop();
+
+						this.attack3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack3AnimationState);
 						break;
 					case 4:
-						this.attack4AnimationState.startIfStopped(this.tickCount);
+						this.attack4AnimationState.stop();
+
+						this.attack4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack4AnimationState);
 						break;
 					case 5:
-						this.attack5AnimationState.startIfStopped(this.tickCount);
+						this.attack5AnimationState.stop();
+
+						this.attack5AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack5AnimationState);
 						break;
 					case 6:
-						this.attack6AnimationState.startIfStopped(this.tickCount);
+						this.attack6AnimationState.stop();
+
+						this.attack6AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack6AnimationState);
 						break;
 					case 7:
-						this.attack7AnimationState.startIfStopped(this.tickCount);
+						this.attack7AnimationState.stop();
+
+						this.attack7AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attack7AnimationState);
 						break;
 					case 8:
-						this.breathAnimationState.startIfStopped(this.tickCount);
+						this.breathAnimationState.stop();
+
+						this.breathAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.breathAnimationState);
 						break;
 					case 9:
-						this.windAnimationState.startIfStopped(this.tickCount);
+						this.windAnimationState.stop();
+
+						this.windAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.windAnimationState);
 						break;
 					case 10:
-						this.snowAnimationState.startIfStopped(this.tickCount);
+						this.snowAnimationState.stop();
+
+						this.snowAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.snowAnimationState);
 						break;
 					case 11:
-						this.iceAnimationState.startIfStopped(this.tickCount);
+						this.iceAnimationState.stop();
+
+						this.iceAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.iceAnimationState);
 						break;
 					case 12:
-						this.teleportAnimationState.startIfStopped(this.tickCount);
+						this.teleportAnimationState.stop();
+
+						this.teleportAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.teleportAnimationState);
 						break;
 					case 13:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 					case 14:
-						this.startAnimationState.startIfStopped(this.tickCount);
+						this.startAnimationState.stop();
+
+						this.startAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.startAnimationState);
 						break;
 				}
@@ -958,6 +986,7 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 					if (!this.level().isClientSide()) {
 						this.setBreathTick(0);
 						this.setAnimTick(20);
+						this.setAnimationState(0);
 						this.setAnimationState("breath");
 					}
 				}
@@ -983,6 +1012,7 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 					if (!this.level().isClientSide()) {
 						this.setIceTick(0);
 						this.setAnimTick(30);
+						this.setAnimationState(0);
 						this.setAnimationState("ice");
 					}
 				}
@@ -1008,6 +1038,7 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 					if (!this.level().isClientSide()) {
 						this.setWindcallerTick(0);
 						this.setAnimTick(20);
+						this.setAnimationState(0);
 						this.setAnimationState("wind");
 					}
 					if (!this.isSilent()) {
@@ -1032,6 +1063,7 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 					if (!this.level().isClientSide()) {
 						this.setSnowTick(0);
 						this.setAnimTick(20);
+						this.setAnimationState(0);
 						this.setAnimationState("snow");
 					}
 					if (!this.isSilent()) {
@@ -1057,6 +1089,7 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 					if (!this.level().isClientSide()) {
 						this.setTeleportTick(0);
 						this.setAnimTick(20);
+						this.setAnimationState(0);
 						this.setAnimationState("teleport");
 					}
 					if (!this.isSilent()) {
@@ -1192,18 +1225,23 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 			this.setAnimTick(15);
 			if (attackRandom > 20) {
 				this.setAttackUse(1);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom > 15) {
 				this.setAttackUse(2);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else if (attackRandom > 10) {
 				this.setAttackUse(3);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			} else if (attackRandom > 5) {
 				this.setAttackUse(3);
+				this.setAnimationState(0);
 				this.setAnimationState("attack4");
 			} else {
 				this.setAttackUse(4);
+				this.setAnimationState(0);
 				this.setAnimationState("attack5");
 			}
 		}
@@ -1216,9 +1254,11 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 			this.setAnimTick(15);
 			if (attackRandom > 5) {
 				this.setAttackUse(4);
+				this.setAnimationState(0);
 				this.setAnimationState("attack6");
 			} else {
 				this.setAttackUse(5);
+				this.setAnimationState(0);
 				this.setAnimationState("attack7");
 			}
 		}
@@ -1245,25 +1285,32 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 			this.setAnimTick(20);
 			if (attackRandom > 30) {
 				this.setAttackUse(1);
+				this.setAnimationState(0);
 				this.setAnimationState("attack1");
 			} else if (attackRandom > 25) {
 				this.setAttackUse(2);
+				this.setAnimationState(0);
 				this.setAnimationState("attack2");
 			} else if (attackRandom > 20) {
 				this.setAttackUse(3);
+				this.setAnimationState(0);
 				this.setAnimationState("attack3");
 			} else if (attackRandom > 15) {
 				this.setAttackUse(3);
+				this.setAnimationState(0);
 				this.setAnimationState("attack4");
 			} else if (attackRandom > 10) {
 				this.setAttackUse(4);
+				this.setAnimationState(0);
 				this.setAnimationState("attack5");
 			} else if (attackRandom > 5) {
 				this.setAttackUse(4);
+				this.setAnimationState(0);
 				this.setAnimationState("attack6");
 			} else {
 				this.setAttackTick(13);
 				this.setAttackUse(5);
+				this.setAnimationState(0);
 				this.setAnimationState("attack7");
 			}
 		}
@@ -1551,6 +1598,7 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 		if(deathTime <= 0){
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}
@@ -1566,6 +1614,7 @@ public class CorrosiverEntity extends DracognathusEntity implements BeastToughEn
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(40);
 			this.setStartTick(40);
+			this.setAnimationState(0);
 			this.setAnimationState("start");
 		}
 		return super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);

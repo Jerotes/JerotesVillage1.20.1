@@ -1090,6 +1090,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 		return this.getEntityData().get(ANIM_TICK);
 	}
 	public void setAnimationState(String input) {
+		this.setAnimationState(0);
 		this.setAnimationState(this.getAnimationState(input));
 	}
 	public void setAnimationState(int id) {
@@ -1576,150 +1577,224 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						break;
 					case 2:
-						this.startAnimationState.startIfStopped(this.tickCount);
+						this.startAnimationState.stop();
+
+						this.startAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.startAnimationState);
 						break;
 					case 3:
-						this.deadAnimationState.startIfStopped(this.tickCount);
+						this.deadAnimationState.stop();
+
+						this.deadAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.deadAnimationState);
 						break;
 					case 4:
-						this.hideAnimationState.startIfStopped(this.tickCount);
+						this.hideAnimationState.stop();
+
+						this.hideAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.hideAnimationState);
 						break;
 					case 5:
-						this.spell1AnimationState.startIfStopped(this.tickCount);
+						this.spell1AnimationState.stop();
+
+						this.spell1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell1AnimationState);
 						break;
 					case 6:
-						this.spell2AnimationState.startIfStopped(this.tickCount);
+						this.spell2AnimationState.stop();
+
+						this.spell2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell2AnimationState);
 						break;
 					case 7:
-						this.spell3AnimationState.startIfStopped(this.tickCount);
+						this.spell3AnimationState.stop();
+
+						this.spell3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell3AnimationState);
 						break;
 					case 8:
-						this.spell4AnimationState.startIfStopped(this.tickCount);
+						this.spell4AnimationState.stop();
+
+						this.spell4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell4AnimationState);
 						break;
 					case 9:
-						this.spell5AnimationState.startIfStopped(this.tickCount);
+						this.spell5AnimationState.stop();
+
+						this.spell5AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell5AnimationState);
 						break;
 					case 10:
-						this.spell6AnimationState.startIfStopped(this.tickCount);
+						this.spell6AnimationState.stop();
+
+						this.spell6AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell6AnimationState);
 						break;
 					case 11:
-						this.spell7AnimationState.startIfStopped(this.tickCount);
+						this.spell7AnimationState.stop();
+
+						this.spell7AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.spell7AnimationState);
 						break;
 					case 12:
-						this.change1AnimationState.startIfStopped(this.tickCount);
+						this.change1AnimationState.stop();
+
+						this.change1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.change1AnimationState);
 						break;
 					case 13:
-						this.change2AnimationState.startIfStopped(this.tickCount);
+						this.change2AnimationState.stop();
+
+						this.change2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.change2AnimationState);
 						break;
 					case 14:
-						this.change3AnimationState.startIfStopped(this.tickCount);
+						this.change3AnimationState.stop();
+
+						this.change3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.change3AnimationState);
 						break;
 					case 15:
-						this.change4AnimationState.startIfStopped(this.tickCount);
+						this.change4AnimationState.stop();
+
+						this.change4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.change4AnimationState);
 						break;
 					case 16:
-						this.claw1AnimationState.startIfStopped(this.tickCount);
+						this.claw1AnimationState.stop();
+
+						this.claw1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.claw1AnimationState);
 						break;
 					case 17:
-						this.claw2AnimationState.startIfStopped(this.tickCount);
+						this.claw2AnimationState.stop();
+
+						this.claw2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.claw2AnimationState);
 						break;
 					case 18:
-						this.claw3AnimationState.startIfStopped(this.tickCount);
+						this.claw3AnimationState.stop();
+
+						this.claw3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.claw3AnimationState);
 						break;
 					case 19:
-						this.claw4AnimationState.startIfStopped(this.tickCount);
+						this.claw4AnimationState.stop();
+
+						this.claw4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.claw4AnimationState);
 						break;
 					case 20:
-						this.claw5AnimationState.startIfStopped(this.tickCount);
+						this.claw5AnimationState.stop();
+
+						this.claw5AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.claw5AnimationState);
 						break;
 					case 21:
-						this.claw6AnimationState.startIfStopped(this.tickCount);
+						this.claw6AnimationState.stop();
+
+						this.claw6AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.claw6AnimationState);
 						break;
 					case 22:
-						this.claw7AnimationState.startIfStopped(this.tickCount);
+						this.claw7AnimationState.stop();
+
+						this.claw7AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.claw7AnimationState);
 						break;
 					case 23:
-						this.eye1AnimationState.startIfStopped(this.tickCount);
+						this.eye1AnimationState.stop();
+
+						this.eye1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eye1AnimationState);
 						break;
 					case 24:
-						this.eye2AnimationState.startIfStopped(this.tickCount);
+						this.eye2AnimationState.stop();
+
+						this.eye2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eye2AnimationState);
 						break;
 					case 25:
-						this.eye3AnimationState.startIfStopped(this.tickCount);
+						this.eye3AnimationState.stop();
+
+						this.eye3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eye3AnimationState);
 						break;
 					case 26:
-						this.eye4AnimationState.startIfStopped(this.tickCount);
+						this.eye4AnimationState.stop();
+
+						this.eye4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eye4AnimationState);
 						break;
 					case 27:
-						this.eye5AnimationState.startIfStopped(this.tickCount);
+						this.eye5AnimationState.stop();
+
+						this.eye5AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eye5AnimationState);
 						break;
 					case 28:
-						this.eye6AnimationState.startIfStopped(this.tickCount);
+						this.eye6AnimationState.stop();
+
+						this.eye6AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eye6AnimationState);
 						break;
 					case 29:
-						this.eye7AnimationState.startIfStopped(this.tickCount);
+						this.eye7AnimationState.stop();
+
+						this.eye7AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.eye7AnimationState);
 						break;
 					case 30:
-						this.mouth1AnimationState.startIfStopped(this.tickCount);
+						this.mouth1AnimationState.stop();
+
+						this.mouth1AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.mouth1AnimationState);
 						break;
 					case 31:
-						this.mouth2AnimationState.startIfStopped(this.tickCount);
+						this.mouth2AnimationState.stop();
+
+						this.mouth2AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.mouth2AnimationState);
 						break;
 					case 32:
-						this.mouth3AnimationState.startIfStopped(this.tickCount);
+						this.mouth3AnimationState.stop();
+
+						this.mouth3AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.mouth3AnimationState);
 						break;
 					case 33:
-						this.mouth4AnimationState.startIfStopped(this.tickCount);
+						this.mouth4AnimationState.stop();
+
+						this.mouth4AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.mouth4AnimationState);
 						break;
 					case 34:
-						this.mouth5AnimationState.startIfStopped(this.tickCount);
+						this.mouth5AnimationState.stop();
+
+						this.mouth5AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.mouth5AnimationState);
 						break;
 					case 35:
-						this.mouth6AnimationState.startIfStopped(this.tickCount);
+						this.mouth6AnimationState.stop();
+
+						this.mouth6AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.mouth6AnimationState);
 						break;
 					case 36:
-						this.mouth7AnimationState.startIfStopped(this.tickCount);
+						this.mouth7AnimationState.stop();
+
+						this.mouth7AnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.mouth7AnimationState);
 						break;
 					case 37:
-						this.rotAnimationState.startIfStopped(this.tickCount);
+						this.rotAnimationState.stop();
+
+						this.rotAnimationState.start(this.tickCount);
 						break;
 				}
 			}
@@ -1865,6 +1940,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						this.setFirstHeal(true);
 						this.setLastBodyType(this.getBodyType());
 						this.setAnimTick(40);
+						this.setAnimationState(0);
 						this.setAnimationState("change1");
 						this.setBodyType(1);
 						this.setBodyTypeUseTick(40);
@@ -1886,6 +1962,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 					} while (nextBodyType == currentBodyType);
 					this.setLastBodyType(currentBodyType);
 					this.setAnimTick(40);
+					this.setAnimationState(0);
 					this.setAnimationState("change" + nextBodyType);
 					this.setBodyType(nextBodyType);
 					this.setBodyTypeUseTick(40);
@@ -2007,6 +2084,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setHideTick(0);
 							this.setAnimTick(40);
+							this.setAnimationState(0);
 							this.setAnimationState("hide");
 						}
 						if (this.level() instanceof ServerLevel serverLevel) {
@@ -2084,6 +2162,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 							this.setHideTick(0);
 							this.setHide(false);
 							this.setAnimTick(20);
+							this.setAnimationState(0);
 							this.setAnimationState("start");
 						}
 					}
@@ -2124,6 +2203,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setHealTick(0);
 							this.setAnimTick(60);
+							this.setAnimationState(0);
 							this.setAnimationState("spell6");
 						}
 					}
@@ -2165,6 +2245,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setSwordTick(0);
 							this.setAnimTick(20);
+							this.setAnimationState(0);
 							this.setAnimationState("spell1");
 						}
 						if (!this.isSilent()) {
@@ -2198,6 +2279,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setImprisonTick(0);
 							this.setAnimTick(60);
+							this.setAnimationState(0);
 							this.setAnimationState("spell2");
 						}
 						if (!this.isSilent()) {
@@ -2225,6 +2307,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setBotanizeTick(0);
 							this.setAnimTick(60);
+							this.setAnimationState(0);
 							this.setAnimationState("spell3");
 						}
 					}
@@ -2277,6 +2360,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setFogTick(0);
 							this.setAnimTick(60);
+							this.setAnimationState(0);
 							this.setAnimationState("spell4");
 						}
 					}
@@ -2323,6 +2407,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setUndeadTick(0);
 							this.setAnimTick(60);
+							this.setAnimationState(0);
 							this.setAnimationState("spell5");
 						}
 					}
@@ -2360,6 +2445,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setTimeTick(0);
 							this.setAnimTick(100);
+							this.setAnimationState(0);
 							this.setAnimationState("spell7");
 						}
 						if (!this.isSilent()) {
@@ -2471,6 +2557,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setSlamTick(0);
 							this.setAnimTick(40);
+							this.setAnimationState(0);
 							this.setAnimationState("claw1");
 						}
 						if (!this.isSilent()) {
@@ -2532,6 +2619,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setGraspTick(0);
 							this.setAnimTick(40);
+							this.setAnimationState(0);
 							this.setAnimationState("claw2");
 						}
 						if (!this.isSilent()) {
@@ -2574,6 +2662,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setRootTick(0);
 							this.setAnimTick(40);
+							this.setAnimationState(0);
 							this.setAnimationState("claw3");
 						}
 					}
@@ -2599,6 +2688,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setCenterTick(0);
 							this.setAnimTick(40);
+							this.setAnimationState(0);
 							this.setAnimationState("claw4");
 						}
 					}
@@ -2624,6 +2714,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setSnapTick(0);
 							this.setAnimTick(40);
+							this.setAnimationState(0);
 							this.setAnimationState("claw5");
 						}
 					}
@@ -2649,6 +2740,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setThrowTick(0);
 							this.setAnimTick(40);
+							this.setAnimationState(0);
 							this.setAnimationState("claw6");
 						}
 					}
@@ -2674,6 +2766,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setCollapseTick(0);
 							this.setAnimTick(40);
+							this.setAnimationState(0);
 							this.setAnimationState("claw7");
 						}
 					}
@@ -2738,6 +2831,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setBeamTick(0);
 							this.setAnimTick(260);
+							this.setAnimationState(0);
 							this.setAnimationState("eye1");
 						}
 					}
@@ -2767,6 +2861,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setArrowTick(0);
 							this.setAnimTick(70);
+							this.setAnimationState(0);
 							this.setAnimationState("eye2");
 						}
 					}
@@ -2792,6 +2887,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setDisarmTick(0);
 							this.setAnimTick(50);
+							this.setAnimationState(0);
 							this.setAnimationState("eye3");
 						}
 					}
@@ -2817,6 +2913,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setEightTick(0);
 							this.setAnimTick(50);
+							this.setAnimationState(0);
 							this.setAnimationState("eye4");
 						}
 					}
@@ -2842,6 +2939,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setCloudTick(0);
 							this.setAnimTick(50);
+							this.setAnimationState(0);
 							this.setAnimationState("eye5");
 						}
 					}
@@ -2867,6 +2965,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setVertigoTick(0);
 							this.setAnimTick(80);
+							this.setAnimationState(0);
 							this.setAnimationState("eye6");
 						}
 					}
@@ -2892,6 +2991,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setTorchTick(0);
 							this.setAnimTick(50);
+							this.setAnimationState(0);
 							this.setAnimationState("eye7");
 						}
 					}
@@ -2920,6 +3020,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setFourTick(0);
 							this.setAnimTick(120);
+							this.setAnimationState(0);
 							this.setAnimationState("mouth1");
 						}
 						if (!this.isSilent()) {
@@ -2940,6 +3041,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 					}
 					if (this.getFourUseTick() == 70 && this.isAlive()) {
 						if (!this.level().isClientSide()) {
+							this.setAnimationState(0);
 							this.setAnimationState("rot");
 						}
 					}
@@ -2993,6 +3095,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setBiteTick(0);
 							this.setAnimTick(100);
+							this.setAnimationState(0);
 							this.setAnimationState("mouth2");
 						}
 						if (!this.isSilent()) {
@@ -3026,6 +3129,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setEatTick(0);
 							this.setAnimTick(100);
+							this.setAnimationState(0);
 							this.setAnimationState("mouth3");
 						}
 						if (!this.isSilent()) {
@@ -3100,6 +3204,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setWiltTick(0);
 							this.setAnimTick(100);
+							this.setAnimationState(0);
 							this.setAnimationState("mouth4");
 						}
 						if (!this.isSilent()) {
@@ -3129,6 +3234,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setBlowTick(0);
 							this.setAnimTick(120);
+							this.setAnimationState(0);
 							this.setAnimationState("mouth5");
 						}
 						if (!this.isSilent()) {
@@ -3277,6 +3383,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setSuckTick(0);
 							this.setAnimTick(100);
+							this.setAnimationState(0);
 							this.setAnimationState("mouth6");
 						}
 						if (!this.isSilent()) {
@@ -3388,6 +3495,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 						if (!this.level().isClientSide()) {
 							this.setBombTick(0);
 							this.setAnimTick(80);
+							this.setAnimationState(0);
 							this.setAnimationState("mouth7");
 						}
 					}
@@ -3502,6 +3610,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 	public boolean trueHurt() {
 		if (!this.level().isClientSide()) {
 			this.setMeleeTick(10);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		if (!this.isSilent()) {
@@ -4068,14 +4177,17 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 			this.setAnimTick(40);
 			int spellRandom = this.getRandom().nextInt(30);
 			if (spellRandom >= 20) {
+				this.setAnimationState(0);
 				this.setAnimationState("change2");
 				this.setBodyType(2);
 			}
 			else if (spellRandom >= 10) {
+				this.setAnimationState(0);
 				this.setAnimationState("change3");
 				this.setBodyType(3);
 			}
 			else {
+				this.setAnimationState(0);
 				this.setAnimationState("change4");
 				this.setBodyType(4);
 			}
@@ -4168,6 +4280,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 			this.setSpellTick(20);
 			this.setBodyType(1);
 			this.setFirstHeal(true);
+			this.setAnimationState(0);
 			this.setAnimationState("start");
 		}
 		return super.finalizeSpawn(serverLevelAccessor, difficultyInstance, mobSpawnType, spawnGroupData, compoundTag);
@@ -4178,6 +4291,7 @@ public class CelestialCoilvineEntity extends PathfinderMob implements NeutralMob
 		if(deathTime <= 0) {
 			if (!this.level().isClientSide()) {
 				this.setAnimTick(40);
+				this.setAnimationState(0);
 				this.setAnimationState("dead");
 			}
 		}

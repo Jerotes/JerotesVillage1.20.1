@@ -62,6 +62,10 @@
     "jerotesvillage:corrosiver",
     "jerotesvillage:serpon_crossbow_turret",
     "jerotesvillage:serpon_chariot",
-    "jerotesvillage:serpon_combat_platform"
+    "jerotesvillage:serpon_combat_platform",
+    "jerotesvillage:mocker",
+    "jerotesvillage:swelling",
+    "jerotesvillage:conjoiner",
+    "jerotesvillage:petitioner"
   ]
 }

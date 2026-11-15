@@ -103,7 +103,9 @@ public class BloodsuckerEntity extends ZsieinEntity {
 						this.stopAllAnimation();
 						break;
 					case 1:
-						this.attackAnimationState.startIfStopped(this.tickCount);
+						this.attackAnimationState.stop();
+
+						this.attackAnimationState.start(this.tickCount);
 						this.stopMostAnimation(this.attackAnimationState);
 						break;
 				}
@@ -133,6 +135,7 @@ public class BloodsuckerEntity extends ZsieinEntity {
 	public boolean doHurtTarget(Entity entity) {
 		if (!this.level().isClientSide()) {
 			this.setAnimTick(6);
+			this.setAnimationState(0);
 			this.setAnimationState("attack");
 		}
 		double healthOldMain = 0;
